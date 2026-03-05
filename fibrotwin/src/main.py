@@ -10,7 +10,7 @@ from .sim.fields import init_fields
 from .cells.agents import init_agents
 from .sim.io import make_run_dir, save_config_copy, log_line
 from .sim.time_integrator import run_sim
-from .sim.viz import make_gif
+from .sim.viz import make_gif, make_mp4
 
 
 def pick_device(cfg):
@@ -50,7 +50,9 @@ def main():
     agents = init_agents(cfg['cells']['n_agents'], cfg['mesh']['Lx'], cfg['mesh']['Ly'], device=device, seed=cfg['seed'])
 
     run_sim(cfg, nodes, elems, fields, agents, out_dir)
+    mp4_ok = make_mp4(os.path.join(out_dir, 'frames'), os.path.join(out_dir, 'animation.mp4'), fps=cfg['viz']['fps'])
     gif_ok = make_gif(os.path.join(out_dir, 'frames'), os.path.join(out_dir, 'animation.gif'), fps=cfg['viz']['fps'])
+    log_line(out_dir, f'animation_mp4={mp4_ok}')
     log_line(out_dir, f'animation_gif={gif_ok}')
     print(out_dir)
 

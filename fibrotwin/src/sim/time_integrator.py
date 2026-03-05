@@ -24,12 +24,15 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     right = torch.where(torch.isclose(nodes[:, 0], torch.tensor(Lx, device=nodes.device)))[0]
 
     for step in range(n_steps):
-        # element properties from nodal averages
         c_elem = fields.c[elems].mean(dim=1)
         g_elem = fields.g[elems].mean(dim=1)
+        a_elem = fields.a[elems].mean(dim=1)
         E_elem = element_E_from_fields(mech['E0'], c_elem, g_elem)
 
-        K = assemble_stiffness(nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'])
+        K = assemble_stiffness(
+            nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'],
+            a_elem=a_elem, c_elem=c_elem, kf=mech.get('kf_aniso', 0.2)
+        )
         f = torch.zeros(ndof, device=nodes.device)
 
         ux_right = mech['stretch_x'] * Lx
@@ -85,6 +88,6 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         })
 
         if step % 10 == 0:
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e}')
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e}')
 
     return fields, agents

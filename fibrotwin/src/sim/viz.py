@@ -14,17 +14,17 @@ def render_frame(path, nodes, elems, U, c, a, agents, stride=3):
     mag = np.linalg.norm(u, axis=1)
 
     fig, ax = plt.subplots(figsize=(8, 4))
-    t = ax.tricontourf(deformed[:,0], deformed[:,1], cnp, levels=20, cmap='magma', alpha=0.85)
+    t = ax.tricontourf(deformed[:, 0], deformed[:, 1], cnp, levels=20, cmap='magma', alpha=0.85)
     plt.colorbar(t, ax=ax, label='collagen c')
-    ax.scatter(xp[:,0], xp[:,1], s=8, c='cyan', alpha=0.8, label='cells')
+    ax.scatter(xp[:, 0], xp[:, 1], s=8, c='cyan', alpha=0.8, label='cells')
 
     qidx = np.arange(0, len(xy), stride)
-    ax.quiver(deformed[qidx,0], deformed[qidx,1], anp[qidx,0], anp[qidx,1],
+    ax.quiver(deformed[qidx, 0], deformed[qidx, 1], anp[qidx, 0], anp[qidx, 1],
               color='white', alpha=0.6, scale=30)
 
     ax.set_title(f'FibroTwin MVP | max|u|={mag.max():.3e}')
-    ax.set_xlim(deformed[:,0].min()-0.5, deformed[:,0].max()+0.5)
-    ax.set_ylim(deformed[:,1].min()-0.5, deformed[:,1].max()+0.5)
+    ax.set_xlim(deformed[:, 0].min() - 0.5, deformed[:, 0].max() + 0.5)
+    ax.set_ylim(deformed[:, 1].min() - 0.5, deformed[:, 1].max() + 0.5)
     ax.set_aspect('equal')
     ax.legend(loc='upper right')
     fig.tight_layout()
@@ -32,12 +32,33 @@ def render_frame(path, nodes, elems, U, c, a, agents, stride=3):
     plt.close(fig)
 
 
+def _list_frames(frame_dir):
+    return sorted([f for f in os.listdir(frame_dir) if f.endswith('.png')])
+
+
 def make_gif(frame_dir, out_path, fps=20):
     try:
         import imageio.v2 as imageio
     except Exception:
         return False
-    frames = sorted([f for f in os.listdir(frame_dir) if f.endswith('.png')])
+    frames = _list_frames(frame_dir)
     ims = [imageio.imread(os.path.join(frame_dir, f)) for f in frames]
     imageio.mimsave(out_path, ims, duration=1.0 / fps)
     return True
+
+
+def make_mp4(frame_dir, out_path, fps=20):
+    try:
+        import imageio.v2 as imageio
+    except Exception:
+        return False
+    frames = _list_frames(frame_dir)
+    if not frames:
+        return False
+    try:
+        with imageio.get_writer(out_path, fps=fps, codec='libx264') as w:
+            for f in frames:
+                w.append_data(imageio.imread(os.path.join(frame_dir, f)))
+        return True
+    except Exception:
+        return False

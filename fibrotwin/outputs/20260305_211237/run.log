@@ -1,0 +1,23 @@
+device=cpu
+step=0 max_u=2.0000e+00 c_mean=2.1305e-02 g_mean=4.2611e-05
+step=10 max_u=2.0000e+00 c_mean=2.3143e-01 g_mean=2.7795e-03
+step=20 max_u=2.0000e+00 c_mean=4.3684e-01 g_mean=9.6186e-03
+step=30 max_u=2.0000e+00 c_mean=6.3873e-01 g_mean=2.0440e-02
+step=40 max_u=2.0000e+00 c_mean=8.3752e-01 g_mean=3.5139e-02
+step=50 max_u=2.0000e+00 c_mean=1.0336e+00 g_mean=5.3619e-02
+step=60 max_u=2.0000e+00 c_mean=1.2269e+00 g_mean=7.5788e-02
+step=70 max_u=2.0000e+00 c_mean=1.4170e+00 g_mean=1.0155e-01
+step=80 max_u=2.0000e+00 c_mean=1.6031e+00 g_mean=1.3080e-01
+step=90 max_u=2.0000e+00 c_mean=1.7849e+00 g_mean=1.6342e-01
+step=100 max_u=2.0000e+00 c_mean=1.9626e+00 g_mean=1.9928e-01
+step=110 max_u=2.0000e+00 c_mean=2.1365e+00 g_mean=2.3829e-01
+step=120 max_u=2.0000e+00 c_mean=2.3069e+00 g_mean=2.8033e-01
+step=130 max_u=2.0000e+00 c_mean=2.4735e+00 g_mean=3.2530e-01
+step=140 max_u=2.0000e+00 c_mean=2.6366e+00 g_mean=3.7311e-01
+step=150 max_u=2.0000e+00 c_mean=2.7966e+00 g_mean=4.2365e-01
+step=160 max_u=2.0000e+00 c_mean=2.9540e+00 g_mean=4.7684e-01
+step=170 max_u=2.0000e+00 c_mean=3.1088e+00 g_mean=5.3261e-01
+step=180 max_u=2.0000e+00 c_mean=3.2602e+00 g_mean=5.9087e-01
+step=190 max_u=2.0000e+00 c_mean=3.4079e+00 g_mean=6.5153e-01
+animation_mp4=False
+animation_gif=True

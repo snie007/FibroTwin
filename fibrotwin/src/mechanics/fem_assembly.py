@@ -17,7 +17,7 @@ def tri_B_matrix(xy: torch.Tensor):
     return B, torch.abs(A)
 
 
-def assemble_stiffness(nodes, elems, E_map, nu=0.3, plane_stress=True):
+def assemble_stiffness(nodes, elems, E_map, nu=0.3, plane_stress=True, a_elem=None, c_elem=None, kf=0.2):
     n = nodes.shape[0]
     ndof = 2 * n
     K = torch.zeros((ndof, ndof), dtype=nodes.dtype, device=nodes.device)
@@ -27,6 +27,16 @@ def assemble_stiffness(nodes, elems, E_map, nu=0.3, plane_stress=True):
         B, A = tri_B_matrix(xy)
         D = constitutive_matrix(float(E_map[e].item()), nu, plane_stress, device=nodes.device).to(nodes.dtype)
         Ke = A * (B.T @ D @ B)
+
+        # Simplified anisotropy: extra stiffness along local fibre direction
+        if a_elem is not None and c_elem is not None:
+            a = a_elem[e]
+            a = a / (torch.norm(a) + 1e-12)
+            ax, ay = a[0], a[1]
+            w = torch.tensor([ax * ax, ay * ay, 2 * ax * ay], dtype=nodes.dtype, device=nodes.device)
+            Ba = w @ B  # (6,)
+            Ke = Ke + A * (kf * torch.clamp(c_elem[e], min=0.0)) * torch.outer(Ba, Ba)
+
         dofs = []
         for nid in conn.tolist():
             dofs += [2 * nid, 2 * nid + 1]

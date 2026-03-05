@@ -34,3 +34,8 @@ For each macro-step:
 - Upgrade constitutive law to hyperelastic + growth tensor \(F_g\).
 - Move deposition to quadrature points / FE-consistent projection.
 - Extend to 3D tetrahedral meshes.
+
+
+## Current implementation notes
+- Mechanics includes collagen/fibre-dependent anisotropic stiffness increment per element.
+- Export attempts MP4 first (libx264 via imageio) and always writes GIF fallback when possible.
