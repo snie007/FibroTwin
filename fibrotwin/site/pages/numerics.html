@@ -1,0 +1,44 @@
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Numerical Methods</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header><h1>Numerical Methods</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h1>02 — Numerical Methods and Coupling Plan</h1>
+<h2>Discretization</h2>
+<ul>
+<li>Mesh: structured rectangular grid split into linear triangles (P1).</li>
+<li>Mechanics unknowns: nodal displacement vector (U\in\mathbb R^{2N_n}).</li>
+<li>Collagen field: nodal scalar (c).</li>
+<li>Fibre fields: nodal unit vectors (a, a_c\in\mathbb R^2).</li>
+<li>Agents: Lagrangian particles.</li>
+</ul>
+<h2>Time integration (operator splitting)</h2>
+<p>For each macro-step:
+1. <strong>Assemble mechanics</strong> with current (c,a,g): element stiffness (K_e), global (K).
+2. <strong>Apply BCs</strong> and solve (KU=f) (dense <code>torch.linalg.solve</code>, CPU/GPU).
+3. <strong>Compute cues</strong> (element strain energy proxy mapped to nodes).
+4. <strong>Move agents</strong> with persistent random walk + taxis on cue gradient.
+5. <strong>Deposit collagen</strong> via Gaussian kernel to nodes; apply degradation.
+6. <strong>Update fibres</strong> toward principal strain direction from mechanics step.
+7. <strong>Update growth proxy</strong> from collagen and optional stress cue.
+8. Save snapshot; render frame every <code>frame_every</code>.</p>
+<h2>Stability/sanity constraints</h2>
+<ul>
+<li>Clamp collagen: (c\leftarrow\max(c,0)).</li>
+<li>Normalize fibres each step.</li>
+<li>Small time steps and modest deposition rates.</li>
+<li>Reflective BC for agent motion.</li>
+</ul>
+<h2>Validation plan</h2>
+<ul>
+<li>Patch test for linear elasticity under affine displacement.</li>
+<li>Single-cell deposition radial symmetry.</li>
+<li>Fibre convergence to fixed target direction with expected exponential-like behavior.</li>
+</ul>
+<h2>Extensibility path</h2>
+<ul>
+<li>Replace dense solve with sparse iterative/preconditioned solver.</li>
+<li>Upgrade constitutive law to hyperelastic + growth tensor (F_g).</li>
+<li>Move deposition to quadrature points / FE-consistent projection.</li>
+<li>Extend to 3D tetrahedral meshes.</li>
+</ul>
+<h2>Current implementation notes</h2>
+<ul>
+<li>Mechanics includes collagen/fibre-dependent anisotropic stiffness increment per element.</li>
+<li>Export attempts MP4 first (libx264 via imageio) and always writes GIF fallback when possible.</li>
+</ul></div></main><script src="../assets/js/site.js"></script></body></html>

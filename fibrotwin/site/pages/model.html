@@ -1,0 +1,72 @@
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Model Equations</title><link rel="stylesheet" href="../assets/css/style.css"/><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head><body><header><h1>Model Equations</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h1>01 — Governing Equations</h1>
+<h2>1) Mechanics</h2>
+<p>For MVP, small-strain quasi-static linear elasticity on (\Omega):
+[
+\nabla\cdot\sigma = 0
+]
+with prescribed displacement BCs (left clamped, right stretched in (x), top/bottom traction-free).</p>
+<p>Kinematics:
+[
+\varepsilon(u)=\frac{1}{2}(\nabla u + \nabla u^T)
+]</p>
+<p>Constitutive law (plane stress/strain):
+[
+\sigma = C(c,a) : \varepsilon
+]
+Base isotropic matrix: (C_0(E,\nu)). We modulate stiffness by collagen fraction:
+[
+E_{\text{eff}}(x,t)=E_0\,(1+\alpha_c\,c(x,t))
+]
+and add weak fibre anisotropy via directional projector term:
+[
+\sigma_{aniso} = k_f\,c\,(a\otimes a):\varepsilon\;(a\otimes a)
+]
+(implemented as a simplified additive term in element stiffness evaluation).</p>
+<h2>2) Fibre reorientation law</h2>
+<p>Let (m(x,t)) be principal stretch/eigenvector proxy from local strain tensor.
+Discrete-time update:
+[
+\tilde a^{n+1}=a^n + \frac{\Delta t}{\tau_a}(m^n-a^n),\qquad
+a^{n+1}=\frac{\tilde a^{n+1}}{|\tilde a^{n+1}|+\epsilon}
+]
+Similarly for collagen orientation (a_c) with optional slower time constant.</p>
+<h2>3) Cell motion model</h2>
+<p>For agent (i) at (x_i):
+[
+v_i^{n+1}=\rho v_i^n + (1-\rho)\,\eta_i^n + \chi\nabla S(x_i^n)
+]
+[
+x_i^{n+1}=x_i^n + \Delta t\,v_i^{n+1}
+]
+where:
+- (\eta_i^n\sim\mathcal N(0,\sigma_v^2 I)),
+- (S): mechanical cue (strain energy proxy),
+- (\chi): taxis gain,
+- reflective boundaries enforce (x_i\in\Omega).</p>
+<h2>4) Collagen deposition and degradation</h2>
+<p>Field equation (operator-split discrete form):
+[
+c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}\,G_\sigma(x-x_i^n)-\Delta t\,k_{deg}\,c^n(x)
+]
+with Gaussian kernel
+[
+G_\sigma(r)=\exp\left(-\frac{|r|^2}{2\sigma^2}\right)
+]
+(normalized numerically in code).</p>
+<h2>5) Mixture/growth-inspired evolution</h2>
+<p>Use a simplified growth proxy (g(x,t)) representing stress-free adaptation:
+[
+g^{n+1}=g^n+\Delta t\left(k_g c^n - k_r g^n\right)
+]
+Mechanically, (g) softens effective strain load or modifies effective stiffness map (MVP implementation uses stiffness modulation):
+[
+E_{\text{eff}} \leftarrow E_{\text{eff}}\,(1+\beta_g g)
+]</p>
+<p>This approximates multiplicative growth ideas ((F=F_eF_g)) while keeping linear FEM MVP stable.</p></div><div class="card"><h2>Pseudocode</h2><pre>for n in steps:
+  solve mechanics
+  compute cues
+  move agents
+  deposit collagen
+  update fibres
+  update growth
+  save snapshot</pre></div></main><script src="../assets/js/site.js"></script></body></html>
