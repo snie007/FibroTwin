@@ -1,0 +1,40 @@
+seed: 42
+device: auto
+output_root: outputs
+
+mesh:
+  Lx: 10.0
+  Ly: 5.0
+  nx: 30
+  ny: 15
+
+mechanics:
+  E0: 50.0
+  nu: 0.3
+  plane_stress: true
+  stretch_x: 0.2
+
+time:
+  dt: 0.2
+  n_steps: 200
+
+cells:
+  n_agents: 80
+  speed: 0.05
+  persistence: 0.9
+  noise_std: 0.08
+  taxis_weight: 0.02
+  dep_rate: 0.1
+  dep_sigma: 0.35
+
+remodeling:
+  tau_fibre: 30.0
+  k_align_collagen: 0.05
+  k_deg: 0.01
+  k_growth: 0.01
+
+viz:
+  frame_every: 2
+  dpi: 120
+  fps: 20
+  quiver_stride: 3
