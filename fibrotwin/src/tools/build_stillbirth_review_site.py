@@ -134,6 +134,26 @@ table{{width:100%;border-collapse:collapse}} th,td{{border:1px solid #333;paddin
 </ul>
 <p class='small'>This is a living systematic review scaffold. It supports screening and traceability, but full-text eligibility, bias appraisal, and meta-analysis require manual reviewer steps.</p>
 </div>
+<div class='card'><h2>Main findings (high-level synthesis)</h2>
+<ul>
+<li>UK stillbirth rates have generally declined in recent years, but progress is uneven across regions and populations.</li>
+<li>Persistent inequalities are repeatedly reported, especially by deprivation and ethnicity.</li>
+<li>Frequently reported risk domains include fetal growth restriction, placental pathology, maternal metabolic risk (e.g., obesity, diabetes), smoking, and late/unequal access to care.</li>
+<li>Many studies support multifactorial risk, where social determinants, maternal health, placental function, and service pathways interact.</li>
+<li>Recent work suggests risk-factor-only approaches do not fully explain stillbirth risk, motivating integrated prediction and pathway models.</li>
+</ul>
+<p class='small'>These points are intended as an evidence-map synthesis, not a finalized meta-analytic estimate.</p>
+</div>
+<div class='card'><h2>Gaps in the literature</h2>
+<ul>
+<li><strong>Heterogeneous definitions and outcomes:</strong> variation in stillbirth definition windows, subgroup reporting, and covariate handling limits direct comparability.</li>
+<li><strong>Limited causal inference:</strong> many analyses are association-based with residual confounding and limited mechanistic linkage.</li>
+<li><strong>Underpowered subgroup analyses:</strong> intersectional analyses (ethnicity × deprivation × comorbidity) are often not sufficiently powered.</li>
+<li><strong>Service pathway evidence gaps:</strong> fewer studies quantify how timing/quality of antenatal surveillance changes stillbirth outcomes in high-risk groups.</li>
+<li><strong>Translation gap:</strong> limited prospective validation of integrated risk tools in routine UK maternity settings.</li>
+<li><strong>Data linkage gap:</strong> incomplete linkage across primary care, maternity records, pathology, and perinatal review datasets reduces explanatory depth.</li>
+</ul>
+</div>
 <div class='card'><h2>Category distribution</h2><ul>{cat_list}</ul></div>
 <div class='card'><h2>Evidence table (PMID-linked)</h2>
 <table><thead><tr><th>#</th><th>PMID</th><th>Date</th><th>Category</th><th>Title</th><th>Authors (first 3)</th></tr></thead>
