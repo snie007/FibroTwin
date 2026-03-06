@@ -1,0 +1,72 @@
+{
+  "best_score": 4,
+  "best_params": {
+    "mech_dep_gain": 0.7,
+    "synergy_dep_gain": 1.0,
+    "mech_align_gain": 2.0
+  },
+  "best_checks": [
+    {
+      "check": "high_signal_only has higher profibrotic signal than baseline",
+      "pass": true
+    },
+    {
+      "check": "high_signal_only has higher myofibroblast fraction than baseline",
+      "pass": true
+    },
+    {
+      "check": "high_load_only increases fibre alignment vs baseline",
+      "pass": true
+    },
+    {
+      "check": "high_load_high_signal yields highest collagen among scenarios",
+      "pass": true
+    }
+  ],
+  "best_rows": [
+    {
+      "scenario": "baseline_low_load_low_signal",
+      "stretch_x": 0.1,
+      "tgf_beta": 0.05,
+      "angII": 0.05,
+      "c_mean_final": 2.668684959411621,
+      "p_mean_final": 0.23429793119430542,
+      "myo_frac_final": 0.012500000186264515,
+      "ac_align_x_final": 0.9059789180755615,
+      "run_dir": "outputs/20260306_083551"
+    },
+    {
+      "scenario": "high_load_only",
+      "stretch_x": 0.28,
+      "tgf_beta": 0.05,
+      "angII": 0.05,
+      "c_mean_final": 5.850716590881348,
+      "p_mean_final": 0.3074980080127716,
+      "myo_frac_final": 0.8125,
+      "ac_align_x_final": 0.9151858687400818,
+      "run_dir": "outputs/20260306_083553"
+    },
+    {
+      "scenario": "high_signal_only",
+      "stretch_x": 0.1,
+      "tgf_beta": 0.5,
+      "angII": 0.45,
+      "c_mean_final": 8.439452171325684,
+      "p_mean_final": 0.7323232889175415,
+      "myo_frac_final": 1.0,
+      "ac_align_x_final": 0.9022181630134583,
+      "run_dir": "outputs/20260306_083555"
+    },
+    {
+      "scenario": "high_load_high_signal",
+      "stretch_x": 0.28,
+      "tgf_beta": 0.5,
+      "angII": 0.45,
+      "c_mean_final": 8.451881408691406,
+      "p_mean_final": 0.7422672510147095,
+      "myo_frac_final": 1.0,
+      "ac_align_x_final": 0.9124231934547424,
+      "run_dir": "outputs/20260306_083558"
+    }
+  ]
+}

@@ -1,18 +1,18 @@
 <!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Validation & Tests</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header><h1>Validation & Tests</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Test outcomes</h2><ul><li>test_mesh.py: pass</li><li>test_deposition.py: pass (radial symmetry + phenotype boost)</li><li>test_fibre_update.py: pass</li><li>test_fem_patch.py: pass</li><li>test_nonlinear_solver.py: pass (Ogden Dirichlet)</li></ul></div><div class="card"><ul><li>Verification: patch test, deposition symmetry, fibre convergence, nonlinear Dirichlet sanity constraints.</li><li>Validation: plausibility trends under stretch + profibrotic signaling interaction scenarios (portfolio script).</li></ul></div><div class="card"><h2>Validation portfolio</h2><h1>Validation Portfolio</h1>
-<p>Checks passed: 2/4</p>
+<p>Checks passed: 4/4</p>
 <h2>Scenario outcomes</h2>
 <ul>
-<li>baseline_low_load_low_signal: c=2.664, p=0.234, myo=0.013, ac_align_x=0.904</li>
-<li>high_load_only: c=5.809, p=0.308, myo=0.812, ac_align_x=0.903</li>
-<li>high_signal_only: c=8.429, p=0.732, myo=1.000, ac_align_x=0.900</li>
-<li>high_load_high_signal: c=8.371, p=0.742, myo=1.000, ac_align_x=0.900</li>
+<li>baseline_low_load_low_signal: c=2.669, p=0.234, myo=0.013, ac_align_x=0.906</li>
+<li>high_load_only: c=5.851, p=0.307, myo=0.812, ac_align_x=0.915</li>
+<li>high_signal_only: c=8.439, p=0.732, myo=1.000, ac_align_x=0.902</li>
+<li>high_load_high_signal: c=8.452, p=0.742, myo=1.000, ac_align_x=0.912</li>
 </ul>
 <h2>Checks</h2>
 <ul>
 <li>[PASS] high_signal_only has higher profibrotic signal than baseline</li>
 <li>[PASS] high_signal_only has higher myofibroblast fraction than baseline</li>
-<li>[FAIL] high_load_only increases fibre alignment vs baseline</li>
-<li>[FAIL] high_load_high_signal yields highest collagen among scenarios</li>
+<li>[PASS] high_load_only increases fibre alignment vs baseline</li>
+<li>[PASS] high_load_high_signal yields highest collagen among scenarios</li>
 </ul></div><div class="card"><h1>03 — Validation and Sanity Checks</h1>
 <ol>
 <li><strong>Linear patch test:</strong> Affine displacement field under homogeneous material yields near-uniform strain.</li>

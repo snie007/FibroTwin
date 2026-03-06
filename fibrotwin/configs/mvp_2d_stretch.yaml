@@ -37,7 +37,8 @@ cells:
   myo_deact_threshold: 0.20
   myo_dep_boost: 2.2
   p_dep_gain: 1.0
-  mech_dep_gain: 0.5
+  mech_dep_gain: 0.7
+  synergy_dep_gain: 1.0
 
 remodeling:
   tau_fibre: 20.0
@@ -45,6 +46,7 @@ remodeling:
   k_align_collagen: 0.05
   k_deg: 0.01
   k_growth: 0.01
+  mech_align_gain: 2.0
 
 signaling:
   tgf_beta: 0.25

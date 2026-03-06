@@ -111,6 +111,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             agent_cue=agent_cue,
             p_gain=cel.get('p_dep_gain', 1.0),
             mech_gain=cel.get('mech_dep_gain', 0.5),
+            synergy_gain=cel.get('synergy_dep_gain', 0.6),
         )
 
         pdir_e = principal_direction_from_strain(eps_e)
@@ -120,7 +121,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         pdir_n = pdir_n / (pdir_n.norm(dim=1, keepdim=True) + 1e-12)
         fields.a = update_fibres(fields.a, pdir_n, dt, rem['tau_fibre'])
         tau_c = rem.get('tau_collagen', rem['tau_fibre'] * 1.5)
-        fields.ac = update_fibres(fields.ac, pdir_n, dt, tau_c)
+        cue_scale = cue_node.mean().item()
+        tau_c_eff = tau_c / (1.0 + rem.get('mech_align_gain', 1.0) * cue_scale)
+        fields.ac = update_fibres(fields.ac, pdir_n, dt, tau_c_eff)
         fields.g = update_growth(fields.g, fields.c, dt, k_g=rem['k_growth'])
 
         viz_enabled = config.get('viz', {}).get('enable', True)

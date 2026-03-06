@@ -5,44 +5,44 @@
       "stretch_x": 0.1,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 2.6639864444732666,
-      "p_mean_final": 0.23429815471172333,
+      "c_mean_final": 2.668684959411621,
+      "p_mean_final": 0.23429793119430542,
       "myo_frac_final": 0.012500000186264515,
-      "ac_align_x_final": 0.9040585160255432,
-      "run_dir": "outputs/20260306_083030"
+      "ac_align_x_final": 0.9059789180755615,
+      "run_dir": "outputs/20260306_083731"
     },
     {
       "scenario": "high_load_only",
       "stretch_x": 0.28,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 5.808557033538818,
-      "p_mean_final": 0.3075031042098999,
+      "c_mean_final": 5.850717544555664,
+      "p_mean_final": 0.3074980080127716,
       "myo_frac_final": 0.8125,
-      "ac_align_x_final": 0.9030418395996094,
-      "run_dir": "outputs/20260306_083032"
+      "ac_align_x_final": 0.9151858687400818,
+      "run_dir": "outputs/20260306_083733"
     },
     {
       "scenario": "high_signal_only",
       "stretch_x": 0.1,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 8.429155349731445,
-      "p_mean_final": 0.7323235869407654,
+      "c_mean_final": 8.439452171325684,
+      "p_mean_final": 0.7323232889175415,
       "myo_frac_final": 1.0,
-      "ac_align_x_final": 0.900280237197876,
-      "run_dir": "outputs/20260306_083035"
+      "ac_align_x_final": 0.9022181630134583,
+      "run_dir": "outputs/20260306_083736"
     },
     {
       "scenario": "high_load_high_signal",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 8.371243476867676,
-      "p_mean_final": 0.7422752976417542,
+      "c_mean_final": 8.45188045501709,
+      "p_mean_final": 0.7422672510147095,
       "myo_frac_final": 1.0,
-      "ac_align_x_final": 0.9002086520195007,
-      "run_dir": "outputs/20260306_083037"
+      "ac_align_x_final": 0.9124230742454529,
+      "run_dir": "outputs/20260306_083738"
     }
   ],
   "checks": [
@@ -56,14 +56,14 @@
     },
     {
       "check": "high_load_only increases fibre alignment vs baseline",
-      "pass": false
+      "pass": true
     },
     {
       "check": "high_load_high_signal yields highest collagen among scenarios",
-      "pass": false
+      "pass": true
     }
   ],
-  "n_checks_passed": 2,
+  "n_checks_passed": 4,
   "n_checks_total": 4,
   "notes": [
     "These are qualitative validation checks against expected trends from fibroblast signaling + load interactions, not full quantitative calibration.",
