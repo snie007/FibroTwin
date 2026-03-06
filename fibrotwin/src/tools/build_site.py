@@ -137,9 +137,38 @@ def write_site(runs):
     (SITE / 'pages').mkdir(parents=True, exist_ok=True)
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
 
-    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea}header,main{max-width:1100px;margin:0 auto;padding:16px}nav a{margin-right:12px;color:#7cc7ff}h1,h2,h3{color:#fff}.card{background:#171a21;padding:12px;border-radius:8px;margin:12px 0}img,video{max-width:100%}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px}''')
+    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}''')
 
-    (SITE / 'assets/js/site.js').write_text('''async function loadRuns(){const r=await fetch('../data/runs.json').then(x=>x.json()).catch(()=>[]);const sel=document.getElementById('runSelect');if(!sel)return;sel.innerHTML=r.map((x,i)=>`<option value="${i}">${x.run_id}</option>`).join('');const render=(i)=>{const run=r[i];if(!run)return;document.getElementById('anim').innerHTML=run.animation_site?`<video controls src="../${run.animation_site}"></video>`:'<p>No animation</p>';document.getElementById('frames').innerHTML=(run.frames_site||[]).map(f=>`<img alt="snapshot" src="../${f}"/>`).join('');document.getElementById('metrics').innerHTML=`<pre>${JSON.stringify(run.metrics,null,2)}</pre>`;};sel.onchange=()=>render(sel.value);render(0);}window.addEventListener('DOMContentLoaded',loadRuns);''')
+    (SITE / 'assets/js/site.js').write_text('''function fmt(v){return (v===null||v===undefined)?'NA':(typeof v==='number'?v.toFixed(4):String(v));}
+async function loadRuns(){
+  const r=await fetch('../data/runs.json').then(x=>x.json()).catch(()=>[]);
+  const sel=document.getElementById('runSelect'); if(!sel) return;
+  sel.innerHTML=r.map((x,i)=>`<option value="${i}">${x.run_id}</option>`).join('');
+  const render=(i)=>{
+    const run=r[i]; if(!run) return;
+    document.getElementById('anim').innerHTML=run.animation_site?`<video controls src="../${run.animation_site}"></video>`:'<p>No animation available for this run.</p>';
+    document.getElementById('frames').innerHTML=`<div class="grid">${(run.frames_site||[]).map((f,j)=>`<figure><img alt="snapshot ${j+1}" src="../${f}"/><figcaption>Snapshot ${j+1}</figcaption></figure>`).join('')}</div>`;
+
+    const m=run.metrics||{};
+    const n=(m.step||[]).length; const last=n>0?n-1:null;
+    const cLast=last!==null?m.c_mean[last]:null; const uLast=last!==null?m.max_u[last]:null; const gLast=last!==null?m.g_mean[last]:null;
+    const plots=[`../assets/img/${run.run_id}_collagen.png`,`../assets/img/${run.run_id}_max_u.png`,`../assets/img/${run.run_id}_g_mean.png`];
+    document.getElementById('metrics').innerHTML=`
+      <div class="kpi">
+        <div class="pill"><strong>Recorded steps</strong><br/>${n}</div>
+        <div class="pill"><strong>Final mean collagen</strong><br/>${fmt(cLast)}</div>
+        <div class="pill"><strong>Final max displacement</strong><br/>${fmt(uLast)}</div>
+        <div class="pill"><strong>Final growth proxy</strong><br/>${fmt(gLast)}</div>
+      </div>
+      <p>This panel summarizes the selected run in interpretable metrics (not raw vectors).</p>
+      <div class="grid">
+        ${plots.map(p=>`<img src="${p}" onerror="this.style.display='none'"/>`).join('')}
+      </div>
+    `;
+  };
+  sel.onchange=()=>render(sel.value); render(0);
+}
+window.addEventListener('DOMContentLoaded',loadRuns);''')
 
     run0 = runs[0] if runs else None
     key_params = '<p>No runs found.</p>'
@@ -148,13 +177,13 @@ def write_site(runs):
 
     pipeline_svg = '''<svg width="900" height="120" viewBox="0 0 900 120"><rect x="10" y="30" width="130" height="50" fill="#263044"/><text x="22" y="60" fill="white">Mechanics</text><rect x="170" y="30" width="130" height="50" fill="#263044"/><text x="208" y="60" fill="white">Cues</text><rect x="330" y="30" width="130" height="50" fill="#263044"/><text x="368" y="60" fill="white">Cells</text><rect x="490" y="30" width="130" height="50" fill="#263044"/><text x="510" y="60" fill="white">Collagen</text><rect x="650" y="30" width="170" height="50" fill="#263044"/><text x="670" y="60" fill="white">Remodelling</text><text x="145" y="62" fill="#9ad">↔</text><text x="305" y="62" fill="#9ad">↔</text><text x="465" y="62" fill="#9ad">↔</text><text x="625" y="62" fill="#9ad">↔</text></svg>'''
 
-    (SITE / 'index.html').write_text(root_page('FibroTwin Results Site', f'<div class="card"><p>Static documentation for FibroTwin simulation results and methods.</p>{pipeline_svg}</div><div class="card"><h2>Showcased run parameters</h2>{key_params}</div>'))
-    (SITE / 'pages/overview.html').write_text(page('Overview', f'<div class="card">{read_doc("00_problem_statement.md")}</div><div class="card"><h2>Pipeline</h2>{pipeline_svg}</div>'))
+    (SITE / 'index.html').write_text(root_page('FibroTwin Results Site', f'<div class="card"><p><strong>Purpose:</strong> readable, publication-oriented documentation of model assumptions, equations, validation, and results.</p>{pipeline_svg}</div><div class="card"><h2>Showcased run parameters</h2>{key_params}</div>'))
+    math_head = '<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>'
+    (SITE / 'pages/overview.html').write_text(page('Overview', f'<div class="card">{read_doc("00_problem_statement.md")}</div><div class="card"><h2>Coupling pipeline</h2><p>Mechanics drives cues, cues drive cell behavior, cells remodel collagen, and remodeling feeds back to mechanics.</p>{pipeline_svg}</div>', math_head))
 
-    model_extra = '<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>'
-    (SITE / 'pages/model.html').write_text(page('Model Equations', f'<div class="card">{read_doc("01_governing_equations.md")}</div><div class="card"><h2>Pseudocode</h2><pre>for n in steps:\n  solve mechanics\n  compute cues\n  move agents\n  deposit collagen\n  update fibres\n  update growth\n  save snapshot</pre></div>', model_extra))
+    (SITE / 'pages/model.html').write_text(page('Model Equations', f'<div class="card"><p>This page presents the governing equations in formatted mathematical notation.</p>{read_doc("01_governing_equations.md")}</div><div class="card"><h2>Algorithm overview (pseudocode)</h2><pre>for each macro time step:\n  1) solve mechanics\n  2) compute mechanocues\n  3) move fibroblasts\n  4) update signaling + phenotype\n  5) deposit/remodel collagen\n  6) update fibre orientation + growth\n  7) save outputs</pre></div>', math_head))
 
-    (SITE / 'pages/numerics.html').write_text(page('Numerical Methods', f'<div class="card">{read_doc("02_numerical_methods.md")}</div>'))
+    (SITE / 'pages/numerics.html').write_text(page('Numerical Methods', f'<div class="card"><p>This page explains discretization, weak-form solve strategy, and numerical stability choices.</p>{read_doc("02_numerical_methods.md")}</div>', math_head))
     (SITE / 'pages/implementation.html').write_text(page('Implementation', '<div class="card"><h2>Architecture</h2><pre>src/main.py\nsrc/mechanics/*\nsrc/cells/*\nsrc/remodeling/*\nsrc/sim/*\nsrc/tools/build_site.py</pre><h2>Run</h2><pre>python -m src.main --config configs/mvp_2d_stretch.yaml\npython -m src.tools.build_site</pre><h2>Models currently used in code</h2><ul><li>Mechanics: compressible Ogden hyperelastic (single-term) in large-deformation mode</li><li>Growth/remodelling: constrained-mixture-inspired scalar growth proxy</li><li>Cells: persistent random walk + taxis</li><li>Collagen: Gaussian-kernel deposition + first-order degradation</li></ul><h2>Limitations</h2><ul><li>2D patch; no full 3D architecture yet</li><li>Nonlinear solve via energy minimization (no analytic tangent/Newton yet)</li><li>Literature parameters are not yet calibrated to a specific dataset</li></ul></div>'))
 
     verification = '<ul><li>Verification: patch test, deposition symmetry, fibre convergence, nonlinear Dirichlet sanity constraints.</li><li>Validation: plausibility trends under stretch + profibrotic signaling interaction scenarios (portfolio script).</li></ul>'
@@ -216,7 +245,7 @@ def write_site(runs):
 
     (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
 
-    results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
+    results_body = '''<div class="card"><h2>How to read this page</h2><ul><li>Select a run.</li><li>Watch the animation for qualitative behavior.</li><li>Inspect snapshots for spatial interpretation.</li><li>Use KPI + trend plots for quantitative interpretation.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots</h2><div id="frames"></div></div><div class="card"><h2>Quantitative summary</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
