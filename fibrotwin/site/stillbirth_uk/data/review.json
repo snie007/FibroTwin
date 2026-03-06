@@ -1,0 +1,1599 @@
+{
+  "topic": "UK stillbirth systematic review (living evidence map)",
+  "queries": [
+    "stillbirth United Kingdom cohort",
+    "stillbirth England Wales Scotland Northern Ireland",
+    "stillbirth risk factors UK pregnancy",
+    "perinatal mortality UK stillbirth",
+    "fetal growth restriction stillbirth UK"
+  ],
+  "n_records": 245,
+  "n_unique_screened": 100,
+  "studies": [
+    {
+      "pmid": "41371356",
+      "title": "Associations between women reproductive factors and the risk of depression and anxiety in the UK Biobank.",
+      "journal": "J Affect Disord",
+      "pubdate": "2026 Mar 15",
+      "authors": [
+        "Yin X",
+        "Wang R",
+        "Chen Y",
+        "Zheng X",
+        "Yang X"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41371356/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41371356"
+    },
+    {
+      "pmid": "41402970",
+      "title": "Prediction of Adverse Perinatal Outcome in Monochorionic Twin Pregnancy Using Fetal Biometry and Doppler Data: A Multicentre Cohort Study.",
+      "journal": "BJOG",
+      "pubdate": "2026 Mar",
+      "authors": [
+        "Lopian M",
+        "Giorgione V",
+        "Trapani M",
+        "Brutto M",
+        "Ferrante MG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41402970/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41402970"
+    },
+    {
+      "pmid": "41435596",
+      "title": "A genetic analysis of the causes of lamb mortality determined by an on-farm postmortem procedure.",
+      "journal": "Res Vet Sci",
+      "pubdate": "2026 Mar",
+      "authors": [
+        "Hay K",
+        "Lambe N",
+        "Roden J",
+        "Jarvis S",
+        "Dwyer CM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41435596/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41435596"
+    },
+    {
+      "pmid": "41504774",
+      "title": "Antipsychotic drug use during pregnancy and neonatal outcomes: a systematic review and meta-analysis.",
+      "journal": "Arch Womens Ment Health",
+      "pubdate": "2026 Jan 8",
+      "authors": [
+        "Quinn D",
+        "Donnelly M",
+        "O'Neill C"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41504774/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 41504774"
+    },
+    {
+      "pmid": "41506762",
+      "title": "Optimal timing of induction of labour to improve maternal and perinatal outcomes: protocol for an individual participant data and network meta-analysis.",
+      "journal": "BMJ Open",
+      "pubdate": "2026 Jan 8",
+      "authors": [
+        "Meacham H",
+        "Ona-Igbru A",
+        "McNeill R",
+        "Ajayi R",
+        "Pickering E"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41506762/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41506762"
+    },
+    {
+      "pmid": "41608777",
+      "title": "The Role of Ethnicity and Migration in Perinatal Inequalities: A Retrospective Cohort Study.",
+      "journal": "BJOG",
+      "pubdate": "2026 Jan 29",
+      "authors": [
+        "Rayment-Jones H",
+        "Burton S",
+        "Bridle L",
+        "Mohamud Y",
+        "Easter A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41608777/",
+      "category": "Inequalities",
+      "evidence_note": "PubMed metadata used for screening: PMID 41608777"
+    },
+    {
+      "pmid": "41572249",
+      "title": "Why current risk factor-based approaches fall short in predicting stillbirth: a national cohort study of nulliparous women in England.",
+      "journal": "BMC Med",
+      "pubdate": "2026 Jan 22",
+      "authors": [
+        "Howell A",
+        "Thilaganathan B",
+        "Margelyte R",
+        "Burden C",
+        "Cheng V"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41572249/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41572249"
+    },
+    {
+      "pmid": "41566476",
+      "title": "Experiences of conducting effective Patient and Public Involvement and Engagement (PPIE) by the WILL Trial (When to Induce Labour to Limit risk in pregnancy hypertension) management team.",
+      "journal": "Trials",
+      "pubdate": "2026 Jan 21",
+      "authors": [
+        "Kirkham K",
+        "Tohill S",
+        "Wade J",
+        "Stubbs C",
+        "von Dadelszen P"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41566476/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41566476"
+    },
+    {
+      "pmid": "41568873",
+      "title": "Laboratory Signs of CKD after Preeclampsia.",
+      "journal": "J Am Soc Nephrol",
+      "pubdate": "2026 Jan 2",
+      "authors": [
+        "Yo JH",
+        "Yang Y",
+        "Caldinelli A",
+        "Grams ME",
+        "Bramham K"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41568873/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41568873"
+    },
+    {
+      "pmid": "41527220",
+      "title": "Risk Factors and Outcomes Associated With Delayed Villous Maturation in Placenta: A Systematic Review and Meta-Analysis.",
+      "journal": "BJOG",
+      "pubdate": "2026 Jan 12",
+      "authors": [
+        "Mahindra MP",
+        "Mapindra MP",
+        "Waheed H",
+        "Vaughan O",
+        "Hutchinson JC"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41527220/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 41527220"
+    },
+    {
+      "pmid": "41576138",
+      "title": "Pregnancy outcomes in women at high risk of preterm birth receiving a vaginal cervical cerclage with, or without, progesterone: A retrospective, secondary analysis of the C-STICH randomised controlled trial data.",
+      "journal": "PLoS Med",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Hodgetts Morton V",
+        "Morris K",
+        "Toozs-Hobson P",
+        "Middleton L",
+        "Pilarski N"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41576138/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41576138"
+    },
+    {
+      "pmid": "41567714",
+      "title": "Gestational diabetes and stillbirth: a systematic review and meta-analysis.",
+      "journal": "EClinicalMedicine",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Bradley V",
+        "Samara L",
+        "Toolan M",
+        "Atkinson A",
+        "Caldwell DM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41567714/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 41567714"
+    },
+    {
+      "pmid": "41346036",
+      "title": "Adverse perinatal outcomes in twins: comparison of intertwin fetal size discordance vs singleton and twin fetal growth charts.",
+      "journal": "Ultrasound Obstet Gynecol",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Giorgione V",
+        "Lopian M",
+        "Trapani M",
+        "Brutto M",
+        "Ferrante MG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41346036/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 41346036"
+    },
+    {
+      "pmid": "40552422",
+      "title": "Economic Impact of Severe Early-Onset Foetal Growth Restriction: A Multicentre Prospective Cohort Study.",
+      "journal": "BJOG",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Bray G",
+        "Maksym K",
+        "Dilipkumar M",
+        "Spencer RN",
+        "Ginsberg Y"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40552422/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 40552422"
+    },
+    {
+      "pmid": "41556143",
+      "title": "Timing of birth to improve outcomes in chronic or gestational hypertension: the WILL RCT.",
+      "journal": "Health Technol Assess",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Kirkham K",
+        "Gkini E",
+        "Moakes C",
+        "Tohill S",
+        "Hutcheon JA"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41556143/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41556143"
+    },
+    {
+      "pmid": "41277871",
+      "title": "Triage and care for women with symptoms or diagnosis of pregnancy loss between 14\u2009+\u20090 and 21\u2009+\u20096\u2009weeks' gestation.",
+      "journal": "Int J Gynaecol Obstet",
+      "pubdate": "2026 Jan",
+      "authors": [
+        "Fox CE",
+        "Kaur R",
+        "Vigneswaran K",
+        "Small R",
+        "Carter J"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41277871/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41277871"
+    },
+    {
+      "pmid": "41670404",
+      "title": "Dosing of ritonavir-boosted darunavir for treatment of HIV in pregnancy.",
+      "journal": "AIDS",
+      "pubdate": "2026 Feb 11",
+      "authors": [
+        "Sconza R",
+        "Taylor GP",
+        "Ene L",
+        "Kahlert C",
+        "Wekken-Pas LV"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41670404/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41670404"
+    },
+    {
+      "pmid": "41546561",
+      "title": "Association between isolated single umbilical artery and neurodevelopmental disorders: population-based study.",
+      "journal": "Ultrasound Obstet Gynecol",
+      "pubdate": "2026 Feb",
+      "authors": [
+        "Ebbing C",
+        "Halmoy A",
+        "Jauniaux E",
+        "Einum A",
+        "Rasmussen S"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41546561/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41546561"
+    },
+    {
+      "pmid": "40998430",
+      "title": "Perinatal outcomes and uptake of RSV vaccine during pregnancy in South London: a cross-sectional study.",
+      "journal": "BMJ Open",
+      "pubdate": "2025 Sep 24",
+      "authors": [
+        "Razai MS",
+        "Kalafat E",
+        "Prasad S",
+        "Lee-Wo C",
+        "Heath PT"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40998430/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40998430"
+    },
+    {
+      "pmid": "40587835",
+      "title": "Pregnancy and Infant Outcomes in Multiple Sclerosis: Findings From the Global MAPLE-MS Pharmacovigilance Program.",
+      "journal": "Neurol Neuroimmunol Neuroinflamm",
+      "pubdate": "2025 Sep",
+      "authors": [
+        "Hellwig K",
+        "Tilson HH",
+        "Thiel S",
+        "Ball K",
+        "Seebeck J"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40587835/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40587835"
+    },
+    {
+      "pmid": "40207415",
+      "title": "Pregnancy Complications and Risk of Autoimmune Disease in Women: A Systematic Review and Meta-Analysis.",
+      "journal": "J Womens Health (Larchmt)",
+      "pubdate": "2025 Sep",
+      "authors": [
+        "Scime NV",
+        "Camden A",
+        "Albanese CM",
+        "Grandi SM",
+        "Barrett K"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40207415/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40207415"
+    },
+    {
+      "pmid": "41151957",
+      "title": "Cohort profile: the Maharashtra Anaemia Study 3 (MAS 3)-a maternal-child cohort study up to age 18 years in India.",
+      "journal": "BMJ Open",
+      "pubdate": "2025 Oct 28",
+      "authors": [
+        "Benavente MT",
+        "Geifman N",
+        "Bath SC",
+        "Ahmadi KR",
+        "Fogarty AW"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41151957/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 41151957"
+    },
+    {
+      "pmid": "41087106",
+      "title": "Prevalence and risk of adverse intrapartum-related outcomes in Uganda: a cross-sectional study with nested case-control.",
+      "journal": "BMJ Open",
+      "pubdate": "2025 Oct 14",
+      "authors": [
+        "Wanduru P",
+        "Straneo M",
+        "Sadoo S",
+        "Tann CJ",
+        "Kakooza AM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41087106/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41087106"
+    },
+    {
+      "pmid": "41246737",
+      "title": "Stillbirth Trends and Determinants: A Six-Year Registry-Based Analysis From Two District Hospitals in the United Kingdom (2019-2024).",
+      "journal": "Cureus",
+      "pubdate": "2025 Oct",
+      "authors": [
+        "Brahma R",
+        "Samyraju M",
+        "Carline L"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41246737/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41246737"
+    },
+    {
+      "pmid": "40762064",
+      "title": "Point-of-Care Placental Growth Factor for Predicting Adverse Outcomes in Sierra Leone.",
+      "journal": "Hypertension",
+      "pubdate": "2025 Oct",
+      "authors": [
+        "Kuhrt K",
+        "Cole R",
+        "M'Bayoh M",
+        "Mabula-Bwalya C",
+        "Hurrell A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40762064/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 40762064"
+    },
+    {
+      "pmid": "41116800",
+      "title": "A Service Evaluation of Antenatal Detection of Small-for-Gestational-Age Infants in a UK National Health Service Trust.",
+      "journal": "Cureus",
+      "pubdate": "2025 Oct",
+      "authors": [
+        "Ali HH",
+        "Thiruchelvam T",
+        "Singh T"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41116800/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41116800"
+    },
+    {
+      "pmid": "41101031",
+      "title": "Extreme temperature events exposure and risks of stillbirths: nationwide large birth cohort study in China.",
+      "journal": "Environ Int",
+      "pubdate": "2025 Oct",
+      "authors": [
+        "Li Z",
+        "Li S",
+        "Su S",
+        "Morawska L",
+        "Jalaludin B"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41101031/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41101031"
+    },
+    {
+      "pmid": "40311827",
+      "title": "Monitoring and timing of delivery in suspected late fetal growth restriction at term.",
+      "journal": "Am J Obstet Gynecol",
+      "pubdate": "2025 Oct",
+      "authors": [
+        "Athauda P",
+        "Li Z",
+        "MacSwan R",
+        "Dudley R",
+        "Stokes J"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40311827/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 40311827"
+    },
+    {
+      "pmid": "41182001",
+      "title": "Blood Pressure Variability and Adverse Pregnancy and Cardiovascular Outcomes in the ALSPAC Cohort.",
+      "journal": "J Am Heart Assoc",
+      "pubdate": "2025 Nov 4",
+      "authors": [
+        "Wilson M",
+        "Elanko A",
+        "Mistry H",
+        "Bone J",
+        "Slade L"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41182001/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 41182001"
+    },
+    {
+      "pmid": "41188740",
+      "title": "The association between residential segregation and stillbirths in Brazil-a cross-sectional study.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2025 Nov 4",
+      "authors": [
+        "Kushibuchi M",
+        "Sousa Filho JF",
+        "Ferreira AJF",
+        "Blencowe H",
+        "Santos GF"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41188740/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 41188740"
+    },
+    {
+      "pmid": "41184029",
+      "title": "Causes and risk factors for deaths in young infants in South Asia: the ANISA prospective population-based observational cohort study.",
+      "journal": "BMJ Glob Health",
+      "pubdate": "2025 Nov 3",
+      "authors": [
+        "Darmstadt GL",
+        "Abdalla S",
+        "Islam MS",
+        "El Arifeen S",
+        "Arvay ML"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41184029/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41184029"
+    },
+    {
+      "pmid": "40543614",
+      "title": "Various forms of pregnancy losses and risks of depression and anxiety in later life.",
+      "journal": "J Affect Disord",
+      "pubdate": "2025 Nov 15",
+      "authors": [
+        "Hu Y",
+        "Wang X",
+        "Zhu S",
+        "Chen D",
+        "Ma H"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40543614/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40543614"
+    },
+    {
+      "pmid": "40394541",
+      "title": "\"Is she pregnant with Jesus?\" exploring sociocultural obstacles to following medical advice in the context of stillbirth prevention in Nigeria.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2025 May 20",
+      "authors": [
+        "Gwacham-Anisiobi U",
+        "Oladimeji A",
+        "Yesufu V",
+        "Kurinczuk JJ",
+        "Nair M"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40394541/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40394541"
+    },
+    {
+      "pmid": "40501492",
+      "title": "Temporal trends and clinical characteristics associated with pregnancy-related acute kidney injury in England: a population-based cohort study.",
+      "journal": "AJOG Glob Rep",
+      "pubdate": "2025 May",
+      "authors": [
+        "Leal LF",
+        "Filion KB",
+        "Platt RW",
+        "Joseph KS",
+        "Magee LA"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40501492/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 40501492"
+    },
+    {
+      "pmid": "40059156",
+      "title": "Socioeconomic variations in the proportions of stroke attributable to reproductive profiles among postmenopausal women in China.",
+      "journal": "BMC Med",
+      "pubdate": "2025 Mar 10",
+      "authors": [
+        "Sun W",
+        "Wu J",
+        "Shan S",
+        "Hou L",
+        "Luo Z"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40059156/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40059156"
+    },
+    {
+      "pmid": "40556011",
+      "title": "Women's health and maternal care services: seizing missed opportunities to prevent and manage preterm birth.",
+      "journal": "Reprod Health",
+      "pubdate": "2025 Jun 23",
+      "authors": [
+        "Jacobsson B",
+        "Requejo JH",
+        "Dey T",
+        "Lavin T",
+        "Mannah MT"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40556011/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40556011"
+    },
+    {
+      "pmid": "40551192",
+      "title": "Born too soon: global epidemiology of preterm birth and drivers for change.",
+      "journal": "Reprod Health",
+      "pubdate": "2025 Jun 23",
+      "authors": [
+        "Bradley E",
+        "Blencowe H",
+        "Moller AB",
+        "Okwaraji YB",
+        "Sadler F"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40551192/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40551192"
+    },
+    {
+      "pmid": "40565463",
+      "title": "Modeling and Exploring Stillbirth Risks in Northern Pakistan.",
+      "journal": "Healthcare (Basel)",
+      "pubdate": "2025 Jun 16",
+      "authors": [
+        "Asif M",
+        "Khan M",
+        "Tariq S"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40565463/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40565463"
+    },
+    {
+      "pmid": "40275506",
+      "title": "Upregulation of immune genes in the proliferative phase endometrium enables classification into women with recurrent pregnancy loss versus controls.",
+      "journal": "Hum Reprod",
+      "pubdate": "2025 Jun 1",
+      "authors": [
+        "Andersen LHJ",
+        "Sanz Martinez R",
+        "Dai Y",
+        "Eriksen JO",
+        "Gerlach MK"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40275506/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40275506"
+    },
+    {
+      "pmid": "40091517",
+      "title": "Risk Factors for Adverse Pregnancy Outcomes in Reduced Fetal Movement: An IPD Meta-Analysis.",
+      "journal": "BJOG",
+      "pubdate": "2025 Jun",
+      "authors": [
+        "Lu Y",
+        "Palin V",
+        "Heazell A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40091517/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40091517"
+    },
+    {
+      "pmid": "40083076",
+      "title": "Pregnancy Outcomes in Women With Liver Cirrhosis: A National Prospective Cohort Study Using the UK Obstetric Surveillance System.",
+      "journal": "BJOG",
+      "pubdate": "2025 Jun",
+      "authors": [
+        "Nana M",
+        "Majewska A",
+        "Rahim M",
+        "Geenes V",
+        "Ovadia C"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40083076/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 40083076"
+    },
+    {
+      "pmid": "40051381",
+      "title": "Predicting Adverse Perinatal Outcomes in Dichorionic Twin Pregnancies: A Multicentre Cohort Study.",
+      "journal": "BJOG",
+      "pubdate": "2025 Jun",
+      "authors": [
+        "Giorgione V",
+        "Trapani M",
+        "Lopian M",
+        "Brutto M",
+        "Ferrante MG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40051381/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 40051381"
+    },
+    {
+      "pmid": "39848582",
+      "title": "Association of nucleoside reverse transcriptase inhibitors with adverse perinatal outcomes in pregnant women living with HIV: systematic review and meta-analysis.",
+      "journal": "Clin Microbiol Infect",
+      "pubdate": "2025 Jun",
+      "authors": [
+        "Cowdell I",
+        "Beck K",
+        "Hey M",
+        "Portwood C",
+        "Sexton H"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39848582/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 39848582"
+    },
+    {
+      "pmid": "39618180",
+      "title": "Outcomes of 584 cattle caesarean sections performed in a UK first opinion practice.",
+      "journal": "Vet Rec",
+      "pubdate": "2025 Jul 5",
+      "authors": [
+        "Giles L",
+        "Bain C",
+        "Nabb E"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39618180/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39618180"
+    },
+    {
+      "pmid": "40616038",
+      "title": "Stillbirth increase long-term health risks of diabetes, CVD, CVD mortality, and all-cause mortality.",
+      "journal": "BMC Womens Health",
+      "pubdate": "2025 Jul 4",
+      "authors": [
+        "Shen Y",
+        "Huang J",
+        "Chen Y",
+        "Zhao Y",
+        "Sun Z"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40616038/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40616038"
+    },
+    {
+      "pmid": "40696302",
+      "title": "Assessing patient-level risk factors for evidence-based early diagnosis of maternal sepsis.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2025 Jul 22",
+      "authors": [
+        "Anyanwu PE",
+        "Expert P",
+        "Honeyford K",
+        "Bello O",
+        "Salawu MM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40696302/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40696302"
+    },
+    {
+      "pmid": "40519155",
+      "title": "Risk factors for mortality and severe morbidity in fetuses with normal late third-trimester scan: population-based cohort study.",
+      "journal": "Ultrasound Obstet Gynecol",
+      "pubdate": "2025 Jul",
+      "authors": [
+        "D'Alberti E",
+        "Dockree S",
+        "Garbagnati M",
+        "Granieri C",
+        "Cavallaro A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40519155/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40519155"
+    },
+    {
+      "pmid": "39788362",
+      "title": "Longitudinal twin growth discordance patterns and adverse perinatal outcomes.",
+      "journal": "Am J Obstet Gynecol",
+      "pubdate": "2025 Jul",
+      "authors": [
+        "Prasad S",
+        "Ayhan I",
+        "Mohammed D",
+        "Kalafat E",
+        "Khalil A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39788362/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 39788362"
+    },
+    {
+      "pmid": "39674332",
+      "title": "Relationship between prepregnancy body mass index and gestational age-specific risk of stillbirth and perinatal death in women with chronic hypertension.",
+      "journal": "Am J Obstet Gynecol",
+      "pubdate": "2025 Jul",
+      "authors": [
+        "Bone JN",
+        "Joseph KS",
+        "Magee LA",
+        "Mayer C",
+        "Lisonkova S"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39674332/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39674332"
+    },
+    {
+      "pmid": "39788777",
+      "title": "Impact of pandemic service changes on ethnic inequalities in maternal and perinatal outcomes in England: a population-based study.",
+      "journal": "BMJ Open",
+      "pubdate": "2025 Jan 9",
+      "authors": [
+        "Ibrahim B",
+        "Jardine JE",
+        "Lenguerrand E",
+        "Judge A",
+        "Khalil A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39788777/",
+      "category": "Inequalities",
+      "evidence_note": "PubMed metadata used for screening: PMID 39788777"
+    },
+    {
+      "pmid": "40006963",
+      "title": "SARS-CoV-2 Infection and Adverse Maternal and Perinatal Outcomes: Time-to-Event Analysis of a Hospital-Based Cohort Study of Pregnant Women in Rio de Janeiro, Brazil.",
+      "journal": "Viruses",
+      "pubdate": "2025 Jan 31",
+      "authors": [
+        "Brendolin M",
+        "Wakimoto MD",
+        "de Oliveira RVC",
+        "Mageste LR",
+        "Nielsen-Saines K"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40006963/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 40006963"
+    },
+    {
+      "pmid": "39881235",
+      "title": "Knights in shining armour and (M)others in life jackets: Women's experiences of advocating for care alone when suffering recurrent early pregnancy loss during the SARS-CoV-2 pandemic.",
+      "journal": "BMC Public Health",
+      "pubdate": "2025 Jan 29",
+      "authors": [
+        "Kent-Nye FE",
+        "Sheen KS",
+        "Burgess K",
+        "Oza M",
+        "Magee LA"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39881235/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39881235"
+    },
+    {
+      "pmid": "39833887",
+      "title": "Mixed vulnerabilities: the biological risk of high parity is aggravated by emergency referral in Benin, Malawi, Tanzania and Uganda.",
+      "journal": "Int J Equity Health",
+      "pubdate": "2025 Jan 20",
+      "authors": [
+        "Straneo M",
+        "Be\u0148ov\u00e1 L",
+        "van den Akker T",
+        "Abeid MS",
+        "Ayebare E"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39833887/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39833887"
+    },
+    {
+      "pmid": "39516182",
+      "title": "Reproductive factors and biological aging: the association with all-cause and cause-specific premature mortality.",
+      "journal": "Hum Reprod",
+      "pubdate": "2025 Jan 1",
+      "authors": [
+        "Fan G",
+        "Liu Q",
+        "Bi J",
+        "Fang Q",
+        "Luo F"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39516182/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39516182"
+    },
+    {
+      "pmid": "39603347",
+      "title": "Risk of invasive pneumococcal disease during pregnancy and postpartum and association with adverse maternal and foetal outcomes: A prospective cohort study, England, 2014-19.",
+      "journal": "J Infect",
+      "pubdate": "2025 Jan",
+      "authors": [
+        "Amin-Chowdhury Z",
+        "Bertran M",
+        "Abdullahi F",
+        "Sheppard CL",
+        "Eletu SD"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39603347/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39603347"
+    },
+    {
+      "pmid": "39586022",
+      "title": "Perinatal outcomes after selective third-trimester ultrasound screening for small-for-gestational age: prospective cohort study nested within DESiGN randomized controlled trial.",
+      "journal": "Ultrasound Obstet Gynecol",
+      "pubdate": "2025 Jan",
+      "authors": [
+        "Winsloe C",
+        "Elhindi J",
+        "Vieira MC",
+        "Relph S",
+        "Arcus CG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39586022/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39586022"
+    },
+    {
+      "pmid": "39291344",
+      "title": "Differences in Factors Associated With Preterm and Term Stillbirth: A Secondary Cohort Analysis of the DESiGN Trial.",
+      "journal": "BJOG",
+      "pubdate": "2025 Jan",
+      "authors": [
+        "Winsloe C",
+        "Elhindi J",
+        "Vieira MC",
+        "Relph S",
+        "Arcus CG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39291344/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39291344"
+    },
+    {
+      "pmid": "39812078",
+      "title": "Pharmacovigilance Pregnancy Data in a Population of Japanese Patients With Chronic Inflammatory Disease Exposed to Certolizumab Pegol.",
+      "journal": "Int J Rheum Dis",
+      "pubdate": "2025 Jan",
+      "authors": [
+        "Goto M",
+        "Saito S",
+        "Scheuerle AE",
+        "Yasuda S",
+        "Houston N"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39812078/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39812078"
+    },
+    {
+      "pmid": "39689270",
+      "title": "Pregnancy and Infant Outcomes in Women With Multiple Sclerosis Treated With Ocrelizumab.",
+      "journal": "Neurol Neuroimmunol Neuroinflamm",
+      "pubdate": "2025 Jan",
+      "authors": [
+        "Vukusic S",
+        "Bove R",
+        "Dobson R",
+        "McElrath T",
+        "Oreja-Guevara C"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39689270/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39689270"
+    },
+    {
+      "pmid": "39994608",
+      "title": "The association between reproductive factors and frailty risk: a population-based analysis from the UK biobank.",
+      "journal": "BMC Public Health",
+      "pubdate": "2025 Feb 24",
+      "authors": [
+        "Chang T",
+        "Zhao Z",
+        "Liu X",
+        "Zhang Y",
+        "Liu X"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39994608/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39994608"
+    },
+    {
+      "pmid": "39973018",
+      "title": "Standardised Methods for Developing Conceptual Frameworks for Placental Disorders of Pregnancy: Pre-Eclampsia and Stillbirth.",
+      "journal": "BJOG",
+      "pubdate": "2025 Feb 19",
+      "authors": [
+        "Elawad T",
+        "Woo Kinshella ML",
+        "Stokes E",
+        "Pickerill K",
+        "Piagge ED"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39973018/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 39973018"
+    },
+    {
+      "pmid": "39948598",
+      "title": "Life course trajectories of maternal cardiovascular disease risk factors by obstetric history: a UK cohort study using electronic health records.",
+      "journal": "BMC Med",
+      "pubdate": "2025 Feb 14",
+      "authors": [
+        "Birnie K",
+        "Howe LD",
+        "Jones T",
+        "Madley-Dowd P",
+        "Martin FZ"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39948598/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39948598"
+    },
+    {
+      "pmid": "39744821",
+      "title": "Gestational diabetes mellitus and subsequent cardiovascular disease in a period of rising diagnoses: Cohort study.",
+      "journal": "Acta Obstet Gynecol Scand",
+      "pubdate": "2025 Feb",
+      "authors": [
+        "Mehrabadi A",
+        "Yu YH",
+        "Grandi SM",
+        "Platt RW",
+        "Filion KB"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39744821/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39744821"
+    },
+    {
+      "pmid": "41469596",
+      "title": "Prevalence and risk factors of stillbirths among pregnant women from twelve high-volume birthing facilities of Karachi, Pakistan: a longitudinal cohort study.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2025 Dec 30",
+      "authors": [
+        "Siddiqi DA",
+        "Muneer MZ",
+        "Iftikhar S",
+        "Shah MT",
+        "Dharma VK"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41469596/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41469596"
+    },
+    {
+      "pmid": "41327042",
+      "title": "Factors associated with stillbirth in S\u00e3o Paulo, Brazil: FetRiskS - a multidisciplinary case-control study.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2025 Dec 2",
+      "authors": [
+        "Marques LJP",
+        "Alencar GP",
+        "Elias DE",
+        "da Silva ZP",
+        "Demarque GF"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41327042/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41327042"
+    },
+    {
+      "pmid": "41445636",
+      "title": "Cohort Profile: PRECISE-DYAD: a prospective cohort study linking maternal and infant health trajectories in sub-Saharan Africa.",
+      "journal": "medRxiv",
+      "pubdate": "2025 Dec 18",
+      "authors": [
+        "Volvert ML",
+        "Wilson M",
+        "Owino RO",
+        "Koech A",
+        "Jah H"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41445636/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 41445636"
+    },
+    {
+      "pmid": "41355379",
+      "title": "Accuracy and clinical effectiveness of fetal growth monitoring strategies for the prediction of small for gestational age at birth: a systematic review and meta-analysis.",
+      "journal": "Health Technol Assess",
+      "pubdate": "2025 Dec",
+      "authors": [
+        "Danopoulos E",
+        "Armstrong N",
+        "McDermott K",
+        "Chen J",
+        "Tian X"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41355379/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 41355379"
+    },
+    {
+      "pmid": "40754176",
+      "title": "Customized growth charts for twin vs singleton pregnancies and their ability to identify small for gestational age-associated risk of adverse perinatal outcome.",
+      "journal": "Am J Obstet Gynecol",
+      "pubdate": "2025 Dec",
+      "authors": [
+        "Gardosi J",
+        "Hugh O",
+        "Mytton J",
+        "Butler E",
+        "Ellson H"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40754176/",
+      "category": "Placental/Growth",
+      "evidence_note": "PubMed metadata used for screening: PMID 40754176"
+    },
+    {
+      "pmid": "40609851",
+      "title": "Reproductive factors and the risk of incident peripheral arterial disease hospitalization or death: a cohort study of UK Biobank participants.",
+      "journal": "Am J Obstet Gynecol",
+      "pubdate": "2025 Dec",
+      "authors": [
+        "Pouncey AL",
+        "Woodward M",
+        "Harris K",
+        "Kelly R"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40609851/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40609851"
+    },
+    {
+      "pmid": "39898647",
+      "title": "Term stillbirths in Eastern Uganda: a community-based prospective cohort study.",
+      "journal": "Glob Health Action",
+      "pubdate": "2025 Dec",
+      "authors": [
+        "Chebet M",
+        "Olupot-Olupot P",
+        "Weeks AD",
+        "Engebretsen IMS",
+        "Okalany NRA"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39898647/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39898647"
+    },
+    {
+      "pmid": "40764070",
+      "title": "Tommy's National Rainbow Clinic Study: a protocol for a multi-site cohort study to evaluate a specialist antenatal service for women and families following a stillbirth or neonatal death.",
+      "journal": "BMJ Open",
+      "pubdate": "2025 Aug 5",
+      "authors": [
+        "Barron RL",
+        "Tomlinson E",
+        "Bailey E",
+        "Heazell AE"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40764070/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 40764070"
+    },
+    {
+      "pmid": "40883735",
+      "title": "Development and validation of a postpartum cardiovascular disease risk prediction model in women incorporating reproductive and pregnancy-related predictors.",
+      "journal": "BMC Med",
+      "pubdate": "2025 Aug 29",
+      "authors": [
+        "Wambua S",
+        "Crowe FL",
+        "Thangaratinam S",
+        "O'Reilly D",
+        "McCowan C"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40883735/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40883735"
+    },
+    {
+      "pmid": "40836807",
+      "title": "Altitude and risk of pre-eclampsia: insights from a large-scale epidemiological study in Ecuador.",
+      "journal": "Philos Trans R Soc Lond B Biol Sci",
+      "pubdate": "2025 Aug 21",
+      "authors": [
+        "Mitchell-Sparke E",
+        "Theeuwes B",
+        "Grant I",
+        "Giussani DA",
+        "Aiken C"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40836807/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 40836807"
+    },
+    {
+      "pmid": "40609565",
+      "title": "Association of gestational thyroid function and thyroid autoimmunity with gestational diabetes: a systematic review and individual participant meta-analysis.",
+      "journal": "Lancet Diabetes Endocrinol",
+      "pubdate": "2025 Aug",
+      "authors": [
+        "Osinga JAJ",
+        "Derakhshan A",
+        "Karachaliou M",
+        "Poppe KG",
+        "Warringa L"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40609565/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 40609565"
+    },
+    {
+      "pmid": "40505292",
+      "title": "Neurological complications following obstetric neuraxial anaesthesia: a four-year United Kingdom population-based study of epidural haematoma and epidural abscess (2014-2017).",
+      "journal": "Int J Obstet Anesth",
+      "pubdate": "2025 Aug",
+      "authors": [
+        "Tunn R",
+        "Ramakrishnan R",
+        "Hartopp R",
+        "Knight M",
+        "Lucas DN"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40505292/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40505292"
+    },
+    {
+      "pmid": "39569766",
+      "title": "Optimal timing for induction of labor in normotensive women: A retrospective cohort study.",
+      "journal": "Int J Gynaecol Obstet",
+      "pubdate": "2025 Apr",
+      "authors": [
+        "Gunnarsd\u00f3ttir J",
+        "Swift EM",
+        "Sm\u00e1rason A",
+        "Einarsd\u00f3ttir K"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39569766/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39569766"
+    },
+    {
+      "pmid": "41468998",
+      "title": "Socioeconomic status and adverse pregnancy outcome increase the risk of long-term cardiovascular disease: an analysis using the UK Biobank.",
+      "journal": "Epidemiol Health",
+      "pubdate": "2025",
+      "authors": [
+        "Kim JH",
+        "Choi UY",
+        "Lee J",
+        "Shivakumar M",
+        "Kim D"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41468998/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41468998"
+    },
+    {
+      "pmid": "41202016",
+      "title": "Should a repeat cervical cerclage be inserted when the primary cerclage fails, to prevent pregnancy loss and preterm birth? A systematic review and meta-analysis.",
+      "journal": "PLoS One",
+      "pubdate": "2025",
+      "authors": [
+        "Emms A",
+        "Vaughan M",
+        "Man R",
+        "Morris RK",
+        "Hodgetts-Morton V"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41202016/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 41202016"
+    },
+    {
+      "pmid": "40092463",
+      "title": "Healing hearts: mind-body therapy for mothers after stillbirth's silent grief.",
+      "journal": "Front Psychiatry",
+      "pubdate": "2025",
+      "authors": [
+        "Bar V",
+        "Hermesh T",
+        "Reshef P",
+        "Hermetz S",
+        "Hertz-Palmor N"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40092463/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40092463"
+    },
+    {
+      "pmid": "39888941",
+      "title": "Determinants of Adverse Perinatal Outcomes in Ibadan, Nigeria: The influence of maternal lifestyle.",
+      "journal": "PLOS Glob Public Health",
+      "pubdate": "2025",
+      "authors": [
+        "Adeoye IA",
+        "Unogu CO",
+        "Adediran K",
+        "Gbadebo BM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39888941/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39888941"
+    },
+    {
+      "pmid": "39820788",
+      "title": "The CASPAR study protocol. Can cervical stiffness predict successful vaginal delivery after induction of labour? a feasibility, cohort study.",
+      "journal": "PLoS One",
+      "pubdate": "2025",
+      "authors": [
+        "Medford E",
+        "Lane S",
+        "Merriel A",
+        "Sharp A",
+        "Care A"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39820788/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39820788"
+    },
+    {
+      "pmid": "41112501",
+      "title": "The Safe Assessment Form to Evaluate Risks ('SAFER') chart - a clinical practice evaluation study following introduction of electronic risk identification in pregnancies in Scotland.",
+      "journal": "NIHR Open Res",
+      "pubdate": "2025",
+      "authors": [
+        "Viner A",
+        "Deeks O",
+        "Nayyar P",
+        "Allison J",
+        "Murray S"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41112501/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 41112501"
+    },
+    {
+      "pmid": "39917432",
+      "title": "Pulmonary\u00a0aspiration\u00a0during\u00a0pregnancy\u00a0or immediately postpartum in the UK: A population-based case-control study.",
+      "journal": "NIHR Open Res",
+      "pubdate": "2025",
+      "authors": [
+        "Lucas N",
+        "Gooda A",
+        "Tunn R",
+        "Knight M",
+        "UKOSS Aspiration in Pregnancy investigators"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39917432/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39917432"
+    },
+    {
+      "pmid": "39822589",
+      "title": "Diabetic Ketoacidosis in Pregnancy: A Systematic Review of the Reported Cases.",
+      "journal": "Clin Med Insights Endocrinol Diabetes",
+      "pubdate": "2025",
+      "authors": [
+        "Stathi D",
+        "Lee FN",
+        "Dhar M",
+        "Bobotis S",
+        "Arsenaki E"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39822589/",
+      "category": "Review",
+      "evidence_note": "PubMed metadata used for screening: PMID 39822589"
+    },
+    {
+      "pmid": "39802324",
+      "title": "Pregnancy Loss Was Associated With the Increased Risk of Cardiovascular Diseases in Middle-Aged Women: Evidence From the China Health and Retirement Longitudinal Study.",
+      "journal": "Glob Heart",
+      "pubdate": "2025",
+      "authors": [
+        "Yang X",
+        "Fan Q",
+        "Shen C",
+        "Hou R",
+        "Chen R"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39802324/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39802324"
+    },
+    {
+      "pmid": "38950855",
+      "title": "Reproductive factors, genetic susceptibility and risk of type 2 diabetes: A prospective cohort study.",
+      "journal": "Diabetes Metab",
+      "pubdate": "2024 Sep",
+      "authors": [
+        "Fan G",
+        "Liu Q",
+        "Bi J",
+        "Qin X",
+        "Fang Q"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38950855/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 38950855"
+    },
+    {
+      "pmid": "39574855",
+      "title": "Antidepressant use during pregnancy and birth outcomes: analysis of electronic health data from the UK, Norway, and Sweden.",
+      "journal": "medRxiv",
+      "pubdate": "2024 Oct 30",
+      "authors": [
+        "Martin FZ",
+        "Ahlqvist VH",
+        "Madley-Dowd P",
+        "Lundberg M",
+        "Cohen JM"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39574855/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39574855"
+    },
+    {
+      "pmid": "39262452",
+      "title": "COVID-19 diagnosis, vaccination during pregnancy, and adverse pregnancy outcomes of 865,654 women in England and Wales: a population-based cohort study.",
+      "journal": "Lancet Reg Health Eur",
+      "pubdate": "2024 Oct",
+      "authors": [
+        "Raffetti E",
+        "Bolton T",
+        "Nolan J",
+        "Zuccolo L",
+        "Denholm R"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39262452/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39262452"
+    },
+    {
+      "pmid": "38844640",
+      "title": "Measuring the impact of maternal critical care admission on short- and longer-term maternal and birth outcomes.",
+      "journal": "Intensive Care Med",
+      "pubdate": "2024 Jun",
+      "authors": [
+        "Masterson JA",
+        "Adamestam I",
+        "Beatty M",
+        "Boardman JP",
+        "Chislett L"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38844640/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 38844640"
+    },
+    {
+      "pmid": "39696061",
+      "title": "Evaluating causal associations of chronotype with pregnancy and perinatal outcomes and its interactions with insomnia and sleep duration: a mendelian randomization study.",
+      "journal": "BMC Pregnancy Childbirth",
+      "pubdate": "2024 Dec 18",
+      "authors": [
+        "Yang Q",
+        "Magnus MC",
+        "Kilpi F",
+        "Santorelli G",
+        "Soares AG"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39696061/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39696061"
+    },
+    {
+      "pmid": "39641165",
+      "title": "Assessing the Accuracy of Cardiovascular Disease Prediction Using Female-Specific Risk Factors in Women Aged 45 to 69 Years in the UK Biobank Study.",
+      "journal": "Circ Cardiovasc Qual Outcomes",
+      "pubdate": "2024 Dec",
+      "authors": [
+        "Doust J",
+        "Baneshi MR",
+        "Chung HF",
+        "Wilson LF",
+        "Mishra GD"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39641165/",
+      "category": "Risk Prediction",
+      "evidence_note": "PubMed metadata used for screening: PMID 39641165"
+    },
+    {
+      "pmid": "39279662",
+      "title": "COVID-19 Vaccine Safety in Pregnancy, A Nested Case-Control Study in Births From April 2021 to March 2022, England.",
+      "journal": "BJOG",
+      "pubdate": "2024 Dec",
+      "authors": [
+        "Mensah AA",
+        "Stowe J",
+        "Jardine JE",
+        "Kirsebom FCM",
+        "Clare T"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39279662/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39279662"
+    },
+    {
+      "pmid": "40151429",
+      "title": "Data resource profile: Scottish Linked Pregnancy and Baby Dataset (SLiPBD).",
+      "journal": "Int J Popul Data Sci",
+      "pubdate": "2024",
+      "authors": [
+        "Lindsay L",
+        "Mark K",
+        "Moore E",
+        "Carruthers J",
+        "Hopkins L"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40151429/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 40151429"
+    },
+    {
+      "pmid": "39925648",
+      "title": "Study protocol for an observational cohort study of heat stress impacts in pregnancy in The Gambia, West Africa.",
+      "journal": "Wellcome Open Res",
+      "pubdate": "2024",
+      "authors": [
+        "Bonell A",
+        "G Ioannou L",
+        "Sesay A",
+        "A Murray K",
+        "Bah B"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39925648/",
+      "category": "Cohort Study",
+      "evidence_note": "PubMed metadata used for screening: PMID 39925648"
+    },
+    {
+      "pmid": "39240844",
+      "title": "Effects of the timing of maternal antiretroviral therapy initiation, CD4 count, and HIV viral load on birth outcomes in the Eastern Cape province of South Africa: A secondary data analysis.",
+      "journal": "PLoS One",
+      "pubdate": "2024",
+      "authors": [
+        "Siqithi S",
+        "Durojaiye OC",
+        "Adeniyi OV"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39240844/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 39240844"
+    },
+    {
+      "pmid": "36849590",
+      "title": "Changes in preterm birth and stillbirth during COVID-19 lockdowns in 26 countries.",
+      "journal": "Nat Hum Behav",
+      "pubdate": "2023 Apr",
+      "authors": [
+        "Calvert C",
+        "Brockway MM",
+        "Zoega H",
+        "Miller JE",
+        "Been JV"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36849590/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 36849590"
+    },
+    {
+      "pmid": "29209940",
+      "title": "Epidemiological changes in rubella IgG antibody levels detected in antenatal women from a retrospective rubella seroprevalence study.",
+      "journal": "Ir J Med Sci",
+      "pubdate": "2018 Aug",
+      "authors": [
+        "O'Connor C",
+        "Le Blanc D",
+        "Drew RJ"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29209940/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 29209940"
+    },
+    {
+      "pmid": "12121338",
+      "title": "Maternity services for women with diabetes in the UK.",
+      "journal": "Diabet Med",
+      "pubdate": "2002 Jul",
+      "authors": [
+        "Hawthorne G",
+        "Modder J"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12121338/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 12121338"
+    },
+    {
+      "pmid": "11843385",
+      "title": "Comparability of published perinatal mortality rates in Western Europe: the quantitative impact of differences in gestational age and birthweight criteria.",
+      "journal": "BJOG",
+      "pubdate": "2001 Dec",
+      "authors": [
+        "Graafmans WC",
+        "Richardus JH",
+        "Macfarlane A",
+        "Rebagliato M",
+        "Blondel B"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/11843385/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 11843385"
+    },
+    {
+      "pmid": "12179563",
+      "title": "Still-Birth Definition Act 1992 [16 March 1992].",
+      "journal": "Curr Law Statut Annot GB",
+      "pubdate": "1992",
+      "authors": [
+        "United Kingdom"
+      ],
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/12179563/",
+      "category": "Other",
+      "evidence_note": "PubMed metadata used for screening: PMID 12179563"
+    }
+  ],
+  "category_counts": {
+    "Risk Prediction": 30,
+    "Other": 37,
+    "Review": 6,
+    "Inequalities": 2,
+    "Placental/Growth": 9,
+    "Cohort Study": 16
+  },
+  "notes": [
+    "Automated PubMed screening map; not a final clinician-reviewed systematic review.",
+    "Use as a transparent starting point for manual full-text eligibility and data extraction."
+  ]
+}
