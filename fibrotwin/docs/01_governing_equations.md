@@ -46,12 +46,23 @@ x_i^{n+1}=x_i^n + \Delta t\,v_i^{n+1}
 \]
 with reflective boundaries.
 
+### Phenotype switching (fibroblast \(\to\) myofibroblast)
+Mechanocue-driven transition probability:
+\[
+P_i^{\mathrm{myo}}=\sigma\left(\frac{S(x_i)-S_0}{k_s}\right)
+\]
+where \(\sigma\) is logistic. Once switched, cells stay in myofibroblast state in MVP.
+
 ## 4) Collagen deposition and degradation
 \[
-c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}G_\sigma(x-x_i^n)-\Delta t\,k_{deg}c^n(x)
+c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}\,\omega_i\,G_\sigma(x-x_i^n)-\Delta t\,k_{deg}c^n(x)
 \]
 \[
-G_\sigma(r)=\exp\left(-\frac{\|r\|^2}{2\sigma^2}\right)
+G_\sigma(r)=\exp\left(-\frac{\|r\|^2}{2\sigma^2}\right),\qquad
+\omega_i=\begin{cases}
+\gamma_{myo}>1,&\text{if myofibroblast}\\
+1,&\text{otherwise}
+\end{cases}
 \]
 
 ## 5) Mixture/growth-inspired evolution

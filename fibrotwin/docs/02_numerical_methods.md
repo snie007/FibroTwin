@@ -21,10 +21,11 @@ For each macro-step:
 1. Solve mechanics (linear or Ogden nonlinear) with current state.
 2. Compute mechanical cue (strain-energy proxy) on elements → nodes.
 3. Move agents (persistent random walk + taxis).
-4. Deposit collagen with Gaussian kernels + degradation.
-5. Reorient fibres toward principal direction proxy.
-6. Update growth/remodelling proxy \(g\).
-7. Save snapshots and render periodic frames.
+4. Switch fibroblast phenotype probabilistically using cue threshold (Saucerman-style signaling abstraction).
+5. Deposit collagen with Gaussian kernels + degradation (myofibroblast deposition boost).
+6. Reorient fibres toward principal direction proxy.
+7. Update growth/remodelling proxy \(g\) (constrained-mixture-inspired adaptation variable).
+8. Save snapshots and render periodic frames.
 
 ## Performance notes
 - Main cost in large-deformation mode: nonlinear mechanics solve (LBFGS + per-element energy evaluations).

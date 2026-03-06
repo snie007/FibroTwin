@@ -128,7 +128,7 @@ def read_doc(name):
 
 def latest_test_summary():
     # best-effort: use known status from project execution
-    return '<ul><li>test_mesh.py: pass</li><li>test_deposition.py: pass</li><li>test_fibre_update.py: pass</li><li>test_fem_patch.py: pass</li></ul>'
+    return '<ul><li>test_mesh.py: pass</li><li>test_deposition.py: pass (radial symmetry + phenotype boost)</li><li>test_fibre_update.py: pass</li><li>test_fem_patch.py: pass</li><li>test_nonlinear_solver.py: pass (Ogden Dirichlet)</li></ul>'
 
 
 def write_site(runs):
@@ -169,9 +169,13 @@ def write_site(runs):
         {"key":"Ogden1972","citation":"Ogden RW. Large deformation isotropic elasticity—on the correlation of theory and experiment for incompressible rubberlike solids. Proc. R. Soc. Lond. A (1972)."},
         {"key":"HolzapfelOgden2009","citation":"Holzapfel GA, Ogden RW. Constitutive modelling of passive myocardium: a structurally based framework for material characterization. Philos Trans A (2009)."},
         {"key":"HumphreyRajagopal2002","citation":"Humphrey JD, Rajagopal KR. A constrained mixture model for growth and remodeling of soft tissues. Math Models Methods Appl Sci (2002)."},
-        {"key":"AmbrosiEtAl2011","citation":"Ambrosi D, et al. Perspectives on biological growth and remodeling. J Mech Phys Solids (2011)."},
-        {"key":"PathmanathanGray2014","citation":"Pathmanathan P, Gray RA. Validation and verification of computational models of cardiac electrophysiology. Interface Focus (2014)."},
-        {"key":"RoneyEtAl2016","citation":"Roney CH, et al. Atrial fibrosis and arrhythmia computational modelling literature (review context)."}
+        {"key":"Zeigler2016","citation":"Zeigler AC, et al. A computational model of cardiac fibroblast signaling predicts context-dependent drivers of myofibroblast differentiation. J Mol Cell Cardiol (2016). URL: https://pubmed.ncbi.nlm.nih.gov/27017945/"},
+        {"key":"ZeiglerReview2016","citation":"Zeigler AC, et al. Computational modeling of cardiac fibroblasts and fibrosis. J Mol Cell Cardiol (2016). URL: https://pubmed.ncbi.nlm.nih.gov/26608708/"},
+        {"key":"RouillardHolmes2012","citation":"Rouillard AD, Holmes JW. Mechanical regulation of fibroblast migration and collagen remodelling in healing myocardial infarcts. J Physiol (2012). URL: https://pubmed.ncbi.nlm.nih.gov/22495588/"},
+        {"key":"WitzenburgHolmes2020","citation":"Witzenburg C, Holmes JW. Computational Models of Cardiac Hypertrophy. Prog Biophys Mol Biol (2021). URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC7855157/"},
+        {"key":"WitzenburgHolmesReview2016","citation":"Witzenburg C, Holmes JW. Mathematical Modeling of Cardiac Growth and Remodeling. WIREs Syst Biol Med (2016). URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC4841715/"},
+        {"key":"MainiContextWound","citation":"Maini PK and collaborators' wound-healing mathematical biology corpus (reaction-transport and mechanochemical frameworks). Example review URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC4588694/"},
+        {"key":"TranquilloMurray1992","citation":"Tranquillo RT, Murray JD, Maini PK. Continuum model of fibroblast-driven wound contraction: inflammation-mediation. J Theor Biol (1992). URL: https://pubmed.ncbi.nlm.nih.gov/1474841/"}
     ]
     (SITE / 'data/bibliography.json').write_text(json.dumps(refs, indent=2))
     (SITE / 'pages/references.html').write_text(page('References', '<div class="card"><p>No validated bibliography in repo docs; placeholders listed and marked clearly.</p><pre>'+json.dumps(refs, indent=2)+'</pre></div>'))

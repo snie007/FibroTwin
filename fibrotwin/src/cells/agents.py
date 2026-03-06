@@ -6,6 +6,7 @@ import torch
 class Agents:
     x: torch.Tensor
     v: torch.Tensor
+    is_myofibro: torch.Tensor
 
 
 def init_agents(n_agents, Lx, Ly, device, seed=0):
@@ -15,4 +16,5 @@ def init_agents(n_agents, Lx, Ly, device, seed=0):
         torch.rand(n_agents, generator=g) * Ly,
     ], dim=1).to(device)
     v = torch.zeros((n_agents, 2), device=device)
-    return Agents(x=x, v=v)
+    is_myofibro = torch.zeros(n_agents, dtype=torch.bool, device=device)
+    return Agents(x=x, v=v, is_myofibro=is_myofibro)
