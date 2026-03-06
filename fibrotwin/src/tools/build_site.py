@@ -162,7 +162,25 @@ def write_site(runs):
     vp = ROOT / 'outputs' / 'validation_portfolio.md'
     if vp.exists():
         portfolio_block = f'<div class="card"><h2>Validation portfolio</h2>{md_to_html(vp.read_text())}</div>'
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{portfolio_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
+
+    infarct_block = ''
+    vpj = ROOT / 'outputs' / 'validation_portfolio.json'
+    if vpj.exists():
+        try:
+            d = json.loads(vpj.read_text())
+            rows = [r for r in d.get('scenarios', []) if 'infarct' in r.get('scenario', '') and ('c_core' in r)]
+            if rows:
+                r = rows[-1]
+                table = f'''<table><thead><tr><th>Region</th><th>Collagen c</th><th>Profibrotic p</th></tr></thead><tbody>
+<tr><td>Core</td><td>{r.get('c_core', 0):.3f}</td><td>{r.get('p_core', 0):.3f}</td></tr>
+<tr><td>Border zone</td><td>{r.get('c_border', 0):.3f}</td><td>{r.get('p_border', 0):.3f}</td></tr>
+<tr><td>Remote</td><td>{r.get('c_remote', 0):.3f}</td><td>{r.get('p_remote', 0):.3f}</td></tr>
+</tbody></table>'''
+                infarct_block = f'<div class="card"><h2>Infarct region panel (core/border/remote)</h2>{table}<p>Scenario: {r.get("scenario")}</p></div>'
+        except Exception:
+            infarct_block = ''
+
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
 
     results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))

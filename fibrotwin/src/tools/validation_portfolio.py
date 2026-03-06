@@ -58,6 +58,23 @@ def run_one(cfg, scenario):
         'ac_align_x_final': float(torch.abs(fields.ac[:, 0]).mean().item()),
         'run_dir': out_dir,
     }
+
+    if local.get('infarct', {}).get('enabled', False):
+        cx = local['infarct'].get('center_x', 0.5 * local['mesh']['Lx'])
+        cy = local['infarct'].get('center_y', 0.5 * local['mesh']['Ly'])
+        rad = local['infarct'].get('radius', 0.2 * min(local['mesh']['Lx'], local['mesh']['Ly']))
+        rr = torch.sqrt((nodes[:, 0] - cx) ** 2 + (nodes[:, 1] - cy) ** 2)
+        core = rr <= rad
+        border = (rr > rad) & (rr <= 2.0 * rad)
+        remote = rr > 2.0 * rad
+        metrics.update({
+            'c_core': float(fields.c[core].mean().item()) if core.any() else None,
+            'c_border': float(fields.c[border].mean().item()) if border.any() else None,
+            'c_remote': float(fields.c[remote].mean().item()) if remote.any() else None,
+            'p_core': float(fields.p[core].mean().item()) if core.any() else None,
+            'p_border': float(fields.p[border].mean().item()) if border.any() else None,
+            'p_remote': float(fields.p[remote].mean().item()) if remote.any() else None,
+        })
     return metrics
 
 
