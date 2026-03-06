@@ -22,7 +22,7 @@ mechanics:
 
 time:
   dt: 0.2
-  n_steps: 600
+  n_steps: 1200
 
 cells:
   n_agents: 80
@@ -37,7 +37,8 @@ cells:
   myo_dep_boost: 2.2
 
 remodeling:
-  tau_fibre: 30.0
+  tau_fibre: 20.0
+  tau_collagen: 14.0
   k_align_collagen: 0.05
   k_deg: 0.01
   k_growth: 0.01

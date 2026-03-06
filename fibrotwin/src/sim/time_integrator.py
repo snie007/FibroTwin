@@ -98,10 +98,12 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             pdir_n[conn] += pdir_e[e]
         pdir_n = pdir_n / (pdir_n.norm(dim=1, keepdim=True) + 1e-12)
         fields.a = update_fibres(fields.a, pdir_n, dt, rem['tau_fibre'])
-        fields.ac = update_fibres(fields.ac, fields.a, dt, rem['tau_fibre'] * 1.5)
+        tau_c = rem.get('tau_collagen', rem['tau_fibre'] * 1.5)
+        fields.ac = update_fibres(fields.ac, pdir_n, dt, tau_c)
         fields.g = update_growth(fields.g, fields.c, dt, k_g=rem['k_growth'])
 
-        if step % config['viz']['frame_every'] == 0:
+        viz_enabled = config.get('viz', {}).get('enable', True)
+        if viz_enabled and step % config['viz']['frame_every'] == 0:
             render_frame(
                 os.path.join(out_dir, 'frames', f'frame_{step:04d}.png'),
                 nodes, elems, U, fields.c, fields.a, agents,
@@ -121,6 +123,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
 
         if step % 10 == 0:
             myo_frac = agents.is_myofibro.float().mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} myo_frac={myo_frac:.4f} model={model}')
+            ex = torch.tensor([1.0, 0.0], device=nodes.device, dtype=nodes.dtype)
+            a_align = torch.abs((fields.a * ex).sum(dim=1)).mean().item()
+            ac_align = torch.abs((fields.ac * ex).sum(dim=1)).mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents
