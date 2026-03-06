@@ -1,0 +1,412 @@
+# Systematic Test Catalog (PubMed-linked)
+
+Total tests: 80
+
+## Score summary
+- Mean score: 2.4
+- Score 3: 32
+- Score 2: 48
+- Score 1: 0
+- Score 0: 0
+
+## Tests
+- T001 [37569674](https://pubmed.ncbi.nlm.nih.gov/37569674/): New Insights into the Reparative Angiogenesis after Myocardial Infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 37569674
+- T002 [37371059](https://pubmed.ncbi.nlm.nih.gov/37371059/): Phospholipid Encapsulation of an Anti-Fibrotic Endopeptide to Enhance Cellular Uptake and Myocardial Retention.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 37371059
+- T003 [36826549](https://pubmed.ncbi.nlm.nih.gov/36826549/): Ciclopirox Inhibition of eIF5A Hypusination Attenuates Fibroblast Activation and Cardiac Fibrosis.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 36826549
+- T004 [34643044](https://pubmed.ncbi.nlm.nih.gov/34643044/): MicroRNA-146b-5p promotes atrial fibrosis in atrial fibrillation by repressing TIMP4.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 34643044
+- T005 [34568449](https://pubmed.ncbi.nlm.nih.gov/34568449/): Does the Heart Want What It Wants? A Case for Self-Adapting, Mechano-Sensitive Therapies After Infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 34568449
+- T006 [34023353](https://pubmed.ncbi.nlm.nih.gov/34023353/): Dimethyl fumarate preserves left ventricular infarct integrity following myocardial infarction via modulation of cardiac macrophage and fibroblast oxidative metabolism.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 34023353
+- T007 [32611237](https://pubmed.ncbi.nlm.nih.gov/32611237/): Glutamyl-Prolyl-tRNA Synthetase Regulates Proline-Rich Pro-Fibrotic Protein Synthesis During Cardiac Fibrosis.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 32611237
+- T008 [29631164](https://pubmed.ncbi.nlm.nih.gov/29631164/): Injectable hyaluronic acid based microrods provide local micromechanical and biochemical cues to attenuate cardiac fibrosis after myocardial infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 29631164
+- T009 [29030341](https://pubmed.ncbi.nlm.nih.gov/29030341/): Macrophage overexpression of matrix metalloproteinase-9 in aged mice improves diastolic physiology and cardiac wound healing after myocardial infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 29030341
+- T010 [28404615](https://pubmed.ncbi.nlm.nih.gov/28404615/): Myeloperoxidase Mediates Postischemic Arrhythmogenic Ventricular Remodeling.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 28404615
+- T011 [27619160](https://pubmed.ncbi.nlm.nih.gov/27619160/): The role of cardiac fibroblasts in post-myocardial heart tissue repair.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 27619160
+- T012 [26601107](https://pubmed.ncbi.nlm.nih.gov/26601107/): Computational Approaches to Understanding the Role of Fibroblast-Myocyte Interactions in Cardiac Arrhythmogenesis.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 26601107
+- T013 [26383724](https://pubmed.ncbi.nlm.nih.gov/26383724/): A Novel Collagen Matricryptin Reduces Left Ventricular Dilation Post-Myocardial Infarction by Promoting Scar Formation and Angiogenesis.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 26383724
+- T014 [41680862](https://pubmed.ncbi.nlm.nih.gov/41680862/): PRIP/PLCL deficiency activates PI3K-AKT-YAP signaling and promotes organ fibrosis.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41680862
+- T015 [41568549](https://pubmed.ncbi.nlm.nih.gov/41568549/): Signal Recognition Granule Receptor Beta Subunit Promotes Arrhythmogenic Remodeling in the Heart Failure Mice.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41568549
+- T016 [41544467](https://pubmed.ncbi.nlm.nih.gov/41544467/): Single-nucleus analysis reveals Dengzhan Shengmai capsule prevents cardiac fibrosis after myocardial infarction in rat by targeting Ltbp2(+) fibroblast subset.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41544467
+- T017 [40788381](https://pubmed.ncbi.nlm.nih.gov/40788381/): HSPA9/HMGB1 regulates myocardial fibrosis in atrial fibrillation via TGF-β1/Smad pathway and autophagy.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 40788381
+- T018 [40688308](https://pubmed.ncbi.nlm.nih.gov/40688308/): TIMP1 regulation of cardiac fibroblast proliferation via the TGF-β/Smad pathway in an in vitro model of atrial fibrillation.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 40688308
+- T019 [40538115](https://pubmed.ncbi.nlm.nih.gov/40538115/): Computational modelling of cardiac fibroblast signalling reveals a key role for Ca(2+) in driving atrial fibrillation-associated fibrosis.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 40538115
+- T020 [40019607](https://pubmed.ncbi.nlm.nih.gov/40019607/): SFRP4 Knockdown Attenuates Dsg2-Deficient Arrhythmogenic Cardiomyopathy by Down-Regulating TGF-β and Smad3.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 40019607
+- T021 [39938686](https://pubmed.ncbi.nlm.nih.gov/39938686/): Connexin 43 dephosphorylation mediates the Dchs1/YAP/TEAD signaling pathway to induce cardiac fibrosis.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39938686
+- T022 [39895521](https://pubmed.ncbi.nlm.nih.gov/39895521/): KLF12 Aggravates Angiotensin II-Induced Cardiac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39895521
+- T023 [39730461](https://pubmed.ncbi.nlm.nih.gov/39730461/): Effects of Empagliflozin and Dapagliflozin in alleviating cardiac fibrosis through SIRT6-mediated oxidative stress reduction.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 39730461
+- T024 [39715792](https://pubmed.ncbi.nlm.nih.gov/39715792/): 4-Hydroxychalcone attenuates AngII-induced cardiac remodeling and dysfunction via regulating PI3K/AKT pathway.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39715792
+- T025 [39680328](https://pubmed.ncbi.nlm.nih.gov/39680328/): Quercetin Alleviates Cardiac Fibrosis via Regulating the SIRT3 Signaling Pathway.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39680328
+- T026 [39527465](https://pubmed.ncbi.nlm.nih.gov/39527465/): Fibroblast-derived miR-425-5p alleviates cardiac remodelling in heart failure via inhibiting the TGF-β1/Smad signalling.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39527465
+- T027 [39187069](https://pubmed.ncbi.nlm.nih.gov/39187069/): Circ_0079480 facilitates proliferation, migration and fibrosis of atrial fibroblasts in atrial fibrillation by sponing miR-338-3p to activate the THBS1/TGF-β1/Smad3 signaling.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 39187069
+- T028 [39122223](https://pubmed.ncbi.nlm.nih.gov/39122223/): PiRNA CFAPIR inhibits cardiac fibrosis by regulating the muscleblind-like protein MBNL2.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 39122223
+- T029 [38955313](https://pubmed.ncbi.nlm.nih.gov/38955313/): YAP1-mediated dysregulation of ACE-ACE2 activity augments cardiac fibrosis upon induction of hyperglycemic stress.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 38955313
+- T030 [38899461](https://pubmed.ncbi.nlm.nih.gov/38899461/): Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 38899461
+- T031 [38822669](https://pubmed.ncbi.nlm.nih.gov/38822669/): Periostin regulates lysyl oxidase through ERK1/2 MAPK-dependent serum response factor in activated cardiac fibroblasts.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 38822669
+- T032 [38723722](https://pubmed.ncbi.nlm.nih.gov/38723722/): Intracellular and extracellular Cyclophilin a promote cardiac fibrosis through TGF-β signaling in response to angiotensin Ⅱ.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 38723722
+- T033 [37999643](https://pubmed.ncbi.nlm.nih.gov/37999643/): Fibroblasts under pressure: cardiac fibroblast responses to hypertension and antihypertensive therapies.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 37999643
+- T034 [37786576](https://pubmed.ncbi.nlm.nih.gov/37786576/): Rivaroxaban, a direct inhibitor of coagulation factor Xa, attenuates adverse cardiac remodeling in rats by regulating the PAR-2 and TGF-β1 signaling pathways.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 37786576
+- T035 [37395147](https://pubmed.ncbi.nlm.nih.gov/37395147/): Integrin beta-like 1 mediates fibroblast-cardiomyocyte crosstalk to promote cardiac fibrosis and hypertrophy.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 37395147
+- T036 [37227779](https://pubmed.ncbi.nlm.nih.gov/37227779/): Ablation of C-type natriuretic peptide/cGMP signaling in fibroblasts exacerbates adverse cardiac remodeling in mice.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 37227779
+- T037 [37023527](https://pubmed.ncbi.nlm.nih.gov/37023527/): Gramine protects against pressure overload-induced pathological cardiac hypertrophy through Runx1-TGFBR1 signaling.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 37023527
+- T038 [37000367](https://pubmed.ncbi.nlm.nih.gov/37000367/): Epigallocatechin-3-Gallate Inhibits Atrial Fibrosis and Reduces the Occurrence and Maintenance of Atrial Fibrillation and its Possible Mechanisms.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 37000367
+- T039 [36475698](https://pubmed.ncbi.nlm.nih.gov/36475698/): Inhibition of Eicosanoid Degradation Mitigates Fibrosis of the Heart.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 36475698
+- T040 [36372276](https://pubmed.ncbi.nlm.nih.gov/36372276/): Sustained AT(1)R stimulation induces upregulation of growth factors in human cardiac fibroblasts via G(αq)/TGF-β/ERK signaling that influences myocyte hypertrophy.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 36372276
+- T041 [35333698](https://pubmed.ncbi.nlm.nih.gov/35333698/): The crystallin alpha B (HSPB5)-tripartite motif containing 33 (TRIM33) axis mediates myocardial fibrosis induced by angiotensinogen II through transforming growth factor-β (TGF-β1)-Smad3/4 signaling.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 35333698
+- T042 [35143327](https://pubmed.ncbi.nlm.nih.gov/35143327/): Second Heart Field-Derived Cells Contribute to Angiotensin II-Mediated Ascending Aortopathies.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 35143327
+- T043 [35126818](https://pubmed.ncbi.nlm.nih.gov/35126818/): Hdac8 Inhibitor Alleviates Transverse Aortic Constriction-Induced Heart Failure in Mice by Downregulating Ace1.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 35126818
+- T044 [35093323](https://pubmed.ncbi.nlm.nih.gov/35093323/): Loureirin B alleviates cardiac fibrosis by suppressing Pin1/TGF-β1 signaling.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 35093323
+- T045 [34749750](https://pubmed.ncbi.nlm.nih.gov/34749750/): STING protects against cardiac dysfunction and remodelling by blocking autophagy.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 34749750
+- T046 [34687136](https://pubmed.ncbi.nlm.nih.gov/34687136/): PKM2 promotes angiotensin-II-induced cardiac remodelling by activating TGF-β/Smad2/3 and Jak2/Stat3 pathways through oxidative stress.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 34687136
+- T047 [34302205](https://pubmed.ncbi.nlm.nih.gov/34302205/): Conophylline Suppresses Angiotensin II-Induced Myocardial Fibrosis In Vitro via the BMP4/JNK Pathway.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 34302205
+- T048 [34265086](https://pubmed.ncbi.nlm.nih.gov/34265086/): Inhibition of HSP90 S-nitrosylation alleviates cardiac fibrosis via TGFβ/SMAD3 signalling pathway.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 34265086
+- T049 [41500420](https://pubmed.ncbi.nlm.nih.gov/41500420/): Mechanical characterization of infarcted porcine hearts using left anterior descending and left circumflex coronary artery models.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41500420
+- T050 [34601105](https://pubmed.ncbi.nlm.nih.gov/34601105/): Fabrication and characterization methods for investigating cell-matrix interactions in environments possessing spatial orientation heterogeneity.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 34601105
+- T051 [31894101](https://pubmed.ncbi.nlm.nih.gov/31894101/): Platelet-derived growth factor-AB improves scar mechanics and vascularity after myocardial infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 31894101
+- T052 [31141605](https://pubmed.ncbi.nlm.nih.gov/31141605/): Effects of Collagen Heterogeneity on Myocardial Infarct Mechanics in a Multiscale Fiber Network Model.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 31141605
+- T053 [25009995](https://pubmed.ncbi.nlm.nih.gov/25009995/): Coupled agent-based and finite-element models for predicting scar structure following myocardial infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 25009995
+- T054 [24456675](https://pubmed.ncbi.nlm.nih.gov/24456675/): A model to determine the effect of collagen fiber alignment on heart function post myocardial infarction.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 24456675
+- T055 [22495588](https://pubmed.ncbi.nlm.nih.gov/22495588/): Mechanical regulation of fibroblast migration and collagen remodelling in healing myocardial infarcts.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 22495588
+- T056 [19897714](https://pubmed.ncbi.nlm.nih.gov/19897714/): Evolution of scar structure, mechanics, and ventricular function after myocardial infarction in the rat.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 19897714
+- T057 [18780284](https://pubmed.ncbi.nlm.nih.gov/18780284/): Diffusion tensor imaging of left ventricular remodeling in response to myocardial infarction in the mouse.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 18780284
+- T058 [37482576](https://pubmed.ncbi.nlm.nih.gov/37482576/): A homogenized constrained mixture model of cardiac growth and remodeling: analyzing mechanobiological stability and reversal.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 37482576
+- T059 [41782869](https://pubmed.ncbi.nlm.nih.gov/41782869/): Mass spectrometry-based multi-omics analysis elucidates immune microenvironmental characteristics and the risk of distant metastasis in N1c colorectal cancer.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41782869
+- T060 [41728737](https://pubmed.ncbi.nlm.nih.gov/41728737/): Photobiomodulation and Sericin in the Treatment of Second-Degree Burns Induced in Wistar Rats.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41728737
+- T061 [41720370](https://pubmed.ncbi.nlm.nih.gov/41720370/): Polyvinyl alcohol/pectin hydrogels incorporating marine elastin hydrolysates for enhanced wound healing and extracellular matrix remodeling.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41720370
+- T062 [41719851](https://pubmed.ncbi.nlm.nih.gov/41719851/): Thermosensitive drug-loaded hydrogel based on natural collagen for diabetic wound management via modulating inflammation and promoting angiogenesis.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41719851
+- T063 [41715184](https://pubmed.ncbi.nlm.nih.gov/41715184/): Bioactive eggshell membrane-integrated nanofiber dressing with mesoporous polydopamine-mediated sustained dexamethasone delivery for enhanced wound regeneration.
+  - Category: fibre_alignment
+  - Expected: Under sustained stretch, collagen/myofibre orientation should align with loading axis.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41715184
+- T064 [41685930](https://pubmed.ncbi.nlm.nih.gov/41685930/): pH-responsive polydopamine-shelled 3D-printed chitosan/collagen hydrogel integrating exosomes and an enzyme/peptide cascade for diabetic wound healing.
+  - Category: cell_motion
+  - Expected: Fibroblast migration should shape spatial deposition patterns (trails/fronts).
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41685930
+- T065 [41684838](https://pubmed.ncbi.nlm.nih.gov/41684838/): Therapeutic value of mesenchymal stem cell-derived extracellular vesicles in hypertrophic and keloid scars: a systematic review and meta-analysis.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41684838
+- T066 [41683598](https://pubmed.ncbi.nlm.nih.gov/41683598/): Activation of Cannabinoid Receptor 1 Enhances Wound Healing by Promoting the Proliferative Phase.
+  - Category: cell_motion
+  - Expected: Fibroblast migration should shape spatial deposition patterns (trails/fronts).
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41683598
+- T067 [41674333](https://pubmed.ncbi.nlm.nih.gov/41674333/): Inhibition of SGK3 regulates hyperplastic scar development in rats through the MAPK/ERK signaling pathway.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41674333
+- T068 [41660757](https://pubmed.ncbi.nlm.nih.gov/41660757/): Dual-functional urinary PVC catheters via peptide surface modification for the prevention of biofilm formation and fibrotic response in vitro.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41660757
+- T069 [41658005](https://pubmed.ncbi.nlm.nih.gov/41658005/): Lactoferrin bridges antimicrobial and healing responses in Staphylococcus aureus skin infections.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41658005
+- T070 [41657731](https://pubmed.ncbi.nlm.nih.gov/41657731/): Evaluation of liposome-encapsulated Centella asiatica ethanolic extract for enhanced in vitro and in vivo wound healing.
+  - Category: cell_motion
+  - Expected: Fibroblast migration should shape spatial deposition patterns (trails/fronts).
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41657731
+- T071 [41653204](https://pubmed.ncbi.nlm.nih.gov/41653204/): Recombinant Humanized Collagen Type III Accelerated Palate Wound Healing by Regulating the Fibroblast Behavior via Focal Adhesion Signaling Pathway.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41653204
+- T072 [41644791](https://pubmed.ncbi.nlm.nih.gov/41644791/): Convallatoxin ameliorates fibroblast-like synoviocytes-mediated synovial inflammation and joint destruction in rheumatoid arthritis by targeting IDH1.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41644791
+- T073 [41644046](https://pubmed.ncbi.nlm.nih.gov/41644046/): STC-1 improves scar remodeling and is associated with PI3K/AKT signaling and immune modulation.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41644046
+- T074 [41642026](https://pubmed.ncbi.nlm.nih.gov/41642026/): The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery.
+  - Category: infarct_remodeling
+  - Expected: Collagen and profibrotic signal should rise in infarct core and border zone.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41642026
+- T075 [41637974](https://pubmed.ncbi.nlm.nih.gov/41637974/): Development of 2-deoxy-d-ribose and zinc oxide loaded microneedle array patches of chitosan and PVA to stimulate angiogenesis and reduce infection and promote wound healing.
+  - Category: cell_motion
+  - Expected: Fibroblast migration should shape spatial deposition patterns (trails/fronts).
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41637974
+- T076 [41634491](https://pubmed.ncbi.nlm.nih.gov/41634491/): NEDD4L knockdown enhances synovial fibroblast migration, invasion, and inflammatory factor secretion via Wnt/β-Catenin signaling activation.
+  - Category: fibroblast_signaling
+  - Expected: Higher profibrotic input should increase myofibroblast fraction and collagen deposition.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41634491
+- T077 [41616419](https://pubmed.ncbi.nlm.nih.gov/41616419/): Toddalia asiatica (L.) Lam. induces apoptosis in rheumatoid arthritis fibroblast-like synoviocytes by modulating the PI3K/AKT/NF-κB pathway.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41616419
+- T078 [41608354](https://pubmed.ncbi.nlm.nih.gov/41608354/): Photocrosslinkable Chitosan Quaternary Ammonium Salt-Based Ternary Hydrogel with Fibroblast Growth Factor 21 for Diabetic Wound Healing.
+  - Category: growth_remodeling
+  - Expected: Long-horizon loading should alter growth proxy and redistribute mechanical cues.
+  - Score: 2/3
+  - Evidence: Title/metadata from PubMed PMID 41608354
+- T079 [41599768](https://pubmed.ncbi.nlm.nih.gov/41599768/): Investigation of the Efficacy and Mechanism of Monoacylglycerol Lipase Inhibitors in Diabetic Foot Ulcers.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41599768
+- T080 [41599128](https://pubmed.ncbi.nlm.nih.gov/41599128/): Non-Crosslinked Hyaluronic Acid Redensity 1(®) Supports Cell Viability, Proliferation, and Collagen Deposition in Early Burn Management.
+  - Category: collagen_dynamics
+  - Expected: Collagen should increase with deposition and remain nonnegative with turnover.
+  - Score: 3/3
+  - Evidence: Title/metadata from PubMed PMID 41599128

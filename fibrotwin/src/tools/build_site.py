@@ -180,7 +180,20 @@ def write_site(runs):
         except Exception:
             infarct_block = ''
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
+    systematic_block = ''
+    stj = ROOT / 'outputs' / 'systematic_test_catalog.json'
+    if stj.exists():
+        try:
+            s = json.loads(stj.read_text())
+            sm = s.get('summary', {})
+            tests = s.get('tests', [])[:20]
+            rows = ''.join([f"<tr><td>{t.get('id')}</td><td><a href='{t.get('pubmed_url')}'>{t.get('pmid')}</a></td><td>{t.get('category')}</td><td>{t.get('model_score_0_to_3')}/3</td><td>{t.get('title')}</td></tr>" for t in tests])
+            table = f"<p>Total tests: {s.get('n_tests')}</p><ul><li>Mean score: {sm.get('mean_score')}</li><li>Score 3: {sm.get('n_score_3')}</li><li>Score 2: {sm.get('n_score_2')}</li><li>Score 1: {sm.get('n_score_1')}</li><li>Score 0: {sm.get('n_score_0')}</li></ul><table><thead><tr><th>ID</th><th>PMID</th><th>Category</th><th>Score</th><th>Evidence-linked test title</th></tr></thead><tbody>{rows}</tbody></table><p>Full catalog: <code>outputs/systematic_test_catalog.json</code></p>"
+            systematic_block = f'<div class="card"><h2>Systematic literature-linked test catalog</h2>{table}</div>'
+        except Exception:
+            systematic_block = ''
+
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
 
     results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
