@@ -1,73 +1,61 @@
-# 01 — Governing Equations
+# 01 — Governing Equations (Updated)
 
-## 1) Mechanics
-For MVP, small-strain quasi-static linear elasticity on \(\Omega\):
+## 1) Large-deformation mechanics (Ogden myocardium)
+We solve quasi-static equilibrium on \(\Omega_0\):
 \[
-\nabla\cdot\sigma = 0
+\nabla_0 \cdot \mathbf P = \mathbf 0
 \]
-with prescribed displacement BCs (left clamped, right stretched in \(x\), top/bottom traction-free).
+with displacement BCs (left edge fixed, right edge stretched).
 
 Kinematics:
 \[
-\varepsilon(u)=\frac{1}{2}(\nabla u + \nabla u^T)
+\mathbf F = \frac{\partial \mathbf x}{\partial \mathbf X},\quad J=\det\mathbf F,\quad \mathbf C=\mathbf F^T\mathbf F
 \]
 
-Constitutive law (plane stress/strain):
+For MVP large deformation, myocardium uses compressible Ogden energy (single term):
 \[
-\sigma = C(c,a) : \varepsilon
+W(\mathbf F)=\frac{\mu}{\alpha}\left(\lambda_1^{\alpha}+\lambda_2^{\alpha}+\lambda_3^{\alpha}-3\right)+\frac{\kappa}{2}(J-1)^2
 \]
-Base isotropic matrix: \(C_0(E,\nu)\). We modulate stiffness by collagen fraction:
+with principal stretches \(\lambda_i\). In current 2D implementation, \(\lambda_3=1\) (plane-strain proxy).
+
+Total potential (no body-force term in MVP):
 \[
-E_{\text{eff}}(x,t)=E_0\,(1+\alpha_c\,c(x,t))
+\Pi(\mathbf u)=\int_{\Omega_0}W(\mathbf F(\mathbf u))\,dV
 \]
-and add weak fibre anisotropy via directional projector term:
+Numerical solve minimizes \(\Pi\) with Dirichlet constraints.
+
+## Weak form (summary)
+Find \(\mathbf u\in\mathcal V\) such that:
 \[
-\sigma_{aniso} = k_f\,c\,(a\otimes a):\varepsilon\;(a\otimes a)
+\delta \Pi = \int_{\Omega_0}\mathbf P: \delta \mathbf F\,dV = 0\quad \forall\,\delta\mathbf u\in\mathcal V_0
 \]
-(implemented as a simplified additive term in element stiffness evaluation).
+where \(\mathbf P=\partial W/\partial \mathbf F\).
 
 ## 2) Fibre reorientation law
-Let \(m(x,t)\) be principal stretch/eigenvector proxy from local strain tensor.
-Discrete-time update:
+Let \(m(x,t)\) be principal direction proxy from local strain:
 \[
 \tilde a^{n+1}=a^n + \frac{\Delta t}{\tau_a}(m^n-a^n),\qquad
 a^{n+1}=\frac{\tilde a^{n+1}}{\|\tilde a^{n+1}\|+\epsilon}
 \]
-Similarly for collagen orientation \(a_c\) with optional slower time constant.
 
 ## 3) Cell motion model
-For agent \(i\) at \(x_i\):
+For agent \(i\):
 \[
-v_i^{n+1}=\rho v_i^n + (1-\rho)\,\eta_i^n + \chi\nabla S(x_i^n)
-\]
-\[
+v_i^{n+1}=\rho v_i^n + (1-\rho)\eta_i^n + \chi\nabla S(x_i^n),\qquad
 x_i^{n+1}=x_i^n + \Delta t\,v_i^{n+1}
 \]
-where:
-- \(\eta_i^n\sim\mathcal N(0,\sigma_v^2 I)\),
-- \(S\): mechanical cue (strain energy proxy),
-- \(\chi\): taxis gain,
-- reflective boundaries enforce \(x_i\in\Omega\).
+with reflective boundaries.
 
 ## 4) Collagen deposition and degradation
-Field equation (operator-split discrete form):
 \[
-c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}\,G_\sigma(x-x_i^n)-\Delta t\,k_{deg}\,c^n(x)
+c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}G_\sigma(x-x_i^n)-\Delta t\,k_{deg}c^n(x)
 \]
-with Gaussian kernel
 \[
 G_\sigma(r)=\exp\left(-\frac{\|r\|^2}{2\sigma^2}\right)
 \]
-(normalized numerically in code).
 
 ## 5) Mixture/growth-inspired evolution
-Use a simplified growth proxy \(g(x,t)\) representing stress-free adaptation:
 \[
-g^{n+1}=g^n+\Delta t\left(k_g c^n - k_r g^n\right)
+g^{n+1}=g^n+\Delta t\left(k_g c^n-k_r g^n\right),\qquad g\ge 0
 \]
-Mechanically, \(g\) softens effective strain load or modifies effective stiffness map (MVP implementation uses stiffness modulation):
-\[
-E_{\text{eff}} \leftarrow E_{\text{eff}}\,(1+\beta_g g)
-\]
-
-This approximates multiplicative growth ideas (\(F=F_eF_g\)) while keeping linear FEM MVP stable.
+This is constrained-mixture inspired (stress-free adaptation proxy), not yet a full constituent-specific turnover model.

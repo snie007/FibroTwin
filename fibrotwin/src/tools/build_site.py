@@ -155,7 +155,7 @@ def write_site(runs):
     (SITE / 'pages/model.html').write_text(page('Model Equations', f'<div class="card">{read_doc("01_governing_equations.md")}</div><div class="card"><h2>Pseudocode</h2><pre>for n in steps:\n  solve mechanics\n  compute cues\n  move agents\n  deposit collagen\n  update fibres\n  update growth\n  save snapshot</pre></div>', model_extra))
 
     (SITE / 'pages/numerics.html').write_text(page('Numerical Methods', f'<div class="card">{read_doc("02_numerical_methods.md")}</div>'))
-    (SITE / 'pages/implementation.html').write_text(page('Implementation', '<div class="card"><h2>Architecture</h2><pre>src/main.py\nsrc/mechanics/*\nsrc/cells/*\nsrc/remodeling/*\nsrc/sim/*\nsrc/tools/build_site.py</pre><h2>Run</h2><pre>python -m src.main --config configs/mvp_2d_stretch.yaml\npython -m src.tools.build_site</pre><h2>Limitations</h2><ul><li>MVP linear elasticity</li><li>Dense solve for small meshes</li></ul></div>'))
+    (SITE / 'pages/implementation.html').write_text(page('Implementation', '<div class="card"><h2>Architecture</h2><pre>src/main.py\nsrc/mechanics/*\nsrc/cells/*\nsrc/remodeling/*\nsrc/sim/*\nsrc/tools/build_site.py</pre><h2>Run</h2><pre>python -m src.main --config configs/mvp_2d_stretch.yaml\npython -m src.tools.build_site</pre><h2>Models currently used in code</h2><ul><li>Mechanics: compressible Ogden hyperelastic (single-term) in large-deformation mode</li><li>Growth/remodelling: constrained-mixture-inspired scalar growth proxy</li><li>Cells: persistent random walk + taxis</li><li>Collagen: Gaussian-kernel deposition + first-order degradation</li></ul><h2>Limitations</h2><ul><li>2D patch; no full 3D architecture yet</li><li>Nonlinear solve via energy minimization (no analytic tangent/Newton yet)</li><li>Literature parameters are not yet calibrated to a specific dataset</li></ul></div>'))
 
     verification = '<ul><li>Verification: patch test, deposition symmetry, fibre convergence, sanity constraints.</li><li>Validation: plausibility trends under stretch (not calibrated to specific dataset yet).</li></ul>'
     (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div><div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
@@ -166,8 +166,12 @@ def write_site(runs):
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
 
     refs = [
-        {"key":"PLACEHOLDER-1","title":"Constrained mixture / growth and remodelling references to be curated","note":"Placeholder"},
-        {"key":"PLACEHOLDER-2","title":"Cardiac fibrosis mechanobiology references to be curated","note":"Placeholder"}
+        {"key":"Ogden1972","citation":"Ogden RW. Large deformation isotropic elasticity—on the correlation of theory and experiment for incompressible rubberlike solids. Proc. R. Soc. Lond. A (1972)."},
+        {"key":"HolzapfelOgden2009","citation":"Holzapfel GA, Ogden RW. Constitutive modelling of passive myocardium: a structurally based framework for material characterization. Philos Trans A (2009)."},
+        {"key":"HumphreyRajagopal2002","citation":"Humphrey JD, Rajagopal KR. A constrained mixture model for growth and remodeling of soft tissues. Math Models Methods Appl Sci (2002)."},
+        {"key":"AmbrosiEtAl2011","citation":"Ambrosi D, et al. Perspectives on biological growth and remodeling. J Mech Phys Solids (2011)."},
+        {"key":"PathmanathanGray2014","citation":"Pathmanathan P, Gray RA. Validation and verification of computational models of cardiac electrophysiology. Interface Focus (2014)."},
+        {"key":"RoneyEtAl2016","citation":"Roney CH, et al. Atrial fibrosis and arrhythmia computational modelling literature (review context)."}
     ]
     (SITE / 'data/bibliography.json').write_text(json.dumps(refs, indent=2))
     (SITE / 'pages/references.html').write_text(page('References', '<div class="card"><p>No validated bibliography in repo docs; placeholders listed and marked clearly.</p><pre>'+json.dumps(refs, indent=2)+'</pre></div>'))

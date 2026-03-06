@@ -1,4 +1,4 @@
-# 02 — Numerical Methods and Coupling Plan
+# 02 — Numerical Methods and Coupling Plan (Updated)
 
 ## Discretization
 - Mesh: structured rectangular grid split into linear triangles (P1).
@@ -7,35 +7,35 @@
 - Fibre fields: nodal unit vectors \(a, a_c\in\mathbb R^2\).
 - Agents: Lagrangian particles.
 
+## Mechanics solver options
+1. **Linear MVP mode**: assembled dense stiffness \(KU=f\).
+2. **Large-deformation mode (current default)**: total potential minimization with compressible Ogden energy and Dirichlet constraints using LBFGS on free DOFs.
+
+### Weak-form / energy route
+- Residual comes from \(\delta\Pi=0\).
+- Instead of hand-coding tangent matrix, we use torch autograd + LBFGS to minimize \(\Pi(U)\).
+- This is robust for small meshes and allows rapid constitutive prototyping.
+
 ## Time integration (operator splitting)
 For each macro-step:
-1. **Assemble mechanics** with current \(c,a,g\): element stiffness \(K_e\), global \(K\).
-2. **Apply BCs** and solve \(KU=f\) (dense `torch.linalg.solve`, CPU/GPU).
-3. **Compute cues** (element strain energy proxy mapped to nodes).
-4. **Move agents** with persistent random walk + taxis on cue gradient.
-5. **Deposit collagen** via Gaussian kernel to nodes; apply degradation.
-6. **Update fibres** toward principal strain direction from mechanics step.
-7. **Update growth proxy** from collagen and optional stress cue.
-8. Save snapshot; render frame every `frame_every`.
+1. Solve mechanics (linear or Ogden nonlinear) with current state.
+2. Compute mechanical cue (strain-energy proxy) on elements → nodes.
+3. Move agents (persistent random walk + taxis).
+4. Deposit collagen with Gaussian kernels + degradation.
+5. Reorient fibres toward principal direction proxy.
+6. Update growth/remodelling proxy \(g\).
+7. Save snapshots and render periodic frames.
+
+## Performance notes
+- Main cost in large-deformation mode: nonlinear mechanics solve (LBFGS + per-element energy evaluations).
+- Cost reduction options:
+  - coarser mesh for parameter sweeps,
+  - lower nonlinear iterations for early exploration,
+  - render frames less frequently,
+  - future sparse/tangent-based Newton implementation.
 
 ## Stability/sanity constraints
 - Clamp collagen: \(c\leftarrow\max(c,0)\).
 - Normalize fibres each step.
-- Small time steps and modest deposition rates.
-- Reflective BC for agent motion.
-
-## Validation plan
-- Patch test for linear elasticity under affine displacement.
-- Single-cell deposition radial symmetry.
-- Fibre convergence to fixed target direction with expected exponential-like behavior.
-
-## Extensibility path
-- Replace dense solve with sparse iterative/preconditioned solver.
-- Upgrade constitutive law to hyperelastic + growth tensor \(F_g\).
-- Move deposition to quadrature points / FE-consistent projection.
-- Extend to 3D tetrahedral meshes.
-
-
-## Current implementation notes
-- Mechanics includes collagen/fibre-dependent anisotropic stiffness increment per element.
-- Export attempts MP4 first (libx264 via imageio) and always writes GIF fallback when possible.
+- Reflective boundaries for agents.
+- Positive-definite spectral clamps in Ogden energy evaluation.

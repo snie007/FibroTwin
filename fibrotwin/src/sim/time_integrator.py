@@ -2,6 +2,7 @@ import os
 import torch
 from ..mechanics.fem_assembly import assemble_stiffness, element_strain
 from ..mechanics.solver import apply_dirichlet, solve_linear_system
+from ..mechanics.nonlinear_solver import solve_quasistatic_ogden
 from ..cells.motion import update_agents
 from ..cells.deposition import deposit_collagen
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
@@ -23,17 +24,12 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     left = torch.where(torch.isclose(nodes[:, 0], torch.tensor(0.0, device=nodes.device)))[0]
     right = torch.where(torch.isclose(nodes[:, 0], torch.tensor(Lx, device=nodes.device)))[0]
 
+    U_prev = torch.zeros(ndof, device=nodes.device, dtype=nodes.dtype)
+
     for step in range(n_steps):
         c_elem = fields.c[elems].mean(dim=1)
         g_elem = fields.g[elems].mean(dim=1)
         a_elem = fields.a[elems].mean(dim=1)
-        E_elem = element_E_from_fields(mech['E0'], c_elem, g_elem)
-
-        K = assemble_stiffness(
-            nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'],
-            a_elem=a_elem, c_elem=c_elem, kf=mech.get('kf_aniso', 0.2)
-        )
-        f = torch.zeros(ndof, device=nodes.device)
 
         ux_right = mech['stretch_x'] * Lx
         fixed_dofs = []
@@ -47,8 +43,25 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         fixed_dofs = torch.tensor(fixed_dofs, dtype=torch.long, device=nodes.device)
         fixed_vals = torch.tensor(fixed_vals, dtype=nodes.dtype, device=nodes.device)
 
-        Kbc, fbc = apply_dirichlet(K, f, fixed_dofs, fixed_vals)
-        U = solve_linear_system(Kbc, fbc)
+        model = mech.get('model', 'linear')
+        if model == 'ogden':
+            mat = {
+                'mu': mech.get('ogden_mu', 20.0),
+                'alpha': mech.get('ogden_alpha', 8.0),
+                'kappa': mech.get('ogden_kappa', 200.0),
+            }
+            U = solve_quasistatic_ogden(nodes, elems, fixed_dofs, fixed_vals, U0=U_prev, material=mat, max_iter=mech.get('nl_max_iter', 80))
+        else:
+            E_elem = element_E_from_fields(mech['E0'], c_elem, g_elem)
+            K = assemble_stiffness(
+                nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'],
+                a_elem=a_elem, c_elem=c_elem, kf=mech.get('kf_aniso', 0.2)
+            )
+            f = torch.zeros(ndof, device=nodes.device)
+            Kbc, fbc = apply_dirichlet(K, f, fixed_dofs, fixed_vals)
+            U = solve_linear_system(Kbc, fbc)
+
+        U_prev = U.detach()
 
         eps_e = element_strain(nodes, elems, U)
         energy_e = 0.5 * (eps_e ** 2).sum(dim=1)
@@ -85,9 +98,10 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'ac': fields.ac.detach().cpu(),
             'g': fields.g.detach().cpu(),
             'agents_x': agents.x.detach().cpu(),
+            'mechanics_model': model,
         })
 
         if step % 10 == 0:
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e}')
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} model={model}')
 
     return fields, agents

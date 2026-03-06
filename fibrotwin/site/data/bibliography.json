@@ -1,12 +1,26 @@
 [
   {
-    "key": "PLACEHOLDER-1",
-    "title": "Constrained mixture / growth and remodelling references to be curated",
-    "note": "Placeholder"
+    "key": "Ogden1972",
+    "citation": "Ogden RW. Large deformation isotropic elasticity\u2014on the correlation of theory and experiment for incompressible rubberlike solids. Proc. R. Soc. Lond. A (1972)."
   },
   {
-    "key": "PLACEHOLDER-2",
-    "title": "Cardiac fibrosis mechanobiology references to be curated",
-    "note": "Placeholder"
+    "key": "HolzapfelOgden2009",
+    "citation": "Holzapfel GA, Ogden RW. Constitutive modelling of passive myocardium: a structurally based framework for material characterization. Philos Trans A (2009)."
+  },
+  {
+    "key": "HumphreyRajagopal2002",
+    "citation": "Humphrey JD, Rajagopal KR. A constrained mixture model for growth and remodeling of soft tissues. Math Models Methods Appl Sci (2002)."
+  },
+  {
+    "key": "AmbrosiEtAl2011",
+    "citation": "Ambrosi D, et al. Perspectives on biological growth and remodeling. J Mech Phys Solids (2011)."
+  },
+  {
+    "key": "PathmanathanGray2014",
+    "citation": "Pathmanathan P, Gray RA. Validation and verification of computational models of cardiac electrophysiology. Interface Focus (2014)."
+  },
+  {
+    "key": "RoneyEtAl2016",
+    "citation": "Roney CH, et al. Atrial fibrosis and arrhythmia computational modelling literature (review context)."
   }
 ]
