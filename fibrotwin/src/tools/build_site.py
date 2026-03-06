@@ -157,8 +157,12 @@ def write_site(runs):
     (SITE / 'pages/numerics.html').write_text(page('Numerical Methods', f'<div class="card">{read_doc("02_numerical_methods.md")}</div>'))
     (SITE / 'pages/implementation.html').write_text(page('Implementation', '<div class="card"><h2>Architecture</h2><pre>src/main.py\nsrc/mechanics/*\nsrc/cells/*\nsrc/remodeling/*\nsrc/sim/*\nsrc/tools/build_site.py</pre><h2>Run</h2><pre>python -m src.main --config configs/mvp_2d_stretch.yaml\npython -m src.tools.build_site</pre><h2>Models currently used in code</h2><ul><li>Mechanics: compressible Ogden hyperelastic (single-term) in large-deformation mode</li><li>Growth/remodelling: constrained-mixture-inspired scalar growth proxy</li><li>Cells: persistent random walk + taxis</li><li>Collagen: Gaussian-kernel deposition + first-order degradation</li></ul><h2>Limitations</h2><ul><li>2D patch; no full 3D architecture yet</li><li>Nonlinear solve via energy minimization (no analytic tangent/Newton yet)</li><li>Literature parameters are not yet calibrated to a specific dataset</li></ul></div>'))
 
-    verification = '<ul><li>Verification: patch test, deposition symmetry, fibre convergence, sanity constraints.</li><li>Validation: plausibility trends under stretch (not calibrated to specific dataset yet).</li></ul>'
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div><div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
+    verification = '<ul><li>Verification: patch test, deposition symmetry, fibre convergence, nonlinear Dirichlet sanity constraints.</li><li>Validation: plausibility trends under stretch + profibrotic signaling interaction scenarios (portfolio script).</li></ul>'
+    portfolio_block = ''
+    vp = ROOT / 'outputs' / 'validation_portfolio.md'
+    if vp.exists():
+        portfolio_block = f'<div class="card"><h2>Validation portfolio</h2>{md_to_html(vp.read_text())}</div>'
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{portfolio_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
 
     results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))

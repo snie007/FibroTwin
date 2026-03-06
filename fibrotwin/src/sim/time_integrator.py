@@ -7,6 +7,7 @@ from ..cells.motion import update_agents
 from ..cells.deposition import deposit_collagen, update_phenotype
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
+from ..remodeling.signaling import update_profibrotic_signal
 from .io import save_snapshot, log_line
 from .viz import render_frame
 
@@ -72,14 +73,30 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             cnt[conn] += 1
         cue_node = cue_node / torch.clamp(cnt, min=1)
 
+        sig = config.get('signaling', {})
+        fields.p = update_profibrotic_signal(
+            fields.p,
+            cue_node,
+            dt,
+            tgf_beta=sig.get('tgf_beta', 0.25),
+            angII=sig.get('angII', 0.2),
+            mech_gain=sig.get('mech_gain', 1.2),
+            decay=sig.get('decay', 0.35),
+        )
+
         agents = update_agents(agents, nodes, cue_node, dt, cel, (Lx, Ly))
         agents = update_phenotype(
             agents,
             nodes,
             cue_node,
-            threshold=cel.get('myo_switch_threshold', 0.12),
-            k_switch=cel.get('myo_switch_softness', 0.05),
+            profibrotic_node=fields.p,
+            threshold=cel.get('myo_switch_threshold', 0.45),
+            k_switch=cel.get('myo_switch_softness', 0.08),
+            deact_threshold=cel.get('myo_deact_threshold', 0.20),
         )
+        idx_nn = torch.argmin(torch.cdist(agents.x, nodes), dim=1)
+        agent_p = fields.p[idx_nn]
+        agent_cue = cue_node[idx_nn]
         fields.c = deposit_collagen(
             nodes,
             fields.c,
@@ -90,6 +107,10 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             cel['dep_sigma'],
             rem['k_deg'],
             myo_boost=cel.get('myo_dep_boost', 2.0),
+            agent_p=agent_p,
+            agent_cue=agent_cue,
+            p_gain=cel.get('p_dep_gain', 1.0),
+            mech_gain=cel.get('mech_dep_gain', 0.5),
         )
 
         pdir_e = principal_direction_from_strain(eps_e)
@@ -116,6 +137,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'a': fields.a.detach().cpu(),
             'ac': fields.ac.detach().cpu(),
             'g': fields.g.detach().cpu(),
+            'p': fields.p.detach().cpu(),
             'agents_x': agents.x.detach().cpu(),
             'agents_is_myofibro': agents.is_myofibro.detach().cpu(),
             'mechanics_model': model,
@@ -126,6 +148,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             ex = torch.tensor([1.0, 0.0], device=nodes.device, dtype=nodes.dtype)
             a_align = torch.abs((fields.a * ex).sum(dim=1)).mean().item()
             ac_align = torch.abs((fields.ac * ex).sum(dim=1)).mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            p_mean = fields.p.mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents

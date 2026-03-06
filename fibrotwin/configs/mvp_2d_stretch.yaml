@@ -32,9 +32,12 @@ cells:
   taxis_weight: 0.02
   dep_rate: 0.1
   dep_sigma: 0.35
-  myo_switch_threshold: 0.12
-  myo_switch_softness: 0.05
+  myo_switch_threshold: 0.45
+  myo_switch_softness: 0.08
+  myo_deact_threshold: 0.20
   myo_dep_boost: 2.2
+  p_dep_gain: 1.0
+  mech_dep_gain: 0.5
 
 remodeling:
   tau_fibre: 20.0
@@ -42,6 +45,12 @@ remodeling:
   k_align_collagen: 0.05
   k_deg: 0.01
   k_growth: 0.01
+
+signaling:
+  tgf_beta: 0.25
+  angII: 0.20
+  mech_gain: 1.20
+  decay: 0.35
 
 viz:
   frame_every: 5
