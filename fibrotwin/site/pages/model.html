@@ -1,64 +1,54 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Model Equations</title><link rel="stylesheet" href="../assets/css/style.css"/><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head><body><header><h1>Model Equations</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h1>01 — Governing Equations (Updated)</h1>
-<h2>1) Large-deformation mechanics (Ogden myocardium)</h2>
-<p>We solve quasi-static equilibrium on (\Omega_0):
-[
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Model Equations</title><link rel="stylesheet" href="../assets/css/style.css"/><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script></head><body><header><h1>Model Equations</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><p><h1>01 — Governing Equations (Updated)</h1></p><p><h2>1) Large-deformation mechanics (Ogden myocardium)</h2>
+We solve quasi-static equilibrium on \(\Omega_0\):
+\[
 \nabla_0 \cdot \mathbf P = \mathbf 0
-]
-with displacement BCs (left edge fixed, right edge stretched).</p>
-<p>Kinematics:
-[
+\]
+with displacement BCs (left edge fixed, right edge stretched).</p><p>Kinematics:
+\[
 \mathbf F = \frac{\partial \mathbf x}{\partial \mathbf X},\quad J=\det\mathbf F,\quad \mathbf C=\mathbf F^T\mathbf F
-]</p>
-<p>For MVP large deformation, myocardium uses compressible Ogden energy (single term):
-[
+\]</p><p>For MVP large deformation, myocardium uses compressible Ogden energy (single term):
+\[
 W(\mathbf F)=\frac{\mu}{\alpha}\left(\lambda_1^{\alpha}+\lambda_2^{\alpha}+\lambda_3^{\alpha}-3\right)+\frac{\kappa}{2}(J-1)^2
-]
-with principal stretches (\lambda_i). In current 2D implementation, (\lambda_3=1) (plane-strain proxy).</p>
-<p>Total potential (no body-force term in MVP):
-[
+\]
+with principal stretches \(\lambda_i\). In current 2D implementation, \(\lambda_3=1\) (plane-strain proxy).</p><p>Total potential (no body-force term in MVP):
+\[
 \Pi(\mathbf u)=\int_{\Omega_0}W(\mathbf F(\mathbf u))\,dV
-]
-Numerical solve minimizes (\Pi) with Dirichlet constraints.</p>
-<h2>Weak form (summary)</h2>
-<p>Find (\mathbf u\in\mathcal V) such that:
-[
+\]
+Numerical solve minimizes \(\Pi\) with Dirichlet constraints.</p><p><h2>Weak form (summary)</h2>
+Find \(\mathbf u\in\mathcal V\) such that:
+\[
 \delta \Pi = \int_{\Omega_0}\mathbf P: \delta \mathbf F\,dV = 0\quad \forall\,\delta\mathbf u\in\mathcal V_0
-]
-where (\mathbf P=\partial W/\partial \mathbf F).</p>
-<h2>2) Fibre reorientation law</h2>
-<p>Let (m(x,t)) be principal direction proxy from local strain:
-[
+\]
+where \(\mathbf P=\partial W/\partial \mathbf F\).</p><p><h2>2) Fibre reorientation law</h2>
+Let \(m(x,t)\) be principal direction proxy from local strain:
+\[
 \tilde a^{n+1}=a^n + \frac{\Delta t}{\tau_a}(m^n-a^n),\qquad
-a^{n+1}=\frac{\tilde a^{n+1}}{|\tilde a^{n+1}|+\epsilon}
-]</p>
-<h2>3) Cell motion model</h2>
-<p>For agent (i):
-[
+a^{n+1}=\frac{\tilde a^{n+1}}{\|\tilde a^{n+1}\|+\epsilon}
+\]</p><p><h2>3) Cell motion model</h2>
+For agent \(i\):
+\[
 v_i^{n+1}=\rho v_i^n + (1-\rho)\eta_i^n + \chi\nabla S(x_i^n),\qquad
 x_i^{n+1}=x_i^n + \Delta t\,v_i^{n+1}
-]
-with reflective boundaries.</p>
-<h3>Phenotype switching (fibroblast (\to) myofibroblast)</h3>
-<p>Mechanocue-driven transition probability:
-[
+\]
+with reflective boundaries.</p><p><h3>Phenotype switching (fibroblast \(\to\) myofibroblast)</h3>
+Mechanocue-driven transition probability:
+\[
 P_i^{\mathrm{myo}}=\sigma\left(\frac{S(x_i)-S_0}{k_s}\right)
-]
-where (\sigma) is logistic. Once switched, cells stay in myofibroblast state in MVP.</p>
-<h2>4) Collagen deposition and degradation</h2>
-<p>[
+\]
+where \(\sigma\) is logistic. Once switched, cells stay in myofibroblast state in MVP.</p><p><h2>4) Collagen deposition and degradation</h2>
+\[
 c^{n+1}(x)=c^n(x)+\Delta t\sum_{i=1}^{N_a}k_{dep}\,\omega_i\,G_\sigma(x-x_i^n)-\Delta t\,k_{deg}c^n(x)
-]
-[
-G_\sigma(r)=\exp\left(-\frac{|r|^2}{2\sigma^2}\right),\qquad
+\]
+\[
+G_\sigma(r)=\exp\left(-\frac{\|r\|^2}{2\sigma^2}\right),\qquad
 \omega_i=\begin{cases}
-\gamma_{myo}&gt;1,&amp;\text{if myofibroblast}\
-1,&amp;\text{otherwise}
+\gamma_{myo}>1,&\text{if myofibroblast}\\
+1,&\text{otherwise}
 \end{cases}
-]</p>
-<h2>5) Mixture/growth-inspired evolution</h2>
-<p>[
+\]</p><p><h2>5) Mixture/growth-inspired evolution</h2>
+\[
 g^{n+1}=g^n+\Delta t\left(k_g c^n-k_r g^n\right),\qquad g\ge 0
-]
+\]
 This is constrained-mixture inspired (stress-free adaptation proxy), not yet a full constituent-specific turnover model.</p></div><div class="card"><h2>Pseudocode</h2><pre>for n in steps:
   solve mechanics
   compute cues

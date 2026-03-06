@@ -1,25 +1,17 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Overview</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header><h1>Overview</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h1>00 — Problem Statement</h1>
-<p>We model a 2D atrial tissue patch under over-stretch with coupled:
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Overview</title><link rel="stylesheet" href="../assets/css/style.css"/></head><body><header><h1>Overview</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="results.html">Results</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><p><h1>00 — Problem Statement</h1></p><p>We model a 2D atrial tissue patch under over-stretch with coupled:
 1. Quasi-static mechanics,
 2. Fibroblast/myofibroblast agent motion,
 3. Collagen deposition/remodelling,
-4. Fibre reorientation.</p>
-<h2>MVP goals</h2>
-<ul>
-<li>Reproduce expected mechanobiology trend: sustained stretch increases alignment and collagen accumulation.</li>
-<li>Produce reproducible simulation outputs and animation from one command.</li>
-<li>Keep architecture extensible to 3D, nonlinear constitutive laws, and richer mixture theory.</li>
-</ul>
-<h2>Domain and scales</h2>
-<ul>
-<li>Spatial: rectangular 2D patch (\Omega=[0,L_x]\times[0,L_y]).</li>
-<li>Time: macro-steps (t_n=n\Delta t).</li>
-<li>Agents: fibroblasts (points) moving on (\Omega).</li>
-<li>Fields: displacement (u), collagen density (c), myofibre direction (a), collagen preferred direction (a_c), growth proxy (g).</li>
-</ul>
-<h2>Coupling concept</h2>
-<p>At each macro step:
-1. Build material state from (c,a) and growth proxy.
+4. Fibre reorientation.</p><p><h2>MVP goals</h2>
+- Reproduce expected mechanobiology trend: sustained stretch increases alignment and collagen accumulation.
+- Produce reproducible simulation outputs and animation from one command.
+- Keep architecture extensible to 3D, nonlinear constitutive laws, and richer mixture theory.</p><p><h2>Domain and scales</h2>
+- Spatial: rectangular 2D patch \(\Omega=[0,L_x]\times[0,L_y]\).
+- Time: macro-steps \(t_n=n\Delta t\).
+- Agents: fibroblasts (points) moving on \(\Omega\).
+- Fields: displacement \(u\), collagen density \(c\), myofibre direction \(a\), collagen preferred direction \(a_c\), growth proxy \(g\).</p><p><h2>Coupling concept</h2>
+At each macro step:
+1. Build material state from \(c,a\) and growth proxy.
 2. Solve mechanics under displacement BCs.
 3. Move cells using persistent motion + taxis to mechanical cue.
 4. Deposit collagen near cell positions; degrade globally.

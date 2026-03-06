@@ -193,7 +193,14 @@ def write_site(runs):
         except Exception:
             systematic_block = ''
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div>'))
+    pubfig_block = '''<div class="card"><h2>Publication-grade validation figures</h2>
+<p>These figures summarize model generation and validation status.</p>
+<img src="../assets/img/pubfig_validation_storyline.png" alt="Validation storyline figure"/>
+<img src="../assets/img/pubfig_portfolio_collagen_signal.png" alt="Portfolio collagen and signal summary"/>
+<img src="../assets/img/pubfig_infarct_regions.png" alt="Infarct core border remote panel"/>
+<img src="../assets/img/pubfig_scorecard_by_category.png" alt="Scorecard by category"/>
+</div>'''
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}{pubfig_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
 
     results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
