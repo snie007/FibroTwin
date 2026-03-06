@@ -147,12 +147,19 @@ async function loadRuns(){
   const render=(i)=>{
     const run=r[i]; if(!run) return;
     document.getElementById('anim').innerHTML=run.animation_site?`<video controls src="../${run.animation_site}"></video>`:'<p>No animation available for this run.</p>';
-    document.getElementById('frames').innerHTML=`<div class="grid">${(run.frames_site||[]).map((f,j)=>`<figure><img alt="snapshot ${j+1}" src="../${f}"/><figcaption>Snapshot ${j+1}</figcaption></figure>`).join('')}</div>`;
+    document.getElementById('frames').innerHTML=`<div class="grid">${(run.frames_site||[]).map((f,j)=>`<figure><img alt="snapshot ${j+1}" src="../${f}"/><figcaption>Snapshot ${j+1}: spatial field state</figcaption></figure>`).join('')}</div>`;
 
     const m=run.metrics||{};
     const n=(m.step||[]).length; const last=n>0?n-1:null;
     const cLast=last!==null?m.c_mean[last]:null; const uLast=last!==null?m.max_u[last]:null; const gLast=last!==null?m.g_mean[last]:null;
-    const plots=[`../assets/img/${run.run_id}_collagen.png`,`../assets/img/${run.run_id}_max_u.png`,`../assets/img/${run.run_id}_g_mean.png`];
+    const plots=[
+      `../assets/img/${run.run_id}_collagen.png`,
+      `../assets/img/${run.run_id}_max_u.png`,
+      `../assets/img/${run.run_id}_g_mean.png`,
+      `../assets/img/${run.run_id}_alignment.png`,
+      `../assets/img/${run.run_id}_agent_paths.png`,
+      `../assets/img/${run.run_id}_montage6.png`
+    ];
     document.getElementById('metrics').innerHTML=`
       <div class="kpi">
         <div class="pill"><strong>Recorded steps</strong><br/>${n}</div>
@@ -160,7 +167,7 @@ async function loadRuns(){
         <div class="pill"><strong>Final max displacement</strong><br/>${fmt(uLast)}</div>
         <div class="pill"><strong>Final growth proxy</strong><br/>${fmt(gLast)}</div>
       </div>
-      <p>This panel summarizes the selected run in interpretable metrics (not raw vectors).</p>
+      <p><strong>Interpretation guide:</strong> collagen ↑ indicates fibrosis burden, alignment ↑ indicates reorientation toward loading, and agent paths show migration-driven deposition patterns.</p>
       <div class="grid">
         ${plots.map(p=>`<img src="${p}" onerror="this.style.display='none'"/>`).join('')}
       </div>
@@ -245,7 +252,7 @@ window.addEventListener('DOMContentLoaded',loadRuns);''')
 
     (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
 
-    results_body = '''<div class="card"><h2>How to read this page</h2><ul><li>Select a run.</li><li>Watch the animation for qualitative behavior.</li><li>Inspect snapshots for spatial interpretation.</li><li>Use KPI + trend plots for quantitative interpretation.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots</h2><div id="frames"></div></div><div class="card"><h2>Quantitative summary</h2><div id="metrics"></div></div>'''
+    results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
