@@ -5,44 +5,55 @@
       "stretch_x": 0.1,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 2.668684959411621,
-      "p_mean_final": 0.23429793119430542,
-      "myo_frac_final": 0.012500000186264515,
-      "ac_align_x_final": 0.9059789180755615,
-      "run_dir": "outputs/20260306_083731"
+      "c_mean_final": 3.8561666011810303,
+      "p_mean_final": 0.2344178557395935,
+      "myo_frac_final": 0.0,
+      "ac_align_x_final": 0.9042006134986877,
+      "run_dir": "outputs/20260306_084901"
     },
     {
       "scenario": "high_load_only",
       "stretch_x": 0.28,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 5.850717544555664,
-      "p_mean_final": 0.3074980080127716,
-      "myo_frac_final": 0.8125,
-      "ac_align_x_final": 0.9151858687400818,
-      "run_dir": "outputs/20260306_083733"
+      "c_mean_final": 8.588523864746094,
+      "p_mean_final": 0.3078480362892151,
+      "myo_frac_final": 0.800000011920929,
+      "ac_align_x_final": 0.9134675860404968,
+      "run_dir": "outputs/20260306_084903"
     },
     {
       "scenario": "high_signal_only",
       "stretch_x": 0.1,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 8.439452171325684,
-      "p_mean_final": 0.7323232889175415,
+      "c_mean_final": 12.25869369506836,
+      "p_mean_final": 0.732319176197052,
       "myo_frac_final": 1.0,
-      "ac_align_x_final": 0.9022181630134583,
-      "run_dir": "outputs/20260306_083736"
+      "ac_align_x_final": 0.9008527994155884,
+      "run_dir": "outputs/20260306_084906"
     },
     {
       "scenario": "high_load_high_signal",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 8.45188045501709,
-      "p_mean_final": 0.7422672510147095,
+      "c_mean_final": 12.376958847045898,
+      "p_mean_final": 0.7423223853111267,
       "myo_frac_final": 1.0,
-      "ac_align_x_final": 0.9124230742454529,
-      "run_dir": "outputs/20260306_083738"
+      "ac_align_x_final": 0.9120333790779114,
+      "run_dir": "outputs/20260306_084909"
+    },
+    {
+      "scenario": "infarct_high_load_high_signal",
+      "stretch_x": 0.28,
+      "tgf_beta": 0.5,
+      "angII": 0.45,
+      "c_mean_final": 12.446206092834473,
+      "p_mean_final": 0.747081458568573,
+      "myo_frac_final": 1.0,
+      "ac_align_x_final": 0.9162469506263733,
+      "run_dir": "outputs/20260306_084911"
     }
   ],
   "checks": [
@@ -59,12 +70,16 @@
       "pass": true
     },
     {
-      "check": "high_load_high_signal yields highest collagen among scenarios",
+      "check": "high_load_high_signal yields highest collagen among non-infarct scenarios",
+      "pass": true
+    },
+    {
+      "check": "infarct condition increases collagen vs non-infarct high_load_high_signal",
       "pass": true
     }
   ],
-  "n_checks_passed": 4,
-  "n_checks_total": 4,
+  "n_checks_passed": 5,
+  "n_checks_total": 5,
   "notes": [
     "These are qualitative validation checks against expected trends from fibroblast signaling + load interactions, not full quantitative calibration.",
     "Mismatch cases indicate targets for reparameterization or richer signaling network dynamics."

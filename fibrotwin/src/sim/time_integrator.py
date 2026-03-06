@@ -27,6 +27,19 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
 
     U_prev = torch.zeros(ndof, device=nodes.device, dtype=nodes.dtype)
 
+    inf = config.get('infarct', {})
+    infarct_enabled = bool(inf.get('enabled', False))
+    if infarct_enabled:
+        cx = inf.get('center_x', 0.5 * Lx)
+        cy = inf.get('center_y', 0.5 * Ly)
+        rad = inf.get('radius', 0.2 * min(Lx, Ly))
+        r = torch.sqrt((nodes[:, 0] - cx) ** 2 + (nodes[:, 1] - cy) ** 2)
+        infarct_node_mask = (r <= rad).to(nodes.dtype)
+        infarct_elem_mask = infarct_node_mask[elems].mean(dim=1)
+    else:
+        infarct_node_mask = torch.zeros(n, device=nodes.device, dtype=nodes.dtype)
+        infarct_elem_mask = torch.zeros(elems.shape[0], device=nodes.device, dtype=nodes.dtype)
+
     for step in range(n_steps):
         c_elem = fields.c[elems].mean(dim=1)
         g_elem = fields.g[elems].mean(dim=1)
@@ -54,6 +67,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             U = solve_quasistatic_ogden(nodes, elems, fixed_dofs, fixed_vals, U0=U_prev, material=mat, max_iter=mech.get('nl_max_iter', 80))
         else:
             E_elem = element_E_from_fields(mech['E0'], c_elem, g_elem)
+            if infarct_enabled:
+                soft = inf.get('softening', 0.6)
+                E_elem = E_elem * (1.0 - soft * infarct_elem_mask)
             K = assemble_stiffness(
                 nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'],
                 a_elem=a_elem, c_elem=c_elem, kf=mech.get('kf_aniso', 0.2)
@@ -72,6 +88,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             cue_node[conn] += energy_e[e]
             cnt[conn] += 1
         cue_node = cue_node / torch.clamp(cnt, min=1)
+        if infarct_enabled:
+            cue_node = cue_node + inf.get('cue_boost', 0.15) * infarct_node_mask
+            fields.p = torch.clamp(fields.p + dt * inf.get('signal_source', 0.20) * infarct_node_mask, 0.0, 1.0)
 
         sig = config.get('signaling', {})
         fields.p = update_profibrotic_signal(
@@ -112,6 +131,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             p_gain=cel.get('p_dep_gain', 1.0),
             mech_gain=cel.get('mech_dep_gain', 0.5),
             synergy_gain=cel.get('synergy_dep_gain', 0.6),
+            agent_v=agents.v,
+            trail_gain=cel.get('trail_gain', 0.4),
+            trail_len=cel.get('trail_len', 0.6),
         )
 
         pdir_e = principal_direction_from_strain(eps_e)

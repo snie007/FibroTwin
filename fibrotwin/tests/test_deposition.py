@@ -29,3 +29,13 @@ def test_myofibro_switch_and_boost():
     c = torch.zeros(2, dtype=torch.float32)
     c2 = deposit_collagen(nodes, c, agents.x, agents.is_myofibro, dt=1.0, k_dep=1.0, sigma=0.3, k_deg=0.0, myo_boost=3.0)
     assert c2[0] > c2[1]
+
+
+def test_motion_trail_deposition():
+    nodes = torch.tensor([[0.0, 0.0], [0.6, 0.0], [1.0, 0.0]], dtype=torch.float32)
+    c = torch.zeros(3, dtype=torch.float32)
+    x = torch.tensor([[1.0, 0.0]], dtype=torch.float32)
+    v = torch.tensor([[1.0, 0.0]], dtype=torch.float32)
+    is_myo = torch.tensor([False])
+    c2 = deposit_collagen(nodes, c, x, is_myo, dt=1.0, k_dep=1.0, sigma=0.15, k_deg=0.0, agent_v=v, trail_gain=0.8, trail_len=0.4)
+    assert c2[1] > c2[0]

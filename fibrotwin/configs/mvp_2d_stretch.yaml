@@ -39,6 +39,8 @@ cells:
   p_dep_gain: 1.0
   mech_dep_gain: 0.7
   synergy_dep_gain: 1.0
+  trail_gain: 0.45
+  trail_len: 0.6
 
 remodeling:
   tau_fibre: 20.0
@@ -53,6 +55,15 @@ signaling:
   angII: 0.20
   mech_gain: 1.20
   decay: 0.35
+
+infarct:
+  enabled: false
+  center_x: 5.0
+  center_y: 2.5
+  radius: 1.0
+  softening: 0.6
+  cue_boost: 0.15
+  signal_source: 0.20
 
 viz:
   frame_every: 5

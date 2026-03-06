@@ -17,6 +17,7 @@ SCENARIOS = [
     {"name": "high_load_only", "stretch_x": 0.28, "tgf_beta": 0.05, "angII": 0.05},
     {"name": "high_signal_only", "stretch_x": 0.10, "tgf_beta": 0.50, "angII": 0.45},
     {"name": "high_load_high_signal", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45},
+    {"name": "infarct_high_load_high_signal", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45, "infarct": True},
 ]
 
 
@@ -32,6 +33,7 @@ def run_one(cfg, scenario):
     local['mechanics']['stretch_x'] = scenario['stretch_x']
     local.setdefault('signaling', {})['tgf_beta'] = scenario['tgf_beta']
     local.setdefault('signaling', {})['angII'] = scenario['angII']
+    local.setdefault('infarct', {})['enabled'] = bool(scenario.get('infarct', False))
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(local['seed'])
@@ -76,9 +78,14 @@ def expected_checks(rows):
         'pass': by['high_load_only']['ac_align_x_final'] > by['baseline_low_load_low_signal']['ac_align_x_final'],
     })
     checks.append({
-        'check': 'high_load_high_signal yields highest collagen among scenarios',
-        'pass': by['high_load_high_signal']['c_mean_final'] == max(r['c_mean_final'] for r in rows),
+        'check': 'high_load_high_signal yields highest collagen among non-infarct scenarios',
+        'pass': by['high_load_high_signal']['c_mean_final'] == max(r['c_mean_final'] for r in rows if 'infarct' not in r['scenario']),
     })
+    if 'infarct_high_load_high_signal' in by:
+        checks.append({
+            'check': 'infarct condition increases collagen vs non-infarct high_load_high_signal',
+            'pass': by['infarct_high_load_high_signal']['c_mean_final'] > by['high_load_high_signal']['c_mean_final'],
+        })
     return checks
 
 

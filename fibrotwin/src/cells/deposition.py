@@ -21,9 +21,14 @@ def update_phenotype(agents, nodes, cue_node, profibrotic_node=None, threshold=0
     return agents
 
 
-def deposit_collagen(nodes, c, agent_x, agent_is_myo, dt, k_dep, sigma, k_deg, myo_boost=2.0, agent_p=None, agent_cue=None, p_gain=1.0, mech_gain=0.5, synergy_gain=0.6):
+def deposit_collagen(nodes, c, agent_x, agent_is_myo, dt, k_dep, sigma, k_deg, myo_boost=2.0, agent_p=None, agent_cue=None, p_gain=1.0, mech_gain=0.5, synergy_gain=0.6, agent_v=None, trail_gain=0.4, trail_len=0.6):
     d2 = torch.cdist(nodes, agent_x) ** 2
     kern = torch.exp(-0.5 * d2 / (sigma ** 2))
+    if agent_v is not None:
+        vhat = agent_v / (torch.norm(agent_v, dim=1, keepdim=True) + 1e-12)
+        trail_x = agent_x - trail_len * vhat
+        d2_tr = torch.cdist(nodes, trail_x) ** 2
+        kern = kern + trail_gain * torch.exp(-0.5 * d2_tr / (sigma ** 2))
 
     w = torch.ones(agent_x.shape[0], device=nodes.device)
     w = w + torch.where(agent_is_myo, torch.tensor(myo_boost, device=nodes.device), torch.tensor(0.0, device=nodes.device))
