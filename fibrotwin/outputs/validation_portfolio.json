@@ -8,8 +8,8 @@
       "c_mean_final": 3.8561666011810303,
       "p_mean_final": 0.2344178557395935,
       "myo_frac_final": 0.0,
-      "ac_align_x_final": 0.9042006731033325,
-      "run_dir": "outputs/20260306_085915"
+      "ac_align_x_final": 0.9042006134986877,
+      "run_dir": "outputs/20260306_090817"
     },
     {
       "scenario": "high_load_only",
@@ -20,18 +20,18 @@
       "p_mean_final": 0.3078480362892151,
       "myo_frac_final": 0.800000011920929,
       "ac_align_x_final": 0.9134675860404968,
-      "run_dir": "outputs/20260306_085918"
+      "run_dir": "outputs/20260306_090819"
     },
     {
       "scenario": "high_signal_only",
       "stretch_x": 0.1,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 12.258694648742676,
+      "c_mean_final": 12.25869369506836,
       "p_mean_final": 0.732319176197052,
       "myo_frac_final": 1.0,
-      "ac_align_x_final": 0.9008527994155884,
-      "run_dir": "outputs/20260306_085920"
+      "ac_align_x_final": 0.9008535146713257,
+      "run_dir": "outputs/20260306_090822"
     },
     {
       "scenario": "high_load_high_signal",
@@ -42,21 +42,21 @@
       "p_mean_final": 0.7423223853111267,
       "myo_frac_final": 1.0,
       "ac_align_x_final": 0.9120333790779114,
-      "run_dir": "outputs/20260306_085923"
+      "run_dir": "outputs/20260306_090825"
     },
     {
       "scenario": "infarct_high_load_high_signal",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 12.446208953857422,
+      "c_mean_final": 12.446203231811523,
       "p_mean_final": 0.747081458568573,
       "myo_frac_final": 1.0,
       "ac_align_x_final": 0.9162468910217285,
-      "run_dir": "outputs/20260306_085926",
-      "c_core": 28.85005760192871,
-      "c_border": 14.295079231262207,
-      "c_remote": 11.400948524475098,
+      "run_dir": "outputs/20260306_090827",
+      "c_core": 28.85004997253418,
+      "c_border": 14.295074462890625,
+      "c_remote": 11.400944709777832,
       "p_core": 0.8622021675109863,
       "p_border": 0.7414743304252625,
       "p_remote": 0.7424004673957825

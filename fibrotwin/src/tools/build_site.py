@@ -193,14 +193,28 @@ def write_site(runs):
         except Exception:
             systematic_block = ''
 
-    pubfig_block = '''<div class="card"><h2>Publication-grade validation figures</h2>
+    pubfigs = [
+        ('pubfig_validation_storyline.png', 'Validation storyline figure'),
+        ('pubfig_portfolio_collagen_signal.png', 'Portfolio collagen and signal summary'),
+        ('pubfig_infarct_regions.png', 'Infarct core border remote panel'),
+        ('pubfig_scorecard_by_category.png', 'Scorecard by category'),
+    ]
+    fig_imgs = ''.join([f"<img src='../assets/img/{f}' alt='{a}'/>" for f, a in pubfigs if (SITE / 'assets' / 'img' / f).exists()])
+    if not fig_imgs:
+        fig_imgs = '<p>Publication figures not generated yet. Run: python -m src.tools.make_publication_figures</p>'
+    pubfig_block = f'''<div class="card"><h2>Publication-grade validation figures</h2>
 <p>These figures summarize model generation and validation status.</p>
-<img src="../assets/img/pubfig_validation_storyline.png" alt="Validation storyline figure"/>
-<img src="../assets/img/pubfig_portfolio_collagen_signal.png" alt="Portfolio collagen and signal summary"/>
-<img src="../assets/img/pubfig_infarct_regions.png" alt="Infarct core border remote panel"/>
-<img src="../assets/img/pubfig_scorecard_by_category.png" alt="Scorecard by category"/>
+{fig_imgs}
 </div>'''
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}{pubfig_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
+
+    testcard_block = ''
+    card_dir = SITE / 'assets' / 'img' / 'testcards'
+    if card_dir.exists():
+        cards = sorted(card_dir.glob('T*.png'))
+        thumbs = ''.join([f"<a href='../assets/img/testcards/{c.name}'><img src='../assets/img/testcards/{c.name}' alt='{c.stem}'/></a>" for c in cards[:40]])
+        testcard_block = f"<div class='card'><h2>Per-test confirmation figures (sample)</h2><p>Showing {min(len(cards),40)} of {len(cards)} test cards. Each card includes PMID link mapping, expected behavior, and current support score.</p>{thumbs}</div>"
+
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
 
     results_body = '''<div class="card"><label>Run selector: <select id="runSelect"></select></label></div><div class="card" id="anim"></div><div class="card" id="frames"></div><div class="card" id="metrics"></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
@@ -220,14 +234,25 @@ def write_site(runs):
         {"key":"TranquilloMurray1992","citation":"Tranquillo RT, Murray JD, Maini PK. Continuum model of fibroblast-driven wound contraction: inflammation-mediation. J Theor Biol (1992). URL: https://pubmed.ncbi.nlm.nih.gov/1474841/"}
     ]
     (SITE / 'data/bibliography.json').write_text(json.dumps(refs, indent=2))
-    (SITE / 'pages/references.html').write_text(page('References', '<div class="card"><p>No validated bibliography in repo docs; placeholders listed and marked clearly.</p><pre>'+json.dumps(refs, indent=2)+'</pre></div>'))
+
+    test_refs_block = ''
+    stj2 = ROOT / 'outputs' / 'systematic_test_catalog.json'
+    if stj2.exists():
+        try:
+            st = json.loads(stj2.read_text())
+            tests = st.get('tests', [])
+            rows = ''.join([f"<tr><td>{t.get('id')}</td><td><a href='{t.get('pubmed_url')}'>{t.get('pmid')}</a></td><td>{t.get('title')}</td><td>{t.get('category')}</td><td>{t.get('model_score_0_to_3')}/3</td></tr>" for t in tests])
+            test_refs_block = f"<div class='card'><h2>Validation tests linked to PubMed evidence</h2><p>Total tests: {len(tests)}</p><table><thead><tr><th>Test ID</th><th>PMID</th><th>Evidence title</th><th>Category</th><th>Support score</th></tr></thead><tbody>{rows}</tbody></table></div>"
+        except Exception:
+            test_refs_block = ''
+
+    (SITE / 'pages/references.html').write_text(page('References', '<div class="card"><h2>Core bibliography</h2><pre>'+json.dumps(refs, indent=2)+'</pre></div>' + test_refs_block))
 
     (SITE / 'data/runs.json').write_text(json.dumps(runs, indent=2))
 
 
 def main():
-    if SITE.exists():
-        shutil.rmtree(SITE)
+    SITE.mkdir(parents=True, exist_ok=True)
     runs = discover_runs()
     copy_assets(runs)
     make_plots(runs)
