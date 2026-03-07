@@ -9,6 +9,8 @@ class FieldState:
     ac: torch.Tensor
     g: torch.Tensor
     p: torch.Tensor  # profibrotic signaling activity proxy
+    tgf: torch.Tensor
+    chemo: torch.Tensor
 
 
 def init_fields(n_nodes: int, device: torch.device, seed: int = 0) -> FieldState:
@@ -21,4 +23,6 @@ def init_fields(n_nodes: int, device: torch.device, seed: int = 0) -> FieldState
         ac=a.clone().to(device),
         g=torch.zeros(n_nodes, device=device),
         p=torch.zeros(n_nodes, device=device),
+        tgf=torch.zeros(n_nodes, device=device),
+        chemo=torch.zeros(n_nodes, device=device),
     )

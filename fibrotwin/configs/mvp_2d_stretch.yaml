@@ -56,6 +56,15 @@ signaling:
   mech_gain: 1.20
   decay: 0.35
 
+cytokines:
+  enabled: true
+  k_neighbors: 8
+  kernel_sigma: 0.7
+  D_tgf: 0.15
+  D_chemo: 0.25
+  decay_tgf: 0.08
+  decay_chemo: 0.12
+
 infarct:
   enabled: false
   center_x: 5.0

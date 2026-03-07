@@ -8,6 +8,7 @@ from ..cells.deposition import deposit_collagen, update_phenotype
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
 from ..remodeling.signaling import update_profibrotic_signal
+from ..remodeling.cytokines import build_knn_weights, update_cytokine_fields
 from .io import save_snapshot, log_line
 from .viz import render_frame
 
@@ -39,6 +40,10 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     else:
         infarct_node_mask = torch.zeros(n, device=nodes.device, dtype=nodes.dtype)
         infarct_elem_mask = torch.zeros(elems.shape[0], device=nodes.device, dtype=nodes.dtype)
+
+    cyt = config.get('cytokines', {})
+    use_cyt = bool(cyt.get('enabled', True))
+    nbr, w_knn = build_knn_weights(nodes, k=cyt.get('k_neighbors', 8), sigma=cyt.get('kernel_sigma', 0.7))
 
     for step in range(n_steps):
         c_elem = fields.c[elems].mean(dim=1)
@@ -90,15 +95,40 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         cue_node = cue_node / torch.clamp(cnt, min=1)
         if infarct_enabled:
             cue_node = cue_node + inf.get('cue_boost', 0.15) * infarct_node_mask
-            fields.p = torch.clamp(fields.p + dt * inf.get('signal_source', 0.20) * infarct_node_mask, 0.0, 1.0)
 
         sig = config.get('signaling', {})
+
+        if use_cyt:
+            src_tgf = sig.get('tgf_beta', 0.25) * torch.ones_like(cue_node)
+            src_chemo = (0.2 * cue_node)
+            if infarct_enabled:
+                src_tgf = src_tgf + inf.get('signal_source', 0.20) * infarct_node_mask
+                src_chemo = src_chemo + 0.4 * inf.get('signal_source', 0.20) * infarct_node_mask
+            fields.tgf, fields.chemo = update_cytokine_fields(
+                fields.tgf,
+                fields.chemo,
+                dt,
+                nbr,
+                w_knn,
+                src_tgf_node=src_tgf,
+                src_chemo_node=src_chemo,
+                D_tgf=cyt.get('D_tgf', 0.15),
+                D_chemo=cyt.get('D_chemo', 0.25),
+                decay_tgf=cyt.get('decay_tgf', 0.08),
+                decay_chemo=cyt.get('decay_chemo', 0.12),
+            )
+            tgf_eff = fields.tgf
+            ang_eff = sig.get('angII', 0.2) + 0.3 * fields.chemo
+        else:
+            tgf_eff = sig.get('tgf_beta', 0.25)
+            ang_eff = sig.get('angII', 0.2)
+
         fields.p = update_profibrotic_signal(
             fields.p,
             cue_node,
             dt,
-            tgf_beta=sig.get('tgf_beta', 0.25),
-            angII=sig.get('angII', 0.2),
+            tgf_beta=tgf_eff,
+            angII=ang_eff,
             mech_gain=sig.get('mech_gain', 1.2),
             decay=sig.get('decay', 0.35),
         )
@@ -163,6 +193,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'ac': fields.ac.detach().cpu(),
             'g': fields.g.detach().cpu(),
             'p': fields.p.detach().cpu(),
+            'tgf': fields.tgf.detach().cpu(),
+            'chemo': fields.chemo.detach().cpu(),
             'agents_x': agents.x.detach().cpu(),
             'agents_is_myofibro': agents.is_myofibro.detach().cpu(),
             'mechanics_model': model,
@@ -174,6 +206,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             a_align = torch.abs((fields.a * ex).sum(dim=1)).mean().item()
             ac_align = torch.abs((fields.ac * ex).sum(dim=1)).mean().item()
             p_mean = fields.p.mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            tgf_mean = fields.tgf.mean().item()
+            chemo_mean = fields.chemo.mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents
