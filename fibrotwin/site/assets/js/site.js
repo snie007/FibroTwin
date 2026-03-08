@@ -20,6 +20,52 @@ async function loadRuns(){
   sel.onchange=()=>render(sel.value); render(0);
 }
 
+function initTowerWebGL(labels){
+  const canvas=document.getElementById('towerCanvas'); if(!canvas || !window.THREE) return null;
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+  renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(45, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
+  camera.position.set(0, 2.2, 7.4);
+  const light=new THREE.DirectionalLight(0xffffff,1.0); light.position.set(3,5,6); scene.add(light);
+  scene.add(new THREE.AmbientLight(0x8aa4ff,0.45));
+
+  const mats=[]; const boxes=[];
+  labels.forEach((label,i)=>{
+    const color=[0x38527d,0x3f5d87,0x496a94,0x5277a3,0x5d86b5,0x6c95c2][i%6];
+    const g=new THREE.BoxGeometry(4.2,0.45,2.8);
+    const m=new THREE.MeshStandardMaterial({color,metalness:0.25,roughness:0.55});
+    const b=new THREE.Mesh(g,m);
+    b.position.set(0,i*0.5,0);
+    b.userData={index:i,label,baseX:0,baseY:i*0.5};
+    scene.add(b); boxes.push(b); mats.push(m);
+  });
+
+  const ray=new THREE.Raycaster(); const mouse=new THREE.Vector2();
+  let active=-1;
+  canvas.addEventListener('click',(ev)=>{
+    const r=canvas.getBoundingClientRect();
+    mouse.x=((ev.clientX-r.left)/r.width)*2-1; mouse.y=-((ev.clientY-r.top)/r.height)*2+1;
+    ray.setFromCamera(mouse,camera); const hit=ray.intersectObjects(boxes)[0];
+    if(!hit) return; const idx=hit.object.userData.index; active=(active===idx)?-1:idx;
+  });
+
+  function animate(){
+    requestAnimationFrame(animate);
+    boxes.forEach((b,i)=>{
+      const targetX=(i===active)?3.2:0.0;
+      b.position.x += 0.12*(targetX-b.position.x);
+      const targetY=b.userData.baseY + (i===active?0.12:0);
+      b.position.y += 0.12*(targetY-b.position.y);
+      b.rotation.y += 0.01*(i===active?1:0);
+    });
+    scene.rotation.y=0.15;
+    renderer.render(scene,camera);
+  }
+  animate();
+  return {setActive:(i)=>{active=i;}};
+}
+
 async function loadInteractiveLab(){
   const runs=await getRuns();
   const sel=document.getElementById('labRunSelect'); if(!sel) return;
@@ -27,9 +73,10 @@ async function loadInteractiveLab(){
   const stack=document.getElementById('sheetStack');
   const viewer=document.getElementById('labViewer');
   const comp=document.getElementById('labCompare');
-  const sheets=['Displacement U','Collagen c','Fibre orientation a/ac','Fibroblast paths','Signaling nodes'];
-  stack.innerHTML=sheets.map((s,i)=>`<div class="sheet" data-i="${i}" style="transform:translateY(${i*8}px) translateZ(${-i*8}px)">${s}</div>`).join('');
-  stack.querySelectorAll('.sheet').forEach(el=>el.onclick=()=>{el.classList.toggle('expanded');});
+  const sheets=['Displacement U','Collagen c','Fibre orientation a/ac','Fibroblast paths','Signaling nodes','Infarct states'];
+  stack.innerHTML=sheets.map((s,i)=>`<div class="sheet" data-i="${i}" style="transform:translateY(${i*10}px) translateZ(${-i*18}px) rotateX(2deg)">${s}</div>`).join('');
+  stack.querySelectorAll('.sheet').forEach(el=>el.onclick=()=>{stack.querySelectorAll('.sheet').forEach(x=>x.classList.remove('expanded'));el.classList.add('expanded'); if(window._towerApi){window._towerApi.setActive(Number(el.dataset.i));}});
+  window._towerApi = initTowerWebGL(sheets);
 
   const render=(i)=>{
     const run=runs[i]; if(!run) return;

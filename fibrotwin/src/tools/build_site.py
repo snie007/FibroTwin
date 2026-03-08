@@ -137,7 +137,7 @@ def write_site(runs):
     (SITE / 'pages').mkdir(parents=True, exist_ok=True)
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
 
-    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1000px;min-height:300px;display:flex;align-items:center;justify-content:center}.sheet-stack{position:relative;width:320px;height:220px}.sheet{position:absolute;left:0;top:0;width:320px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .35s ease;box-shadow:0 8px 20px rgba(0,0,0,.35)}.sheet.expanded{transform:translateX(340px) scale(1.03)!important;z-index:99!important}.legend{font-size:.9em;opacity:.9}''')
+    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1200px;min-height:360px;display:flex;align-items:center;justify-content:center;background:#101722;border-radius:12px}.sheet-stack{position:relative;width:380px;height:280px;transform-style:preserve-3d}.sheet{position:absolute;left:30px;top:20px;width:320px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 8px 20px rgba(0,0,0,.35)}.sheet.expanded{transform:translateX(360px) scale(1.04)!important;z-index:120!important;box-shadow:0 12px 36px rgba(0,0,0,.55)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:760px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
 
     (SITE / 'assets/js/site.js').write_text('''function fmt(v){return (v===null||v===undefined)?'NA':(typeof v==='number'?v.toFixed(4):String(v));}
 function parseStretch(cfg){const m=(cfg||'').match(/stretch_x:\\s*([0-9.]+)/);return m?Number(m[1]):null;}
@@ -161,6 +161,52 @@ async function loadRuns(){
   sel.onchange=()=>render(sel.value); render(0);
 }
 
+function initTowerWebGL(labels){
+  const canvas=document.getElementById('towerCanvas'); if(!canvas || !window.THREE) return null;
+  const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+  renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
+  const scene=new THREE.Scene();
+  const camera=new THREE.PerspectiveCamera(45, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
+  camera.position.set(0, 2.2, 7.4);
+  const light=new THREE.DirectionalLight(0xffffff,1.0); light.position.set(3,5,6); scene.add(light);
+  scene.add(new THREE.AmbientLight(0x8aa4ff,0.45));
+
+  const mats=[]; const boxes=[];
+  labels.forEach((label,i)=>{
+    const color=[0x38527d,0x3f5d87,0x496a94,0x5277a3,0x5d86b5,0x6c95c2][i%6];
+    const g=new THREE.BoxGeometry(4.2,0.45,2.8);
+    const m=new THREE.MeshStandardMaterial({color,metalness:0.25,roughness:0.55});
+    const b=new THREE.Mesh(g,m);
+    b.position.set(0,i*0.5,0);
+    b.userData={index:i,label,baseX:0,baseY:i*0.5};
+    scene.add(b); boxes.push(b); mats.push(m);
+  });
+
+  const ray=new THREE.Raycaster(); const mouse=new THREE.Vector2();
+  let active=-1;
+  canvas.addEventListener('click',(ev)=>{
+    const r=canvas.getBoundingClientRect();
+    mouse.x=((ev.clientX-r.left)/r.width)*2-1; mouse.y=-((ev.clientY-r.top)/r.height)*2+1;
+    ray.setFromCamera(mouse,camera); const hit=ray.intersectObjects(boxes)[0];
+    if(!hit) return; const idx=hit.object.userData.index; active=(active===idx)?-1:idx;
+  });
+
+  function animate(){
+    requestAnimationFrame(animate);
+    boxes.forEach((b,i)=>{
+      const targetX=(i===active)?3.2:0.0;
+      b.position.x += 0.12*(targetX-b.position.x);
+      const targetY=b.userData.baseY + (i===active?0.12:0);
+      b.position.y += 0.12*(targetY-b.position.y);
+      b.rotation.y += 0.01*(i===active?1:0);
+    });
+    scene.rotation.y=0.15;
+    renderer.render(scene,camera);
+  }
+  animate();
+  return {setActive:(i)=>{active=i;}};
+}
+
 async function loadInteractiveLab(){
   const runs=await getRuns();
   const sel=document.getElementById('labRunSelect'); if(!sel) return;
@@ -168,9 +214,10 @@ async function loadInteractiveLab(){
   const stack=document.getElementById('sheetStack');
   const viewer=document.getElementById('labViewer');
   const comp=document.getElementById('labCompare');
-  const sheets=['Displacement U','Collagen c','Fibre orientation a/ac','Fibroblast paths','Signaling nodes'];
-  stack.innerHTML=sheets.map((s,i)=>`<div class="sheet" data-i="${i}" style="transform:translateY(${i*8}px) translateZ(${-i*8}px)">${s}</div>`).join('');
-  stack.querySelectorAll('.sheet').forEach(el=>el.onclick=()=>{el.classList.toggle('expanded');});
+  const sheets=['Displacement U','Collagen c','Fibre orientation a/ac','Fibroblast paths','Signaling nodes','Infarct states'];
+  stack.innerHTML=sheets.map((s,i)=>`<div class="sheet" data-i="${i}" style="transform:translateY(${i*10}px) translateZ(${-i*18}px) rotateX(2deg)">${s}</div>`).join('');
+  stack.querySelectorAll('.sheet').forEach(el=>el.onclick=()=>{stack.querySelectorAll('.sheet').forEach(x=>x.classList.remove('expanded'));el.classList.add('expanded'); if(window._towerApi){window._towerApi.setActive(Number(el.dataset.i));}});
+  window._towerApi = initTowerWebGL(sheets);
 
   const render=(i)=>{
     const run=runs[i]; if(!run) return;
@@ -266,8 +313,9 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
-    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Click a sheet to pull it out of the stack. Use run selector to compare simulations and boundary conditions.</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><div id="sheetStack" class="sheet-stack"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
-    (SITE / 'pages/interactive_lab.html').write_text(page('Interactive Lab', interactive_body))
+    interactive_head = '<script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>'
+    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Tower view: each layer is a model state variable. Click a layer to pop it out.</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><canvas id="towerCanvas"></canvas></div><div class="card stack-wrap"><div id="sheetStack" class="sheet-stack"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
+    (SITE / 'pages/interactive_lab.html').write_text(page('Interactive Lab', interactive_body, interactive_head))
 
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
 
