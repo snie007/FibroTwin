@@ -355,7 +355,20 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if uqmd.exists():
         uq_block = f'<div class="card"><h2>Uncertainty quantification summary</h2>{md_to_html(uqmd.read_text())}</div>'
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{infarct_block}{portfolio_block}{uq_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
+    valcard_block = ''
+    vcj = ROOT / 'outputs' / 'validation_card.json'
+    if vcj.exists():
+        try:
+            vc = json.loads(vcj.read_text())
+            rows = ''.join([
+                f"<tr><td>{t.get('id')}</td><td>{t.get('domain')}</td><td>{t.get('measurement')}</td><td>{t.get('scenario')}</td><td>{t.get('model_value')}</td><td>{t.get('experimental_band')}</td><td>{'PASS' if t.get('pass') else 'FAIL'}</td><td><a href='https://pubmed.ncbi.nlm.nih.gov/{t.get('pmid_hint')}/'>{t.get('pmid_hint')}</a></td></tr>"
+                for t in vc.get('tests', [])
+            ])
+            valcard_block = f"<div class='card'><h2>Validation card: model vs experimental bands</h2><p><strong>Pass rate:</strong> {vc.get('n_pass')}/{vc.get('n_tests')} ({vc.get('pass_rate',0):.2f})</p><table><thead><tr><th>ID</th><th>Domain</th><th>Measurement</th><th>Scenario</th><th>Model value</th><th>Experimental band</th><th>Status</th><th>PMID</th></tr></thead><tbody>{rows}</tbody></table><p class='legend'>This card directly compares predicted outputs against literature-informed benchmark bands.</p></div>"
+        except Exception:
+            valcard_block = ''
+
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{uq_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
