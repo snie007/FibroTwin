@@ -32,7 +32,7 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(50, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0.0, 6.8, 12.8);
+  camera.position.set(0.0, 7.2, 18.0);
 
   const key=new THREE.DirectionalLight(0xffffff,0.95); key.position.set(4,6,4); scene.add(key);
   const fill=new THREE.DirectionalLight(0xbfd4ff,0.55); fill.position.set(-4,3,2); scene.add(fill);
@@ -40,7 +40,7 @@ function initTowerWebGL(labels, textureMap){
   scene.add(new THREE.AmbientLight(0xc5d6ea,0.62));
 
   // Stable visual stack: six overlapping square slabs (layer placeholders)
-  const geo=new THREE.BoxGeometry(3.3,0.08,3.3);
+  const geo=new THREE.BoxGeometry(9.9,0.08,9.9);
   const topColors=[0x5d7ea8,0x6d8db3,0x7d9dc0,0x8cabc8,0x9ab8d0,0xa7c3d8];
   const side=new THREE.MeshStandardMaterial({color:0x5f728d,metalness:0.12,roughness:0.88});
 
@@ -48,7 +48,7 @@ function initTowerWebGL(labels, textureMap){
   for(let i=0;i<6;i++){
     const top=new THREE.MeshStandardMaterial({color:topColors[i],metalness:0.06,roughness:0.86});
     const slab=new THREE.Mesh(geo,[side,side,top,side,top,side]);
-    slab.position.set(0.14*i,1.55+0.92*i,-0.10*i); // raised stack + slight stair offset for top visibility
+    slab.position.set(0.14*i,1.55+0.92*i,-3.0-0.10*i); // moved back + large slabs
     slab.rotation.y=0.785;
     slab.rotation.x=-0.22;
     scene.add(slab);
