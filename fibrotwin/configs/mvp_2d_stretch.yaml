@@ -103,3 +103,5 @@ viz:
   x_margin: 0.5
   y_margin: 0.5
   collagen_cmax: 18.0
+  xlim_fixed: [-0.8, 16.5]
+  ylim_fixed: [-2.2, 7.2]

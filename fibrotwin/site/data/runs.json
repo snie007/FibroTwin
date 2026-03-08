@@ -1,8 +1,8 @@
 [
   {
-    "run_id": "20260308_080514",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_080514",
-    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: true\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  y_margin: 0.5\n",
+    "run_id": "20260308_160157",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_160157",
+    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: true\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  xlim_fixed:\n  - -0.8\n  - 16.5\n  y_margin: 0.5\n  ylim_fixed:\n  - -2.2\n  - 7.2\n",
     "metrics": {
       "step": [
         0,
@@ -163,7 +163,7 @@
         32.641,
         33.083,
         33.517,
-        33.939,
+        33.94,
         34.36
       ],
       "g_mean": [
@@ -227,18 +227,18 @@
       "frame_0260.png",
       "frame_0515.png"
     ],
-    "timestamp": "20260308_080514",
-    "animation_site": "assets/video/20260308_080514_animation.gif",
+    "timestamp": "20260308_160157",
+    "animation_site": "assets/video/20260308_160157_animation.gif",
     "frames_site": [
-      "assets/img/20260308_080514_frame_0000.png",
-      "assets/img/20260308_080514_frame_0260.png",
-      "assets/img/20260308_080514_frame_0515.png"
+      "assets/img/20260308_160157_frame_0000.png",
+      "assets/img/20260308_160157_frame_0260.png",
+      "assets/img/20260308_160157_frame_0515.png"
     ]
   },
   {
-    "run_id": "20260308_080358",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_080358",
-    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  y_margin: 0.5\n",
+    "run_id": "20260308_160041",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_160041",
+    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  xlim_fixed:\n  - -0.8\n  - 16.5\n  y_margin: 0.5\n  ylim_fixed:\n  - -2.2\n  - 7.2\n",
     "metrics": {
       "step": [
         0,
@@ -379,28 +379,28 @@
         22.073,
         22.68,
         23.274,
-        23.854,
+        23.853,
         24.437,
         25.016,
-        25.58,
+        25.579,
         26.137,
-        26.689,
-        27.228,
-        27.748,
-        28.257,
-        28.762,
-        29.25,
-        29.734,
-        30.216,
-        30.686,
-        31.156,
-        31.627,
-        32.101,
-        32.567,
-        33.028,
-        33.479,
-        33.906,
-        34.32
+        26.688,
+        27.227,
+        27.747,
+        28.255,
+        28.761,
+        29.248,
+        29.732,
+        30.213,
+        30.683,
+        31.154,
+        31.624,
+        32.098,
+        32.564,
+        33.025,
+        33.476,
+        33.903,
+        34.317
       ],
       "g_mean": [
         null,
@@ -463,18 +463,18 @@
       "frame_0260.png",
       "frame_0515.png"
     ],
-    "timestamp": "20260308_080358",
-    "animation_site": "assets/video/20260308_080358_animation.gif",
+    "timestamp": "20260308_160041",
+    "animation_site": "assets/video/20260308_160041_animation.gif",
     "frames_site": [
-      "assets/img/20260308_080358_frame_0000.png",
-      "assets/img/20260308_080358_frame_0260.png",
-      "assets/img/20260308_080358_frame_0515.png"
+      "assets/img/20260308_160041_frame_0000.png",
+      "assets/img/20260308_160041_frame_0260.png",
+      "assets/img/20260308_160041_frame_0515.png"
     ]
   },
   {
-    "run_id": "20260308_080242",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_080242",
-    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.1\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  y_margin: 0.5\n",
+    "run_id": "20260308_155924",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_155924",
+    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.1\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.45\n  tgf_beta: 0.5\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  xlim_fixed:\n  - -0.8\n  - 16.5\n  y_margin: 0.5\n  ylim_fixed:\n  - -2.2\n  - 7.2\n",
     "metrics": {
       "step": [
         0,
@@ -699,18 +699,18 @@
       "frame_0260.png",
       "frame_0515.png"
     ],
-    "timestamp": "20260308_080242",
-    "animation_site": "assets/video/20260308_080242_animation.gif",
+    "timestamp": "20260308_155924",
+    "animation_site": "assets/video/20260308_155924_animation.gif",
     "frames_site": [
-      "assets/img/20260308_080242_frame_0000.png",
-      "assets/img/20260308_080242_frame_0260.png",
-      "assets/img/20260308_080242_frame_0515.png"
+      "assets/img/20260308_155924_frame_0000.png",
+      "assets/img/20260308_155924_frame_0260.png",
+      "assets/img/20260308_155924_frame_0515.png"
     ]
   },
   {
-    "run_id": "20260308_080125",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_080125",
-    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.05\n  tgf_beta: 0.05\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  y_margin: 0.5\n",
+    "run_id": "20260308_155808",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_155808",
+    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.28\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.05\n  tgf_beta: 0.05\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  xlim_fixed:\n  - -0.8\n  - 16.5\n  y_margin: 0.5\n  ylim_fixed:\n  - -2.2\n  - 7.2\n",
     "metrics": {
       "step": [
         0,
@@ -857,7 +857,7 @@
         23.212,
         23.767,
         24.317,
-        24.866,
+        24.865,
         25.382,
         25.895,
         26.403,
@@ -935,18 +935,18 @@
       "frame_0260.png",
       "frame_0515.png"
     ],
-    "timestamp": "20260308_080125",
-    "animation_site": "assets/video/20260308_080125_animation.gif",
+    "timestamp": "20260308_155808",
+    "animation_site": "assets/video/20260308_155808_animation.gif",
     "frames_site": [
-      "assets/img/20260308_080125_frame_0000.png",
-      "assets/img/20260308_080125_frame_0260.png",
-      "assets/img/20260308_080125_frame_0515.png"
+      "assets/img/20260308_155808_frame_0000.png",
+      "assets/img/20260308_155808_frame_0260.png",
+      "assets/img/20260308_155808_frame_0515.png"
     ]
   },
   {
-    "run_id": "20260308_080008",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_080008",
-    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.1\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.05\n  tgf_beta: 0.05\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  y_margin: 0.5\n",
+    "run_id": "20260308_155652",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260308_155652",
+    "config": "cells:\n  dep_rate: 0.1\n  dep_sigma: 0.35\n  mech_dep_gain: 0.7\n  myo_deact_threshold: 0.2\n  myo_dep_boost: 2.2\n  myo_switch_softness: 0.08\n  myo_switch_threshold: 0.45\n  n_agents: 80\n  noise_std: 0.08\n  p_dep_gain: 1.0\n  persistence: 0.9\n  speed: 0.05\n  synergy_dep_gain: 1.0\n  taxis_weight: 0.02\n  trail_gain: 0.45\n  trail_len: 0.6\ncollagen_mixture:\n  enabled: true\n  k_deg_mature: 0.008\n  k_deg_young: 0.02\n  k_maturation: 0.06\ncytokines:\n  D_chemo: 0.25\n  D_tgf: 0.15\n  decay_chemo: 0.12\n  decay_tgf: 0.08\n  enabled: true\n  k_neighbors: 8\n  kernel_sigma: 0.7\ndevice: auto\ninfarct:\n  center_x: 5.0\n  center_y: 2.5\n  collagen_source: 0.03\n  cue_boost: 0.2\n  enabled: false\n  k_infl_resolve: 0.05\n  k_infl_to_prov: 0.12\n  k_prov_resolve: 0.03\n  k_prov_to_scar: 0.06\n  radius: 1.0\n  signal_source: 0.3\n  softening: 0.6\nmechanics:\n  E0: 50.0\n  kf_aniso: 0.25\n  model: linear\n  nl_max_iter: 60\n  nu: 0.3\n  ogden_alpha: 8.0\n  ogden_kappa: 220.0\n  ogden_mu: 22.0\n  plane_stress: true\n  stretch_x: 0.1\nmesh:\n  Lx: 10.0\n  Ly: 5.0\n  nx: 30\n  ny: 15\noutput_root: outputs\nremodeling:\n  k_align_collagen: 0.05\n  k_deg: 0.01\n  k_growth: 0.01\n  mech_align_gain: 2.0\n  tau_collagen: 14.0\n  tau_fibre: 20.0\nseed: 42\nsignaling:\n  angII: 0.05\n  tgf_beta: 0.05\nsignaling_network:\n  d_can: 0.5\n  d_erk: 0.5\n  d_ros: 0.45\n  d_smad: 0.4\n  k_ang_erk: 1.0\n  k_mech_can: 0.8\n  k_mech_ros: 1.0\n  k_ros_smad: 0.3\n  k_smad_autocrine: 0.2\n  k_tgf_smad: 1.2\ntime:\n  dt: 0.2\n  n_steps: 520\nviz:\n  collagen_cmax: 18.0\n  dpi: 120\n  fps: 20\n  frame_every: 5\n  quiver_stride: 3\n  x_margin: 0.5\n  xlim_fixed:\n  - -0.8\n  - 16.5\n  y_margin: 0.5\n  ylim_fixed:\n  - -2.2\n  - 7.2\n",
     "metrics": {
       "step": [
         0,
@@ -1171,12 +1171,12 @@
       "frame_0260.png",
       "frame_0515.png"
     ],
-    "timestamp": "20260308_080008",
-    "animation_site": "assets/video/20260308_080008_animation.gif",
+    "timestamp": "20260308_155652",
+    "animation_site": "assets/video/20260308_155652_animation.gif",
     "frames_site": [
-      "assets/img/20260308_080008_frame_0000.png",
-      "assets/img/20260308_080008_frame_0260.png",
-      "assets/img/20260308_080008_frame_0515.png"
+      "assets/img/20260308_155652_frame_0000.png",
+      "assets/img/20260308_155652_frame_0260.png",
+      "assets/img/20260308_155652_frame_0515.png"
     ]
   }
 ]

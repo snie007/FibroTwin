@@ -56,9 +56,11 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     viz_cfg = config.get('viz', {})
     x_margin = viz_cfg.get('x_margin', 0.5)
     y_margin = viz_cfg.get('y_margin', 0.5)
-    xlim_fixed = (-x_margin, Lx * (1.0 + mech.get('stretch_x', 0.0)) + x_margin)
-    ylim_fixed = (-y_margin, Ly + y_margin)
-    cmax_fixed = viz_cfg.get('collagen_cmax', 15.0)
+    stretch = float(mech.get('stretch_x', 0.0))
+    # Conservative global limits (fixed for ALL frames): keep model in view even at late steps
+    xlim_fixed = tuple(viz_cfg.get('xlim_fixed', [-x_margin, Lx * (1.0 + 1.8 * max(stretch, 0.0)) + 1.5]))
+    ylim_fixed = tuple(viz_cfg.get('ylim_fixed', [-Ly * 0.35 - y_margin, Ly * 1.35 + y_margin]))
+    cmax_fixed = viz_cfg.get('collagen_cmax', 18.0)
 
     for step in range(n_steps):
         if infarct_enabled:
