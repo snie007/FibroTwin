@@ -1,0 +1,101 @@
+{
+  "n_samples": 10,
+  "scenario_uncertainty": {
+    "baseline_low_load_low_signal": {
+      "c_mean_final": {
+        "q05": 7.691389155387879,
+        "q50": 7.90434193611145,
+        "q95": 8.642228937149047
+      },
+      "p_mean_final": {
+        "q05": 0.38593163043260575,
+        "q50": 0.38593481481075287,
+        "q95": 0.3859461545944214
+      },
+      "ac_align_x_final": {
+        "q05": 0.9038994967937469,
+        "q50": 0.9041003882884979,
+        "q95": 0.9042244732379914
+      }
+    },
+    "high_load_only": {
+      "c_mean_final": {
+        "q05": 8.39315390586853,
+        "q50": 8.62312936782837,
+        "q95": 9.465382957458496
+      },
+      "p_mean_final": {
+        "q05": 0.41572523564100267,
+        "q50": 0.41574619710445404,
+        "q95": 0.41581517904996873
+      },
+      "ac_align_x_final": {
+        "q05": 0.9126688271760941,
+        "q50": 0.913736879825592,
+        "q95": 0.9144471496343612
+      }
+    },
+    "high_signal_only": {
+      "c_mean_final": {
+        "q05": 9.965216302871704,
+        "q50": 10.288026809692383,
+        "q95": 11.383584880828858
+      },
+      "p_mean_final": {
+        "q05": 0.5233254551887512,
+        "q50": 0.5233281552791595,
+        "q95": 0.5233376681804657
+      },
+      "ac_align_x_final": {
+        "q05": 0.9014986664056778,
+        "q50": 0.9016928672790527,
+        "q95": 0.9018214553594589
+      }
+    },
+    "high_load_high_signal": {
+      "c_mean_final": {
+        "q05": 10.111852836608886,
+        "q50": 10.42745304107666,
+        "q95": 11.556031227111816
+      },
+      "p_mean_final": {
+        "q05": 0.5444785833358765,
+        "q50": 0.5444968938827515,
+        "q95": 0.5445572942495346
+      },
+      "ac_align_x_final": {
+        "q05": 0.9107871204614639,
+        "q50": 0.9118477702140808,
+        "q95": 0.9125731706619262
+      }
+    },
+    "infarct_high_load_high_signal": {
+      "c_mean_final": {
+        "q05": 10.101668691635131,
+        "q50": 10.414599418640137,
+        "q95": 11.536127090454102
+      },
+      "p_mean_final": {
+        "q05": 0.5447587043046951,
+        "q50": 0.5447757840156555,
+        "q95": 0.5448324769735337
+      },
+      "ac_align_x_final": {
+        "q05": 0.9116732805967331,
+        "q50": 0.9127569496631622,
+        "q95": 0.9136302649974823
+      }
+    }
+  },
+  "check_pass_probability": {
+    "high_signal_only has higher profibrotic signal than baseline": 1.0,
+    "high_signal_only has higher myofibroblast fraction than baseline": 1.0,
+    "high_load_only increases fibre alignment vs baseline": 1.0,
+    "high_load_high_signal yields highest collagen among non-infarct scenarios": 1.0,
+    "infarct condition increases collagen vs non-infarct high_load_high_signal": 0.0
+  },
+  "notes": [
+    "Monte Carlo UQ over selected model parameters around calibrated baseline.",
+    "q05/q50/q95 summarize uncertainty bands for key outcomes."
+  ]
+}
