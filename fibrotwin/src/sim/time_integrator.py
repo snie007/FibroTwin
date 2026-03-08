@@ -185,6 +185,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             trail_gain=cel.get('trail_gain', 0.4),
             trail_len=cel.get('trail_len', 0.6),
         )
+        if infarct_enabled:
+            dep_source = dep_source + inf.get('collagen_source', 0.03) * (0.7 * fields.infl + 0.6 * fields.prov + 0.4 * fields.scar)
         mix = config.get('collagen_mixture', {})
         if mix.get('enabled', True):
             fields.c_young, fields.c_mature, fields.c = update_collagen_cohorts(

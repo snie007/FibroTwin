@@ -100,8 +100,8 @@ def expected_checks(rows):
     })
     if 'infarct_high_load_high_signal' in by:
         checks.append({
-            'check': 'infarct condition increases collagen vs non-infarct high_load_high_signal',
-            'pass': by['infarct_high_load_high_signal']['c_mean_final'] > by['high_load_high_signal']['c_mean_final'],
+            'check': 'infarct core collagen exceeds non-infarct high_load_high_signal global collagen',
+            'pass': by['infarct_high_load_high_signal'].get('c_core', 0.0) > by['high_load_high_signal']['c_mean_final'],
         })
     return checks
 

@@ -87,12 +87,13 @@ infarct:
   center_y: 2.5
   radius: 1.0
   softening: 0.6
-  cue_boost: 0.15
-  signal_source: 0.20
+  cue_boost: 0.20
+  signal_source: 0.30
   k_infl_to_prov: 0.12
   k_prov_to_scar: 0.06
   k_infl_resolve: 0.05
   k_prov_resolve: 0.03
+  collagen_source: 0.03
 
 viz:
   frame_every: 5

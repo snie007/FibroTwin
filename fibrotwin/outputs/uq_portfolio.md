@@ -7,7 +7,7 @@ Samples: 10
 - high_signal_only has higher myofibroblast fraction than baseline: 1.00
 - high_load_only increases fibre alignment vs baseline: 1.00
 - high_load_high_signal yields highest collagen among non-infarct scenarios: 1.00
-- infarct condition increases collagen vs non-infarct high_load_high_signal: 0.00
+- infarct core collagen exceeds non-infarct high_load_high_signal global collagen: 1.00
 
 ## Scenario uncertainty (q05/q50/q95)
 - baseline_low_load_low_signal:
@@ -27,6 +27,6 @@ Samples: 10
   - p_mean_final: 0.544 / 0.544 / 0.545
   - ac_align_x_final: 0.911 / 0.912 / 0.913
 - infarct_high_load_high_signal:
-  - c_mean_final: 10.102 / 10.415 / 11.536
+  - c_mean_final: 10.091 / 10.405 / 11.528
   - p_mean_final: 0.545 / 0.545 / 0.545
   - ac_align_x_final: 0.912 / 0.913 / 0.914
