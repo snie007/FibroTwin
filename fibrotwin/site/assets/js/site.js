@@ -31,13 +31,13 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(52, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(-2.8, 2.6, 8.2);
+  camera.position.set(0.0, 2.9, 8.0);
   const key=new THREE.DirectionalLight(0xffffff,1.1); key.position.set(4,6,5); scene.add(key);
   scene.add(new THREE.AmbientLight(0x99aacc,0.42));
 
   const loader = new THREE.TextureLoader();
   const boxes=[];
-  const layerGap = 0.22;
+  const layerGap = 0.18;
 
   function labelTexture(text){
     const c=document.createElement('canvas'); c.width=512; c.height=512;
@@ -51,7 +51,7 @@ function initTowerWebGL(labels, textureMap){
 
   labels.forEach((label,i)=>{
     const color=[0x2b3d5e,0x334a70,0x3a557f,0x42618e,0x4d6ea0,0x587cb3][i%6];
-    const g=new THREE.BoxGeometry(3.2,0.12,3.2); // square, thin slab
+    const g=new THREE.BoxGeometry(3.4,0.08,3.4); // square, very thin slab
     const texPath = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
     let tex = null;
     if(texPath){
@@ -66,7 +66,7 @@ function initTowerWebGL(labels, textureMap){
     // right,left,top,bottom,front,back
     const mats6 = [mSide,mSide,mTop,mSide,mTop,mSide];
     const b=new THREE.Mesh(g,mats6);
-    b.position.set(0,i*layerGap,-i*0.02);
+    b.position.set(0,i*layerGap,0);
     b.rotation.x = -0.05;
     b.userData={index:i,label,baseX:0,baseY:i*layerGap};
     scene.add(b); boxes.push(b);
@@ -84,13 +84,13 @@ function initTowerWebGL(labels, textureMap){
   function animate(){
     requestAnimationFrame(animate);
     boxes.forEach((b,i)=>{
-      const targetX=(i===active)?3.0:0.0;
+      const targetX=(i===active)?2.8:0.0;
       b.position.x += 0.11*(targetX-b.position.x);
       const targetY=b.userData.baseY + (i===active?0.12:0);
       b.position.y += 0.11*(targetY-b.position.y);
       b.rotation.y += 0.02*(i===active?1:0);
     });
-    scene.rotation.y=0.58; // corner-forward perspective
+    scene.rotation.y=0.785; // 45deg corner-forward perspective
     renderer.render(scene,camera);
   }
   animate();

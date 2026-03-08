@@ -139,7 +139,7 @@ def write_site(runs):
     (SITE / 'pages').mkdir(parents=True, exist_ok=True)
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
 
-    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:900px;height:460px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
+    (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:820px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
 
     (SITE / 'assets/js/site.js').write_text('''function fmt(v){return (v===null||v===undefined)?'NA':(typeof v==='number'?v.toFixed(4):String(v));}
 function parseStretch(cfg){const m=(cfg||'').match(/stretch_x:\\s*([0-9.]+)/);return m?Number(m[1]):null;}
@@ -174,13 +174,13 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(52, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(-2.8, 2.6, 8.2);
+  camera.position.set(0.0, 2.9, 8.0);
   const key=new THREE.DirectionalLight(0xffffff,1.1); key.position.set(4,6,5); scene.add(key);
   scene.add(new THREE.AmbientLight(0x99aacc,0.42));
 
   const loader = new THREE.TextureLoader();
   const boxes=[];
-  const layerGap = 0.22;
+  const layerGap = 0.18;
 
   function labelTexture(text){
     const c=document.createElement('canvas'); c.width=512; c.height=512;
@@ -194,7 +194,7 @@ function initTowerWebGL(labels, textureMap){
 
   labels.forEach((label,i)=>{
     const color=[0x2b3d5e,0x334a70,0x3a557f,0x42618e,0x4d6ea0,0x587cb3][i%6];
-    const g=new THREE.BoxGeometry(3.2,0.12,3.2); // square, thin slab
+    const g=new THREE.BoxGeometry(3.4,0.08,3.4); // square, very thin slab
     const texPath = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
     let tex = null;
     if(texPath){
@@ -209,7 +209,7 @@ function initTowerWebGL(labels, textureMap){
     // right,left,top,bottom,front,back
     const mats6 = [mSide,mSide,mTop,mSide,mTop,mSide];
     const b=new THREE.Mesh(g,mats6);
-    b.position.set(0,i*layerGap,-i*0.02);
+    b.position.set(0,i*layerGap,0);
     b.rotation.x = -0.05;
     b.userData={index:i,label,baseX:0,baseY:i*layerGap};
     scene.add(b); boxes.push(b);
@@ -227,13 +227,13 @@ function initTowerWebGL(labels, textureMap){
   function animate(){
     requestAnimationFrame(animate);
     boxes.forEach((b,i)=>{
-      const targetX=(i===active)?3.0:0.0;
+      const targetX=(i===active)?2.8:0.0;
       b.position.x += 0.11*(targetX-b.position.x);
       const targetY=b.userData.baseY + (i===active?0.12:0);
       b.position.y += 0.11*(targetY-b.position.y);
       b.rotation.y += 0.02*(i===active?1:0);
     });
-    scene.rotation.y=0.58; // corner-forward perspective
+    scene.rotation.y=0.785; // 45deg corner-forward perspective
     renderer.render(scene,camera);
   }
   animate();
