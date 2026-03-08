@@ -174,70 +174,30 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(52, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0.0, 2.9, 8.0);
-  const key=new THREE.DirectionalLight(0xffffff,1.1); key.position.set(4,6,5); scene.add(key);
-  scene.add(new THREE.AmbientLight(0x99aacc,0.42));
+  camera.position.set(0.0, 1.8, 5.6);
+  const key=new THREE.DirectionalLight(0xffffff,1.15); key.position.set(4,6,4); scene.add(key);
+  scene.add(new THREE.AmbientLight(0x8899aa,0.42));
 
-  const loader = new THREE.TextureLoader();
-  const boxes=[];
-  const layerGap = 0.18;
+  const loader=new THREE.TextureLoader();
+  const geo=new THREE.BoxGeometry(3.2,0.08,3.2); // single square tile (thin slab)
+  const side=new THREE.MeshStandardMaterial({color:0x1d2a42,metalness:0.2,roughness:0.8});
+  const top=new THREE.MeshStandardMaterial({color:0x2b3f61,metalness:0.1,roughness:0.7});
+  const mesh=new THREE.Mesh(geo,[side,side,top,side,top,side]);
+  mesh.rotation.y=0.78; // corner-forward
+  mesh.rotation.x=-0.08;
+  scene.add(mesh);
 
-  function labelTexture(text){
-    const c=document.createElement('canvas'); c.width=512; c.height=512;
-    const x=c.getContext('2d');
-    x.fillStyle='#1a2740'; x.fillRect(0,0,512,512);
-    x.fillStyle='#7cc7ff'; x.font='bold 34px Arial';
-    x.fillText(text,24,80);
-    x.strokeStyle='#3b557a'; x.lineWidth=6; x.strokeRect(10,10,492,492);
-    return new THREE.CanvasTexture(c);
-  }
-
-  labels.forEach((label,i)=>{
-    const color=[0x2b3d5e,0x334a70,0x3a557f,0x42618e,0x4d6ea0,0x587cb3][i%6];
-    const g=new THREE.BoxGeometry(3.4,0.08,3.4); // square, very thin slab
-    const texPath = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
-    let tex = null;
-    if(texPath){
-      tex = loader.load(texPath, undefined, undefined, ()=>{});
-    }
-    if(!tex){ tex = labelTexture(label); }
+  function setLayer(i){
+    const path = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
+    if(!path){ return; }
+    const tex = loader.load(path);
     tex.colorSpace = THREE.SRGBColorSpace;
-    tex.wrapS=THREE.ClampToEdgeWrapping; tex.wrapT=THREE.ClampToEdgeWrapping;
-
-    const mTop = new THREE.MeshStandardMaterial({map:tex,color:0xffffff,metalness:0.1,roughness:0.72});
-    const mSide = new THREE.MeshStandardMaterial({color:color,metalness:0.2,roughness:0.78});
-    // right,left,top,bottom,front,back
-    const mats6 = [mSide,mSide,mTop,mSide,mTop,mSide];
-    const b=new THREE.Mesh(g,mats6);
-    b.position.set(0,i*layerGap,0);
-    b.rotation.x = -0.05;
-    b.userData={index:i,label,baseX:0,baseY:i*layerGap};
-    scene.add(b); boxes.push(b);
-  });
-
-  const ray=new THREE.Raycaster(); const mouse=new THREE.Vector2();
-  let active=-1;
-  canvas.addEventListener('click',(ev)=>{
-    const r=canvas.getBoundingClientRect();
-    mouse.x=((ev.clientX-r.left)/r.width)*2-1; mouse.y=-((ev.clientY-r.top)/r.height)*2+1;
-    ray.setFromCamera(mouse,camera); const hit=ray.intersectObjects(boxes)[0];
-    if(!hit) return; const idx=hit.object.userData.index; active=(active===idx)?-1:idx;
-  });
-
-  function animate(){
-    requestAnimationFrame(animate);
-    boxes.forEach((b,i)=>{
-      const targetX=(i===active)?2.8:0.0;
-      b.position.x += 0.11*(targetX-b.position.x);
-      const targetY=b.userData.baseY + (i===active?0.12:0);
-      b.position.y += 0.11*(targetY-b.position.y);
-      b.rotation.y += 0.02*(i===active?1:0);
-    });
-    scene.rotation.y=0.785; // 45deg corner-forward perspective
-    renderer.render(scene,camera);
+    top.map = tex; top.color.setHex(0xffffff); top.needsUpdate=true;
   }
+
+  function animate(){ requestAnimationFrame(animate); renderer.render(scene,camera); }
   animate();
-  return {setActive:(i)=>{active=i;}};
+  return {setActive:(i)=>setLayer(i)};
 }
 
 async function loadInteractiveLab(){
@@ -373,7 +333,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
     interactive_head = '<script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>'
-    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Tower view: each layer is a model state variable. Click a layer to pop it out.</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><canvas id="towerCanvas"></canvas></div><div class="card"><h2>Layer selector</h2><div id="labLayers" class="kpi"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
+    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Single 3D tile view: choose a state layer and render it on a rotated square slab (corner-forward).</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><canvas id="towerCanvas"></canvas></div><div class="card"><h2>Layer selector</h2><div id="labLayers" class="kpi"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
     (SITE / 'pages/interactive_lab.html').write_text(page('Interactive Lab', interactive_body, interactive_head))
 
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
