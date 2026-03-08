@@ -30,6 +30,7 @@ cells:
   persistence: 0.9
   noise_std: 0.08
   taxis_weight: 0.02
+  advection_gain: 1.0
   dep_rate: 0.1
   dep_sigma: 0.35
   myo_switch_threshold: 0.45
@@ -102,6 +103,6 @@ viz:
   quiver_stride: 3
   x_margin: 0.5
   y_margin: 0.5
-  collagen_cmax: 18.0
+  collagen_cmax: auto
   xlim_fixed: [-0.8, 16.5]
   ylim_fixed: [-2.2, 7.2]

@@ -62,6 +62,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     ylim_fixed = tuple(viz_cfg.get('ylim_fixed', [-Ly * 0.35 - y_margin, Ly * 1.35 + y_margin]))
     cmax_fixed = viz_cfg.get('collagen_cmax', 18.0)
 
+    frame_steps = []
     for step in range(n_steps):
         if infarct_enabled:
             fields.infl, fields.prov, fields.scar = update_infarct_states(
@@ -111,6 +112,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             Kbc, fbc = apply_dirichlet(K, f, fixed_dofs, fixed_vals)
             U = solve_linear_system(Kbc, fbc)
 
+        dU_node = (U - U_prev).view(-1, 2)
         U_prev = U.detach()
 
         eps_e = element_strain(nodes, elems, U)
@@ -165,7 +167,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             params=net,
         )
 
-        agents = update_agents(agents, nodes, cue_node, dt, cel, (Lx, Ly))
+        agents = update_agents(agents, nodes, cue_node, dt, cel, (Lx, Ly), advect_node=dU_node)
         agents = update_phenotype(
             agents,
             nodes,
@@ -222,14 +224,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
 
         viz_enabled = config.get('viz', {}).get('enable', True)
         if viz_enabled and step % config['viz']['frame_every'] == 0:
-            render_frame(
-                os.path.join(out_dir, 'frames', f'frame_{step:04d}.png'),
-                nodes, elems, U, fields.c, fields.a, agents,
-                stride=config['viz']['quiver_stride'],
-                xlim=xlim_fixed,
-                ylim=ylim_fixed,
-                cmax=cmax_fixed,
-            )
+            frame_steps.append(step)
 
         save_snapshot(out_dir, step, {
             'U': U.detach().cpu(),
@@ -269,5 +264,32 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             cy_mean = fields.c_young.mean().item()
             cm_mean = fields.c_mature.mean().item()
             log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} c_y={cy_mean:.4e} c_m={cm_mean:.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+
+    # second-pass rendering with fixed global collagen max across selected frames
+    viz_enabled = config.get('viz', {}).get('enable', True)
+    if viz_enabled and frame_steps:
+        cmax_cfg = config.get('viz', {}).get('collagen_cmax', 'auto')
+        if isinstance(cmax_cfg, str) and cmax_cfg.lower() == 'auto':
+            cmax_global = 1e-8
+            for step in frame_steps:
+                snap = torch.load(os.path.join(out_dir, f'step_{step:04d}.pt'), map_location='cpu')
+                cmax_global = max(cmax_global, float(torch.max(snap['c']).item()))
+        else:
+            cmax_global = float(cmax_cfg)
+
+        for step in frame_steps:
+            snap = torch.load(os.path.join(out_dir, f'step_{step:04d}.pt'), map_location=nodes.device)
+            render_frame(
+                os.path.join(out_dir, 'frames', f'frame_{step:04d}.png'),
+                nodes, elems,
+                snap['U'].to(nodes.device),
+                snap['c'].to(nodes.device),
+                snap['a'].to(nodes.device),
+                type('A', (), {'x': snap['agents_x'].to(nodes.device)})(),
+                stride=config['viz']['quiver_stride'],
+                xlim=xlim_fixed,
+                ylim=ylim_fixed,
+                cmax=cmax_global,
+            )
 
     return fields, agents

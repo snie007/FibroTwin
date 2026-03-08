@@ -29,7 +29,7 @@ def main(base='configs/mvp_2d_stretch.yaml'):
     common['viz']['frame_every'] = 5
     common['viz']['fps'] = 20
     common['mechanics']['model'] = 'linear'  # faster for interactive scenario batch
-    common.setdefault('viz', {})['collagen_cmax'] = 18.0
+    common.setdefault('viz', {})['collagen_cmax'] = 'auto'
     common['viz']['x_margin'] = 0.5
     common['viz']['y_margin'] = 0.5
 
