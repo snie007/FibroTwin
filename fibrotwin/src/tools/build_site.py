@@ -173,31 +173,36 @@ function initTowerWebGL(labels, textureMap){
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(52, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0.0, 1.8, 5.6);
-  const key=new THREE.DirectionalLight(0xffffff,1.15); key.position.set(4,6,4); scene.add(key);
-  scene.add(new THREE.AmbientLight(0x8899aa,0.42));
+  const camera=new THREE.PerspectiveCamera(50, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
+  camera.position.set(0.0, 1.7, 5.2);
 
-  const loader=new THREE.TextureLoader();
-  const geo=new THREE.BoxGeometry(3.2,0.08,3.2); // single square tile (thin slab)
-  const side=new THREE.MeshStandardMaterial({color:0x1d2a42,metalness:0.2,roughness:0.8});
-  const top=new THREE.MeshStandardMaterial({color:0x2b3f61,metalness:0.1,roughness:0.7});
-  const mesh=new THREE.Mesh(geo,[side,side,top,side,top,side]);
-  mesh.rotation.y=0.78; // corner-forward
-  mesh.rotation.x=-0.08;
-  scene.add(mesh);
+  const key=new THREE.DirectionalLight(0xffffff,1.05); key.position.set(4,6,4); scene.add(key);
+  scene.add(new THREE.AmbientLight(0x99aacc,0.35));
 
-  function setLayer(i){
-    const path = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
-    if(!path){ return; }
-    const tex = loader.load(path);
-    tex.colorSpace = THREE.SRGBColorSpace;
-    top.map = tex; top.color.setHex(0xffffff); top.needsUpdate=true;
+  // Visual prototype: two overlapping square slabs, corner-forward at ~45 degrees
+  const geo=new THREE.BoxGeometry(3.3,0.08,3.3);
+  const matTopA=new THREE.MeshStandardMaterial({color:0x556f97,metalness:0.12,roughness:0.78});
+  const matTopB=new THREE.MeshStandardMaterial({color:0x7b92b6,metalness:0.10,roughness:0.80});
+  const matSide=new THREE.MeshStandardMaterial({color:0x26364f,metalness:0.20,roughness:0.85});
+
+  const slabA=new THREE.Mesh(geo,[matSide,matSide,matTopA,matSide,matTopA,matSide]);
+  slabA.position.set(0.0,0.10,0.0);
+  slabA.rotation.y=0.785;
+  slabA.rotation.x=-0.06;
+  scene.add(slabA);
+
+  const slabB=new THREE.Mesh(geo,[matSide,matSide,matTopB,matSide,matTopB,matSide]);
+  slabB.position.set(0.18,0.30,-0.14); // partial overlap + vertical separation
+  slabB.rotation.y=0.785;
+  slabB.rotation.x=-0.06;
+  scene.add(slabB);
+
+  function animate(){
+    requestAnimationFrame(animate);
+    renderer.render(scene,camera);
   }
-
-  function animate(){ requestAnimationFrame(animate); renderer.render(scene,camera); }
   animate();
-  return {setActive:(i)=>setLayer(i)};
+  return {setActive:(i)=>{}};
 }
 
 async function loadInteractiveLab(){
@@ -333,7 +338,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
     interactive_head = '<script src="https://unpkg.com/three@0.161.0/build/three.min.js"></script>'
-    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Single 3D tile view: choose a state layer and render it on a rotated square slab (corner-forward).</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><canvas id="towerCanvas"></canvas></div><div class="card"><h2>Layer selector</h2><div id="labLayers" class="kpi"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
+    interactive_body = '''<div class="card"><h2>Interactive simulation explorer</h2><p class="legend">Visual prototype: two overlapping square slabs at 45° corner-forward perspective.</p><label><strong>Run selector:</strong> <select id="labRunSelect"></select></label></div><div class="card stack-wrap"><canvas id="towerCanvas"></canvas></div><div class="card"><h2>Layer selector</h2><div id="labLayers" class="kpi"></div></div><div class="card"><h2>Visual viewer</h2><div id="labViewer"></div></div><div class="card"><h2>Quantitative comparison and paper-aligned interpretation</h2><div id="labCompare"></div></div>'''
     (SITE / 'pages/interactive_lab.html').write_text(page('Interactive Lab', interactive_body, interactive_head))
 
     (SITE / 'pages/changelog.html').write_text(page('Changelog', f'<div class="card">{git_changelog()}</div>'))
