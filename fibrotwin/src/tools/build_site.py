@@ -1,4 +1,4 @@
-import json, os, re, shutil, subprocess
+import json, os, re, shutil, subprocess, datetime
 from pathlib import Path
 from datetime import datetime
 
@@ -6,6 +6,7 @@ ROOT = Path(__file__).resolve().parents[2]
 SITE = ROOT / 'site'
 DOCS = ROOT / 'docs'
 OUT = ROOT / 'outputs'
+BUILD_VER = str(int(datetime.now().timestamp()))
 
 
 def md_to_html(md: str) -> str:
@@ -105,11 +106,11 @@ def nav():
 
 
 def page(title, body, extra_head=''):
-    return f'''<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><link rel="stylesheet" href="../assets/css/style.css"/>{extra_head}</head><body><header><h1>{title}</h1>{nav().replace('index.html','../index.html').replace('pages/','')}</header><main>{body}</main><script src="../assets/js/site.js"></script></body></html>'''
+    return f'''<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><link rel="stylesheet" href="../assets/css/style.css?v={BUILD_VER}"/>{extra_head}</head><body><header><h1>{title}</h1>{nav().replace('index.html','../index.html').replace('pages/','')}</header><main>{body}</main><script src="../assets/js/site.js?v={BUILD_VER}"></script></body></html>'''
 
 
 def root_page(title, body):
-    return f'''<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><link rel="stylesheet" href="assets/css/style.css"/></head><body><header><h1>{title}</h1>{nav()}</header><main>{body}</main></body></html>'''
+    return f'''<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>{title}</title><link rel="stylesheet" href="assets/css/style.css?v={BUILD_VER}"/></head><body><header><h1>{title}</h1>{nav()}</header><main>{body}</main></body></html>'''
 
 
 def git_changelog():
