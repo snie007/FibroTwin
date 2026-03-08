@@ -48,7 +48,7 @@ function initTowerWebGL(labels, textureMap){
   for(let i=0;i<6;i++){
     const top=new THREE.MeshStandardMaterial({color:topColors[i],metalness:0.06,roughness:0.86});
     const slab=new THREE.Mesh(geo,[side,side,top,side,top,side]);
-    slab.position.set(0.0,0.18+0.19*i,0.0); // aligned stack with tighter vertical spacing
+    slab.position.set(0.0,0.42+0.24*i,0.0); // shifted upward with larger spacing
     slab.rotation.y=0.785;
     slab.rotation.x=-0.02;
     scene.add(slab);
