@@ -32,7 +32,7 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(50, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0.0, 3.4, 7.4);
+  camera.position.set(0.0, 4.2, 9.0);
 
   const key=new THREE.DirectionalLight(0xffffff,0.95); key.position.set(4,6,4); scene.add(key);
   const fill=new THREE.DirectionalLight(0xbfd4ff,0.55); fill.position.set(-4,3,2); scene.add(fill);
@@ -48,7 +48,7 @@ function initTowerWebGL(labels, textureMap){
   for(let i=0;i<6;i++){
     const top=new THREE.MeshStandardMaterial({color:topColors[i],metalness:0.06,roughness:0.86});
     const slab=new THREE.Mesh(geo,[side,side,top,side,top,side]);
-    slab.position.set(0.0,0.42+0.24*i,0.0); // shifted upward with larger spacing
+    slab.position.set(0.0,0.72+0.48*i,0.0); // shifted up, doubled spacing
     slab.rotation.y=0.785;
     slab.rotation.x=-0.02;
     scene.add(slab);
