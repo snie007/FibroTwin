@@ -50,6 +50,12 @@ remodeling:
   k_growth: 0.01
   mech_align_gain: 2.0
 
+collagen_mixture:
+  enabled: true
+  k_maturation: 0.06
+  k_deg_young: 0.02
+  k_deg_mature: 0.008
+
 signaling:
   tgf_beta: 0.25
   angII: 0.20

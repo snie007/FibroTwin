@@ -21,7 +21,7 @@ def update_phenotype(agents, nodes, cue_node, profibrotic_node=None, threshold=0
     return agents
 
 
-def deposit_collagen(nodes, c, agent_x, agent_is_myo, dt, k_dep, sigma, k_deg, myo_boost=2.0, agent_p=None, agent_cue=None, p_gain=1.0, mech_gain=0.5, synergy_gain=0.6, agent_v=None, trail_gain=0.4, trail_len=0.6):
+def collagen_deposition_source(nodes, agent_x, agent_is_myo, k_dep, sigma, myo_boost=2.0, agent_p=None, agent_cue=None, p_gain=1.0, mech_gain=0.5, synergy_gain=0.6, agent_v=None, trail_gain=0.4, trail_len=0.6):
     d2 = torch.cdist(nodes, agent_x) ** 2
     kern = torch.exp(-0.5 * d2 / (sigma ** 2))
     if agent_v is not None:
@@ -40,5 +40,15 @@ def deposit_collagen(nodes, c, agent_x, agent_is_myo, dt, k_dep, sigma, k_deg, m
         w = w + synergy_gain * torch.clamp(agent_p, min=0.0) * torch.clamp(agent_cue, min=0.0)
 
     dep = k_dep * (kern * w[None, :]).sum(dim=1)
+    return dep
+
+
+def deposit_collagen(nodes, c, agent_x, agent_is_myo, dt, k_dep, sigma, k_deg, myo_boost=2.0, agent_p=None, agent_cue=None, p_gain=1.0, mech_gain=0.5, synergy_gain=0.6, agent_v=None, trail_gain=0.4, trail_len=0.6):
+    dep = collagen_deposition_source(
+        nodes, agent_x, agent_is_myo, k_dep, sigma,
+        myo_boost=myo_boost, agent_p=agent_p, agent_cue=agent_cue,
+        p_gain=p_gain, mech_gain=mech_gain, synergy_gain=synergy_gain,
+        agent_v=agent_v, trail_gain=trail_gain, trail_len=trail_len,
+    )
     c_new = c + dt * dep - dt * k_deg * c
     return torch.clamp(c_new, min=0.0)

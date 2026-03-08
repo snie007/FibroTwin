@@ -4,7 +4,7 @@ from ..mechanics.fem_assembly import assemble_stiffness, element_strain
 from ..mechanics.solver import apply_dirichlet, solve_linear_system
 from ..mechanics.nonlinear_solver import solve_quasistatic_ogden
 from ..cells.motion import update_agents
-from ..cells.deposition import deposit_collagen, update_phenotype
+from ..cells.deposition import deposit_collagen, collagen_deposition_source, update_phenotype
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
 from ..remodeling.cytokines import build_knn_weights, update_cytokine_fields
@@ -15,6 +15,7 @@ from ..remodeling.infarct_maturation import (
     infarct_softening_factor,
     infarct_signal_source,
 )
+from ..remodeling.collagen_mixture import update_collagen_cohorts
 from .io import save_snapshot, log_line
 from .viz import render_frame
 
@@ -168,15 +169,12 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         idx_nn = torch.argmin(torch.cdist(agents.x, nodes), dim=1)
         agent_p = fields.p[idx_nn]
         agent_cue = cue_node[idx_nn]
-        fields.c = deposit_collagen(
+        dep_source = collagen_deposition_source(
             nodes,
-            fields.c,
             agents.x,
             agents.is_myofibro,
-            dt,
             cel['dep_rate'],
             cel['dep_sigma'],
-            rem['k_deg'],
             myo_boost=cel.get('myo_dep_boost', 2.0),
             agent_p=agent_p,
             agent_cue=agent_cue,
@@ -187,6 +185,17 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             trail_gain=cel.get('trail_gain', 0.4),
             trail_len=cel.get('trail_len', 0.6),
         )
+        mix = config.get('collagen_mixture', {})
+        if mix.get('enabled', True):
+            fields.c_young, fields.c_mature, fields.c = update_collagen_cohorts(
+                fields.c_young,
+                fields.c_mature,
+                dep_source,
+                dt,
+                mix,
+            )
+        else:
+            fields.c = torch.clamp(fields.c + dt * dep_source - dt * rem['k_deg'] * fields.c, min=0.0)
 
         pdir_e = principal_direction_from_strain(eps_e)
         pdir_n = torch.zeros((n, 2), device=nodes.device)
@@ -211,6 +220,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         save_snapshot(out_dir, step, {
             'U': U.detach().cpu(),
             'c': fields.c.detach().cpu(),
+            'c_young': fields.c_young.detach().cpu(),
+            'c_mature': fields.c_mature.detach().cpu(),
             'a': fields.a.detach().cpu(),
             'ac': fields.ac.detach().cpu(),
             'g': fields.g.detach().cpu(),
@@ -241,6 +252,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             erk_mean = fields.erk.mean().item()
             infl_mean = fields.infl.mean().item()
             scar_mean = fields.scar.mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            cy_mean = fields.c_young.mean().item()
+            cm_mean = fields.c_mature.mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} c_y={cy_mean:.4e} c_m={cm_mean:.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents

@@ -5,6 +5,8 @@ import torch
 @dataclass
 class FieldState:
     c: torch.Tensor
+    c_young: torch.Tensor
+    c_mature: torch.Tensor
     a: torch.Tensor
     ac: torch.Tensor
     g: torch.Tensor
@@ -27,6 +29,8 @@ def init_fields(n_nodes: int, device: torch.device, seed: int = 0) -> FieldState
     z = torch.zeros(n_nodes, device=device)
     return FieldState(
         c=z.clone(),
+        c_young=z.clone(),
+        c_mature=z.clone(),
         a=a.to(device),
         ac=a.clone().to(device),
         g=z.clone(),
