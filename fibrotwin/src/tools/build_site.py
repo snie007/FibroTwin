@@ -171,10 +171,11 @@ async function loadRuns(){
 function initTowerWebGL(labels, textureMap){
   const canvas=document.getElementById('towerCanvas'); if(!canvas || !window.THREE) return null;
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio||1,2));
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(50, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(0.0, 4.8, 4.4);
+  camera.position.set(0.0, 3.4, 6.4);
 
   const key=new THREE.DirectionalLight(0xffffff,0.95); key.position.set(4,6,4); scene.add(key);
   const fill=new THREE.DirectionalLight(0xbfd4ff,0.55); fill.position.set(-4,3,2); scene.add(fill);
