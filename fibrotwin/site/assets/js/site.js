@@ -101,11 +101,11 @@ async function loadInteractiveLab(){
   const runs=await getRuns();
   const sel=document.getElementById('labRunSelect'); if(!sel) return;
   sel.innerHTML=runs.map((x,i)=>`<option value="${i}">${x.run_id}</option>`).join('');
-  const stack=document.getElementById('sheetStack');
+  const layerBar=document.getElementById('labLayers');
   const viewer=document.getElementById('labViewer');
   const comp=document.getElementById('labCompare');
   const sheets=['Displacement U','Collagen c','Fibre orientation a/ac','Fibroblast paths','Signaling nodes','Infarct states'];
-  stack.innerHTML=sheets.map((s,i)=>`<div class="sheet" data-i="${i}" style="transform:translateY(${i*10}px) translateZ(${-i*18}px) rotateX(2deg)">${s}</div>`).join('');
+  layerBar.innerHTML=sheets.map((s,i)=>`<button class="pill" data-i="${i}">${s}</button>`).join('');
 
   const render=(i)=>{
     const run=runs[i]; if(!run) return;
@@ -119,10 +119,8 @@ async function loadInteractiveLab(){
     ];
     window._towerApi = initTowerWebGL(sheets, tex);
 
-    stack.querySelectorAll('.sheet').forEach(el=>el.onclick=()=>{
-      stack.querySelectorAll('.sheet').forEach(x=>x.classList.remove('expanded'));
-      el.classList.add('expanded');
-      if(window._towerApi){window._towerApi.setActive(Number(el.dataset.i));}
+    layerBar.querySelectorAll('button').forEach(btn=>btn.onclick=()=>{
+      if(window._towerApi){window._towerApi.setActive(Number(btn.dataset.i));}
     });
 
     const anim = run.animation_site ? (run.animation_site.toLowerCase().endsWith('.gif') ? `<img src="../${run.animation_site}" alt="simulation gif"/>` : `<video controls src="../${run.animation_site}"></video>`) : '<p>No animation</p>';
