@@ -7,8 +7,8 @@ from ..cells.motion import update_agents
 from ..cells.deposition import deposit_collagen, update_phenotype
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
-from ..remodeling.signaling import update_profibrotic_signal
 from ..remodeling.cytokines import build_knn_weights, update_cytokine_fields
+from ..remodeling.signaling_network import update_signaling_network
 from .io import save_snapshot, log_line
 from .viz import render_frame
 
@@ -118,19 +118,22 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
                 decay_chemo=cyt.get('decay_chemo', 0.12),
             )
             tgf_eff = fields.tgf
-            ang_eff = sig.get('angII', 0.2) + 0.3 * fields.chemo
+            ang_eff = torch.clamp(sig.get('angII', 0.2) + 0.3 * fields.chemo, 0.0, 1.0)
         else:
-            tgf_eff = sig.get('tgf_beta', 0.25)
-            ang_eff = sig.get('angII', 0.2)
+            tgf_eff = torch.full_like(cue_node, sig.get('tgf_beta', 0.25))
+            ang_eff = torch.full_like(cue_node, sig.get('angII', 0.2))
 
-        fields.p = update_profibrotic_signal(
-            fields.p,
-            cue_node,
+        net = config.get('signaling_network', {})
+        fields.smad, fields.erk, fields.ros, fields.can, fields.p = update_signaling_network(
+            fields.smad,
+            fields.erk,
+            fields.ros,
+            fields.can,
             dt,
-            tgf_beta=tgf_eff,
-            angII=ang_eff,
-            mech_gain=sig.get('mech_gain', 1.2),
-            decay=sig.get('decay', 0.35),
+            tgf=tgf_eff,
+            ang_eff=ang_eff,
+            mech_cue=cue_node,
+            params=net,
         )
 
         agents = update_agents(agents, nodes, cue_node, dt, cel, (Lx, Ly))
@@ -195,6 +198,10 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'p': fields.p.detach().cpu(),
             'tgf': fields.tgf.detach().cpu(),
             'chemo': fields.chemo.detach().cpu(),
+            'smad': fields.smad.detach().cpu(),
+            'erk': fields.erk.detach().cpu(),
+            'ros': fields.ros.detach().cpu(),
+            'can': fields.can.detach().cpu(),
             'agents_x': agents.x.detach().cpu(),
             'agents_is_myofibro': agents.is_myofibro.detach().cpu(),
             'mechanics_model': model,
@@ -208,6 +215,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             p_mean = fields.p.mean().item()
             tgf_mean = fields.tgf.mean().item()
             chemo_mean = fields.chemo.mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            smad_mean = fields.smad.mean().item()
+            erk_mean = fields.erk.mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents
