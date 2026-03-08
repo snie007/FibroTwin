@@ -1,6 +1,22 @@
 import os
 import numpy as np
 import matplotlib.pyplot as plt
+import torch
+
+
+def _interp_disp_at_points(nodes, U, x):
+    # IDW interpolation of nodal displacement to arbitrary points
+    d = torch.cdist(x, nodes)
+    k = min(6, nodes.shape[0])
+    idx = torch.topk(d, k=k, largest=False).indices
+    out = torch.zeros((x.shape[0], 2), device=x.device, dtype=nodes.dtype)
+    u_node = U.view(-1, 2)
+    for i in range(x.shape[0]):
+        di = d[i, idx[i]]
+        w = 1.0 / (di + 1e-6)
+        w = w / (w.sum() + 1e-12)
+        out[i] = (w[:, None] * u_node[idx[i]]).sum(dim=0)
+    return out
 
 
 def render_frame(path, nodes, elems, U, c, a, agents, stride=3, xlim=None, ylim=None, cmax=None):
@@ -8,7 +24,10 @@ def render_frame(path, nodes, elems, U, c, a, agents, stride=3, xlim=None, ylim=
     u = U.detach().cpu().numpy().reshape(-1, 2)
     cnp = c.detach().cpu().numpy()
     anp = a.detach().cpu().numpy()
-    xp = agents.x.detach().cpu().numpy()
+    # visualize agents in deformed coordinates for geometric consistency
+    xa = agents.x
+    ua = _interp_disp_at_points(nodes, U, xa)
+    xp = (xa + ua).detach().cpu().numpy()
 
     deformed = xy + u
     mag = np.linalg.norm(u, axis=1)
