@@ -36,10 +36,10 @@ function initTowerWebGL(labels, textureMap){
   const key=new THREE.DirectionalLight(0xffffff,1.05); key.position.set(4,6,4); scene.add(key);
   scene.add(new THREE.AmbientLight(0x99aacc,0.35));
 
-  // Visual prototype: two overlapping square slabs, corner-forward at ~45 degrees
+  // Ultra-stable visual prototype: two overlapping square slabs (no texture dependency)
   const geo=new THREE.BoxGeometry(3.3,0.08,3.3);
-  const matTopA=new THREE.MeshStandardMaterial({color:0x556f97,metalness:0.12,roughness:0.78});
-  const matTopB=new THREE.MeshStandardMaterial({color:0x7b92b6,metalness:0.10,roughness:0.80});
+  const matTopA=new THREE.MeshStandardMaterial({color:0x5d7ea8,metalness:0.12,roughness:0.78});
+  const matTopB=new THREE.MeshStandardMaterial({color:0x8fa6c9,metalness:0.10,roughness:0.80});
   const matSide=new THREE.MeshStandardMaterial({color:0x26364f,metalness:0.20,roughness:0.85});
 
   const slabA=new THREE.Mesh(geo,[matSide,matSide,matTopA,matSide,matTopA,matSide]);
@@ -49,15 +49,12 @@ function initTowerWebGL(labels, textureMap){
   scene.add(slabA);
 
   const slabB=new THREE.Mesh(geo,[matSide,matSide,matTopB,matSide,matTopB,matSide]);
-  slabB.position.set(0.18,0.30,-0.14); // partial overlap + vertical separation
+  slabB.position.set(0.18,0.30,-0.14);
   slabB.rotation.y=0.785;
   slabB.rotation.x=-0.06;
   scene.add(slabB);
 
-  function animate(){
-    requestAnimationFrame(animate);
-    renderer.render(scene,camera);
-  }
+  function animate(){ requestAnimationFrame(animate); renderer.render(scene,camera); }
   animate();
   return {setActive:(i)=>{}};
 }
