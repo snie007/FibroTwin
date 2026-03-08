@@ -50,7 +50,8 @@ def discover_runs():
         run['timestamp'] = d.name
         runs.append(run)
     runs.sort(key=lambda x: x['run_id'], reverse=True)
-    return runs
+    # keep UI focused on newest runs (avoids older jittery artifacts)
+    return runs[:5]
 
 
 def copy_assets(runs):
@@ -171,28 +172,48 @@ function initTowerWebGL(labels, textureMap){
   const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
-  const camera=new THREE.PerspectiveCamera(48, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(-2.2, 2.3, 8.4);
-  const light=new THREE.DirectionalLight(0xffffff,1.0); light.position.set(3,5,6); scene.add(light);
-  scene.add(new THREE.AmbientLight(0x8aa4ff,0.45));
+  const camera=new THREE.PerspectiveCamera(52, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
+  camera.position.set(-2.8, 2.6, 8.2);
+  const key=new THREE.DirectionalLight(0xffffff,1.1); key.position.set(4,6,5); scene.add(key);
+  scene.add(new THREE.AmbientLight(0x99aacc,0.42));
 
   const loader = new THREE.TextureLoader();
-  const mats=[]; const boxes=[];
+  const boxes=[];
+  const layerGap = 0.22;
+
+  function labelTexture(text){
+    const c=document.createElement('canvas'); c.width=512; c.height=512;
+    const x=c.getContext('2d');
+    x.fillStyle='#1a2740'; x.fillRect(0,0,512,512);
+    x.fillStyle='#7cc7ff'; x.font='bold 34px Arial';
+    x.fillText(text,24,80);
+    x.strokeStyle='#3b557a'; x.lineWidth=6; x.strokeRect(10,10,492,492);
+    return new THREE.CanvasTexture(c);
+  }
+
   labels.forEach((label,i)=>{
-    const color=[0x38527d,0x3f5d87,0x496a94,0x5277a3,0x5d86b5,0x6c95c2][i%6];
-    const g=new THREE.BoxGeometry(4.4,0.16,3.1);
-    const texPath = textureMap && textureMap[i] ? textureMap[i] : null;
-    const tex = texPath ? loader.load(texPath) : null;
-    if(tex){tex.colorSpace = THREE.SRGBColorSpace; tex.wrapS=THREE.ClampToEdgeWrapping; tex.wrapT=THREE.ClampToEdgeWrapping;}
-    const mTex = new THREE.MeshStandardMaterial({map:tex||null,color:tex?0xffffff:color,metalness:0.12,roughness:0.68});
-    const mSide = new THREE.MeshStandardMaterial({color:0x1a2740,metalness:0.25,roughness:0.75});
-    // right,left,top,bottom,front,back -> place texture on top and front so it's visible
-    const mats6 = [mSide,mSide,mTex,mSide,mTex,mSide];
+    const color=[0x2b3d5e,0x334a70,0x3a557f,0x42618e,0x4d6ea0,0x587cb3][i%6];
+    const g=new THREE.BoxGeometry(3.2,0.12,3.2); // square, thin slab
+    const texPath = textureMap && textureMap[i] ? new URL(textureMap[i], window.location.href).href : null;
+    let tex = null;
+    if(texPath){
+      tex = loader.load(texPath, undefined, undefined, ()=>{});
+    }
+    if(!tex){ tex = labelTexture(label); }
+    tex.colorSpace = THREE.SRGBColorSpace;
+    tex.wrapS=THREE.ClampToEdgeWrapping; tex.wrapT=THREE.ClampToEdgeWrapping;
+
+    const mTop = new THREE.MeshStandardMaterial({map:tex,color:0xffffff,metalness:0.1,roughness:0.72});
+    const mSide = new THREE.MeshStandardMaterial({color:color,metalness:0.2,roughness:0.78});
+    // right,left,top,bottom,front,back
+    const mats6 = [mSide,mSide,mTop,mSide,mTop,mSide];
     const b=new THREE.Mesh(g,mats6);
-    b.position.set(0,i*0.22,-i*0.03);
-    b.userData={index:i,label,baseX:0,baseY:i*0.5};
-    scene.add(b); boxes.push(b); mats.push(mTop);
+    b.position.set(0,i*layerGap,-i*0.02);
+    b.rotation.x = -0.05;
+    b.userData={index:i,label,baseX:0,baseY:i*layerGap};
+    scene.add(b); boxes.push(b);
   });
+
   const ray=new THREE.Raycaster(); const mouse=new THREE.Vector2();
   let active=-1;
   canvas.addEventListener('click',(ev)=>{
@@ -205,13 +226,13 @@ function initTowerWebGL(labels, textureMap){
   function animate(){
     requestAnimationFrame(animate);
     boxes.forEach((b,i)=>{
-      const targetX=(i===active)?3.4:0.0;
-      b.position.x += 0.10*(targetX-b.position.x);
-      const targetY=b.userData.baseY + (i===active?0.16:0);
-      b.position.y += 0.10*(targetY-b.position.y);
+      const targetX=(i===active)?3.0:0.0;
+      b.position.x += 0.11*(targetX-b.position.x);
+      const targetY=b.userData.baseY + (i===active?0.12:0);
+      b.position.y += 0.11*(targetY-b.position.y);
       b.rotation.y += 0.02*(i===active?1:0);
     });
-    scene.rotation.y=0.42;
+    scene.rotation.y=0.58; // corner-forward perspective
     renderer.render(scene,camera);
   }
   animate();
