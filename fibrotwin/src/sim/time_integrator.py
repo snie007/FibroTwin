@@ -9,6 +9,12 @@ from ..remodeling.fibre_reorientation import principal_direction_from_strain, up
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
 from ..remodeling.cytokines import build_knn_weights, update_cytokine_fields
 from ..remodeling.signaling_network import update_signaling_network
+from ..remodeling.infarct_maturation import (
+    init_infarct_states,
+    update_infarct_states,
+    infarct_softening_factor,
+    infarct_signal_source,
+)
 from .io import save_snapshot, log_line
 from .viz import render_frame
 
@@ -37,6 +43,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         r = torch.sqrt((nodes[:, 0] - cx) ** 2 + (nodes[:, 1] - cy) ** 2)
         infarct_node_mask = (r <= rad).to(nodes.dtype)
         infarct_elem_mask = infarct_node_mask[elems].mean(dim=1)
+        fields.infl, fields.prov, fields.scar = init_infarct_states(infarct_node_mask)
     else:
         infarct_node_mask = torch.zeros(n, device=nodes.device, dtype=nodes.dtype)
         infarct_elem_mask = torch.zeros(elems.shape[0], device=nodes.device, dtype=nodes.dtype)
@@ -46,6 +53,16 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     nbr, w_knn = build_knn_weights(nodes, k=cyt.get('k_neighbors', 8), sigma=cyt.get('kernel_sigma', 0.7))
 
     for step in range(n_steps):
+        if infarct_enabled:
+            fields.infl, fields.prov, fields.scar = update_infarct_states(
+                fields.infl,
+                fields.prov,
+                fields.scar,
+                dt,
+                infarct_node_mask,
+                params=inf,
+            )
+
         c_elem = fields.c[elems].mean(dim=1)
         g_elem = fields.g[elems].mean(dim=1)
         a_elem = fields.a[elems].mean(dim=1)
@@ -73,8 +90,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
         else:
             E_elem = element_E_from_fields(mech['E0'], c_elem, g_elem)
             if infarct_enabled:
-                soft = inf.get('softening', 0.6)
-                E_elem = E_elem * (1.0 - soft * infarct_elem_mask)
+                soft_node = infarct_softening_factor(fields.infl, fields.prov, fields.scar, base_softening=inf.get('softening', 0.6))
+                soft_elem = soft_node[elems].mean(dim=1)
+                E_elem = E_elem * (1.0 - soft_elem)
             K = assemble_stiffness(
                 nodes, elems, E_elem, nu=mech['nu'], plane_stress=mech['plane_stress'],
                 a_elem=a_elem, c_elem=c_elem, kf=mech.get('kf_aniso', 0.2)
@@ -94,7 +112,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             cnt[conn] += 1
         cue_node = cue_node / torch.clamp(cnt, min=1)
         if infarct_enabled:
-            cue_node = cue_node + inf.get('cue_boost', 0.15) * infarct_node_mask
+            cue_node = cue_node + inf.get('cue_boost', 0.15) * (0.8 * fields.infl + 0.4 * fields.prov)
 
         sig = config.get('signaling', {})
 
@@ -102,8 +120,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             src_tgf = sig.get('tgf_beta', 0.25) * torch.ones_like(cue_node)
             src_chemo = (0.2 * cue_node)
             if infarct_enabled:
-                src_tgf = src_tgf + inf.get('signal_source', 0.20) * infarct_node_mask
-                src_chemo = src_chemo + 0.4 * inf.get('signal_source', 0.20) * infarct_node_mask
+                inf_src = infarct_signal_source(fields.infl, fields.prov, fields.scar, base_signal=inf.get('signal_source', 0.20))
+                src_tgf = src_tgf + inf_src
+                src_chemo = src_chemo + 0.4 * inf_src
             fields.tgf, fields.chemo = update_cytokine_fields(
                 fields.tgf,
                 fields.chemo,
@@ -202,6 +221,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'erk': fields.erk.detach().cpu(),
             'ros': fields.ros.detach().cpu(),
             'can': fields.can.detach().cpu(),
+            'infl': fields.infl.detach().cpu(),
+            'prov': fields.prov.detach().cpu(),
+            'scar': fields.scar.detach().cpu(),
             'agents_x': agents.x.detach().cpu(),
             'agents_is_myofibro': agents.is_myofibro.detach().cpu(),
             'mechanics_model': model,
@@ -217,6 +239,8 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             chemo_mean = fields.chemo.mean().item()
             smad_mean = fields.smad.mean().item()
             erk_mean = fields.erk.mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            infl_mean = fields.infl.mean().item()
+            scar_mean = fields.scar.mean().item()
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     return fields, agents

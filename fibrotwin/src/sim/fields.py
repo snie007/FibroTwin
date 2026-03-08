@@ -15,6 +15,9 @@ class FieldState:
     erk: torch.Tensor
     ros: torch.Tensor
     can: torch.Tensor
+    infl: torch.Tensor
+    prov: torch.Tensor
+    scar: torch.Tensor
 
 
 def init_fields(n_nodes: int, device: torch.device, seed: int = 0) -> FieldState:
@@ -34,4 +37,7 @@ def init_fields(n_nodes: int, device: torch.device, seed: int = 0) -> FieldState
         erk=z.clone(),
         ros=z.clone(),
         can=z.clone(),
+        infl=z.clone(),
+        prov=z.clone(),
+        scar=z.clone(),
     )
