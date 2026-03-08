@@ -172,7 +172,7 @@ function initTowerWebGL(labels, textureMap){
   renderer.setSize(canvas.clientWidth, canvas.clientHeight, false);
   const scene=new THREE.Scene();
   const camera=new THREE.PerspectiveCamera(48, canvas.clientWidth/canvas.clientHeight, 0.1, 100);
-  camera.position.set(-1.4, 2.8, 8.6);
+  camera.position.set(-2.2, 2.3, 8.4);
   const light=new THREE.DirectionalLight(0xffffff,1.0); light.position.set(3,5,6); scene.add(light);
   scene.add(new THREE.AmbientLight(0x8aa4ff,0.45));
 
@@ -180,7 +180,7 @@ function initTowerWebGL(labels, textureMap){
   const mats=[]; const boxes=[];
   labels.forEach((label,i)=>{
     const color=[0x38527d,0x3f5d87,0x496a94,0x5277a3,0x5d86b5,0x6c95c2][i%6];
-    const g=new THREE.BoxGeometry(4.4,0.65,3.1);
+    const g=new THREE.BoxGeometry(4.4,0.16,3.1);
     const texPath = textureMap && textureMap[i] ? textureMap[i] : null;
     const tex = texPath ? loader.load(texPath) : null;
     if(tex){tex.colorSpace = THREE.SRGBColorSpace; tex.wrapS=THREE.ClampToEdgeWrapping; tex.wrapT=THREE.ClampToEdgeWrapping;}
@@ -189,7 +189,7 @@ function initTowerWebGL(labels, textureMap){
     // right,left,top,bottom,front,back -> place texture on top and front so it's visible
     const mats6 = [mSide,mSide,mTex,mSide,mTex,mSide];
     const b=new THREE.Mesh(g,mats6);
-    b.position.set(0,i*0.62,0);
+    b.position.set(0,i*0.22,-i*0.03);
     b.userData={index:i,label,baseX:0,baseY:i*0.5};
     scene.add(b); boxes.push(b); mats.push(mTop);
   });
@@ -205,13 +205,13 @@ function initTowerWebGL(labels, textureMap){
   function animate(){
     requestAnimationFrame(animate);
     boxes.forEach((b,i)=>{
-      const targetX=(i===active)?4.0:0.0;
+      const targetX=(i===active)?3.4:0.0;
       b.position.x += 0.10*(targetX-b.position.x);
       const targetY=b.userData.baseY + (i===active?0.16:0);
       b.position.y += 0.10*(targetY-b.position.y);
       b.rotation.y += 0.02*(i===active?1:0);
     });
-    scene.rotation.y=0.32;
+    scene.rotation.y=0.42;
     renderer.render(scene,camera);
   }
   animate();
