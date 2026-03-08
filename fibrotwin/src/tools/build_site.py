@@ -186,13 +186,13 @@ function initTowerWebGL(labels, textureMap){
   const matSide=new THREE.MeshStandardMaterial({color:0x26364f,metalness:0.20,roughness:0.85});
 
   const slabA=new THREE.Mesh(geo,[matSide,matSide,matTopA,matSide,matTopA,matSide]);
-  slabA.position.set(0.0,0.10,0.0);
+  slabA.position.set(0.0,0.26,0.0);
   slabA.rotation.y=0.785;
   slabA.rotation.x=-0.06;
   scene.add(slabA);
 
   const slabB=new THREE.Mesh(geo,[matSide,matSide,matTopB,matSide,matTopB,matSide]);
-  slabB.position.set(0.18,0.30,-0.14);
+  slabB.position.set(0.18,0.62,-0.14);
   slabB.rotation.y=0.785;
   slabB.rotation.x=-0.06;
   scene.add(slabB);
