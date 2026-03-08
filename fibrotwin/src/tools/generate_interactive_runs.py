@@ -25,8 +25,8 @@ def main(base='configs/mvp_2d_stretch.yaml'):
         cfg = yaml.safe_load(f)
 
     common = copy.deepcopy(cfg)
-    common['time']['n_steps'] = 320
-    common['viz']['frame_every'] = 4
+    common['time']['n_steps'] = 520
+    common['viz']['frame_every'] = 5
     common['viz']['fps'] = 20
     common['mechanics']['model'] = 'linear'  # faster for interactive scenario batch
 

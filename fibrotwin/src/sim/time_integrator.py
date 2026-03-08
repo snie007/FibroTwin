@@ -53,6 +53,13 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
     use_cyt = bool(cyt.get('enabled', True))
     nbr, w_knn = build_knn_weights(nodes, k=cyt.get('k_neighbors', 8), sigma=cyt.get('kernel_sigma', 0.7))
 
+    viz_cfg = config.get('viz', {})
+    x_margin = viz_cfg.get('x_margin', 0.5)
+    y_margin = viz_cfg.get('y_margin', 0.5)
+    xlim_fixed = (-x_margin, Lx * (1.0 + mech.get('stretch_x', 0.0)) + x_margin)
+    ylim_fixed = (-y_margin, Ly + y_margin)
+    cmax_fixed = viz_cfg.get('collagen_cmax', 15.0)
+
     for step in range(n_steps):
         if infarct_enabled:
             fields.infl, fields.prov, fields.scar = update_infarct_states(
@@ -217,6 +224,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
                 os.path.join(out_dir, 'frames', f'frame_{step:04d}.png'),
                 nodes, elems, U, fields.c, fields.a, agents,
                 stride=config['viz']['quiver_stride'],
+                xlim=xlim_fixed,
+                ylim=ylim_fixed,
+                cmax=cmax_fixed,
             )
 
         save_snapshot(out_dir, step, {
