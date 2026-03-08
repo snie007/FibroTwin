@@ -191,9 +191,9 @@ function initTowerWebGL(labels, textureMap){
   for(let i=0;i<6;i++){
     const top=new THREE.MeshStandardMaterial({color:topColors[i],metalness:0.06,roughness:0.86});
     const slab=new THREE.Mesh(geo,[side,side,top,side,top,side]);
-    slab.position.set(0.0,0.84+0.96*i,0.0); // slightly lower base; keep large spacing
+    slab.position.set(0.0,1.28+0.96*i,0.0); // shift stack up so base is visible
     slab.rotation.y=0.785;
-    slab.rotation.x=-0.02;
+    slab.rotation.x=-0.14;
     scene.add(slab);
     slabs.push(slab);
   }
