@@ -5,62 +5,62 @@
       "stretch_x": 0.1,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 8.219025611877441,
+      "c_mean_final": 8.219023704528809,
       "p_mean_final": 0.36376842856407166,
       "myo_frac_final": 0.9125000238418579,
-      "ac_align_x_final": 0.9104281067848206,
-      "run_dir": "outputs/20260309_123841"
+      "ac_align_x_final": 0.910427987575531,
+      "run_dir": "outputs/20260309_145717"
     },
     {
       "scenario": "high_load_only",
       "stretch_x": 0.28,
       "tgf_beta": 0.05,
       "angII": 0.05,
-      "c_mean_final": 8.798279762268066,
+      "c_mean_final": 8.798274040222168,
       "p_mean_final": 0.3992372751235962,
       "myo_frac_final": 0.949999988079071,
-      "ac_align_x_final": 0.9171805381774902,
-      "run_dir": "outputs/20260309_123844"
+      "ac_align_x_final": 0.9171804785728455,
+      "run_dir": "outputs/20260309_145720"
     },
     {
       "scenario": "high_signal_only",
       "stretch_x": 0.1,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 10.323108673095703,
+      "c_mean_final": 10.323110580444336,
       "p_mean_final": 0.45955565571784973,
       "myo_frac_final": 0.9750000238418579,
       "ac_align_x_final": 0.9108026027679443,
-      "run_dir": "outputs/20260309_123847"
+      "run_dir": "outputs/20260309_145723"
     },
     {
       "scenario": "high_load_high_signal",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 10.30859661102295,
+      "c_mean_final": 10.308616638183594,
       "p_mean_final": 0.48457375168800354,
       "myo_frac_final": 1.0,
       "ac_align_x_final": 0.9170147776603699,
-      "run_dir": "outputs/20260309_123850"
+      "run_dir": "outputs/20260309_145726"
     },
     {
       "scenario": "infarct_high_load_high_signal",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 10.357619285583496,
-      "p_mean_final": 0.48504525423049927,
+      "c_mean_final": 10.357613563537598,
+      "p_mean_final": 0.48504528403282166,
       "myo_frac_final": 1.0,
       "ac_align_x_final": 0.9177241325378418,
-      "run_dir": "outputs/20260309_123853",
-      "c_core": 13.278793334960938,
-      "c_border": 9.245323181152344,
-      "c_remote": 10.377415657043457,
+      "run_dir": "outputs/20260309_145729",
+      "c_core": 13.278794288635254,
+      "c_border": 9.245327949523926,
+      "c_remote": 10.377408027648926,
       "p_core": 0.4949039816856384,
-      "p_border": 0.4844921827316284,
+      "p_border": 0.48449215292930603,
       "p_remote": 0.48465484380722046,
-      "core_to_remote_ratio": 1.2795857633348462,
+      "core_to_remote_ratio": 1.279586795976033,
       "disp_core": 0.3499999940395355,
       "disp_border": 0.550000011920929,
       "disp_remote": 0.75
@@ -70,22 +70,22 @@
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 9.810016632080078,
+      "c_mean_final": 9.810027122497559,
       "p_mean_final": 0.4260805547237396,
       "myo_frac_final": 0.987500011920929,
       "ac_align_x_final": 0.9167335033416748,
-      "run_dir": "outputs/20260309_123856"
+      "run_dir": "outputs/20260309_145732"
     },
     {
       "scenario": "drug_at1r_block",
       "stretch_x": 0.28,
       "tgf_beta": 0.5,
       "angII": 0.45,
-      "c_mean_final": 10.136554718017578,
-      "p_mean_final": 0.4472498297691345,
+      "c_mean_final": 10.13265323638916,
+      "p_mean_final": 0.4472472369670868,
       "myo_frac_final": 0.987500011920929,
-      "ac_align_x_final": 0.917094349861145,
-      "run_dir": "outputs/20260309_123859"
+      "ac_align_x_final": 0.9170932173728943,
+      "run_dir": "outputs/20260309_145735"
     },
     {
       "scenario": "drug_dual_block",
@@ -95,8 +95,8 @@
       "c_mean_final": 9.406000137329102,
       "p_mean_final": 0.3855631351470947,
       "myo_frac_final": 0.9375,
-      "ac_align_x_final": 0.9171800017356873,
-      "run_dir": "outputs/20260309_123902"
+      "ac_align_x_final": 0.9171801209449768,
+      "run_dir": "outputs/20260309_145738"
     }
   ],
   "checks": [

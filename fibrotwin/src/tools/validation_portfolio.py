@@ -155,9 +155,42 @@ def main(config_path='configs/mvp_2d_stretch.yaml'):
     p.write_text(json.dumps(out, indent=2))
     md = Path('outputs') / 'validation_portfolio.md'
     lines = ['# Validation Portfolio', '', f"Checks passed: {out['n_checks_passed']}/{out['n_checks_total']}", '']
-    lines.append('## Scenario outcomes')
+    lines.append('## Scenario outcomes (interpretable summary)')
+    lines.append('')
+    lines.append('| Scenario | What was simulated | Main takeaway | Key endpoints |')
+    lines.append('|---|---|---|---|')
+    descriptions = {
+        'baseline_low_load_low_signal': 'Low mechanical stretch + low TGFβ/AngII baseline tissue remodeling.',
+        'high_load_only': 'Increased mechanical loading with low biochemical signaling.',
+        'high_signal_only': 'High biochemical signaling (TGFβ/AngII) with low mechanical stretch.',
+        'high_load_high_signal': 'Combined high loading and high signaling (synergy condition).',
+        'infarct_high_load_high_signal': 'Synergy condition with infarct-zone maturation (core/border/remote).',
+        'drug_tgfr_block': 'Synergy condition with pharmacologic TGFβ receptor blockade.',
+        'drug_at1r_block': 'Synergy condition with pharmacologic AT1 receptor blockade.',
+        'drug_dual_block': 'Synergy condition with dual receptor blockade (TGFβR + AT1R).',
+    }
     for r in rows:
-        lines.append(f"- {r['scenario']}: c={r['c_mean_final']:.3f}, p={r['p_mean_final']:.3f}, myo={r['myo_frac_final']:.3f}, ac_align_x={r['ac_align_x_final']:.3f}")
+        name = r['scenario']
+        desc = descriptions.get(name, 'Custom scenario.')
+        takeaway = (
+            'Reference baseline profile.' if name == 'baseline_low_load_low_signal' else
+            'Mechanical loading primarily increases alignment.' if name == 'high_load_only' else
+            'Biochemical signaling strongly increases profibrotic activity.' if name == 'high_signal_only' else
+            'Combined cues produce the strongest non-infarct profibrotic response.' if name == 'high_load_high_signal' else
+            'Infarct core amplifies collagen burden over global non-infarct response.' if name == 'infarct_high_load_high_signal' else
+            'TGFβR blockade suppresses signaling and collagen vs no-drug synergy.' if name == 'drug_tgfr_block' else
+            'AT1R blockade suppresses collagen vs no-drug synergy.' if name == 'drug_at1r_block' else
+            'Dual blockade gives strongest suppression among drug scenarios.' if name == 'drug_dual_block' else
+            'Scenario evaluated.'
+        )
+        key = f"collagen={r['c_mean_final']:.2f}; p={r['p_mean_final']:.3f}; myofibro={r['myo_frac_final']:.3f}; align={r['ac_align_x_final']:.3f}"
+        lines.append(f"| {name} | {desc} | {takeaway} | {key} |")
+    lines.append('')
+    lines.append('## How to interpret endpoints')
+    lines.append('- **collagen**: final fibrosis burden (higher = more fibrosis).')
+    lines.append('- **p**: integrated profibrotic signaling activity (higher = stronger fibrotic signaling).')
+    lines.append('- **myofibro**: final myofibroblast fraction (higher = more activated fibroblast phenotype).')
+    lines.append('- **align**: collagen/fibre alignment with loading axis (higher = more load-directed structure).')
     lines.append('')
     lines.append('## Checks')
     for c in checks:
