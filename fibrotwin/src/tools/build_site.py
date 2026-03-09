@@ -138,6 +138,7 @@ def write_site(runs):
     (SITE / 'assets/js').mkdir(parents=True, exist_ok=True)
     (SITE / 'pages').mkdir(parents=True, exist_ok=True)
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
+    (SITE / 'pages/tests').mkdir(parents=True, exist_ok=True)
 
     (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:820px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
 
@@ -355,8 +356,8 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     card_dir = SITE / 'assets' / 'img' / 'testcards'
     if card_dir.exists():
         cards = sorted(card_dir.glob('T*.png'))
-        thumbs = ''.join([f"<a href='../assets/img/testcards/{c.name}'><img src='../assets/img/testcards/{c.name}' alt='{c.stem}'/></a>" for c in cards[:40]])
-        testcard_block = f"<div class='card'><h2>Per-test confirmation figures (sample)</h2><p>Showing {min(len(cards),40)} of {len(cards)} test cards. Each card includes PMID link mapping, expected behavior, and current support score.</p>{thumbs}</div>"
+        thumbs = ''.join([f"<a href='./tests/{c.stem}.html'><img src='../assets/img/testcards/{c.name}' alt='{c.stem}'/></a>" for c in cards])
+        testcard_block = f"<div class='card'><h2>Per-test validation cards (click for full report)</h2><p>Showing all {len(cards)} cards. Click any card for boundary conditions, reference evidence, model-vs-experiment comparison, and interpretation.</p><div class='grid'>{thumbs}</div></div>"
 
     uq_block = ''
     uqmd = ROOT / 'outputs' / 'uq_portfolio.md'
@@ -397,6 +398,38 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     ntr = ROOT / 'outputs' / 'numerical_test_report.md'
     if ntr.exists():
         numerical_block = f'<div class="card"><h2>Numerical tests (viewable report)</h2>{md_to_html(ntr.read_text())}</div>'
+
+    # detailed pages per test card + failure summary
+    stp = ROOT / 'outputs' / 'systematic_test_catalog.json'
+    if stp.exists():
+        try:
+            st = json.loads(stp.read_text())
+            tests = st.get('tests', [])
+            by_cat = {}
+            for t in tests:
+                by_cat.setdefault(t.get('category','other'), []).append(t.get('model_score_0_to_3',0))
+            fail_rows = []
+            for k,v in sorted(by_cat.items()):
+                mean = sum(v)/max(len(v),1)
+                if mean < 2.5:
+                    fail_rows.append(f"<li><strong>{k}</strong>: mean score {mean:.2f}. Suggested additions: receptor-level signaling, unit-calibrated datasets, richer infarct microstructure.</li>")
+            fail_summary = '<ul>' + ''.join(fail_rows) + '</ul>' if fail_rows else '<p>No low-scoring groups identified.</p>'
+            testcard_block += f"<div class='card'><h2>Failure-group summary and improvement recommendations</h2>{fail_summary}</div>"
+
+            for t in tests:
+                tid=t.get('id','T000')
+                pmid=t.get('pmid','')
+                title=t.get('title','')
+                cat=t.get('category','')
+                expected=t.get('expected','')
+                score=t.get('model_score_0_to_3','NA')
+                bcs = "Boundary conditions (MVP): left edge fixed; right edge prescribed displacement (stretch_x); top/bottom traction-free; reflective cell boundaries.\nMathematical form: ∇·σ=0 in Ω, with u=(0,0) on Γ_left and u_x=ΔL on Γ_right."
+                obs = f"PubMed metadata quote: '{title}'. PMID {pmid}."
+                cmp = f"Model support score: {score}/3. Expected behavior: {expected}."
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} — {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference</h2><p>{obs}</p></div><div class='card'><h2>Model vs experiment comparison</h2><p>{cmp}</p><img src='../assets/img/testcards/{tid}.png' alt='{tid} comparison card'/></div><div class='card'><a href='../validation.html'>← Back to validation page</a></div></main></body></html>"""
+                (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
+        except Exception:
+            pass
 
     (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{numerical_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
