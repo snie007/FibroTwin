@@ -1,0 +1,24 @@
+validation_card:
+  vc01_profibrotic_signal:
+    pmid: 27017945
+    metric: p_mean_final_high_signal
+    expected_band: [0.65, 0.95]
+  vc02_myofibro_fraction:
+    pmid: 26608708
+    metric: myo_frac_high_signal
+    expected_band: [0.55, 1.00]
+  vc03_alignment_under_load:
+    pmid: 22495588
+    metric: ac_align_high_load
+    expected_band: [0.75, 1.00]
+  vc04_infarct_core_collagen:
+    pmid: 7855157
+    metric: c_core_infarct
+    expected_band: [10.0, 200.0]
+  vc05_combined_mech_signal_collagen:
+    pmid: 26608708
+    metric: c_mean_load_signal
+    expected_band: [5.0, 120.0]
+numerics:
+  rel_tol_default: 0.05
+  abs_tol_default: 1.0e-4
