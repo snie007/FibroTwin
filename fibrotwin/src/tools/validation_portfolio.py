@@ -67,13 +67,19 @@ def run_one(cfg, scenario):
         core = rr <= rad
         border = (rr > rad) & (rr <= 2.0 * rad)
         remote = rr > 2.0 * rad
+        c_core = float(fields.c[core].mean().item()) if core.any() else None
+        c_remote = float(fields.c[remote].mean().item()) if remote.any() else None
         metrics.update({
-            'c_core': float(fields.c[core].mean().item()) if core.any() else None,
+            'c_core': c_core,
             'c_border': float(fields.c[border].mean().item()) if border.any() else None,
-            'c_remote': float(fields.c[remote].mean().item()) if remote.any() else None,
+            'c_remote': c_remote,
             'p_core': float(fields.p[core].mean().item()) if core.any() else None,
             'p_border': float(fields.p[border].mean().item()) if border.any() else None,
             'p_remote': float(fields.p[remote].mean().item()) if remote.any() else None,
+            'core_to_remote_ratio': (c_core / max(c_remote, 1e-8)) if (c_core is not None and c_remote is not None) else None,
+            'disp_core': float(fields.scar_dispersion[core].mean().item()) if core.any() else None,
+            'disp_border': float(fields.scar_dispersion[border].mean().item()) if border.any() else None,
+            'disp_remote': float(fields.scar_dispersion[remote].mean().item()) if remote.any() else None,
         })
     return metrics
 

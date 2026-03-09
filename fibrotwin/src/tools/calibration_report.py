@@ -21,6 +21,7 @@ def main(targets='data/calibration/targets.yaml', val='outputs/validation_portfo
     checks.append({'name':'alignment_high_load','value':hl.get('ac_align_x_final'), 'band':tg['growth_remodeling']['alignment_high_load']})
     checks.append({'name':'collagen_fraction_load_signal','value':hls.get('c_mean_final'), 'band':tg['growth_remodeling']['collagen_fraction_load_signal']})
     checks.append({'name':'infarct_core_collagen','value':inf.get('c_core'), 'band':tg['infarct_remodeling']['infarct_core_collagen']})
+    checks.append({'name':'infarct_core_to_remote_ratio','value':inf.get('core_to_remote_ratio'), 'band':tg['infarct_remodeling']['core_to_remote_ratio']})
 
     def ok(v,b):
         return (v is not None) and (b[0] <= v <= b[1])

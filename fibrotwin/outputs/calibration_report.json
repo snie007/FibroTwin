@@ -1,5 +1,5 @@
 {
-  "n": 5,
+  "n": 6,
   "n_pass": 3,
   "checks": [
     {
@@ -22,7 +22,7 @@
     },
     {
       "name": "alignment_high_load",
-      "value": 0.9171804785728455,
+      "value": 0.9171805381774902,
       "band": [
         0.78,
         0.98
@@ -31,7 +31,7 @@
     },
     {
       "name": "collagen_fraction_load_signal",
-      "value": 10.308608055114746,
+      "value": 10.308612823486328,
       "band": [
         8.0,
         20.0
@@ -40,12 +40,21 @@
     },
     {
       "name": "infarct_core_collagen",
-      "value": 13.278800964355469,
+      "value": 13.278799057006836,
       "band": [
         12.0,
         60.0
       ],
       "pass": true
+    },
+    {
+      "name": "infarct_core_to_remote_ratio",
+      "value": 1.279586197136243,
+      "band": [
+        1.5,
+        6.0
+      ],
+      "pass": false
     }
   ]
 }
