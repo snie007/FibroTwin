@@ -364,6 +364,26 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if uqmd.exists():
         uq_block = f'<div class="card"><h2>Uncertainty quantification summary</h2>{md_to_html(uqmd.read_text())}</div>'
 
+    drug_block = ''
+    vpj = ROOT / 'outputs' / 'validation_portfolio.json'
+    if vpj.exists():
+        try:
+            v = json.loads(vpj.read_text())
+            by = {r.get('scenario'): r for r in v.get('scenarios', [])}
+            nd = by.get('high_load_high_signal', {})
+            tg = by.get('drug_tgfr_block', {})
+            at = by.get('drug_at1r_block', {})
+            du = by.get('drug_dual_block', {})
+            rows_drug = f"""
+<tr><td>No drug</td><td>{nd.get('c_mean_final')}</td><td>{nd.get('p_mean_final')}</td></tr>
+<tr><td>TGFβR block</td><td>{tg.get('c_mean_final')}</td><td>{tg.get('p_mean_final')}</td></tr>
+<tr><td>AT1R block</td><td>{at.get('c_mean_final')}</td><td>{at.get('p_mean_final')}</td></tr>
+<tr><td>Dual block</td><td>{du.get('c_mean_final')}</td><td>{du.get('p_mean_final')}</td></tr>
+"""
+            drug_block = f"<div class='card'><h2>Drug Validation Card</h2><p>PMID anchors: <a href='https://pubmed.ncbi.nlm.nih.gov/27017945/'>27017945</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/26608708/'>26608708</a>.</p><table><thead><tr><th>Condition</th><th>Final collagen</th><th>Final profibrotic signal</th></tr></thead><tbody>{rows_drug}</tbody></table><div class='grid'><img src='../assets/img/drug_validation_collagen.png' alt='drug collagen comparison'/><img src='../assets/img/drug_validation_signal.png' alt='drug signaling comparison'/></div><p class='legend'>Expected: receptor blockade suppresses signaling/fibrosis vs no-drug condition; dual blockade strongest.</p></div>"
+        except Exception:
+            drug_block = ''
+
     valcard_block = ''
     vcj = ROOT / 'outputs' / 'validation_card.json'
     if vcj.exists():
@@ -448,7 +468,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{numerical_block}{calib_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
