@@ -364,6 +364,8 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if uqmd.exists():
         uq_block = f'<div class="card"><h2>Uncertainty quantification summary</h2>{md_to_html(uqmd.read_text())}</div>'
 
+    metric_dict_block = '''<div class="card"><h2>Metric dictionary (definitions + units)</h2><table><thead><tr><th>Metric</th><th>Meaning</th><th>Units</th><th>Interpretation</th></tr></thead><tbody><tr><td><code>c_mean_final</code></td><td>Mean collagen field at final time</td><td>model collagen units (a.u.)</td><td>Higher = greater fibrosis burden.</td></tr><tr><td><code>p_mean_final</code></td><td>Integrated profibrotic signaling index from SMAD/ERK/ROS/CaN pathway state</td><td>dimensionless index [0,1] (a.u.)</td><td>Higher = stronger pro-fibrotic signaling drive.</td></tr><tr><td><code>myo_frac_final</code></td><td>Fraction of fibroblasts in myofibroblast phenotype at final time</td><td>fraction [0,1]</td><td>Higher = more activated contractile/depositing phenotype.</td></tr><tr><td><code>ac_align_x_final</code></td><td>Collagen/fibre alignment with principal loading axis (x)</td><td>dimensionless [0,1]</td><td>Higher = stronger load-aligned microstructure.</td></tr></tbody></table><p class="legend">Note: values are model-scale normalized outputs; the calibration cards map these to literature-supported target bands for quantitative comparison.</p></div>'''
+
     drug_block = ''
     vpj = ROOT / 'outputs' / 'validation_portfolio.json'
     if vpj.exists():
@@ -374,13 +376,20 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             tg = by.get('drug_tgfr_block', {})
             at = by.get('drug_at1r_block', {})
             du = by.get('drug_dual_block', {})
+            c0 = float(nd.get('c_mean_final', 1.0) or 1.0)
+            p0 = float(nd.get('p_mean_final', 1.0) or 1.0)
+            def pct(x,b):
+                try:
+                    return 100.0*(float(x)-float(b))/max(abs(float(b)),1e-8)
+                except Exception:
+                    return 0.0
             rows_drug = f"""
-<tr><td>No drug</td><td>{nd.get('c_mean_final')}</td><td>{nd.get('p_mean_final')}</td></tr>
-<tr><td>TGFβR block</td><td>{tg.get('c_mean_final')}</td><td>{tg.get('p_mean_final')}</td></tr>
-<tr><td>AT1R block</td><td>{at.get('c_mean_final')}</td><td>{at.get('p_mean_final')}</td></tr>
-<tr><td>Dual block</td><td>{du.get('c_mean_final')}</td><td>{du.get('p_mean_final')}</td></tr>
+<tr><td>No drug</td><td>{nd.get('c_mean_final'):.3f} a.u.</td><td>{nd.get('p_mean_final'):.3f} (0-1)</td><td>reference</td><td>reference</td></tr>
+<tr><td>TGFβR block</td><td>{tg.get('c_mean_final'):.3f} a.u.</td><td>{tg.get('p_mean_final'):.3f} (0-1)</td><td>{pct(tg.get('c_mean_final',c0),c0):.1f}%</td><td>{pct(tg.get('p_mean_final',p0),p0):.1f}%</td></tr>
+<tr><td>AT1R block</td><td>{at.get('c_mean_final'):.3f} a.u.</td><td>{at.get('p_mean_final'):.3f} (0-1)</td><td>{pct(at.get('c_mean_final',c0),c0):.1f}%</td><td>{pct(at.get('p_mean_final',p0),p0):.1f}%</td></tr>
+<tr><td>Dual block</td><td>{du.get('c_mean_final'):.3f} a.u.</td><td>{du.get('p_mean_final'):.3f} (0-1)</td><td>{pct(du.get('c_mean_final',c0),c0):.1f}%</td><td>{pct(du.get('p_mean_final',p0),p0):.1f}%</td></tr>
 """
-            drug_block = f"<div class='card'><h2>Drug Validation Card</h2><p>PMID anchors: <a href='https://pubmed.ncbi.nlm.nih.gov/27017945/'>27017945</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/26608708/'>26608708</a>.</p><table><thead><tr><th>Condition</th><th>Final collagen</th><th>Final profibrotic signal</th></tr></thead><tbody>{rows_drug}</tbody></table><div class='grid'><img src='../assets/img/drug_validation_collagen.png' alt='drug collagen comparison'/><img src='../assets/img/drug_validation_signal.png' alt='drug signaling comparison'/></div><p class='legend'>Expected: receptor blockade suppresses signaling/fibrosis vs no-drug condition; dual blockade strongest.</p></div>"
+            drug_block = f"<div class='card'><h2>Drug Validation Card</h2><p>PMID anchors: <a href='https://pubmed.ncbi.nlm.nih.gov/27017945/'>27017945</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/26608708/'>26608708</a>.</p><p><strong>Expected pharmacology behavior:</strong> receptor blockade should reduce profibrotic signaling and downstream collagen accumulation; dual blockade should produce the strongest reduction.</p><table><thead><tr><th>Condition</th><th>Collagen (final)</th><th>Profibrotic index p (final)</th><th>Δ collagen vs no-drug</th><th>Δ p vs no-drug</th></tr></thead><tbody>{rows_drug}</tbody></table><div class='grid'><img src='../assets/img/drug_validation_collagen.png' alt='drug collagen comparison'/><img src='../assets/img/drug_validation_signal.png' alt='drug signaling comparison'/></div><p class='legend'>Interpretation: negative Δ values indicate suppression (desired drug effect).</p></div>"
         except Exception:
             drug_block = ''
 
@@ -492,12 +501,12 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 elif cat == 'growth_remodeling':
                     fig = '../assets/img/pubfig_scorecard_by_category.png'
 
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference (screening level)</h2><p>{obs}</p></div><div class='card'><h2>Study-specific validation result</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='card'><h2>Pass/partial analysis</h2>{score_breakdown}</div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main><div class='card'><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference (screening level)</h2><p>{obs}</p></div><div class='card'><h2>Study-specific validation result</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='card'><h2>Pass/partial analysis</h2>{score_breakdown}</div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{param_block}{uniq_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{param_block}{uniq_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
