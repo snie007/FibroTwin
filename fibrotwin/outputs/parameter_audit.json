@@ -1,0 +1,846 @@
+{
+  "n_numeric_parameters": 87,
+  "n_mapped": 18,
+  "n_missing": 69,
+  "n_in_literature_band": 18,
+  "coverage": 0.20689655172413793,
+  "rows": [
+    {
+      "parameter": "seed",
+      "value": 42.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mesh.Lx",
+      "value": 10.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mesh.Ly",
+      "value": 5.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mesh.nx",
+      "value": 30.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mesh.ny",
+      "value": 15.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.E0",
+      "value": 50.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.nu",
+      "value": 0.3,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.plane_stress",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.stretch_x",
+      "value": 0.25,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.kf_aniso",
+      "value": 0.25,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.ogden_mu",
+      "value": 22.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.ogden_alpha",
+      "value": 8.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.ogden_kappa",
+      "value": 220.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "mechanics.nl_max_iter",
+      "value": 60.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "time.dt",
+      "value": 0.2,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "time.n_steps",
+      "value": 1500.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.n_agents",
+      "value": 80.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.speed",
+      "value": 0.05,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.persistence",
+      "value": 0.9,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.noise_std",
+      "value": 0.08,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.taxis_weight",
+      "value": 0.02,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.advection_gain",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.dep_rate",
+      "value": 0.1,
+      "status": "mapped",
+      "units": "collagen/time",
+      "literature_band": [
+        0.005,
+        0.5
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
+    },
+    {
+      "parameter": "cells.dep_sigma",
+      "value": 0.35,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.myo_switch_threshold",
+      "value": 0.45,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.myo_switch_softness",
+      "value": 0.08,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.myo_deact_threshold",
+      "value": 0.2,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.myo_dep_boost",
+      "value": 2.2,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.p_dep_gain",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.mech_dep_gain",
+      "value": 0.7,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.synergy_dep_gain",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.trail_gain",
+      "value": 0.45,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cells.trail_len",
+      "value": 0.6,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "remodeling.tau_fibre",
+      "value": 20.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "remodeling.tau_collagen",
+      "value": 14.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "remodeling.k_align_collagen",
+      "value": 0.05,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "remodeling.k_deg",
+      "value": 0.01,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "remodeling.k_growth",
+      "value": 0.01,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.001,
+        0.2
+      ],
+      "in_literature_band": true,
+      "pmid": 7855157
+    },
+    {
+      "parameter": "remodeling.mech_align_gain",
+      "value": 2.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "collagen_mixture.enabled",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "collagen_mixture.k_maturation",
+      "value": 0.06,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "collagen_mixture.k_deg_young",
+      "value": 0.02,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "collagen_mixture.k_deg_mature",
+      "value": 0.008,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "signaling.tgf_beta",
+      "value": 0.25,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "signaling.angII",
+      "value": 0.2,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "signaling_network.k_tgfr_smad",
+      "value": 1.2,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.5,
+        2.5
+      ],
+      "in_literature_band": true,
+      "pmid": 27017945
+    },
+    {
+      "parameter": "signaling_network.k_at1r_erk",
+      "value": 1.0,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.4,
+        2.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
+    },
+    {
+      "parameter": "signaling_network.k_mech_ros",
+      "value": 1.0,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.2,
+        2.0
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "signaling_network.k_mech_can",
+      "value": 0.8,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.2,
+        2.0
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "signaling_network.d_smad",
+      "value": 0.4,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.1,
+        1.5
+      ],
+      "in_literature_band": true,
+      "pmid": 27017945
+    },
+    {
+      "parameter": "signaling_network.d_erk",
+      "value": 0.5,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.1,
+        1.5
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
+    },
+    {
+      "parameter": "signaling_network.d_ros",
+      "value": 0.45,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.1,
+        1.5
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "signaling_network.d_can",
+      "value": 0.5,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.1,
+        1.5
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "receptors.kon_tgfr",
+      "value": 1.2,
+      "status": "mapped",
+      "units": "1/(conc*time)",
+      "literature_band": [
+        0.2,
+        5.0
+      ],
+      "in_literature_band": true,
+      "pmid": 27017945
+    },
+    {
+      "parameter": "receptors.koff_tgfr",
+      "value": 0.5,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.05,
+        2.0
+      ],
+      "in_literature_band": true,
+      "pmid": 27017945
+    },
+    {
+      "parameter": "receptors.kon_at1r",
+      "value": 1.0,
+      "status": "mapped",
+      "units": "1/(conc*time)",
+      "literature_band": [
+        0.2,
+        5.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
+    },
+    {
+      "parameter": "receptors.koff_at1r",
+      "value": 0.45,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.05,
+        2.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
+    },
+    {
+      "parameter": "pharmacology.tgfr_block",
+      "value": 0.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "pharmacology.at1r_block",
+      "value": 0.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cytokines.enabled",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cytokines.k_neighbors",
+      "value": 8.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cytokines.kernel_sigma",
+      "value": 0.7,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cytokines.D_tgf",
+      "value": 0.15,
+      "status": "mapped",
+      "units": "length^2/time",
+      "literature_band": [
+        0.01,
+        1.0
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "cytokines.D_chemo",
+      "value": 0.25,
+      "status": "mapped",
+      "units": "length^2/time",
+      "literature_band": [
+        0.01,
+        1.5
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "cytokines.decay_tgf",
+      "value": 0.08,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "cytokines.decay_chemo",
+      "value": 0.12,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.enabled",
+      "value": 0.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.center_x",
+      "value": 5.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.center_y",
+      "value": 2.5,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.radius",
+      "value": 1.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.softening",
+      "value": 0.6,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.cue_boost",
+      "value": 0.2,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.signal_source",
+      "value": 0.3,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.k_infl_to_prov",
+      "value": 0.12,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.005,
+        0.2
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "infarct.k_prov_to_scar",
+      "value": 0.06,
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.002,
+        0.15
+      ],
+      "in_literature_band": true,
+      "pmid": 22495588
+    },
+    {
+      "parameter": "infarct.k_infl_resolve",
+      "value": 0.05,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.k_prov_resolve",
+      "value": 0.03,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.collagen_source",
+      "value": 0.03,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.dispersion_core",
+      "value": 0.35,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.dispersion_border",
+      "value": 0.55,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "infarct.dispersion_remote",
+      "value": 0.75,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.frame_every",
+      "value": 5.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.dpi",
+      "value": 120.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.fps",
+      "value": 20.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.quiver_stride",
+      "value": 3.0,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.x_margin",
+      "value": 0.5,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    },
+    {
+      "parameter": "viz.y_margin",
+      "value": 0.5,
+      "status": "missing",
+      "units": null,
+      "literature_band": null,
+      "in_literature_band": null,
+      "pmid": null
+    }
+  ]
+}

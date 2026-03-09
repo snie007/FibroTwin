@@ -1,0 +1,91 @@
+parameters:
+  signaling_network.k_tgfr_smad:
+    units: 1/time
+    literature_band: [0.5, 2.5]
+    source_type: screening
+    pmid: 27017945
+  signaling_network.k_at1r_erk:
+    units: 1/time
+    literature_band: [0.4, 2.0]
+    source_type: screening
+    pmid: 26608708
+  signaling_network.k_mech_ros:
+    units: 1/time
+    literature_band: [0.2, 2.0]
+    source_type: screening
+    pmid: 22495588
+  signaling_network.k_mech_can:
+    units: 1/time
+    literature_band: [0.2, 2.0]
+    source_type: screening
+    pmid: 22495588
+  signaling_network.d_smad:
+    units: 1/time
+    literature_band: [0.1, 1.5]
+    source_type: screening
+    pmid: 27017945
+  signaling_network.d_erk:
+    units: 1/time
+    literature_band: [0.1, 1.5]
+    source_type: screening
+    pmid: 26608708
+  signaling_network.d_ros:
+    units: 1/time
+    literature_band: [0.1, 1.5]
+    source_type: screening
+    pmid: 22495588
+  signaling_network.d_can:
+    units: 1/time
+    literature_band: [0.1, 1.5]
+    source_type: screening
+    pmid: 22495588
+  receptors.kon_tgfr:
+    units: 1/(conc*time)
+    literature_band: [0.2, 5.0]
+    source_type: screening
+    pmid: 27017945
+  receptors.koff_tgfr:
+    units: 1/time
+    literature_band: [0.05, 2.0]
+    source_type: screening
+    pmid: 27017945
+  receptors.kon_at1r:
+    units: 1/(conc*time)
+    literature_band: [0.2, 5.0]
+    source_type: screening
+    pmid: 26608708
+  receptors.koff_at1r:
+    units: 1/time
+    literature_band: [0.05, 2.0]
+    source_type: screening
+    pmid: 26608708
+  infarct.k_infl_to_prov:
+    units: 1/time
+    literature_band: [0.005, 0.2]
+    source_type: screening
+    pmid: 22495588
+  infarct.k_prov_to_scar:
+    units: 1/time
+    literature_band: [0.002, 0.15]
+    source_type: screening
+    pmid: 22495588
+  cytokines.D_tgf:
+    units: length^2/time
+    literature_band: [0.01, 1.0]
+    source_type: screening
+    pmid: 22495588
+  cytokines.D_chemo:
+    units: length^2/time
+    literature_band: [0.01, 1.5]
+    source_type: screening
+    pmid: 22495588
+  cells.dep_rate:
+    units: collagen/time
+    literature_band: [0.005, 0.5]
+    source_type: screening
+    pmid: 26608708
+  remodeling.k_growth:
+    units: 1/time
+    literature_band: [0.001, 0.2]
+    source_type: screening
+    pmid: 7855157

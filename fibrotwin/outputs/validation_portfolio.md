@@ -10,7 +10,7 @@ Checks passed: 8/8
 - infarct_high_load_high_signal: c=10.358, p=0.485, myo=1.000, ac_align_x=0.918
 - drug_tgfr_block: c=9.810, p=0.426, myo=0.988, ac_align_x=0.917
 - drug_at1r_block: c=10.137, p=0.447, myo=0.988, ac_align_x=0.917
-- drug_dual_block: c=9.411, p=0.386, myo=0.938, ac_align_x=0.917
+- drug_dual_block: c=9.406, p=0.386, myo=0.938, ac_align_x=0.917
 
 ## Checks
 - [PASS] high_signal_only has higher profibrotic signal than baseline
