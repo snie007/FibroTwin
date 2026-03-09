@@ -1,0 +1,186 @@
+{
+  "n": 20,
+  "cards": [
+    {
+      "id": "N001",
+      "test_path": "tests/test_collagen_cohort_analytic.py::test_collagen_cohort_matches_linear_system_reference",
+      "title": "Collagen cohort analytic reference",
+      "description": "Compares cohort system update against linear-system reference trajectory.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N001.png",
+      "detail_plot": "../../assets/img/numerical/N001.png"
+    },
+    {
+      "id": "N002",
+      "test_path": "tests/test_collagen_mixture.py::test_collagen_mixture_turnover_and_maturation",
+      "title": "Collagen cohort kinetics",
+      "description": "Verifies young/mature collagen turnover and maturation dynamics.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N002.png",
+      "detail_plot": "../../assets/img/numerical/N002.png"
+    },
+    {
+      "id": "N003",
+      "test_path": "tests/test_coupling_contracts.py::test_mech_signal_synergy_increases_profibrotic_output",
+      "title": "Coupling contract",
+      "description": "Confirms mech + signal synergy increases profibrotic output beyond individual cues.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N003.png",
+      "detail_plot": "../../assets/img/numerical/N003.png"
+    },
+    {
+      "id": "N004",
+      "test_path": "tests/test_cytokine_analytic.py::test_cytokine_zero_diffusion_matches_closed_form",
+      "title": "Cytokine analytic solution",
+      "description": "Compares zero-diffusion cytokine ODE update to closed-form reference.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N004.png",
+      "detail_plot": "../../assets/img/numerical/N004.png"
+    },
+    {
+      "id": "N005",
+      "test_path": "tests/test_cytokines.py::test_cytokine_diffusion_nonnegative_and_spreads",
+      "title": "Cytokine transport positivity",
+      "description": "Verifies diffusion-decay update remains nonnegative and spatially spreads source.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N005.png",
+      "detail_plot": "../../assets/img/numerical/N005.png"
+    },
+    {
+      "id": "N006",
+      "test_path": "tests/test_deposition.py::test_single_cell_radial_like",
+      "title": "Collagen deposition symmetry",
+      "description": "Validates that one fibroblast deposits a radially decaying collagen field.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N006.png",
+      "detail_plot": "../../assets/img/numerical/N006.png"
+    },
+    {
+      "id": "N007",
+      "test_path": "tests/test_deposition.py::test_myofibro_switch_and_boost",
+      "title": "Phenotype switching",
+      "description": "Checks fibroblast->myofibroblast switching and deposition boost behavior.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N007.png",
+      "detail_plot": "../../assets/img/numerical/N007.png"
+    },
+    {
+      "id": "N008",
+      "test_path": "tests/test_deposition.py::test_motion_trail_deposition",
+      "title": "Motion-coupled deposition",
+      "description": "Confirms moving agents leave deposition trail according to motion coupling.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N008.png",
+      "detail_plot": "../../assets/img/numerical/N008.png"
+    },
+    {
+      "id": "N009",
+      "test_path": "tests/test_fem_patch.py::test_fem_uniaxial_patch_like",
+      "title": "FEM patch consistency",
+      "description": "Checks linear-elastic patch-like behavior under uniaxial loading and Dirichlet constraints.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N009.png",
+      "detail_plot": "../../assets/img/numerical/N009.png"
+    },
+    {
+      "id": "N010",
+      "test_path": "tests/test_fibre_update.py::test_fibre_converges_to_target",
+      "title": "Fiber reorientation convergence",
+      "description": "Ensures fibre direction update converges to principal strain target over time.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N010.png",
+      "detail_plot": "../../assets/img/numerical/N010.png"
+    },
+    {
+      "id": "N011",
+      "test_path": "tests/test_infarct_chain_analytic.py::test_infarct_chain_matches_matrix_exponential_reference",
+      "title": "Infarct chain analytic reference",
+      "description": "Validates infarct-state kinetics against matrix exponential reference.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N011.png",
+      "detail_plot": "../../assets/img/numerical/N011.png"
+    },
+    {
+      "id": "N012",
+      "test_path": "tests/test_infarct_maturation.py::test_infarct_state_progression",
+      "title": "Infarct maturation chain",
+      "description": "Checks inflammation->provisional->scar progression trends and bounds.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N012.png",
+      "detail_plot": "../../assets/img/numerical/N012.png"
+    },
+    {
+      "id": "N013",
+      "test_path": "tests/test_mesh.py::test_mesh_counts",
+      "title": "Mesh topology integrity",
+      "description": "Verifies node/element counts and structured mesh consistency before mechanics/remodeling coupling.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N013.png",
+      "detail_plot": "../../assets/img/numerical/N013.png"
+    },
+    {
+      "id": "N014",
+      "test_path": "tests/test_motion_advection.py::test_agent_advection_moves_with_tissue_increment",
+      "title": "Cell-tissue advection coupling",
+      "description": "Checks agents advect with tissue displacement increment under deformation.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N014.png",
+      "detail_plot": "../../assets/img/numerical/N014.png"
+    },
+    {
+      "id": "N015",
+      "test_path": "tests/test_nonlinear_solver.py::test_ogden_solver_respects_dirichlet",
+      "title": "Nonlinear mechanics boundary enforcement",
+      "description": "Ensures Ogden quasistatic solve respects Dirichlet constraints.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N015.png",
+      "detail_plot": "../../assets/img/numerical/N015.png"
+    },
+    {
+      "id": "N016",
+      "test_path": "tests/test_receptor_signaling.py::test_receptor_activation_under_ligand",
+      "title": "Receptor activation kinetics",
+      "description": "Checks TGFR/AT1R activation rises with sustained ligand exposure.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N016.png",
+      "detail_plot": "../../assets/img/numerical/N016.png"
+    },
+    {
+      "id": "N017",
+      "test_path": "tests/test_receptor_signaling.py::test_signaling_from_receptors_increases_p",
+      "title": "Receptor-to-signaling propagation",
+      "description": "Confirms receptor activation propagates into profibrotic index p increase.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N017.png",
+      "detail_plot": "../../assets/img/numerical/N017.png"
+    },
+    {
+      "id": "N018",
+      "test_path": "tests/test_signaling_analytic.py::test_smad_linear_closed_form_in_decoupled_case",
+      "title": "Signaling analytic solution",
+      "description": "Matches linearized SMAD pathway update to closed-form decoupled solution.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N018.png",
+      "detail_plot": "../../assets/img/numerical/N018.png"
+    },
+    {
+      "id": "N019",
+      "test_path": "tests/test_signaling_network.py::test_tgf_increases_smad",
+      "title": "TGF\u03b2 pathway directionality",
+      "description": "Checks SMAD increases with stronger TGF\u03b2 drive.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N019.png",
+      "detail_plot": "../../assets/img/numerical/N019.png"
+    },
+    {
+      "id": "N020",
+      "test_path": "tests/test_signaling_network.py::test_mech_increases_ros_and_can",
+      "title": "Mechanotransduction directionality",
+      "description": "Checks mechanical cue increases ROS and calcineurin activity.",
+      "status": "PASS",
+      "plot": "../assets/img/numerical/N020.png",
+      "detail_plot": "../../assets/img/numerical/N020.png"
+    }
+  ],
+  "n_passed": 20
+}

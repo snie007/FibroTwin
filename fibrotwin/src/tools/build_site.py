@@ -139,6 +139,7 @@ def write_site(runs):
     (SITE / 'pages').mkdir(parents=True, exist_ok=True)
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
     (SITE / 'pages/tests').mkdir(parents=True, exist_ok=True)
+    (SITE / 'pages/numerical_tests').mkdir(parents=True, exist_ok=True)
 
     (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:820px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
 
@@ -425,7 +426,19 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 
     numerical_block = ''
     ntr = ROOT / 'outputs' / 'numerical_test_report.md'
-    if ntr.exists():
+    ncj = ROOT / 'outputs' / 'numerical_cards.json'
+    if ncj.exists():
+        try:
+            nc = json.loads(ncj.read_text())
+            cards = nc.get('cards', [])
+            tiles = ''.join([f"<a class='card' href='./numerical_tests/{c.get('id')}.html'><h3>{c.get('id')} - {c.get('title')}</h3><p>{c.get('description')}</p><img src='{c.get('plot')}' alt='{c.get('id')}'/><p><strong>Status:</strong> {c.get('status')}</p></a>" for c in cards])
+            numerical_block = f"<div class='card'><h2>Numerical verification cards</h2><p>Click a card for simulation setup, interpretation, and result plot.</p><div class='grid'>{tiles}</div></div>"
+            for c in cards:
+                html = f"<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{c.get('id')}</title></head><body><header><h1>{c.get('id')} - {c.get('title')}</h1></header><main><div class='card'><p><strong>Test path:</strong> <code>{c.get('test_path')}</code></p><p><strong>What simulation is run:</strong> {c.get('description')}</p><p><strong>Status:</strong> {c.get('status')}</p></div><div class='card'><h2>Result plot</h2><img src='{c.get('detail_plot')}' alt='{c.get('id')} result'/></div><div class='card'><h2>Why this test matters</h2><p>This numerical verification test checks solver stability/consistency for one component before coupling it into multiscale fibrosis simulations.</p></div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"
+                (SITE / 'pages' / 'numerical_tests' / f"{c.get('id')}.html").write_text(html)
+        except Exception:
+            numerical_block = ''
+    elif ntr.exists():
         numerical_block = f'<div class="card"><h2>Numerical tests (viewable report)</h2>{md_to_html(ntr.read_text())}</div>'
 
     calib_block = ''
