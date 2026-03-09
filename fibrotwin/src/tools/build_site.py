@@ -140,6 +140,7 @@ def write_site(runs):
     (SITE / 'data').mkdir(parents=True, exist_ok=True)
     (SITE / 'pages/tests').mkdir(parents=True, exist_ok=True)
     (SITE / 'pages/numerical_tests').mkdir(parents=True, exist_ok=True)
+    (SITE / 'pages/calibration').mkdir(parents=True, exist_ok=True)
 
     (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:820px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
 
@@ -442,9 +443,25 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         numerical_block = f'<div class="card"><h2>Numerical tests (viewable report)</h2>{md_to_html(ntr.read_text())}</div>'
 
     calib_block = ''
-    crm = ROOT / 'outputs' / 'calibration_report.md'
-    if crm.exists():
-        calib_block = f'<div class="card"><h2>Unit-calibrated target report</h2>{md_to_html(crm.read_text())}</div>'
+    ccj = ROOT / 'outputs' / 'calibration_cards.json'
+    if ccj.exists():
+        try:
+            cc = json.loads(ccj.read_text())
+            cards = cc.get('cards', [])
+            tiles = ''.join([f"<a class='card' href='./calibration/{c.get('id')}.html'><h3>{c.get('id')} - {c.get('name')}</h3><p>{c.get('description')}</p><p><strong>Status:</strong> {c.get('status')}</p><p><strong>Value:</strong> {c.get('value')} | <strong>Band:</strong> {c.get('band')}</p></a>" for c in cards])
+            fail = cc.get('failed_cards', [])
+            top3 = fail[:3]
+            plan_items = ''.join([f"<li><strong>{f.get('id')} {f.get('name')}</strong>: {f.get('action_plan')}</li>" for f in top3]) or '<li>No failed checks in this run.</li>'
+            calib_block = f"<div class='card'><h2>Calibration cards</h2><p>Click for detailed summary, scenario interpretation, and remediation guidance.</p><div class='grid'>{tiles}</div></div><div class='card'><h2>Failed-check recovery plan</h2><p>Priority plan for currently failed checks (top 3):</p><ul>{plan_items}</ul></div>"
+            for c in cards:
+                html = f"<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{c.get('id')}</title></head><body><header><h1>{c.get('id')} - Calibration detail</h1></header><main><div class='card'><p><strong>Calibration target:</strong> {c.get('name')}</p><p><strong>Description:</strong> {c.get('description')}</p><p><strong>Status:</strong> {c.get('status')}</p><p><strong>Model value:</strong> {c.get('value')}</p><p><strong>Literature/target band:</strong> {c.get('band')}</p></div><div class='card'><h2>Interpretation</h2><p>This check quantifies whether simulated endpoint falls within the declared target band used for evidence-aligned calibration.</p></div><div class='card'><h2>Action plan</h2><p>{c.get('action_plan')}</p></div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"
+                (SITE / 'pages' / 'calibration' / f"{c.get('id')}.html").write_text(html)
+        except Exception:
+            calib_block = ''
+    else:
+        crm = ROOT / 'outputs' / 'calibration_report.md'
+        if crm.exists():
+            calib_block = f'<div class="card"><h2>Unit-calibrated target report</h2>{md_to_html(crm.read_text())}</div>'
 
     param_block = ''
     pam = ROOT / 'outputs' / 'parameter_audit.md'

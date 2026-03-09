@@ -1,0 +1,116 @@
+{
+  "n": 6,
+  "n_failed": 3,
+  "cards": [
+    {
+      "id": "C001",
+      "name": "myofibro_fraction_high_signal",
+      "status": "FAIL",
+      "value": 0.9750000238418579,
+      "band": [
+        0.6,
+        0.9
+      ],
+      "description": "Checks fibroblast activation under high biochemical signaling.",
+      "action_plan": "Increase phenotype switching sensitivity (myo_switch_threshold down, k_switch up) and/or increase TGFR->SMAD gain."
+    },
+    {
+      "id": "C002",
+      "name": "profibrotic_index_high_signal",
+      "status": "FAIL",
+      "value": 0.45955565571784973,
+      "band": [
+        0.65,
+        0.95
+      ],
+      "description": "Checks integrated profibrotic signaling index under high signal.",
+      "action_plan": "Increase receptor-to-signaling gains (k_tgfr_smad, k_at1r_erk) or reduce signaling decay (d_smad/d_erk)."
+    },
+    {
+      "id": "C003",
+      "name": "alignment_high_load",
+      "status": "PASS",
+      "value": 0.9171804785728455,
+      "band": [
+        0.78,
+        0.98
+      ],
+      "description": "Checks collagen/fibre alignment response under mechanical loading.",
+      "action_plan": "No immediate tuning required; retain as anchor constraint."
+    },
+    {
+      "id": "C004",
+      "name": "collagen_fraction_load_signal",
+      "status": "PASS",
+      "value": 10.30860710144043,
+      "band": [
+        8.0,
+        20.0
+      ],
+      "description": "Checks fibrosis burden under combined load + signaling.",
+      "action_plan": "No immediate tuning required; retain as anchor constraint."
+    },
+    {
+      "id": "C005",
+      "name": "infarct_core_collagen",
+      "status": "PASS",
+      "value": 13.278800964355469,
+      "band": [
+        12.0,
+        60.0
+      ],
+      "description": "Checks elevated collagen burden in infarct core.",
+      "action_plan": "No immediate tuning required; retain as anchor constraint."
+    },
+    {
+      "id": "C006",
+      "name": "infarct_core_to_remote_ratio",
+      "status": "FAIL",
+      "value": 1.2795890855725875,
+      "band": [
+        1.5,
+        6.0
+      ],
+      "description": "Checks spatial contrast between infarct core and remote tissue.",
+      "action_plan": "Increase core-specific signaling/deposition while reducing remote spillover (diffusion/decay tuning)."
+    }
+  ],
+  "failed_cards": [
+    {
+      "id": "C001",
+      "name": "myofibro_fraction_high_signal",
+      "status": "FAIL",
+      "value": 0.9750000238418579,
+      "band": [
+        0.6,
+        0.9
+      ],
+      "description": "Checks fibroblast activation under high biochemical signaling.",
+      "action_plan": "Increase phenotype switching sensitivity (myo_switch_threshold down, k_switch up) and/or increase TGFR->SMAD gain."
+    },
+    {
+      "id": "C002",
+      "name": "profibrotic_index_high_signal",
+      "status": "FAIL",
+      "value": 0.45955565571784973,
+      "band": [
+        0.65,
+        0.95
+      ],
+      "description": "Checks integrated profibrotic signaling index under high signal.",
+      "action_plan": "Increase receptor-to-signaling gains (k_tgfr_smad, k_at1r_erk) or reduce signaling decay (d_smad/d_erk)."
+    },
+    {
+      "id": "C006",
+      "name": "infarct_core_to_remote_ratio",
+      "status": "FAIL",
+      "value": 1.2795890855725875,
+      "band": [
+        1.5,
+        6.0
+      ],
+      "description": "Checks spatial contrast between infarct core and remote tissue.",
+      "action_plan": "Increase core-specific signaling/deposition while reducing remote spillover (diffusion/decay tuning)."
+    }
+  ]
+}

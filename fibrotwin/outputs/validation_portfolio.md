@@ -12,7 +12,7 @@ Checks passed: 8/8
 | high_load_high_signal | Combined high loading and high signaling (synergy condition). | Combined cues produce the strongest non-infarct profibrotic response. | collagen=10.31; p=0.485; myofibro=1.000; align=0.917 |
 | infarct_high_load_high_signal | Synergy condition with infarct-zone maturation (core/border/remote). | Infarct core amplifies collagen burden over global non-infarct response. | collagen=10.36; p=0.485; myofibro=1.000; align=0.918 |
 | drug_tgfr_block | Synergy condition with pharmacologic TGFβ receptor blockade. | TGFβR blockade suppresses signaling and collagen vs no-drug synergy. | collagen=9.81; p=0.426; myofibro=0.988; align=0.917 |
-| drug_at1r_block | Synergy condition with pharmacologic AT1 receptor blockade. | AT1R blockade suppresses collagen vs no-drug synergy. | collagen=10.13; p=0.447; myofibro=0.988; align=0.917 |
+| drug_at1r_block | Synergy condition with pharmacologic AT1 receptor blockade. | AT1R blockade suppresses collagen vs no-drug synergy. | collagen=10.14; p=0.447; myofibro=0.988; align=0.917 |
 | drug_dual_block | Synergy condition with dual receptor blockade (TGFβR + AT1R). | Dual blockade gives strongest suppression among drug scenarios. | collagen=9.41; p=0.386; myofibro=0.938; align=0.917 |
 
 ## How to interpret endpoints
