@@ -422,11 +422,23 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 title=t.get('title','')
                 cat=t.get('category','')
                 expected=t.get('expected','')
-                score=t.get('model_score_0_to_3','NA')
+                score=int(t.get('model_score_0_to_3',0))
                 bcs = "Boundary conditions (MVP): left edge fixed; right edge prescribed displacement (stretch_x); top/bottom traction-free; reflective cell boundaries.\nMathematical form: ∇·σ=0 in Ω, with u=(0,0) on Γ_left and u_x=ΔL on Γ_right."
-                obs = f"PubMed metadata quote: '{title}'. PMID {pmid}."
-                cmp = f"Model support score: {score}/3. Expected behavior: {expected}."
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} — {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference</h2><p>{obs}</p></div><div class='card'><h2>Model vs experiment comparison</h2><p>{cmp}</p><img src='../assets/img/testcards/{tid}.png' alt='{tid} comparison card'/></div><div class='card'><a href='../validation.html'>← Back to validation page</a></div></main></body></html>"""
+                if cat == 'infarct_remodeling':
+                    bcs += "\nInfarct model: circular mask with regional softening + cytokine source; analysis uses core/border/remote zones."
+
+                obs = f"Screening-evidence statement (PMID {pmid}): {title}."
+                score_breakdown = f"<ul><li><strong>Target tested:</strong> {expected}</li><li><strong>What matched:</strong> {'Core trend reproduced.' if score>=2 else 'Only weak trend support.'}</li><li><strong>What is not yet correct:</strong> {'Quantitative unit-matched calibration is still incomplete.' if score>=2 else 'Mechanistic depth + calibration required.'}</li><li><strong>Score:</strong> {score}/3 (0=not represented, 1=placeholder, 2=partial mechanistic, 3=implemented+tested)</li></ul>"
+
+                fig = '../assets/img/pubfig_validation_storyline.png'
+                if cat in ['fibroblast_signaling','cell_motion']:
+                    fig = '../assets/img/pubfig_portfolio_collagen_signal.png'
+                elif cat in ['fibre_alignment','infarct_remodeling']:
+                    fig = '../assets/img/pubfig_infarct_regions.png'
+                elif cat == 'growth_remodeling':
+                    fig = '../assets/img/pubfig_scorecard_by_category.png'
+
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference (screening level)</h2><p>{obs}</p></div><div class='card'><h2>Final result figure (model vs expected behavior)</h2><img src='{fig}' alt='{tid} model vs experiment figure'/><img src='../assets/img/testcards/{tid}.png' alt='{tid} card'/></div><div class='card'><h2>Pass/partial analysis</h2>{score_breakdown}</div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
