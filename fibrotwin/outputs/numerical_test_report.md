@@ -1,7 +1,7 @@
 # Numerical Test Report
 
-Collected: 18
-Passed: 18
+Collected: 20
+Passed: 20
 Exit code: 0
 
 ## Tests
@@ -20,13 +20,15 @@ Exit code: 0
 - tests/test_mesh.py::test_mesh_counts
 - tests/test_motion_advection.py::test_agent_advection_moves_with_tissue_increment
 - tests/test_nonlinear_solver.py::test_ogden_solver_respects_dirichlet
+- tests/test_receptor_signaling.py::test_receptor_activation_under_ligand
+- tests/test_receptor_signaling.py::test_signaling_from_receptors_increases_p
 - tests/test_signaling_analytic.py::test_smad_linear_closed_form_in_decoupled_case
 - tests/test_signaling_network.py::test_tgf_increases_smad
 - tests/test_signaling_network.py::test_mech_increases_ros_and_can
 
 ## pytest tail
 ```
-..................                                                       [100%]
-18 passed in 3.21s
+....................                                                     [100%]
+20 passed in 3.30s
 
 ```

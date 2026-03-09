@@ -1,6 +1,6 @@
 {
-  "n_collected": 18,
-  "n_passed": 18,
+  "n_collected": 20,
+  "n_passed": 20,
   "exit_code": 0,
   "tests": [
     "tests/test_collagen_cohort_analytic.py::test_collagen_cohort_matches_linear_system_reference",
@@ -18,9 +18,11 @@
     "tests/test_mesh.py::test_mesh_counts",
     "tests/test_motion_advection.py::test_agent_advection_moves_with_tissue_increment",
     "tests/test_nonlinear_solver.py::test_ogden_solver_respects_dirichlet",
+    "tests/test_receptor_signaling.py::test_receptor_activation_under_ligand",
+    "tests/test_receptor_signaling.py::test_signaling_from_receptors_increases_p",
     "tests/test_signaling_analytic.py::test_smad_linear_closed_form_in_decoupled_case",
     "tests/test_signaling_network.py::test_tgf_increases_smad",
     "tests/test_signaling_network.py::test_mech_increases_ros_and_can"
   ],
-  "raw_tail": "..................                                                       [100%]\n18 passed in 3.21s\n"
+  "raw_tail": "....................                                                     [100%]\n20 passed in 3.30s\n"
 }

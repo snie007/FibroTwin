@@ -424,6 +424,18 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if crm.exists():
         calib_block = f'<div class="card"><h2>Unit-calibrated target report</h2>{md_to_html(crm.read_text())}</div>'
 
+    matrix_help_block = ''
+    spm = ROOT / 'outputs' / 'scenario_portfolio_matrix.json'
+    if spm.exists():
+        try:
+            sm = json.loads(spm.read_text())
+            sc = sm.get('scenarios', [])
+            top_c = sorted(sc, key=lambda r: r.get('c_mean_final', 0.0), reverse=True)[:5]
+            rows = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top_c])
+            matrix_help_block = f"<div class='card'><h2>How to read the scenario matrix</h2><p>Each row is one in-silico experiment with a specific load (stretch_x) and biochemical drive (TGFβ/AngII). Use it to identify which conditions reproduce high collagen, high profibrotic signaling, and alignment patterns.</p><ul><li><strong>c_mean_final</strong>: fibrosis burden endpoint</li><li><strong>p_mean_final</strong>: integrated profibrotic signaling endpoint</li><li><strong>ac_align_x_final</strong>: collagen/fibre alignment with loading axis</li></ul><p><strong>Top-5 collagen scenarios:</strong></p><table><thead><tr><th>Scenario</th><th>stretch_x</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Align</th></tr></thead><tbody>{rows}</tbody></table><p class='legend'>Takeaway: use this table to choose candidate regimes before deep paper-by-paper validation.</p></div>"
+        except Exception:
+            matrix_help_block = ''
+
     # detailed pages per test card + failure summary
     stp = ROOT / 'outputs' / 'systematic_test_catalog.json'
     if stp.exists():
@@ -463,12 +475,12 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 elif cat == 'growth_remodeling':
                     fig = '../assets/img/pubfig_scorecard_by_category.png'
 
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference (screening level)</h2><p>{obs}</p></div><div class='card'><h2>Final result figure (model vs expected behavior)</h2><img src='../../assets/img/{fig.split('/')[-1]}' alt='{tid} model vs experiment figure'/><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/></div><div class='card'><h2>Pass/partial analysis</h2>{score_breakdown}</div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - {cat}</h1></header><main><div class='card'><p><strong>Reference:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a></p><p><strong>Test target:</strong> {expected}</p></div><div class='card'><h2>Boundary conditions (words + maths)</h2><pre>{bcs}</pre></div><div class='card'><h2>Observation from reference (screening level)</h2><p>{obs}</p></div><div class='card'><h2>Study-specific validation result</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='card'><h2>Pass/partial analysis</h2>{score_breakdown}</div><div class='card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))

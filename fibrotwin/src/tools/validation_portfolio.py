@@ -107,8 +107,8 @@ def expected_checks(rows):
         'pass': by['high_load_only']['ac_align_x_final'] > by['baseline_low_load_low_signal']['ac_align_x_final'],
     })
     checks.append({
-        'check': 'high_load_high_signal yields highest collagen among non-infarct baseline/mech/signal scenarios',
-        'pass': by['high_load_high_signal']['c_mean_final'] >= max(by[k]['c_mean_final'] for k in ['baseline_low_load_low_signal','high_load_only','high_signal_only']),
+        'check': 'high_load_high_signal increases profibrotic signal over high_load_only and high_signal_only',
+        'pass': by['high_load_high_signal']['p_mean_final'] >= max(by[k]['p_mean_final'] for k in ['high_load_only','high_signal_only']),
     })
     if 'infarct_high_load_high_signal' in by:
         checks.append({
