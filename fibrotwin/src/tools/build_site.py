@@ -399,6 +399,11 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if ntr.exists():
         numerical_block = f'<div class="card"><h2>Numerical tests (viewable report)</h2>{md_to_html(ntr.read_text())}</div>'
 
+    calib_block = ''
+    crm = ROOT / 'outputs' / 'calibration_report.md'
+    if crm.exists():
+        calib_block = f'<div class="card"><h2>Unit-calibrated target report</h2>{md_to_html(crm.read_text())}</div>'
+
     # detailed pages per test card + failure summary
     stp = ROOT / 'outputs' / 'systematic_test_catalog.json'
     if stp.exists():
@@ -443,7 +448,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{numerical_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{numerical_block}{calib_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))

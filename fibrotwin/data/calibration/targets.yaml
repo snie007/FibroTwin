@@ -1,0 +1,19 @@
+units:
+  collagen_fraction: '% area'
+  myofibro_fraction: 'fraction [0,1]'
+  alignment_index: 'unitless [0,1]'
+  stiffness_ratio: 'unitless'
+
+targets:
+  fibroblast_signaling:
+    pmid: 27017945
+    myofibro_fraction_high_signal: [0.60, 0.90]
+    profibrotic_index_high_signal: [0.65, 0.95]
+  growth_remodeling:
+    pmid: 26608708
+    collagen_fraction_load_signal: [8.0, 20.0]
+    alignment_high_load: [0.78, 0.98]
+  infarct_remodeling:
+    pmid: 22495588
+    infarct_core_collagen: [12.0, 60.0]
+    core_to_remote_ratio: [1.5, 6.0]

@@ -8,7 +8,7 @@ from ..cells.deposition import deposit_collagen, collagen_deposition_source, upd
 from ..remodeling.fibre_reorientation import principal_direction_from_strain, update_fibres
 from ..remodeling.mixture_growth import update_growth, element_E_from_fields
 from ..remodeling.cytokines import build_knn_weights, update_cytokine_fields
-from ..remodeling.signaling_network import update_signaling_network
+from ..remodeling.receptor_signaling import update_receptors, update_signaling_from_receptors
 from ..remodeling.infarct_maturation import (
     init_infarct_states,
     update_infarct_states,
@@ -73,6 +73,17 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
                 infarct_node_mask,
                 params=inf,
             )
+            # richer infarct microstructure: dispersion map across zones
+            cx = inf.get('center_x', 0.5 * Lx)
+            cy = inf.get('center_y', 0.5 * Ly)
+            rad = inf.get('radius', 0.2 * min(Lx, Ly))
+            rr = torch.sqrt((nodes[:, 0] - cx) ** 2 + (nodes[:, 1] - cy) ** 2)
+            core = rr <= rad
+            border = (rr > rad) & (rr <= 2.0 * rad)
+            remote = rr > 2.0 * rad
+            fields.scar_dispersion[core] = inf.get('dispersion_core', 0.35)
+            fields.scar_dispersion[border] = inf.get('dispersion_border', 0.55)
+            fields.scar_dispersion[remote] = inf.get('dispersion_remote', 0.75)
 
         c_elem = fields.c[elems].mean(dim=1)
         g_elem = fields.g[elems].mean(dim=1)
@@ -154,15 +165,17 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             tgf_eff = torch.full_like(cue_node, sig.get('tgf_beta', 0.25))
             ang_eff = torch.full_like(cue_node, sig.get('angII', 0.2))
 
+        rec = config.get('receptors', {})
+        fields.tgfr, fields.at1r = update_receptors(fields.tgfr, fields.at1r, dt, tgf_eff, ang_eff, rec)
         net = config.get('signaling_network', {})
-        fields.smad, fields.erk, fields.ros, fields.can, fields.p = update_signaling_network(
+        fields.smad, fields.erk, fields.ros, fields.can, fields.p = update_signaling_from_receptors(
             fields.smad,
             fields.erk,
             fields.ros,
             fields.can,
             dt,
-            tgf=tgf_eff,
-            ang_eff=ang_eff,
+            tgfr=fields.tgfr,
+            at1r=fields.at1r,
             mech_cue=cue_node,
             params=net,
         )
@@ -241,6 +254,9 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             'erk': fields.erk.detach().cpu(),
             'ros': fields.ros.detach().cpu(),
             'can': fields.can.detach().cpu(),
+            'tgfr': fields.tgfr.detach().cpu(),
+            'at1r': fields.at1r.detach().cpu(),
+            'scar_dispersion': fields.scar_dispersion.detach().cpu(),
             'infl': fields.infl.detach().cpu(),
             'prov': fields.prov.detach().cpu(),
             'scar': fields.scar.detach().cpu(),
@@ -259,11 +275,13 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             chemo_mean = fields.chemo.mean().item()
             smad_mean = fields.smad.mean().item()
             erk_mean = fields.erk.mean().item()
+            tgfr_mean = fields.tgfr.mean().item()
+            at1r_mean = fields.at1r.mean().item()
             infl_mean = fields.infl.mean().item()
             scar_mean = fields.scar.mean().item()
             cy_mean = fields.c_young.mean().item()
             cm_mean = fields.c_mature.mean().item()
-            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} c_y={cy_mean:.4e} c_m={cm_mean:.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
+            log_line(out_dir, f'step={step} max_u={U.abs().max().item():.4e} c_mean={fields.c.mean().item():.4e} c_y={cy_mean:.4e} c_m={cm_mean:.4e} g_mean={fields.g.mean().item():.4e} p_mean={p_mean:.4f} tgf_mean={tgf_mean:.4f} chemo_mean={chemo_mean:.4f} smad_mean={smad_mean:.4f} erk_mean={erk_mean:.4f} tgfr_mean={tgfr_mean:.4f} at1r_mean={at1r_mean:.4f} infl_mean={infl_mean:.4f} scar_mean={scar_mean:.4f} myo_frac={myo_frac:.4f} a_align_x={a_align:.4f} ac_align_x={ac_align:.4f} model={model}')
 
     # second-pass rendering with fixed global collagen max across selected frames
     viz_enabled = config.get('viz', {}).get('enable', True)
