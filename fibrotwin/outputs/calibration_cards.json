@@ -6,7 +6,7 @@
       "id": "C001",
       "name": "myofibro_fraction_high_signal",
       "status": "FAIL",
-      "value": 0.9750000238418579,
+      "value": 1.0,
       "band": [
         0.6,
         0.9
@@ -18,7 +18,7 @@
       "id": "C002",
       "name": "profibrotic_index_high_signal",
       "status": "FAIL",
-      "value": 0.45955565571784973,
+      "value": 0.4941369891166687,
       "band": [
         0.65,
         0.95
@@ -30,7 +30,7 @@
       "id": "C003",
       "name": "alignment_high_load",
       "status": "PASS",
-      "value": 0.9171804785728455,
+      "value": 0.9168035984039307,
       "band": [
         0.78,
         0.98
@@ -42,7 +42,7 @@
       "id": "C004",
       "name": "collagen_fraction_load_signal",
       "status": "PASS",
-      "value": 10.30860710144043,
+      "value": 10.41305923461914,
       "band": [
         8.0,
         20.0
@@ -54,7 +54,7 @@
       "id": "C005",
       "name": "infarct_core_collagen",
       "status": "PASS",
-      "value": 13.278800964355469,
+      "value": 13.525714874267578,
       "band": [
         12.0,
         60.0
@@ -66,7 +66,7 @@
       "id": "C006",
       "name": "infarct_core_to_remote_ratio",
       "status": "FAIL",
-      "value": 1.2795890855725875,
+      "value": 1.2946675569970427,
       "band": [
         1.5,
         6.0
@@ -80,7 +80,7 @@
       "id": "C001",
       "name": "myofibro_fraction_high_signal",
       "status": "FAIL",
-      "value": 0.9750000238418579,
+      "value": 1.0,
       "band": [
         0.6,
         0.9
@@ -92,7 +92,7 @@
       "id": "C002",
       "name": "profibrotic_index_high_signal",
       "status": "FAIL",
-      "value": 0.45955565571784973,
+      "value": 0.4941369891166687,
       "band": [
         0.65,
         0.95
@@ -104,7 +104,7 @@
       "id": "C006",
       "name": "infarct_core_to_remote_ratio",
       "status": "FAIL",
-      "value": 1.2795890855725875,
+      "value": 1.2946675569970427,
       "band": [
         1.5,
         6.0

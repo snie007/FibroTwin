@@ -1,13 +1,11 @@
 seed: 42
 device: auto
 output_root: outputs
-
 mesh:
   Lx: 10.0
   Ly: 5.0
   nx: 30
   ny: 15
-
 mechanics:
   model: ogden
   E0: 50.0
@@ -19,11 +17,9 @@ mechanics:
   ogden_alpha: 8.0
   ogden_kappa: 220.0
   nl_max_iter: 60
-
 time:
   dt: 0.2
   n_steps: 1500
-
 cells:
   n_agents: 80
   speed: 0.05
@@ -33,16 +29,15 @@ cells:
   advection_gain: 1.0
   dep_rate: 0.1
   dep_sigma: 0.35
-  myo_switch_threshold: 0.45
-  myo_switch_softness: 0.08
-  myo_deact_threshold: 0.20
+  myo_switch_threshold: 0.52
+  myo_switch_softness: 0.06
+  myo_deact_threshold: 0.2
   myo_dep_boost: 2.2
   p_dep_gain: 1.0
   mech_dep_gain: 0.7
   synergy_dep_gain: 1.0
   trail_gain: 0.45
   trail_len: 0.6
-
 remodeling:
   tau_fibre: 20.0
   tau_collagen: 14.0
@@ -50,63 +45,55 @@ remodeling:
   k_deg: 0.01
   k_growth: 0.01
   mech_align_gain: 2.0
-
 collagen_mixture:
   enabled: true
   k_maturation: 0.06
   k_deg_young: 0.02
   k_deg_mature: 0.008
-
 signaling:
   tgf_beta: 0.25
-  angII: 0.20
-
+  angII: 0.2
 signaling_network:
-  k_tgfr_smad: 1.2
-  k_at1r_erk: 1.0
+  k_tgfr_smad: 1.55
+  k_at1r_erk: 1.25
   k_mech_ros: 1.0
   k_mech_can: 0.8
   d_smad: 0.4
   d_erk: 0.5
   d_ros: 0.45
   d_can: 0.5
-
 receptors:
   kon_tgfr: 1.2
   koff_tgfr: 0.5
   kon_at1r: 1.0
   koff_at1r: 0.45
-
 pharmacology:
   tgfr_block: 0.0
   at1r_block: 0.0
-
 cytokines:
   enabled: true
   k_neighbors: 8
   kernel_sigma: 0.7
-  D_tgf: 0.15
-  D_chemo: 0.25
-  decay_tgf: 0.08
-  decay_chemo: 0.12
-
+  D_tgf: 0.12
+  D_chemo: 0.2
+  decay_tgf: 0.1
+  decay_chemo: 0.14
 infarct:
   enabled: false
   center_x: 5.0
   center_y: 2.5
   radius: 1.0
   softening: 0.6
-  cue_boost: 0.20
-  signal_source: 0.30
+  cue_boost: 0.2
+  signal_source: 0.28
   k_infl_to_prov: 0.12
   k_prov_to_scar: 0.06
   k_infl_resolve: 0.05
   k_prov_resolve: 0.03
-  collagen_source: 0.03
-  dispersion_core: 0.35
+  collagen_source: 0.05
+  dispersion_core: 0.3
   dispersion_border: 0.55
-  dispersion_remote: 0.75
-
+  dispersion_remote: 0.82
 viz:
   frame_every: 5
   dpi: 120
@@ -115,5 +102,9 @@ viz:
   x_margin: 0.5
   y_margin: 0.5
   collagen_cmax: auto
-  xlim_fixed: [-0.8, 16.5]
-  ylim_fixed: [-2.2, 7.2]
+  xlim_fixed:
+  - -0.8
+  - 16.5
+  ylim_fixed:
+  - -2.2
+  - 7.2
