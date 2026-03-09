@@ -1,13 +1,18 @@
 import torch
 
 
-def update_phenotype(agents, nodes, cue_node, profibrotic_node=None, threshold=0.45, k_switch=0.08, deact_threshold=0.20):
+def update_phenotype(agents, nodes, cue_node, profibrotic_node=None, threshold=0.45, k_switch=0.08, deact_threshold=0.20, myo_cap=1.0):
     d = torch.cdist(agents.x, nodes)
     idx = torch.argmin(d, dim=1)
     local_cue = cue_node[idx]
     local_p = profibrotic_node[idx] if profibrotic_node is not None else torch.zeros_like(local_cue)
     z = (0.6 * local_cue + 1.0 * local_p - threshold) / max(k_switch, 1e-6)
     p_on = torch.sigmoid(z)
+    # Optional global activation cap to prevent unrealistic saturation
+    if myo_cap < 0.999:
+        frac = agents.is_myofibro.float().mean()
+        cap_factor = torch.clamp((myo_cap - frac) / max(myo_cap, 1e-6), min=0.0, max=1.0)
+        p_on = p_on * cap_factor
     rand = torch.rand_like(p_on)
     switched_on = rand < p_on
 

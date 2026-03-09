@@ -192,6 +192,7 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             threshold=cel.get('myo_switch_threshold', 0.45),
             k_switch=cel.get('myo_switch_softness', 0.08),
             deact_threshold=cel.get('myo_deact_threshold', 0.20),
+            myo_cap=cel.get('myo_cap', 1.0),
         )
         idx_nn = torch.argmin(torch.cdist(agents.x, nodes), dim=1)
         agent_p = fields.p[idx_nn]
