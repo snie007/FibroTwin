@@ -12,7 +12,7 @@
         0.9
       ],
       "description": "Checks fibroblast activation under high biochemical signaling.",
-      "action_plan": "Increase phenotype switching sensitivity (myo_switch_threshold down, k_switch up) and/or increase TGFR->SMAD gain."
+      "action_plan": "Activation is too high; reduce phenotype switching sensitivity (myo_switch_threshold up, k_switch down) and/or reduce TGFR->SMAD gain."
     },
     {
       "id": "C002",
@@ -86,7 +86,7 @@
         0.9
       ],
       "description": "Checks fibroblast activation under high biochemical signaling.",
-      "action_plan": "Increase phenotype switching sensitivity (myo_switch_threshold down, k_switch up) and/or increase TGFR->SMAD gain."
+      "action_plan": "Activation is too high; reduce phenotype switching sensitivity (myo_switch_threshold up, k_switch down) and/or reduce TGFR->SMAD gain."
     },
     {
       "id": "C002",

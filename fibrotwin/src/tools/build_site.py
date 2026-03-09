@@ -483,12 +483,12 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             rows = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top_c])
             matrix_help_block = f"<div class='card'><h2>How to read the scenario matrix</h2><p>Each row is one in-silico experiment with a specific load (stretch_x) and biochemical drive (TGFβ/AngII). Use it to identify which conditions reproduce high collagen, high profibrotic signaling, and alignment patterns.</p><ul><li><strong>c_mean_final</strong>: fibrosis burden endpoint</li><li><strong>p_mean_final</strong>: integrated profibrotic signaling endpoint</li><li><strong>ac_align_x_final</strong>: collagen/fibre alignment with loading axis</li></ul><p><strong>Top-5 collagen scenarios:</strong></p><table><thead><tr><th>Scenario</th><th>stretch_x</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Align</th></tr></thead><tbody>{rows}</tbody></table><p class='legend'>Takeaway: use this table to choose candidate regimes before deep paper-by-paper validation.</p></div>"
         except Exception:
-            uniq_block = ''
-    vu = ROOT / 'outputs' / 'validation_uniqueness.md'
-    if vu.exists():
-        uniq_block = f'<div class="card"><h2>Validation test uniqueness audit</h2>{md_to_html(vu.read_text())}</div>'
+            matrix_help_block = ''
 
-    matrix_help_block = ''
+    coverage_block = ''
+    vcm = ROOT / 'outputs' / 'validation_coverage.md'
+    if vcm.exists():
+        coverage_block = f'<div class="card"><h2>Study-to-mechanism coverage matrix</h2>{md_to_html(vcm.read_text())}</div>'
 
     # detailed pages per test card + failure summary
     stp = ROOT / 'outputs' / 'systematic_test_catalog_unique.json'
@@ -536,7 +536,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{param_block}{uniq_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
