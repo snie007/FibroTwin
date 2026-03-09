@@ -62,16 +62,24 @@ signaling:
   angII: 0.20
 
 signaling_network:
-  k_tgf_smad: 1.2
-  k_ros_smad: 0.3
-  k_ang_erk: 1.0
+  k_tgfr_smad: 1.2
+  k_at1r_erk: 1.0
   k_mech_ros: 1.0
   k_mech_can: 0.8
-  k_smad_autocrine: 0.2
   d_smad: 0.4
   d_erk: 0.5
   d_ros: 0.45
   d_can: 0.5
+
+receptors:
+  kon_tgfr: 1.2
+  koff_tgfr: 0.5
+  kon_at1r: 1.0
+  koff_at1r: 0.45
+
+pharmacology:
+  tgfr_block: 0.0
+  at1r_block: 0.0
 
 cytokines:
   enabled: true
@@ -95,6 +103,9 @@ infarct:
   k_infl_resolve: 0.05
   k_prov_resolve: 0.03
   collagen_source: 0.03
+  dispersion_core: 0.35
+  dispersion_border: 0.55
+  dispersion_remote: 0.75
 
 viz:
   frame_every: 5

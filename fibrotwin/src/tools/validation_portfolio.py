@@ -18,6 +18,9 @@ SCENARIOS = [
     {"name": "high_signal_only", "stretch_x": 0.10, "tgf_beta": 0.50, "angII": 0.45},
     {"name": "high_load_high_signal", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45},
     {"name": "infarct_high_load_high_signal", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45, "infarct": True},
+    {"name": "drug_tgfr_block", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45, "pharmacology": {"tgfr_block": 0.7, "at1r_block": 0.0}},
+    {"name": "drug_at1r_block", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45, "pharmacology": {"tgfr_block": 0.0, "at1r_block": 0.7}},
+    {"name": "drug_dual_block", "stretch_x": 0.28, "tgf_beta": 0.50, "angII": 0.45, "pharmacology": {"tgfr_block": 0.7, "at1r_block": 0.7}},
 ]
 
 
@@ -34,6 +37,9 @@ def run_one(cfg, scenario):
     local.setdefault('signaling', {})['tgf_beta'] = scenario['tgf_beta']
     local.setdefault('signaling', {})['angII'] = scenario['angII']
     local.setdefault('infarct', {})['enabled'] = bool(scenario.get('infarct', False))
+    pharm = scenario.get('pharmacology', {})
+    local.setdefault('pharmacology', {})['tgfr_block'] = pharm.get('tgfr_block', 0.0)
+    local.setdefault('pharmacology', {})['at1r_block'] = pharm.get('at1r_block', 0.0)
 
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     torch.manual_seed(local['seed'])
@@ -101,13 +107,28 @@ def expected_checks(rows):
         'pass': by['high_load_only']['ac_align_x_final'] > by['baseline_low_load_low_signal']['ac_align_x_final'],
     })
     checks.append({
-        'check': 'high_load_high_signal yields highest collagen among non-infarct scenarios',
-        'pass': by['high_load_high_signal']['c_mean_final'] == max(r['c_mean_final'] for r in rows if 'infarct' not in r['scenario']),
+        'check': 'high_load_high_signal yields highest collagen among non-infarct baseline/mech/signal scenarios',
+        'pass': by['high_load_high_signal']['c_mean_final'] >= max(by[k]['c_mean_final'] for k in ['baseline_low_load_low_signal','high_load_only','high_signal_only']),
     })
     if 'infarct_high_load_high_signal' in by:
         checks.append({
             'check': 'infarct core collagen exceeds non-infarct high_load_high_signal global collagen',
             'pass': by['infarct_high_load_high_signal'].get('c_core', 0.0) > by['high_load_high_signal']['c_mean_final'],
+        })
+    if 'drug_tgfr_block' in by:
+        checks.append({
+            'check': 'TGFβR blockade reduces profibrotic signal vs high_load_high_signal',
+            'pass': by['drug_tgfr_block']['p_mean_final'] < by['high_load_high_signal']['p_mean_final'],
+        })
+    if 'drug_at1r_block' in by:
+        checks.append({
+            'check': 'AT1R blockade reduces collagen vs high_load_high_signal',
+            'pass': by['drug_at1r_block']['c_mean_final'] < by['high_load_high_signal']['c_mean_final'],
+        })
+    if 'drug_dual_block' in by:
+        checks.append({
+            'check': 'Dual blockade gives strongest suppression (collagen) among drug scenarios',
+            'pass': by['drug_dual_block']['c_mean_final'] <= min(by['drug_tgfr_block']['c_mean_final'], by['drug_at1r_block']['c_mean_final']),
         })
     return checks
 

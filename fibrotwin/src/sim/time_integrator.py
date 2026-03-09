@@ -166,7 +166,10 @@ def run_sim(config, nodes, elems, fields, agents, out_dir):
             ang_eff = torch.full_like(cue_node, sig.get('angII', 0.2))
 
         rec = config.get('receptors', {})
-        fields.tgfr, fields.at1r = update_receptors(fields.tgfr, fields.at1r, dt, tgf_eff, ang_eff, rec)
+        pharm = config.get('pharmacology', {})
+        tgf_eff_drug = torch.clamp(tgf_eff * (1.0 - pharm.get('tgfr_block', 0.0)), 0.0, 1.0)
+        ang_eff_drug = torch.clamp(ang_eff * (1.0 - pharm.get('at1r_block', 0.0)), 0.0, 1.0)
+        fields.tgfr, fields.at1r = update_receptors(fields.tgfr, fields.at1r, dt, tgf_eff_drug, ang_eff_drug, rec)
         net = config.get('signaling_network', {})
         fields.smad, fields.erk, fields.ros, fields.can, fields.p = update_signaling_from_receptors(
             fields.smad,

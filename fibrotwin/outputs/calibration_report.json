@@ -31,7 +31,7 @@
     },
     {
       "name": "collagen_fraction_load_signal",
-      "value": 10.308612823486328,
+      "value": 10.30859661102295,
       "band": [
         8.0,
         20.0
@@ -40,7 +40,7 @@
     },
     {
       "name": "infarct_core_collagen",
-      "value": 13.278799057006836,
+      "value": 13.278793334960938,
       "band": [
         12.0,
         60.0
@@ -49,7 +49,7 @@
     },
     {
       "name": "infarct_core_to_remote_ratio",
-      "value": 1.279586197136243,
+      "value": 1.2795857633348462,
       "band": [
         1.5,
         6.0
