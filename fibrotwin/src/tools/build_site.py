@@ -236,7 +236,54 @@ async function loadInteractiveLab(){
   sel.onchange=()=>render(sel.value); render(0);
 }
 
-window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();});''')
+async function loadScenarioMatrix(){
+  const app=document.getElementById('scenarioMatrixApp');
+  if(!app) return;
+  const data=await fetch('../data/scenario_portfolio_matrix.json').then(r=>r.json()).catch(()=>null);
+  if(!data){app.innerHTML='<p>Scenario matrix not available.</p>'; return;}
+  const rows=data.scenarios||[];
+  const loadSel=document.getElementById('smLoad');
+  const sigSel=document.getElementById('smSignal');
+  const fibSel=document.getElementById('smFib');
+
+  const loads=[...new Set(rows.map(r=>Number(r.stretch_x).toFixed(2)))].sort();
+  const sigs=[...new Set(rows.map(r=>`${Number(r.tgf_beta).toFixed(2)}|${Number(r.angII).toFixed(2)}`))].sort();
+  const fibs=[...new Set(rows.map(r=>String(r.scenario.match(/_N(\\d+)/)?.[1]||'NA')))].sort((a,b)=>Number(a)-Number(b));
+
+  loadSel.innerHTML='<option value="*">all</option>'+loads.map(v=>`<option>${v}</option>`).join('');
+  sigSel.innerHTML='<option value="*">all</option>'+sigs.map(v=>`<option>${v}</option>`).join('');
+  fibSel.innerHTML='<option value="*">all</option>'+fibs.map(v=>`<option>${v}</option>`).join('');
+
+  function filtered(){
+    const lv=loadSel.value, sv=sigSel.value, fv=fibSel.value;
+    return rows.filter(r => (lv==='*'||Number(r.stretch_x).toFixed(2)===lv)
+      && (sv==='*'||`${Number(r.tgf_beta).toFixed(2)}|${Number(r.angII).toFixed(2)}`===sv)
+      && (fv==='*'||String(r.scenario.match(/_N(\\d+)/)?.[1]||'NA')===fv));
+  }
+
+  function draw(){
+    const rs=filtered();
+    const c=document.getElementById('smHeat');
+    const g=c.getContext('2d');
+    g.clearRect(0,0,c.width,c.height);
+    const cols=6, cw=112, ch=46;
+    rs.slice(0,30).forEach((r,i)=>{
+      const x=(i%cols)*cw+8, y=Math.floor(i/cols)*ch+8;
+      const v=Math.max(0,Math.min(1,(r.c_mean_final-3)/18));
+      g.fillStyle=`rgb(${Math.floor(30+190*v)},${Math.floor(60+60*(1-v))},${Math.floor(170-80*v)})`;
+      g.fillRect(x,y,cw-10,ch-10);
+      g.fillStyle='white'; g.font='11px Arial';
+      g.fillText(`L${Number(r.stretch_x).toFixed(2)} T${Number(r.tgf_beta).toFixed(2)}`,x+4,y+14);
+      g.fillText(`N${String(r.scenario.match(/_N(\\d+)/)?.[1]||'?')} c=${Number(r.c_mean_final).toFixed(2)}`,x+4,y+30);
+    });
+    document.getElementById('smCount').textContent=`showing ${rs.length}/${rows.length}`;
+  }
+
+  [loadSel,sigSel,fibSel].forEach(el=>el.onchange=draw);
+  draw();
+}
+
+window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();loadScenarioMatrix();});''')
 
     run0 = runs[0] if runs else None
     key_params = '<p>No runs found.</p>'
@@ -334,12 +381,24 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if spm.exists():
         scenario_block = f'<div class="card"><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2>{md_to_html(spm.read_text())}</div>'
 
+    scenario_interactive_block = '''<div class="card"><h2>Scenario matrix explorer (interactive)</h2>
+<div class="kpi">
+  <label>Load <select id="smLoad"></select></label>
+  <label>TGF|AngII <select id="smSignal"></select></label>
+  <label>Fibroblasts <select id="smFib"></select></label>
+  <span id="smCount" class="pill"></span>
+</div>
+<canvas id="smHeat" width="700" height="280" style="max-width:100%;background:#101722;border:1px solid #2a3140;border-radius:8px"></canvas>
+<p class="legend">Heatmap color encodes collagen burden. Tiles show loading/signal/fibroblast-count combinations.</p>
+<div id="scenarioMatrixApp"></div>
+</div>'''
+
     numerical_block = ''
     ntr = ROOT / 'outputs' / 'numerical_test_report.md'
     if ntr.exists():
         numerical_block = f'<div class="card"><h2>Numerical tests (viewable report)</h2>{md_to_html(ntr.read_text())}</div>'
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{uq_block}{numerical_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{numerical_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
@@ -376,6 +435,10 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             test_refs_block = ''
 
     (SITE / 'pages/references.html').write_text(page('References', '<div class="card"><h2>Core bibliography</h2><pre>'+json.dumps(refs, indent=2)+'</pre></div>' + test_refs_block))
+
+    spj = ROOT / 'outputs' / 'scenario_portfolio_matrix.json'
+    if spj.exists():
+        (SITE / 'data/scenario_portfolio_matrix.json').write_text(spj.read_text())
 
     (SITE / 'data/runs.json').write_text(json.dumps(runs, indent=2))
 

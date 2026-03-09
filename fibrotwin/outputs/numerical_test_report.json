@@ -22,5 +22,5 @@
     "tests/test_signaling_network.py::test_tgf_increases_smad",
     "tests/test_signaling_network.py::test_mech_increases_ros_and_can"
   ],
-  "raw_tail": "..................                                                       [100%]\n18 passed in 3.16s\n"
+  "raw_tail": "..................                                                       [100%]\n18 passed in 3.21s\n"
 }

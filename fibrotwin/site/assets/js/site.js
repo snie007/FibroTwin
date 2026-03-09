@@ -93,4 +93,51 @@ async function loadInteractiveLab(){
   sel.onchange=()=>render(sel.value); render(0);
 }
 
-window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();});
+async function loadScenarioMatrix(){
+  const app=document.getElementById('scenarioMatrixApp');
+  if(!app) return;
+  const data=await fetch('../data/scenario_portfolio_matrix.json').then(r=>r.json()).catch(()=>null);
+  if(!data){app.innerHTML='<p>Scenario matrix not available.</p>'; return;}
+  const rows=data.scenarios||[];
+  const loadSel=document.getElementById('smLoad');
+  const sigSel=document.getElementById('smSignal');
+  const fibSel=document.getElementById('smFib');
+
+  const loads=[...new Set(rows.map(r=>Number(r.stretch_x).toFixed(2)))].sort();
+  const sigs=[...new Set(rows.map(r=>`${Number(r.tgf_beta).toFixed(2)}|${Number(r.angII).toFixed(2)}`))].sort();
+  const fibs=[...new Set(rows.map(r=>String(r.scenario.match(/_N(\d+)/)?.[1]||'NA')))].sort((a,b)=>Number(a)-Number(b));
+
+  loadSel.innerHTML='<option value="*">all</option>'+loads.map(v=>`<option>${v}</option>`).join('');
+  sigSel.innerHTML='<option value="*">all</option>'+sigs.map(v=>`<option>${v}</option>`).join('');
+  fibSel.innerHTML='<option value="*">all</option>'+fibs.map(v=>`<option>${v}</option>`).join('');
+
+  function filtered(){
+    const lv=loadSel.value, sv=sigSel.value, fv=fibSel.value;
+    return rows.filter(r => (lv==='*'||Number(r.stretch_x).toFixed(2)===lv)
+      && (sv==='*'||`${Number(r.tgf_beta).toFixed(2)}|${Number(r.angII).toFixed(2)}`===sv)
+      && (fv==='*'||String(r.scenario.match(/_N(\d+)/)?.[1]||'NA')===fv));
+  }
+
+  function draw(){
+    const rs=filtered();
+    const c=document.getElementById('smHeat');
+    const g=c.getContext('2d');
+    g.clearRect(0,0,c.width,c.height);
+    const cols=6, cw=112, ch=46;
+    rs.slice(0,30).forEach((r,i)=>{
+      const x=(i%cols)*cw+8, y=Math.floor(i/cols)*ch+8;
+      const v=Math.max(0,Math.min(1,(r.c_mean_final-3)/18));
+      g.fillStyle=`rgb(${Math.floor(30+190*v)},${Math.floor(60+60*(1-v))},${Math.floor(170-80*v)})`;
+      g.fillRect(x,y,cw-10,ch-10);
+      g.fillStyle='white'; g.font='11px Arial';
+      g.fillText(`L${Number(r.stretch_x).toFixed(2)} T${Number(r.tgf_beta).toFixed(2)}`,x+4,y+14);
+      g.fillText(`N${String(r.scenario.match(/_N(\d+)/)?.[1]||'?')} c=${Number(r.c_mean_final).toFixed(2)}`,x+4,y+30);
+    });
+    document.getElementById('smCount').textContent=`showing ${rs.length}/${rows.length}`;
+  }
+
+  [loadSel,sigSel,fibSel].forEach(el=>el.onchange=draw);
+  draw();
+}
+
+window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();loadScenarioMatrix();});
