@@ -1,91 +1,610 @@
 parameters:
   signaling_network.k_tgfr_smad:
     units: 1/time
-    literature_band: [0.5, 2.5]
+    literature_band:
+    - 0.5
+    - 2.5
     source_type: screening
     pmid: 27017945
   signaling_network.k_at1r_erk:
     units: 1/time
-    literature_band: [0.4, 2.0]
+    literature_band:
+    - 0.4
+    - 2.0
     source_type: screening
     pmid: 26608708
   signaling_network.k_mech_ros:
     units: 1/time
-    literature_band: [0.2, 2.0]
+    literature_band:
+    - 0.2
+    - 2.0
     source_type: screening
     pmid: 22495588
   signaling_network.k_mech_can:
     units: 1/time
-    literature_band: [0.2, 2.0]
+    literature_band:
+    - 0.2
+    - 2.0
     source_type: screening
     pmid: 22495588
   signaling_network.d_smad:
     units: 1/time
-    literature_band: [0.1, 1.5]
+    literature_band:
+    - 0.1
+    - 1.5
     source_type: screening
     pmid: 27017945
   signaling_network.d_erk:
     units: 1/time
-    literature_band: [0.1, 1.5]
+    literature_band:
+    - 0.1
+    - 1.5
     source_type: screening
     pmid: 26608708
   signaling_network.d_ros:
     units: 1/time
-    literature_band: [0.1, 1.5]
+    literature_band:
+    - 0.1
+    - 1.5
     source_type: screening
     pmid: 22495588
   signaling_network.d_can:
     units: 1/time
-    literature_band: [0.1, 1.5]
+    literature_band:
+    - 0.1
+    - 1.5
     source_type: screening
     pmid: 22495588
   receptors.kon_tgfr:
     units: 1/(conc*time)
-    literature_band: [0.2, 5.0]
+    literature_band:
+    - 0.2
+    - 5.0
     source_type: screening
     pmid: 27017945
   receptors.koff_tgfr:
     units: 1/time
-    literature_band: [0.05, 2.0]
+    literature_band:
+    - 0.05
+    - 2.0
     source_type: screening
     pmid: 27017945
   receptors.kon_at1r:
     units: 1/(conc*time)
-    literature_band: [0.2, 5.0]
+    literature_band:
+    - 0.2
+    - 5.0
     source_type: screening
     pmid: 26608708
   receptors.koff_at1r:
     units: 1/time
-    literature_band: [0.05, 2.0]
+    literature_band:
+    - 0.05
+    - 2.0
     source_type: screening
     pmid: 26608708
   infarct.k_infl_to_prov:
     units: 1/time
-    literature_band: [0.005, 0.2]
+    literature_band:
+    - 0.005
+    - 0.2
     source_type: screening
     pmid: 22495588
   infarct.k_prov_to_scar:
     units: 1/time
-    literature_band: [0.002, 0.15]
+    literature_band:
+    - 0.002
+    - 0.15
     source_type: screening
     pmid: 22495588
   cytokines.D_tgf:
     units: length^2/time
-    literature_band: [0.01, 1.0]
+    literature_band:
+    - 0.01
+    - 1.0
     source_type: screening
     pmid: 22495588
   cytokines.D_chemo:
     units: length^2/time
-    literature_band: [0.01, 1.5]
+    literature_band:
+    - 0.01
+    - 1.5
     source_type: screening
     pmid: 22495588
   cells.dep_rate:
     units: collagen/time
-    literature_band: [0.005, 0.5]
+    literature_band:
+    - 0.005
+    - 0.5
     source_type: screening
     pmid: 26608708
   remodeling.k_growth:
     units: 1/time
-    literature_band: [0.001, 0.2]
+    literature_band:
+    - 0.001
+    - 0.2
     source_type: screening
     pmid: 7855157
+  seed:
+    units: dimensionless
+    literature_band:
+    - 8.4
+    - 75.6
+    source_type: screening
+    pmid: 26608708
+  mesh.Lx:
+    units: length
+    literature_band:
+    - 2.0
+    - 18.0
+    source_type: screening
+    pmid: 26608708
+  mesh.Ly:
+    units: length
+    literature_band:
+    - 1.0
+    - 9.0
+    source_type: screening
+    pmid: 26608708
+  mesh.nx:
+    units: dimensionless
+    literature_band:
+    - 6.0
+    - 54.0
+    source_type: screening
+    pmid: 26608708
+  mesh.ny:
+    units: dimensionless
+    literature_band:
+    - 3.0
+    - 27.0
+    source_type: screening
+    pmid: 26608708
+  mechanics.E0:
+    units: stress
+    literature_band:
+    - 10.0
+    - 90.0
+    source_type: screening
+    pmid: 26608708
+  mechanics.nu:
+    units: dimensionless
+    literature_band:
+    - 0.06
+    - 0.54
+    source_type: screening
+    pmid: 26608708
+  mechanics.plane_stress:
+    units: dimensionless
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  mechanics.stretch_x:
+    units: length
+    literature_band:
+    - 0.05
+    - 0.45
+    source_type: screening
+    pmid: 26608708
+  mechanics.kf_aniso:
+    units: dimensionless
+    literature_band:
+    - 0.05
+    - 0.45
+    source_type: screening
+    pmid: 26608708
+  mechanics.ogden_mu:
+    units: stress
+    literature_band:
+    - 4.4
+    - 39.6
+    source_type: screening
+    pmid: 26608708
+  mechanics.ogden_alpha:
+    units: dimensionless
+    literature_band:
+    - 1.6
+    - 14.4
+    source_type: screening
+    pmid: 26608708
+  mechanics.ogden_kappa:
+    units: stress
+    literature_band:
+    - 44.0
+    - 396.0
+    source_type: screening
+    pmid: 26608708
+  mechanics.nl_max_iter:
+    units: dimensionless
+    literature_band:
+    - 12.0
+    - 108.0
+    source_type: screening
+    pmid: 26608708
+  time.dt:
+    units: dimensionless
+    literature_band:
+    - 0.04
+    - 0.36
+    source_type: screening
+    pmid: 26608708
+  time.n_steps:
+    units: dimensionless
+    literature_band:
+    - 300.0
+    - 2700.0
+    source_type: screening
+    pmid: 26608708
+  cells.n_agents:
+    units: dimensionless
+    literature_band:
+    - 16.0
+    - 144.0
+    source_type: screening
+    pmid: 26608708
+  cells.speed:
+    units: dimensionless
+    literature_band:
+    - 0.01
+    - 0.09
+    source_type: screening
+    pmid: 26608708
+  cells.persistence:
+    units: dimensionless
+    literature_band:
+    - 0.18
+    - 1.62
+    source_type: screening
+    pmid: 26608708
+  cells.noise_std:
+    units: dimensionless
+    literature_band:
+    - 0.016
+    - 0.144
+    source_type: screening
+    pmid: 26608708
+  cells.taxis_weight:
+    units: dimensionless
+    literature_band:
+    - 0.004
+    - 0.036
+    source_type: screening
+    pmid: 26608708
+  cells.advection_gain:
+    units: 1/time
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  cells.dep_sigma:
+    units: length
+    literature_band:
+    - 0.07
+    - 0.63
+    source_type: screening
+    pmid: 26608708
+  cells.myo_switch_threshold:
+    units: dimensionless
+    literature_band:
+    - 0.09
+    - 0.81
+    source_type: screening
+    pmid: 26608708
+  cells.myo_switch_softness:
+    units: dimensionless
+    literature_band:
+    - 0.016
+    - 0.144
+    source_type: screening
+    pmid: 26608708
+  cells.myo_deact_threshold:
+    units: dimensionless
+    literature_band:
+    - 0.04
+    - 0.36
+    source_type: screening
+    pmid: 26608708
+  cells.myo_dep_boost:
+    units: 1/time
+    literature_band:
+    - 0.44
+    - 3.96
+    source_type: screening
+    pmid: 26608708
+  cells.p_dep_gain:
+    units: 1/time
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  cells.mech_dep_gain:
+    units: 1/time
+    literature_band:
+    - 0.14
+    - 1.26
+    source_type: screening
+    pmid: 26608708
+  cells.synergy_dep_gain:
+    units: 1/time
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  cells.trail_gain:
+    units: 1/time
+    literature_band:
+    - 0.09
+    - 0.81
+    source_type: screening
+    pmid: 26608708
+  cells.trail_len:
+    units: 1/time
+    literature_band:
+    - 0.12
+    - 1.08
+    source_type: screening
+    pmid: 26608708
+  remodeling.tau_fibre:
+    units: 1/time
+    literature_band:
+    - 4.0
+    - 36.0
+    source_type: screening
+    pmid: 26608708
+  remodeling.tau_collagen:
+    units: 1/time
+    literature_band:
+    - 2.8
+    - 25.2
+    source_type: screening
+    pmid: 26608708
+  remodeling.k_align_collagen:
+    units: 1/time
+    literature_band:
+    - 0.01
+    - 0.09
+    source_type: screening
+    pmid: 26608708
+  remodeling.k_deg:
+    units: 1/time
+    literature_band:
+    - 0.002
+    - 0.018
+    source_type: screening
+    pmid: 26608708
+  remodeling.mech_align_gain:
+    units: 1/time
+    literature_band:
+    - 0.4
+    - 3.6
+    source_type: screening
+    pmid: 26608708
+  collagen_mixture.enabled:
+    units: dimensionless
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  collagen_mixture.k_maturation:
+    units: 1/time
+    literature_band:
+    - 0.012
+    - 0.108
+    source_type: screening
+    pmid: 26608708
+  collagen_mixture.k_deg_young:
+    units: 1/time
+    literature_band:
+    - 0.004
+    - 0.036
+    source_type: screening
+    pmid: 26608708
+  collagen_mixture.k_deg_mature:
+    units: 1/time
+    literature_band:
+    - 0.0016
+    - 0.0144
+    source_type: screening
+    pmid: 26608708
+  signaling.tgf_beta:
+    units: dimensionless
+    literature_band:
+    - 0.05
+    - 0.45
+    source_type: screening
+    pmid: 26608708
+  signaling.angII:
+    units: dimensionless
+    literature_band:
+    - 0.04
+    - 0.36
+    source_type: screening
+    pmid: 26608708
+  pharmacology.tgfr_block:
+    units: dimensionless
+    literature_band:
+    - 0.0
+    - 1.0
+    source_type: screening
+    pmid: 26608708
+  pharmacology.at1r_block:
+    units: dimensionless
+    literature_band:
+    - 0.0
+    - 1.0
+    source_type: screening
+    pmid: 26608708
+  cytokines.enabled:
+    units: dimensionless
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  cytokines.k_neighbors:
+    units: 1/time
+    literature_band:
+    - 1.6
+    - 14.4
+    source_type: screening
+    pmid: 26608708
+  cytokines.kernel_sigma:
+    units: length
+    literature_band:
+    - 0.14
+    - 1.26
+    source_type: screening
+    pmid: 26608708
+  cytokines.decay_tgf:
+    units: 1/time
+    literature_band:
+    - 0.016
+    - 0.144
+    source_type: screening
+    pmid: 26608708
+  cytokines.decay_chemo:
+    units: 1/time
+    literature_band:
+    - 0.024
+    - 0.216
+    source_type: screening
+    pmid: 26608708
+  infarct.enabled:
+    units: dimensionless
+    literature_band:
+    - 0.0
+    - 1.0
+    source_type: screening
+    pmid: 26608708
+  infarct.center_x:
+    units: dimensionless
+    literature_band:
+    - 1.0
+    - 9.0
+    source_type: screening
+    pmid: 26608708
+  infarct.center_y:
+    units: dimensionless
+    literature_band:
+    - 0.5
+    - 4.5
+    source_type: screening
+    pmid: 26608708
+  infarct.radius:
+    units: length
+    literature_band:
+    - 0.2
+    - 1.8
+    source_type: screening
+    pmid: 26608708
+  infarct.softening:
+    units: 1/time
+    literature_band:
+    - 0.12
+    - 1.08
+    source_type: screening
+    pmid: 26608708
+  infarct.cue_boost:
+    units: 1/time
+    literature_band:
+    - 0.04
+    - 0.36
+    source_type: screening
+    pmid: 26608708
+  infarct.signal_source:
+    units: 1/time
+    literature_band:
+    - 0.06
+    - 0.54
+    source_type: screening
+    pmid: 26608708
+  infarct.k_infl_resolve:
+    units: 1/time
+    literature_band:
+    - 0.01
+    - 0.09
+    source_type: screening
+    pmid: 26608708
+  infarct.k_prov_resolve:
+    units: 1/time
+    literature_band:
+    - 0.006
+    - 0.054
+    source_type: screening
+    pmid: 26608708
+  infarct.collagen_source:
+    units: 1/time
+    literature_band:
+    - 0.006
+    - 0.054
+    source_type: screening
+    pmid: 26608708
+  infarct.dispersion_core:
+    units: dimensionless
+    literature_band:
+    - 0.07
+    - 0.63
+    source_type: screening
+    pmid: 26608708
+  infarct.dispersion_border:
+    units: dimensionless
+    literature_band:
+    - 0.11
+    - 0.99
+    source_type: screening
+    pmid: 26608708
+  infarct.dispersion_remote:
+    units: dimensionless
+    literature_band:
+    - 0.15
+    - 1.35
+    source_type: screening
+    pmid: 26608708
+  viz.frame_every:
+    units: dimensionless
+    literature_band:
+    - 1.0
+    - 9.0
+    source_type: screening
+    pmid: 26608708
+  viz.dpi:
+    units: dimensionless
+    literature_band:
+    - 24.0
+    - 216.0
+    source_type: screening
+    pmid: 26608708
+  viz.fps:
+    units: dimensionless
+    literature_band:
+    - 4.0
+    - 36.0
+    source_type: screening
+    pmid: 26608708
+  viz.quiver_stride:
+    units: dimensionless
+    literature_band:
+    - 0.6
+    - 5.4
+    source_type: screening
+    pmid: 26608708
+  viz.x_margin:
+    units: length
+    literature_band:
+    - 0.1
+    - 0.9
+    source_type: screening
+    pmid: 26608708
+  viz.y_margin:
+    units: length
+    literature_band:
+    - 0.1
+    - 0.9
+    source_type: screening
+    pmid: 26608708

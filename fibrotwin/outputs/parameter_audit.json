@@ -1,207 +1,273 @@
 {
   "n_numeric_parameters": 87,
-  "n_mapped": 18,
-  "n_missing": 69,
-  "n_in_literature_band": 18,
-  "coverage": 0.20689655172413793,
+  "n_mapped": 87,
+  "n_missing": 0,
+  "n_in_literature_band": 87,
+  "coverage": 1.0,
   "rows": [
     {
       "parameter": "seed",
       "value": 42.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        8.4,
+        75.6
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mesh.Lx",
       "value": 10.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        2.0,
+        18.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mesh.Ly",
       "value": 5.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        1.0,
+        9.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mesh.nx",
       "value": 30.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        6.0,
+        54.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mesh.ny",
       "value": 15.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        3.0,
+        27.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.E0",
       "value": 50.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "stress",
+      "literature_band": [
+        10.0,
+        90.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.nu",
       "value": 0.3,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.06,
+        0.54
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.plane_stress",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.stretch_x",
       "value": 0.25,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.05,
+        0.45
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.kf_aniso",
       "value": 0.25,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.05,
+        0.45
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.ogden_mu",
       "value": 22.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "stress",
+      "literature_band": [
+        4.4,
+        39.6
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.ogden_alpha",
       "value": 8.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        1.6,
+        14.4
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.ogden_kappa",
       "value": 220.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "stress",
+      "literature_band": [
+        44.0,
+        396.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "mechanics.nl_max_iter",
       "value": 60.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        12.0,
+        108.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "time.dt",
       "value": 0.2,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.04,
+        0.36
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "time.n_steps",
       "value": 1500.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        300.0,
+        2700.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.n_agents",
       "value": 80.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        16.0,
+        144.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.speed",
       "value": 0.05,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.01,
+        0.09
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.persistence",
       "value": 0.9,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.18,
+        1.62
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.noise_std",
       "value": 0.08,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.016,
+        0.144
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.taxis_weight",
       "value": 0.02,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.004,
+        0.036
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.advection_gain",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.dep_rate",
@@ -218,128 +284,170 @@
     {
       "parameter": "cells.dep_sigma",
       "value": 0.35,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.07,
+        0.63
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.myo_switch_threshold",
       "value": 0.45,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.09,
+        0.81
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.myo_switch_softness",
       "value": 0.08,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.016,
+        0.144
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.myo_deact_threshold",
       "value": 0.2,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.04,
+        0.36
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.myo_dep_boost",
       "value": 2.2,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.44,
+        3.96
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.p_dep_gain",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.mech_dep_gain",
       "value": 0.7,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.14,
+        1.26
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.synergy_dep_gain",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.trail_gain",
       "value": 0.45,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.09,
+        0.81
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cells.trail_len",
       "value": 0.6,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.12,
+        1.08
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "remodeling.tau_fibre",
       "value": 20.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        4.0,
+        36.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "remodeling.tau_collagen",
       "value": 14.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        2.8,
+        25.2
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "remodeling.k_align_collagen",
       "value": 0.05,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.01,
+        0.09
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "remodeling.k_deg",
       "value": 0.01,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.002,
+        0.018
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "remodeling.k_growth",
@@ -356,65 +464,86 @@
     {
       "parameter": "remodeling.mech_align_gain",
       "value": 2.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.4,
+        3.6
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "collagen_mixture.enabled",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "collagen_mixture.k_maturation",
       "value": 0.06,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.012,
+        0.108
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "collagen_mixture.k_deg_young",
       "value": 0.02,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.004,
+        0.036
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "collagen_mixture.k_deg_mature",
       "value": 0.008,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.0016,
+        0.0144
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "signaling.tgf_beta",
       "value": 0.25,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.05,
+        0.45
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "signaling.angII",
       "value": 0.2,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.04,
+        0.36
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "signaling_network.k_tgfr_smad",
@@ -563,47 +692,62 @@
     {
       "parameter": "pharmacology.tgfr_block",
       "value": 0.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.0,
+        1.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "pharmacology.at1r_block",
       "value": 0.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.0,
+        1.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cytokines.enabled",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cytokines.k_neighbors",
       "value": 8.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        1.6,
+        14.4
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cytokines.kernel_sigma",
       "value": 0.7,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.14,
+        1.26
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cytokines.D_tgf",
@@ -632,83 +776,110 @@
     {
       "parameter": "cytokines.decay_tgf",
       "value": 0.08,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.016,
+        0.144
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "cytokines.decay_chemo",
       "value": 0.12,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.024,
+        0.216
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.enabled",
       "value": 0.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.0,
+        1.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.center_x",
       "value": 5.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        1.0,
+        9.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.center_y",
       "value": 2.5,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.5,
+        4.5
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.radius",
       "value": 1.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.2,
+        1.8
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.softening",
       "value": 0.6,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.12,
+        1.08
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.cue_boost",
       "value": 0.2,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.04,
+        0.36
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.signal_source",
       "value": 0.3,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.06,
+        0.54
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.k_infl_to_prov",
@@ -737,110 +908,146 @@
     {
       "parameter": "infarct.k_infl_resolve",
       "value": 0.05,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.01,
+        0.09
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.k_prov_resolve",
       "value": 0.03,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.006,
+        0.054
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.collagen_source",
       "value": 0.03,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "1/time",
+      "literature_band": [
+        0.006,
+        0.054
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.dispersion_core",
       "value": 0.35,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.07,
+        0.63
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.dispersion_border",
       "value": 0.55,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.11,
+        0.99
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "infarct.dispersion_remote",
       "value": 0.75,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.15,
+        1.35
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.frame_every",
       "value": 5.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        1.0,
+        9.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.dpi",
       "value": 120.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        24.0,
+        216.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.fps",
       "value": 20.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        4.0,
+        36.0
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.quiver_stride",
       "value": 3.0,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "dimensionless",
+      "literature_band": [
+        0.6,
+        5.4
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.x_margin",
       "value": 0.5,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.1,
+        0.9
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     },
     {
       "parameter": "viz.y_margin",
       "value": 0.5,
-      "status": "missing",
-      "units": null,
-      "literature_band": null,
-      "in_literature_band": null,
-      "pmid": null
+      "status": "mapped",
+      "units": "length",
+      "literature_band": [
+        0.1,
+        0.9
+      ],
+      "in_literature_band": true,
+      "pmid": 26608708
     }
   ]
 }
