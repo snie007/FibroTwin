@@ -343,8 +343,19 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             s = json.loads(stj.read_text())
             sm = s.get('summary', {})
             tests = s.get('tests', [])[:20]
-            rows = ''.join([f"<tr><td>{t.get('id')}</td><td><a href='{t.get('pubmed_url')}'>{t.get('pmid')}</a></td><td>{t.get('category')}</td><td>{t.get('model_score_0_to_3')}/3</td><td>{t.get('title')}</td></tr>" for t in tests])
-            table = f"<p>Total tests: {s.get('n_tests')}</p><ul><li>Mean score: {sm.get('mean_score')}</li><li>Score 3: {sm.get('n_score_3')}</li><li>Score 2: {sm.get('n_score_2')}</li><li>Score 1: {sm.get('n_score_1')}</li><li>Score 0: {sm.get('n_score_0')}</li></ul><table><thead><tr><th>ID</th><th>PMID</th><th>Category</th><th>Score</th><th>Evidence-linked test title</th></tr></thead><tbody>{rows}</tbody></table><p>Full catalog: <code>outputs/systematic_test_catalog.json</code></p>"
+            mech_map = {
+                'infarct_remodeling': 'Infarct-zone maturation and spatial collagen heterogeneity',
+                'fibroblast_signaling': 'Profibrotic signaling transduction and phenotype activation',
+                'collagen_dynamics': 'Collagen deposition/turnover kinetics',
+                'growth_remodeling': 'Load-driven growth/remodeling response',
+                'cell_motion': 'Fibroblast migration and advection-coupled deposition',
+                'fibre_alignment': 'Anisotropy/fibre reorientation under stretch',
+            }
+            rows = ''.join([
+                f"<tr><td>{t.get('id')}</td><td><a href='{t.get('pubmed_url')}'>{t.get('pmid')}</a></td><td><span class='badge'>{t.get('category')}</span><br/><small>{mech_map.get(t.get('category'),'Mechanism domain')}</small></td><td>{t.get('model_score_0_to_3')}/3</td><td>{t.get('expected')}</td><td>{t.get('title')}</td></tr>"
+                for t in tests
+            ])
+            table = f"<div class='summary-grid'><div class='summary-tile'><strong>Total tests</strong><div>{s.get('n_tests')}</div></div><div class='summary-tile'><strong>Mean score</strong><div>{sm.get('mean_score')}</div></div><div class='summary-tile'><strong>Score 3 / 2 / 1 / 0</strong><div>{sm.get('n_score_3')} / {sm.get('n_score_2')} / {sm.get('n_score_1')} / {sm.get('n_score_0')}</div></div></div><p>Previewing first 20 tests with normalized mechanism label and one-line model expectation.</p><table><thead><tr><th>ID</th><th>PMID</th><th>Mechanism tested</th><th>Score</th><th>Expected model behavior</th><th>Evidence anchor title</th></tr></thead><tbody>{rows}</tbody></table><p>Full catalog: <code>outputs/systematic_test_catalog.json</code></p>"
             systematic_block = f'<div class="card"><h2>Systematic literature-linked test catalog</h2>{table}</div>'
         except Exception:
             systematic_block = ''
