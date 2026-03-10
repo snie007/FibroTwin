@@ -1,10 +1,39 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Emulation & History Matching</title><link rel="stylesheet" href="../assets/css/style.css?v=1773136289"/></head><body><header><h1>Emulation & History Matching</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Emulator + history matching summary</h2><p><h1>Emulation + History Matching Report</h1></p><p>- Training runs: 20
-- Candidate parameter points evaluated by emulator: 300
-- Best emulator: GaussianProcessRBF
-- NROY count: 222 (74.0%)</p><p><h2>Plausible parameter-space bounds (NROY envelope)</h2>
-- signaling_network.k_tgfr_smad: [0.4253, 2.582]
-- signaling_network.k_at1r_erk: [0.3275, 2.074]
-- signaling_network.d_smad: [0.0343, 1.566]
-- signaling_network.d_erk: [0.04903, 1.562]
-- infarct.collagen_source: [0.003899, 0.05636]
-- infarct.signal_source: [0.03963, 0.5587]</p><img src="../assets/img/emulation_implausibility_hist.png" alt="Emulation implausibility histogram"/></div></main><script src="../assets/js/site.js?v=1773136289"></script></body></html>
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Emulation & History Matching</title><link rel="stylesheet" href="../assets/css/style.css?v=1773138120"/></head><body><header><h1>Emulation & History Matching</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Emulator + history matching summary</h2><p><h1>Emulation + History Matching Report</h1></p><p>- Training runs: 24
+- Candidate points screened by emulator: 600
+- Best emulator: GaussianProcessMatern32
+- NROY count: 600 (100.0%)</p><p><h2>Best plausible candidate (checked in full simulator)</h2>
+- Targets passed: 3/6
+- myofibro_fraction_high_signal: 0.9375 vs [0.6, 0.9] -> FAIL
+- profibrotic_index_high_signal: 0.5459 vs [0.65, 0.95] -> FAIL
+- alignment_high_load: 0.9171 vs [0.78, 0.98] -> PASS
+- collagen_fraction_load_signal: 10.4446 vs [8.0, 20.0] -> PASS
+- infarct_core_collagen: 13.5540 vs [12.0, 60.0] -> PASS
+- infarct_core_to_remote_ratio: 1.2914 vs [1.5, 6.0] -> FAIL</p><p><h2>Plausible parameter-space bounds (NROY envelope)</h2>
+- signaling_network.k_tgfr_smad: [0.4005, 2.595]
+- signaling_network.k_at1r_erk: [0.32, 2.08]
+- signaling_network.d_smad: [0.03042, 1.569]
+- signaling_network.d_erk: [0.03671, 1.564]
+- cells.myo_switch_threshold: [0.05445, 0.8456]
+- cells.myo_switch_softness: [0.009757, 0.1503]
+- cells.myo_cap: [0.3982, 1.365]
+- infarct.collagen_source: [0.003624, 0.05636]
+- infarct.signal_source: [0.03742, 0.5635]
+- infarct.dispersion_core: [0.04243, 0.6543]
+- infarct.dispersion_border: [0.06752, 1.03]
+- infarct.dispersion_remote: [0.09168, 1.402]</p><p><h2>History matching usage guidance</h2>
+1. Start with broad physically credible parameter bounds and a small training design (20-40).
+2. Fit emulator and inspect predictive quality (R2/RMSE). If poor, add design points.
+3. Define observations as target means + uncertainty variances from literature bands.
+4. Compute implausibility and NROY region; do not trust single-wave NROY blindly.
+5. Iterate waves: sample within NROY, run simulator, refit emulator, shrink bounds.
+6. QC at each wave: emulator accuracy on holdout, NROY fraction trend, and simulator re-check of selected NROY points.</p><img src="../assets/img/emulation_implausibility_hist.png" alt="Emulation implausibility histogram"/></div><div class="card"><h2>Emulation QC checklist</h2><p><h1>Emulation QC Checklist</h1></p><p>- [ ] Training design covers full parameter ranges (no collapsed dimensions).
+- [ ] Emulator holdout metrics acceptable (R2 not strongly negative across outputs).
+- [ ] NROY fraction decreases across waves (or justified if not).
+- [ ] At least 10 NROY points re-evaluated in full simulator and compared to emulator.
+- [ ] Best candidate verified against all 6 calibration targets using full simulator.
+- [ ] Parameter bounds for next wave generated from NROY with modest buffer (5-10%).</p></div><div class="card"><h2>How to use history matching in FibroTwin</h2><p><h1>History Matching Quick Guide for FibroTwin</h1></p><p>This project uses AutoEmulate as a surrogate model to accelerate calibration.</p><p><h2>Prompt template to run</h2>
+"Run emulation history matching with N=<n_train> simulator runs, M=<n_candidates> emulator candidate points, and report NROY bounds + best plausible parameter set with target pass count."</p><p><h2>Evaluation criteria</h2>
+- Emulator quality: R2/RMSE on held-out points.
+- Plausibility: size and stability of NROY region.
+- Ground truth: full simulator confirms selected NROY points.
+- Success condition: a candidate set passing all 6 calibration tasks in simulator checks.</p></div></main><script src="../assets/js/site.js?v=1773138120"></script></body></html>
