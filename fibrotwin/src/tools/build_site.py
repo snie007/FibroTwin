@@ -102,7 +102,7 @@ def make_plots(runs):
 
 
 def nav():
-    return '''<nav><a href="index.html">Home</a><a href="pages/overview.html">Overview</a><a href="pages/model.html">Model</a><a href="pages/numerics.html">Numerics</a><a href="pages/implementation.html">Implementation</a><a href="pages/validation.html">Validation</a><a href="pages/results.html">Results</a><a href="pages/interactive_lab.html">Interactive Lab</a><a href="pages/changelog.html">Changelog</a><a href="pages/references.html">References</a></nav>'''
+    return '''<nav><a href="index.html">Home</a><a href="pages/overview.html">Overview</a><a href="pages/model.html">Model</a><a href="pages/numerics.html">Numerics</a><a href="pages/implementation.html">Implementation</a><a href="pages/validation.html">Validation</a><a href="pages/emulation.html">Emulation</a><a href="pages/results.html">Results</a><a href="pages/interactive_lab.html">Interactive Lab</a><a href="pages/changelog.html">Changelog</a><a href="pages/references.html">References</a></nav>'''
 
 
 def page(title, body, extra_head=''):
@@ -485,6 +485,11 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             matrix_help_block = ''
 
+
+    emulation_block = ''
+    emr = ROOT / 'outputs' / 'emulation_report.md'
+    if emr.exists():
+        emulation_block = f'<div class="card"><h2>Emulator + history matching summary</h2>{md_to_html(emr.read_text())}<img src="../assets/img/emulation_implausibility_hist.png" alt="Emulation implausibility histogram"/></div>'
     coverage_block = ''
     vcm = ROOT / 'outputs' / 'validation_coverage.md'
     if vcm.exists():
@@ -536,9 +541,14 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             pass
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{emulation_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+
+
+    emu_body = emulation_block if emulation_block else '<div class="card"><p>Run <code>python -m src.tools.emulation_history_matching</code> to generate emulator report.</p></div>'
+    (SITE / 'pages/emulation.html').write_text(page('Emulation & History Matching', emu_body))
 
     results_body = '''<div class="card"><h2>How to interpret results</h2><ul><li><strong>Animation:</strong> overall evolution of deformation, fibroblast positions, and collagen field.</li><li><strong>Snapshots:</strong> 5–6 time points to compare early/mid/late remodeling.</li><li><strong>Fibroblast paths:</strong> show migration trajectories that drive deposition patterns.</li><li><strong>Alignment plot:</strong> values closer to 1 mean stronger alignment with loading direction.</li><li><strong>Collagen trend:</strong> rising mean collagen indicates increasing fibrosis burden.</li></ul></div><div class="card"><label><strong>Run selector:</strong> <select id="runSelect"></select></label></div><div class="card"><h2>Animation</h2><div id="anim"></div></div><div class="card"><h2>Key snapshots (time sequence)</h2><div id="frames"></div></div><div class="card"><h2>Summary metrics + story figures</h2><div id="metrics"></div></div>'''
+
     (SITE / 'pages/results.html').write_text(page('Results', results_body))
 
     interactive_head = f'<script src="../assets/js/three.min.js?v={BUILD_VER}"></script>'
