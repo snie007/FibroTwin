@@ -1,7 +1,7 @@
 [
   {
-    "run_id": "20260310_090409",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_090409",
+    "run_id": "20260310_094317",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_094317",
     "config": "",
     "metrics": {
       "step": [
@@ -37,20 +37,20 @@
         2.8
       ],
       "c_mean": [
-        0.026136,
-        0.32239,
-        0.81579,
-        1.596,
-        2.4315,
-        3.2611,
-        4.0862,
-        4.8865,
-        5.6513,
-        6.3795,
-        7.0841,
-        7.7463,
-        8.3721,
-        8.9977
+        0.026139,
+        0.32301,
+        0.82149,
+        1.6074,
+        2.4481,
+        3.2798,
+        4.1035,
+        4.9026,
+        5.6636,
+        6.3892,
+        7.1004,
+        7.7682,
+        8.3978,
+        9.0267
       ],
       "g_mean": [
         null,
@@ -71,13 +71,13 @@
     },
     "animation": null,
     "frames": [],
-    "timestamp": "20260310_090409",
+    "timestamp": "20260310_094317",
     "animation_site": null,
     "frames_site": []
   },
   {
-    "run_id": "20260310_090406",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_090406",
+    "run_id": "20260310_094314",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_094314",
     "config": "",
     "metrics": {
       "step": [
@@ -113,20 +113,20 @@
         2.8
       ],
       "c_mean": [
-        0.026254,
-        0.36061,
-        1.0819,
-        1.9495,
-        2.8077,
-        3.6579,
-        4.5021,
-        5.3034,
-        6.063,
-        6.8006,
-        7.5103,
-        8.1724,
-        8.7953,
-        9.4302
+        0.026259,
+        0.36413,
+        1.0897,
+        1.9583,
+        2.8158,
+        3.6625,
+        4.5058,
+        5.3164,
+        6.0861,
+        6.8214,
+        7.527,
+        8.1858,
+        8.8074,
+        9.4362
       ],
       "g_mean": [
         null,
@@ -147,13 +147,13 @@
     },
     "animation": null,
     "frames": [],
-    "timestamp": "20260310_090406",
+    "timestamp": "20260310_094314",
     "animation_site": null,
     "frames_site": []
   },
   {
-    "run_id": "20260310_090403",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_090403",
+    "run_id": "20260310_094311",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_094311",
     "config": "",
     "metrics": {
       "step": [
@@ -189,20 +189,20 @@
         2.8
       ],
       "c_mean": [
-        0.026282,
-        0.33652,
-        0.96331,
-        1.812,
-        2.6851,
-        3.541,
-        4.3844,
-        5.1956,
-        5.9701,
-        6.7029,
-        7.4029,
-        8.0586,
-        8.6855,
-        9.3189
+        0.026289,
+        0.33738,
+        0.9747,
+        1.8297,
+        2.7019,
+        3.5551,
+        4.3975,
+        5.208,
+        5.9775,
+        6.7073,
+        7.407,
+        8.0639,
+        8.695,
+        9.3276
       ],
       "g_mean": [
         null,
@@ -223,13 +223,13 @@
     },
     "animation": null,
     "frames": [],
-    "timestamp": "20260310_090403",
+    "timestamp": "20260310_094311",
     "animation_site": null,
     "frames_site": []
   },
   {
-    "run_id": "20260310_090400",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_090400",
+    "run_id": "20260310_094308",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_094308",
     "config": "",
     "metrics": {
       "step": [
@@ -265,20 +265,20 @@
         2.8
       ],
       "c_mean": [
-        0.027789,
-        0.43402,
-        1.2789,
-        2.1865,
-        3.0734,
-        3.9368,
-        4.7836,
-        5.6025,
-        6.3729,
-        7.0981,
-        7.8142,
-        8.4925,
-        9.1248,
-        9.7571
+        0.027884,
+        0.44212,
+        1.2951,
+        2.2037,
+        3.0948,
+        3.9658,
+        4.8188,
+        5.6429,
+        6.4189,
+        7.1467,
+        7.8622,
+        8.5394,
+        9.1749,
+        9.8096
       ],
       "g_mean": [
         null,
@@ -299,13 +299,13 @@
     },
     "animation": null,
     "frames": [],
-    "timestamp": "20260310_090400",
+    "timestamp": "20260310_094308",
     "animation_site": null,
     "frames_site": []
   },
   {
-    "run_id": "20260310_090357",
-    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_090357",
+    "run_id": "20260310_094305",
+    "path": "/home/snie007/.openclaw/workspaces/orchestrator/fibrotwin/outputs/20260310_094305",
     "config": "",
     "metrics": {
       "step": [
@@ -341,20 +341,20 @@
         2.8
       ],
       "c_mean": [
-        0.026399,
-        0.40143,
-        1.2182,
-        2.1048,
-        2.9773,
-        3.8332,
-        4.6782,
-        5.4942,
-        6.2636,
-        6.9869,
-        7.6983,
-        8.3678,
-        9.0054,
-        9.649
+        0.026409,
+        0.40996,
+        1.2333,
+        2.1218,
+        2.9961,
+        3.8534,
+        4.7,
+        5.5166,
+        6.287,
+        7.0124,
+        7.7262,
+        8.3973,
+        9.0309,
+        9.6784
       ],
       "g_mean": [
         null,
@@ -375,7 +375,7 @@
     },
     "animation": null,
     "frames": [],
-    "timestamp": "20260310_090357",
+    "timestamp": "20260310_094305",
     "animation_site": null,
     "frames_site": []
   }

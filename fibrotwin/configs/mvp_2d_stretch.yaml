@@ -29,7 +29,7 @@ cells:
   advection_gain: 1.0
   dep_rate: 0.1
   dep_sigma: 0.35
-  myo_switch_threshold: 0.621
+  myo_switch_threshold: 0.6215
   myo_switch_softness: 0.052
   myo_deact_threshold: 0.34
   myo_dep_boost: 2.2
@@ -38,7 +38,7 @@ cells:
   synergy_dep_gain: 1.0
   trail_gain: 0.45
   trail_len: 0.6
-  myo_cap: 0.883
+  myo_cap: 0.8825
 remodeling:
   tau_fibre: 20.0
   tau_collagen: 14.0
@@ -55,12 +55,12 @@ signaling:
   tgf_beta: 0.25
   angII: 0.2
 signaling_network:
-  k_tgfr_smad: 2.88
-  k_at1r_erk: 2.2
+  k_tgfr_smad: 2.95
+  k_at1r_erk: 2.26
   k_mech_ros: 1.0
   k_mech_can: 0.8
-  d_smad: 0.135
-  d_erk: 0.235
+  d_smad: 0.125
+  d_erk: 0.225
   d_ros: 0.45
   d_can: 0.5
 receptors:
@@ -75,10 +75,10 @@ cytokines:
   enabled: true
   k_neighbors: 8
   kernel_sigma: 0.7
-  D_tgf: 0.016
-  D_chemo: 0.04
-  decay_tgf: 0.3
-  decay_chemo: 0.42
+  D_tgf: 0.012
+  D_chemo: 0.03
+  decay_tgf: 0.34
+  decay_chemo: 0.48
 infarct:
   enabled: false
   center_x: 5.0
@@ -86,15 +86,15 @@ infarct:
   radius: 1.0
   softening: 0.6
   cue_boost: 0.2
-  signal_source: 0.8
+  signal_source: 0.88
   k_infl_to_prov: 0.12
   k_prov_to_scar: 0.06
   k_infl_resolve: 0.05
   k_prov_resolve: 0.03
-  collagen_source: 0.225
-  dispersion_core: 0.015
-  dispersion_border: 0.2
-  dispersion_remote: 1.35
+  collagen_source: 0.24
+  dispersion_core: 0.005
+  dispersion_border: 0.16
+  dispersion_remote: 1.45
 viz:
   frame_every: 5
   dpi: 120

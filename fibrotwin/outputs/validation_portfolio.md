@@ -6,14 +6,14 @@ Checks passed: 8/8
 
 | Scenario | What was simulated | Main takeaway | Key endpoints |
 |---|---|---|---|
-| baseline_low_load_low_signal | Low mechanical stretch + low TGFβ/AngII baseline tissue remodeling. | Reference baseline profile. | collagen=7.99; p=0.526; myofibro=0.788; align=0.911 |
-| high_load_only | Increased mechanical loading with low biochemical signaling. | Mechanical loading primarily increases alignment. | collagen=8.58; p=0.555; myofibro=0.863; align=0.917 |
-| high_signal_only | High biochemical signaling (TGFβ/AngII) with low mechanical stretch. | Biochemical signaling strongly increases profibrotic activity. | collagen=10.26; p=0.644; myofibro=0.887; align=0.911 |
-| high_load_high_signal | Combined high loading and high signaling (synergy condition). | Combined cues produce the strongest non-infarct profibrotic response. | collagen=10.24; p=0.664; myofibro=0.887; align=0.918 |
-| infarct_high_load_high_signal | Synergy condition with infarct-zone maturation (core/border/remote). | Infarct core amplifies collagen burden over global non-infarct response. | collagen=10.34; p=0.665; myofibro=0.887; align=0.918 |
-| drug_tgfr_block | Synergy condition with pharmacologic TGFβ receptor blockade. | TGFβR blockade suppresses signaling and collagen vs no-drug synergy. | collagen=9.91; p=0.642; myofibro=0.875; align=0.918 |
-| drug_at1r_block | Synergy condition with pharmacologic AT1 receptor blockade. | AT1R blockade suppresses collagen vs no-drug synergy. | collagen=10.01; p=0.637; myofibro=0.887; align=0.918 |
-| drug_dual_block | Synergy condition with dual receptor blockade (TGFβR + AT1R). | Dual blockade gives strongest suppression among drug scenarios. | collagen=9.57; p=0.613; myofibro=0.875; align=0.917 |
+| baseline_low_load_low_signal | Low mechanical stretch + low TGFβ/AngII baseline tissue remodeling. | Reference baseline profile. | collagen=8.07; p=0.530; myofibro=0.800; align=0.911 |
+| high_load_only | Increased mechanical loading with low biochemical signaling. | Mechanical loading primarily increases alignment. | collagen=8.60; p=0.558; myofibro=0.863; align=0.916 |
+| high_signal_only | High biochemical signaling (TGFβ/AngII) with low mechanical stretch. | Biochemical signaling strongly increases profibrotic activity. | collagen=10.28; p=0.648; myofibro=0.887; align=0.911 |
+| high_load_high_signal | Combined high loading and high signaling (synergy condition). | Combined cues produce the strongest non-infarct profibrotic response. | collagen=10.28; p=0.669; myofibro=0.887; align=0.918 |
+| infarct_high_load_high_signal | Synergy condition with infarct-zone maturation (core/border/remote). | Infarct core amplifies collagen burden over global non-infarct response. | collagen=10.40; p=0.669; myofibro=0.887; align=0.918 |
+| drug_tgfr_block | Synergy condition with pharmacologic TGFβ receptor blockade. | TGFβR blockade suppresses signaling and collagen vs no-drug synergy. | collagen=9.92; p=0.648; myofibro=0.875; align=0.917 |
+| drug_at1r_block | Synergy condition with pharmacologic AT1 receptor blockade. | AT1R blockade suppresses collagen vs no-drug synergy. | collagen=10.01; p=0.642; myofibro=0.887; align=0.918 |
+| drug_dual_block | Synergy condition with dual receptor blockade (TGFβR + AT1R). | Dual blockade gives strongest suppression among drug scenarios. | collagen=9.60; p=0.620; myofibro=0.875; align=0.917 |
 
 ## How to interpret endpoints
 - **collagen**: final fibrosis burden (higher = more fibrosis).

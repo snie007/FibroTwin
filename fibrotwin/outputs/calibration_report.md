@@ -1,10 +1,10 @@
 # Calibration Report
 
-Pass: 4/6
+Pass: 5/6
 
 - myofibro_fraction_high_signal: value=0.887499988079071, band=[0.6, 0.9] -> PASS
-- profibrotic_index_high_signal: value=0.6437070965766907, band=[0.65, 0.95] -> FAIL
-- alignment_high_load: value=0.9165148138999939, band=[0.78, 0.98] -> PASS
-- collagen_fraction_load_signal: value=10.241375923156738, band=[8.0, 20.0] -> PASS
-- infarct_core_collagen: value=15.224184036254883, band=[12.0, 60.0] -> PASS
-- infarct_core_to_remote_ratio: value=1.498096002609609, band=[1.5, 6.0] -> FAIL
+- profibrotic_index_high_signal: value=0.6483823657035828, band=[0.65, 0.95] -> FAIL
+- alignment_high_load: value=0.9164532423019409, band=[0.78, 0.98] -> PASS
+- collagen_fraction_load_signal: value=10.275887489318848, band=[8.0, 20.0] -> PASS
+- infarct_core_collagen: value=15.356542587280273, band=[12.0, 60.0] -> PASS
+- infarct_core_to_remote_ratio: value=1.5026420928607969, band=[1.5, 6.0] -> PASS
