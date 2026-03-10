@@ -488,10 +488,13 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 
     emulation_block = ''
     emr = ROOT / 'outputs' / 'emulation_report.md'
+    emw = ROOT / 'outputs' / 'emulation_waves.md'
     emq = ROOT / 'outputs' / 'emulation_qc.md'
     emg = ROOT / 'docs' / '06_emulation_history_matching_guide.md'
     if emr.exists():
         emulation_block = f'<div class="card"><h2>Emulator + history matching summary</h2>{md_to_html(emr.read_text())}<img src="../assets/img/emulation_implausibility_hist.png" alt="Emulation implausibility histogram"/></div>'
+        if emw.exists():
+            emulation_block += f'<div class="card"><h2>Extra history-matching waves</h2>{md_to_html(emw.read_text())}</div>'
         if emq.exists():
             emulation_block += f'<div class="card"><h2>Emulation QC checklist</h2>{md_to_html(emq.read_text())}</div>'
         if emg.exists():

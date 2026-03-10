@@ -1,0 +1,204 @@
+{
+  "waves": [
+    {
+      "wave": 1,
+      "best_model": "GaussianProcessRBF",
+      "nroy_fraction": 1.0,
+      "nroy_count": 120,
+      "n_candidates": 120,
+      "targets_passed": 4,
+      "targets_total": 6,
+      "sim_targets": {
+        "myofibro_fraction_high_signal": 0.800000011920929,
+        "profibrotic_index_high_signal": 0.5906808972358704,
+        "alignment_high_load": 0.9170118570327759,
+        "collagen_fraction_load_signal": 9.37196159362793,
+        "infarct_core_collagen": 13.582491874694824,
+        "infarct_core_to_remote_ratio": 1.46962571144104
+      },
+      "pass_flags": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": false,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": false
+      },
+      "bounds": {
+        "signaling_network.k_tgfr_smad": [
+          0.40235716104507446,
+          2.597062826156616
+        ],
+        "signaling_network.k_at1r_erk": [
+          0.35620176792144775,
+          2.0400075912475586
+        ],
+        "signaling_network.d_smad": [
+          0.035481370985507965,
+          1.5690025091171265
+        ],
+        "signaling_network.d_erk": [
+          0.04750456660985947,
+          1.5549331903457642
+        ],
+        "cells.myo_switch_threshold": [
+          0.05419601500034332,
+          0.8452863693237305
+        ],
+        "cells.myo_switch_softness": [
+          0.010023441165685654,
+          0.14887972176074982
+        ],
+        "cells.myo_cap": [
+          0.404214084148407,
+          1.3643144369125366
+        ],
+        "infarct.collagen_source": [
+          0.0037439942825585604,
+          0.05474052205681801
+        ],
+        "infarct.signal_source": [
+          0.04317178577184677,
+          0.5541495084762573
+        ],
+        "infarct.dispersion_core": [
+          0.04533030092716217,
+          0.656524121761322
+        ],
+        "infarct.dispersion_border": [
+          0.06996084749698639,
+          1.0319135189056396
+        ],
+        "infarct.dispersion_remote": [
+          0.11047852039337158,
+          1.408469319343567
+        ]
+      }
+    },
+    {
+      "wave": 2,
+      "best_model": "PolynomialRegression",
+      "nroy_fraction": 0.7416666666666667,
+      "nroy_count": 89,
+      "n_candidates": 120,
+      "targets_passed": 5,
+      "targets_total": 6,
+      "sim_targets": {
+        "myofibro_fraction_high_signal": 0.6000000238418579,
+        "profibrotic_index_high_signal": 0.40075600147247314,
+        "alignment_high_load": 0.9163224697113037,
+        "collagen_fraction_load_signal": 8.166520118713379,
+        "infarct_core_collagen": 12.433765411376953,
+        "infarct_core_to_remote_ratio": 1.5411697626113892
+      },
+      "pass_flags": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": false,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "bounds": {
+        "signaling_network.k_tgfr_smad": [
+          0.2934224009513855,
+          2.7049906253814697
+        ],
+        "signaling_network.k_at1r_erk": [
+          0.28673267364501953,
+          2.122680902481079
+        ],
+        "signaling_network.d_smad": [
+          -0.027881745249032974,
+          1.6207988262176514
+        ],
+        "signaling_network.d_erk": [
+          -0.0035545527935028076,
+          1.6004328727722168
+        ],
+        "cells.myo_switch_threshold": [
+          0.01597539708018303,
+          0.8710121512413025
+        ],
+        "cells.myo_switch_softness": [
+          0.006121274549514055,
+          0.15504872798919678
+        ],
+        "cells.myo_cap": [
+          0.36639001965522766,
+          1.410098910331726
+        ],
+        "infarct.collagen_source": [
+          0.001249335240572691,
+          0.05620965361595154
+        ],
+        "infarct.signal_source": [
+          0.018890494480729103,
+          0.5783016085624695
+        ],
+        "infarct.dispersion_core": [
+          0.019314507022500038,
+          0.6787906289100647
+        ],
+        "infarct.dispersion_border": [
+          0.02472389116883278,
+          1.0769587755203247
+        ],
+        "infarct.dispersion_remote": [
+          0.049078188836574554,
+          1.4254992008209229
+        ]
+      }
+    }
+  ],
+  "final_bounds": {
+    "signaling_network.k_tgfr_smad": [
+      0.2934224009513855,
+      2.7049906253814697
+    ],
+    "signaling_network.k_at1r_erk": [
+      0.28673267364501953,
+      2.122680902481079
+    ],
+    "signaling_network.d_smad": [
+      -0.027881745249032974,
+      1.6207988262176514
+    ],
+    "signaling_network.d_erk": [
+      -0.0035545527935028076,
+      1.6004328727722168
+    ],
+    "cells.myo_switch_threshold": [
+      0.01597539708018303,
+      0.8710121512413025
+    ],
+    "cells.myo_switch_softness": [
+      0.006121274549514055,
+      0.15504872798919678
+    ],
+    "cells.myo_cap": [
+      0.36639001965522766,
+      1.410098910331726
+    ],
+    "infarct.collagen_source": [
+      0.001249335240572691,
+      0.05620965361595154
+    ],
+    "infarct.signal_source": [
+      0.018890494480729103,
+      0.5783016085624695
+    ],
+    "infarct.dispersion_core": [
+      0.019314507022500038,
+      0.6787906289100647
+    ],
+    "infarct.dispersion_border": [
+      0.02472389116883278,
+      1.0769587755203247
+    ],
+    "infarct.dispersion_remote": [
+      0.049078188836574554,
+      1.4254992008209229
+    ]
+  }
+}
