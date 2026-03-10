@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Validation & Tests</title><link rel="stylesheet" href="../assets/css/style.css?v=1773141859"/><link rel="stylesheet" href="../assets/css/validation_theme.css?v=1773141859"/></head><body><header><h1>Validation & Tests</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Validation page coherence plan</h2><p><h1>Validation Page Consistency Plan</h1></p><p><h2>Goal</h2>
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Validation & Tests</title><link rel="stylesheet" href="../assets/css/style.css?v=1773142349"/><link rel="stylesheet" href="../assets/css/validation_theme.css?v=1773142349"/></head><body><header><h1>Validation & Tests</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Validation page coherence plan</h2><p><h1>Validation Page Consistency Plan</h1></p><p><h2>Goal</h2>
 Create one coherent visual language across all validation artifacts (portfolio, numerical tests, calibration checks, per-study test cards, and emulation waves).</p><p><h2>Design system (single source of truth)</h2>
 - Shared stylesheet: `site/assets/css/validation_theme.css`
 - Standard blocks on every test detail page:
@@ -26,59 +26,7 @@ When adding or editing validation content, use the shared style classes and keep
 <tr><td>Core</td><td>15.401</td><td>0.679</td></tr>
 <tr><td>Border zone</td><td>9.943</td><td>0.671</td></tr>
 <tr><td>Remote</td><td>10.253</td><td>0.673</td></tr>
-</tbody></table><p>Scenario: infarct_high_load_high_signal</p></div><div class="card"><h2>Validation portfolio</h2><p><h1>Validation Portfolio</h1></p><p>Checks passed: 8/8</p><p><h2>Scenario outcomes (interpretable summary)</h2></p><p>| Scenario | What was simulated | Main takeaway | Key endpoints |
-|---|---|---|---|
-| baseline_low_load_low_signal | Low mechanical stretch + low TGFβ/AngII baseline tissue remodeling. | Reference baseline profile. | collagen=8.21; p=0.537; myofibro=0.800; align=0.912 |
-| high_load_only | Increased mechanical loading with low biochemical signaling. | Mechanical loading primarily increases alignment. | collagen=8.74; p=0.565; myofibro=0.875; align=0.917 |
-| high_signal_only | High biochemical signaling (TGFβ/AngII) with low mechanical stretch. | Biochemical signaling strongly increases profibrotic activity. | collagen=10.32; p=0.652; myofibro=0.887; align=0.912 |
-| high_load_high_signal | Combined high loading and high signaling (synergy condition). | Combined cues produce the strongest non-infarct profibrotic response. | collagen=10.29; p=0.672; myofibro=0.887; align=0.918 |
-| infarct_high_load_high_signal | Synergy condition with infarct-zone maturation (core/border/remote). | Infarct core amplifies collagen burden over global non-infarct response. | collagen=10.42; p=0.673; myofibro=0.887; align=0.918 |
-| drug_tgfr_block | Synergy condition with pharmacologic TGFβ receptor blockade. | TGFβR blockade suppresses signaling and collagen vs no-drug synergy. | collagen=10.01; p=0.653; myofibro=0.875; align=0.918 |
-| drug_at1r_block | Synergy condition with pharmacologic AT1 receptor blockade. | AT1R blockade suppresses collagen vs no-drug synergy. | collagen=10.07; p=0.646; myofibro=0.887; align=0.918 |
-| drug_dual_block | Synergy condition with dual receptor blockade (TGFβR + AT1R). | Dual blockade gives strongest suppression among drug scenarios. | collagen=9.70; p=0.625; myofibro=0.875; align=0.918 |</p><p><h2>How to interpret endpoints</h2>
-- <strong>collagen</strong>: final fibrosis burden (higher = more fibrosis).
-- <strong>p</strong>: integrated profibrotic signaling activity (higher = stronger fibrotic signaling).
-- <strong>myofibro</strong>: final myofibroblast fraction (higher = more activated fibroblast phenotype).
-- <strong>align</strong>: collagen/fibre alignment with loading axis (higher = more load-directed structure).</p><p><h2>Checks</h2>
-- [PASS] high_signal_only has higher profibrotic signal than baseline
-- [PASS] high_signal_only has higher myofibroblast fraction than baseline
-- [PASS] high_load_only increases fibre alignment vs baseline
-- [PASS] high_load_high_signal increases profibrotic signal over high_load_only and high_signal_only
-- [PASS] infarct core collagen exceeds non-infarct high_load_high_signal global collagen
-- [PASS] TGFβR blockade reduces profibrotic signal vs high_load_high_signal
-- [PASS] AT1R blockade reduces collagen vs high_load_high_signal
-- [PASS] Dual blockade gives strongest suppression (collagen) among drug scenarios</p></div><div class="card"><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2><p><h1>Scenario Portfolio Matrix</h1></p><p>Scenarios: 29</p><p><h2>Key ranges</h2>
-- Collagen: 3.931 .. 18.774
-- Alignment: 0.905 .. 0.931</p><p><h2>Scenarios</h2>
-- L0.10_T0.05_A0.05_N40: c=3.931, p=0.386, myo=0.900, ac_align=0.906
-- L0.10_T0.05_A0.05_N80: c=8.282, p=0.386, myo=0.925, ac_align=0.910
-- L0.10_T0.05_A0.05_N140: c=13.905, p=0.386, myo=0.950, ac_align=0.906
-- L0.10_T0.25_A0.20_N40: c=4.927, p=0.493, myo=1.000, ac_align=0.906
-- L0.10_T0.25_A0.20_N80: c=10.403, p=0.493, myo=1.000, ac_align=0.911
-- L0.10_T0.25_A0.20_N140: c=17.651, p=0.493, myo=1.000, ac_align=0.906
-- L0.10_T0.50_A0.45_N40: c=5.127, p=0.523, myo=1.000, ac_align=0.905
-- L0.10_T0.50_A0.45_N80: c=10.773, p=0.523, myo=1.000, ac_align=0.910
-- L0.10_T0.50_A0.45_N140: c=18.264, p=0.524, myo=1.000, ac_align=0.906
-- L0.20_T0.05_A0.05_N40: c=4.180, p=0.402, myo=0.950, ac_align=0.922
-- L0.20_T0.05_A0.05_N80: c=8.584, p=0.400, myo=0.938, ac_align=0.920
-- L0.20_T0.05_A0.05_N140: c=14.669, p=0.402, myo=0.971, ac_align=0.906
-- L0.20_T0.25_A0.20_N40: c=5.125, p=0.506, myo=1.000, ac_align=0.923
-- L0.20_T0.25_A0.20_N80: c=10.489, p=0.504, myo=1.000, ac_align=0.920
-- L0.20_T0.25_A0.20_N140: c=17.932, p=0.506, myo=1.000, ac_align=0.906
-- L0.20_T0.50_A0.45_N40: c=5.332, p=0.535, myo=1.000, ac_align=0.923
-- L0.20_T0.50_A0.45_N80: c=10.793, p=0.534, myo=1.000, ac_align=0.920
-- L0.20_T0.50_A0.45_N140: c=18.506, p=0.535, myo=1.000, ac_align=0.905
-- L0.30_T0.05_A0.05_N40: c=4.322, p=0.424, myo=0.950, ac_align=0.929
-- L0.30_T0.05_A0.05_N80: c=8.795, p=0.422, myo=0.988, ac_align=0.917
-- L0.30_T0.05_A0.05_N140: c=15.490, p=0.426, myo=0.986, ac_align=0.923
-- L0.30_T0.25_A0.20_N40: c=5.103, p=0.524, myo=1.000, ac_align=0.931
-- L0.30_T0.25_A0.20_N80: c=10.342, p=0.522, myo=1.000, ac_align=0.917
-- L0.30_T0.25_A0.20_N140: c=18.240, p=0.526, myo=1.000, ac_align=0.922
-- L0.30_T0.50_A0.45_N40: c=5.237, p=0.552, myo=1.000, ac_align=0.931
-- L0.30_T0.50_A0.45_N80: c=10.671, p=0.550, myo=1.000, ac_align=0.917
-- L0.30_T0.50_A0.45_N140: c=18.774, p=0.553, myo=1.000, ac_align=0.922
-- INFARCT_L0.28_T0.50_A0.45_N80: c=10.709, p=0.547, myo=1.000, ac_align=0.918
-- INFARCT_L0.28_T0.50_A0.45_N140: c=18.577, p=0.550, myo=1.000, ac_align=0.918</p></div><div class="card"><h2>Scenario matrix explorer (interactive)</h2>
+</tbody></table><p>Scenario: infarct_high_load_high_signal</p></div><div class='card'><h2>Validation portfolio</h2><div class='summary-grid'><div class='summary-tile'><strong>Checks passed</strong><div>8/8</div></div><div class='summary-tile'><strong>Scenarios</strong><div>8</div></div></div><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody><tr><td>baseline_low_load_low_signal</td><td>0.1</td><td>0.05</td><td>0.05</td><td>8.215</td><td>0.537</td><td>0.800</td><td>0.912</td></tr><tr><td>high_load_only</td><td>0.28</td><td>0.05</td><td>0.05</td><td>8.740</td><td>0.565</td><td>0.875</td><td>0.917</td></tr><tr><td>high_signal_only</td><td>0.1</td><td>0.5</td><td>0.45</td><td>10.318</td><td>0.652</td><td>0.887</td><td>0.912</td></tr><tr><td>high_load_high_signal</td><td>0.28</td><td>0.5</td><td>0.45</td><td>10.295</td><td>0.672</td><td>0.887</td><td>0.918</td></tr><tr><td>infarct_high_load_high_signal</td><td>0.28</td><td>0.5</td><td>0.45</td><td>10.422</td><td>0.673</td><td>0.887</td><td>0.918</td></tr><tr><td>drug_tgfr_block</td><td>0.28</td><td>0.5</td><td>0.45</td><td>10.006</td><td>0.653</td><td>0.875</td><td>0.918</td></tr><tr><td>drug_at1r_block</td><td>0.28</td><td>0.5</td><td>0.45</td><td>10.072</td><td>0.646</td><td>0.887</td><td>0.918</td></tr><tr><td>drug_dual_block</td><td>0.28</td><td>0.5</td><td>0.45</td><td>9.697</td><td>0.625</td><td>0.875</td><td>0.918</td></tr></tbody></table><h3>Trend checks</h3><ul><li><span class='badge pass'>PASS</span> high_signal_only has higher profibrotic signal than baseline</li><li><span class='badge pass'>PASS</span> high_signal_only has higher myofibroblast fraction than baseline</li><li><span class='badge pass'>PASS</span> high_load_only increases fibre alignment vs baseline</li><li><span class='badge pass'>PASS</span> high_load_high_signal increases profibrotic signal over high_load_only and high_signal_only</li><li><span class='badge pass'>PASS</span> infarct core collagen exceeds non-infarct high_load_high_signal global collagen</li><li><span class='badge pass'>PASS</span> TGFβR blockade reduces profibrotic signal vs high_load_high_signal</li><li><span class='badge pass'>PASS</span> AT1R blockade reduces collagen vs high_load_high_signal</li><li><span class='badge pass'>PASS</span> Dual blockade gives strongest suppression (collagen) among drug scenarios</li></ul></div><div class='card'><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2><div class='summary-grid'><div class='summary-tile'><strong>Total scenarios</strong><div>29</div></div><div class='summary-tile'><strong>Collagen range</strong><div>3.931 – 18.774</div></div><div class='summary-tile'><strong>Alignment range</strong><div>0.905 – 0.931</div></div></div><p>Top 12 collagen scenarios are shown below.</p><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody><tr><td>L0.30_T0.50_A0.45_N140</td><td>0.3</td><td>0.5</td><td>0.45</td><td>18.774</td><td>0.553</td><td>1.000</td><td>0.922</td></tr><tr><td>INFARCT_L0.28_T0.50_A0.45_N140</td><td>0.28</td><td>0.5</td><td>0.45</td><td>18.577</td><td>0.550</td><td>1.000</td><td>0.918</td></tr><tr><td>L0.20_T0.50_A0.45_N140</td><td>0.2</td><td>0.5</td><td>0.45</td><td>18.506</td><td>0.535</td><td>1.000</td><td>0.905</td></tr><tr><td>L0.10_T0.50_A0.45_N140</td><td>0.1</td><td>0.5</td><td>0.45</td><td>18.264</td><td>0.524</td><td>1.000</td><td>0.906</td></tr><tr><td>L0.30_T0.25_A0.20_N140</td><td>0.3</td><td>0.25</td><td>0.2</td><td>18.240</td><td>0.526</td><td>1.000</td><td>0.922</td></tr><tr><td>L0.20_T0.25_A0.20_N140</td><td>0.2</td><td>0.25</td><td>0.2</td><td>17.932</td><td>0.506</td><td>1.000</td><td>0.906</td></tr><tr><td>L0.10_T0.25_A0.20_N140</td><td>0.1</td><td>0.25</td><td>0.2</td><td>17.651</td><td>0.493</td><td>1.000</td><td>0.906</td></tr><tr><td>L0.30_T0.05_A0.05_N140</td><td>0.3</td><td>0.05</td><td>0.05</td><td>15.490</td><td>0.426</td><td>0.986</td><td>0.923</td></tr><tr><td>L0.20_T0.05_A0.05_N140</td><td>0.2</td><td>0.05</td><td>0.05</td><td>14.669</td><td>0.402</td><td>0.971</td><td>0.906</td></tr><tr><td>L0.10_T0.05_A0.05_N140</td><td>0.1</td><td>0.05</td><td>0.05</td><td>13.905</td><td>0.386</td><td>0.950</td><td>0.906</td></tr><tr><td>L0.20_T0.50_A0.45_N80</td><td>0.2</td><td>0.5</td><td>0.45</td><td>10.793</td><td>0.534</td><td>1.000</td><td>0.920</td></tr><tr><td>L0.10_T0.50_A0.45_N80</td><td>0.1</td><td>0.5</td><td>0.45</td><td>10.773</td><td>0.523</td><td>1.000</td><td>0.910</td></tr></tbody></table></div><div class="card"><h2>Scenario matrix explorer (interactive)</h2>
 <div class="kpi">
   <label>Load <select id="smLoad"></select></label>
   <label>TGF|AngII <select id="smSignal"></select></label>
@@ -88,32 +36,7 @@ When adding or editing validation content, use the shared style classes and keep
 <canvas id="smHeat" width="700" height="280" style="max-width:100%;background:#101722;border:1px solid #2a3140;border-radius:8px"></canvas>
 <p class="legend">Heatmap color encodes collagen burden. Tiles show loading/signal/fibroblast-count combinations.</p>
 <div id="scenarioMatrixApp"></div>
-</div><div class="card"><h2>Uncertainty quantification summary</h2><p><h1>UQ Portfolio Summary</h1></p><p>Samples: 10</p><p><h2>Check pass probabilities</h2>
-- high_signal_only has higher profibrotic signal than baseline: 1.00
-- high_signal_only has higher myofibroblast fraction than baseline: 1.00
-- high_load_only increases fibre alignment vs baseline: 1.00
-- high_load_high_signal yields highest collagen among non-infarct scenarios: 1.00
-- infarct core collagen exceeds non-infarct high_load_high_signal global collagen: 1.00</p><p><h2>Scenario uncertainty (q05/q50/q95)</h2>
-- baseline_low_load_low_signal:
-  - c_mean_final: 7.691 / 7.904 / 8.642
-  - p_mean_final: 0.386 / 0.386 / 0.386
-  - ac_align_x_final: 0.904 / 0.904 / 0.904
-- high_load_only:
-  - c_mean_final: 8.393 / 8.623 / 9.465
-  - p_mean_final: 0.416 / 0.416 / 0.416
-  - ac_align_x_final: 0.913 / 0.914 / 0.914
-- high_signal_only:
-  - c_mean_final: 9.965 / 10.288 / 11.384
-  - p_mean_final: 0.523 / 0.523 / 0.523
-  - ac_align_x_final: 0.901 / 0.902 / 0.902
-- high_load_high_signal:
-  - c_mean_final: 10.112 / 10.427 / 11.556
-  - p_mean_final: 0.544 / 0.544 / 0.545
-  - ac_align_x_final: 0.911 / 0.912 / 0.913
-- infarct_high_load_high_signal:
-  - c_mean_final: 10.091 / 10.405 / 11.528
-  - p_mean_final: 0.545 / 0.545 / 0.545
-  - ac_align_x_final: 0.912 / 0.913 / 0.914</p></div><div class='card'><h2>Drug Validation Card</h2><p>PMID anchors: <a href='https://pubmed.ncbi.nlm.nih.gov/27017945/'>27017945</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/26608708/'>26608708</a>.</p><p><strong>Expected pharmacology behavior:</strong> receptor blockade should reduce profibrotic signaling and downstream collagen accumulation; dual blockade should produce the strongest reduction.</p><table><thead><tr><th>Condition</th><th>Collagen (final)</th><th>Profibrotic index p (final)</th><th>Δ collagen vs no-drug</th><th>Δ p vs no-drug</th></tr></thead><tbody>
+</div><div class='card'><h2>Uncertainty quantification summary</h2><p>Samples: 10</p><h3>Check pass probabilities</h3><table><thead><tr><th>Check</th><th>Probability</th></tr></thead><tbody><tr><td>high_signal_only has higher profibrotic signal than baseline</td><td>1.00</td></tr><tr><td>high_signal_only has higher myofibroblast fraction than baseline</td><td>1.00</td></tr><tr><td>high_load_only increases fibre alignment vs baseline</td><td>1.00</td></tr><tr><td>high_load_high_signal yields highest collagen among non-infarct scenarios</td><td>1.00</td></tr><tr><td>infarct core collagen exceeds non-infarct high_load_high_signal global collagen</td><td>1.00</td></tr></tbody></table><h3>Scenario uncertainty (q50 [q05,q95])</h3><table><thead><tr><th>Scenario</th><th>Collagen</th><th>p</th><th>Align</th></tr></thead><tbody><tr><td>baseline_low_load_low_signal</td><td>7.904 [7.691,8.642]</td><td>0.386 [0.386,0.386]</td><td>0.904 [0.904,0.904]</td></tr><tr><td>high_load_only</td><td>8.623 [8.393,9.465]</td><td>0.416 [0.416,0.416]</td><td>0.914 [0.913,0.914]</td></tr><tr><td>high_signal_only</td><td>10.288 [9.965,11.384]</td><td>0.523 [0.523,0.523]</td><td>0.902 [0.901,0.902]</td></tr><tr><td>high_load_high_signal</td><td>10.427 [10.112,11.556]</td><td>0.544 [0.544,0.545]</td><td>0.912 [0.911,0.913]</td></tr><tr><td>infarct_high_load_high_signal</td><td>10.405 [10.091,11.528]</td><td>0.545 [0.545,0.545]</td><td>0.913 [0.912,0.914]</td></tr></tbody></table></div><div class='card'><h2>Drug Validation Card</h2><p>PMID anchors: <a href='https://pubmed.ncbi.nlm.nih.gov/27017945/'>27017945</a>, <a href='https://pubmed.ncbi.nlm.nih.gov/26608708/'>26608708</a>.</p><p><strong>Expected pharmacology behavior:</strong> receptor blockade should reduce profibrotic signaling and downstream collagen accumulation; dual blockade should produce the strongest reduction.</p><table><thead><tr><th>Condition</th><th>Collagen (final)</th><th>Profibrotic index p (final)</th><th>Δ collagen vs no-drug</th><th>Δ p vs no-drug</th></tr></thead><tbody>
 <tr><td>No drug</td><td>10.295 a.u.</td><td>0.672 (0-1)</td><td>reference</td><td>reference</td></tr>
 <tr><td>TGFβR block</td><td>10.006 a.u.</td><td>0.653 (0-1)</td><td>-2.8%</td><td>-2.9%</td></tr>
 <tr><td>AT1R block</td><td>10.072 a.u.</td><td>0.646 (0-1)</td><td>-2.2%</td><td>-3.9%</td></tr>
@@ -265,4 +188,4 @@ This review is designed as an actionable model-development plan and should be it
 5. Add prospective benchmark dashboard against published longitudinal datasets.</p><p><h2>Literature anchors (examples)</h2>
 - Fibroblast signaling and context dependence: PMID 27017945, 26608708.
 - Mechanoregulated infarct remodeling: PMID 22495588.
-- Growth/remodeling review context and MI remodeling: PMC4851715, PMC7855157.</p></div></main><script src="../assets/js/site.js?v=1773141859"></script></body></html>
+- Growth/remodeling review context and MI remodeling: PMC4851715, PMC7855157.</p></div></main><script src="../assets/js/site.js?v=1773142349"></script></body></html>

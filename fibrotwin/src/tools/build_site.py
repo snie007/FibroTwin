@@ -308,9 +308,16 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 
     verification = '<ul><li>Verification: patch test, deposition symmetry, fibre convergence, nonlinear Dirichlet sanity constraints.</li><li>Validation: plausibility trends under stretch + profibrotic signaling interaction scenarios (portfolio script).</li></ul>'
     portfolio_block = ''
-    vp = ROOT / 'outputs' / 'validation_portfolio.md'
-    if vp.exists():
-        portfolio_block = f'<div class="card"><h2>Validation portfolio</h2>{md_to_html(vp.read_text())}</div>'
+    vpj = ROOT / 'outputs' / 'validation_portfolio.json'
+    if vpj.exists():
+        try:
+            vp = json.loads(vpj.read_text())
+            rows = vp.get('scenarios', [])
+            trs = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in rows])
+            checks = ''.join([f"<li><span class='badge {'pass' if c.get('pass') else 'fail'}'>{'PASS' if c.get('pass') else 'FAIL'}</span> {c.get('check')}</li>" for c in vp.get('checks', [])])
+            portfolio_block = f"<div class='card'><h2>Validation portfolio</h2><div class='summary-grid'><div class='summary-tile'><strong>Checks passed</strong><div>{vp.get('n_checks_passed')}/{vp.get('n_checks_total')}</div></div><div class='summary-tile'><strong>Scenarios</strong><div>{len(rows)}</div></div></div><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody>{trs}</tbody></table><h3>Trend checks</h3><ul>{checks}</ul></div>"
+        except Exception:
+            portfolio_block = ''
 
     infarct_block = ''
     vpj = ROOT / 'outputs' / 'validation_portfolio.json'
@@ -364,9 +371,19 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         testcard_block = f"<div class='card'><h2>Per-test validation cards (click for full report)</h2><p>Showing all {len(cards)} cards. Click any card for boundary conditions, reference evidence, model-vs-experiment comparison, and interpretation.</p><div class='grid'>{thumbs}</div></div>"
 
     uq_block = ''
-    uqmd = ROOT / 'outputs' / 'uq_portfolio.md'
-    if uqmd.exists():
-        uq_block = f'<div class="card"><h2>Uncertainty quantification summary</h2>{md_to_html(uqmd.read_text())}</div>'
+    uqj = ROOT / 'outputs' / 'uq_portfolio.json'
+    if uqj.exists():
+        try:
+            uq = json.loads(uqj.read_text())
+            probs = uq.get('check_pass_probability', {})
+            p_rows = ''.join([f"<tr><td>{k}</td><td>{v:.2f}</td></tr>" for k,v in probs.items()])
+            su = uq.get('scenario_uncertainty', {})
+            s_rows = []
+            for name, m in su.items():
+                s_rows.append(f"<tr><td>{name}</td><td>{m['c_mean_final']['q50']:.3f} [{m['c_mean_final']['q05']:.3f},{m['c_mean_final']['q95']:.3f}]</td><td>{m['p_mean_final']['q50']:.3f} [{m['p_mean_final']['q05']:.3f},{m['p_mean_final']['q95']:.3f}]</td><td>{m['ac_align_x_final']['q50']:.3f} [{m['ac_align_x_final']['q05']:.3f},{m['ac_align_x_final']['q95']:.3f}]</td></tr>")
+            uq_block = f"<div class='card'><h2>Uncertainty quantification summary</h2><p>Samples: {uq.get('n_samples')}</p><h3>Check pass probabilities</h3><table><thead><tr><th>Check</th><th>Probability</th></tr></thead><tbody>{p_rows}</tbody></table><h3>Scenario uncertainty (q50 [q05,q95])</h3><table><thead><tr><th>Scenario</th><th>Collagen</th><th>p</th><th>Align</th></tr></thead><tbody>{''.join(s_rows)}</tbody></table></div>"
+        except Exception:
+            uq_block = ''
 
     metric_dict_block = '''<div class="card"><h2>Metric dictionary (definitions + units)</h2><table><thead><tr><th>Metric</th><th>Meaning</th><th>Units</th><th>Interpretation</th></tr></thead><tbody><tr><td><code>c_mean_final</code></td><td>Mean collagen field at final time</td><td>model collagen units (a.u.)</td><td>Higher = greater fibrosis burden.</td></tr><tr><td><code>p_mean_final</code></td><td>Integrated profibrotic signaling index from SMAD/ERK/ROS/CaN pathway state</td><td>dimensionless index [0,1] (a.u.)</td><td>Higher = stronger pro-fibrotic signaling drive.</td></tr><tr><td><code>myo_frac_final</code></td><td>Fraction of fibroblasts in myofibroblast phenotype at final time</td><td>fraction [0,1]</td><td>Higher = more activated contractile/depositing phenotype.</td></tr><tr><td><code>ac_align_x_final</code></td><td>Collagen/fibre alignment with principal loading axis (x)</td><td>dimensionless [0,1]</td><td>Higher = stronger load-aligned microstructure.</td></tr></tbody></table><p class="legend">Note: values are model-scale normalized outputs; the calibration cards map these to literature-supported target bands for quantitative comparison.</p></div>'''
 
@@ -411,9 +428,17 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             valcard_block = ''
 
     scenario_block = ''
-    spm = ROOT / 'outputs' / 'scenario_portfolio_matrix.md'
-    if spm.exists():
-        scenario_block = f'<div class="card"><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2>{md_to_html(spm.read_text())}</div>'
+    spj = ROOT / 'outputs' / 'scenario_portfolio_matrix.json'
+    if spj.exists():
+        try:
+            sm = json.loads(spj.read_text())
+            sc = sm.get('scenarios', [])
+            top = sorted(sc, key=lambda r: r.get('c_mean_final',0.0), reverse=True)[:12]
+            trs = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top])
+            su = sm.get('summary', {})
+            scenario_block = f"<div class='card'><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2><div class='summary-grid'><div class='summary-tile'><strong>Total scenarios</strong><div>{sm.get('n_scenarios')}</div></div><div class='summary-tile'><strong>Collagen range</strong><div>{su.get('min_collagen'):.3f} – {su.get('max_collagen'):.3f}</div></div><div class='summary-tile'><strong>Alignment range</strong><div>{su.get('min_alignment'):.3f} – {su.get('max_alignment'):.3f}</div></div></div><p>Top 12 collagen scenarios are shown below.</p><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody>{trs}</tbody></table></div>"
+        except Exception:
+            scenario_block = ''
 
     scenario_interactive_block = '''<div class="card"><h2>Scenario matrix explorer (interactive)</h2>
 <div class="kpi">
