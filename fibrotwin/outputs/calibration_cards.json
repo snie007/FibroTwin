@@ -17,20 +17,20 @@
     {
       "id": "C002",
       "name": "profibrotic_index_high_signal",
-      "status": "FAIL",
-      "value": 0.6483823657035828,
+      "status": "PASS",
+      "value": 0.6508998274803162,
       "band": [
         0.65,
         0.95
       ],
       "description": "Checks integrated profibrotic signaling index under high signal.",
-      "action_plan": "Increase receptor-to-signaling gains (k_tgfr_smad, k_at1r_erk) or reduce signaling decay (d_smad/d_erk)."
+      "action_plan": "No immediate tuning required; retain as anchor constraint."
     },
     {
       "id": "C003",
       "name": "alignment_high_load",
       "status": "PASS",
-      "value": 0.9164532423019409,
+      "value": 0.9165760278701782,
       "band": [
         0.78,
         0.98
@@ -42,7 +42,7 @@
       "id": "C004",
       "name": "collagen_fraction_load_signal",
       "status": "PASS",
-      "value": 10.275887489318848,
+      "value": 10.310318946838379,
       "band": [
         8.0,
         20.0
@@ -54,7 +54,7 @@
       "id": "C005",
       "name": "infarct_core_collagen",
       "status": "PASS",
-      "value": 15.356542587280273,
+      "value": 15.36541748046875,
       "band": [
         12.0,
         60.0
@@ -65,28 +65,28 @@
     {
       "id": "C006",
       "name": "infarct_core_to_remote_ratio",
-      "status": "PASS",
-      "value": 1.5026420928607969,
+      "status": "FAIL",
+      "value": 1.4990747438902812,
       "band": [
         1.5,
         6.0
       ],
       "description": "Checks spatial contrast between infarct core and remote tissue.",
-      "action_plan": "No immediate tuning required; retain as anchor constraint."
+      "action_plan": "Increase core-specific signaling/deposition while reducing remote spillover (diffusion/decay tuning)."
     }
   ],
   "failed_cards": [
     {
-      "id": "C002",
-      "name": "profibrotic_index_high_signal",
+      "id": "C006",
+      "name": "infarct_core_to_remote_ratio",
       "status": "FAIL",
-      "value": 0.6483823657035828,
+      "value": 1.4990747438902812,
       "band": [
-        0.65,
-        0.95
+        1.5,
+        6.0
       ],
-      "description": "Checks integrated profibrotic signaling index under high signal.",
-      "action_plan": "Increase receptor-to-signaling gains (k_tgfr_smad, k_at1r_erk) or reduce signaling decay (d_smad/d_erk)."
+      "description": "Checks spatial contrast between infarct core and remote tissue.",
+      "action_plan": "Increase core-specific signaling/deposition while reducing remote spillover (diffusion/decay tuning)."
     }
   ]
 }

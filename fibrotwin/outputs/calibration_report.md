@@ -3,8 +3,8 @@
 Pass: 5/6
 
 - myofibro_fraction_high_signal: value=0.887499988079071, band=[0.6, 0.9] -> PASS
-- profibrotic_index_high_signal: value=0.6483823657035828, band=[0.65, 0.95] -> FAIL
-- alignment_high_load: value=0.9164532423019409, band=[0.78, 0.98] -> PASS
-- collagen_fraction_load_signal: value=10.275887489318848, band=[8.0, 20.0] -> PASS
-- infarct_core_collagen: value=15.356542587280273, band=[12.0, 60.0] -> PASS
-- infarct_core_to_remote_ratio: value=1.5026420928607969, band=[1.5, 6.0] -> PASS
+- profibrotic_index_high_signal: value=0.6508998274803162, band=[0.65, 0.95] -> PASS
+- alignment_high_load: value=0.9165760278701782, band=[0.78, 0.98] -> PASS
+- collagen_fraction_load_signal: value=10.310318946838379, band=[8.0, 20.0] -> PASS
+- infarct_core_collagen: value=15.36541748046875, band=[12.0, 60.0] -> PASS
+- infarct_core_to_remote_ratio: value=1.4990747438902812, band=[1.5, 6.0] -> FAIL

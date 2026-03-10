@@ -55,12 +55,12 @@ signaling:
   tgf_beta: 0.25
   angII: 0.2
 signaling_network:
-  k_tgfr_smad: 2.95
-  k_at1r_erk: 2.26
+  k_tgfr_smad: 3.0
+  k_at1r_erk: 2.3
   k_mech_ros: 1.0
   k_mech_can: 0.8
-  d_smad: 0.125
-  d_erk: 0.225
+  d_smad: 0.12
+  d_erk: 0.22
   d_ros: 0.45
   d_can: 0.5
 receptors:
