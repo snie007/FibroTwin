@@ -18,7 +18,7 @@
       "id": "C002",
       "name": "profibrotic_index_high_signal",
       "status": "FAIL",
-      "value": 0.6387612819671631,
+      "value": 0.6437070965766907,
       "band": [
         0.65,
         0.95
@@ -30,7 +30,7 @@
       "id": "C003",
       "name": "alignment_high_load",
       "status": "PASS",
-      "value": 0.9165087342262268,
+      "value": 0.9165148138999939,
       "band": [
         0.78,
         0.98
@@ -42,7 +42,7 @@
       "id": "C004",
       "name": "collagen_fraction_load_signal",
       "status": "PASS",
-      "value": 10.189162254333496,
+      "value": 10.241375923156738,
       "band": [
         8.0,
         20.0
@@ -54,7 +54,7 @@
       "id": "C005",
       "name": "infarct_core_collagen",
       "status": "PASS",
-      "value": 15.111172676086426,
+      "value": 15.224184036254883,
       "band": [
         12.0,
         60.0
@@ -66,7 +66,7 @@
       "id": "C006",
       "name": "infarct_core_to_remote_ratio",
       "status": "FAIL",
-      "value": 1.4805820697707797,
+      "value": 1.498096002609609,
       "band": [
         1.5,
         6.0
@@ -80,7 +80,7 @@
       "id": "C002",
       "name": "profibrotic_index_high_signal",
       "status": "FAIL",
-      "value": 0.6387612819671631,
+      "value": 0.6437070965766907,
       "band": [
         0.65,
         0.95
@@ -92,7 +92,7 @@
       "id": "C006",
       "name": "infarct_core_to_remote_ratio",
       "status": "FAIL",
-      "value": 1.4805820697707797,
+      "value": 1.498096002609609,
       "band": [
         1.5,
         6.0
