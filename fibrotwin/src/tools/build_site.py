@@ -173,7 +173,7 @@ def write_site(runs):
     (SITE / 'pages/calibration').mkdir(parents=True, exist_ok=True)
 
     (SITE / 'assets/css/style.css').write_text('''body{font-family:Inter,Arial,sans-serif;margin:0;background:#0f1115;color:#e8e8ea;line-height:1.55}header,main{max-width:1180px;margin:0 auto;padding:16px}nav{display:flex;flex-wrap:wrap;gap:10px}nav a{margin-right:0;color:#7cc7ff;text-decoration:none;padding:4px 8px;border-radius:6px;background:#151922}h1,h2,h3{color:#fff}h2{margin-top:0}.card{background:#171a21;padding:14px;border-radius:10px;margin:12px 0;border:1px solid #2a3140}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px}img,video{max-width:100%;border-radius:8px}code,pre{background:#1f2430;padding:2px 6px;border-radius:4px}pre{overflow:auto;padding:10px}table{width:100%;border-collapse:collapse}td,th{border:1px solid #333;padding:6px;vertical-align:top}.kpi{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:8px}.pill{background:#202838;padding:8px;border-radius:8px}.stack-wrap{perspective:1400px;min-height:420px;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,#0b1018,#121a27);border-radius:12px}.sheet-stack{position:relative;width:420px;height:320px;transform-style:preserve-3d}.sheet{position:absolute;left:40px;top:30px;width:340px;height:220px;border-radius:12px;background:linear-gradient(145deg,#223,#2d3d55);border:1px solid #445;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .45s cubic-bezier(.2,.9,.2,1);box-shadow:0 10px 24px rgba(0,0,0,.45)}.sheet.expanded{transform:translateX(380px) scale(1.05)!important;z-index:120!important;box-shadow:0 16px 40px rgba(0,0,0,.65)}.legend{font-size:.9em;opacity:.9}canvas#towerCanvas{width:100%;max-width:820px;height:420px;border-radius:12px;border:1px solid #2a3140;background:#0b0f16}''')
-    (SITE / 'assets/css/validation_theme.css').write_text('''.validation-layout{display:grid;gap:12px}.v-card{background:#171a21;border:1px solid #2a3140;border-radius:10px;padding:14px}.v-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#202838;border:1px solid #39445c;font-size:.82rem}.badge.pass{background:#133322;border-color:#2d8056}.badge.fail{background:#3a1a1a;border-color:#944}.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.summary-tile{background:#121722;border:1px solid #2a3140;border-radius:8px;padding:10px}.test-plot{border:1px solid #2a3140;border-radius:10px;padding:8px;background:#0f141d}.plan-box{border-left:4px solid #4ea3ff;padding:8px 12px;background:#111827;border-radius:8px}''')
+    (SITE / 'assets/css/validation_theme.css').write_text('''.validation-layout{display:grid;gap:12px}.v-card{background:#171a21;border:1px solid #2a3140;border-radius:10px;padding:14px}.v-head{display:flex;justify-content:space-between;align-items:center;gap:8px}.badge{display:inline-block;padding:2px 8px;border-radius:999px;background:#202838;border:1px solid #39445c;font-size:.82rem}.badge.pass{background:#133322;border-color:#2d8056}.badge.fail{background:#3a1a1a;border-color:#944}.summary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}.summary-tile{background:#121722;border:1px solid #2a3140;border-radius:8px;padding:10px}.test-plot{border:1px solid #2a3140;border-radius:10px;padding:8px;background:#0f141d}.plan-box{border-left:4px solid #4ea3ff;padding:8px 12px;background:#111827;border-radius:8px}.section-shell{border:1px solid #31405a;border-radius:12px;padding:10px;margin:12px 0;background:#141a24}.section-shell h2{margin:0 0 6px 0}.section-meta{font-size:.92em;opacity:.9;margin-bottom:8px}''')
 
 
     (SITE / 'assets/js/site.js').write_text('''function fmt(v){return (v===null||v===undefined)?'NA':(typeof v==='number'?v.toFixed(4):String(v));}
@@ -636,18 +636,23 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             pass
 
-    redesign_block = ''
     vup = ROOT / 'docs' / '08_validation_unification_plan.md'
+    vin = ROOT / 'docs' / '09_validation_section_inventory.md'
     unify_block = ''
+    inventory_block = ''
     if vup.exists():
         unify_block = f'<div class="card"><h2>Validation unification plan (single style + no repeats)</h2>{md_to_html(vup.read_text())}</div>'
-    vrp = ROOT / 'docs' / '07_validation_consistency_plan.md'
-    if vrp.exists():
-        redesign_block = f'<div class="card"><h2>Validation page coherence plan</h2>{md_to_html(vrp.read_text())}</div>'
+    if vin.exists():
+        inventory_block = f'<div class="card"><h2>Validation section inventory</h2>{md_to_html(vin.read_text())}</div>'
 
-    pipeline_block = '''<div class="card"><h2>Validation pipeline (read in order)</h2><ol><li>Test outcomes + verification scope</li><li>Metric dictionary (units/definitions)</li><li>Validation portfolio + scenario matrix + UQ</li><li>Drug validation and numerical verification cards</li><li>Calibration cards and emulation/history matching</li><li>Parameter audit + uniqueness + coverage matrix</li><li>Literature-linked catalog and per-test cards</li></ol></div>'''
+    pipeline_block = '''<div class="card"><h2>Validation pipeline (read in order)</h2><ol><li>Model QA</li><li>Core validation outcomes</li><li>Method QA</li><li>Coverage and evidence</li></ol></div>'''
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'{pipeline_block}{unify_block}{redesign_block}<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{emulation_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}'))
+    model_qa_shell = f"<section class='section-shell'><h2>1) Model QA</h2><div class='section-meta'>Unit/definition context and immediate verification status.</div><div class='card'><h2>Test outcomes</h2>{latest_test_summary()}</div><div class='card'>{verification}</div>{metric_dict_block}</section>"
+    outcomes_shell = f"<section class='section-shell'><h2>2) Core validation outcomes</h2><div class='section-meta'>Scenario, infarct, uncertainty, and intervention behavior.</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{matrix_help_block}</section>"
+    method_shell = f"<section class='section-shell'><h2>3) Method QA</h2><div class='section-meta'>Numerical verification, calibration, emulation, and parameter consistency.</div>{numerical_block}{calib_block}{emulation_block}{param_block}</section>"
+    coverage_shell = f"<section class='section-shell'><h2>4) Coverage and evidence</h2><div class='section-meta'>Uniqueness, mechanism coverage, literature links, and per-test artifacts.</div>{uniq_block}{coverage_block}{systematic_block}{pubfig_block}{testcard_block}</section>"
+
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'{pipeline_block}{inventory_block}{unify_block}{model_qa_shell}{outcomes_shell}{method_shell}{coverage_shell}'))
 
 
     emu_body = emulation_block if emulation_block else '<div class="card"><p>Run <code>python -m src.tools.emulation_history_matching</code> to generate emulator report.</p></div>'

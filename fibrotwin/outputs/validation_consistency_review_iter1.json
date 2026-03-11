@@ -1,0 +1,9 @@
+{
+  "iteration": 1,
+  "n_h2": 55,
+  "duplicate_h2_normalized": [],
+  "has_unified_section_shells": true,
+  "removed_legacy_appendix_cards": true,
+  "human_readable_scenario_labels_present": true,
+  "consistency_score_0_4": 4
+}
