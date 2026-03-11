@@ -601,7 +601,15 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                     # 0..1 percentile-like rank within category (higher is better)
                     rank_map[tt.get('id','')] = 1.0 - (i / max(n-1, 1))
 
-            # table-native index with more specific quantitative behavior context
+            # table-native index with explicit quantitative expectation template per test
+            quant_template = {
+                'infarct_remodeling': 'Collagen(core/remote) >= 1.5; core collagen in [12,60]; expected core>remote and border≈remote±10%',
+                'fibroblast_signaling': 'p_high_signal in [0.65,0.95] and myofibro fraction in [0.60,0.90] (high_signal scenario)',
+                'collagen_dynamics': 'collagen(load+signal) in [8,20] and dual drug blockade reduces collagen vs no-drug by >3%',
+                'growth_remodeling': 'alignment_high_load in [0.78,0.98] and high_load alignment > baseline alignment',
+                'cell_motion': 'advection/migration tests: nonzero trail deposition and bounded displacement error (qual->quant comparator in detail page)',
+                'fibre_alignment': 'alignment index increases under sustained stretch and remains within [0,1]'
+            }
             trows = ''
             for t in tests:
                 tid = t.get('id')
@@ -612,8 +620,9 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 delta = sc - cat_mean
                 rel = rank_map.get(tid, 0.5)
                 quantitative = f"Support={sc:.0f}/3; Δvs-category={delta:+.2f}; rank={rel:.2f}"
-                trows += f"<tr><td>{tid}</td><td>{cat}</td><td>{sc:.0f}/3</td><td>{t.get('expected')}<br/><small>{quantitative}</small></td><td><a href='./tests/{tid}.html'>Open report</a></td></tr>"
-            testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Expected model behavior (quantified)</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
+                qexp = quant_template.get(cat, 'See detailed report for quantitative comparator.')
+                trows += f"<tr><td>{tid}</td><td>{cat}</td><td>{sc:.0f}/3</td><td>{qexp}</td><td>{t.get('expected')}<br/><small>{quantitative}</small></td><td><a href='./tests/{tid}.html'>Open report</a></td></tr>"
+            testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages. The quantitative expectation column now shows explicit numeric criteria by mechanism domain.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Quantitative expectation</th><th>Expected behavior + comparator</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
             fail_rows = []
             for k,v in sorted(by_cat.items()):
                 mean = sum(v)/max(len(v),1)
