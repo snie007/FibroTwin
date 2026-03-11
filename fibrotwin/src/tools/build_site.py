@@ -583,6 +583,18 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             by_cat = {}
             for t in tests:
                 by_cat.setdefault(t.get('category','other'), []).append(t.get('model_score_0_to_3',0))
+
+            # quantitative comparator helpers per test
+            by_cat_tests = {}
+            for t in tests:
+                by_cat_tests.setdefault(t.get('category','other'), []).append(t)
+            rank_map = {}
+            for cat_k, arr in by_cat_tests.items():
+                sarr = sorted(arr, key=lambda x: (-int(x.get('model_score_0_to_3',0)), str(x.get('pmid',''))))
+                n = max(len(sarr), 1)
+                for i, tt in enumerate(sarr):
+                    # 0..1 percentile-like rank within category (higher is better)
+                    rank_map[tt.get('id','')] = 1.0 - (i / max(n-1, 1))
             fail_rows = []
             for k,v in sorted(by_cat.items()):
                 mean = sum(v)/max(len(v),1)
@@ -603,7 +615,13 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                     bcs += "\nInfarct model (explicit): circular mask centered at (cx,cy) with radius R; core r<=R, border R<r<=2R, remote r>2R.\nMaturation states: inflammation -> provisional matrix -> scar using linear transition rates (k_infl_to_prov, k_prov_to_scar, with resolve rates).\nMechanical effect: E_eff <- E_eff*(1-soft_elem), where soft_elem is highest in early inflammatory phase and decreases as scar matures.\nBiochemical effect: infarct source term adds cytokine drive strongest early, decaying with maturation state.\nInterpretation: this corresponds to subacute-to-remodeling infarct progression (not fully chronic scar-only endpoint). Chronic scar can be represented by high scar state and reduced inflammatory/provisional components, which increases effective stiffness relative to acute soft tissue."
 
                 obs = f"Screening-evidence statement (PMID {pmid}): {title}."
-                score_breakdown = f"<ul><li><strong>Target tested:</strong> {expected}</li><li><strong>What matched:</strong> {'Core trend reproduced.' if score>=2 else 'Only weak trend support.'}</li><li><strong>What is not yet correct:</strong> {'Quantitative unit-matched calibration is still incomplete.' if score>=2 else 'Mechanistic depth + calibration required.'}</li><li><strong>Score:</strong> {score}/3 (0=not represented, 1=placeholder, 2=partial mechanistic, 3=implemented+tested)</li></ul>"
+                norm_support = score / 3.0
+                gap_to_full = 1.0 - norm_support
+                cat_scores = by_cat.get(cat, [score])
+                cat_mean = sum(cat_scores) / max(len(cat_scores), 1)
+                cat_rel = rank_map.get(tid, 0.5)
+                quantitative_row = f"<table><thead><tr><th>Metric</th><th>Value</th><th>Meaning</th></tr></thead><tbody><tr><td>Normalized support</td><td>{norm_support:.3f}</td><td>score/3 as a 0–1 support index</td></tr><tr><td>Gap to full support</td><td>{gap_to_full:.3f}</td><td>distance from ideal 3/3 support</td></tr><tr><td>Category mean score</td><td>{cat_mean:.3f}</td><td>mean model-support score in this mechanism category</td></tr><tr><td>Category-relative rank</td><td>{cat_rel:.3f}</td><td>relative standing among tests in same category (higher=stronger)</td></tr></tbody></table>"
+                score_breakdown = f"<ul><li><strong>Target tested:</strong> {expected}</li><li><strong>What matched:</strong> {'Core trend reproduced.' if score>=2 else 'Only weak trend support.'}</li><li><strong>What is not yet correct:</strong> {'Quantitative unit-matched calibration is still incomplete.' if score>=2 else 'Mechanistic depth + calibration required.'}</li><li><strong>Score:</strong> {score}/3 (0=not represented, 1=placeholder, 2=partial mechanistic, 3=implemented+tested)</li></ul><h3>Quantitative comparator</h3>{quantitative_row}"
 
                 fig = '../assets/img/pubfig_validation_storyline.png'
                 if cat in ['fibroblast_signaling','cell_motion']:
@@ -613,7 +631,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 elif cat == 'growth_remodeling':
                     fig = '../assets/img/pubfig_scorecard_by_category.png'
 
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div></div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
