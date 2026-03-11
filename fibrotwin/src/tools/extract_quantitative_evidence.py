@@ -4,6 +4,7 @@ import time
 from pathlib import Path
 from urllib.parse import urlencode, quote
 from urllib.request import urlopen
+from urllib.error import URLError
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -66,12 +67,48 @@ def parse_articles(xml_bytes):
 def fetch_europepmc_fulltext_by_pmcid(pmcid):
     if not pmcid:
         return ''
-    # Europe PMC fullTextXML endpoint for OA articles
     url = f"https://www.ebi.ac.uk/europepmc/webservices/rest/{quote(pmcid)}/fullTextXML"
     try:
         xml = fetch_text(url, timeout=40)
         root = ET.fromstring(xml)
         txt = ' '.join([t.strip() for t in root.itertext() if t and t.strip()])
+        return txt
+    except Exception:
+        return ''
+
+
+def fetch_pmc_bioc_fulltext_by_pmcid(pmcid):
+    """Fallback route: NCBI PMC BioC JSON endpoint."""
+    if not pmcid:
+        return ''
+    pmc_num = pmcid.replace('PMC', '').strip()
+    url = f"https://www.ncbi.nlm.nih.gov/research/bionlp/RESTful/pmcoa.cgi/BioC_json/{quote(pmc_num)}/unicode"
+    try:
+        raw = fetch_text(url, timeout=45)
+        j = json.loads(raw.decode('utf-8', errors='ignore'))
+        texts = []
+        for doc in j.get('documents', []):
+            for p in doc.get('passages', []):
+                t = p.get('text') or ''
+                if t:
+                    texts.append(t)
+        return ' '.join(texts)
+    except Exception:
+        return ''
+
+
+def fetch_pmc_html_fulltext_by_pmcid(pmcid):
+    """Fallback route: scrape visible text from PMC HTML."""
+    if not pmcid:
+        return ''
+    url = f"https://pmc.ncbi.nlm.nih.gov/articles/{quote(pmcid)}/"
+    try:
+        html = fetch_text(url, timeout=45).decode('utf-8', errors='ignore')
+        # crude html->text fallback (no external parser dependency)
+        txt = re.sub(r'<script[\s\S]*?</script>', ' ', html, flags=re.I)
+        txt = re.sub(r'<style[\s\S]*?</style>', ' ', txt, flags=re.I)
+        txt = re.sub(r'<[^>]+>', ' ', txt)
+        txt = re.sub(r'\s+', ' ', txt).strip()
         return txt
     except Exception:
         return ''
@@ -142,7 +179,20 @@ def main():
         abs_text = rec.get('abstract', '')
         pmcid = rec.get('pmcid', '')
 
-        full_text = fetch_europepmc_fulltext_by_pmcid(pmcid) if pmcid else ''
+        full_text = ''
+        fulltext_route = ''
+        if pmcid:
+            full_text = fetch_europepmc_fulltext_by_pmcid(pmcid)
+            if full_text:
+                fulltext_route = 'EuropePMC fullTextXML'
+            if not full_text:
+                full_text = fetch_pmc_bioc_fulltext_by_pmcid(pmcid)
+                if full_text:
+                    fulltext_route = 'PMC BioC JSON fallback'
+            if not full_text:
+                full_text = fetch_pmc_html_fulltext_by_pmcid(pmcid)
+                if full_text:
+                    fulltext_route = 'PMC HTML fallback'
         if full_text:
             n_fulltext_hits += 1
 
@@ -161,7 +211,8 @@ def main():
             'n_numeric_mentions': len(merged),
             'quantitative_mentions': merged,
             'has_fulltext_extraction': bool(full_text),
-            'source': 'PubMed abstract + EuropePMC OA fulltext mining (automated, screening-level)',
+            'fulltext_route': fulltext_route,
+            'source': 'PubMed abstract + OA fulltext mining with fallback routes (automated, screening-level)',
         })
 
     out = {
