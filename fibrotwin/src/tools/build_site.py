@@ -671,6 +671,17 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 }
                 allowed = endpoint_map.get(cat, {'other quantitative mention'})
                 mapped = [q for q in q_mentions if q.get('endpoint_guess') in allowed]
+                # tighten mapping quality for infarct tests: require zone/outcome terms, avoid pure timing-only snippets
+                if cat == 'infarct_remodeling':
+                    strong = []
+                    for q in mapped:
+                        sn = (q.get('snippet') or '').lower()
+                        has_outcome = any(k in sn for k in ['collagen', 'fibrosis', 'scar', 'profibrotic', 'smad', 'erk'])
+                        has_zone = any(k in sn for k in ['core', 'border', 'remote', 'infarct'])
+                        time_only = any(k in sn for k in ['days', 'day', 'weeks', 'week']) and not has_outcome
+                        if has_outcome and has_zone and not time_only:
+                            strong.append(q)
+                    mapped = strong
                 q_rows = ''.join([f"<tr><td>{q.get('value')}</td><td>{q.get('endpoint_guess')}</td><td>{q.get('snippet')}</td></tr>" for q in mapped])
                 if q_rows:
                     q_block = f"<div class='v-card'><h2>Quantitative evidence mapped to this test</h2><p><strong>Source:</strong> {qe.get('source','PubMed/PMC mining')} (screening-level)</p><table><thead><tr><th>Value</th><th>Endpoint map</th><th>Context snippet</th></tr></thead><tbody>{q_rows}</tbody></table></div>"
