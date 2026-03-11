@@ -661,8 +661,21 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 
                 qe = qe_map.get(tid, {})
                 q_mentions = qe.get('quantitative_mentions', [])
-                q_rows = ''.join([f"<tr><td>{q.get('value')}</td><td>{q.get('snippet')}</td></tr>" for q in q_mentions])
-                q_block = f"<div class='v-card'><h2>Quantitative values mined from paper abstract (screening-level)</h2><p><strong>Source:</strong> {qe.get('source','PubMed abstract mining')}</p><table><thead><tr><th>Value</th><th>Context snippet</th></tr></thead><tbody>{q_rows}</tbody></table></div>" if q_rows else "<div class='v-card'><h2>Quantitative values mined from paper abstract (screening-level)</h2><p>No numeric abstract mentions were extracted automatically for this paper. Manual full-text extraction is required for publication-grade quantitative anchoring.</p></div>"
+                endpoint_map = {
+                    'infarct_remodeling': {'infarct zoning', 'collagen/fibrosis', 'signaling pathway'},
+                    'fibroblast_signaling': {'signaling pathway', 'myofibroblast activation'},
+                    'collagen_dynamics': {'collagen/fibrosis'},
+                    'growth_remodeling': {'alignment/anisotropy', 'collagen/fibrosis'},
+                    'cell_motion': {'other quantitative mention'},
+                    'fibre_alignment': {'alignment/anisotropy'},
+                }
+                allowed = endpoint_map.get(cat, {'other quantitative mention'})
+                mapped = [q for q in q_mentions if q.get('endpoint_guess') in allowed]
+                q_rows = ''.join([f"<tr><td>{q.get('value')}</td><td>{q.get('endpoint_guess')}</td><td>{q.get('snippet')}</td></tr>" for q in mapped])
+                if q_rows:
+                    q_block = f"<div class='v-card'><h2>Quantitative evidence mapped to this test</h2><p><strong>Source:</strong> {qe.get('source','PubMed/PMC mining')} (screening-level)</p><table><thead><tr><th>Value</th><th>Endpoint map</th><th>Context snippet</th></tr></thead><tbody>{q_rows}</tbody></table></div>"
+                else:
+                    q_block = "<div class='v-card'><h2>Quantitative evidence mapped to this test</h2><p>No extracted numeric snippet could be confidently mapped to this test’s quantitative endpoint. This test currently relies on model-side quantitative criteria and requires manual paper-to-endpoint curation.</p></div>"
 
                 infarct_quant = ''
                 if cat == 'infarct_remodeling' and inf_ref:
