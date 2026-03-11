@@ -35,8 +35,9 @@ def parse_articles(xml_bytes):
     root = ET.fromstring(xml_bytes)
     out = {}
     for art in root.findall('.//PubmedArticle'):
-        pmid = art.findtext('.//PMID') or ''
-        title = ' '.join([t.text or '' for t in art.findall('.//ArticleTitle//')]) or (art.findtext('.//ArticleTitle') or '')
+        # strict PMID path: avoid grabbing PMIDs from references
+        pmid = art.findtext('./MedlineCitation/PMID') or ''
+        title = ' '.join([t.text or '' for t in art.findall('./MedlineCitation/Article/ArticleTitle//')]) or (art.findtext('./MedlineCitation/Article/ArticleTitle') or '')
         abs_parts = []
         for a in art.findall('.//Abstract/AbstractText'):
             label = a.attrib.get('Label')
@@ -47,7 +48,7 @@ def parse_articles(xml_bytes):
 
         pmcid = ''
         doi = ''
-        for aid in art.findall('.//ArticleId'):
+        for aid in art.findall('./PubmedData/ArticleIdList/ArticleId'):
             t = (aid.attrib.get('IdType') or '').lower()
             v = (aid.text or '').strip()
             if t == 'pmc' and v:
@@ -145,6 +146,12 @@ def extract_numbers(text, limit=14):
     ded = []
     seen = set()
     for x in matches:
+        sn = x['snippet'].lower()
+        # filter obvious contact/admin noise
+        if any(bad in sn for bad in ['telephone', 'fax', 'e-mail', 'copyright notice']):
+            continue
+        if x['endpoint_guess'] == 'other quantitative mention' and len(x['value']) > 12:
+            continue
         k = (x['value'].lower(), x['snippet'][:120].lower())
         if k in seen:
             continue
