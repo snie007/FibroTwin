@@ -131,6 +131,36 @@ def human_scenario_name(name: str) -> str:
     return name.replace('_',' ')
 
 
+def best_quant_anchor(q_mentions, category):
+    if not q_mentions:
+        return None
+    preferred = {
+        'infarct_remodeling': ['collagen/fibrosis', 'infarct zoning', 'signaling pathway'],
+        'collagen_dynamics': ['collagen/fibrosis'],
+        'fibroblast_signaling': ['signaling pathway', 'myofibroblast activation'],
+        'growth_remodeling': ['alignment/anisotropy', 'collagen/fibrosis'],
+        'cell_motion': ['other quantitative mention'],
+        'fibre_alignment': ['alignment/anisotropy'],
+    }.get(category, ['other quantitative mention'])
+
+    def score(x):
+        v = str(x.get('value', '')).lower()
+        sn = str(x.get('snippet', '')).lower()
+        ep = str(x.get('endpoint_guess', ''))
+        s = 0
+        if ep in preferred:
+            s += 4
+        if ('%' in v) or ('fold' in v) or (' x' in v):
+            s += 3
+        if any(k in sn for k in ['increase', 'decrease', 'reduced', 'higher', 'lower', 'upregulated', 'downregulated']):
+            s += 2
+        if any(k in sn for k in ['collagen', 'fibrosis', 'smad', 'erk', 'myofibro', 'alignment', 'infarct']):
+            s += 1
+        return s
+
+    return sorted(q_mentions, key=score, reverse=True)[0]
+
+
 def nav():
     return '''<nav><a href="index.html">Home</a><a href="pages/overview.html">Overview</a><a href="pages/model.html">Model</a><a href="pages/numerics.html">Numerics</a><a href="pages/implementation.html">Implementation</a><a href="pages/validation.html">Validation</a><a href="pages/emulation.html">Emulation</a><a href="pages/results.html">Results</a><a href="pages/interactive_lab.html">Interactive Lab</a><a href="pages/changelog.html">Changelog</a><a href="pages/references.html">References</a></nav>'''
 
@@ -621,7 +651,9 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 rel = rank_map.get(tid, 0.5)
                 quantitative = f"Support={sc:.0f}/3; Δvs-category={delta:+.2f}; rank={rel:.2f}"
                 qexp = quant_template.get(cat, 'See detailed report for quantitative comparator.')
-                trows += f"<tr><td>{tid}</td><td>{cat}</td><td>{sc:.0f}/3</td><td>{qexp}</td><td>{t.get('expected')}<br/><small>{quantitative}</small></td><td><a href='./tests/{tid}.html'>Open report</a></td></tr>"
+                q_anchor = best_quant_anchor(qe_map.get(tid, {}).get('quantitative_mentions', []), cat)
+                q_target = f"Paper anchor: {q_anchor.get('value')} ({q_anchor.get('endpoint_guess')})" if q_anchor else 'Paper anchor: not auto-extracted (manual curation needed)'
+                trows += f"<tr><td>{tid}</td><td>{cat}</td><td>{sc:.0f}/3</td><td>{qexp}<br/><small>{q_target}</small></td><td>{t.get('expected')}<br/><small>{quantitative}</small></td><td><a href='./tests/{tid}.html'>Open report</a></td></tr>"
             testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages. The quantitative expectation column now shows explicit numeric criteria by mechanism domain.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Quantitative expectation</th><th>Expected behavior + comparator</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
             fail_rows = []
             for k,v in sorted(by_cat.items()):
@@ -688,6 +720,12 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 else:
                     q_block = "<div class='v-card'><h2>Quantitative evidence mapped to this test</h2><p>No extracted numeric snippet could be confidently mapped to this test’s quantitative endpoint. This test currently relies on model-side quantitative criteria and requires manual paper-to-endpoint curation.</p></div>"
 
+                q_anchor = best_quant_anchor(q_mentions, cat)
+                if q_anchor:
+                    q_target_block = f"<div class='v-card'><h2>Quantitative target statement (paper-anchored)</h2><p><strong>Target statement:</strong> {expected}</p><p><strong>Paper-reported numeric anchor:</strong> {q_anchor.get('value')} ({q_anchor.get('endpoint_guess')})</p><p><strong>Snippet:</strong> {q_anchor.get('snippet')}</p><p class='legend'>Screening-level extraction; validate against full text/figures for publication-grade calibration.</p></div>"
+                else:
+                    q_target_block = f"<div class='v-card'><h2>Quantitative target statement (paper-anchored)</h2><p><strong>Target statement:</strong> {expected}</p><p>No paper numeric anchor auto-extracted. Manual curation required for exact % or absolute change.</p></div>"
+
                 infarct_quant = ''
                 if cat == 'infarct_remodeling' and inf_ref:
                     c_remote = float(inf_ref.get('c_remote', 0.0))
@@ -698,7 +736,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                         return 100.0*(a-b)/max(abs(b),1e-8)
                     infarct_quant = f"<div class='v-card'><h2>Expected rise by zone (quantitative)</h2><table><thead><tr><th>Metric</th><th>Core vs Remote</th><th>Border vs Remote</th></tr></thead><tbody><tr><td>Collagen</td><td>{c_core-c_remote:+.3f} ({pct(c_core,c_remote):+.1f}%)</td><td>{c_border-c_remote:+.3f} ({pct(c_border,c_remote):+.1f}%)</td></tr><tr><td>Profibrotic signal p</td><td>{p_core-p_remote:+.3f} ({pct(p_core,p_remote):+.1f}%)</td><td>{p_border-p_remote:+.3f} ({pct(p_border,p_remote):+.1f}%)</td></tr></tbody></table><p class='legend'>Positive values indicate rise relative to remote zone.</p></div>"
 
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div>{q_block}{infarct_quant}<div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div></div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> - {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div>{q_target_block}{q_block}{infarct_quant}<div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div></div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
