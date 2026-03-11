@@ -405,11 +405,6 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 </div>'''
 
     testcard_block = ''
-    card_dir = SITE / 'assets' / 'img' / 'testcards'
-    if card_dir.exists():
-        cards = sorted(card_dir.glob('T*.png'))
-        thumbs = ''.join([f"<a href='./tests/{c.stem}.html'><img src='../assets/img/testcards/{c.name}' alt='{c.stem}'/></a>" for c in cards])
-        testcard_block = f"<div class='card'><h2>Per-test validation cards (click for full report)</h2><p>Showing all {len(cards)} cards. Click any card for boundary conditions, reference evidence, model-vs-experiment comparison, and interpretation.</p><div class='grid'>{thumbs}</div></div>"
 
     uq_block = ''
     uqj = ROOT / 'outputs' / 'uq_portfolio.json'
@@ -481,17 +476,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         except Exception:
             scenario_block = ''
 
-    scenario_interactive_block = '''<div class="card"><h2>Scenario matrix explorer (interactive)</h2>
-<div class="kpi">
-  <label>Load <select id="smLoad"></select></label>
-  <label>TGF|AngII <select id="smSignal"></select></label>
-  <label>Fibroblasts <select id="smFib"></select></label>
-  <span id="smCount" class="pill"></span>
-</div>
-<canvas id="smHeat" width="700" height="280" style="max-width:100%;background:#101722;border:1px solid #2a3140;border-radius:8px"></canvas>
-<p class="legend">Heatmap color encodes collagen burden. Tiles show loading/signal/fibroblast-count combinations.</p>
-<div id="scenarioMatrixApp"></div>
-</div>'''
+    scenario_interactive_block = "<div class='card'><h2>Scenario matrix explorer</h2><p>For consistency, the validation landing page uses table-native summaries. For interactive exploration, use the dedicated <a href='./interactive_lab.html'>Interactive Lab</a>.</p></div>"
 
     numerical_block = ''
     ntr = ROOT / 'outputs' / 'numerical_test_report.md'
@@ -583,6 +568,13 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             by_cat = {}
             for t in tests:
                 by_cat.setdefault(t.get('category','other'), []).append(t.get('model_score_0_to_3',0))
+
+            # replace image-card gallery with table-native test index for consistency
+            trows = ''.join([
+                f"<tr><td>{t.get('id')}</td><td>{t.get('category')}</td><td>{t.get('model_score_0_to_3')}/3</td><td>{t.get('expected')}</td><td><a href='./tests/{t.get('id')}.html'>Open report</a></td></tr>"
+                for t in tests
+            ])
+            testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Expected model behavior</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
 
             # quantitative comparator helpers per test
             by_cat_tests = {}
