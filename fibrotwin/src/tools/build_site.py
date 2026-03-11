@@ -569,13 +569,6 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             for t in tests:
                 by_cat.setdefault(t.get('category','other'), []).append(t.get('model_score_0_to_3',0))
 
-            # replace image-card gallery with table-native test index for consistency
-            trows = ''.join([
-                f"<tr><td>{t.get('id')}</td><td>{t.get('category')}</td><td>{t.get('model_score_0_to_3')}/3</td><td>{t.get('expected')}</td><td><a href='./tests/{t.get('id')}.html'>Open report</a></td></tr>"
-                for t in tests
-            ])
-            testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Expected model behavior</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
-
             # quantitative comparator helpers per test
             by_cat_tests = {}
             for t in tests:
@@ -587,6 +580,20 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 for i, tt in enumerate(sarr):
                     # 0..1 percentile-like rank within category (higher is better)
                     rank_map[tt.get('id','')] = 1.0 - (i / max(n-1, 1))
+
+            # table-native index with more specific quantitative behavior context
+            trows = ''
+            for t in tests:
+                tid = t.get('id')
+                cat = t.get('category','other')
+                sc = float(t.get('model_score_0_to_3',0))
+                cat_vals = by_cat.get(cat, [sc])
+                cat_mean = sum(cat_vals) / max(len(cat_vals), 1)
+                delta = sc - cat_mean
+                rel = rank_map.get(tid, 0.5)
+                quantitative = f"Support={sc:.0f}/3; Δvs-category={delta:+.2f}; rank={rel:.2f}"
+                trows += f"<tr><td>{tid}</td><td>{cat}</td><td>{sc:.0f}/3</td><td>{t.get('expected')}<br/><small>{quantitative}</small></td><td><a href='./tests/{tid}.html'>Open report</a></td></tr>"
+            testcard_block = f"<div class='card'><h2>Per-test validation reports</h2><p>Table index of all tests with direct links to full detail pages.</p><table><thead><tr><th>ID</th><th>Mechanism domain</th><th>Score</th><th>Expected model behavior (quantified)</th><th>Detail</th></tr></thead><tbody>{trows}</tbody></table></div>"
             fail_rows = []
             for k,v in sorted(by_cat.items()):
                 mean = sum(v)/max(len(v),1)
