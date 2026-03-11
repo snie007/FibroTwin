@@ -1,0 +1,847 @@
+{
+  "n_tests": 80,
+  "n_with_numeric_mentions": 21,
+  "tests": [
+    {
+      "id": "T001",
+      "pmid": "37569674",
+      "title": "New Insights into the Reparative Angiogenesis after Myocardial Infarction.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T002",
+      "pmid": "37371059",
+      "title": "Phospholipid Encapsulation of an Anti-Fibrotic Endopeptide to Enhance Cellular Uptake and Myocardial Retention.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T003",
+      "pmid": "36826549",
+      "title": "Ciclopirox Inhibition of eIF5A Hypusination Attenuates Fibroblast Activation and Cardiac Fibrosis.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T004",
+      "pmid": "34643044",
+      "title": "MicroRNA-146b-5p promotes atrial fibrosis in atrial fibrillation by repressing TIMP4.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T005",
+      "pmid": "34568449",
+      "title": "Does the Heart Want What It Wants? A Case for Self-Adapting, Mechano-Sensitive Therapies After Infarction.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T006",
+      "pmid": "34023353",
+      "title": "Dimethyl fumarate preserves left ventricular infarct integrity following myocardial infarction via modulation of cardiac macrophage and fibroblast oxidative metabolism.",
+      "n_numeric_mentions": 4,
+      "quantitative_mentions": [
+        {
+          "value": "10\u00a0mg",
+          "snippet": "olism. Adult male C57BL/6J mice were treated with DMF (10\u00a0mg/kg) for 3-7\u00a0days after MI. DMF attenuated LV infarct a"
+        },
+        {
+          "value": "3-7",
+          "snippet": "ale C57BL/6J mice were treated with DMF (10\u00a0mg/kg) for 3-7\u00a0days after MI. DMF attenuated LV infarct and non-infar"
+        },
+        {
+          "value": "7\u00a0days",
+          "snippet": "ated LV infarct and non-infarct wall thinning at 3 and 7\u00a0days post-MI, and decreased LV dilation and pulmonary conge"
+        },
+        {
+          "value": "3\u00a0days",
+          "snippet": "o decreased pro-inflammatory cytokine expression (Tnf) 3\u00a0days after MI, and decreased inflammatory markers in macrop"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T007",
+      "pmid": "32611237",
+      "title": "Glutamyl-Prolyl-tRNA Synthetase Regulates Proline-Rich Pro-Fibrotic Protein Synthesis During Cardiac Fibrosis.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "1.5-2.5",
+          "snippet": "med that EPRS was induced at mRNA and protein levels (\u22481.5-2.5-fold increase) in failing hearts compared with nonfail"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T008",
+      "pmid": "29631164",
+      "title": "Injectable hyaluronic acid based microrods provide local micromechanical and biochemical cues to attenuate cardiac fibrosis after myocardial infarction.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "6 weeks",
+          "snippet": "ricular wall thinning and improved cardiac function at 6 weeks post infarct."
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T009",
+      "pmid": "29030341",
+      "title": "Macrophage overexpression of matrix metalloproteinase-9 in aged mice improves diastolic physiology and cardiac wound healing after myocardial infarction.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "10-21",
+          "snippet": "e and female C57BL/6J wild-type (WT) and TG mice ( n = 10-21 mice/group) to evaluate the effects of aging superimpo"
+        },
+        {
+          "value": "7 days",
+          "snippet": "metalloproteinase-9 have increased macrophage numbers 7 days after myocardial infarction, resulting in improved dia"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T010",
+      "pmid": "28404615",
+      "title": "Myeloperoxidase Mediates Postischemic Arrhythmogenic Ventricular Remodeling.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T011",
+      "pmid": "27619160",
+      "title": "The role of cardiac fibroblasts in post-myocardial heart tissue repair.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T012",
+      "pmid": "26601107",
+      "title": "Computational Approaches to Understanding the Role of Fibroblast-Myocyte Interactions in Cardiac Arrhythmogenesis.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T013",
+      "pmid": "26383724",
+      "title": "A Novel Collagen Matricryptin Reduces Left Ventricular Dilation Post-Myocardial Infarction by Promoting Scar Formation and Angiogenesis.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "1159 to 1173",
+          "snippet": "beginning at the cleavage site (p1158/59, amino acids 1159 to 1173) to investigate its biological functions. In vitro, p1"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T014",
+      "pmid": "41680862",
+      "title": "PRIP/PLCL deficiency activates PI3K-AKT-YAP signaling and promotes organ fibrosis.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "5\u00a0ng",
+          "snippet": "broblasts (MEFs) from WT and Prip-KO mice with TGF-\u03b21 (5\u00a0ng/ml) to verify PRIP/PLCL-modulated signaling in fibrosi"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T015",
+      "pmid": "41568549",
+      "title": "Signal Recognition Granule Receptor Beta Subunit Promotes Arrhythmogenic Remodeling in the Heart Failure Mice.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "3\u2009weeks",
+          "snippet": "heart failure model was established via aortic banding 3\u2009weeks later. Cardiac function, structural/electrical remodel"
+        },
+        {
+          "value": "4\u2009weeks",
+          "snippet": "rical remodeling, and VA susceptibility were evaluated 4\u2009weeks post aortic banding using echocardiography, ECG, in\u00a0vi"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T016",
+      "pmid": "41544467",
+      "title": "+",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "97.2 mg",
+          "snippet": "y ligating the left anterior descending artery. DZSMC (97.2 mg/kg) and captopril (4.5 mg/kg) were administered orally"
+        },
+        {
+          "value": "4.5 mg",
+          "snippet": "r descending artery. DZSMC (97.2 mg/kg) and captopril (4.5 mg/kg) were administered orally for four weeks following"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T017",
+      "pmid": "40788381",
+      "title": "HSPA9/HMGB1 regulates myocardial fibrosis in atrial fibrillation via TGF-\u03b21/Smad pathway and autophagy.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T018",
+      "pmid": "40688308",
+      "title": "TIMP1 in vitro",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T019",
+      "pmid": "40538115",
+      "title": "2+",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T020",
+      "pmid": "40019607",
+      "title": "SFRP4 Knockdown Attenuates Dsg2-Deficient Arrhythmogenic Cardiomyopathy by Down-Regulating TGF-\u03b2 and Smad3.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T021",
+      "pmid": "39938686",
+      "title": "Connexin 43 dephosphorylation mediates the Dchs1/YAP/TEAD signaling pathway to induce cardiac fibrosis.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T022",
+      "pmid": "39895521",
+      "title": "KLF12 Aggravates Angiotensin II-Induced Cardiac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "title": "Effects of Empagliflozin and Dapagliflozin in alleviating cardiac fibrosis through SIRT6-mediated oxidative stress reduction.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "1-3",
+          "snippet": "y cardiac fibroblasts were isolated from the hearts of 1-3-day-old neonatal KM mice, were stimulated with Ang II"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T024",
+      "pmid": "39715792",
+      "title": "4-Hydroxychalcone attenuates AngII-induced cardiac remodeling and dysfunction via regulating PI3K/AKT pathway.",
+      "n_numeric_mentions": 3,
+      "quantitative_mentions": [
+        {
+          "value": "300\u2009ng",
+          "snippet": "n male C57BL/6\u2009J mice via subcutaneous Ang II (1000 or 300\u2009ng/kg/min) for 2 weeks. Mice were treated with 4-HCH (20"
+        },
+        {
+          "value": "2 weeks",
+          "snippet": "ce via subcutaneous Ang II (1000 or 300\u2009ng/kg/min) for 2 weeks. Mice were treated with 4-HCH (20 or 40\u2009mg/kg/day) or"
+        },
+        {
+          "value": "40\u2009mg",
+          "snippet": "/min) for 2 weeks. Mice were treated with 4-HCH (20 or 40\u2009mg/kg/day) or vehicle control. Systolic blood pressure (S"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T025",
+      "pmid": "39680328",
+      "title": "Quercetin Alleviates Cardiac Fibrosis via Regulating the SIRT3 Signaling Pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T026",
+      "pmid": "39527465",
+      "title": "Fibroblast-derived miR-425-5p alleviates cardiac remodelling in heart failure via inhibiting the TGF-\u03b21/Smad signalling.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T027",
+      "pmid": "39187069",
+      "title": "Circ_0079480 facilitates proliferation, migration and fibrosis of atrial fibroblasts in atrial fibrillation by sponing miR-338-3p to activate the THBS1/TGF-\u03b21/Smad3 signaling.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T028",
+      "pmid": "39122223",
+      "title": "PiRNA CFAPIR inhibits cardiac fibrosis by regulating the muscleblind-like protein MBNL2.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T029",
+      "pmid": "38955313",
+      "title": "YAP1-mediated dysregulation of ACE-ACE2 activity augments cardiac fibrosis upon induction of hyperglycemic stress.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T030",
+      "pmid": "38899461",
+      "title": "Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T031",
+      "pmid": "38822669",
+      "title": "Periostin regulates lysyl oxidase through ERK1/2 MAPK-dependent serum response factor in activated cardiac fibroblasts.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T032",
+      "pmid": "38723722",
+      "title": "Intracellular and extracellular Cyclophilin a promote cardiac fibrosis through TGF-\u03b2 signaling in response to angiotensin \u2161.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "4\u00a0weeks",
+          "snippet": "6 J mice received angiotensin \u2161 (Ang \u2161) or vehicle for 4\u00a0weeks. Inhibition of CyPA significantly reversed Ang \u2161-induc"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T033",
+      "pmid": "37999643",
+      "title": "Fibroblasts under pressure: cardiac fibroblast responses to hypertension and antihypertensive therapies.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T034",
+      "pmid": "37786576",
+      "title": "Rivaroxaban, a direct inhibitor of coagulation factor Xa, attenuates adverse cardiac remodeling in rats by regulating the PAR-2 and TGF-\u03b21 signaling pathways.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T035",
+      "pmid": "37395147",
+      "title": "Integrin beta-like 1 mediates fibroblast-cardiomyocyte crosstalk to promote cardiac fibrosis and hypertrophy.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T036",
+      "pmid": "37227779",
+      "title": "Ablation of C-type natriuretic peptide/cGMP signaling in fibroblasts exacerbates adverse cardiac remodeling in mice.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "2 weeks",
+          "snippet": "rosis in response to Ang II infusions. Moreover, after 2 weeks of mild pressure overload induced by transverse aortic"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T037",
+      "pmid": "37023527",
+      "title": "Gramine protects against pressure overload-induced pathological cardiac hypertrophy through Runx1-TGFBR1 signaling.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "50\u00a0mg",
+          "snippet": "RCMs) hypertrophy. In the in vivo experiment, Gramine (50\u00a0mg/kg or 100\u00a0mg/kg) was administrated to investigate its"
+        },
+        {
+          "value": "100\u00a0mg",
+          "snippet": "rophy. In the in vivo experiment, Gramine (50\u00a0mg/kg or 100\u00a0mg/kg) was administrated to investigate its role in trans"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T038",
+      "pmid": "37000367",
+      "title": "Epigallocatechin-3-Gallate Inhibits Atrial Fibrosis and Reduces the Occurrence and Maintenance of Atrial Fibrillation and its Possible Mechanisms.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T039",
+      "pmid": "36475698",
+      "title": "Inhibition of Eicosanoid Degradation Mitigates Fibrosis of the Heart.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T040",
+      "pmid": "36372276",
+      "title": "1 \u03b1q",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "title": "The crystallin alpha B (HSPB5)-tripartite motif containing 33 (TRIM33) axis mediates myocardial fibrosis induced by angiotensinogen II through transforming growth factor-\u03b2 (TGF-\u03b21)-Smad3/4 signaling.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T042",
+      "pmid": "35143327",
+      "title": "Second Heart Field-Derived Cells Contribute to Angiotensin II-Mediated Ascending Aortopathies.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "title": "Hdac8 Inhibitor Alleviates Transverse Aortic Constriction-Induced Heart Failure in Mice by Downregulating Ace1.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "30\u2009mg",
+          "snippet": "(TAC), mice were administered with PCI34051 (3, 10, or 30\u2009mg/kg bodyweight/day) for 2 weeks. The therapeutic effect"
+        },
+        {
+          "value": "2 weeks",
+          "snippet": "with PCI34051 (3, 10, or 30\u2009mg/kg bodyweight/day) for 2 weeks. The therapeutic effects of PCI34051 on TAC-induced ca"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T044",
+      "pmid": "35093323",
+      "title": "Loureirin B alleviates cardiac fibrosis by suppressing Pin1/TGF-\u03b21 signaling.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "10\u00a0mg",
+          "snippet": "ormed to induce cardiac fibrosis in mice. Loureirin B (10\u00a0mg/kg/day) or saline was continuously delivered via subcu"
+        },
+        {
+          "value": "24\u00a0h",
+          "snippet": "CFs) were treated with angiotensin II (Ang II, 100\u00a0nM, 24\u00a0h) to simulate fibrosis in vitro. Immunochemistry, echoc"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "title": "STING protects against cardiac dysfunction and remodelling by blocking autophagy.",
+      "n_numeric_mentions": 1,
+      "quantitative_mentions": [
+        {
+          "value": "6\u00a0weeks",
+          "snippet": "expression levels in mice heart challenged with AB for 6\u00a0weeks were significantly increased. STING overexpression sig"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T046",
+      "pmid": "34687136",
+      "title": "PKM2 promotes angiotensin-II-induced cardiac remodelling by activating TGF-\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T047",
+      "pmid": "34302205",
+      "title": "Conophylline Suppresses Angiotensin II-Induced Myocardial Fibrosis In Vitro via the BMP4/JNK Pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T048",
+      "pmid": "34265086",
+      "title": "Inhibition of HSP90 S-nitrosylation alleviates cardiac fibrosis via TGF\u03b2/SMAD3 signalling pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T049",
+      "pmid": "41500420",
+      "title": "Mechanical characterization of infarcted porcine hearts using left anterior descending and left circumflex coronary artery models.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "6 weeks",
+          "snippet": "ve mechanical and structural changes of cardiac tissue 6 weeks after myocardial infarction (MI) by biaxial, simple tr"
+        },
+        {
+          "value": "6 weeks",
+          "snippet": "llagen content, suggesting a localized effect at least 6 weeks post-MI. These findings highlight the importance of co"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T050",
+      "pmid": "34601105",
+      "title": "Fabrication and characterization methods for investigating cell-matrix interactions in environments possessing spatial orientation heterogeneity.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T051",
+      "pmid": "31894101",
+      "title": "Platelet-derived growth factor-AB improves scar mechanics and vascularity after myocardial infarction.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T052",
+      "pmid": "31141605",
+      "title": "Effects of Collagen Heterogeneity on Myocardial Infarct Mechanics in a Multiscale Fiber Network Model.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T053",
+      "pmid": "25009995",
+      "title": "Coupled agent-based and finite-element models for predicting scar structure following myocardial infarction.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "title": "A model to determine the effect of collagen fiber alignment on heart function post myocardial infarction.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T055",
+      "pmid": "22495588",
+      "title": "Mechanical regulation of fibroblast migration and collagen remodelling in healing myocardial infarcts.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T056",
+      "pmid": "19897714",
+      "title": "Evolution of scar structure, mechanics, and ventricular function after myocardial infarction in the rat.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T057",
+      "pmid": "18780284",
+      "title": "Diffusion tensor imaging of left ventricular remodeling in response to myocardial infarction in the mouse.",
+      "n_numeric_mentions": 6,
+      "quantitative_mentions": [
+        {
+          "value": "60 days",
+          "snippet": "ex vivo DTI measurements were performed 7, 14, 28, and 60 days after ligation. Apparent diffusion coefficient, fracti"
+        },
+        {
+          "value": "7-60",
+          "snippet": "up to the equator. Average heart mass increased by 70% 7-60 days after infarction. Histological analysis showed th"
+        },
+        {
+          "value": "7 days",
+          "snippet": "tion. Histological analysis showed that the infarct at 7 days consisted of unstructured tissue with residual necrosi"
+        },
+        {
+          "value": "14 days",
+          "snippet": "and infiltration of macrophages and myofibroblasts. At 14 days after infarction, the necrotic tissue had disappeared"
+        },
+        {
+          "value": "28 to 60",
+          "snippet": "ared and collagen fibers were starting to appear. From 28 to 60 days, the infarct had fully developed into a mature sc"
+        },
+        {
+          "value": "28 days",
+          "snippet": "was higher in the infarcted region and was maximum at 28 days, which was attributed to the development of structured"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "title": "A homogenized constrained mixture model of cardiac growth and remodeling: analyzing mechanobiological stability and reversal.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "title": "Mass spectrometry-based multi-omics analysis elucidates immune microenvironmental characteristics and the risk of distant metastasis in N1c colorectal cancer.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "title": "Photobiomodulation and Sericin in the Treatment of Second-Degree Burns Induced in Wistar Rats.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "3\u2009s",
+          "snippet": "e produced using a heated metal instrument applied for 3\u2009s, and animals were euthanized 14\u2009days later. Macroscopi"
+        },
+        {
+          "value": "14\u2009days",
+          "snippet": "nstrument applied for 3\u2009s, and animals were euthanized 14\u2009days later. Macroscopic photography, photothermography and"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T061",
+      "pmid": "41720370",
+      "title": "Polyvinyl alcohol/pectin hydrogels incorporating marine elastin hydrolysates for enhanced wound healing and extracellular matrix remodeling.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T062",
+      "pmid": "41719851",
+      "title": "Thermosensitive drug-loaded hydrogel based on natural collagen for diabetic wound management via modulating inflammation and promoting angiogenesis.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T063",
+      "pmid": "41715184",
+      "title": "Bioactive eggshell membrane-integrated nanofiber dressing with mesoporous polydopamine-mediated sustained dexamethasone delivery for enhanced wound regeneration.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T064",
+      "pmid": "41685930",
+      "title": "pH-responsive polydopamine-shelled 3D-printed chitosan/collagen hydrogel integrating exosomes and an enzyme/peptide cascade for diabetic wound healing.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "title": "Therapeutic value of mesenchymal stem cell-derived extracellular vesicles in hypertrophic and keloid scars: a systematic review and meta-analysis.",
+      "n_numeric_mentions": 5,
+      "quantitative_mentions": [
+        {
+          "value": "3.88-1.69",
+          "snippet": "nd keloids [(SMD) -2.78, 95% confidence interval (CI) -3.88-1.69)]. Also attenuate other outcomes, such as Collagen Typ"
+        },
+        {
+          "value": "95%",
+          "snippet": "other outcomes, such as Collagen Type I [SMD = -4.39, 95%CI: -5.96-2.81], Collagen Type III [SMD = -5.19, 95%CI:"
+        },
+        {
+          "value": "5.96-2.81",
+          "snippet": "utcomes, such as Collagen Type I [SMD = -4.39, 95%CI: -5.96-2.81], Collagen Type III [SMD = -5.19, 95%CI: -6.93-3.44],"
+        },
+        {
+          "value": "95%",
+          "snippet": "9, 95%CI: -5.96-2.81], Collagen Type III [SMD = -5.19, 95%CI: -6.93-3.44], migration and proliferation of skin fi"
+        },
+        {
+          "value": "6.93-3.44",
+          "snippet": ": -5.96-2.81], Collagen Type III [SMD = -5.19, 95%CI: -6.93-3.44], migration and proliferation of skin fibroblasts, and"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T066",
+      "pmid": "41683598",
+      "title": "Activation of Cannabinoid Receptor 1 Enhances Wound Healing by Promoting the Proliferative Phase.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T067",
+      "pmid": "41674333",
+      "title": "Inhibition of SGK3 regulates hyperplastic scar development in rats through the MAPK/ERK signaling pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T068",
+      "pmid": "41660757",
+      "title": "via in vitro",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T069",
+      "pmid": "41658005",
+      "title": "Staphylococcus aureus",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T070",
+      "pmid": "41657731",
+      "title": "- Centella asiatica in vitro in vivo",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T071",
+      "pmid": "41653204",
+      "title": "Recombinant Humanized Collagen Type III Accelerated Palate Wound Healing by Regulating the Fibroblast Behavior via Focal Adhesion Signaling Pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T072",
+      "pmid": "41644791",
+      "title": "Convallatoxin ameliorates fibroblast-like synoviocytes-mediated synovial inflammation and joint destruction in rheumatoid arthritis by targeting IDH1.",
+      "n_numeric_mentions": 2,
+      "quantitative_mentions": [
+        {
+          "value": "50ug",
+          "snippet": "nd apoptosis. In vivo study showed that CNT treatment (50ug/kg/d and 150ug/kg/d) attenuated synovial inflammation"
+        },
+        {
+          "value": "150ug",
+          "snippet": "In vivo study showed that CNT treatment (50ug/kg/d and 150ug/kg/d) attenuated synovial inflammation and joint destr"
+        }
+      ],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T073",
+      "pmid": "41644046",
+      "title": "STC-1 improves scar remodeling and is associated with PI3K/AKT signaling and immune modulation.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "title": "The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T075",
+      "pmid": "41637974",
+      "title": "Development of 2-deoxy-d-ribose and zinc oxide loaded microneedle array patches of chitosan and PVA to stimulate angiogenesis and reduce infection and promote wound healing.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T076",
+      "pmid": "41634491",
+      "title": "NEDD4L knockdown enhances synovial fibroblast migration, invasion, and inflammatory factor secretion via Wnt/\u03b2-Catenin signaling activation.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T077",
+      "pmid": "41616419",
+      "title": "Toddalia asiatica (L.) Lam. induces apoptosis in rheumatoid arthritis fibroblast-like synoviocytes by modulating the PI3K/AKT/NF-\u03baB pathway.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T078",
+      "pmid": "41608354",
+      "title": "Photocrosslinkable Chitosan Quaternary Ammonium Salt-Based Ternary Hydrogel with Fibroblast Growth Factor 21 for Diabetic Wound Healing.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "title": "Investigation of the Efficacy and Mechanism of Monoacylglycerol Lipase Inhibitors in Diabetic Foot Ulcers.",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "title": "\u00ae",
+      "n_numeric_mentions": 0,
+      "quantitative_mentions": [],
+      "source": "PubMed abstract mining (automated, screening-level)"
+    }
+  ],
+  "notes": [
+    "Automated extraction from PubMed abstract text only.",
+    "Values/snippets are screening-level and require manual confirmation against full text/figures for publication-grade quantitative benchmarking."
+  ]
+}

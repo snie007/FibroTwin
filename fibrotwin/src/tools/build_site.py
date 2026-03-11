@@ -565,6 +565,26 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         try:
             st = json.loads(stp.read_text())
             tests = st.get('tests', [])
+            qe_map = {}
+            qep = ROOT / 'outputs' / 'quantitative_evidence.json'
+            if qep.exists():
+                try:
+                    qd = json.loads(qep.read_text())
+                    qe_map = {x.get('id'): x for x in qd.get('tests', [])}
+                except Exception:
+                    qe_map = {}
+            inf_ref = None
+            vpj2 = ROOT / 'outputs' / 'validation_portfolio.json'
+            if vpj2.exists():
+                try:
+                    vd = json.loads(vpj2.read_text())
+                    for rr in vd.get('scenarios', []):
+                        if rr.get('scenario') == 'infarct_high_load_high_signal' and rr.get('c_remote') is not None:
+                            inf_ref = rr
+                            break
+                except Exception:
+                    inf_ref = None
+
             by_cat = {}
             for t in tests:
                 by_cat.setdefault(t.get('category','other'), []).append(t.get('model_score_0_to_3',0))
@@ -630,7 +650,22 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
                 elif cat == 'growth_remodeling':
                     fig = '../assets/img/pubfig_scorecard_by_category.png'
 
-                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div><div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div></div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
+                qe = qe_map.get(tid, {})
+                q_mentions = qe.get('quantitative_mentions', [])
+                q_rows = ''.join([f"<tr><td>{q.get('value')}</td><td>{q.get('snippet')}</td></tr>" for q in q_mentions])
+                q_block = f"<div class='v-card'><h2>Quantitative values mined from paper abstract (screening-level)</h2><p><strong>Source:</strong> {qe.get('source','PubMed abstract mining')}</p><table><thead><tr><th>Value</th><th>Context snippet</th></tr></thead><tbody>{q_rows}</tbody></table></div>" if q_rows else "<div class='v-card'><h2>Quantitative values mined from paper abstract (screening-level)</h2><p>No numeric abstract mentions were extracted automatically for this paper. Manual full-text extraction is required for publication-grade quantitative anchoring.</p></div>"
+
+                infarct_quant = ''
+                if cat == 'infarct_remodeling' and inf_ref:
+                    c_remote = float(inf_ref.get('c_remote', 0.0))
+                    c_core = float(inf_ref.get('c_core', 0.0)); c_border = float(inf_ref.get('c_border', 0.0))
+                    p_remote = float(inf_ref.get('p_remote', 0.0))
+                    p_core = float(inf_ref.get('p_core', 0.0)); p_border = float(inf_ref.get('p_border', 0.0))
+                    def pct(a,b):
+                        return 100.0*(a-b)/max(abs(b),1e-8)
+                    infarct_quant = f"<div class='v-card'><h2>Expected rise by zone (quantitative)</h2><table><thead><tr><th>Metric</th><th>Core vs Remote</th><th>Border vs Remote</th></tr></thead><tbody><tr><td>Collagen</td><td>{c_core-c_remote:+.3f} ({pct(c_core,c_remote):+.1f}%)</td><td>{c_border-c_remote:+.3f} ({pct(c_border,c_remote):+.1f}%)</td></tr><tr><td>Profibrotic signal p</td><td>{p_core-p_remote:+.3f} ({pct(p_core,p_remote):+.1f}%)</td><td>{p_border-p_remote:+.3f} ({pct(p_border,p_remote):+.1f}%)</td></tr></tbody></table><p class='legend'>Positive values indicate rise relative to remote zone.</p></div>"
+
+                html = f"""<!doctype html><html><head><meta charset='utf-8'/><meta name='viewport' content='width=device-width,initial-scale=1'/><link rel='stylesheet' href='../../assets/css/style.css?v={BUILD_VER}'/><link rel='stylesheet' href='../../assets/css/validation_theme.css?v={BUILD_VER}'/><title>{tid}</title></head><body><header><h1>{tid} - Model mechanism test</h1></header><main class='validation-layout'><div class='v-card'><div class='v-head'><h2>Standard test summary</h2><span class='badge'>PMID {pmid}</span></div><p><strong>Mechanism tested:</strong> {expected}</p><p><strong>Model domain:</strong> {cat}</p><p><strong>Evidence anchor:</strong> <a href='https://pubmed.ncbi.nlm.nih.gov/{pmid}/'>PMID {pmid}</a> — {title}</p></div><div class='v-card'><h2>Simulation setup</h2><h3>Boundary conditions (words + maths)</h3><pre>{bcs}</pre></div><div class='v-card'><h2>Reference observation (screening-level evidence)</h2><p>{obs}</p></div><div class='v-card'><h2>Common visualization</h2><p>This panel is unique to this PMID-linked test card (not a shared global figure).</p><img src='../../assets/img/testcards/{tid}.png' alt='{tid} card'/><p class='legend'>Model-vs-band comparison for {tid} derived from the referenced study metadata.</p></div>{q_block}{infarct_quant}<div class='v-card'><h2>Pass/partial analysis</h2><div class='plan-box'>{score_breakdown}</div></div><div class='v-card'><a href='../validation.html'>- Back to validation page</a></div></main></body></html>"""
                 (SITE / 'pages' / 'tests' / f"{tid}.html").write_text(html)
         except Exception:
             pass
