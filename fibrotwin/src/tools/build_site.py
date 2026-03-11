@@ -101,6 +101,36 @@ def make_plots(runs):
             plt.tight_layout(); plt.savefig(out, dpi=140); plt.close()
 
 
+def human_scenario_name(name: str) -> str:
+    if not name:
+        return ''
+    aliases = {
+        'baseline_low_load_low_signal': 'Baseline (low load + low signal)',
+        'high_load_only': 'High load only',
+        'high_signal_only': 'High biochemical signal only',
+        'high_load_high_signal': 'High load + high signal',
+        'infarct_high_load_high_signal': 'Infarct + high load + high signal',
+        'drug_tgfr_block': 'Drug: TGFβR blockade',
+        'drug_at1r_block': 'Drug: AT1R blockade',
+        'drug_dual_block': 'Drug: dual blockade (TGFβR + AT1R)',
+    }
+    if name in aliases:
+        return aliases[name]
+    if name.startswith('L') and '_T' in name and '_A' in name and '_N' in name:
+        try:
+            l = name.split('_')[0].replace('L','')
+            t = name.split('_')[1].replace('T','')
+            a = name.split('_')[2].replace('A','')
+            n = name.split('_')[3].replace('N','')
+            return f'Load {l}, TGFβ {t}, AngII {a}, Fibroblasts {n}'
+        except Exception:
+            pass
+    if name.startswith('INFARCT_'):
+        tail = name.replace('INFARCT_','')
+        return 'Infarct scenario: ' + human_scenario_name(tail)
+    return name.replace('_',' ')
+
+
 def nav():
     return '''<nav><a href="index.html">Home</a><a href="pages/overview.html">Overview</a><a href="pages/model.html">Model</a><a href="pages/numerics.html">Numerics</a><a href="pages/implementation.html">Implementation</a><a href="pages/validation.html">Validation</a><a href="pages/emulation.html">Emulation</a><a href="pages/results.html">Results</a><a href="pages/interactive_lab.html">Interactive Lab</a><a href="pages/changelog.html">Changelog</a><a href="pages/references.html">References</a></nav>'''
 
@@ -313,7 +343,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
         try:
             vp = json.loads(vpj.read_text())
             rows = vp.get('scenarios', [])
-            trs = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in rows])
+            trs = ''.join([f"<tr><td>{human_scenario_name(r.get('scenario'))}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in rows])
             checks = ''.join([f"<li><span class='badge {'pass' if c.get('pass') else 'fail'}'>{'PASS' if c.get('pass') else 'FAIL'}</span> {c.get('check')}</li>" for c in vp.get('checks', [])])
             portfolio_block = f"<div class='card'><h2>Validation portfolio</h2><div class='summary-grid'><div class='summary-tile'><strong>Checks passed</strong><div>{vp.get('n_checks_passed')}/{vp.get('n_checks_total')}</div></div><div class='summary-tile'><strong>Scenarios</strong><div>{len(rows)}</div></div></div><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody>{trs}</tbody></table><h3>Trend checks</h3><ul>{checks}</ul></div>"
         except Exception:
@@ -445,7 +475,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             sm = json.loads(spj.read_text())
             sc = sm.get('scenarios', [])
             top = sorted(sc, key=lambda r: r.get('c_mean_final',0.0), reverse=True)[:12]
-            trs = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top])
+            trs = ''.join([f"<tr><td>{human_scenario_name(r.get('scenario'))}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('myo_frac_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top])
             su = sm.get('summary', {})
             scenario_block = f"<div class='card'><h2>Scenario portfolio (loading × fibrotic signal × fibroblast count)</h2><div class='summary-grid'><div class='summary-tile'><strong>Total scenarios</strong><div>{sm.get('n_scenarios')}</div></div><div class='summary-tile'><strong>Collagen range</strong><div>{su.get('min_collagen'):.3f} – {su.get('max_collagen'):.3f}</div></div><div class='summary-tile'><strong>Alignment range</strong><div>{su.get('min_alignment'):.3f} – {su.get('max_alignment'):.3f}</div></div></div><p>Top 12 collagen scenarios are shown below.</p><table><thead><tr><th>Scenario</th><th>Load</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Myofibro</th><th>Align</th></tr></thead><tbody>{trs}</tbody></table></div>"
         except Exception:
@@ -518,7 +548,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             sm = json.loads(spm.read_text())
             sc = sm.get('scenarios', [])
             top_c = sorted(sc, key=lambda r: r.get('c_mean_final', 0.0), reverse=True)[:5]
-            rows = ''.join([f"<tr><td>{r.get('scenario')}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top_c])
+            rows = ''.join([f"<tr><td>{human_scenario_name(r.get('scenario'))}</td><td>{r.get('stretch_x')}</td><td>{r.get('tgf_beta')}</td><td>{r.get('angII')}</td><td>{r.get('c_mean_final'):.3f}</td><td>{r.get('p_mean_final'):.3f}</td><td>{r.get('ac_align_x_final'):.3f}</td></tr>" for r in top_c])
             matrix_help_block = f"<div class='card'><h2>How to read the scenario matrix</h2><p>Each row is one in-silico experiment with a specific load (stretch_x) and biochemical drive (TGFβ/AngII). Use it to identify which conditions reproduce high collagen, high profibrotic signaling, and alignment patterns.</p><ul><li><strong>c_mean_final</strong>: fibrosis burden endpoint</li><li><strong>p_mean_final</strong>: integrated profibrotic signaling endpoint</li><li><strong>ac_align_x_final</strong>: collagen/fibre alignment with loading axis</li></ul><p><strong>Top-5 collagen scenarios:</strong></p><table><thead><tr><th>Scenario</th><th>stretch_x</th><th>TGFβ</th><th>AngII</th><th>Collagen</th><th>p</th><th>Align</th></tr></thead><tbody>{rows}</tbody></table><p class='legend'>Takeaway: use this table to choose candidate regimes before deep paper-by-paper validation.</p></div>"
         except Exception:
             matrix_help_block = ''
@@ -589,13 +619,17 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
             pass
 
     redesign_block = ''
+    vup = ROOT / 'docs' / '08_validation_unification_plan.md'
+    unify_block = ''
+    if vup.exists():
+        unify_block = f'<div class="card"><h2>Validation unification plan (single style + no repeats)</h2>{md_to_html(vup.read_text())}</div>'
     vrp = ROOT / 'docs' / '07_validation_consistency_plan.md'
     if vrp.exists():
         redesign_block = f'<div class="card"><h2>Validation page coherence plan</h2>{md_to_html(vrp.read_text())}</div>'
 
     pipeline_block = '''<div class="card"><h2>Validation pipeline (read in order)</h2><ol><li>Test outcomes + verification scope</li><li>Metric dictionary (units/definitions)</li><li>Validation portfolio + scenario matrix + UQ</li><li>Drug validation and numerical verification cards</li><li>Calibration cards and emulation/history matching</li><li>Parameter audit + uniqueness + coverage matrix</li><li>Literature-linked catalog and per-test cards</li></ol></div>'''
 
-    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'{pipeline_block}{redesign_block}<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{emulation_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}<div class="card">{read_doc("03_validation_and_sanity_checks.md")}</div><div class="card">{read_doc("04_systematic_improvement_review.md")}</div><div class="card">{read_doc("05_validation_gap_review.md")}</div>'))
+    (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'{pipeline_block}{unify_block}{redesign_block}<div class="card"><h2>Test outcomes</h2>{latest_test_summary()}</div><div class="card">{verification}</div>{metric_dict_block}{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{numerical_block}{calib_block}{emulation_block}{param_block}{uniq_block}{coverage_block}{matrix_help_block}{systematic_block}{pubfig_block}{testcard_block}'))
 
 
     emu_body = emulation_block if emulation_block else '<div class="card"><p>Run <code>python -m src.tools.emulation_history_matching</code> to generate emulator report.</p></div>'
