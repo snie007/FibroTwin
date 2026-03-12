@@ -1,0 +1,59 @@
+{
+  "steps": [
+    {
+      "cmd": "/home/snie007/Documents/project/2026/freeze_combined_out7/.venv/bin/python -m src.tools.extract_quantitative_evidence",
+      "code": 0,
+      "stdout": "{\n  \"n_with_numeric_mentions\": 51,\n  \"n_with_fulltext\": 42,\n  \"n_tests\": 80\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "/home/snie007/Documents/project/2026/freeze_combined_out7/.venv/bin/python -m src.tools.quantitative_match_metric",
+      "code": 0,
+      "stdout": "{\n  \"evaluated\": 51,\n  \"PASS\": 2,\n  \"PARTIAL\": 8,\n  \"FAIL\": 39,\n  \"UNMAPPED\": 2\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "emulation_waves.main(n_waves=4,n_train=24,n_candidates=300)",
+      "code": 0,
+      "stdout": "{\n  \"n_waves\": 4,\n  \"final_pass\": 4\n}\n",
+      "stderr": ""
+    },
+    {
+      "cmd": "sensitivity_analysis.main(n_train=18,n_candidates=260,n_verify=10)",
+      "code": 0,
+      "stdout": "{\n  \"best_verified_pass_count\": 3,\n  \"top_sensitive\": [\n    \"signaling_network.d_smad\",\n    \"cells.myo_switch_threshold\",\n    \"signaling_network.k_at1r_erk\"\n  ]\n}\n",
+      "stderr": ""
+    }
+  ],
+  "diagnosis": [
+    "Calibration targets pass: 6/6",
+    "Paper-anchored quantitative match: PASS 2, PARTIAL 8, FAIL 39, UNMAPPED 2",
+    "History matching wave pass trend: [5, 5, 3, 4]",
+    "NROY fraction trend: [1.0, 1.0, 0.993, 1.0]"
+  ],
+  "fail_taxonomy": {
+    "parameter_miss": 37,
+    "observation_mismatch": 10,
+    "missing_mechanism_or_unmapped": 2
+  },
+  "wave_summary": {
+    "nroy_fraction_trend": [
+      1.0,
+      1.0,
+      0.9933333333333333,
+      1.0
+    ],
+    "targets_passed_trend": [
+      5,
+      5,
+      3,
+      4
+    ]
+  },
+  "prioritized_extensions": [
+    "Add observation-model mapping layer (paper endpoint -> model observable transform) to reduce observation mismatch fails.",
+    "Expand signaling complexity: VEGF/Notch/HIF modules for angiogenesis-related studies.",
+    "Refine infarct zone kinetics (core/border/remote separate source/decay kernels).",
+    "Constrain tuning to top sensitive parameters and re-run waves with narrowed bounds."
+  ]
+}

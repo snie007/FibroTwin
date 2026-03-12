@@ -10,6 +10,14 @@ NUM_RE = re.compile(r"\d+(?:\.\d+)?")
 
 def parse_anchor(value: str):
     v = (value or '').lower().strip()
+    # observation-layer guardrails: skip p-values and pure time/dose anchors
+    if 'p <' in v or 'p<' in v or 'p=' in v:
+        return None
+    if any(u in v for u in ['day', 'days', 'week', 'weeks', 'month', 'months', 'year', 'years', 'hour', 'hours', 'min']) and ('%' not in v and 'fold' not in v):
+        return None
+    if any(u in v for u in ['mg', 'ug', 'μg', 'ng', 'pg']) and ('%' not in v and 'fold' not in v):
+        return None
+
     m = RANGE_RE.search(v)
     if m:
         a, b = float(m.group(1)), float(m.group(2))

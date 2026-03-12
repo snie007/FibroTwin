@@ -1,0 +1,160 @@
+{
+  "n_samples": 6,
+  "top3_params": [
+    "signaling_network.d_smad",
+    "cells.myo_switch_threshold",
+    "signaling_network.k_at1r_erk"
+  ],
+  "best": [
+    {
+      "i": 1,
+      "params": {
+        "signaling_network.d_smad": 0.11163029275444215,
+        "cells.myo_switch_threshold": 0.6205979672362096,
+        "signaling_network.k_at1r_erk": 2.437495427462643
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.6545214653015137,
+        "alignment_high_load": 0.9165156483650208,
+        "collagen_fraction_load_signal": 10.263279914855957,
+        "infarct_core_collagen": 15.426654815673828,
+        "infarct_core_to_remote_ratio": 1.5079329048992005
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": true,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 6
+    },
+    {
+      "i": 3,
+      "params": {
+        "signaling_network.d_smad": 0.11778984710720483,
+        "cells.myo_switch_threshold": 0.6014122042938445,
+        "signaling_network.k_at1r_erk": 2.3672894382497858
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.652514636516571,
+        "alignment_high_load": 0.916272759437561,
+        "collagen_fraction_load_signal": 10.195067405700684,
+        "infarct_core_collagen": 15.41128158569336,
+        "infarct_core_to_remote_ratio": 1.503619828960325
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": true,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 6
+    },
+    {
+      "i": 4,
+      "params": {
+        "signaling_network.d_smad": 0.10719794229705779,
+        "cells.myo_switch_threshold": 0.6016117451404509,
+        "signaling_network.k_at1r_erk": 2.125908736974283
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.6513848304748535,
+        "alignment_high_load": 0.9162824749946594,
+        "collagen_fraction_load_signal": 10.210382461547852,
+        "infarct_core_collagen": 15.39887809753418,
+        "infarct_core_to_remote_ratio": 1.5049416785834684
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": true,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 6
+    },
+    {
+      "i": 0,
+      "params": {
+        "signaling_network.d_smad": 0.12584115152953684,
+        "cells.myo_switch_threshold": 0.6675712495363413,
+        "signaling_network.k_at1r_erk": 2.1893199210629772
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.6487905383110046,
+        "alignment_high_load": 0.9166008830070496,
+        "collagen_fraction_load_signal": 10.263157844543457,
+        "infarct_core_collagen": 15.270458221435547,
+        "infarct_core_to_remote_ratio": 1.502715490373359
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": false,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 5
+    },
+    {
+      "i": 2,
+      "params": {
+        "signaling_network.d_smad": 0.12281988525391391,
+        "cells.myo_switch_threshold": 0.6770727884866052,
+        "signaling_network.k_at1r_erk": 2.1194523685189806
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.6483827233314514,
+        "alignment_high_load": 0.9165422320365906,
+        "collagen_fraction_load_signal": 10.134763717651367,
+        "infarct_core_collagen": 15.303008079528809,
+        "infarct_core_to_remote_ratio": 1.5223358735376338
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": false,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 5
+    },
+    {
+      "i": 5,
+      "params": {
+        "signaling_network.d_smad": 0.12912123815752333,
+        "cells.myo_switch_threshold": 0.6325353097042893,
+        "signaling_network.k_at1r_erk": 2.3235621710318193
+      },
+      "metrics": {
+        "myofibro_fraction_high_signal": 0.887499988079071,
+        "profibrotic_index_high_signal": 0.6499001979827881,
+        "alignment_high_load": 0.9164595007896423,
+        "collagen_fraction_load_signal": 10.247162818908691,
+        "infarct_core_collagen": 15.346894264221191,
+        "infarct_core_to_remote_ratio": 1.50962796328461
+      },
+      "passes": {
+        "myofibro_fraction_high_signal": true,
+        "profibrotic_index_high_signal": false,
+        "alignment_high_load": true,
+        "collagen_fraction_load_signal": true,
+        "infarct_core_collagen": true,
+        "infarct_core_to_remote_ratio": true
+      },
+      "pass_count": 5
+    }
+  ]
+}

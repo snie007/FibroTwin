@@ -49,12 +49,17 @@ def classify_fails(qmr):
     return out
 
 
-def main():
+def main(mode='fast'):
     steps = []
-    steps.append(run_module('src.tools.extract_quantitative_evidence'))
-    steps.append(run_module('src.tools.quantitative_match_metric'))
-    # bounded wave run to avoid long hangs
-    steps.append(run_inline("from src.tools.emulation_waves import main; main(n_waves=2, n_train=10, n_candidates=90, seed=29)", 'emulation_waves.main(n_waves=2,n_train=10,n_candidates=90)'))
+    steps.append(run_module('src.tools.extract_quantitative_evidence', timeout=1200))
+    steps.append(run_module('src.tools.quantitative_match_metric', timeout=600))
+
+    if mode == 'deep':
+        steps.append(run_inline("from src.tools.emulation_waves import main; main(n_waves=4, n_train=24, n_candidates=300, seed=41)", 'emulation_waves.main(n_waves=4,n_train=24,n_candidates=300)', timeout=3600))
+        steps.append(run_inline("from src.tools.sensitivity_analysis import main; main(n_train=18, n_candidates=260, n_verify=10, seed=43)", 'sensitivity_analysis.main(n_train=18,n_candidates=260,n_verify=10)', timeout=3600))
+    else:
+        # bounded wave run to avoid long hangs
+        steps.append(run_inline("from src.tools.emulation_waves import main; main(n_waves=2, n_train=10, n_candidates=90, seed=29)", 'emulation_waves.main(n_waves=2,n_train=10,n_candidates=90)', timeout=1200))
 
     qmr = load_json('outputs/quantitative_match_report.json')
     ew = load_json('outputs/emulation_waves.json')
@@ -110,4 +115,8 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    ap = argparse.ArgumentParser(description='Wave Orchestrator')
+    ap.add_argument('--mode', choices=['fast', 'deep'], default='fast')
+    args = ap.parse_args()
+    main(mode=args.mode)
