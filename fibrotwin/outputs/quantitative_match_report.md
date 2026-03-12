@@ -2,8 +2,9 @@
 
 - Tests evaluated (with numeric mentions): 51
 - PASS: 4
-- PARTIAL: 9
-- FAIL: 29
-- UNMAPPED: 9
+- PARTIAL: 10
+- FAIL: 28
+- UNMAPPED: 2
+- NONCOMPARABLE: 7
 
-PASS if model value within inferred paper anchor band; PARTIAL if normalized distance to band <= 0.5; else FAIL. UNMAPPED if no valid anchor-model mapping.
+Phase-1 observation mapping: non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply only to comparable mapped anchors.

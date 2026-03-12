@@ -10,27 +10,44 @@ NUM_RE = re.compile(r"\d+(?:\.\d+)?")
 
 def parse_anchor(value: str):
     v = (value or '').lower().strip()
-    # observation-layer guardrails: skip p-values and pure time/dose anchors
+    # Phase-1 observation mapping: reject non-comparable anchors early
     if 'p <' in v or 'p<' in v or 'p=' in v:
-        return None
+        return None, 'noncomparable_pvalue'
     if any(u in v for u in ['day', 'days', 'week', 'weeks', 'month', 'months', 'year', 'years', 'hour', 'hours', 'min']) and ('%' not in v and 'fold' not in v):
-        return None
+        return None, 'noncomparable_time_only'
     if any(u in v for u in ['mg', 'ug', 'μg', 'ng', 'pg']) and ('%' not in v and 'fold' not in v):
-        return None
+        return None, 'noncomparable_dose_only'
 
     m = RANGE_RE.search(v)
     if m:
         a, b = float(m.group(1)), float(m.group(2))
-        return {'kind': 'range', 'band': [min(a, b), max(a, b)], 'raw': value}
+        return {'kind': 'range', 'band': [min(a, b), max(a, b)], 'raw': value}, None
+
     n = NUM_RE.search(v)
     if not n:
-        return None
+        return None, 'no_numeric'
+
     x = float(n.group(0))
     if '%' in v or 'percent' in v:
-        return {'kind': 'percent', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}
+        return {'kind': 'percent', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}, None
     if 'fold' in v or v.endswith('x') or ' x' in v:
-        return {'kind': 'fold', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}
-    return {'kind': 'absolute', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}
+        return {'kind': 'fold', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}, None
+    return {'kind': 'absolute', 'target': x, 'band': [0.8 * x, 1.2 * x], 'raw': value}, None
+
+
+def infer_comparator(snippet: str, category: str):
+    s = (snippet or '').lower()
+    if category == 'infarct_remodeling' and ('core' in s and 'remote' in s):
+        if '%' in s or 'percent' in s:
+            return 'core_vs_remote_percent'
+        if 'fold' in s or ' x' in s:
+            return 'core_vs_remote_fold'
+        return 'core_absolute'
+    if '%' in s or 'percent' in s:
+        return 'percent'
+    if 'fold' in s or ' x' in s:
+        return 'fold'
+    return 'absolute'
 
 
 def choose_anchor(test, category):
@@ -44,59 +61,67 @@ def choose_anchor(test, category):
 
     best = None
     best_score = -1
+    best_noncomp = None
     for q in mentions:
-        p = parse_anchor(q.get('value', ''))
-        if not p:
+        parsed, reason = parse_anchor(q.get('value', ''))
+        if not parsed:
+            if reason and best_noncomp is None:
+                best_noncomp = reason
             continue
         s = 0
         if q.get('endpoint_guess') in pref:
             s += 3
-        if p['kind'] in ('percent', 'fold', 'range'):
+        if parsed['kind'] in ('percent', 'fold', 'range'):
             s += 2
-        if p['kind'] == 'absolute':
+        if parsed['kind'] == 'absolute':
             s += 1
         if s > best_score:
             best_score = s
-            best = {'parsed': p, 'mention': q}
-    return best
+            best = {
+                'parsed': parsed,
+                'mention': q,
+                'comparator': infer_comparator(q.get('snippet', ''), category),
+            }
+    return best, best_noncomp
 
 
-def model_value_for_category(cat, vp_by):
+def model_values_for_category(cat, vp_by):
     base = vp_by.get('baseline_low_load_low_signal', {})
     hs = vp_by.get('high_signal_only', {})
     hl = vp_by.get('high_load_only', {})
     hls = vp_by.get('high_load_high_signal', {})
     inf = vp_by.get('infarct_high_load_high_signal', {})
 
+    out = {}
     if cat == 'infarct_remodeling':
         c_remote = inf.get('c_remote')
         c_core = inf.get('c_core')
         if c_remote and c_core is not None:
-            pct = 100.0 * (c_core - c_remote) / max(abs(c_remote), 1e-8)
-            fold = c_core / max(c_remote, 1e-8)
-            return {'percent': pct, 'fold': fold, 'absolute': c_core}
-    if cat == 'fibroblast_signaling':
-        b = base.get('p_mean_final')
-        x = hs.get('p_mean_final')
+            out['core_vs_remote_percent'] = 100.0 * (c_core - c_remote) / max(abs(c_remote), 1e-8)
+            out['core_vs_remote_fold'] = c_core / max(c_remote, 1e-8)
+            out['core_absolute'] = c_core
+            out['percent'] = out['core_vs_remote_percent']
+            out['fold'] = out['core_vs_remote_fold']
+            out['absolute'] = out['core_absolute']
+    elif cat == 'fibroblast_signaling':
+        b = base.get('p_mean_final'); x = hs.get('p_mean_final')
         if b and x is not None:
-            pct = 100.0 * (x - b) / max(abs(b), 1e-8)
-            fold = x / max(b, 1e-8)
-            return {'percent': pct, 'fold': fold, 'absolute': x}
-    if cat == 'collagen_dynamics':
-        b = base.get('c_mean_final')
-        x = hls.get('c_mean_final')
+            out['percent'] = 100.0 * (x - b) / max(abs(b), 1e-8)
+            out['fold'] = x / max(b, 1e-8)
+            out['absolute'] = x
+    elif cat == 'collagen_dynamics':
+        b = base.get('c_mean_final'); x = hls.get('c_mean_final')
         if b and x is not None:
-            pct = 100.0 * (x - b) / max(abs(b), 1e-8)
-            fold = x / max(b, 1e-8)
-            return {'percent': pct, 'fold': fold, 'absolute': x}
-    if cat == 'growth_remodeling':
-        b = base.get('ac_align_x_final')
-        x = hl.get('ac_align_x_final')
+            out['percent'] = 100.0 * (x - b) / max(abs(b), 1e-8)
+            out['fold'] = x / max(b, 1e-8)
+            out['absolute'] = x
+    elif cat == 'growth_remodeling':
+        b = base.get('ac_align_x_final'); x = hl.get('ac_align_x_final')
         if b is not None and x is not None:
-            pct = 100.0 * (x - b) / max(abs(b), 1e-8)
-            fold = x / max(b, 1e-8)
-            return {'percent': pct, 'fold': fold, 'absolute': x}
-    return None
+            out['percent'] = 100.0 * (x - b) / max(abs(b), 1e-8)
+            out['fold'] = x / max(b, 1e-8)
+            out['absolute'] = x
+    return out
 
 
 def classify(model_v, band):
@@ -126,13 +151,26 @@ def main():
             continue
         meta = cat_by_id.get(tid, {})
         category = meta.get('category', '')
-        anchor = choose_anchor(t, category)
-        model = model_value_for_category(category, vp_by)
-        if not anchor or not model:
+
+        anchor, noncomp_reason = choose_anchor(t, category)
+        model_map = model_values_for_category(category, vp_by)
+
+        if noncomp_reason and not anchor:
+            rows.append({'id': tid, 'category': category, 'status': 'NONCOMPARABLE', 'reason': noncomp_reason})
+            continue
+        if not anchor:
             rows.append({'id': tid, 'category': category, 'status': 'UNMAPPED'})
             continue
+        comp = anchor['comparator']
         p = anchor['parsed']
-        model_v = model.get(p['kind'], model.get('absolute'))
+        model_v = model_map.get(comp)
+        if model_v is None:
+            # fallback to type-based comparator
+            model_v = model_map.get(p['kind'], model_map.get('absolute'))
+        if model_v is None:
+            rows.append({'id': tid, 'category': category, 'status': 'UNMAPPED'})
+            continue
+
         status, nerr = classify(float(model_v), p['band'])
         rows.append({
             'id': tid,
@@ -143,9 +181,10 @@ def main():
             'paper_band': p['band'],
             'model_value': float(model_v),
             'kind': p['kind'],
+            'comparator': comp,
         })
 
-    counts = {'PASS': 0, 'PARTIAL': 0, 'FAIL': 0, 'UNMAPPED': 0}
+    counts = {'PASS': 0, 'PARTIAL': 0, 'FAIL': 0, 'UNMAPPED': 0, 'NONCOMPARABLE': 0}
     for r in rows:
         counts[r['status']] = counts.get(r['status'], 0) + 1
 
@@ -153,7 +192,7 @@ def main():
         'n_with_numeric_mentions': len(rows),
         'counts': counts,
         'rows': rows,
-        'metric_definition': 'PASS if model value within inferred paper anchor band; PARTIAL if normalized distance to band <= 0.5; else FAIL. UNMAPPED if no valid anchor-model mapping.',
+        'metric_definition': 'Phase-1 observation mapping: non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply only to comparable mapped anchors.',
     }
     (ROOT / 'outputs' / 'quantitative_match_report.json').write_text(json.dumps(out, indent=2))
 
@@ -163,7 +202,8 @@ def main():
         f"- PASS: {counts['PASS']}",
         f"- PARTIAL: {counts['PARTIAL']}",
         f"- FAIL: {counts['FAIL']}",
-        f"- UNMAPPED: {counts['UNMAPPED']}", '',
+        f"- UNMAPPED: {counts['UNMAPPED']}",
+        f"- NONCOMPARABLE: {counts['NONCOMPARABLE']}", '',
         out['metric_definition']
     ]
     (ROOT / 'outputs' / 'quantitative_match_report.md').write_text('\n'.join(md))
