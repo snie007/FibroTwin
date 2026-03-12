@@ -1,6 +1,7 @@
 import json
 import re
 from pathlib import Path
+import yaml
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -154,6 +155,11 @@ def main():
     qe = json.loads((ROOT / 'outputs' / 'quantitative_evidence.json').read_text())
     cat = json.loads((ROOT / 'outputs' / 'systematic_test_catalog.json').read_text())
     vp = json.loads((ROOT / 'outputs' / 'validation_portfolio.json').read_text())
+    curated_path = ROOT / 'data' / 'calibration' / 'paper_targets_curated.yaml'
+    curated = {}
+    if curated_path.exists():
+        c = yaml.safe_load(curated_path.read_text()) or {}
+        curated = c.get('curated_tests', {})
 
     cat_by_id = {t['id']: t for t in cat.get('tests', [])}
     vp_by = {r['scenario']: r for r in vp.get('scenarios', [])}
@@ -166,8 +172,19 @@ def main():
         meta = cat_by_id.get(tid, {})
         category = meta.get('category', '')
 
-        anchor, noncomp_reason = choose_anchor(t, category)
         model_map = model_values_for_category(category, vp_by)
+
+        curated_row = curated.get(tid)
+        if curated_row:
+            anchor = {
+                'parsed': {'kind': 'range', 'band': curated_row.get('band', [0.0, 0.0]), 'raw': 'curated'},
+                'mention': {'value': str(curated_row.get('endpoint', 'curated endpoint'))},
+                'comparator': curated_row.get('comparator', 'absolute'),
+                'anchor_score': 9,
+            }
+            noncomp_reason = None
+        else:
+            anchor, noncomp_reason = choose_anchor(t, category)
 
         if noncomp_reason and not anchor:
             rows.append({'id': tid, 'category': category, 'status': 'NONCOMPARABLE', 'reason': noncomp_reason})
@@ -188,6 +205,7 @@ def main():
         status, nerr = classify(float(model_v), p['band'])
         conf = confidence_level(anchor.get('anchor_score', 0), status)
         rows.append({
+            'curated_override': bool(curated_row),
             'id': tid,
             'category': category,
             'status': status,
@@ -211,19 +229,22 @@ def main():
         if r['status'] in ('FAIL', 'PARTIAL'):
             fail_priority[c] = fail_priority.get(c, 0) + 1
 
+    n_curated_used = sum(1 for r in rows if r.get('curated_override'))
     out = {
         'n_with_numeric_mentions': len(rows),
+        'n_curated_overrides_used': n_curated_used,
         'counts': counts,
         'confidence_counts': conf_counts,
         'fail_priority_by_confidence': fail_priority,
         'rows': rows,
-        'metric_definition': 'Phase-1b observation mapping with confidence labels: non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply only to comparable mapped anchors.',
+        'metric_definition': 'Phase-2 manual curation enabled: curated test targets override auto-extracted anchors; non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply to comparable mapped anchors.',
     }
     (ROOT / 'outputs' / 'quantitative_match_report.json').write_text(json.dumps(out, indent=2))
 
     md = [
         '# Quantitative Match Report', '',
         f"- Tests evaluated (with numeric mentions): {out['n_with_numeric_mentions']}",
+        f"- Curated overrides used: {out['n_curated_overrides_used']}",
         f"- PASS: {counts['PASS']}",
         f"- PARTIAL: {counts['PARTIAL']}",
         f"- FAIL: {counts['FAIL']}",

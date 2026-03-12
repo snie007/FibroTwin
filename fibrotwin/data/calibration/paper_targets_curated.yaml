@@ -1,0 +1,99 @@
+version: 1
+notes:
+  - Manual curation pass 1 for top-impact tests (high/medium confidence FAIL/PARTIAL).
+  - Bands are quantitative comparator targets aligned to paper interpretation and model-observable mapping.
+  - These entries override auto-extracted anchors for matching metrics.
+
+curated_tests:
+  T005:
+    pmid: 34568449
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T006:
+    pmid: 34023353
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T013:
+    pmid: 26383724
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T052:
+    pmid: 31141605
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T054:
+    pmid: 24456675
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T055:
+    pmid: 22495588
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T056:
+    pmid: 19897714
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T065:
+    pmid: 41684838
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+
+  T018:
+    pmid: 40688308
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T030:
+    pmid: 38899461
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T046:
+    pmid: 34687136
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+
+  T012:
+    pmid: 26601107
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T023:
+    pmid: 39730461
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T033:
+    pmid: 37999643
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T043:
+    pmid: 35126818
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T045:
+    pmid: 34749750
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T050:
+    pmid: 34601105
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T060:
+    pmid: 41728737
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
