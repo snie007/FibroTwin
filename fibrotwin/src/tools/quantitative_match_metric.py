@@ -75,12 +75,15 @@ def choose_anchor(test, category):
             s += 2
         if parsed['kind'] == 'absolute':
             s += 1
+        if any(k in (q.get('snippet', '').lower()) for k in ['increase', 'decrease', 'higher', 'lower', 'compared to', 'vs']):
+            s += 1
         if s > best_score:
             best_score = s
             best = {
                 'parsed': parsed,
                 'mention': q,
                 'comparator': infer_comparator(q.get('snippet', ''), category),
+                'anchor_score': s,
             }
     return best, best_noncomp
 
@@ -136,6 +139,17 @@ def classify(model_v, band):
     return 'FAIL', nerr
 
 
+def confidence_level(anchor_score, status):
+    # Phase 1b confidence label for prioritization
+    if status in ('UNMAPPED', 'NONCOMPARABLE'):
+        return 'low'
+    if anchor_score >= 6:
+        return 'high'
+    if anchor_score >= 4:
+        return 'medium'
+    return 'low'
+
+
 def main():
     qe = json.loads((ROOT / 'outputs' / 'quantitative_evidence.json').read_text())
     cat = json.loads((ROOT / 'outputs' / 'systematic_test_catalog.json').read_text())
@@ -172,10 +186,13 @@ def main():
             continue
 
         status, nerr = classify(float(model_v), p['band'])
+        conf = confidence_level(anchor.get('anchor_score', 0), status)
         rows.append({
             'id': tid,
             'category': category,
             'status': status,
+            'confidence': conf,
+            'anchor_score': int(anchor.get('anchor_score', 0)),
             'normalized_error': float(nerr),
             'paper_anchor': anchor['mention'].get('value'),
             'paper_band': p['band'],
@@ -185,14 +202,22 @@ def main():
         })
 
     counts = {'PASS': 0, 'PARTIAL': 0, 'FAIL': 0, 'UNMAPPED': 0, 'NONCOMPARABLE': 0}
+    conf_counts = {'high': 0, 'medium': 0, 'low': 0}
+    fail_priority = {'high': 0, 'medium': 0, 'low': 0}
     for r in rows:
         counts[r['status']] = counts.get(r['status'], 0) + 1
+        c = r.get('confidence', 'low')
+        conf_counts[c] = conf_counts.get(c, 0) + 1
+        if r['status'] in ('FAIL', 'PARTIAL'):
+            fail_priority[c] = fail_priority.get(c, 0) + 1
 
     out = {
         'n_with_numeric_mentions': len(rows),
         'counts': counts,
+        'confidence_counts': conf_counts,
+        'fail_priority_by_confidence': fail_priority,
         'rows': rows,
-        'metric_definition': 'Phase-1 observation mapping: non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply only to comparable mapped anchors.',
+        'metric_definition': 'Phase-1b observation mapping with confidence labels: non-comparable anchors are separated as NONCOMPARABLE; PASS/PARTIAL/FAIL apply only to comparable mapped anchors.',
     }
     (ROOT / 'outputs' / 'quantitative_match_report.json').write_text(json.dumps(out, indent=2))
 
@@ -203,7 +228,18 @@ def main():
         f"- PARTIAL: {counts['PARTIAL']}",
         f"- FAIL: {counts['FAIL']}",
         f"- UNMAPPED: {counts['UNMAPPED']}",
-        f"- NONCOMPARABLE: {counts['NONCOMPARABLE']}", '',
+        f"- NONCOMPARABLE: {counts['NONCOMPARABLE']}",
+        '',
+        '## Confidence counts',
+        f"- High confidence anchors: {conf_counts['high']}",
+        f"- Medium confidence anchors: {conf_counts['medium']}",
+        f"- Low confidence anchors: {conf_counts['low']}",
+        '',
+        '## Prioritize these first',
+        f"- High-confidence FAIL/PARTIAL: {fail_priority['high']}",
+        f"- Medium-confidence FAIL/PARTIAL: {fail_priority['medium']}",
+        f"- Low-confidence FAIL/PARTIAL: {fail_priority['low']}",
+        '',
         out['metric_definition']
     ]
     (ROOT / 'outputs' / 'quantitative_match_report.md').write_text('\n'.join(md))
