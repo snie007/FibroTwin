@@ -1,4 +1,4 @@
-<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Emulation & History Matching</title><link rel="stylesheet" href="../assets/css/style.css?v=1773235437"/><link rel="stylesheet" href="../assets/css/validation_theme.css?v=1773235437"/></head><body><header><h1>Emulation & History Matching</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Emulator + history matching summary</h2><p><h1>Emulation + History Matching Report</h1></p><p>- Training runs: 24
+<!doctype html><html><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Emulation & History Matching</title><link rel="stylesheet" href="../assets/css/style.css?v=1773343021"/><link rel="stylesheet" href="../assets/css/validation_theme.css?v=1773343021"/></head><body><header><h1>Emulation & History Matching</h1><nav><a href="../index.html">Home</a><a href="overview.html">Overview</a><a href="model.html">Model</a><a href="numerics.html">Numerics</a><a href="implementation.html">Implementation</a><a href="validation.html">Validation</a><a href="emulation.html">Emulation</a><a href="results.html">Results</a><a href="interactive_lab.html">Interactive Lab</a><a href="changelog.html">Changelog</a><a href="references.html">References</a></nav></header><main><div class="card"><h2>Emulator + history matching summary</h2><p><h1>Emulation + History Matching Report</h1></p><p>- Training runs: 24
 - Candidate points screened by emulator: 600
 - Best emulator: GaussianProcessMatern32
 - NROY count: 600 (100.0%)</p><p><h2>Best plausible candidate (checked in full simulator)</h2>
@@ -28,23 +28,50 @@
 5. Iterate waves: sample within NROY, run simulator, refit emulator, shrink bounds.
 6. QC at each wave: emulator accuracy on holdout, NROY fraction trend, and simulator re-check of selected NROY points.</p><img src="../assets/img/emulation_implausibility_hist.png" alt="Emulation implausibility histogram"/></div><div class="card"><h2>Extra history-matching waves</h2><p><h1>Emulation History-Matching Waves</h1></p><p><h2>Wave 1</h2>
 - Best emulator: GaussianProcessRBF
-- NROY: 120/120 (100.0%)
-- Full-simulator pass count: 4/6</p><p><h2>Wave 2</h2>
-- Best emulator: PolynomialRegression
-- NROY: 89/120 (74.2%)
-- Full-simulator pass count: 5/6</p><p><h2>Final bounds</h2>
-- signaling_network.k_tgfr_smad: [0.2934, 2.705]
-- signaling_network.k_at1r_erk: [0.2867, 2.123]
-- signaling_network.d_smad: [-0.02788, 1.621]
-- signaling_network.d_erk: [-0.003555, 1.6]
-- cells.myo_switch_threshold: [0.01598, 0.871]
-- cells.myo_switch_softness: [0.006121, 0.155]
-- cells.myo_cap: [0.3664, 1.41]
-- infarct.collagen_source: [0.001249, 0.05621]
-- infarct.signal_source: [0.01889, 0.5783]
-- infarct.dispersion_core: [0.01931, 0.6788]
-- infarct.dispersion_border: [0.02472, 1.077]
-- infarct.dispersion_remote: [0.04908, 1.425]</p></div><div class="card"><h2>Emulation QC checklist</h2><p><h1>Emulation QC Checklist</h1></p><p>- [ ] Training design covers full parameter ranges (no collapsed dimensions).
+- NROY: 300/300 (100.0%)
+- Full-simulator pass count: 5/6</p><p><h2>Wave 2</h2>
+- Best emulator: GaussianProcessMatern32
+- NROY: 300/300 (100.0%)
+- Full-simulator pass count: 5/6</p><p><h2>Wave 3</h2>
+- Best emulator: GaussianProcessMatern32
+- NROY: 298/300 (99.3%)
+- Full-simulator pass count: 3/6</p><p><h2>Wave 4</h2>
+- Best emulator: GaussianProcessRBF
+- NROY: 300/300 (100.0%)
+- Full-simulator pass count: 4/6</p><p><h2>Final bounds</h2>
+- signaling_network.k_tgfr_smad: [0.06501, 2.909]
+- signaling_network.k_at1r_erk: [0.06891, 2.35]
+- signaling_network.d_smad: [-0.2145, 1.805]
+- signaling_network.d_erk: [-0.1719, 1.802]
+- cells.myo_switch_threshold: [-0.067, 0.9608]
+- cells.myo_switch_softness: [-0.01099, 0.1691]
+- cells.myo_cap: [0.2487, 1.517]
+- infarct.collagen_source: [-0.004714, 0.06484]
+- infarct.signal_source: [-0.04531, 0.6476]
+- infarct.dispersion_core: [-0.0393, 0.7505]
+- infarct.dispersion_border: [-0.0789, 1.184]
+- infarct.dispersion_remote: [-0.113, 1.61]</p></div><div class="card"><h2>Wave Orchestrator (single-script diagnosis)</h2><p><h1>Wave Orchestrator Report</h1></p><p><h2>Pipeline steps</h2>
+- `/home/snie007/Documents/project/2026/freeze_combined_out7/.venv/bin/python -m src.tools.extract_quantitative_evidence` -> code 0
+- `/home/snie007/Documents/project/2026/freeze_combined_out7/.venv/bin/python -m src.tools.quantitative_match_metric` -> code 0
+- `emulation_waves.main(n_waves=4,n_train=24,n_candidates=300)` -> code 0
+- `sensitivity_analysis.main(n_train=18,n_candidates=260,n_verify=10)` -> code 0</p><p><h2>Diagnosis</h2>
+- Calibration targets pass: 6/6
+- Paper-anchored quantitative match: PASS 2, PARTIAL 8, FAIL 39, UNMAPPED 2
+- History matching wave pass trend: [5, 5, 3, 4]
+- NROY fraction trend: [1.0, 1.0, 0.993, 1.0]</p><p><h2>Fail taxonomy</h2>
+- parameter_miss: 37
+- observation_mismatch: 10
+- missing_mechanism_or_unmapped: 2</p><p><h2>Suggested next actions</h2>
+- Add observation-model mapping layer (paper endpoint -> model observable transform) to reduce observation mismatch fails.
+- Expand signaling complexity: VEGF/Notch/HIF modules for angiogenesis-related studies.
+- Refine infarct zone kinetics (core/border/remote separate source/decay kernels).
+- Constrain tuning to top sensitive parameters and re-run waves with narrowed bounds.</p></div><div class="card"><h2>Top-3 narrowed-bound local refinement</h2><p><h1>Top-3 Parameter Local Refinement</h1></p><p>- Samples: 6
+- Top parameters: signaling_network.d_smad, cells.myo_switch_threshold, signaling_network.k_at1r_erk</p><p><h2>Best candidates</h2>
+- sample 1: pass 6/6, params={'signaling_network.d_smad': 0.11163029275444215, 'cells.myo_switch_threshold': 0.6205979672362096, 'signaling_network.k_at1r_erk': 2.437495427462643}
+- sample 3: pass 6/6, params={'signaling_network.d_smad': 0.11778984710720483, 'cells.myo_switch_threshold': 0.6014122042938445, 'signaling_network.k_at1r_erk': 2.3672894382497858}
+- sample 4: pass 6/6, params={'signaling_network.d_smad': 0.10719794229705779, 'cells.myo_switch_threshold': 0.6016117451404509, 'signaling_network.k_at1r_erk': 2.125908736974283}
+- sample 0: pass 5/6, params={'signaling_network.d_smad': 0.12584115152953684, 'cells.myo_switch_threshold': 0.6675712495363413, 'signaling_network.k_at1r_erk': 2.1893199210629772}
+- sample 2: pass 5/6, params={'signaling_network.d_smad': 0.12281988525391391, 'cells.myo_switch_threshold': 0.6770727884866052, 'signaling_network.k_at1r_erk': 2.1194523685189806}</p></div><div class="card"><h2>Emulation QC checklist</h2><p><h1>Emulation QC Checklist</h1></p><p>- [ ] Training design covers full parameter ranges (no collapsed dimensions).
 - [ ] Emulator holdout metrics acceptable (R2 not strongly negative across outputs).
 - [ ] NROY fraction decreases across waves (or justified if not).
 - [ ] At least 10 NROY points re-evaluated in full simulator and compared to emulator.
@@ -54,4 +81,4 @@
 - Emulator quality: R2/RMSE on held-out points.
 - Plausibility: size and stability of NROY region.
 - Ground truth: full simulator confirms selected NROY points.
-- Success condition: a candidate set passing all 6 calibration tasks in simulator checks.</p></div></main><script src="../assets/js/site.js?v=1773235437"></script></body></html>
+- Success condition: a candidate set passing all 6 calibration tasks in simulator checks.</p></div></main><script src="../assets/js/site.js?v=1773343021"></script></body></html>
