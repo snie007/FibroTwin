@@ -1,0 +1,167 @@
+{
+  "batch_index": 2,
+  "batch_size": 10,
+  "n_fulltext_unreviewed": 30,
+  "rows": [
+    {
+      "id": "T026",
+      "pmid": "39527465",
+      "pmcid": "PMC11552651",
+      "title": "Fibroblast-derived miR-425-5p alleviates cardiac remodelling in heart failure via inhibiting the TGF-\u03b21/Smad signalling.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1582-1838",
+        "1582-4934",
+        "06-2024",
+        "0000-0001",
+        "8480-0280",
+        "0009-0000"
+      ]
+    },
+    {
+      "id": "T036",
+      "pmid": "37227779",
+      "pmcid": "PMC10371345",
+      "title": "Ablation of C-type natriuretic peptide/cGMP signaling in fibroblasts exacerbates adverse cardiac remodeling in mice.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "2 weeks",
+        "6 \u2013 8",
+        "80.7 \u00b1 3.4",
+        "72 \u00b1 4.3",
+        "24 hours",
+        "10 ng"
+      ]
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "pmcid": "PMC9161881",
+      "title": "The crystallin alpha B (HSPB5)-tripartite motif containing 33 (TRIM33) axis mediates myocardial fibrosis induced by angiotensinogen II through transforming growth factor-\u03b2 (TGF-\u03b21)-Smad3/4 signaling.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "8836\u20138849",
+        "1-3",
+        "1.5 mg",
+        "28\u00a0days",
+        "28\u00a0days",
+        "587\u20134009"
+      ]
+    },
+    {
+      "id": "T042",
+      "pmid": "35143327",
+      "pmcid": "PMC9008740",
+      "title": "Second Heart Field-Derived Cells Contribute to Angiotensin II-Mediated Ascending Aortopathies.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "PMC HTML fallback",
+      "top_mentions": [
+        "987\u20131001",
+        "1-859",
+        "218-1705",
+        "1-859",
+        "5 \u2013 10",
+        "66\u00b17"
+      ]
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "pmcid": "PMC8813277",
+      "title": "Hdac8 Inhibitor Alleviates Transverse Aortic Constriction-Induced Heart Failure in Mice by Downregulating Ace1.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "30\u2009mg",
+        "2 weeks",
+        "1942-0900",
+        "1942-0994",
+        "0000-0002",
+        "9774-4828"
+      ]
+    },
+    {
+      "id": "T046",
+      "pmid": "34687136",
+      "pmcid": "PMC8581335",
+      "title": "PKM2 promotes angiotensin-II-induced cardiac remodelling by activating TGF-\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1582-1838",
+        "1582-4934",
+        "0000-0002",
+        "0002-6038",
+        "2217s",
+        "2211s"
+      ]
+    },
+    {
+      "id": "T050",
+      "pmid": "34601105",
+      "pmcid": "PMC8627456",
+      "title": "Fabrication and characterization methods for investigating cell-matrix interactions in environments possessing spatial orientation heterogeneity.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "PMC HTML fallback",
+      "top_mentions": [
+        "420\u2013428",
+        "2 \u2013 5",
+        "6 \u2013 9",
+        "6 weeks",
+        "4.1mg",
+        "10mg"
+      ]
+    },
+    {
+      "id": "T052",
+      "pmid": "31141605",
+      "pmcid": "PMC6807994",
+      "title": "Effects of Collagen Heterogeneity on Myocardial Infarct Mechanics in a Multiscale Fiber Network Model.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "PMC HTML fallback",
+      "top_mentions": [
+        "7-105",
+        "7-105",
+        "401-3",
+        "401-3",
+        "4 \u2013 10",
+        "12 \u2013 15"
+      ]
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "pmcid": "PMC3914851",
+      "title": "A model to determine the effect of collagen fiber alignment on heart function post myocardial infarction.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1742-4682",
+        "1742-4682",
+        "11-6",
+        "1742-4682",
+        "11-6",
+        "7 - 9"
+      ]
+    },
+    {
+      "id": "T056",
+      "pmid": "19897714",
+      "pmcid": "PMC2806135",
+      "title": "Evolution of scar structure, mechanics, and ventricular function after myocardial infarction in the rat.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "PMC HTML fallback",
+      "top_mentions": [
+        "80 mg",
+        "5 mg",
+        "7-0",
+        "0.05 mg",
+        "12 h",
+        "297 \u00b1 29"
+      ]
+    }
+  ]
+}

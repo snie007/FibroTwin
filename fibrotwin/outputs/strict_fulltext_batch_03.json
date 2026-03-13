@@ -1,0 +1,167 @@
+{
+  "batch_index": 3,
+  "batch_size": 10,
+  "n_fulltext_unreviewed": 30,
+  "rows": [
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "pmcid": "PMC10613155",
+      "title": "A homogenized constrained mixture model of cardiac growth and remodeling: analyzing mechanobiological stability and reversal.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "023-01747",
+        "1983\u20132002",
+        "023-01747",
+        "80 to 120",
+        "1 s",
+        "2 - 1"
+      ]
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "pmcid": "PMC12953441",
+      "title": "Mass spectrometry-based multi-omics analysis elucidates immune microenvironmental characteristics and the risk of distant metastasis in N1c colorectal cancer.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "p < 0.01",
+        "1664-3224",
+        "2025-1",
+        "18-80",
+        "10 \u03bcg",
+        "5X"
+      ]
+    },
+    {
+      "id": "T066",
+      "pmid": "41683598",
+      "pmcid": "PMC12897412",
+      "title": "Activation of Cannabinoid Receptor 1 Enhances Wound Healing by Promoting the Proliferative Phase.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1422-0067",
+        "27-01171",
+        "0000-0003",
+        "0791-1838",
+        "0000-0003",
+        "2777-5239"
+      ]
+    },
+    {
+      "id": "T069",
+      "pmid": "41658005",
+      "pmcid": "PMC12876252",
+      "title": "Staphylococcus aureus",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "2.0 \u03bcg",
+        "0.5 \u03bcg",
+        "2 mg",
+        "2 h",
+        "20 mg",
+        "2.5 mg"
+      ]
+    },
+    {
+      "id": "T070",
+      "pmid": "41657731",
+      "pmcid": "PMC12876173",
+      "title": "- Centella asiatica in vitro in vivo",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "99.9 \u00b1 0.1",
+        "p < 0.05",
+        "3 \u2013 6",
+        "72\u2005h",
+        "7\u2009days",
+        "30\u2005mg"
+      ]
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "pmcid": "PMC12889168",
+      "title": "The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "0146-0404",
+        "1552-5783",
+        "25-44353",
+        "3 to 6",
+        "3\u20136",
+        "2 hours"
+      ]
+    },
+    {
+      "id": "T078",
+      "pmid": "41608354",
+      "pmcid": "PMC12835494",
+      "title": "Photocrosslinkable Chitosan Quaternary Ammonium Salt-Based Ternary Hydrogel with Fibroblast Growth Factor 21 for Diabetic Wound Healing.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1226-4601",
+        "2055-7124",
+        "0000-0001",
+        "7319-0034",
+        "0000-0002",
+        "3809-9611"
+      ]
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "pmcid": "PMC12845037",
+      "title": "Investigation of the Efficacy and Mechanism of Monoacylglycerol Lipase Inhibitors in Diabetic Foot Ulcers.",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "1424-8247",
+        "19-00171",
+        "0009-0005",
+        "1142-4647",
+        "0009-0008",
+        "5915-2806"
+      ]
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "pmcid": "PMC12845186",
+      "title": "\u00ae",
+      "n_numeric_mentions": 12,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "41-76",
+        "428-65",
+        "41-21",
+        "314-69",
+        "7 days",
+        "15 mg"
+      ]
+    },
+    {
+      "id": "T024",
+      "pmid": "39715792",
+      "pmcid": "PMC11879844",
+      "title": "4-Hydroxychalcone attenuates AngII-induced cardiac remodeling and dysfunction via regulating PI3K/AKT pathway.",
+      "n_numeric_mentions": 8,
+      "fulltext_route": "EuropePMC fullTextXML",
+      "top_mentions": [
+        "300\u2009ng",
+        "2 weeks",
+        "40\u2009mg",
+        "024-02068",
+        "1054\u20131067",
+        "20\u2009mg"
+      ]
+    }
+  ]
+}
