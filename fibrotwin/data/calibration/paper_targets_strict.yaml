@@ -1,0 +1,34 @@
+version: 1
+policy:
+  - Hard anchors only: numeric endpoints explicitly reported in paper results/figures/tables.
+  - No template bands and no inferred placeholders.
+  - If no hard anchor is available, test stays unanchored.
+
+strict_tests:
+  T007:
+    pmid: 32611237
+    comparator: fold
+    band: [1.5, 2.5]
+    endpoint: pro-fibrotic pathway/protein increase in failing hearts
+    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5–2.5 fold increase) in failing hearts"
+    source_level: abstract_text
+
+unanchored_tests:
+  T001:
+    reason: no explicit collagen/profibrotic magnitude found yet in machine-readable text
+  T002:
+    reason: extracted values are metadata/journal identifiers, not endpoint results
+  T003:
+    reason: extracted values are metadata/journal identifiers, not endpoint results
+  T004:
+    reason: extracted values mainly protocol/environment values, not fibrosis endpoint magnitude
+  T005:
+    reason: review-style ranges and references; no single direct endpoint magnitude parsed
+  T006:
+    reason: has dose/time and directional outcomes but no explicit effect-size number extracted
+  T008:
+    reason: mentions improved function at 6 weeks without explicit %/absolute effect size extracted
+  T009:
+    reason: p-values and directionality present, no explicit magnitude extracted
+  T010:
+    reason: protocol time windows extracted; no direct remodeling magnitude parsed

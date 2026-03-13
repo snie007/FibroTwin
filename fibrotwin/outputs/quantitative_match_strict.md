@@ -1,7 +1,9 @@
 # Strict Paper-Anchored Match
 
-- n: 0
+- Strict anchored tests scored: 1
 - PASS: 0
-- FAIL: 0
+- FAIL: 1
+- Unavailable comparator: 0
+- Declared unanchored tests (current batch): 9
 
-No template/curated overrides included.
+Strict hard-anchored mode: only manually curated paper-reported quantitative endpoints are scored.

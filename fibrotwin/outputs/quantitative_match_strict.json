@@ -1,9 +1,27 @@
 {
-  "n_strict_anchored": 0,
+  "n_strict_anchored": 1,
   "counts": {
     "PASS": 0,
-    "FAIL": 0
+    "FAIL": 1,
+    "UNAVAILABLE_MODEL_COMPARATOR": 0
   },
-  "rows": [],
-  "definition": "Strict paper-anchored only (no templates/curated overrides)."
+  "rows": [
+    {
+      "id": "T007",
+      "pmid": 32611237,
+      "category": "collagen_dynamics",
+      "status": "FAIL",
+      "comparator": "fold",
+      "paper_band": [
+        1.5,
+        2.5
+      ],
+      "model_value": 1.2532262079066356,
+      "endpoint": "pro-fibrotic pathway/protein increase in failing hearts",
+      "source_excerpt": "EPRS was induced at mRNA and protein levels (~1.5\u20132.5 fold increase) in failing hearts",
+      "source_level": "abstract_text"
+    }
+  ],
+  "n_unanchored_declared": 9,
+  "definition": "Strict hard-anchored mode: only manually curated paper-reported quantitative endpoints are scored."
 }
