@@ -1,0 +1,115 @@
+{
+  "batch_size": 10,
+  "rows": [
+    {
+      "id": "T006",
+      "pmid": "34023353",
+      "pmcid": "PMC8522337",
+      "title": "Dimethyl fumarate preserves left ventricular infarct integrity following myocardial infarction via modulation of cardiac macrophage and fibroblast oxidative metabolism.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34023353/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8522337/",
+      "n_numeric_mentions": 14,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T009",
+      "pmid": "29030341",
+      "pmcid": "PMC5867652",
+      "title": "Macrophage overexpression of matrix metalloproteinase-9 in aged mice improves diastolic physiology and cardiac wound healing after myocardial infarction.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29030341/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5867652/",
+      "n_numeric_mentions": 14,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "pmcid": "PMC12927123",
+      "title": "Photobiomodulation and Sericin in the Treatment of Second-Degree Burns Induced in Wistar Rats.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41728737/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12927123/",
+      "n_numeric_mentions": 14,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "pmcid": "PMC12891142",
+      "title": "Therapeutic value of mesenchymal stem cell-derived extracellular vesicles in hypertrophic and keloid scars: a systematic review and meta-analysis.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41684838/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12891142/",
+      "n_numeric_mentions": 14,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T013",
+      "pmid": "26383724",
+      "pmcid": "PMC4575409",
+      "title": "A Novel Collagen Matricryptin Reduces Left Ventricular Dilation Post-Myocardial Infarction by Promoting Scar Formation and Angiogenesis.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26383724/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4575409/",
+      "n_numeric_mentions": 13,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T001",
+      "pmid": "37569674",
+      "pmcid": "PMC10418963",
+      "title": "New Insights into the Reparative Angiogenesis after Myocardial Infarction.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37569674/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10418963/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T002",
+      "pmid": "37371059",
+      "pmcid": "PMC10296995",
+      "title": "Phospholipid Encapsulation of an Anti-Fibrotic Endopeptide to Enhance Cellular Uptake and Myocardial Retention.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37371059/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10296995/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T003",
+      "pmid": "36826549",
+      "pmcid": "PMC9963048",
+      "title": "Ciclopirox Inhibition of eIF5A Hypusination Attenuates Fibroblast Activation and Cardiac Fibrosis.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/36826549/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9963048/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T004",
+      "pmid": "34643044",
+      "pmcid": "PMC8581305",
+      "title": "MicroRNA-146b-5p promotes atrial fibrosis in atrial fibrillation by repressing TIMP4.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34643044/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8581305/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T005",
+      "pmid": "34568449",
+      "pmcid": "PMC8460777",
+      "title": "Does the Heart Want What It Wants? A Case for Self-Adapting, Mechano-Sensitive Therapies After Infarction.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34568449/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8460777/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    }
+  ]
+}

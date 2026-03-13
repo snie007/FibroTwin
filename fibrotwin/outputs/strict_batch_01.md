@@ -1,0 +1,34 @@
+# Strict Curation Batch 01
+
+- Items: 10
+
+- T006 | PMID 34023353 | infarct_remodeling | mentions=14 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC8522337/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/34023353/
+- T009 | PMID 29030341 | infarct_remodeling | mentions=14 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC5867652/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/29030341/
+- T060 | PMID 41728737 | collagen_dynamics | mentions=14 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12927123/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41728737/
+- T065 | PMID 41684838 | infarct_remodeling | mentions=14 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12891142/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41684838/
+- T013 | PMID 26383724 | infarct_remodeling | mentions=13 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC4575409/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/26383724/
+- T001 | PMID 37569674 | infarct_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10418963/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/37569674/
+- T002 | PMID 37371059 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10296995/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/37371059/
+- T003 | PMID 36826549 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC9963048/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/36826549/
+- T004 | PMID 34643044 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC8581305/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/34643044/
+- T005 | PMID 34568449 | infarct_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC8460777/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/34568449/
