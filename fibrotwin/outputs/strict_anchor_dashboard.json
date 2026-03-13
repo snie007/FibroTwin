@@ -1,7 +1,7 @@
 {
   "candidate_count": 26,
   "approved_count": 2,
-  "rejected_count": 21,
+  "rejected_count": 31,
   "strict_scored_count": 2,
   "strict_counts": {
     "PASS": 1,
