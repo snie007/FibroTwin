@@ -1,0 +1,22 @@
+# Schema Extraction Report
+
+- T001 (infarct_remodeling): matched 258
+- T002 (collagen_dynamics): matched 86
+- T003 (collagen_dynamics): matched 58
+- T004 (collagen_dynamics): matched 70
+- T005 (infarct_remodeling): matched 320
+- T006 (infarct_remodeling): matched 0
+- T007 (collagen_dynamics): matched 0
+- T008 (infarct_remodeling): matched 0
+- T009 (infarct_remodeling): matched 0
+- T010 (growth_remodeling): matched 0
+- T011 (collagen_dynamics): matched 0
+- T012 (collagen_dynamics): matched 32
+- T013 (infarct_remodeling): matched 0
+- T014 (fibroblast_signaling): matched 0
+- T015 (growth_remodeling): matched 0
+- T016 (infarct_remodeling): matched 0
+- T017 (fibroblast_signaling): matched 0
+- T018 (fibroblast_signaling): matched 70
+- T019 (collagen_dynamics): matched 0
+- T020 (fibroblast_signaling): matched 0

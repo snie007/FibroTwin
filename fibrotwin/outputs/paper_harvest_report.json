@@ -1,0 +1,265 @@
+{
+  "n": 20,
+  "rows": [
+    {
+      "id": "T001",
+      "pmid": "37569674",
+      "title": "New Insights into the Reparative Angiogenesis after Myocardial Infarction.",
+      "pmcid": "PMC10418963",
+      "doi": "10.3390/ijms241512298",
+      "harvest": {
+        "pmcid": "PMC10418963",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T002",
+      "pmid": "37371059",
+      "title": "Phospholipid Encapsulation of an Anti-Fibrotic Endopeptide to Enhance Cellular Uptake and Myocardial Retention.",
+      "pmcid": "PMC10296995",
+      "doi": "10.3390/cells12121589",
+      "harvest": {
+        "pmcid": "PMC10296995",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T003",
+      "pmid": "36826549",
+      "title": "Ciclopirox Inhibition of eIF5A Hypusination Attenuates Fibroblast Activation and Cardiac Fibrosis.",
+      "pmcid": "PMC9963048",
+      "doi": "10.3390/jcdd10020052",
+      "harvest": {
+        "pmcid": "PMC9963048",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T004",
+      "pmid": "34643044",
+      "title": "MicroRNA-146b-5p promotes atrial fibrosis in atrial fibrillation by repressing TIMP4.",
+      "pmcid": "PMC8581305",
+      "doi": "10.1111/jcmm.16985",
+      "harvest": {
+        "pmcid": "PMC8581305",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T005",
+      "pmid": "34568449",
+      "title": "Does the Heart Want What It Wants? A Case for Self-Adapting, Mechano-Sensitive Therapies After Infarction.",
+      "pmcid": "PMC8460777",
+      "doi": "10.3389/fcvm.2021.705100",
+      "harvest": {
+        "pmcid": "PMC8460777",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T006",
+      "pmid": "34023353",
+      "title": "Dimethyl fumarate preserves left ventricular infarct integrity following myocardial infarction via modulation of cardiac macrophage and fibroblast oxidative metabolism.",
+      "pmcid": "PMC8522337",
+      "doi": "10.1016/j.yjmcc.2021.05.008",
+      "harvest": {
+        "pmcid": "PMC8522337",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T007",
+      "pmid": "32611237",
+      "title": "Glutamyl-Prolyl-tRNA Synthetase Regulates Proline-Rich Pro-Fibrotic Protein Synthesis During Cardiac Fibrosis.",
+      "pmcid": "PMC7484271",
+      "doi": "10.1161/CIRCRESAHA.119.315999",
+      "harvest": {
+        "pmcid": "PMC7484271",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T008",
+      "pmid": "29631164",
+      "title": "Injectable hyaluronic acid based microrods provide local micromechanical and biochemical cues to attenuate cardiac fibrosis after myocardial infarction.",
+      "pmcid": "PMC5931400",
+      "doi": "10.1016/j.biomaterials.2018.03.042",
+      "harvest": {
+        "pmcid": "PMC5931400",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T009",
+      "pmid": "29030341",
+      "title": "Macrophage overexpression of matrix metalloproteinase-9 in aged mice improves diastolic physiology and cardiac wound healing after myocardial infarction.",
+      "pmcid": "PMC5867652",
+      "doi": "10.1152/ajpheart.00453.2017",
+      "harvest": {
+        "pmcid": "PMC5867652",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T010",
+      "pmid": "28404615",
+      "title": "Myeloperoxidase Mediates Postischemic Arrhythmogenic Ventricular Remodeling.",
+      "pmcid": "PMC5482785",
+      "doi": "10.1161/CIRCRESAHA.117.310870",
+      "harvest": {
+        "pmcid": "PMC5482785",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T011",
+      "pmid": "27619160",
+      "title": "The role of cardiac fibroblasts in post-myocardial heart tissue repair.",
+      "pmcid": "",
+      "doi": "10.1016/j.yexmp.2016.09.002",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T012",
+      "pmid": "26601107",
+      "title": "Computational Approaches to Understanding the Role of Fibroblast-Myocyte Interactions in Cardiac Arrhythmogenesis.",
+      "pmcid": "PMC4637154",
+      "doi": "10.1155/2015/465714",
+      "harvest": {
+        "pmcid": "PMC4637154",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T013",
+      "pmid": "26383724",
+      "title": "A Novel Collagen Matricryptin Reduces Left Ventricular Dilation Post-Myocardial Infarction by Promoting Scar Formation and Angiogenesis.",
+      "pmcid": "PMC4575409",
+      "doi": "10.1016/j.jacc.2015.07.035",
+      "harvest": {
+        "pmcid": "PMC4575409",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T014",
+      "pmid": "41680862",
+      "title": "PRIP/PLCL deficiency activates PI3K-AKT-YAP signaling and promotes organ fibrosis.",
+      "pmcid": "",
+      "doi": "10.1186/s12964-026-02717-2",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T015",
+      "pmid": "41568549",
+      "title": "Signal Recognition Granule Receptor Beta Subunit Promotes Arrhythmogenic Remodeling in the Heart Failure Mice.",
+      "pmcid": "",
+      "doi": "10.1161/JAHA.125.044103",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T016",
+      "pmid": "41544467",
+      "title": "Single-nucleus analysis reveals Dengzhan Shengmai capsule prevents cardiac fibrosis after myocardial infarction in rat by targeting Ltbp2",
+      "pmcid": "",
+      "doi": "10.1016/j.phymed.2026.157811",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T017",
+      "pmid": "40788381",
+      "title": "HSPA9/HMGB1 regulates myocardial fibrosis in atrial fibrillation via TGF-\u03b21/Smad pathway and autophagy.",
+      "pmcid": "",
+      "doi": "10.1007/s11033-025-10914-4",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T018",
+      "pmid": "40688308",
+      "title": "",
+      "pmcid": "PMC12268815",
+      "doi": "10.21037/jtd-2025-1088",
+      "harvest": {
+        "pmcid": "PMC12268815",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T019",
+      "pmid": "40538115",
+      "title": "Computational modelling of cardiac fibroblast signalling reveals a key role for Ca",
+      "pmcid": "PMC12317378",
+      "doi": "10.1113/JP289040",
+      "harvest": {
+        "pmcid": "PMC12317378",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T020",
+      "pmid": "40019607",
+      "title": "SFRP4 Knockdown Attenuates Dsg2-Deficient Arrhythmogenic Cardiomyopathy by Down-Regulating TGF-\u03b2 and Smad3.",
+      "pmcid": "",
+      "doi": "10.1007/s10528-025-11052-z",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    }
+  ]
+}

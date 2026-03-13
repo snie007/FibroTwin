@@ -1,0 +1,22 @@
+# Paper Harvest Report
+
+- T001 PMID 37569674 PMCID PMC10418963 html=True xml=True n_figs=0
+- T002 PMID 37371059 PMCID PMC10296995 html=True xml=True n_figs=0
+- T003 PMID 36826549 PMCID PMC9963048 html=True xml=True n_figs=0
+- T004 PMID 34643044 PMCID PMC8581305 html=True xml=True n_figs=0
+- T005 PMID 34568449 PMCID PMC8460777 html=True xml=True n_figs=0
+- T006 PMID 34023353 PMCID PMC8522337 html=True xml=False n_figs=0
+- T007 PMID 32611237 PMCID PMC7484271 html=True xml=False n_figs=0
+- T008 PMID 29631164 PMCID PMC5931400 html=True xml=False n_figs=0
+- T009 PMID 29030341 PMCID PMC5867652 html=True xml=False n_figs=0
+- T010 PMID 28404615 PMCID PMC5482785 html=True xml=False n_figs=0
+- T011 PMID 27619160 PMCID  html=False xml=False n_figs=0
+- T012 PMID 26601107 PMCID PMC4637154 html=True xml=True n_figs=0
+- T013 PMID 26383724 PMCID PMC4575409 html=True xml=False n_figs=0
+- T014 PMID 41680862 PMCID  html=False xml=False n_figs=0
+- T015 PMID 41568549 PMCID  html=False xml=False n_figs=0
+- T016 PMID 41544467 PMCID  html=False xml=False n_figs=0
+- T017 PMID 40788381 PMCID  html=False xml=False n_figs=0
+- T018 PMID 40688308 PMCID PMC12268815 html=True xml=True n_figs=0
+- T019 PMID 40538115 PMCID PMC12317378 html=False xml=False n_figs=0
+- T020 PMID 40019607 PMCID  html=False xml=False n_figs=0
