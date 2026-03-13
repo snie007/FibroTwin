@@ -1,29 +1,29 @@
 {
   "n_tests": 5,
-  "n_pass": 4,
-  "pass_rate": 0.8,
+  "n_pass": 5,
+  "pass_rate": 1.0,
   "tests": [
     {
       "id": "VC01",
       "domain": "Cell signaling",
       "measurement": "Profibrotic signaling increase under high biochemical stimulus",
       "scenario": "high_signal_only",
-      "model_value": 0.5233303308486938,
+      "model_value": 0.6519423127174377,
       "experimental_band": [
         0.65,
         0.95
       ],
       "source_note": "Cardiac fibroblast signaling studies (Saucerman-related network literature)",
       "pmid_hint": "27017945",
-      "pass": false,
-      "relative_error_to_band_mid": 0.34583708643913275
+      "pass": true,
+      "relative_error_to_band_mid": 0.18507210910320288
     },
     {
       "id": "VC02",
       "domain": "Cell phenotype",
       "measurement": "Myofibroblast fraction elevated under profibrotic signaling",
       "scenario": "high_signal_only",
-      "model_value": 1.0,
+      "model_value": 0.887499988079071,
       "experimental_band": [
         0.55,
         1.0
@@ -31,14 +31,14 @@
       "source_note": "Fibroblast-to-myofibroblast transition studies",
       "pmid_hint": "26608708",
       "pass": true,
-      "relative_error_to_band_mid": 0.29032258064516125
+      "relative_error_to_band_mid": 0.1451612749407368
     },
     {
       "id": "VC03",
       "domain": "Tissue anisotropy",
       "measurement": "Collagen/fibre alignment increases with mechanical loading",
       "scenario": "high_load_only",
-      "model_value": 0.9136166572570801,
+      "model_value": 0.9165487885475159,
       "experimental_band": [
         0.75,
         1.0
@@ -46,14 +46,14 @@
       "source_note": "Mechanoregulated alignment in infarct/wound remodeling",
       "pmid_hint": "22495588",
       "pass": true,
-      "relative_error_to_band_mid": 0.04413332257952009
+      "relative_error_to_band_mid": 0.047484329768589566
     },
     {
       "id": "VC04",
       "domain": "Infarct remodeling",
       "measurement": "Infarct core collagen exceeds remote/global non-infarct load+signal case",
       "scenario": "infarct_high_load_high_signal",
-      "model_value": 19.21731948852539,
+      "model_value": 15.401455879211426,
       "experimental_band": [
         10.0,
         200.0
@@ -61,14 +61,14 @@
       "source_note": "Post-MI scar collagen enrichment observations",
       "pmid_hint": "7855157",
       "pass": true,
-      "relative_error_to_band_mid": 0.8169779096330915
+      "relative_error_to_band_mid": 0.853319467817034
     },
     {
       "id": "VC05",
       "domain": "Coupled mechano-chemical response",
       "measurement": "Load+signal combined produces high collagen burden",
       "scenario": "high_load_high_signal",
-      "model_value": 10.667165756225586,
+      "model_value": 10.2949857711792,
       "experimental_band": [
         5.0,
         120.0
@@ -76,7 +76,7 @@
       "source_note": "Combined mechanical and biochemical fibrosis drive",
       "pmid_hint": "26608708",
       "pass": true,
-      "relative_error_to_band_mid": 0.8293253479003906
+      "relative_error_to_band_mid": 0.8352802276611329
     }
   ],
   "notes": [

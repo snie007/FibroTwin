@@ -9,7 +9,7 @@
       "p_mean_final": 0.5372933149337769,
       "myo_frac_final": 0.800000011920929,
       "ac_align_x_final": 0.911547839641571,
-      "run_dir": "outputs/20260310_111528"
+      "run_dir": "outputs/20260313_092722"
     },
     {
       "scenario": "high_load_only",
@@ -20,7 +20,7 @@
       "p_mean_final": 0.5653074979782104,
       "myo_frac_final": 0.875,
       "ac_align_x_final": 0.9165487885475159,
-      "run_dir": "outputs/20260310_111531"
+      "run_dir": "outputs/20260313_092725"
     },
     {
       "scenario": "high_signal_only",
@@ -31,7 +31,7 @@
       "p_mean_final": 0.6519423127174377,
       "myo_frac_final": 0.887499988079071,
       "ac_align_x_final": 0.9115098714828491,
-      "run_dir": "outputs/20260310_111534"
+      "run_dir": "outputs/20260313_092729"
     },
     {
       "scenario": "high_load_high_signal",
@@ -42,7 +42,7 @@
       "p_mean_final": 0.6724869608879089,
       "myo_frac_final": 0.887499988079071,
       "ac_align_x_final": 0.9179109334945679,
-      "run_dir": "outputs/20260310_111538"
+      "run_dir": "outputs/20260313_092732"
     },
     {
       "scenario": "infarct_high_load_high_signal",
@@ -53,7 +53,7 @@
       "p_mean_final": 0.6726627349853516,
       "myo_frac_final": 0.887499988079071,
       "ac_align_x_final": 0.9183674454689026,
-      "run_dir": "outputs/20260310_111541",
+      "run_dir": "outputs/20260313_092735",
       "c_core": 15.401455879211426,
       "c_border": 9.943146705627441,
       "c_remote": 10.253044128417969,
@@ -74,7 +74,7 @@
       "p_mean_final": 0.6530730724334717,
       "myo_frac_final": 0.875,
       "ac_align_x_final": 0.9178648591041565,
-      "run_dir": "outputs/20260310_111544"
+      "run_dir": "outputs/20260313_092739"
     },
     {
       "scenario": "drug_at1r_block",
@@ -85,7 +85,7 @@
       "p_mean_final": 0.6462903618812561,
       "myo_frac_final": 0.887499988079071,
       "ac_align_x_final": 0.9177965521812439,
-      "run_dir": "outputs/20260310_111547"
+      "run_dir": "outputs/20260313_092742"
     },
     {
       "scenario": "drug_dual_block",
@@ -96,7 +96,7 @@
       "p_mean_final": 0.6253631114959717,
       "myo_frac_final": 0.875,
       "ac_align_x_final": 0.9179905652999878,
-      "run_dir": "outputs/20260310_111550"
+      "run_dir": "outputs/20260313_092745"
     }
   ],
   "checks": [
