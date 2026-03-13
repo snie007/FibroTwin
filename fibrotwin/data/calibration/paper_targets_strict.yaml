@@ -1,34 +1,180 @@
 version: 1
 policy:
-  - Hard anchors only: numeric endpoints explicitly reported in paper results/figures/tables.
-  - No template bands and no inferred placeholders.
-  - If no hard anchor is available, test stays unanchored.
-
+- 'Hard anchors only: numeric endpoints explicitly reported in paper results/figures/tables.'
+- No template bands and no inferred placeholders.
+- If no hard anchor is available, test stays unanchored.
 strict_tests:
   T007:
     pmid: 32611237
     comparator: fold
-    band: [1.5, 2.5]
+    band:
+    - 1.5
+    - 2.5
     endpoint: pro-fibrotic pathway/protein increase in failing hearts
-    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5–2.5 fold increase) in failing hearts"
+    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5\u20132.5 fold\
+      \ increase) in failing hearts"
     source_level: abstract_text
-
 unanchored_tests:
   T001:
-    reason: no explicit collagen/profibrotic magnitude found yet in machine-readable text
+    reason: no explicit collagen/profibrotic magnitude found yet in machine-readable
+      text
   T002:
     reason: extracted values are metadata/journal identifiers, not endpoint results
   T003:
     reason: extracted values are metadata/journal identifiers, not endpoint results
   T004:
-    reason: extracted values mainly protocol/environment values, not fibrosis endpoint magnitude
+    reason: extracted values mainly protocol/environment values, not fibrosis endpoint
+      magnitude
   T005:
-    reason: review-style ranges and references; no single direct endpoint magnitude parsed
+    reason: review-style ranges and references; no single direct endpoint magnitude
+      parsed
   T006:
-    reason: has dose/time and directional outcomes but no explicit effect-size number extracted
+    reason: has dose/time and directional outcomes but no explicit effect-size number
+      extracted
   T008:
-    reason: mentions improved function at 6 weeks without explicit %/absolute effect size extracted
+    reason: mentions improved function at 6 weeks without explicit %/absolute effect
+      size extracted
   T009:
     reason: p-values and directionality present, no explicit magnitude extracted
   T010:
     reason: protocol time windows extracted; no direct remodeling magnitude parsed
+  T011:
+    reason: pending full-paper manual quantitative curation
+  T012:
+    reason: pending full-paper manual quantitative curation
+  T013:
+    reason: pending full-paper manual quantitative curation
+  T014:
+    reason: pending full-paper manual quantitative curation
+  T015:
+    reason: pending full-paper manual quantitative curation
+  T016:
+    reason: pending full-paper manual quantitative curation
+  T017:
+    reason: pending full-paper manual quantitative curation
+  T018:
+    reason: pending full-paper manual quantitative curation
+  T019:
+    reason: pending full-paper manual quantitative curation
+  T020:
+    reason: pending full-paper manual quantitative curation
+  T021:
+    reason: pending full-paper manual quantitative curation
+  T022:
+    reason: pending full-paper manual quantitative curation
+  T023:
+    reason: pending full-paper manual quantitative curation
+  T024:
+    reason: pending full-paper manual quantitative curation
+  T025:
+    reason: pending full-paper manual quantitative curation
+  T026:
+    reason: pending full-paper manual quantitative curation
+  T027:
+    reason: pending full-paper manual quantitative curation
+  T028:
+    reason: pending full-paper manual quantitative curation
+  T029:
+    reason: pending full-paper manual quantitative curation
+  T030:
+    reason: pending full-paper manual quantitative curation
+  T031:
+    reason: pending full-paper manual quantitative curation
+  T032:
+    reason: pending full-paper manual quantitative curation
+  T033:
+    reason: pending full-paper manual quantitative curation
+  T034:
+    reason: pending full-paper manual quantitative curation
+  T035:
+    reason: pending full-paper manual quantitative curation
+  T036:
+    reason: pending full-paper manual quantitative curation
+  T037:
+    reason: pending full-paper manual quantitative curation
+  T038:
+    reason: pending full-paper manual quantitative curation
+  T039:
+    reason: pending full-paper manual quantitative curation
+  T040:
+    reason: pending full-paper manual quantitative curation
+  T041:
+    reason: pending full-paper manual quantitative curation
+  T042:
+    reason: pending full-paper manual quantitative curation
+  T043:
+    reason: pending full-paper manual quantitative curation
+  T044:
+    reason: pending full-paper manual quantitative curation
+  T045:
+    reason: pending full-paper manual quantitative curation
+  T046:
+    reason: pending full-paper manual quantitative curation
+  T047:
+    reason: pending full-paper manual quantitative curation
+  T048:
+    reason: pending full-paper manual quantitative curation
+  T049:
+    reason: pending full-paper manual quantitative curation
+  T050:
+    reason: pending full-paper manual quantitative curation
+  T051:
+    reason: pending full-paper manual quantitative curation
+  T052:
+    reason: pending full-paper manual quantitative curation
+  T053:
+    reason: pending full-paper manual quantitative curation
+  T054:
+    reason: pending full-paper manual quantitative curation
+  T055:
+    reason: pending full-paper manual quantitative curation
+  T056:
+    reason: pending full-paper manual quantitative curation
+  T057:
+    reason: pending full-paper manual quantitative curation
+  T058:
+    reason: pending full-paper manual quantitative curation
+  T059:
+    reason: pending full-paper manual quantitative curation
+  T060:
+    reason: pending full-paper manual quantitative curation
+  T061:
+    reason: pending full-paper manual quantitative curation
+  T062:
+    reason: pending full-paper manual quantitative curation
+  T063:
+    reason: pending full-paper manual quantitative curation
+  T064:
+    reason: pending full-paper manual quantitative curation
+  T065:
+    reason: pending full-paper manual quantitative curation
+  T066:
+    reason: pending full-paper manual quantitative curation
+  T067:
+    reason: pending full-paper manual quantitative curation
+  T068:
+    reason: pending full-paper manual quantitative curation
+  T069:
+    reason: pending full-paper manual quantitative curation
+  T070:
+    reason: pending full-paper manual quantitative curation
+  T071:
+    reason: pending full-paper manual quantitative curation
+  T072:
+    reason: pending full-paper manual quantitative curation
+  T073:
+    reason: pending full-paper manual quantitative curation
+  T074:
+    reason: pending full-paper manual quantitative curation
+  T075:
+    reason: pending full-paper manual quantitative curation
+  T076:
+    reason: pending full-paper manual quantitative curation
+  T077:
+    reason: pending full-paper manual quantitative curation
+  T078:
+    reason: pending full-paper manual quantitative curation
+  T079:
+    reason: pending full-paper manual quantitative curation
+  T080:
+    reason: pending full-paper manual quantitative curation
