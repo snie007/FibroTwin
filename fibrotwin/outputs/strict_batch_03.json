@@ -1,0 +1,116 @@
+{
+  "batch_size": 10,
+  "batch_index": 3,
+  "rows": [
+    {
+      "id": "T036",
+      "pmid": "37227779",
+      "pmcid": "PMC10371345",
+      "title": "Ablation of C-type natriuretic peptide/cGMP signaling in fibroblasts exacerbates adverse cardiac remodeling in mice.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37227779/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10371345/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "pmcid": "PMC9161881",
+      "title": "The crystallin alpha B (HSPB5)-tripartite motif containing 33 (TRIM33) axis mediates myocardial fibrosis induced by angiotensinogen II through transforming growth factor-\u03b2 (TGF-\u03b21)-Smad3/4 signaling.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35333698/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9161881/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T042",
+      "pmid": "35143327",
+      "pmcid": "PMC9008740",
+      "title": "Second Heart Field-Derived Cells Contribute to Angiotensin II-Mediated Ascending Aortopathies.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35143327/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9008740/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "pmcid": "PMC8813277",
+      "title": "Hdac8 Inhibitor Alleviates Transverse Aortic Constriction-Induced Heart Failure in Mice by Downregulating Ace1.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35126818/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8813277/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "pmcid": "PMC8576910",
+      "title": "STING protects against cardiac dysfunction and remodelling by blocking autophagy.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34749750/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8576910/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T046",
+      "pmid": "34687136",
+      "pmcid": "PMC8581335",
+      "title": "PKM2 promotes angiotensin-II-induced cardiac remodelling by activating TGF-\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34687136/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8581335/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T050",
+      "pmid": "34601105",
+      "pmcid": "PMC8627456",
+      "title": "Fabrication and characterization methods for investigating cell-matrix interactions in environments possessing spatial orientation heterogeneity.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/34601105/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8627456/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T052",
+      "pmid": "31141605",
+      "pmcid": "PMC6807994",
+      "title": "Effects of Collagen Heterogeneity on Myocardial Infarct Mechanics in a Multiscale Fiber Network Model.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31141605/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6807994/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "pmcid": "PMC3914851",
+      "title": "A model to determine the effect of collagen fiber alignment on heart function post myocardial infarction.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/24456675/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3914851/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T055",
+      "pmid": "22495588",
+      "pmcid": "PMC3477759",
+      "title": "Mechanical regulation of fibroblast migration and collagen remodelling in healing myocardial infarcts.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/22495588/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3477759/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    }
+  ]
+}
