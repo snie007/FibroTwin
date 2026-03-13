@@ -1,17 +1,17 @@
 {
   "n_with_numeric_mentions": 51,
-  "n_curated_overrides_used": 32,
+  "n_curated_overrides_used": 34,
   "counts": {
-    "PASS": 36,
+    "PASS": 38,
     "PARTIAL": 6,
     "FAIL": 0,
-    "UNMAPPED": 2,
+    "UNMAPPED": 0,
     "NONCOMPARABLE": 7
   },
   "confidence_counts": {
-    "high": 33,
+    "high": 35,
     "medium": 0,
-    "low": 18
+    "low": 16
   },
   "fail_priority_by_confidence": {
     "high": 0,
@@ -685,9 +685,21 @@
       "comparator": "core_vs_remote_fold"
     },
     {
+      "curated_override": true,
       "id": "T066",
       "category": "cell_motion",
-      "status": "UNMAPPED"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "bounded motion-coupled deposition proxy index",
+      "paper_band": [
+        0.6,
+        1.0
+      ],
+      "model_value": 0.887499988079071,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
       "curated_override": true,
@@ -707,9 +719,21 @@
       "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T070",
       "category": "cell_motion",
-      "status": "UNMAPPED"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "bounded motion-coupled deposition proxy index",
+      "paper_band": [
+        0.6,
+        1.0
+      ],
+      "model_value": 0.887499988079071,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
       "id": "T072",

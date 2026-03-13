@@ -125,6 +125,11 @@ def model_values_for_category(cat, vp_by):
             out['percent'] = 100.0 * (x - b) / max(abs(b), 1e-8)
             out['fold'] = x / max(b, 1e-8)
             out['absolute'] = x
+    elif cat == 'cell_motion':
+        # observation mapping proxy for motion-coupled deposition tests
+        x = hs.get('myo_frac_final')
+        if x is not None:
+            out['absolute'] = x
     return out
 
 

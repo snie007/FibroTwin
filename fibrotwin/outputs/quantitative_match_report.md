@@ -1,17 +1,17 @@
 # Quantitative Match Report
 
 - Tests evaluated (with numeric mentions): 51
-- Curated overrides used: 32
-- PASS: 36
+- Curated overrides used: 34
+- PASS: 38
 - PARTIAL: 6
 - FAIL: 0
-- UNMAPPED: 2
+- UNMAPPED: 0
 - NONCOMPARABLE: 7
 
 ## Confidence counts
-- High confidence anchors: 33
+- High confidence anchors: 35
 - Medium confidence anchors: 0
-- Low confidence anchors: 18
+- Low confidence anchors: 16
 
 ## Prioritize these first
 - High-confidence FAIL/PARTIAL: 0
