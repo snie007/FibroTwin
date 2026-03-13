@@ -1,0 +1,9 @@
+{
+  "n_strict_anchored": 0,
+  "counts": {
+    "PASS": 0,
+    "FAIL": 0
+  },
+  "rows": [],
+  "definition": "Strict paper-anchored only (no templates/curated overrides)."
+}
