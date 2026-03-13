@@ -1,0 +1,34 @@
+# Strict Curation Batch 02
+
+- Items: 10
+
+- T008 | PMID 29631164 | infarct_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC5931400/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/29631164/
+- T010 | PMID 28404615 | growth_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC5482785/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/28404615/
+- T012 | PMID 26601107 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC4637154/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/26601107/
+- T018 | PMID 40688308 | fibroblast_signaling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12268815/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/40688308/
+- T022 | PMID 39895521 | fibroblast_signaling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12074743/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/39895521/
+- T023 | PMID 39730461 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11680569/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/39730461/
+- T026 | PMID 39527465 | fibroblast_signaling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11552651/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/39527465/
+- T030 | PMID 38899461 | fibroblast_signaling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11257802/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/38899461/
+- T033 | PMID 37999643 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC11219059/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/37999643/
+- T034 | PMID 37786576 | fibroblast_signaling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10541813/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/37786576/

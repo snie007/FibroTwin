@@ -1,0 +1,116 @@
+{
+  "batch_size": 10,
+  "batch_index": 2,
+  "rows": [
+    {
+      "id": "T008",
+      "pmid": "29631164",
+      "pmcid": "PMC5931400",
+      "title": "Injectable hyaluronic acid based microrods provide local micromechanical and biochemical cues to attenuate cardiac fibrosis after myocardial infarction.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/29631164/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5931400/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T010",
+      "pmid": "28404615",
+      "pmcid": "PMC5482785",
+      "title": "Myeloperoxidase Mediates Postischemic Arrhythmogenic Ventricular Remodeling.",
+      "category": "growth_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/28404615/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5482785/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T012",
+      "pmid": "26601107",
+      "pmcid": "PMC4637154",
+      "title": "Computational Approaches to Understanding the Role of Fibroblast-Myocyte Interactions in Cardiac Arrhythmogenesis.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/26601107/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4637154/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T018",
+      "pmid": "40688308",
+      "pmcid": "PMC12268815",
+      "title": "TIMP1 regulation of cardiac fibroblast proliferation via the TGF-\u03b2/Smad pathway in an in vitro model of atrial fibrillation.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/40688308/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12268815/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T022",
+      "pmid": "39895521",
+      "pmcid": "PMC12074743",
+      "title": "KLF12 Aggravates Angiotensin II-Induced Cardiac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39895521/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12074743/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "pmcid": "PMC11680569",
+      "title": "Effects of Empagliflozin and Dapagliflozin in alleviating cardiac fibrosis through SIRT6-mediated oxidative stress reduction.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39730461/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11680569/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T026",
+      "pmid": "39527465",
+      "pmcid": "PMC11552651",
+      "title": "Fibroblast-derived miR-425-5p alleviates cardiac remodelling in heart failure via inhibiting the TGF-\u03b21/Smad signalling.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/39527465/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11552651/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T030",
+      "pmid": "38899461",
+      "pmcid": "PMC11257802",
+      "title": "Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/38899461/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11257802/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T033",
+      "pmid": "37999643",
+      "pmcid": "PMC11219059",
+      "title": "Fibroblasts under pressure: cardiac fibroblast responses to hypertension and antihypertensive therapies.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37999643/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11219059/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T034",
+      "pmid": "37786576",
+      "pmcid": "PMC10541813",
+      "title": "Rivaroxaban, a direct inhibitor of coagulation factor Xa, attenuates adverse cardiac remodeling in rats by regulating the PAR-2 and TGF-\u03b21 signaling pathways.",
+      "category": "fibroblast_signaling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37786576/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10541813/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    }
+  ]
+}

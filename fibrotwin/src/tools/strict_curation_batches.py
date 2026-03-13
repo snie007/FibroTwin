@@ -5,7 +5,7 @@ import yaml
 ROOT = Path(__file__).resolve().parents[2]
 
 
-def main(batch_size=10):
+def main(batch_size=10, batch_index=1):
     strict = yaml.safe_load((ROOT / 'data' / 'calibration' / 'paper_targets_strict.yaml').read_text())
     un = strict.get('unanchored_tests', {})
     qe = json.loads((ROOT / 'outputs' / 'quantitative_evidence.json').read_text())
@@ -22,7 +22,9 @@ def main(batch_size=10):
         candidates.append((score, q.get('n_numeric_mentions', 0), tid, q, c))
     candidates.sort(key=lambda x: (x[0], x[1]), reverse=True)
 
-    batch = candidates[:batch_size]
+    start = (batch_index - 1) * batch_size
+    end = start + batch_size
+    batch = candidates[start:end]
     rows = []
     for _, _, tid, q, c in batch:
         rows.append({
@@ -37,19 +39,24 @@ def main(batch_size=10):
             'source_level': 'fulltext' if q.get('has_fulltext_extraction') else 'abstract',
         })
 
-    out = {'batch_size': batch_size, 'rows': rows}
-    (ROOT / 'outputs' / 'strict_batch_01.json').write_text(json.dumps(out, indent=2))
+    out = {'batch_size': batch_size, 'batch_index': batch_index, 'rows': rows}
+    (ROOT / 'outputs' / f'strict_batch_{batch_index:02d}.json').write_text(json.dumps(out, indent=2))
 
-    md = ['# Strict Curation Batch 01', '', f"- Items: {len(rows)}", '']
+    md = [f'# Strict Curation Batch {batch_index:02d}', '', f"- Items: {len(rows)}", '']
     for r in rows:
         md.append(f"- {r['id']} | PMID {r['pmid']} | {r['category']} | mentions={r['n_numeric_mentions']} | source={r['source_level']}")
         if r.get('pmc_url'):
             md.append(f"  - PMC: {r['pmc_url']}")
         if r.get('pubmed_url'):
             md.append(f"  - PubMed: {r['pubmed_url']}")
-    (ROOT / 'outputs' / 'strict_batch_01.md').write_text('\n'.join(md))
-    print(json.dumps({'batch_items': len(rows)}, indent=2))
+    (ROOT / 'outputs' / f'strict_batch_{batch_index:02d}.md').write_text('\n'.join(md))
+    print(json.dumps({'batch_index': batch_index, 'batch_items': len(rows)}, indent=2))
 
 
 if __name__ == '__main__':
-    main()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument('--batch-size', type=int, default=10)
+    ap.add_argument('--batch-index', type=int, default=1)
+    args = ap.parse_args()
+    main(batch_size=args.batch_size, batch_index=args.batch_index)
