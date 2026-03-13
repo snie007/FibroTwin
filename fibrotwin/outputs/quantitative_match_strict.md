@@ -1,7 +1,7 @@
 # Strict Paper-Anchored Match
 
-- Strict anchored tests scored: 1
-- PASS: 0
+- Strict anchored tests scored: 2
+- PASS: 1
 - FAIL: 1
 - Unavailable comparator: 0
 

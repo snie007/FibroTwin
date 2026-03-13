@@ -1,7 +1,7 @@
 {
-  "n_strict_anchored": 1,
+  "n_strict_anchored": 2,
   "counts": {
-    "PASS": 0,
+    "PASS": 1,
     "FAIL": 1,
     "UNAVAILABLE_MODEL_COMPARATOR": 0
   },
@@ -20,6 +20,22 @@
       "endpoint": "pro-fibrotic pathway/protein increase in failing hearts",
       "source_excerpt": "EPRS was induced at mRNA and protein levels (~1.5\u20132.5 fold increase) in failing hearts",
       "source_level": "abstract_text",
+      "provenance": "paper_approved_manual"
+    },
+    {
+      "id": "T012",
+      "pmid": 26601107,
+      "category": "collagen_dynamics",
+      "status": "PASS",
+      "comparator": "absolute",
+      "paper_band": [
+        8.0,
+        12.0
+      ],
+      "model_value": 10.2949857711792,
+      "endpoint": "fibrosis burden around ~10% condition (paper APD-dispersion example reports 10% fibrosis context)",
+      "source_excerpt": "APD dispersion increased to 70 ms from 24 ms with 10% fibrosis",
+      "source_level": "fulltext_text",
       "provenance": "paper_approved_manual"
     }
   ],

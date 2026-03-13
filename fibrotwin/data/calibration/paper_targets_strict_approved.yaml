@@ -12,4 +12,11 @@ approved:
     source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5–2.5 fold increase) in failing hearts"
     source_level: abstract_text
 
+  T012:
+    pmid: 26601107
+    comparator: absolute
+    band: [8.0, 12.0]
+    endpoint: fibrosis burden around ~10% condition (paper APD-dispersion example reports 10% fibrosis context)
+    source_excerpt: "APD dispersion increased to 70 ms from 24 ms with 10% fibrosis"
+    source_level: fulltext_text
 rejected: {}
