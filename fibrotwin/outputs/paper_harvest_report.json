@@ -1,5 +1,5 @@
 {
-  "n": 20,
+  "n": 80,
   "rows": [
     {
       "id": "T001",
@@ -258,6 +258,786 @@
         "pmcid": "",
         "html_saved": false,
         "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T021",
+      "pmid": "39938686",
+      "title": "Connexin 43 dephosphorylation mediates the Dchs1/YAP/TEAD signaling pathway to induce cardiac fibrosis.",
+      "pmcid": "",
+      "doi": "10.1016/j.bbamcr.2025.119919",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T022",
+      "pmid": "39895521",
+      "title": "KLF12 Aggravates Angiotensin II-Induced Cardiac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7.",
+      "pmcid": "PMC12074743",
+      "doi": "10.1161/JAHA.124.037455",
+      "harvest": {
+        "pmcid": "PMC12074743",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "title": "Effects of Empagliflozin and Dapagliflozin in alleviating cardiac fibrosis through SIRT6-mediated oxidative stress reduction.",
+      "pmcid": "PMC11680569",
+      "doi": "10.1038/s41598-024-80829-w",
+      "harvest": {
+        "pmcid": "PMC11680569",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T024",
+      "pmid": "39715792",
+      "title": "4-Hydroxychalcone attenuates AngII-induced cardiac remodeling and dysfunction via regulating PI3K/AKT pathway.",
+      "pmcid": "PMC11879844",
+      "doi": "10.1038/s41440-024-02068-w",
+      "harvest": {
+        "pmcid": "PMC11879844",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T025",
+      "pmid": "39680328",
+      "title": "Quercetin Alleviates Cardiac Fibrosis via Regulating the SIRT3 Signaling Pathway.",
+      "pmcid": "",
+      "doi": "10.1007/s10557-024-07658-x",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T026",
+      "pmid": "39527465",
+      "title": "Fibroblast-derived miR-425-5p alleviates cardiac remodelling in heart failure via inhibiting the TGF-\u03b21/Smad signalling.",
+      "pmcid": "PMC11552651",
+      "doi": "10.1111/jcmm.70199",
+      "harvest": {
+        "pmcid": "PMC11552651",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T027",
+      "pmid": "39187069",
+      "title": "Circ_0079480 facilitates proliferation, migration and fibrosis of atrial fibroblasts in atrial fibrillation by sponing miR-338-3p to activate the THBS1/TGF-\u03b21/Smad3 signaling.",
+      "pmcid": "",
+      "doi": "10.1016/j.ijcard.2024.132486",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T028",
+      "pmid": "39122223",
+      "title": "PiRNA CFAPIR inhibits cardiac fibrosis by regulating the muscleblind-like protein MBNL2.",
+      "pmcid": "",
+      "doi": "10.1016/j.bbadis.2024.167456",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T029",
+      "pmid": "38955313",
+      "title": "YAP1-mediated dysregulation of ACE-ACE2 activity augments cardiac fibrosis upon induction of hyperglycemic stress.",
+      "pmcid": "",
+      "doi": "10.1016/j.bbagen.2024.130666",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T030",
+      "pmid": "38899461",
+      "title": "Fibroblast Smad7 Induction Protects the Remodeling Pressure-Overloaded Heart.",
+      "pmcid": "PMC11257802",
+      "doi": "10.1161/CIRCRESAHA.123.323360",
+      "harvest": {
+        "pmcid": "PMC11257802",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T031",
+      "pmid": "38822669",
+      "title": "Periostin regulates lysyl oxidase through ERK1/2 MAPK-dependent serum response factor in activated cardiac fibroblasts.",
+      "pmcid": "",
+      "doi": "10.1002/cbf.4066",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T032",
+      "pmid": "38723722",
+      "title": "Intracellular and extracellular Cyclophilin a promote cardiac fibrosis through TGF-\u03b2 signaling in response to angiotensin \u2161.",
+      "pmcid": "",
+      "doi": "10.1016/j.bcp.2024.116271",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T033",
+      "pmid": "37999643",
+      "title": "Fibroblasts under pressure: cardiac fibroblast responses to hypertension and antihypertensive therapies.",
+      "pmcid": "PMC11219059",
+      "doi": "10.1152/ajpheart.00401.2023",
+      "harvest": {
+        "pmcid": "PMC11219059",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T034",
+      "pmid": "37786576",
+      "title": "Rivaroxaban, a direct inhibitor of coagulation factor Xa, attenuates adverse cardiac remodeling in rats by regulating the PAR-2 and TGF-\u03b21 signaling pathways.",
+      "pmcid": "PMC10541813",
+      "doi": "10.7717/peerj.16097",
+      "harvest": {
+        "pmcid": "PMC10541813",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T035",
+      "pmid": "37395147",
+      "title": "Integrin beta-like 1 mediates fibroblast-cardiomyocyte crosstalk to promote cardiac fibrosis and hypertrophy.",
+      "pmcid": "",
+      "doi": "10.1093/cvr/cvad104",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T036",
+      "pmid": "37227779",
+      "title": "Ablation of C-type natriuretic peptide/cGMP signaling in fibroblasts exacerbates adverse cardiac remodeling in mice.",
+      "pmcid": "PMC10371345",
+      "doi": "10.1172/jci.insight.160416",
+      "harvest": {
+        "pmcid": "PMC10371345",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T037",
+      "pmid": "37023527",
+      "title": "Gramine protects against pressure overload-induced pathological cardiac hypertrophy through Runx1-TGFBR1 signaling.",
+      "pmcid": "",
+      "doi": "10.1016/j.phymed.2023.154779",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T038",
+      "pmid": "37000367",
+      "title": "Epigallocatechin-3-Gallate Inhibits Atrial Fibrosis and Reduces the Occurrence and Maintenance of Atrial Fibrillation and its Possible Mechanisms.",
+      "pmcid": "",
+      "doi": "10.1007/s10557-023-07447-y",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T039",
+      "pmid": "36475698",
+      "title": "Inhibition of Eicosanoid Degradation Mitigates Fibrosis of the Heart.",
+      "pmcid": "",
+      "doi": "10.1161/CIRCRESAHA.122.321475",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T040",
+      "pmid": "36372276",
+      "title": "Sustained AT",
+      "pmcid": "",
+      "doi": "10.1016/j.ejphar.2022.175384",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "title": "The crystallin alpha B (HSPB5)-tripartite motif containing 33 (TRIM33) axis mediates myocardial fibrosis induced by angiotensinogen II through transforming growth factor-\u03b2 (TGF-\u03b21)-Smad3/4 signaling.",
+      "pmcid": "PMC9161881",
+      "doi": "10.1080/21655979.2022.2054913",
+      "harvest": {
+        "pmcid": "PMC9161881",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T042",
+      "pmid": "35143327",
+      "title": "Second Heart Field-Derived Cells Contribute to Angiotensin II-Mediated Ascending Aortopathies.",
+      "pmcid": "PMC9008740",
+      "doi": "10.1161/CIRCULATIONAHA.121.058173",
+      "harvest": {
+        "pmcid": "PMC9008740",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "title": "Hdac8 Inhibitor Alleviates Transverse Aortic Constriction-Induced Heart Failure in Mice by Downregulating Ace1.",
+      "pmcid": "PMC8813277",
+      "doi": "10.1155/2022/6227330",
+      "harvest": {
+        "pmcid": "PMC8813277",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T044",
+      "pmid": "35093323",
+      "title": "Loureirin B alleviates cardiac fibrosis by suppressing Pin1/TGF-\u03b21 signaling.",
+      "pmcid": "",
+      "doi": "10.1016/j.ejphar.2022.174791",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "title": "STING protects against cardiac dysfunction and remodelling by blocking autophagy.",
+      "pmcid": "PMC8576910",
+      "doi": "10.1186/s12964-021-00793-0",
+      "harvest": {
+        "pmcid": "PMC8576910",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T046",
+      "pmid": "34687136",
+      "title": "PKM2 promotes angiotensin-II-induced cardiac remodelling by activating TGF-\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress.",
+      "pmcid": "PMC8581335",
+      "doi": "10.1111/jcmm.17007",
+      "harvest": {
+        "pmcid": "PMC8581335",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T047",
+      "pmid": "34302205",
+      "title": "Conophylline Suppresses Angiotensin II-Induced Myocardial Fibrosis In Vitro via the BMP4/JNK Pathway.",
+      "pmcid": "",
+      "doi": "10.1007/s10517-021-05217-0",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T048",
+      "pmid": "34265086",
+      "title": "Inhibition of HSP90 S-nitrosylation alleviates cardiac fibrosis via TGF\u03b2/SMAD3 signalling pathway.",
+      "pmcid": "",
+      "doi": "10.1111/bph.15626",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T049",
+      "pmid": "41500420",
+      "title": "Mechanical characterization of infarcted porcine hearts using left anterior descending and left circumflex coronary artery models.",
+      "pmcid": "",
+      "doi": "10.1016/j.actbio.2025.12.051",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T050",
+      "pmid": "34601105",
+      "title": "Fabrication and characterization methods for investigating cell-matrix interactions in environments possessing spatial orientation heterogeneity.",
+      "pmcid": "PMC8627456",
+      "doi": "10.1016/j.actbio.2021.09.049",
+      "harvest": {
+        "pmcid": "PMC8627456",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T051",
+      "pmid": "31894101",
+      "title": "Platelet-derived growth factor-AB improves scar mechanics and vascularity after myocardial infarction.",
+      "pmcid": "",
+      "doi": "10.1126/scitranslmed.aay2140",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T052",
+      "pmid": "31141605",
+      "title": "Effects of Collagen Heterogeneity on Myocardial Infarct Mechanics in a Multiscale Fiber Network Model.",
+      "pmcid": "PMC6807994",
+      "doi": "10.1115/1.4043865",
+      "harvest": {
+        "pmcid": "PMC6807994",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T053",
+      "pmid": "25009995",
+      "title": "Coupled agent-based and finite-element models for predicting scar structure following myocardial infarction.",
+      "pmcid": "",
+      "doi": "10.1016/j.pbiomolbio.2014.06.010",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "title": "A model to determine the effect of collagen fiber alignment on heart function post myocardial infarction.",
+      "pmcid": "PMC3914851",
+      "doi": "10.1186/1742-4682-11-6",
+      "harvest": {
+        "pmcid": "PMC3914851",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T055",
+      "pmid": "22495588",
+      "title": "Mechanical regulation of fibroblast migration and collagen remodelling in healing myocardial infarcts.",
+      "pmcid": "PMC3477759",
+      "doi": "10.1113/jphysiol.2012.229484",
+      "harvest": {
+        "pmcid": "PMC3477759",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T056",
+      "pmid": "19897714",
+      "title": "Evolution of scar structure, mechanics, and ventricular function after myocardial infarction in the rat.",
+      "pmcid": "PMC2806135",
+      "doi": "10.1152/ajpheart.00495.2009",
+      "harvest": {
+        "pmcid": "PMC2806135",
+        "html_saved": true,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T057",
+      "pmid": "18780284",
+      "title": "Diffusion tensor imaging of left ventricular remodeling in response to myocardial infarction in the mouse.",
+      "pmcid": "",
+      "doi": "10.1002/nbm.1299",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "title": "A homogenized constrained mixture model of cardiac growth and remodeling: analyzing mechanobiological stability and reversal.",
+      "pmcid": "PMC10613155",
+      "doi": "10.1007/s10237-023-01747-w",
+      "harvest": {
+        "pmcid": "PMC10613155",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "title": "Mass spectrometry-based multi-omics analysis elucidates immune microenvironmental characteristics and the risk of distant metastasis in N1c colorectal cancer.",
+      "pmcid": "PMC12953441",
+      "doi": "10.3389/fimmu.2026.1590042",
+      "harvest": {
+        "pmcid": "PMC12953441",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "title": "Photobiomodulation and Sericin in the Treatment of Second-Degree Burns Induced in Wistar Rats.",
+      "pmcid": "PMC12927123",
+      "doi": "10.1111/wrr.70135",
+      "harvest": {
+        "pmcid": "PMC12927123",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T061",
+      "pmid": "41720370",
+      "title": "Polyvinyl alcohol/pectin hydrogels incorporating marine elastin hydrolysates for enhanced wound healing and extracellular matrix remodeling.",
+      "pmcid": "",
+      "doi": "10.1016/j.ijbiomac.2026.151011",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T062",
+      "pmid": "41719851",
+      "title": "Thermosensitive drug-loaded hydrogel based on natural collagen for diabetic wound management via modulating inflammation and promoting angiogenesis.",
+      "pmcid": "",
+      "doi": "10.1016/j.bioadv.2026.214775",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T063",
+      "pmid": "41715184",
+      "title": "Bioactive eggshell membrane-integrated nanofiber dressing with mesoporous polydopamine-mediated sustained dexamethasone delivery for enhanced wound regeneration.",
+      "pmcid": "",
+      "doi": "10.1186/s12951-026-04179-7",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T064",
+      "pmid": "41685930",
+      "title": "pH-responsive polydopamine-shelled 3D-printed chitosan/collagen hydrogel integrating exosomes and an enzyme/peptide cascade for diabetic wound healing.",
+      "pmcid": "",
+      "doi": "10.1039/d5bm01823d",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "title": "Therapeutic value of mesenchymal stem cell-derived extracellular vesicles in hypertrophic and keloid scars: a systematic review and meta-analysis.",
+      "pmcid": "PMC12891142",
+      "doi": "10.3389/fcell.2026.1739106",
+      "harvest": {
+        "pmcid": "PMC12891142",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T066",
+      "pmid": "41683598",
+      "title": "Activation of Cannabinoid Receptor 1 Enhances Wound Healing by Promoting the Proliferative Phase.",
+      "pmcid": "PMC12897412",
+      "doi": "10.3390/ijms27031171",
+      "harvest": {
+        "pmcid": "PMC12897412",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T067",
+      "pmid": "41674333",
+      "title": "Inhibition of SGK3 regulates hyperplastic scar development in rats through the MAPK/ERK signaling pathway.",
+      "pmcid": "PMC12915858",
+      "doi": "10.1080/15384101.2026.2627904",
+      "harvest": {
+        "pmcid": "PMC12915858",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T068",
+      "pmid": "41660757",
+      "title": "Dual-functional urinary PVC catheters ",
+      "pmcid": "",
+      "doi": "10.1039/d5tb02559a",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T069",
+      "pmid": "41658005",
+      "title": "Lactoferrin bridges antimicrobial and healing responses in ",
+      "pmcid": "PMC12876252",
+      "doi": "10.3389/fmicb.2025.1753483",
+      "harvest": {
+        "pmcid": "PMC12876252",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T070",
+      "pmid": "41657731",
+      "title": "Evaluation of liposome",
+      "pmcid": "PMC12876173",
+      "doi": "10.3389/fmedt.2026.1740835",
+      "harvest": {
+        "pmcid": "PMC12876173",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T071",
+      "pmid": "41653204",
+      "title": "Recombinant Humanized Collagen Type III Accelerated Palate Wound Healing by Regulating the Fibroblast Behavior via Focal Adhesion Signaling Pathway.",
+      "pmcid": "",
+      "doi": "10.1021/acsami.5c20953",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T072",
+      "pmid": "41644791",
+      "title": "Convallatoxin ameliorates fibroblast-like synoviocytes-mediated synovial inflammation and joint destruction in rheumatoid arthritis by targeting IDH1.",
+      "pmcid": "",
+      "doi": "10.1007/s00210-026-05083-5",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T073",
+      "pmid": "41644046",
+      "title": "STC-1 improves scar remodeling and is associated with PI3K/AKT signaling and immune modulation.",
+      "pmcid": "",
+      "doi": "10.1016/j.lfs.2026.124253",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "title": "The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery.",
+      "pmcid": "PMC12889168",
+      "doi": "10.1167/iovs.67.2.18",
+      "harvest": {
+        "pmcid": "PMC12889168",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T075",
+      "pmid": "41637974",
+      "title": "Development of 2-deoxy-d-ribose and zinc oxide loaded microneedle array patches of chitosan and PVA to stimulate angiogenesis and reduce infection and promote wound healing.",
+      "pmcid": "",
+      "doi": "10.1016/j.bioadv.2026.214738",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T076",
+      "pmid": "41634491",
+      "title": "NEDD4L knockdown enhances synovial fibroblast migration, invasion, and inflammatory factor secretion via Wnt/\u03b2-Catenin signaling activation.",
+      "pmcid": "",
+      "doi": "10.1007/s10067-025-07906-x",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T077",
+      "pmid": "41616419",
+      "title": "Toddalia asiatica (L.) Lam. induces apoptosis in rheumatoid arthritis fibroblast-like synoviocytes by modulating the PI3K/AKT/NF-\u03baB pathway.",
+      "pmcid": "",
+      "doi": "10.1016/j.molimm.2026.01.008",
+      "harvest": {
+        "pmcid": "",
+        "html_saved": false,
+        "xml_saved": false,
+        "images": []
+      }
+    },
+    {
+      "id": "T078",
+      "pmid": "41608354",
+      "title": "Photocrosslinkable Chitosan Quaternary Ammonium Salt-Based Ternary Hydrogel with Fibroblast Growth Factor 21 for Diabetic Wound Healing.",
+      "pmcid": "PMC12835494",
+      "doi": "10.34133/bmr.0309",
+      "harvest": {
+        "pmcid": "PMC12835494",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "title": "Investigation of the Efficacy and Mechanism of Monoacylglycerol Lipase Inhibitors in Diabetic Foot Ulcers.",
+      "pmcid": "PMC12845037",
+      "doi": "10.3390/ph19010171",
+      "harvest": {
+        "pmcid": "PMC12845037",
+        "html_saved": true,
+        "xml_saved": true,
+        "images": []
+      }
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "title": "Non-Crosslinked Hyaluronic Acid Redensity 1",
+      "pmcid": "PMC12845186",
+      "doi": "10.3390/pharmaceutics18010021",
+      "harvest": {
+        "pmcid": "PMC12845186",
+        "html_saved": true,
+        "xml_saved": true,
         "images": []
       }
     }

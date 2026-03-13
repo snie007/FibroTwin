@@ -1,0 +1,670 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="jcmm17007" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Cell Mol Med</journal-id><journal-id journal-id-type="iso-abbrev">J Cell Mol Med</journal-id><journal-id journal-id-type="pmc-domain-id">2233</journal-id><journal-id journal-id-type="pmc-domain">jcmmopen</journal-id><journal-id journal-id-type="publisher-id">JCMM</journal-id><journal-title-group><journal-title>Journal of Cellular and Molecular Medicine</journal-title></journal-title-group><issn pub-type="ppub">1582-1838</issn><issn pub-type="epub">1582-4934</issn><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC8581335</article-id><article-id pub-id-type="pmcid-ver">PMC8581335.1</article-id><article-id pub-id-type="pmcaid">8581335</article-id><article-id pub-id-type="pmcaiid">8581335</article-id><article-id pub-id-type="pmid">34687136</article-id><article-id pub-id-type="doi">10.1111/jcmm.17007</article-id><article-id pub-id-type="publisher-id">JCMM17007</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Articles</subject></subj-group></article-categories><title-group><article-title>PKM2 promotes angiotensin‐II‐induced cardiac remodelling by activating TGF‐β/Smad2/3 and Jak2/Stat3 pathways through oxidative stress</article-title><alt-title alt-title-type="left-running-head">ZHANG et al.</alt-title></title-group><contrib-group><contrib id="jcmm17007-cr-0001" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="X">Xiyu</given-names></name><xref rid="jcmm17007-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0002" contrib-type="author"><name name-style="western"><surname>Zheng</surname><given-names initials="C">Cuiting</given-names></name><xref rid="jcmm17007-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0003" contrib-type="author"><name name-style="western"><surname>Gao</surname><given-names initials="Z">Zhenqiang</given-names></name><xref rid="jcmm17007-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0004" contrib-type="author"><name name-style="western"><surname>Wang</surname><given-names initials="L">Lingling</given-names></name><xref rid="jcmm17007-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0005" contrib-type="author"><name name-style="western"><surname>Chen</surname><given-names initials="C">Chen</given-names></name><xref rid="jcmm17007-aff-0003" ref-type="aff">
+<sup>3</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0006" contrib-type="author"><name name-style="western"><surname>Zheng</surname><given-names initials="Y">Yuanyuan</given-names></name><xref rid="jcmm17007-aff-0004" ref-type="aff">
+<sup>4</sup>
+</xref></contrib><contrib id="jcmm17007-cr-0007" contrib-type="author" corresp="yes"><name name-style="western"><surname>Meng</surname><given-names initials="Y">Yan</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-0002-6038</contrib-id><xref rid="jcmm17007-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>yanmeng_my@ccmu.edu.cn</email></address></contrib></contrib-group><aff id="jcmm17007-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Beijing Key Laboratory of Metabolic Disorders Related Cardiovascular Diseases</named-content>
+<named-content content-type="organisation-division">Beijing Lab for Cardiovascular Precision Medicine</named-content>
+<named-content content-type="organisation-division">Department of Pathology</named-content>
+<institution>Capital Medical University</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><aff id="jcmm17007-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<named-content content-type="organisation-division">Department of Pathology</named-content>
+<named-content content-type="organisation-division">Beijing Shijitan Hospital</named-content>
+<institution>Capital Medical University</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><aff id="jcmm17007-aff-0003">
+<label>
+<sup>3</sup>
+</label>
+<named-content content-type="organisation-division">China‐America Institute of Neuroscience</named-content>
+<named-content content-type="organisation-division">Beijing Luhe Hospital</named-content>
+<institution>Capital Medical University</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><aff id="jcmm17007-aff-0004">
+<label>
+<sup>4</sup>
+</label>
+<named-content content-type="organisation-division">Department of Pharmacology</named-content>
+<institution>Capital Medical University</institution>
+<city>Beijing</city>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold>
+<break/>
+Yan Meng, Department of Pathology, Capital Medical University, Beijing 100069, China.<break/>
+Email: <email>yanmeng_my@ccmu.edu.cn</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>23</day><month>10</month><year>2021</year></pub-date><pub-date pub-type="ppub"><month>11</month><year>2021</year></pub-date><volume>25</volume><issue seq="320">22</issue><issue-id pub-id-type="pmc-issue-id">393616</issue-id><issue-id pub-id-type="doi">10.1111/jcmm.v25.22</issue-id><fpage>10711</fpage><lpage>10723</lpage><history>
+<date date-type="rev-recd"><day>24</day><month>9</month><year>2021</year></date>
+<date date-type="received"><day>20</day><month>6</month><year>2021</year></date>
+<date date-type="accepted"><day>04</day><month>10</month><year>2021</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>01</day><month>11</month><year>2021</year></date></event><event event-type="pmc-live"><date><day>17</day><month>11</month><year>2021</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-05-07 21:25:28.203"><day>07</day><month>05</month><year>2024</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2021 The Authors. <italic toggle="yes">Journal of Cellular and Molecular Medicine</italic> published by Foundation for Cellular and Molecular Medicine and John Wiley &amp; Sons Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JCMM-25-10711.pdf"><?pdf-name JCMM-25-10711.pdf?><?pdf-size 2340473?><?pdf-md5 9dbe552f1679c88e2ae4386d2fa9982c?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:2aee/8581335/9dbe552f1679/JCMM-25-10711.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JCMM-25-10711.pdf"/><abstract id="jcmm17007-abs-0001"><title>Abstract</title><p>Hypertensive cardiac remodelling is a common cause of heart failure. However, the molecular mechanisms regulating cardiac remodelling remain unclear. Pyruvate kinase isozyme type M2 (PKM2) is a key regulator of the processes of glycolysis and oxidative phosphorylation, but the roles in cardiac remodelling remain unknown. In the present study, we found that PKM2 was enhanced in angiotensin II (Ang II)‐treated cardiac fibroblasts and hypertensive mouse hearts. Suppression of PKM2 by shikonin alleviated cardiomyocyte hypertrophy and fibrosis in Ang‐II‐induced cardiac remodelling in vivo. Furthermore, inhibition of PKM2 markedly attenuated the function of cardiac fibroblasts including proliferation, migration and collagen synthesis in vitro. Mechanistically, suppression of PKM2 inhibited cardiac remodelling by suppressing TGF‐β/Smad2/3, Jak2/Stat3 signalling pathways and oxidative stress. Together, this study suggests that PKM2 is an aggravator in Ang‐II‐mediated cardiac remodelling. The negative modulation of PKM2 may provide a promising therapeutic approach for hypertensive cardiac remodelling.</p></abstract><kwd-group><kwd id="jcmm17007-kwd-0001">Ang II</kwd><kwd id="jcmm17007-kwd-0002">cardiac remodelling</kwd><kwd id="jcmm17007-kwd-0003">oxidative stress</kwd><kwd id="jcmm17007-kwd-0004">PKM2</kwd><kwd id="jcmm17007-kwd-0005">shikonin</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>National Natural Science Foundation of China
+</institution><institution-id institution-id-type="doi">10.13039/501100001809</institution-id></institution-wrap></funding-source><award-id>81670380</award-id></award-group></funding-group><counts><fig-count count="7"/><table-count count="0"/><page-count count="13"/><word-count count="5665"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>November 2021</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.0.9 mode:remove_FC converted:11.11.2021</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="jcmm17007-cit-1001">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zheng</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gao</surname>
+<given-names>Z</given-names>
+</string-name>, et al. <article-title>PKM2 promotes angiotensin‐II‐induced cardiac remodelling by activating TGF‐β/Smad2/3 and Jak2/Stat3 pathways through oxidative stress</article-title>. <source>J Cell Mol Med</source>. <year>2021</year>;<volume>25</volume>:<fpage>10711</fpage>–<lpage>10723</lpage>. <pub-id pub-id-type="doi">10.1111/jcmm.17007</pub-id>
+<pub-id pub-id-type="pmcid">PMC8581335</pub-id><pub-id pub-id-type="pmid">34687136</pub-id></mixed-citation>
+</p></notes></front><body id="jcmm17007-body-0001"><sec id="jcmm17007-sec-0001"><label>1</label><title>INTRODUCTION</title><p>Hypertension is a key risk cause for cardiovascular diseases, remaining the predominant cause of mortality in the world and presenting a considerable economic burden.<xref rid="jcmm17007-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> Pressure overload induces cardiac remodelling that includes cardiomyocyte hypertrophy and fibrosis, and ultimately leads to the progression of heart failure.<xref rid="jcmm17007-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> As the predominant effector of the renin‐angiotensin‐aldosterone system (RAAS), angiotensin II (Ang II) promoted cardiac fibrosis by inducing fibroblasts proliferation and stimulating collagen synthesis and eventually caused cardiac remodelling and heart failure.<xref rid="jcmm17007-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>
+</p><p>Multiple signalling pathways have been demonstrated to positively regulate cardiac fibrosis, including transforming growth factor β (TGF‐β)/small mothers against decapentaplegic proteins 2 and 3 (Smad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of transcription 3 (Stat3) signalling pathways.<xref rid="jcmm17007-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref> TGF‐β induced phosphorylation of Smad2 and Smad3 to promote extracellular matrix secretion which plays important roles in myocardial fibrosis.<xref rid="jcmm17007-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> Moreover, activation of Jak2/Stat3 signalling pathway enhances collagen‐related gene transcription to accelerate fibrosis.<xref rid="jcmm17007-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Hence, targeting these signalling pathways might provide new therapeutic strategies to reverse cardiac remodelling.</p><p>Oxidative stress, defined as disturbances in the pro‐/anti‐oxidant balance, is harmful to cells due to an excess production of reactive oxygen species (ROS).<xref rid="jcmm17007-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref> Accumulating evidence indicates that oxidative stress plays a vital role in renal fibrosis, cardiovascular disease and other diseases.<xref rid="jcmm17007-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref>, <xref rid="jcmm17007-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref>, <xref rid="jcmm17007-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref> It is reported that ROS mediates Ang‐II‐induced fibrotic cardiomyopathy by activating transcription factors and fibrotic signalling kinases.<xref rid="jcmm17007-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> Besides, glutathione (GSH) and GSH peroxidase 4 (GPx4) act as negative regulators of oxidative stress by limiting ROS production.<xref rid="jcmm17007-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref>
+</p><p>Pyruvate kinase muscle isozyme 2 (PKM2) is an isoenzyme of the glycolytic enzyme pyruvate kinase. The primary function of PKM2 is to mediate the conversion of phosphoenolpyruvate (PEP) to pyruvate as the last step of glycolysis to generate ATP.<xref rid="jcmm17007-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> PKM2 also has various biological functions, including proinflammatory cytokine production, cells proliferation and oxidative stress.<xref rid="jcmm17007-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="jcmm17007-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref>, <xref rid="jcmm17007-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> However, the potential role of PKM2 in Ang‐II‐induced cardiac remodelling remains unknown.</p><p>To explore the potential role of PKM2 in cardiac remodelling diseases, we analysed the expression of PKM2 in Ang‐II‐treated neonatal rat cardiac fibroblasts (NRCFs), neonatal rat cardiomyocytes (NRCMs) and mouse hearts. Furthermore, we checked the role of PKM2 in cardiac remodelling. Finally, we elucidated the potential underlying mechanism of PKM2 in the development of cardiac remodelling.</p></sec><sec sec-type="methods" id="jcmm17007-sec-0002"><label>2</label><title>METHODS</title><sec id="jcmm17007-sec-0003"><label>2.1</label><title>Antibody and reagents</title><p>Antibodies against PKM2 (4053, 1:1000), Jak2 (3230, 1:1000), phosphor‐Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor‐Stat3 (9145, 1:1000), TGF‐β (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor‐Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor‐S6 (2211s, 1:5000) and GAPDH (2118,1:10000) were from Cell Signaling Technology (Danvers, MA, USA). Rapamycin was from MedChem Express (HY‐10219, New Jersey, USA). Shikonin was from Selleck (S8279, Houston, TX, USA). N‐acetyl‐L‐cysteine (NAC) was from Beyotime Institute of Biotechnology (S0077, Shanghai, China).</p></sec><sec id="jcmm17007-sec-0004"><label>2.2</label><title>Animal model</title><p>Male C57BL/6 mice were purchased from the Vital River Laboratory Animal Technology Company of Beijing in China. All animal experiments were approved by the Institutional Animal Care and Use Committee of Capital Medical University. Hypertensive cardiac remodelling was induced in 8‐ to 12‐week‐old male mice by chronic subcutaneous infusion of Ang II (A9525, Sigma‐Aldrich) at a dose of 1,500 ng/kg/min using the ALZET<sup>®</sup> Osmotic Pumps (Model 1007D) for 7 days or 1,000 ng/kg/min using the pumps (Model 1002D) for 14 days. The control mice were infused with saline for 7 or 14 days. For shikonin treatment, mice were randomized to be intraperitoneally injected with either vehicle or shikonin at a dose of 1.25 mg/kg 3 times per week. All mice were analysed by echocardiography and haemodynamic measurements at 7 days or 14 days.</p></sec><sec id="jcmm17007-sec-0005"><label>2.3</label><title>Primary culture of NRCMs and NRCFs</title><p>Cardiomyocytes and fibroblasts were isolated from 1‐day‐old SD rat hearts using a conventional method as described.<xref rid="jcmm17007-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> Briefly, heart tissues were digested by 0.1% trypsin and 0.05% type II collagenase. The dissociated cells in DMEM/F‐12 medium with 15% FBS and 1% penicillin and streptomycin were plated to obtain adhered cardiac fibroblasts after 90 min in incubator (5% CO<sub>2</sub>), and the cardiomyocytes in suspension were transferred to another dish with coating laminin. Both cardiomyocytes and fibroblasts were cultured in serum‐free DMEM/F‐12 for 12 h before experiments.</p></sec><sec id="jcmm17007-sec-0006"><label>2.4</label><title>Transfection</title><p>SiRNA was used to knock down the PKM2 in NRCFs. The siRNAs were synthesized by HanBio Biotechnology (Shanghai, China). The sequence of PKM2 siRNA was: 5′‐GCAAGAACAUCAAGAUCAU‐3′. The sequence of negative control siRNA was as follows: 5′‐UUCUCCGAACGUGUCACGU‐3′. Transfections of the siRNAs were performed by using Lipofectamine RNAiMAX Reagent (Thermo Fisher Scientific) according to the manufacturer's protocol. Briefly, cells were seeded in 6‐well plates to obtain approximately 30%–50% confluence. Twenty microlitres of mixture containing siRNA (20 pM for each) and transfection reagents (5 μl for each) were added to the cells for 6 h at 37℃ and then replaced with fresh culture medium. The efficiency of transfection was confirmed by Western blot analysis.</p></sec><sec id="jcmm17007-sec-0007"><label>2.5</label><title>Cell migration assay</title><p>Cell migration was examined by wound healing assay. NRCFs grown to 90% in 6‐well plates were scratched via a 200 μl pipette tip to create the wound followed by washing detached cells with PBS. Cultured cells were grown for 12 h and 24 h to allow wound healing. Wound healing area was measured using Image J (National Institutes of Health, Bethesda, MD, USA), and % of wound area was analysed by GraphPad Prism 7.0 (GraphPad Software). % of wound area represents the ration of wound area at T<sub>12h</sub> (or T<sub>24h</sub>)/wound area at T<sub>0h</sub>.</p></sec><sec id="jcmm17007-sec-0008"><label>2.6</label><title>Cell counting assay</title><p>The cell viability was detected by cell counting kit‐8 (CCK‐8) (YEASEN, Shanghai, China). Briefly, 10 μl of CCK‐8 solution was added to each well and incubated at 37℃ for 2.5 h; then, the OD value for each well was read at wavelength 450 nm with a microplate reader (Multiskan, Thermo, USA). The assay was repeated 3 times. The cell viability was calculated as follows:<disp-formula id="jcmm17007-disp-0001">
+<mml:math xmlns:mml="http://www.w3.org/1998/Math/MathML" id="jats-math-1" display="block"><mml:mrow><mml:mi>c</mml:mi><mml:mi>e</mml:mi><mml:mi>l</mml:mi><mml:mi>l</mml:mi><mml:mspace width="0.277778em"/><mml:mi>v</mml:mi><mml:mi>i</mml:mi><mml:mi>a</mml:mi><mml:mi>b</mml:mi><mml:mi>i</mml:mi><mml:mi>l</mml:mi><mml:mi>i</mml:mi><mml:mi>t</mml:mi><mml:mi>y</mml:mi><mml:mfenced close=")" open="("><mml:mo>%</mml:mo></mml:mfenced><mml:mo>=</mml:mo><mml:mfrac><mml:mrow><mml:mtext>OD</mml:mtext><mml:mfenced close=")" open="("><mml:mtext>experiment</mml:mtext></mml:mfenced><mml:mo>‐</mml:mo><mml:mtext>OD</mml:mtext><mml:mfenced close=")" open="("><mml:mtext>blank</mml:mtext></mml:mfenced></mml:mrow><mml:mrow><mml:mtext>OD</mml:mtext><mml:mfenced close=")" open="("><mml:mtext>control</mml:mtext></mml:mfenced><mml:mo>‐</mml:mo><mml:mtext>OD</mml:mtext><mml:mfenced close=")" open="("><mml:mtext>blank</mml:mtext></mml:mfenced></mml:mrow></mml:mfrac><mml:mo>×</mml:mo><mml:mn>100</mml:mn></mml:mrow></mml:math>
+</disp-formula>
+</p></sec><sec id="jcmm17007-sec-0009"><label>2.7</label><title>Cell oxidative stress assays</title><p>Reactive oxygen species levels were determined by Flow cytometry. Briefly, 5 × 10<sup>5</sup> NRCFs with pretreatment of 0.1 μM shikonin or DMSO for 2 h were treated with Ang II for 12 h, and then incubated with 10 μM DCFH‐DA for 20 min at 37℃. After washing 3 times with PBS, cells were harvested and analysed for the fluorescence of DCFH by flow cytometry (BD Accuri C6, Frankin Lakes, NJ, USA). MDA levels in cells were measured using the MDA assay kit (Beyotime) according to the manufacturer's instructions, and MDA concentration was calculated in μmol per gram of protein. Total glutathione (GSH+GSSG) and GSSG were measured according to the GSH and GSSG assay kit (Beyotime) using kinetic determination methods under a 412 nm wavelength, and the GSH/GSSG ratio was calculated.</p></sec><sec id="jcmm17007-sec-0010"><label>2.8</label><title>Pyruvate production assay</title><p>Pyruvate production was detected using PA assay kit (Solarbio, Beijing, China). Briefly, 5 × 10<sup>5</sup> NRCFs were treated with Ang II and then washed 3 times with PBS and were harvested with 1 ml extracting solution. After ultrasonic disruption, cells were freezing for 30 min and then centrifuged to collect the supernatant. Pyruvate levels in mouse serums and NRCFs were measured using the kit according to the manufacturer's instructions.</p></sec><sec id="jcmm17007-sec-0011"><label>2.9</label><title>Measurement of blood pressure</title><p>Mice were acclimatized for 7 days prior to experimentation. The blood pressure of all mice was measured before Ang II infusion and every day in 7‐day model or every other day in 14‐day model. Systolic blood pressure (SBP) was recorded when were mice under a conscious condition by tail‐cuff method with the CODA noninvasive BP system (Kent Scientific Corporation).</p></sec><sec id="jcmm17007-sec-0012"><label>2.10</label><title>Echocardiography</title><p>Mice were lightly anaesthetized with 1.5% isoflurane. Cardiac function was evaluated by the high‐resolution Micro‐Ultrasound system (Vevo 770, VisualSonics, Toronto, Ontario, Canada). Briefly, cardiac contractile function and structure were evaluated by M‐mode echocardiography. Ventricular parameters including diastolic left ventricular anterior wall (LVAW;d) and systolic left ventricular anterior wall (LVAW;s) were measured. All the measurements were made from more than three beats and averaged. The ejection fraction (EF %) and fractional shortening (FS %) were calculated to judge the cardiac systolic function.</p></sec><sec id="jcmm17007-sec-0013"><label>2.11</label><title>Histopathology analysis</title><p>For histological analysis, hearts were fixed, embedded and sectioned into 5‐μm‐thick slices. Sections were used to stain wheat germ agglutinin (WGA) to assess cellular hypertrophy. Sections were stained with Masson's trichrome (collagen, blue; cytoplasm, red/pink) for collagen deposition analysis. Immunohistochemistry images were captured with Pannoramic SCAN II (3DHISTECH Ltd) and analysed by using Image J.</p></sec><sec id="jcmm17007-sec-0014"><label>2.12</label><title>Quantitative RT‐PCR (qRT‐PCR) analysis</title><p>Total RNA was extracted from the heart tissues and cells by using Trizol method (T9424, Sigma‐Aldrich). The first‐strand cDNA was synthesized from 1 μg of total RNA by HIScript‐II Q RT SuperMix for Qpcr (Vazyme). qRT‐PCR was performed using SYBR Green Master Mix (Transgen, Beijing, China) with an iCycler IQ system (Bio‐Rad Laboratories, Inc Hercules, CA, USA). qRT‐PCR was cycled in 94℃/5 s and 60℃/60 s for 40 cycles, after an initial denaturation step at 94℃ for 30 s. The expression of mRNA was normalized to the amount of endogenous control (GAPDH). All samples were run in duplicate. The following primers for genes:</p><sec id="jcmm17007-sec-0015"><label>2.12.1</label><title>Mouse:</title><p>GAPDH: 5′‐GGTTGTCTCCTGCGACTTCA‐3′; 5′‐GGTGGTCCAGGGTTTCTTACTC‐3′;</p><p>ANF: 5′‐CACAGATCTGATGGATTTCAAGA‐3′; 5′‐CCTCATCTTCTACCGGCATC‐3′;</p><p>BNP: 5′‐GAAGGTGCTGTCCCAGATGA‐3′; 5′‐CCAGCAGCTGCATCTTGAAT‐3′;</p><p>Collagen I: 5′‐GAGTACTGGATCGACCCTAACCA‐3′; 5′‐ACGGCTGAGTAGGGAACACA‐3′;</p><p>Collagen III: 5′‐TCCCCTGGAATCTGTGAATC‐3′; 5′‐TGAGTCGAATTGGGGAGAAT‐3′;</p><p>PKM2: 5′‐GTCTGGAGAAACAGCCAAGG‐3′; 5′‐CGGAGTTCCTCGAATAGCTG‐3′;</p><p>GPx4: 5′‐TGTGGTTTACGAATCCTGGC‐3′; 5′‐CCCTTGGGCTGGACTTTCAT‐3′;</p><p>SOD2: 5′‐GCCTGCACTGAAGTTCAATG‐3′; 5′‐ATCTGTAAGCGACCTTGCTC‐3′;</p></sec><sec id="jcmm17007-sec-0016"><label>2.12.2</label><title>Rat:</title><p>GAPDH: 5′‐CCCCCAATGTATCCGTTGTG‐3′; 5′‐TAGCCCAGGATGCCCTTTAGT‐3′;</p><p>Collagen I: 5′‐TGTCGATGGCTGCTCCAAAA‐3′; 5′‐AGGCGAGATGGCTTATTCGT‐3′;</p><p>Collagen III: 5′‐AGTGGCCATAATGGGGAACG‐3′; 5′‐CAGGGTTTCCATCCCTTCCG‐3′;</p><p>PKM2: 5′‐TCTACGTGGACGATGGGCT‐3′; 5′‐AGGAAGACCTTCTCTGCCGGA‐3′;</p><p>GPx4: 5′‐GCAACCAGTTCGGGAGGCAGGAG‐3′; 5′‐CCTCCATGGGACCATAGCGCTTC‐3′.</p></sec></sec><sec id="jcmm17007-sec-0017"><label>2.13</label><title>Western blot analysis</title><p>Cells or heart tissues were lysed with RIPA lysis buffer. Equal amounts of protein were loaded, separated by SDS‐PAGE gels and transferred to a membrane (Millipore). The membrane was blocked and incubated with primary antibody at 4℃ overnight, and then incubated with secondary antibodies for 1 h at room temperature. Western blot signals were detected with the enhanced chemiluminescence system (Millipore), and signal intensities were analysed with Image J.</p></sec><sec id="jcmm17007-sec-0018"><label>2.14</label><title>Statistical analysis</title><p>All data were expressed as mean ± standard error of the mean (SEM) and were analysed using GraphPad Prism 7.0 (GraphPad Software) or SPSS Version 21 software. Comparison between two groups was conducted using two‐tailed, unpaired Student's <italic toggle="yes">t</italic>‐test. In the result with more than two groups, analysis of variance (ANOVA) was applied to analyse the difference. Two‐way ANOVA moderated by Bonferroni post hoc test was used to detect variation between 3 or more groups. Statistical significance was defined as <italic toggle="yes">p </italic>&lt; 0.05.</p></sec></sec><sec sec-type="results" id="jcmm17007-sec-0019"><label>3</label><title>RESULTS</title><sec id="jcmm17007-sec-0020"><label>3.1</label><title>PKM2 expression is upregulated in hypertensive heart</title><p>To explore the role of PKM2 in cardiac remodelling, we examined the expression of PKM2 in Ang‐II‐induced hypertensive mouse hearts. PKM2 was boosted at both mRNA and protein levels after 7‐ and 14‐day Ang II infusion (Figure <xref rid="jcmm17007-fig-0001" ref-type="fig">1A, B</xref>). In vitro, PKM2 upregulated in NRCFs in a time‐dependent manner after Ang II treatment (Figure <xref rid="jcmm17007-fig-0001" ref-type="fig">1C</xref>). However, PKM2 expression was not altered in Ang‐II‐treated NRCMs (Figure <xref rid="jcmm17007-fig-0001" ref-type="fig">1D</xref>). Consequently, accumulation of PKM2 led to increase pyruvate production in Ang‐II‐treated hypertensive mouse serums and NRCFs (Figure <xref rid="jcmm17007-sup-0001" ref-type="supplementary-material">S1A, B</xref>). In summary, these results suggest that PKM2 is boosted in response to fibrotic stimuli and may play a role in Ang‐II‐induced myocardial fibrosis. It is reported that mTOR as a key activator of PKM2 is known augmented by mTOR activation and reduced by mTOR suppression in cancer cells.<xref rid="jcmm17007-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> To determine whether mTOR involved in the regulation of PKM2, we used rapamycin, inhibitor of mTOR signalling pathway, in Ang‐II‐incubated NRCFs. We found that upregulation of PKM2 induced by Ang II was reduced by rapamycin. (Figure <xref rid="jcmm17007-sup-0001" ref-type="supplementary-material">S1C</xref>). These data indicate that PKM2 is positively regulated by mTOR.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>PKM2 expression is upregulated in hypertensive heart. Mice were infused with Ang II (1,000 ng/kg/min) for 7 and 14 days (<italic toggle="yes">n</italic> = 5 per group) (A, B). (A) qRT‐PCR analysis of PKM2 mRNA. (B) Western blot and quantification of PKM2. NRCMs and NRCFs were treated with Ang II (1 μM) for various times (<italic toggle="yes">n</italic> = 3 per group) (C, D). (C) qRT‐PCR analysis of PKM2 mRNA. (D) Western blot and quantification of PKM2. <italic toggle="yes">
+<sup>*</sup>p </italic>&lt; 0.05,<italic toggle="yes">
+<sup>**</sup>p </italic>&lt; 0.01</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="JCMM-25-10711-g007.jpg"><?image-name JCMM-25-10711-g007.jpg?><?image-size 80388?><?image-md5 7e79bb5905ff361c9d242ed0697e1587?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 674?><?image-original-width 1064?><?image-scaled-height 449?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/7e79bb5905ff/JCMM-25-10711-g007.jpg?><?thumb-name JCMM-25-10711-g007.gif?><?thumb-size 6481?><?thumb-md5 8f2822ea0f6e7682ce93f85d632f57c2?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 126?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/8f2822ea0f6e/JCMM-25-10711-g007.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0021"><label>3.2</label><title>Inhibition of PKM2 alleviates Ang‐II‐induced early cardiac remodelling</title><p>To determine whether enhanced PKM2 causes adverse cardiac remodelling in early‐stage, wild‐type (WT) mice were treated with PKM2 inhibitor, shikonin (1.25 mg/kg, i.p., 3 times per week) and Ang II (1,500 ng/min/kg) for 7 days (Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2A</xref>). PKM2 was downregulated after treatment of shikonin (Figure <xref rid="jcmm17007-sup-0002" ref-type="supplementary-material">S2A</xref>). Systolic blood pressure induced by Ang II infusion was not influenced by shikonin (Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2B</xref>). In Ang‐II‐induced 7‐day mouse cardiac remodelling, shikonin recovered cardiac pump function, which included left ventricular ejection fraction (EF %) and fractional shortening (FS %) (Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2C</xref>). Concomitantly, shikonin decreased Ang‐II‐induced hypertrophic responses, including heart weight/body weight (HW/BW) ratio, heart weight/tibia length (HW/TL) ratio, the cross‐sectional area of myocytes and the expression of hypertrophic markers atrial natriuretic factor (ANF) and brain natriuretic peptide (BNP) (Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2D–F</xref>). In addition, shikonin relieved Ang‐II‐induced an increase in the area of cardiac fibrosis and collagen I and III expression (Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2G, H</xref>). Hence, inhibition of PKM2 significantly inhibits Ang‐II‐induced early cardiac remodelling and rescues cardiac function.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>Inhibition of PKM2 alleviates Ang‐II‐induced early cardiac remodelling. DMSO or shikonin was given to C57BL/6J mice while the treatment was combined with Ang II (1,500 ng/kg/min) infusion for 7 days. (A) Diagrammatic illustration of experimental schemes and timelines. (B) Systolic blood pressures. (C) Representative M‐mode echocardiography of the left ventricle (left). Measurement of ejection fraction (EF %) and fractional shortening (FS %) (right, <italic toggle="yes">n </italic>= 6 per group). (D) Representative hearts (left). HW/BW and HW/TL ratios (right, <italic toggle="yes">n</italic> = 6 per group). (E) TRITC‐labelled wheat germ agglutinin (WGA) staining of heart sections. Scale bar, 50 μm (left). Quantification of the relative myocyte cross‐sectional area (right, <italic toggle="yes">n</italic> = 6 per group). (G) Masson's staining of cardiac sections. Scale bar, 50 μm (left). Quantification of the relative fibrosis (right, <italic toggle="yes">n</italic> = 6 per group). (F, H) qRT‐PCR analysis of mRNA expression (<italic toggle="yes">n</italic> = 6 per group). <italic toggle="yes">
+<sup>*</sup>p </italic>&lt; 0.05, <italic toggle="yes">
+<sup>**</sup>p </italic>&lt; 0.01</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="JCMM-25-10711-g006.jpg"><?image-name JCMM-25-10711-g006.jpg?><?image-size 179719?><?image-md5 6032eac650db6bce9cd092eea8ed1c5b?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1190?><?image-original-width 1064?><?image-scaled-height 793?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/6032eac650db/JCMM-25-10711-g006.jpg?><?thumb-name JCMM-25-10711-g006.gif?><?thumb-size 5738?><?thumb-md5 a5d260085898a18d8ac1993317b3efcd?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 112?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/a5d260085898/JCMM-25-10711-g006.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0022"><label>3.3</label><title>PKM2 inhibition ameliorates Ang‐II‐induced late cardiac remodelling</title><p>Furthermore, we treated WT mice with shikonin and Ang II (1,000 ng/min/kg) for 14 days in late cardiac remodelling model (Figure <xref rid="jcmm17007-fig-0003" ref-type="fig">3A</xref>). Consistently with 7‐day model, PKM2 was downregulated after treatment of shikonin (Figure <xref rid="jcmm17007-sup-0002" ref-type="supplementary-material">S2B</xref>). Accordingly, systolic blood pressure increased by Ang II infusion was not altered by shikonin (Figure <xref rid="jcmm17007-fig-0003" ref-type="fig">3B</xref>), and shikonin reduced cardiac hypertrophy/fibrosis and improved cardiac function with Ang II infusion (Figure <xref rid="jcmm17007-fig-0003" ref-type="fig">3C–H</xref>). Consistently, inhibition of PKM2 can also reverse late cardiac dysfunction and remodelling in Ang‐II‐infused mice.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>PKM2 inhibition ameliorates Ang‐II‐induced late cardiac remodelling. DMSO or shikonin was given to C57BL/6J mice 3 times per week while the treatment was combined with Ang II (1,000 ng/kg/min) infusion for 14 days. (A) Diagrammatic illustration of experimental schemes and timelines. (B) Systolic blood pressures. (C) Representative M‐mode echocardiography of the left ventricle (left). Measurement of ejection fraction (EF %) and fractional shortening (FS %) (right, <italic toggle="yes">n</italic> = 6 per group). (D) Representative hearts (left). HW/BW and HW/TL ratios (right, <italic toggle="yes">n</italic> = 6 per group). (E) TRITC‐labelled wheat germ agglutinin (WGA) staining of heart sections. Scale bar, 50 μm (left). Quantification of the relative myocyte cross‐sectional area (right, <italic toggle="yes">n</italic> = 6 per group). (G) Masson's staining of cardiac sections. Scale bar, 50 μm (left). Quantification of the relative fibrosis (right, <italic toggle="yes">n</italic> = 6 per group). (F, H) qRT‐PCR analysis of mRNA expression (<italic toggle="yes">n</italic> = 6 per group). <italic toggle="yes">
+<sup>*</sup>p </italic>&lt; 0.05, <italic toggle="yes">
+<sup>**</sup>p </italic>&lt; 0.01</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="JCMM-25-10711-g005.jpg"><?image-name JCMM-25-10711-g005.jpg?><?image-size 189644?><?image-md5 d64087d3e202dfff5a7c7dbb68beb680?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1213?><?image-original-width 1064?><?image-scaled-height 808?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/d64087d3e202/JCMM-25-10711-g005.jpg?><?thumb-name JCMM-25-10711-g005.gif?><?thumb-size 6252?><?thumb-md5 cace888ccce14aa740b2900c2232b06b?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 114?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/cace888ccce1/JCMM-25-10711-g005.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0023"><label>3.4</label><title>Inhibition of PKM2 suppresses Ang‐II‐induced cardiac fibroblasts dysfunction</title><p>We next determined the effect of PKM2 inhibition on cardiac fibroblasts migration, proliferation and collagen synthesis in vitro. Scratch wound healing assay showed that inhibition of PKM2 by shikonin significantly attenuated Ang‐II‐induced NRCFs migration (Figure <xref rid="jcmm17007-fig-0004" ref-type="fig">4A, B</xref>). In addition, Ang‐II‐induced NRCFs proliferation and collagen synthesis were dramatically reduced by shikonin (Figure <xref rid="jcmm17007-fig-0004" ref-type="fig">4C, D</xref>). To further clarify the role of PKM2 in cardiac fibrosis, we synthesized the siRNAs to knockdown PKM2 in NRCFs (Figure <xref rid="jcmm17007-fig-0004" ref-type="fig">4E, F</xref>). Consistently, si‐PKM2 also reversed Ang‐II‐induced detrimental effects in NRCFs (Figure <xref rid="jcmm17007-fig-0004" ref-type="fig">4G–J</xref>). Therefore, we suggest PKM2 as a pro‐fibrotic role in Ang‐II‐induced cardiac fibroblasts dysfunction.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>Inhibition of PKM2 suppresses Ang‐II‐induced cardiac fibroblasts dysfunction. NRCFs were treated with shikonin (0.1 μM) and with/out Ang II (1 μM) for 24 h (for A, B and C) or 48 h (for D). And NRCFs were transfected with negative control or si‐PKM2 (for E–J) and with/out Ang II for 24 h (for G, H and I) or 48 h (for J). (A and G) Scratch wound healing assay. (B and H) Cell migration rate was quantified by measuring the difference in area between the leading edge at the initiation of the experiment at the indicated times. Scale bar, 50 μm. (<italic toggle="yes">n</italic> = 3 per group). (C and I) CCK‐8 assay was used to examine the cell viability (<italic toggle="yes">n</italic> = 6 per group). (D and J) qRT‐PCR analysis of mRNA expression (<italic toggle="yes">n</italic> = 3 per group). (E) qRT‐PCR analyses of PKM2 expression (<italic toggle="yes">n</italic> = 3 per group). (F) Western blot and quantification of PKM2 expression. <italic toggle="yes">
+<sup>*</sup>p </italic>&lt; 0.05, <italic toggle="yes">
+<sup>**</sup>p </italic>&lt; 0.01</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="JCMM-25-10711-g003.jpg"><?image-name JCMM-25-10711-g003.jpg?><?image-size 211499?><?image-md5 89d81fa83f57ecaebd97a8435e1fa154?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1911?><?image-original-width 1064?><?image-scaled-height 1273?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/89d81fa83f57/JCMM-25-10711-g003.jpg?><?thumb-name JCMM-25-10711-g003.gif?><?thumb-size 20401?><?thumb-md5 5bfc3bb6b05b6d1803d6b47feaba9001?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 180?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/5bfc3bb6b05b/JCMM-25-10711-g003.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0024"><label>3.5</label><title>
+<bold>PKM2</bold> <bold>suppression inhibits activation of TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways</bold>
+</title><p>TGF‐β/Smad2/3 and Jak2/Stat3 are classical signalling pathways involved in cardiac fibrosis. Ang‐II significantly induced increase of TGF‐β and phosphorylation of Smad2/3, Jak2 and Stat3 in cardiac fibroblasts and tissues. To illustrate the underlying molecular mechanisms of the pro‐fibrotic effect of PKM2, we examined whether TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways were involved in these processes. We found that inhibition of PKM2 by shikonin dramatically decreased the activation of TGF‐β/Smad2/3 and Jak2/Stat3 induced by Ang II (Figure <xref rid="jcmm17007-fig-0005" ref-type="fig">5A</xref>). Consistently, suppression of PKM2 by siRNA also inhibited the activation of TGF‐β/Smad2/3 and Jak2/Stat3 pathways (Figure <xref rid="jcmm17007-fig-0005" ref-type="fig">5B</xref>). Furthermore, shikonin reversed Ang‐II‐induced TGF‐β/Smad2/3 and Jak2/Stat3 activation both in 7‐ and 14‐day remodelling mouse hearts (Figure <xref rid="jcmm17007-fig-0005" ref-type="fig">5C, D</xref>). According to these results, we speculate that PKM2 regulates Ang‐II‐induced pathological cardiac fibrosis through activating TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>PKM2 suppression inhibits activation of TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways. (A) Representative Western blotting (left) and quantification (right) showing the expression of the indicated signalling pathways in NRCFs treated with DMSO or shikonin (0.1 μM) for 2 h and with/out Ang II (1 μM) for 5 min. (B) Representative Western blotting (left) and quantification (right) showing the expression of the indicated signalling pathways in NRCFs transfected with negative control or si‐PKM2 for 24 h and with/out Ang II (1 μM) for 5 min. (C) Representative Western blotting (left) and quantification (right) showing the expression of the indicated signalling pathways in mouse heart treated as in Figure <xref rid="jcmm17007-fig-0002" ref-type="fig">2</xref>. (D) Representative Western blotting (left) and quantification (right) showing the expression of the indicated signalling pathways in mouse heart treated as in Figure <xref rid="jcmm17007-fig-0003" ref-type="fig">3</xref>
+</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="JCMM-25-10711-g002.jpg"><?image-name JCMM-25-10711-g002.jpg?><?image-size 181901?><?image-md5 2895490594198749c2a874b8fe15d9bf?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1343?><?image-original-width 1064?><?image-scaled-height 895?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/289549059419/JCMM-25-10711-g002.jpg?><?thumb-name JCMM-25-10711-g002.gif?><?thumb-size 9410?><?thumb-md5 4dc3726fd50d58ac3451f86a730b4f1c?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 126?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/4dc3726fd50d/JCMM-25-10711-g002.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0025"><label>3.6</label><title>Inhibition of PKM2 improves Ang‐II‐induced oxidative stress</title><p>To further demonstrate the molecular mechanisms of pro‐fibrotic effect of PKM2, we checked oxidative stress in these processes. DCFH‐DA ROS intensity demonstrated that shikonin dramatically antagonized Ang‐II‐induced oxidative stress in NRCFs (Figure <xref rid="jcmm17007-fig-0006" ref-type="fig">6A</xref>). MDA, the product of oxidative stress showed a similar change to generation of ROS (Figure <xref rid="jcmm17007-fig-0006" ref-type="fig">6B</xref>). We also evaluated anti‐oxidants GSH/GSSG ratio and GPx4. As shown in Figure <xref rid="jcmm17007-fig-0006" ref-type="fig">6C, D</xref>, shikonin treatment significantly increases Ang‐II‐induced GSH/GSSG ratio and GPx4 in NRCFs downregulation. Furthermore, we detected oxidative stress in Ang‐II‐treated 7‐ and 14‐day mouse hearts. Our data showed shikonin treatment significantly improved Ang‐II‐induced GPx4 and SOD2 downregulation (Figure <xref rid="jcmm17007-fig-0006" ref-type="fig">6E, F</xref>). Hence, suppression of PKM2 significantly alleviates Ang‐II‐induced oxidative stress in cardiac remodelling.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>Inhibition of PKM2 improves Ang‐II‐induced cardiac fibroblasts oxidative stress. (A–D) After the treatment of shikonin and Ang II for 12 h in cardiac fibroblasts, ROS, MDA and GSH/GSSG ratio were determined using assay kits, and Gpx4 levels were measured by qRT‐PCR assay (<italic toggle="yes">n</italic> = 3 per group)</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="JCMM-25-10711-g004.jpg"><?image-name JCMM-25-10711-g004.jpg?><?image-size 75674?><?image-md5 d2046ddf60ac7569d8669712994675e8?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1147?><?image-original-width 1064?><?image-scaled-height 764?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/d2046ddf60ac/JCMM-25-10711-g004.jpg?><?thumb-name JCMM-25-10711-g004.gif?><?thumb-size 4858?><?thumb-md5 e9461b7334f0b788a2342c4a1045be0d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 108?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/e9461b7334f0/JCMM-25-10711-g004.gif?></graphic></fig></sec><sec id="jcmm17007-sec-0026"><label>3.7</label><title>PKM2 regulates TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways through oxidative stress</title><p>It is known that Ang‐II‐induced oxidative stress promotes the activation of TGF‐β/Smad2/3 signalling pathways.<xref rid="jcmm17007-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref>, <xref rid="jcmm17007-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> Activation of Jak2/Stat3 also required oxidative stress.<xref rid="jcmm17007-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref>, <xref rid="jcmm17007-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref> To explore the potential crosstalk between PKM2 and TGFβ/Smad2/3 and Jak2/Stat3, we used N‐acetylcysteine (NAC), ROS inhibitor targeting oxidative stress. In present study, we found that inhibition of oxidative stress by NAC suppresses Ang‐II‐induced TGFβ/Smad2/3 and Jak2/Stat3 activation in NRCFs (Figure <xref rid="jcmm17007-fig-0007" ref-type="fig">7A</xref>). These data indicate that PKM2 regulates Ang‐II‐induced cardiac fibrosis via TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways through oxidative stress.</p><fig position="float" fig-type="FIGURE" id="jcmm17007-fig-0007" orientation="portrait"><label>FIGURE 7</label><caption><p>PKM2 regulates TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways through oxidative stress. (A) Representative Western blotting (up) and quantification (down) showing the expression of the indicated signalling pathways in NRCFs treated with water or NAC (10 μM) for 2 h and with/out Ang II (1 μM) for 5 min. (B) Diagrammatic illustration of PKM2 in cardiac remodelling</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="JCMM-25-10711-g001.jpg"><?image-name JCMM-25-10711-g001.jpg?><?image-size 87987?><?image-md5 c2055a006a3f71ac7219ef8aa23aa2ff?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 753?><?image-original-width 1064?><?image-scaled-height 502?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/2aee/8581335/c2055a006a3f/JCMM-25-10711-g001.jpg?><?thumb-name JCMM-25-10711-g001.gif?><?thumb-size 4620?><?thumb-md5 852b74cf96a6e4ccd431db5e0364d8e8?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 113?><?thumb-cloudpmc-urn urn:cdn:blobs/2aee/8581335/852b74cf96a6/JCMM-25-10711-g001.gif?></graphic></fig></sec></sec><sec sec-type="discussion" id="jcmm17007-sec-0027"><label>4</label><title>DISCUSSION</title><p>In this study, we identified PKM2 as a detrimental factor in pathological cardiac remodelling. PKM2 was increased in both Ang‐II‐treated hearts and NRCFs, but not in NRCMs. Inhibition of PKM2 in mice alleviated Ang‐II‐induced cardiac remodelling and dysfunction. In vitro, suppression of PKM2 in NRCFs attenuated Ang‐II‐induced cell migration, proliferation and collagen synthesis. Mechanically, inhibition of PKM2 ameliorated cardiac remodelling by suppressing TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathway through oxidative stress. Therefore, PKM2 plays an adverse role in cardiac remodelling diseases (Figure <xref rid="jcmm17007-fig-0007" ref-type="fig">7B</xref>).</p><p>Cardiac fibrosis is pivotal in cardiac remodelling and heart failure. Persistent cardiac fibrosis causes an increase in cardiac muscle stiffness, eventually leads to cardiac dysfunction.<xref rid="jcmm17007-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> PKM2 is a key enzyme involved in the aerobic glycolysis of rapidly proliferation cells, which involves in fibroblast function and fibrosis.<xref rid="jcmm17007-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref>, <xref rid="jcmm17007-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>, <xref rid="jcmm17007-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref> Increasing evidence suggests that PKM2 contributes to pathological fibrosis process in different diseases. In chronic kidney diseases, overexpression of PKM2 remarkably induces myofibroblast activation and renal interstitial fibrosis, and inhibition of PKM2 by shikonin reverses these detrimental effects.<xref rid="jcmm17007-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> PKM2 is elevated in diabetic model mouse lungs and hearts, which regulates glucose‐induced lung fibrogenesis.<xref rid="jcmm17007-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref> The expression of PKM2 is markedly increased in TAC‐induced hypertrophic hearts.<xref rid="jcmm17007-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> In our study, we also found that PKM2 expression was elevated in Ang‐II‐infused remodelling mouse hearts and cardiac fibroblasts. Inhibition of PKM2 by shikonin ameliorated cardiac fibrosis, hypertrophy and dysfunction in Ang‐II‐induced mouse cardiac remodelling. In vitro, suppression of PKM2 alleviated Ang‐II‐induced migration, proliferation and collagen synthesis. Hence, PKM2 acts as a pro‐fibrotic role in cardiac remodelling.</p><p>TGF‐β/Smad2/3 and Jak2/Stat3 signalling are primary pathways in fibrogenesis and majorly contribute to reactive fibrosis in Ang‐II‐induced cardiac remodelling.<xref rid="jcmm17007-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref> TGF‐β, one of the best characterized fibrogenic growth factors, is markedly and consistently activated by Ang II in fibrotic animal hearts.<xref rid="jcmm17007-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref> Overexpression of TGF‐β stimulates the deposition of excessive collagen in cardiac interstitium and eventually induces ventricular fibrosis.<xref rid="jcmm17007-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> In addition, blockade of TGF‐β prevents cardiac fibrosis in pressure overload model.<xref rid="jcmm17007-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> Smad2/3, reported as TGF‐β transcriptional activators, promotes the activation of cardiac fibroblasts into myofibroblasts and aggravate pathological cardiac fibrosis.<xref rid="jcmm17007-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref> We found that suppression of PKM2 restrained the activation of TGF‐β/Smad2/3 signalling pathway. Numerous data indicate that the Jak2/Stat3 signalling pathway is involved in the development of cardiac fibrosis.<xref rid="jcmm17007-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> Selective inhibition of Stat3 phosphorylation ameliorates left‐atrial fibrosis in mouse MI model through inhibiting collagen synthesis.<xref rid="jcmm17007-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Our results showed that suppression of PKM2 inhibited phosphorylation of Jak2 and Stat3. These data indicate that PKM2‐activated aggravates cardiac fibrosis by targeting TGF‐β/Smad2/3 and Jak2/Stat3 signalling pathways.</p><p>Oxidative stress plays an important role in the pathophysiology of myocardial fibrosis.<xref rid="jcmm17007-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref> In an in vivo, ROS promotes collagen synthesis and deposition in fructose‐ and high glucose‐induced myocardial fibrosis.<xref rid="jcmm17007-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref>, <xref rid="jcmm17007-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref> In adult rat cardiac fibroblasts, the generation of ROS induced by Ang II also stimulates collagen production.<xref rid="jcmm17007-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> MDA, namely lipid peroxidation, is also a widely accepted biomarker of oxidative stress.<xref rid="jcmm17007-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> In our study, inhibition of PKM2 reduced Ang‐II‐induced ROS production and MDA levels. Diverse‐specific and ‐nonspecific anti‐oxidant defence systems exist to scavenge ROS. GSH and GPx4, major anti‐oxidants, protect cells against oxidative stress by decreasing the generation of ROS.<xref rid="jcmm17007-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref>, <xref rid="jcmm17007-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref> We found that Ang II decreased GSH/GSSG ratio and GPx4 levels, while inhibition of PKM2 opposed these detrimental effects. Thus, we suggest that PKM2 exacerbates cardiac fibrosis through oxidative stress.</p><p>Oxidative stress was reported to activate TGFβ1‐Smad2/3 and Jak2/Stat3 signalling. Our study here revealed an elevation of ROS generation and TGFβ1‐Smad2/3 and Jak2/Stat3signalling in response to Ang II treatment. We also observed that inhibition of oxidative stress by NAC suppressed Ang‐II‐induced TGFβ/Smad2/3 and Jak2/Stat3 activation in NRCFs. Combined with previous findings, we can speculate that shikonin attenuates Ang‐II‐induced cardiac fibrosis via TGF‐β/Smad2/3 and Jak2/Stat3 through oxidative stress. Interestingly, TGFβ1‐Smad2/3 and Jak2/Stat3 signalling activation were also reported to directly promote oxidative stress,<xref rid="jcmm17007-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref>, <xref rid="jcmm17007-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref>, <xref rid="jcmm17007-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref> thus suggesting a vicious cycle between TGFβ1‐Smad2/3 and Jak2/Stat3 signalling activation and ROS overproduction in Ang‐II‐induced pro‐fibrotic response.</p><p>In summary, we have discovered that PKM2 promotes angiotensin‐II‐induced cardiac remodelling by activating TGF‐β/Smad2/3 and Jak2/Stat3 pathways through oxidative stress. We propose negative modulation of PKM2 as a potential therapeutic strategy for the treatment of cardiac remodelling diseases.</p></sec><sec sec-type="COI-statement" id="jcmm17007-sec-0029"><title>CONFLICT OF INTEREST</title><p>None declared.</p></sec><sec id="jcmm17007-sec-0030"><title>AUTHOR CONTRIBUTIONS</title><p>
+<bold>Xiyu Zhang:</bold> Conceptualization (equal); Data curation (equal); Formal analysis (equal); Writing‐original draft (lead). <bold>Cuiting Zheng:</bold> Conceptualization (equal); Data curation (equal); Formal analysis (equal). <bold>Zhenqiang Gao:</bold> Investigation (equal). <bold>Lingling Wang:</bold> Investigation (equal). <bold>Chen Chen:</bold> Investigation (equal). <bold>Yuanyuan Zheng:</bold> Investigation (equal). <bold>Yan Meng:</bold> Funding acquisition (lead); Writing‐review &amp; editing (lead).</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jcmm17007-sup-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>Fig S1</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-25-10711-s002.pdf" position="float" orientation="portrait"><?suppdata-name JCMM-25-10711-s002.pdf?><?suppdata-size 396523?><?suppdata-md5 aa5ade87bfc870dfee5ec45f3b361c00?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type pdf?><?suppdata-cloudpmc-urn urn:app:2aee/8581335/aa5ade87bfc8/JCMM-25-10711-s002.pdf?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material><supplementary-material id="jcmm17007-sup-0002" position="float" content-type="local-data" orientation="portrait"><caption><p>Fig S2</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-25-10711-s001.pdf" position="float" orientation="portrait"><?suppdata-name JCMM-25-10711-s001.pdf?><?suppdata-size 324862?><?suppdata-md5 dc5582aafbc46ff9885ebc5d7971b3ea?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type application?><?suppdata-mime-sub-type pdf?><?suppdata-cloudpmc-urn urn:app:2aee/8581335/dc5582aafbc4/JCMM-25-10711-s001.pdf?><caption><p>Click here for additional data file.</p></caption></media></supplementary-material></sec></body><back><ack id="jcmm17007-sec-0028"><title>ACKNOWLEDGEMENT</title><p>This study was supported by National Natural Science Foundation of China (81670380).</p></ack><sec sec-type="data-availability" id="jcmm17007-sec-0032"><title>DATA AVAILABILITY STATEMENT</title><p>The data that support the findings of this study are available on request from the corresponding author.</p></sec><ref-list content-type="cited-references" id="jcmm17007-bibl-0001"><title>REFERENCES</title><ref id="jcmm17007-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0001">
+<string-name name-style="western">
+<surname>Weber</surname>
+<given-names>KT</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gerling</surname>
+<given-names>IC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guntaka</surname>
+<given-names>RV</given-names>
+</string-name>. <article-title>Regression of established cardiac fibrosis in hypertensive heart disease</article-title>. <source>Am J Hypertens</source>. <year>2017</year>;<volume>30</volume>(<issue>11</issue>):<fpage>1049</fpage>‐<lpage>1052</lpage>.<pub-id pub-id-type="pmid">28379281</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/ajh/hpx054</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0002">
+<string-name name-style="western">
+<surname>Gjesdal</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bluemke</surname>
+<given-names>DA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lima</surname>
+<given-names>JA</given-names>
+</string-name>. <article-title>Cardiac remodeling at the population level–risk factors, screening, and outcomes</article-title>. <source>Nat Rev Cardiol</source>. <year>2011</year>;<volume>8</volume>(<issue>12</issue>):<fpage>673</fpage>‐<lpage>685</lpage>.<pub-id pub-id-type="pmid">22027657</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/nrcardio.2011.154</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0003">
+<string-name name-style="western">
+<surname>Schiattarella</surname>
+<given-names>GG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hill</surname>
+<given-names>JA</given-names>
+</string-name>. <article-title>Inhibition of hypertrophy is a good therapeutic strategy in ventricular pressure overload</article-title>. <source>Circulation</source>. <year>2015</year>;<volume>131</volume>(<issue>16</issue>):<fpage>1435</fpage>‐<lpage>1447</lpage>.<pub-id pub-id-type="pmid">25901069</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1161/CIRCULATIONAHA.115.013894</pub-id><pub-id pub-id-type="pmcid">PMC4408778</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0004">
+<string-name name-style="western">
+<surname>Su</surname>
+<given-names>SA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>EphrinB2 regulates cardiac fibrosis through modulating the interaction of Stat3 and TGF‐beta/Smad3 signaling</article-title>. <source>Circ Res</source>. <year>2017</year>;<volume>121</volume>(<issue>6</issue>):<fpage>617</fpage>‐<lpage>627</lpage>.<pub-id pub-id-type="pmid">28743805</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1161/CIRCRESAHA.117.311045</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0005">
+<string-name name-style="western">
+<surname>Sakata</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chancey</surname>
+<given-names>AL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Divakaran</surname>
+<given-names>VG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sekiguchi</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sivasubramanian</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mann</surname>
+<given-names>DL</given-names>
+</string-name>. <article-title>Transforming growth factor‐beta receptor antagonism attenuates myocardial fibrosis in mice with cardiac‐restricted overexpression of tumor necrosis factor</article-title>. <source>Basic Res Cardiol</source>. <year>2008</year>;<volume>103</volume>(<issue>1</issue>):<fpage>60</fpage>‐<lpage>68</lpage>.<pub-id pub-id-type="pmid">18034274</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00395-007-0689-5</pub-id><pub-id pub-id-type="pmcid">PMC3872069</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0006">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Surinkaew</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Naud</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>JAK‐STAT signalling and the atrial fibrillation promoting fibrotic substrate</article-title>. <source>Cardiovasc Res</source>. <year>2017</year>;<volume>113</volume>(<issue>3</issue>):<fpage>310</fpage>‐<lpage>320</lpage>.<pub-id pub-id-type="pmid">28158495</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/cvr/cvx004</pub-id><pub-id pub-id-type="pmcid">PMC5852635</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0007">
+<string-name name-style="western">
+<surname>Pizzino</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Irrera</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cucinotta</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Oxidative stress: harms and benefits for human health</article-title>. <source>Oxid Med Cell Longev</source>. <year>2017</year>;<volume>2017</volume>:<fpage>8416763</fpage>.<pub-id pub-id-type="pmid">28819546</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2017/8416763</pub-id><pub-id pub-id-type="pmcid">PMC5551541</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0008">
+<string-name name-style="western">
+<surname>Duni</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liakopoulos</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Roumeliotis</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peschos</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dounousi</surname>
+<given-names>E</given-names>
+</string-name>. <article-title>Oxidative stress in the pathogenesis and evolution of chronic kidney disease: untangling ariadne's thread</article-title>. <source>Int J Mol Sci</source>. <year>2019</year>;<volume>20</volume>(<issue>15</issue>):<fpage>3711</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms20153711</pub-id><pub-id pub-id-type="pmcid">PMC6695865</pub-id><pub-id pub-id-type="pmid">31362427</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0009">
+<string-name name-style="western">
+<surname>Sinha</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dabla</surname>
+<given-names>PK</given-names>
+</string-name>. <article-title>Oxidative stress and antioxidants in hypertension‐a current review</article-title>. <source>Curr Hypertens Rev</source>. <year>2015</year>;<volume>11</volume>(<issue>2</issue>):<fpage>132</fpage>‐<lpage>142</lpage>.<pub-id pub-id-type="pmid">26022210</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2174/1573402111666150529130922</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0010">
+<string-name name-style="western">
+<surname>Klaunig</surname>
+<given-names>JE</given-names>
+</string-name>. <article-title>Oxidative stress and cancer</article-title>. <source>Curr Pharm Des</source>. <year>2018</year>;<volume>24</volume>(<issue>40</issue>):<fpage>4771</fpage>‐<lpage>4778</lpage>.<pub-id pub-id-type="pmid">30767733</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2174/1381612825666190215121712</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0011">
+<string-name name-style="western">
+<surname>Dai</surname>
+<given-names>DF</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Johnson</surname>
+<given-names>SC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Villarin</surname>
+<given-names>JJ</given-names>
+</string-name>, et al. <article-title>Mitochondrial oxidative stress mediates angiotensin II‐induced cardiac hypertrophy and Galphaq overexpression‐induced heart failure</article-title>. <source>Circ Res</source>. <year>2011</year>;<volume>108</volume>(<issue>7</issue>):<fpage>837</fpage>‐<lpage>846</lpage>.<pub-id pub-id-type="pmid">21311045</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1161/CIRCRESAHA.110.232306</pub-id><pub-id pub-id-type="pmcid">PMC3785241</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0012">
+<string-name name-style="western">
+<surname>Dixon</surname>
+<given-names>SJ</given-names>
+</string-name>. <article-title>Ferroptosis: bug or feature?</article-title>
+<source>Immunol Rev</source>. <year>2017</year>;<volume>277</volume>(<issue>1</issue>):<fpage>150</fpage>‐<lpage>157</lpage>.<pub-id pub-id-type="pmid">28462529</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/imr.12533</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0013">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guo</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Natural product Micheliolide (MCL) irreversibly activates pyruvate kinase M2 and suppresses leukemia</article-title>. <source>J Med Chem</source>. <year>2018</year>;<volume>61</volume>(<issue>9</issue>):<fpage>4155</fpage>‐<lpage>4164</lpage>.<pub-id pub-id-type="pmid">29641204</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1021/acs.jmedchem.8b00241</pub-id><pub-id pub-id-type="pmcid">PMC5949721</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0014">
+<string-name name-style="western">
+<surname>Palsson‐McDermott</surname>
+<given-names>EM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Curtis</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Goel</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Pyruvate kinase M2 regulates Hif‐1alpha activity and IL‐1beta induction and is a critical determinant of the warburg effect in LPS‐activated macrophages</article-title>. <source>Cell Metab</source>. <year>2015</year>;<volume>21</volume>(<issue>1</issue>):<fpage>65</fpage>‐<lpage>80</lpage>.<pub-id pub-id-type="pmid">25565206</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cmet.2014.12.005</pub-id><pub-id pub-id-type="pmcid">PMC5198835</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0015">
+<string-name name-style="western">
+<surname>Dayton</surname>
+<given-names>TL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jacks</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Vander Heiden</surname>
+<given-names>MG</given-names>
+</string-name>. <article-title>PKM2, cancer metabolism, and the road ahead</article-title>. <source>EMBO Rep</source>. <year>2016</year>;<volume>17</volume>(<issue>12</issue>):<fpage>1721</fpage>‐<lpage>1730</lpage>.<pub-id pub-id-type="pmid">27856534</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.15252/embr.201643300</pub-id><pub-id pub-id-type="pmcid">PMC5283597</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0016">
+<string-name name-style="western">
+<surname>Liang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cao</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Mitochondrial PKM2 regulates oxidative stress‐induced apoptosis by stabilizing Bcl2</article-title>. <source>Cell Res</source>. <year>2017</year>;<volume>27</volume>(<issue>3</issue>):<fpage>329</fpage>‐<lpage>351</lpage>.<pub-id pub-id-type="pmid">28035139</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/cr.2016.159</pub-id><pub-id pub-id-type="pmcid">PMC5339831</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0017">
+<string-name name-style="western">
+<surname>Bi</surname>
+<given-names>HL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>XL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>YL</given-names>
+</string-name>, et al. <article-title>The deubiquitinase UCHL1 regulates cardiac hypertrophy by stabilizing epidermal growth factor receptor</article-title>. <source>Sci Adv</source>. <year>2020</year>;<volume>6</volume>(<issue>16</issue>):<fpage>eaax4826</fpage>.<pub-id pub-id-type="pmid">32494592</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1126/sciadv.aax4826</pub-id><pub-id pub-id-type="pmcid">PMC7164950</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0018">
+<string-name name-style="western">
+<surname>Sun</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ma</surname>
+<given-names>J</given-names>
+</string-name>, et al. <article-title>Mammalian target of rapamycin up‐regulation of pyruvate kinase isoenzyme type M2 is critical for aerobic glycolysis and tumor growth</article-title>. <source>Proc Natl Acad Sci U S A</source>. <year>2011</year>;<volume>108</volume>(<issue>10</issue>):<fpage>4129</fpage>‐<lpage>4134</lpage>.<pub-id pub-id-type="pmid">21325052</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1073/pnas.1014769108</pub-id><pub-id pub-id-type="pmcid">PMC3054028</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0019">
+<string-name name-style="western">
+<surname>Latella</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Redox imbalance in intestinal fibrosis: beware of the TGFbeta‐1, ROS, and Nrf2 connection</article-title>. <source>Dig Dis Sci</source>. <year>2018</year>;<volume>63</volume>(<issue>2</issue>):<fpage>312</fpage>‐<lpage>320</lpage>.<pub-id pub-id-type="pmid">29273848</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10620-017-4887-1</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0020">
+<string-name name-style="western">
+<surname>Chen</surname>
+<given-names>RR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fan</surname>
+<given-names>XH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Irisin attenuates angiotensin II‐induced cardiac fibrosis via Nrf2 mediated inhibition of ROS/ TGFbeta1/Smad2/3 signaling axis</article-title>. <source>Chem Biol Interact</source>. <year>2019</year>;<volume>302</volume>:<fpage>11</fpage>‐<lpage>21</lpage>.<pub-id pub-id-type="pmid">30703374</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.cbi.2019.01.031</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0021">
+<string-name name-style="western">
+<surname>Simon</surname>
+<given-names>AR</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rai</surname>
+<given-names>U</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fanburg</surname>
+<given-names>BL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cochran</surname>
+<given-names>BH</given-names>
+</string-name>. <article-title>Activation of the JAK‐STAT pathway by reactive oxygen species</article-title>. <source>Am J Physiol</source>. <year>1998</year>;<volume>275</volume>(<issue>6</issue>):<fpage>C1640</fpage>‐<lpage>C1652</lpage>.<pub-id pub-id-type="pmid">9843726</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/ajpcell.1998.275.6.C1640</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0022">
+<string-name name-style="western">
+<surname>Severgnini</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Takahashi</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rozo</surname>
+<given-names>LM</given-names>
+</string-name>, et al. <article-title>Activation of the STAT pathway in acute lung injury</article-title>. <source>Am J Physiol Lung Cell Mol Physiol</source>. <year>2004</year>;<volume>286</volume>(<issue>6</issue>):<fpage>L1282</fpage>‐<lpage>L1292</lpage>.<pub-id pub-id-type="pmid">14729509</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/ajplung.00349.2003</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0023">
+<string-name name-style="western">
+<surname>Delaunay</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Osman</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kaiser</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Diviani</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>The role of cyclic AMP signaling in cardiac fibrosis</article-title>. <source>Cells</source>. <year>2019</year>;<volume>9</volume>(<issue>1</issue>):<fpage>69</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/cells9010069</pub-id><pub-id pub-id-type="pmcid">PMC7016856</pub-id><pub-id pub-id-type="pmid">31888098</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0024">
+<string-name name-style="western">
+<surname>Iansante</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Choy</surname>
+<given-names>PM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fung</surname>
+<given-names>SW</given-names>
+</string-name>, et al. <article-title>PARP14 promotes the Warburg effect in hepatocellular carcinoma by inhibiting JNK1‐dependent PKM2 phosphorylation and activation</article-title>. <source>Nat Commun</source>. <year>2015</year>;<volume>6</volume>:<fpage>7882</fpage>.<pub-id pub-id-type="pmid">26258887</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/ncomms8882</pub-id><pub-id pub-id-type="pmcid">PMC4918319</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0025">
+<string-name name-style="western">
+<surname>Murphy</surname>
+<given-names>MK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Motz</surname>
+<given-names>KM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ding</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Targeting metabolic abnormalities to reverse fibrosis in iatrogenic laryngotracheal stenosis</article-title>. <source>Laryngoscope</source>. <year>2018</year>;<volume>128</volume>(<issue>2</issue>):<fpage>E59</fpage>‐<lpage>E67</lpage>.<pub-id pub-id-type="pmid">28940431</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/lary.26893</pub-id><pub-id pub-id-type="pmcid">PMC5771827</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0026">
+<string-name name-style="western">
+<surname>Ryu</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Sun</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gulati</surname>
+<given-names>M</given-names>
+</string-name>, et al. <article-title>Extracellular mitochondrial DNA is generated by fibroblasts and predicts death in idiopathic pulmonary fibrosis</article-title>. <source>Am J Respir Crit Care Med</source>. <year>2017</year>;<volume>196</volume>(<issue>12</issue>):<fpage>1571</fpage>‐<lpage>1581</lpage>.<pub-id pub-id-type="pmid">28783377</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1164/rccm.201612-2480OC</pub-id><pub-id pub-id-type="pmcid">PMC5754440</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0027">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qin</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nie</surname>
+<given-names>F</given-names>
+</string-name>, et al. <article-title>Metabolic reprogramming in keloid fibroblasts: aerobic glycolysis and a novel therapeutic strategy</article-title>. <source>Biochem Biophys Res Commun</source>. <year>2018</year>;<volume>496</volume>(<issue>2</issue>):<fpage>641</fpage>‐<lpage>647</lpage>.<pub-id pub-id-type="pmid">29337061</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.bbrc.2018.01.068</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0028">
+<string-name name-style="western">
+<surname>Bhedi</surname>
+<given-names>CD</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nasirova</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Toksoz</surname>
+<given-names>D</given-names>
+</string-name>, et al. <article-title>Glycolysis regulated transglutaminase 2 activation in cardiopulmonary fibrogenic remodeling</article-title>. <source>FASEB J</source>. <year>2020</year>;<volume>34</volume>(<issue>1</issue>):<fpage>930</fpage>‐<lpage>944</lpage>.<pub-id pub-id-type="pmid">31914588</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1096/fj.201902155R</pub-id><pub-id pub-id-type="pmcid">PMC6956703</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0029">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kenney</surname>
+<given-names>JW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Manousopoulou</surname>
+<given-names>A</given-names>
+</string-name>, et al. <article-title>Quantitative Non‐canonical Amino Acid Tagging (QuaNCAT) proteomics identifies distinct patterns of protein synthesis rapidly induced by hypertrophic agents in cardiomyocytes, revealing new aspects of metabolic remodeling</article-title>. <source>Mol Cell Proteomics</source>. <year>2016</year>;<volume>15</volume>(<issue>10</issue>):<fpage>3170</fpage>‐<lpage>3189</lpage>.<pub-id pub-id-type="pmid">27512079</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1074/mcp.M115.054312</pub-id><pub-id pub-id-type="pmcid">PMC5054342</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0030">
+<string-name name-style="western">
+<surname>Eid</surname>
+<given-names>RA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Alkhateeb</surname>
+<given-names>MA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>El‐Kott</surname>
+<given-names>AF</given-names>
+</string-name>, et al. <article-title>A high‐fat diet rich in corn oil induces cardiac fibrosis in rats by activating JAK2/STAT3 and subsequent activation of ANG II/TGF‐1beta/Smad3 pathway: the role of ROS and IL‐6 trans‐signaling</article-title>. <source>J Food Biochem</source>. <year>2019</year>;<volume>43</volume>(<issue>8</issue>):<elocation-id>e12952</elocation-id>.<pub-id pub-id-type="pmid">31368573</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/jfbc.12952</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0031">
+<string-name name-style="western">
+<surname>Cao</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ding</surname>
+<given-names>WM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yan</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>QY</given-names>
+</string-name>. <article-title>LncRNA PVT1 regulates atrial fibrosis via miR‐128‐3p‐SP1‐TGF‐beta1‐Smad axis in atrial fibrillation</article-title>. <source>Mol Med</source>. <year>2019</year>;<volume>25</volume>(<issue>1</issue>):<fpage>7</fpage>.<pub-id pub-id-type="pmid">30894138</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s10020-019-0074-5</pub-id><pub-id pub-id-type="pmcid">PMC6425687</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0032">
+<string-name name-style="western">
+<surname>Rosenkranz</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Flesch</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Amann</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>Alterations of beta‐adrenergic signaling and cardiac hypertrophy in transgenic mice overexpressing TGF‐beta(1)</article-title>. <source>Am J Physiol Heart Circ Physiol</source>. <year>2002</year>;<volume>283</volume>(<issue>3</issue>):<fpage>H1253</fpage>‐<lpage>H1262</lpage>.<pub-id pub-id-type="pmid">12181157</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1152/ajpheart.00578.2001</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0033">
+<string-name name-style="western">
+<surname>Kuwahara</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kai</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tokuda</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>Transforming growth factor‐beta function blocking prevents myocardial fibrosis and diastolic dysfunction in pressure‐overloaded rats</article-title>. <source>Circulation</source>. <year>2002</year>;<volume>106</volume>(<issue>1</issue>):<fpage>130</fpage>‐<lpage>135</lpage>.<pub-id pub-id-type="pmid">12093782</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1161/01.cir.0000020689.12472.e0</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0034">
+<string-name name-style="western">
+<surname>Khalil</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kanisicak</surname>
+<given-names>O</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Prasad</surname>
+<given-names>V</given-names>
+</string-name>, et al. <article-title>Fibroblast‐specific TGF‐beta‐Smad2/3 signaling underlies cardiac fibrosis</article-title>. <source>J Clin Invest</source>. <year>2017</year>;<volume>127</volume>(<issue>10</issue>):<fpage>3770</fpage>‐<lpage>3783</lpage>.<pub-id pub-id-type="pmid">28891814</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1172/JCI94753</pub-id><pub-id pub-id-type="pmcid">PMC5617658</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0035">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fan</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Captopril attenuates TAC‐induced heart failure via inhibiting Wnt3a/beta‐catenin and Jak2/Stat3 pathways</article-title>. <source>Biomed Pharmacother</source>. <year>2019</year>;<volume>113</volume>:<fpage>108780</fpage>.<pub-id pub-id-type="pmid">30889487</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biopha.2019.108780</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0036">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>LP</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fan</surname>
+<given-names>SJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>SM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>XJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gao</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>XH</given-names>
+</string-name>. <article-title>Oxidative stress promotes myocardial fibrosis by upregulating KCa3.1 channel expression in AGT‐REN double transgenic hypertensive mice</article-title>. <source>Pflugers Arch</source>. <year>2017</year>;<volume>469</volume>(<issue>9</issue>):<fpage>1061</fpage>‐<lpage>1071</lpage>.<pub-id pub-id-type="pmid">28455747</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00424-017-1984-0</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0037">
+<string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Toll‐like receptor‐6 (TLR6) deficient mice are protected from myocardial fibrosis induced by high fructose feeding through anti‐oxidant and inflammatory signaling pathway</article-title>. <source>Biochem Biophys Res Commun</source>. <year>2016</year>;<volume>473</volume>(<issue>2</issue>):<fpage>388</fpage>‐<lpage>395</lpage>.<pub-id pub-id-type="pmid">26940740</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.bbrc.2016.02.111</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0038">
+<string-name name-style="western">
+<surname>Evangelista</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Nuti</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Picchioni</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dotta</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Palazzuoli</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Molecular dysfunction and phenotypic derangement in diabetic cardiomyopathy</article-title>. <source>Int J Mol Sci</source>. <year>2019</year>;<volume>20</volume>(<issue>13</issue>):<fpage>3264</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms20133264</pub-id><pub-id pub-id-type="pmcid">PMC6651260</pub-id><pub-id pub-id-type="pmid">31269778</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0039">
+<string-name name-style="western">
+<surname>Lijnen</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Papparella</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Petrov</surname>
+<given-names>V</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Semplicini</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fagard</surname>
+<given-names>R</given-names>
+</string-name>. <article-title>Angiotensin II‐stimulated collagen production in cardiac fibroblasts is mediated by reactive oxygen species</article-title>. <source>J Hypertens</source>. <year>2006</year>;<volume>24</volume>(<issue>4</issue>):<fpage>757</fpage>‐<lpage>766</lpage>.<pub-id pub-id-type="pmid">16531806</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/01.hjh.0000217860.04994.54</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0040">
+<string-name name-style="western">
+<surname>Turut</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ciralik</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kilinc</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ozbag</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Imrek</surname>
+<given-names>SS</given-names>
+</string-name>. <article-title>Effects of early administration of dexamethasone, N‐acetylcysteine and aprotinin on inflammatory and oxidant‐antioxidant status after lung contusion in rats</article-title>. <source>Injury</source>. <year>2009</year>;<volume>40</volume>(<issue>5</issue>):<fpage>521</fpage>‐<lpage>527</lpage>.<pub-id pub-id-type="pmid">18707685</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.injury.2008.05.001</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0041">
+<string-name name-style="western">
+<surname>Dai</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weinberg</surname>
+<given-names>RS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Waxman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jing</surname>
+<given-names>Y</given-names>
+</string-name>. <article-title>Malignant cells can be sensitized to undergo growth inhibition and apoptosis by arsenic trioxide through modulation of the glutathione redox system</article-title>. <source>Blood</source>. <year>1999</year>;<volume>93</volume>(<issue>1</issue>):<fpage>268</fpage>‐<lpage>277</lpage>.<pub-id pub-id-type="pmid">9864170</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0042">
+<string-name name-style="western">
+<surname>Feng</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Stockwell</surname>
+<given-names>BR</given-names>
+</string-name>. <article-title>Unsolved mysteries: how does lipid peroxidation cause ferroptosis?</article-title>
+<source>PLoS Biol</source>. <year>2018</year>;<volume>16</volume>(<issue>5</issue>):<elocation-id>e2006203</elocation-id>.<pub-id pub-id-type="pmid">29795546</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pbio.2006203</pub-id><pub-id pub-id-type="pmcid">PMC5991413</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0043">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Song</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>The STAT‐ROS cycle extends IFNinduced cancer cell apoptosis</article-title>. <source>Int J Oncol</source>. <year>2018</year>;<volume>52</volume>(<issue>1</issue>):<fpage>305</fpage>‐<lpage>313</lpage>.<pub-id pub-id-type="pmid">29115415</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.3892/ijo.2017.4196</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0044">
+<string-name name-style="western">
+<surname>Black</surname>
+<given-names>D</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lyman</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qian</surname>
+<given-names>T</given-names>
+</string-name>, et al. <article-title>Transforming growth factor beta mediates hepatocyte apoptosis through Smad3 generation of reactive oxygen species</article-title>. <source>Biochimie</source>. <year>2007</year>;<volume>89</volume>(<issue>12</issue>):<fpage>1464</fpage>‐<lpage>1473</lpage>.<pub-id pub-id-type="pmid">17936489</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.biochi.2007.09.001</pub-id><pub-id pub-id-type="pmcid">PMC2151473</pub-id></mixed-citation></ref><ref id="jcmm17007-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jcmm17007-cit-0045">
+<string-name name-style="western">
+<surname>Krylatov</surname>
+<given-names>AV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Maslov</surname>
+<given-names>LN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Voronkov</surname>
+<given-names>NS</given-names>
+</string-name>, et al. <article-title>Reactive oxygen species as intracellular signaling molecules in the cardiovascular system</article-title>. <source>Curr Cardiol Rev</source>. <year>2018</year>;<volume>14</volume>(<issue>4</issue>):<fpage>290</fpage>‐<lpage>300</lpage>.<pub-id pub-id-type="pmid">29962348</pub-id><pub-id pub-id-type="doi" assigning-authority="pmc">10.2174/1573403X14666180702152436</pub-id><pub-id pub-id-type="pmcid">PMC6300799</pub-id></mixed-citation></ref></ref-list></back></article>

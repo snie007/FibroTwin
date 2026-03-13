@@ -1,5 +1,5 @@
 {
-  "n": 20,
+  "n": 80,
   "rows": [
     {
       "id": "T001",
@@ -867,6 +867,2185 @@
       "n_candidates": 0,
       "n_schema_matched": 0,
       "schema_matched": []
+    },
+    {
+      "id": "T021",
+      "pmid": "39938686",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T022",
+      "pmid": "39895521",
+      "category": "fibroblast_signaling",
+      "n_candidates": 832,
+      "n_schema_matched": 102,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": "ardiac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7 Hu Min PhD 1 2 * Huang Shi\u2010Yu PhD 3 * Gao Yi\u2010Peng MD 2 Hu Yu\u2010Xin MD 2 Wang Sha\u2010Sha BSc 2 Ten"
+        },
+        {
+          "value": "2",
+          "snippet": "diac Remodeling in Male Mice by Transcriptionally Inhibiting SMAD7 Hu Min PhD 1 2 * Huang Shi\u2010Yu PhD 3 * Gao Yi\u2010Peng MD 2 Hu Yu\u2010Xin MD 2 Wang Sha\u2010Sha BSc 2 Teng "
+        },
+        {
+          "value": "3",
+          "snippet": "le Mice by Transcriptionally Inhibiting SMAD7 Hu Min PhD 1 2 * Huang Shi\u2010Yu PhD 3 * Gao Yi\u2010Peng MD 2 Hu Yu\u2010Xin MD 2 Wang Sha\u2010Sha BSc 2 Teng Teng PhD 1 2 Zeng Xia"
+        },
+        {
+          "value": "2",
+          "snippet": "ptionally Inhibiting SMAD7 Hu Min PhD 1 2 * Huang Shi\u2010Yu PhD 3 * Gao Yi\u2010Peng MD 2 Hu Yu\u2010Xin MD 2 Wang Sha\u2010Sha BSc 2 Teng Teng PhD 1 2 Zeng Xiao\u2010Feng BSc 2 Tang Q"
+        },
+        {
+          "value": "2",
+          "snippet": "iting SMAD7 Hu Min PhD 1 2 * Huang Shi\u2010Yu PhD 3 * Gao Yi\u2010Peng MD 2 Hu Yu\u2010Xin MD 2 Wang Sha\u2010Sha BSc 2 Teng Teng PhD 1 2 Zeng Xiao\u2010Feng BSc 2 Tang Qi\u2010Zhu PhD 1 2 \u2709"
+        },
+        {
+          "value": "5",
+          "snippet": "ways, including TGF\u2010\u03b2 (transforming growth factor beta)/Smad signaling pathway. 5 , 6 TGF\u2010\u03b2 is the best\u2010known fibrogenic cytokine described in fibrotic diseases,"
+        },
+        {
+          "value": "6",
+          "snippet": ", including TGF\u2010\u03b2 (transforming growth factor beta)/Smad signaling pathway. 5 , 6 TGF\u2010\u03b2 is the best\u2010known fibrogenic cytokine described in fibrotic diseases, inc"
+        },
+        {
+          "value": "7",
+          "snippet": "n fibrogenic cytokine described in fibrotic diseases, including heart fibrosis. 7 , 8 , 9 The TGF\u2010\u03b2/Smad3 pathway has a pivotal role in cardiac remodeling by act"
+        },
+        {
+          "value": "8",
+          "snippet": "brogenic cytokine described in fibrotic diseases, including heart fibrosis. 7 , 8 , 9 The TGF\u2010\u03b2/Smad3 pathway has a pivotal role in cardiac remodeling by activat"
+        },
+        {
+          "value": "9",
+          "snippet": "enic cytokine described in fibrotic diseases, including heart fibrosis. 7 , 8 , 9 The TGF\u2010\u03b2/Smad3 pathway has a pivotal role in cardiac remodeling by activating "
+        },
+        {
+          "value": "10",
+          "snippet": "activating fibroblasts to produce extracellular matrix in injured heart tissue. 10 , 11 Upon activation of TGF\u2010\u03b2 receptors, intracellular mediators known as Smad2"
+        },
+        {
+          "value": "11",
+          "snippet": "ating fibroblasts to produce extracellular matrix in injured heart tissue. 10 , 11 Upon activation of TGF\u2010\u03b2 receptors, intracellular mediators known as Smad2/3 be"
+        },
+        {
+          "value": "3",
+          "snippet": ", 11 Upon activation of TGF\u2010\u03b2 receptors, intracellular mediators known as Smad2/3 become phosphorylated and activated. This activation subsequently leads to the "
+        },
+        {
+          "value": "13",
+          "snippet": "oops is accomplished by the transcriptional activation of inhibitory (I)\u2010SMAD7. 13 Lan and coworkers verified that Smad7 plays a protective role in Ang II\u2010induced"
+        },
+        {
+          "value": "29",
+          "snippet": "nduced cardiac remodeling via mechanisms involving the Sp1\u2010TGF\u2010\u03b2/Smad\u2010NF\u2010kB\u2010miR\u201029 regulatory network. 14 Besides, disruption of the interaction between Smad7 and"
+        },
+        {
+          "value": "14",
+          "snippet": "ng via mechanisms involving the Sp1\u2010TGF\u2010\u03b2/Smad\u2010NF\u2010kB\u2010miR\u201029 regulatory network. 14 Besides, disruption of the interaction between Smad7 and the TGF\u2010\u03b2 type I recep"
+        },
+        {
+          "value": "5",
+          "snippet": "PCR was performed using primers (forward 5\u2032\u2010 AGTGGCGGGTGCCGGAGGTCTT\u20103\u2032; reverse 5\u2032\u2010 GCTCCGGGCTCGGGTTTCTA \u22123\u2032) spanning the KLF12 binding site in the Smad7 promot"
+        },
+        {
+          "value": "3",
+          "snippet": "imers (forward 5\u2032\u2010 AGTGGCGGGTGCCGGAGGTCTT\u20103\u2032; reverse 5\u2032\u2010 GCTCCGGGCTCGGGTTTCTA \u22123\u2032) spanning the KLF12 binding site in the Smad7 promoter. The negative primers s"
+        },
+        {
+          "value": "5",
+          "snippet": "motif region \u22122kb upstream from the SMAD7 promoter region for ChIP\u2010PCR: forward 5\u2032\u2010 CTGAAGACATTAGGAGGCCAAC\u20103\u2032; reverse 5\u2032\u2010 CCCACCATTACAGGCAG \u22123\u2032. The negative pr"
+        },
+        {
+          "value": "3",
+          "snippet": "from the SMAD7 promoter region for ChIP\u2010PCR: forward 5\u2032\u2010 CTGAAGACATTAGGAGGCCAAC\u20103\u2032; reverse 5\u2032\u2010 CCCACCATTACAGGCAG \u22123\u2032. The negative primers sequences that do not"
+        },
+        {
+          "value": "5",
+          "snippet": "tif region +2kb downstream from the SMAD7 promoter region for ChIP\u2010PCR: forward 5'\u2010CAAGGCAGTCCGAGGTG \u22123\u2032; reverse 5'\u2010GCTGCCGCTCCTTGAGTTTC\u20103\u2032. Echocardiography an"
+        },
+        {
+          "value": "3",
+          "snippet": "ream from the SMAD7 promoter region for ChIP\u2010PCR: forward 5'\u2010CAAGGCAGTCCGAGGTG \u22123\u2032; reverse 5'\u2010GCTGCCGCTCCTTGAGTTTC\u20103\u2032. Echocardiography and Hemodynamics Echocar"
+        },
+        {
+          "value": "5",
+          "snippet": "e SMAD7 promoter region for ChIP\u2010PCR: forward 5'\u2010CAAGGCAGTCCGAGGTG \u22123\u2032; reverse 5'\u2010GCTGCCGCTCCTTGAGTTTC\u20103\u2032. Echocardiography and Hemodynamics Echocardiography an"
+        },
+        {
+          "value": "24",
+          "snippet": "cted from these myofibroblasts and subjected to neonatal rat cardiomyocytes for 24 hours in the absence or presence of Ang II, and then the cell area of the cardi"
+        },
+        {
+          "value": "4",
+          "snippet": " implied that KLF12 accelerated the proliferation and activation of CFs. Figure 4 KLF12 is required for cardiac fibroblast\u2010to\u2010myofibroblast conversion. A , Relat"
+        }
+      ]
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "category": "collagen_dynamics",
+      "n_candidates": 538,
+      "n_schema_matched": 58,
+      "schema_matched": [
+        {
+          "value": "80829",
+          "snippet": "ture Publishing Group PMC11680569 11680569 11680569 39730461 10.1038/s41598-024-80829-w Effects of Empagliflozin and Dapagliflozin in alleviating cardiac fibrosis th"
+        },
+        {
+          "value": "1",
+          "snippet": " cardiac fibrosis through SIRT6-mediated oxidative stress reduction Ma Hong-xia 1 2 3 # Wu Ke 1 2 # Dong Fei-hong 1 2 Cai Bing-kun 1 2 Wu Di 1 \u2709 Lu Hui-yi 1 4 \u2709 "
+        },
+        {
+          "value": "2",
+          "snippet": "ardiac fibrosis through SIRT6-mediated oxidative stress reduction Ma Hong-xia 1 2 3 # Wu Ke 1 2 # Dong Fei-hong 1 2 Cai Bing-kun 1 2 Wu Di 1 \u2709 Lu Hui-yi 1 4 \u2709 1 "
+        },
+        {
+          "value": "3",
+          "snippet": "diac fibrosis through SIRT6-mediated oxidative stress reduction Ma Hong-xia 1 2 3 # Wu Ke 1 2 # Dong Fei-hong 1 2 Cai Bing-kun 1 2 Wu Di 1 \u2709 Lu Hui-yi 1 4 \u2709 1 De"
+        },
+        {
+          "value": "10",
+          "snippet": "or TGF-\u03b21 to establish an in vitro model of myocardial fibrosis. Treatment with 10 \u00b5M Empagliflozin (EMPA) and Dapagliflozin (DAPA) significantly curtailed the pr"
+        },
+        {
+          "value": "10.1038",
+          "snippet": "ary Information The online version contains supplementary material available at 10.1038/s41598-024-80829-w. Keywords: Myocardial fibrosis, Empagliflozin, Dapagliflozin"
+        },
+        {
+          "value": "024",
+          "snippet": " The online version contains supplementary material available at 10.1038/s41598-024-80829-w. Keywords: Myocardial fibrosis, Empagliflozin, Dapagliflozin, Oxidative"
+        },
+        {
+          "value": "80829",
+          "snippet": " online version contains supplementary material available at 10.1038/s41598-024-80829-w. Keywords: Myocardial fibrosis, Empagliflozin, Dapagliflozin, Oxidative stres"
+        },
+        {
+          "value": "2",
+          "snippet": "ischemia and oxidative stress, contributes to complications such as arrhythmias 2 \u2013 4 . Currently, there is no specific treatment for myocardial fibrosis, and cl"
+        },
+        {
+          "value": "4",
+          "snippet": "emia and oxidative stress, contributes to complications such as arrhythmias 2 \u2013 4 . Currently, there is no specific treatment for myocardial fibrosis, and clinic"
+        },
+        {
+          "value": "12",
+          "snippet": "ncreased markers of myocardial fibrosis, resulting in impaired cardiac function 12 , 13 . Therefore, SIRT6 plays a negative regulatory role in cardiac diseases su"
+        },
+        {
+          "value": "13",
+          "snippet": "sed markers of myocardial fibrosis, resulting in impaired cardiac function 12 , 13 . Therefore, SIRT6 plays a negative regulatory role in cardiac diseases such as"
+        },
+        {
+          "value": "0.8",
+          "snippet": "psin at 4\u2103 for 12\u00a0h. This was followed by further enzymatic disintegration with 0.8% type II collagenase at 37\u2103 for 1\u00a0h. Afterward, the cell mixtures were centrifu"
+        },
+        {
+          "value": "37",
+          "snippet": "s followed by further enzymatic disintegration with 0.8% type II collagenase at 37\u2103 for 1\u00a0h. Afterward, the cell mixtures were centrifuged, and the resulting sedi"
+        },
+        {
+          "value": "1",
+          "snippet": "ed by further enzymatic disintegration with 0.8% type II collagenase at 37\u2103 for 1\u00a0h. Afterward, the cell mixtures were centrifuged, and the resulting sediments w"
+        },
+        {
+          "value": "1",
+          "snippet": "of their flattened structures within the culture environment (Supplemental Fig.\u00a01). Construction of Ang II/TGF-\u03b21-induced myocardial fibrosis model To determine "
+        },
+        {
+          "value": "1",
+          "snippet": "entration of Ang II was established as optimal for subsequent experiments. Fig. 1 Construction of Ang II/TGF-\u03b21-induced myocardial fibrosis model\u00a0in vitro. ( A ,"
+        },
+        {
+          "value": "0.01",
+          "snippet": "fibrosis model\u00a0in vitro. ( A , B ) The effect of varying Ang II concentrations (0.01, 0.1, 1 \u00b5M) on cardiac fibroblasts (CFs) proliferation rates at 24\u00a0h and 48\u00a0h p"
+        },
+        {
+          "value": "1",
+          "snippet": " myocardial fibrosis, cells were exposed to TGF-\u03b21 at varying concentrations of 1, 5, and 10 ng/mL for 24\u00a0h. MTT assay results demonstrated a significant increas"
+        },
+        {
+          "value": "5",
+          "snippet": "ocardial fibrosis, cells were exposed to TGF-\u03b21 at varying concentrations of 1, 5, and 10 ng/mL for 24\u00a0h. MTT assay results demonstrated a significant increase i"
+        },
+        {
+          "value": "10",
+          "snippet": "l fibrosis, cells were exposed to TGF-\u03b21 at varying concentrations of 1, 5, and 10 ng/mL for 24\u00a0h. MTT assay results demonstrated a significant increase in cell p"
+        },
+        {
+          "value": "6",
+          "snippet": "enuated the protective effects of SGLT2 inhibitors on myocardial fibrosis. Fig. 6 Effects of Empagliflozin and Dapagliflozin on oxidative stress in CFs after inh"
+        },
+        {
+          "value": "5",
+          "snippet": "arative mechanisms, leading to cardiac remodeling, as outlined by Frangogiannis 5 . One key inducer of myocardial fibrosis is oxidative stress, characterized by "
+        },
+        {
+          "value": "17",
+          "snippet": " curb interstitial fibrosis and diminish the expression of inflammatory markers 17 , 18 . Experimental studies at the animal and cellular levels further support t"
+        },
+        {
+          "value": "18",
+          "snippet": " interstitial fibrosis and diminish the expression of inflammatory markers 17 , 18 . Experimental studies at the animal and cellular levels further support the ca"
+        }
+      ]
+    },
+    {
+      "id": "T024",
+      "pmid": "39715792",
+      "category": "growth_remodeling",
+      "n_candidates": 538,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T025",
+      "pmid": "39680328",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T026",
+      "pmid": "39527465",
+      "category": "fibroblast_signaling",
+      "n_candidates": 1003,
+      "n_schema_matched": 126,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": "eart failure via inhibiting the TGF \u2010\u03b21/Smad signalling Zhou et\u00a0al. Zhou Haijia 1 Liu Pengyun 1 Guo Xuelin 1 Fang Wei 1 Wu Chan 1 Zhang Mingming https://orcid.or"
+        },
+        {
+          "value": "1",
+          "snippet": "ia inhibiting the TGF \u2010\u03b21/Smad signalling Zhou et\u00a0al. Zhou Haijia 1 Liu Pengyun 1 Guo Xuelin 1 Fang Wei 1 Wu Chan 1 Zhang Mingming https://orcid.org/0000-0001-84"
+        },
+        {
+          "value": "1",
+          "snippet": " the TGF \u2010\u03b21/Smad signalling Zhou et\u00a0al. Zhou Haijia 1 Liu Pengyun 1 Guo Xuelin 1 Fang Wei 1 Wu Chan 1 Zhang Mingming https://orcid.org/0000-0001-8480-0280 1 Ji "
+        },
+        {
+          "value": "1",
+          "snippet": "1/Smad signalling Zhou et\u00a0al. Zhou Haijia 1 Liu Pengyun 1 Guo Xuelin 1 Fang Wei 1 Wu Chan 1 Zhang Mingming https://orcid.org/0000-0001-8480-0280 1 Ji Zhaole http"
+        },
+        {
+          "value": "425",
+          "snippet": " and systolic dysfunction. Mechanistically, the cardioprotective actions of miR\u2010425\u20105p may be achieved by targeting the TGF\u2010\u03b21/Smad signalling. Interestingly, miR\u2010"
+        },
+        {
+          "value": "425",
+          "snippet": "\u20105p may be achieved by targeting the TGF\u2010\u03b21/Smad signalling. Interestingly, miR\u2010425\u20105p mimics\u2010treated CFs could also indirectly affect cardiomyocyte hypertrophy in"
+        },
+        {
+          "value": "425",
+          "snippet": "rget for treating HF patients. cardiac remodelling fibroblast heart failure miR\u2010425\u20105p TGF\u2010\u03b21/Smad transverse aortic constriction National Natural Science Foundati"
+        },
+        {
+          "value": "2024",
+          "snippet": " in heart failure via inhibiting the TGF \u2010\u03b21/Smad signalling . J Cell Mol Med . 2024 ; 28 : e70199 . doi: 10.1111/jcmm.70199 1 INTRODUCTOIN Heart failure (HF) is th"
+        },
+        {
+          "value": "28",
+          "snippet": "rt failure via inhibiting the TGF \u2010\u03b21/Smad signalling . J Cell Mol Med . 2024 ; 28 : e70199 . doi: 10.1111/jcmm.70199 1 INTRODUCTOIN Heart failure (HF) is the end"
+        },
+        {
+          "value": "10.1111",
+          "snippet": "biting the TGF \u2010\u03b21/Smad signalling . J Cell Mol Med . 2024 ; 28 : e70199 . doi: 10.1111/jcmm.70199 1 INTRODUCTOIN Heart failure (HF) is the end stage of various cardio"
+        },
+        {
+          "value": "70199",
+          "snippet": "F \u2010\u03b21/Smad signalling . J Cell Mol Med . 2024 ; 28 : e70199 . doi: 10.1111/jcmm.70199 1 INTRODUCTOIN Heart failure (HF) is the end stage of various cardiovascular di"
+        },
+        {
+          "value": "1",
+          "snippet": "Smad signalling . J Cell Mol Med . 2024 ; 28 : e70199 . doi: 10.1111/jcmm.70199 1 INTRODUCTOIN Heart failure (HF) is the end stage of various cardiovascular dise"
+        },
+        {
+          "value": "18",
+          "snippet": "f TGF\u2010\u03b21/Smad pathway is a crucial pathogenic mechanism of myocardial fibrosis, 18 and that miR\u2010425 could modulate the TGF\u2010\u03b2 family pathway, 19 , 20 it is intrigu"
+        },
+        {
+          "value": "425",
+          "snippet": "ily pathway, 19 , 20 it is intriguing to investigate the regulatory role of miR\u2010425\u20105p on the TGF\u2010\u03b21/Smad pathway in this process. Here, this study aimed to invest"
+        },
+        {
+          "value": "425",
+          "snippet": "ated in both heart tissue and plasma of HF mice, and then demonstrated that miR\u2010425\u20105p acts as an upstream regulator of the TGF\u2010\u03b21/Smad signalling in inhibiting CF"
+        },
+        {
+          "value": "18338",
+          "snippet": "Abcam (Cambridge, MA, USA). Primary antibodies against p\u2010Smad2 (Ser465/Ser467, #18338), t\u2010Smad2 (#5339), p\u2010Smad3 (Ser423/Ser425, #9520), t\u2010Smad3 (#9523) and Smad4 (#"
+        },
+        {
+          "value": "5339",
+          "snippet": "MA, USA). Primary antibodies against p\u2010Smad2 (Ser465/Ser467, #18338), t\u2010Smad2 (#5339), p\u2010Smad3 (Ser423/Ser425, #9520), t\u2010Smad3 (#9523) and Smad4 (#46535) were purch"
+        },
+        {
+          "value": "9520",
+          "snippet": "inst p\u2010Smad2 (Ser465/Ser467, #18338), t\u2010Smad2 (#5339), p\u2010Smad3 (Ser423/Ser425, #9520), t\u2010Smad3 (#9523) and Smad4 (#46535) were purchased from Cell Signalling Techno"
+        },
+        {
+          "value": "9523",
+          "snippet": "465/Ser467, #18338), t\u2010Smad2 (#5339), p\u2010Smad3 (Ser423/Ser425, #9520), t\u2010Smad3 (#9523) and Smad4 (#46535) were purchased from Cell Signalling Technology (Boston, MA,"
+        },
+        {
+          "value": "46535",
+          "snippet": "), t\u2010Smad2 (#5339), p\u2010Smad3 (Ser423/Ser425, #9520), t\u2010Smad3 (#9523) and Smad4 (#46535) were purchased from Cell Signalling Technology (Boston, MA, USA). Primary anti"
+        },
+        {
+          "value": "2.16",
+          "snippet": "mads, while quantitative expression of Smad4 was normalized against Histone H3. 2.16 Statistical analysis Statistical analysis was performed using GraphPad Prism 9."
+        },
+        {
+          "value": "0.01",
+          "snippet": "d as mean\u2009\u00b1\u2009SEM. Statistical significance was assessed by one\u2010way ANOVA. ** p <\u20090.01. 3.5 Overexpression of miR \u2010425\u20105p inhibited the TGF \u2010\u03b21/Smad signalling pathwa"
+        },
+        {
+          "value": "3.5",
+          "snippet": "ean\u2009\u00b1\u2009SEM. Statistical significance was assessed by one\u2010way ANOVA. ** p <\u20090.01. 3.5 Overexpression of miR \u2010425\u20105p inhibited the TGF \u2010\u03b21/Smad signalling pathway bot"
+        },
+        {
+          "value": "425",
+          "snippet": "ificance was assessed by one\u2010way ANOVA. ** p <\u20090.01. 3.5 Overexpression of miR \u2010425\u20105p inhibited the TGF \u2010\u03b21/Smad signalling pathway both in\u00a0vivo and in\u00a0vitro TGF\u2010"
+        },
+        {
+          "value": "3",
+          "snippet": "response through several downstream fibrogenic pathways, particularly the Smad2/3 signalling. Thus, we examined TGF\u2010\u03b21 expression and Smad2/3 phosphorylation to "
+        }
+      ]
+    },
+    {
+      "id": "T027",
+      "pmid": "39187069",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T028",
+      "pmid": "39122223",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T029",
+      "pmid": "38955313",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T030",
+      "pmid": "38899461",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T031",
+      "pmid": "38822669",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T032",
+      "pmid": "38723722",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T033",
+      "pmid": "37999643",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T034",
+      "pmid": "37786576",
+      "category": "fibroblast_signaling",
+      "n_candidates": 853,
+      "n_schema_matched": 88,
+      "schema_matched": [
+        {
+          "value": "3",
+          "snippet": "ation of transforming growth factor \u03b21 (TGF\u03b21), as well as its downstream Smad2/3 phosphorylation effectors in Ang II-induced fibrosis, and PAR-2 agonist peptide"
+        },
+        {
+          "value": "2",
+          "snippet": "ownstream Smad2/3 phosphorylation effectors in Ang II-induced fibrosis, and PAR-2 agonist peptide (PAR-2 AP) reversed the inhibition effect of RIV. Conclusions O"
+        },
+        {
+          "value": "2",
+          "snippet": " overnight at 4 \u00b0C with specific antibodies against the following proteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell S"
+        },
+        {
+          "value": "1",
+          "snippet": "ernight at 4 \u00b0C with specific antibodies against the following proteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Sign"
+        },
+        {
+          "value": "1000",
+          "snippet": "night at 4 \u00b0C with specific antibodies against the following proteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling"
+        },
+        {
+          "value": "1",
+          "snippet": "tibodies against the following proteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2"
+        },
+        {
+          "value": "1000",
+          "snippet": "bodies against the following proteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1"
+        },
+        {
+          "value": "1",
+          "snippet": "roteins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2"
+        },
+        {
+          "value": "1000",
+          "snippet": "teins: PAR-2, 1:1000, Bioss, bs-1178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1"
+        },
+        {
+          "value": "19245",
+          "snippet": "178R; TGF\u03b21, 1:1000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, "
+        },
+        {
+          "value": "1",
+          "snippet": "000, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP"
+        },
+        {
+          "value": "1000",
+          "snippet": "0, Abcam, ab179695; \u03b1-SMA, 1:1000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727;"
+        },
+        {
+          "value": "1",
+          "snippet": "000, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A"
+        },
+        {
+          "value": "1000",
+          "snippet": "0, Cell Signaling Technology, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115"
+        },
+        {
+          "value": "1",
+          "snippet": "y, 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Ab"
+        },
+        {
+          "value": "1000",
+          "snippet": " 19245; p-Smad2, 1:1000, Bioss, bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Abcam, "
+        },
+        {
+          "value": "1",
+          "snippet": " bs-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Abcam, ab260043; Collagen III, 1:10"
+        },
+        {
+          "value": "1000",
+          "snippet": "s-3419R; Smad2, 1:1000, CST, 5339S; p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Abcam, ab260043; Collagen III, 1:1000, C"
+        },
+        {
+          "value": "1",
+          "snippet": "p-Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Abcam, ab260043; Collagen III, 1:1000, Cell Signaling Technology, 66887; "
+        },
+        {
+          "value": "1000",
+          "snippet": "Smad3, 1:1000, abclonal, AP0727; Smad3, 1:1000, abclonal, A19115; Collagen I, 1:1000, Abcam, ab260043; Collagen III, 1:1000, Cell Signaling Technology, 66887; and G"
+        },
+        {
+          "value": "2",
+          "snippet": " temperature. The tissues were then incubated with primary antibody against PAR-2 (1:100), \u03b1-SMA (1:400) or TGF-\u03b2(1:1500) and diluted in 5% BSA overnight at 4 \u00b0C"
+        },
+        {
+          "value": "1",
+          "snippet": "mperature. The tissues were then incubated with primary antibody against PAR-2 (1:100), \u03b1-SMA (1:400) or TGF-\u03b2(1:1500) and diluted in 5% BSA overnight at 4 \u00b0C. N"
+        },
+        {
+          "value": "100",
+          "snippet": "erature. The tissues were then incubated with primary antibody against PAR-2 (1:100), \u03b1-SMA (1:400) or TGF-\u03b2(1:1500) and diluted in 5% BSA overnight at 4 \u00b0C. Next "
+        },
+        {
+          "value": "1",
+          "snippet": "tissues were then incubated with primary antibody against PAR-2 (1:100), \u03b1-SMA (1:400) or TGF-\u03b2(1:1500) and diluted in 5% BSA overnight at 4 \u00b0C. Next day, Sectio"
+        },
+        {
+          "value": "400",
+          "snippet": "ssues were then incubated with primary antibody against PAR-2 (1:100), \u03b1-SMA (1:400) or TGF-\u03b2(1:1500) and diluted in 5% BSA overnight at 4 \u00b0C. Next day, Sections w"
+        }
+      ]
+    },
+    {
+      "id": "T035",
+      "pmid": "37395147",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T036",
+      "pmid": "37227779",
+      "category": "fibroblast_signaling",
+      "n_candidates": 857,
+      "n_schema_matched": 32,
+      "schema_matched": [
+        {
+          "value": "10",
+          "snippet": "CFs from Npr2 fl/fl ;Col1a2-Cre ERT2 mice ( Figure 3C ). Incubation with TGF-\u03b2 (10 ng/mL for 24 hours) enhanced the proportion of \u03b1-SMA\u2013positive CFs (immunocytoch"
+        },
+        {
+          "value": "24",
+          "snippet": " fl/fl ;Col1a2-Cre ERT2 mice ( Figure 3C ). Incubation with TGF-\u03b2 (10 ng/mL for 24 hours) enhanced the proportion of \u03b1-SMA\u2013positive CFs (immunocytochemistry; Figu"
+        },
+        {
+          "value": "100",
+          "snippet": "ed the proportion of \u03b1-SMA\u2013positive CFs (immunocytochemistry; Figure 3D ). CNP (100 nM) significantly attenuated this effect of TGF-\u03b2 in Npr2 fl/fl but not in Npr2"
+        },
+        {
+          "value": "100",
+          "snippet": "d calculated as x -fold vs. PBS ( n = 4). ( D ) Immunocytochemistry: Effects of 100 nM CNP and/or 10 nM TGF-\u03b2 (24-hour incubation) on the proportion of \u03b1-SMA\u2013expre"
+        },
+        {
+          "value": "10",
+          "snippet": "-fold vs. PBS ( n = 4). ( D ) Immunocytochemistry: Effects of 100 nM CNP and/or 10 nM TGF-\u03b2 (24-hour incubation) on the proportion of \u03b1-SMA\u2013expressing cells (5 co"
+        },
+        {
+          "value": "24",
+          "snippet": " ( n = 4). ( D ) Immunocytochemistry: Effects of 100 nM CNP and/or 10 nM TGF-\u03b2 (24-hour incubation) on the proportion of \u03b1-SMA\u2013expressing cells (5 control and 3 K"
+        },
+        {
+          "value": "5",
+          "snippet": "r 10 nM TGF-\u03b2 (24-hour incubation) on the proportion of \u03b1-SMA\u2013expressing cells (5 control and 3 KO samples per condition). * P < 0.05 vs. baseline (PBS); # P < 0"
+        },
+        {
+          "value": "3",
+          "snippet": "(24-hour incubation) on the proportion of \u03b1-SMA\u2013expressing cells (5 control and 3 KO samples per condition). * P < 0.05 vs. baseline (PBS); # P < 0.05 vs. contro"
+        },
+        {
+          "value": "0.05",
+          "snippet": "ion of \u03b1-SMA\u2013expressing cells (5 control and 3 KO samples per condition). * P < 0.05 vs. baseline (PBS); # P < 0.05 vs. controls by 2-way ANOVA followed by Tukey\u2019s "
+        },
+        {
+          "value": "22",
+          "snippet": "fening of the ECM is required for the hypertrophic response of cardiomyocytes ( 22 ). Prohypertrophic paracrine factors secreted from myofibroblasts, such as TGF-"
+        },
+        {
+          "value": "1",
+          "snippet": "ic paracrine factors secreted from myofibroblasts, such as TGF-\u03b2, CTGF, and IGF-1 might also be involved ( 24 , 25 ). Indeed, the cardiac mRNA levels of the ECM "
+        },
+        {
+          "value": "24",
+          "snippet": "ed from myofibroblasts, such as TGF-\u03b2, CTGF, and IGF-1 might also be involved ( 24 , 25 ). Indeed, the cardiac mRNA levels of the ECM proteins collagen and perios"
+        },
+        {
+          "value": "25",
+          "snippet": "om myofibroblasts, such as TGF-\u03b2, CTGF, and IGF-1 might also be involved ( 24 , 25 ). Indeed, the cardiac mRNA levels of the ECM proteins collagen and periostin a"
+        },
+        {
+          "value": "0.2",
+          "snippet": "itional 24 hours. Cells were fixed with 4% paraformaldehyde, permeabilized with 0.2% Triton X-100, and then stained with anti-vimentin and anti\u2013\u03b1-SMA antibodies ( "
+        },
+        {
+          "value": "100",
+          "snippet": "rs. Cells were fixed with 4% paraformaldehyde, permeabilized with 0.2% Triton X-100, and then stained with anti-vimentin and anti\u2013\u03b1-SMA antibodies ( Supplemental T"
+        },
+        {
+          "value": "4",
+          "snippet": " then stained with anti-vimentin and anti\u2013\u03b1-SMA antibodies ( Supplemental Table 4 ). The secondary antibodies were Cy3-labeled anti-rabbit and Alexa Fluor 488\u2013la"
+        },
+        {
+          "value": "0.0",
+          "snippet": " Axiocam MRm camera). Per well, 200 cells were counted with ImageJ software (v2.0.0, NIH), and the results were expressed as percentage of \u03b1-SMA\u2013positive fibroblas"
+        },
+        {
+          "value": "9",
+          "snippet": "ge of \u03b1-SMA\u2013positive fibroblasts. Statistics. Results were analyzed using Prism 9 software (GraphPad) and are presented as mean \u00b1 SEM. Data were tested for norma"
+        },
+        {
+          "value": "1999",
+          "snippet": "triuretic peptide in human myofibroblastic hepatic stellate cells. J Biol Chem. 1999;274(34):23761\u201323769. doi: 10.1074/jbc.274.34.23761. 8. Canaan-K\u00fchl S, et al.  C"
+        },
+        {
+          "value": "274",
+          "snippet": "etic peptide in human myofibroblastic hepatic stellate cells. J Biol Chem. 1999;274(34):23761\u201323769. doi: 10.1074/jbc.274.34.23761. 8. Canaan-K\u00fchl S, et al.  C-typ"
+        },
+        {
+          "value": "34",
+          "snippet": " peptide in human myofibroblastic hepatic stellate cells. J Biol Chem. 1999;274(34):23761\u201323769. doi: 10.1074/jbc.274.34.23761. 8. Canaan-K\u00fchl S, et al.  C-type n"
+        },
+        {
+          "value": "23761",
+          "snippet": "tide in human myofibroblastic hepatic stellate cells. J Biol Chem. 1999;274(34):23761\u201323769. doi: 10.1074/jbc.274.34.23761. 8. Canaan-K\u00fchl S, et al.  C-type natriure"
+        },
+        {
+          "value": "23769",
+          "snippet": "n human myofibroblastic hepatic stellate cells. J Biol Chem. 1999;274(34):23761\u201323769. doi: 10.1074/jbc.274.34.23761. 8. Canaan-K\u00fchl S, et al.  C-type natriuretic pe"
+        },
+        {
+          "value": "10.3317",
+          "snippet": "type 1 receptors. J Renin Angiotensin Aldosterone Syst. 2001;2(2):117\u2013122. doi: 10.3317/jraas.2001.012. 21. Khalil H, et al.  Fibroblast-specific TGF-\u03b2-Smad2/3 signali"
+        },
+        {
+          "value": "2001.012",
+          "snippet": "rs. J Renin Angiotensin Aldosterone Syst. 2001;2(2):117\u2013122. doi: 10.3317/jraas.2001.012. 21. Khalil H, et al.  Fibroblast-specific TGF-\u03b2-Smad2/3 signaling underlies ca"
+        }
+      ]
+    },
+    {
+      "id": "T037",
+      "pmid": "37023527",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T038",
+      "pmid": "37000367",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T039",
+      "pmid": "36475698",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T040",
+      "pmid": "36372276",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "category": "fibroblast_signaling",
+      "n_candidates": 439,
+      "n_schema_matched": 47,
+      "schema_matched": [
+        {
+          "value": "4",
+          "snippet": "duced by angiotensinogen II through transforming growth factor-\u03b2 (TGF-\u03b21)-Smad3/4 signaling Wei Tianwen a b # Du Yingqiang a # Shan Tiankai b # Chen Jiawen b # S"
+        },
+        {
+          "value": "6",
+          "snippet": "ormation of fibroblasts into myofibroblasts, and promote the synthesis of ECM [ 6 ]. During ventricular remodeling after HF, neurohumoral mechanisms such as reni"
+        },
+        {
+          "value": "7",
+          "snippet": "s, resulting in increased activation and proliferation of cardiac fibroblasts [ 7 ]. Activated fibroblasts transform into \u03b1-smooth muscle actin (\u03b1-SMA) myofibrob"
+        },
+        {
+          "value": "11",
+          "snippet": " its export from the nucleus to inhibit the transcriptional activity of Smads [ 11 ]. In addition, TRIM33 has been shown to act as a negative conditioner of TGF-\u03b2"
+        },
+        {
+          "value": "12",
+          "snippet": "been shown to act as a negative conditioner of TGF-\u03b21 in different cell types [ 12 ]. TGF-\u03b21 is a major fibrogenic gene that can modify Smads by phosphorylation a"
+        },
+        {
+          "value": "4",
+          "snippet": " by inhibiting CF activation, proliferation and ECM production via TGF-\u03b21/Smad3/4 signaling. Moreover, these biological functions of TRIM33 in blocking myocardia"
+        },
+        {
+          "value": "1",
+          "snippet": "uted 1:1000), HSPB5 (CST, 45844S, diluted 1:1000), tubulin (CST, 2148S, diluted 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000"
+        },
+        {
+          "value": "1000",
+          "snippet": "ed 1:1000), HSPB5 (CST, 45844S, diluted 1:1000), tubulin (CST, 2148S, diluted 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-"
+        },
+        {
+          "value": "1",
+          "snippet": "ted 1:1000), tubulin (CST, 2148S, diluted 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:10"
+        },
+        {
+          "value": "1000",
+          "snippet": "d 1:1000), tubulin (CST, 2148S, diluted 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), "
+        },
+        {
+          "value": "1",
+          "snippet": "uted 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1"
+        },
+        {
+          "value": "1000",
+          "snippet": "ed 1:1000), TGF-\u03b21 (CST, 84912S, diluted 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000),"
+        },
+        {
+          "value": "1",
+          "snippet": "ed 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000"
+        },
+        {
+          "value": "1000",
+          "snippet": " 1:1000), \u03b1-SMA (CST, 19245S, diluted 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-"
+        },
+        {
+          "value": "1",
+          "snippet": "d 1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000"
+        },
+        {
+          "value": "1000",
+          "snippet": "1:1000), \u03b2-catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Sm"
+        },
+        {
+          "value": "1",
+          "snippet": "catenin (CST, 8480S, diluted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST"
+        },
+        {
+          "value": "1",
+          "snippet": "uted 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000)"
+        },
+        {
+          "value": "1000",
+          "snippet": "ed 1:1000), FOXO3a (CST, 12829S, diluted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-S"
+        },
+        {
+          "value": "1",
+          "snippet": "uted 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, dil"
+        },
+        {
+          "value": "1000",
+          "snippet": "ed 1:1000), Col 1 (CST, 72026S, diluted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, diluted "
+        },
+        {
+          "value": "1",
+          "snippet": "luted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, diluted 1:1000), Smad4 (CST, 46535S, di"
+        },
+        {
+          "value": "1000",
+          "snippet": "ted 1:1000), p-Smad3 (CST, 9520S, diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, diluted 1:1000), Smad4 (CST, 46535S, diluted"
+        },
+        {
+          "value": "12",
+          "snippet": ", diluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, diluted 1:1000), Smad4 (CST, 46535S, diluted 1:1000), and the internal ref"
+        },
+        {
+          "value": "695",
+          "snippet": "iluted 1:1000), Smad3 (CST, 9523S, diluted 1:1000), p-Smad4 (Invitrogen, PA5-12,695, diluted 1:1000), Smad4 (CST, 46535S, diluted 1:1000), and the internal referen"
+        }
+      ]
+    },
+    {
+      "id": "T042",
+      "pmid": "35143327",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "category": "collagen_dynamics",
+      "n_candidates": 1269,
+      "n_schema_matched": 82,
+      "schema_matched": [
+        {
+          "value": "3",
+          "snippet": " in rat cardiac fibroblasts alleviated cardiac fibrosis through the Tgfb1-Smad2/3 pathway. The results of overexpression and knockdown experiments revealed that "
+        },
+        {
+          "value": "3",
+          "snippet": "e increasing annually worldwide, including the United States of America (USA) [ 3 \u2013 5 ]. Heart failure is often accompanied by fibrosis, which is the tissue resp"
+        },
+        {
+          "value": "5",
+          "snippet": "creasing annually worldwide, including the United States of America (USA) [ 3 \u2013 5 ]. Heart failure is often accompanied by fibrosis, which is the tissue response"
+        },
+        {
+          "value": "0.1",
+          "snippet": "iefly, the atrium was removed, finely chopped using scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , "
+        },
+        {
+          "value": "1",
+          "snippet": "emoved, finely chopped using scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM "
+        },
+        {
+          "value": "116",
+          "snippet": "chopped using scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM M"
+        },
+        {
+          "value": "20",
+          "snippet": " scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM MgSO 4 ) at 3"
+        },
+        {
+          "value": "10",
+          "snippet": "d digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM MgSO 4 ) at 37\u00b0C and 120\u2009r"
+        },
+        {
+          "value": "2",
+          "snippet": " with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM MgSO 4 ) at 37\u00b0C and 120\u2009rpm on a s"
+        },
+        {
+          "value": "4",
+          "snippet": " 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM MgSO 4 ) at 37\u00b0C and 120\u2009rpm on a shaker"
+        },
+        {
+          "value": "5.5",
+          "snippet": "% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM KCl, and 0.8\u2009mM MgSO 4 ) at 37\u00b0C and 120\u2009rpm on a shaker for 2"
+        },
+        {
+          "value": "10",
+          "snippet": "ltured in the presence of vehicle (0.1% dimethyl sulfoxide (DMSO)) or PCI34051 (10 \u03bc M) for 8\u2009h. To investigate the roles of Hdac8 or Ace1 in fibrosis, fibroblast"
+        },
+        {
+          "value": "8",
+          "snippet": "e presence of vehicle (0.1% dimethyl sulfoxide (DMSO)) or PCI34051 (10 \u03bc M) for 8\u2009h. To investigate the roles of Hdac8 or Ace1 in fibrosis, fibroblasts were tran"
+        },
+        {
+          "value": "3",
+          "snippet": " \u2013 3(t) ). PCI34051 mitigated the TAC-induced downregulation of Nfkbia (Figures 3(o) and 3(t) ). 3.4. PCI34051 Suppresses Cardiac Fibrosis in TAC Mice Previous s"
+        },
+        {
+          "value": "3",
+          "snippet": ". PCI34051 mitigated the TAC-induced downregulation of Nfkbia (Figures 3(o) and 3(t) ). 3.4. PCI34051 Suppresses Cardiac Fibrosis in TAC Mice Previous studies ha"
+        },
+        {
+          "value": "3.4",
+          "snippet": "51 mitigated the TAC-induced downregulation of Nfkbia (Figures 3(o) and 3(t) ). 3.4. PCI34051 Suppresses Cardiac Fibrosis in TAC Mice Previous studies have reporte"
+        },
+        {
+          "value": "38",
+          "snippet": " that interstitial cardiac fibrosis leads to the development of heart failure [ 38 ]. The therapeutic effect of PCI34051 on cardiac fibrosis was examined using Pi"
+        },
+        {
+          "value": "4",
+          "snippet": "irius red staining, qRT-PCR, and western blotting analyses. As shown in Figures 4(a) nad 4(b) , TAC promoted collagen deposition in the perivascular and intersti"
+        },
+        {
+          "value": "4",
+          "snippet": " staining, qRT-PCR, and western blotting analyses. As shown in Figures 4(a) nad 4(b) , TAC promoted collagen deposition in the perivascular and interstitial regi"
+        },
+        {
+          "value": "4",
+          "snippet": "051 mitigated the TAC-induced upregulation of cardiac p-Smad2/3 levels (Figures 4(g) and 4(k) ). 3.5. PCI34051 Alleviates Pulmonary Congestion and Fibrosis in TA"
+        },
+        {
+          "value": "4",
+          "snippet": "ated the TAC-induced upregulation of cardiac p-Smad2/3 levels (Figures 4(g) and 4(k) ). 3.5. PCI34051 Alleviates Pulmonary Congestion and Fibrosis in TAC Mice He"
+        },
+        {
+          "value": "3.5",
+          "snippet": " TAC-induced upregulation of cardiac p-Smad2/3 levels (Figures 4(g) and 4(k) ). 3.5. PCI34051 Alleviates Pulmonary Congestion and Fibrosis in TAC Mice Heart failur"
+        },
+        {
+          "value": "40",
+          "snippet": " and Fibrosis in TAC Mice Heart failure promotes pathological lung remodeling [ 40 ]. The effect of PCI34051 on TAC-induced lung remodeling was examined using his"
+        },
+        {
+          "value": "5",
+          "snippet": "m groups. PCI34051 mitigated the TAC-induced decreased alveolar spaces ( Figure 5(b) ). Next, pulmonary fibrosis was evaluated using Picrosirius red staining. Tr"
+        },
+        {
+          "value": "5",
+          "snippet": "th PCI34051 dose dependently mitigated TAC-induced pulmonary fibrosis ( Figurse 5(c) and 5(d) ). To further characterize pulmonary fibrosis, the expression level"
+        }
+      ]
+    },
+    {
+      "id": "T044",
+      "pmid": "35093323",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "category": "collagen_dynamics",
+      "n_candidates": 596,
+      "n_schema_matched": 39,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": "cardiomyopathy, doxorubicin-induced cardiac fibrosis as well as heart failure [ 1 \u2013 3 ]. In particular, cardiac remodelling causes the increased morbidity and mo"
+        },
+        {
+          "value": "3",
+          "snippet": "iomyopathy, doxorubicin-induced cardiac fibrosis as well as heart failure [ 1 \u2013 3 ]. In particular, cardiac remodelling causes the increased morbidity and mortal"
+        },
+        {
+          "value": "14",
+          "snippet": "ylin eosin (H&E) staining and Picrosirius Red (PSR) staining were carried out [ 14 ], aiming to observe the sectional area of cardiomyocytes and collagen volume i"
+        },
+        {
+          "value": "2",
+          "snippet": "d also significantly decrease in mice with AB after STING was upregulated (Fig. 2 F). PSR staining was used to evaluate the condition of fibrosis in the indicate"
+        },
+        {
+          "value": "2",
+          "snippet": "to evaluate the condition of fibrosis in the indicated groups. As shown in Fig. 2 G, the percentage of perivascular fibrosis and interstitial fibrosis was signif"
+        },
+        {
+          "value": "6",
+          "snippet": "on in both perivascular fibrosis and interstitial fibrosis after AB surgery for 6\u00a0weeks. Furthermore, marks of fibrosis involving fibronectin, ctgf, collagen1 an"
+        },
+        {
+          "value": "2",
+          "snippet": "gf, collagen1 and collagen3 were significantly inhibited in AB\u2009+\u2009TG group (Fig. 2 H\u2013K). Fig. 2 STING overexpression suppressed cardiac hypertrophy and fibrosis i"
+        },
+        {
+          "value": "2",
+          "snippet": " and collagen3 were significantly inhibited in AB\u2009+\u2009TG group (Fig. 2 H\u2013K). Fig. 2 STING overexpression suppressed cardiac hypertrophy and fibrosis in vivo A Repr"
+        },
+        {
+          "value": "6",
+          "snippet": "staining and statistical results of perivascular and interstitial fibrosis (n\u2009=\u20096). H \u2013 K The mRNA level of fibrotic markers (Fibronectin, Ctgf, Collagen1 and Co"
+        },
+        {
+          "value": "6",
+          "snippet": "RNA level of fibrotic markers (Fibronectin, Ctgf, Collagen1 and Collagen3) (n\u2009=\u20096), * P <\u20090.05 vs the Sham\u2009+\u2009WT group, # P <\u20090.05 vs the AB\u2009+\u2009WT group STING over"
+        },
+        {
+          "value": "0.05",
+          "snippet": "of fibrotic markers (Fibronectin, Ctgf, Collagen1 and Collagen3) (n\u2009=\u20096), * P <\u20090.05 vs the Sham\u2009+\u2009WT group, # P <\u20090.05 vs the AB\u2009+\u2009WT group STING overexpression mi"
+        },
+        {
+          "value": "0.05",
+          "snippet": "tgf, Collagen1 and Collagen3) (n\u2009=\u20096), * P <\u20090.05 vs the Sham\u2009+\u2009WT group, # P <\u20090.05 vs the AB\u2009+\u2009WT group STING overexpression mitigated cardiac inflammatory respon"
+        },
+        {
+          "value": "5",
+          "snippet": "l of STING was significantly increased by Ad-STING in cardiac fibroblasts (Fig. 5 E). Fibrotic markers involving Collagen 1, Collagen 3 as well as \u03b1-SMA were als"
+        },
+        {
+          "value": "1",
+          "snippet": "Ad-STING in cardiac fibroblasts (Fig. 5 E). Fibrotic markers involving Collagen 1, Collagen 3 as well as \u03b1-SMA were also suppressed in TGF-\u03b2-induced cardiac fibr"
+        },
+        {
+          "value": "3",
+          "snippet": "cardiac fibroblasts (Fig. 5 E). Fibrotic markers involving Collagen 1, Collagen 3 as well as \u03b1-SMA were also suppressed in TGF-\u03b2-induced cardiac fibroblasts afte"
+        },
+        {
+          "value": "5",
+          "snippet": "ppressed in TGF-\u03b2-induced cardiac fibroblasts after STING was upregulated (Fig. 5 F\u2013H), indicating that STING not only inhibited collagen synthesis, but also rep"
+        },
+        {
+          "value": "6",
+          "snippet": "ive western blot of STING in cardiac fibroblasts transfected with Ad-STING (n\u2009=\u20096) * P <\u20090.05 vs Ad-Ctrl. F , G The mRNA level of fibrotic markers (Collagen1 and"
+        },
+        {
+          "value": "0.05",
+          "snippet": "rn blot of STING in cardiac fibroblasts transfected with Ad-STING (n\u2009=\u20096) * P <\u20090.05 vs Ad-Ctrl. F , G The mRNA level of fibrotic markers (Collagen1 and Collagen3) "
+        },
+        {
+          "value": "6",
+          "snippet": "d-Ctrl. F , G The mRNA level of fibrotic markers (Collagen1 and Collagen3) (n\u2009=\u20096). H Immunofluorescence staining and analysis of \u03b1-SMA in cardiac fibroblasts ex"
+        },
+        {
+          "value": "6",
+          "snippet": "abolished the anti-hypertrophy and anti-fibrosis effects of STING in vivo (Fig. 6 F\u2013H). While in vitro, STING overexpression significantly inhibited the LC3B of "
+        },
+        {
+          "value": "6",
+          "snippet": "th H&E staining and Picrosirius Red (PSR) staining and statistical results (n\u2009=\u20096). H The mRNA level of fibrotic markers (Collagen1) (n\u2009=\u20096), * P <\u20090.05 vs AB-TG"
+        },
+        {
+          "value": "6",
+          "snippet": "tistical results (n\u2009=\u20096). H The mRNA level of fibrotic markers (Collagen1) (n\u2009=\u20096), * P <\u20090.05 vs AB-TG group STING may inhibit autophagy through phosphorylating"
+        },
+        {
+          "value": "0.05",
+          "snippet": "esults (n\u2009=\u20096). H The mRNA level of fibrotic markers (Collagen1) (n\u2009=\u20096), * P <\u20090.05 vs AB-TG group STING may inhibit autophagy through phosphorylating ULK1 in hear"
+        },
+        {
+          "value": "1",
+          "snippet": "etail, STING could participate in cardioprotection from the following aspects: (1) reduction of cardiac fibrosis and cardiac hypertrophy; (2) suppression of proi"
+        },
+        {
+          "value": "2",
+          "snippet": " following aspects: (1) reduction of cardiac fibrosis and cardiac hypertrophy; (2) suppression of proinfammatory cytokines production; (3) improvement of cardiac"
+        }
+      ]
+    },
+    {
+      "id": "T046",
+      "pmid": "34687136",
+      "category": "fibroblast_signaling",
+      "n_candidates": 847,
+      "n_schema_matched": 108,
+      "schema_matched": [
+        {
+          "value": "3",
+          "snippet": "2 promotes angiotensin\u2010II\u2010induced cardiac remodelling by activating TGF\u2010\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress ZHANG et al. Zhang Xiyu 1 Zhen"
+        },
+        {
+          "value": "3",
+          "snippet": "y, suppression of PKM2 inhibited cardiac remodelling by suppressing TGF\u2010\u03b2/Smad2/3, Jak2/Stat3\u00a0signalling pathways and oxidative stress. Together, this study sugg"
+        },
+        {
+          "value": "3",
+          "snippet": "2 promotes angiotensin\u2010II\u2010induced cardiac remodelling by activating TGF\u2010\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress . J Cell Mol Med . 2021 ; 25 :"
+        },
+        {
+          "value": "2021",
+          "snippet": "F\u2010\u03b2/Smad2/3 and Jak2/Stat3 pathways through oxidative stress . J Cell Mol Med . 2021 ; 25 : 10711 \u2013 10723 . 10.1111/jcmm.17007 PMC8581335 34687136 1 INTRODUCTION Hy"
+        },
+        {
+          "value": "2",
+          "snippet": "sforming growth factor \u03b2 (TGF\u2010\u03b2)/small mothers against decapentaplegic proteins 2 and 3 (Smad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of trans"
+        },
+        {
+          "value": "3",
+          "snippet": "ng growth factor \u03b2 (TGF\u2010\u03b2)/small mothers against decapentaplegic proteins 2 and 3 (Smad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of transcripti"
+        },
+        {
+          "value": "3",
+          "snippet": " factor \u03b2 (TGF\u2010\u03b2)/small mothers against decapentaplegic proteins 2 and 3 (Smad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of transcription 3 (Sta"
+        },
+        {
+          "value": "2",
+          "snippet": "/small mothers against decapentaplegic proteins 2 and 3 (Smad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of transcription 3 (Stat3) signalling pa"
+        },
+        {
+          "value": "3",
+          "snippet": "mad2/3), Janus kinase 2 (Jak2)/signal transducer and activator of transcription 3 (Stat3) signalling pathways. 4 TGF\u2010\u03b2 induced phosphorylation of Smad2 and Smad3"
+        },
+        {
+          "value": "4",
+          "snippet": "signal transducer and activator of transcription 3 (Stat3) signalling pathways. 4 TGF\u2010\u03b2 induced phosphorylation of Smad2 and Smad3 to promote extracellular matri"
+        },
+        {
+          "value": "9132",
+          "snippet": "t PKM2 (4053, 1:1000), Jak2 (3230, 1:1000), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1"
+        },
+        {
+          "value": "1",
+          "snippet": " (4053, 1:1000), Jak2 (3230, 1:1000), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:10"
+        },
+        {
+          "value": "1000",
+          "snippet": "4053, 1:1000), Jak2 (3230, 1:1000), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), "
+        },
+        {
+          "value": "9145",
+          "snippet": "30, 1:1000), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828,"
+        },
+        {
+          "value": "1",
+          "snippet": "1000), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:"
+        },
+        {
+          "value": "1000",
+          "snippet": "00), phosphor\u2010Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000)"
+        },
+        {
+          "value": "3711",
+          "snippet": "Jak2 (8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1"
+        },
+        {
+          "value": "1",
+          "snippet": "8082, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:10"
+        },
+        {
+          "value": "1000",
+          "snippet": "82, 1:500), Stat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), "
+        },
+        {
+          "value": "3",
+          "snippet": "tat3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S"
+        },
+        {
+          "value": "8685",
+          "snippet": "3 (9132, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S6 (221"
+        },
+        {
+          "value": "1",
+          "snippet": "2, 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S6 (2211s,"
+        },
+        {
+          "value": "1000",
+          "snippet": " 1:1000), phosphor\u2010Stat3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S6 (2211s, 1:50"
+        },
+        {
+          "value": "3",
+          "snippet": "t3 (9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S6 (2211s, 1:5000) and GAPDH (2118"
+        },
+        {
+          "value": "8828",
+          "snippet": "(9145, 1:1000), TGF\u2010\u03b2 (3711, 1:1000), Smad2/3 (8685, 1:1000), phosphor\u2010Smad2/3 (8828, 1:1000), S6 (2217s, 1:1000), phosphor\u2010S6 (2211s, 1:5000) and GAPDH (2118,1:100"
+        }
+      ]
+    },
+    {
+      "id": "T047",
+      "pmid": "34302205",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T048",
+      "pmid": "34265086",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T049",
+      "pmid": "41500420",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T050",
+      "pmid": "34601105",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T051",
+      "pmid": "31894101",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T052",
+      "pmid": "31141605",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T053",
+      "pmid": "25009995",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "category": "infarct_remodeling",
+      "n_candidates": 618,
+      "n_schema_matched": 95,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": " fiber alignment on heart function post myocardial infarction Voorhees Andrew P 1 avoorhees@gmail.com Han Hai-Chao 1 2 hchan@utsa.edu 1 Biomedical Engineering Pr"
+        },
+        {
+          "value": "1",
+          "snippet": "post myocardial infarction Voorhees Andrew P 1 avoorhees@gmail.com Han Hai-Chao 1 2 hchan@utsa.edu 1 Biomedical Engineering Program, UTSA-UTHSCSA 1 UTSA Circle, "
+        },
+        {
+          "value": "2",
+          "snippet": "st myocardial infarction Voorhees Andrew P 1 avoorhees@gmail.com Han Hai-Chao 1 2 hchan@utsa.edu 1 Biomedical Engineering Program, UTSA-UTHSCSA 1 UTSA Circle, Sa"
+        },
+        {
+          "value": "1",
+          "snippet": "e of death, accounting for over 400,000 lives in the United States every year [ 1 ]. Blockage of the diseased coronary arteries leads to myocardial infarction (M"
+        },
+        {
+          "value": "2",
+          "snippet": "ed contractility of the scar reduce LV function and can lead to heart failure [ 2 ]. The decrease in LV pump function has been correlated to the size of the infa"
+        },
+        {
+          "value": "3",
+          "snippet": "he size of the infarct, but infarct size alone cannot explain patient outcome [ 3 ]. One key factor affecting LV function is the mechanical properties of the sca"
+        },
+        {
+          "value": "4",
+          "snippet": " under systolic pressures, but also impairs filling of the LV during diastole [ 4 ]. Therefore, it is imperative to elucidate the relationship between scar compo"
+        },
+        {
+          "value": "2",
+          "snippet": "r extracellular matrix proteins which are considered to be a ground substance [ 2 ]. Thus, cardiac scar tissue demonstrates anisotropic, non-linear material beha"
+        },
+        {
+          "value": "5",
+          "snippet": "s, cardiac scar tissue demonstrates anisotropic, non-linear material behavior [ 5 ]. Naturally, the density and alignment of collagen fibers affect the mechanica"
+        },
+        {
+          "value": "11",
+          "snippet": " shown that mechanical cues are the primary determinant of collagen alignment [ 11 ]. Therapeutic strategies that aim to limit infarct expansion by reducing local"
+        },
+        {
+          "value": "12",
+          "snippet": "it infarct expansion by reducing local stress are currently under development [ 12 , 13 ], including efforts to anisotropically reinforce the infarct region [ 14 "
+        },
+        {
+          "value": "13",
+          "snippet": "farct expansion by reducing local stress are currently under development [ 12 , 13 ], including efforts to anisotropically reinforce the infarct region [ 14 ]. Th"
+        },
+        {
+          "value": "14",
+          "snippet": " 12 , 13 ], including efforts to anisotropically reinforce the infarct region [ 14 ]. Thus, it is of clinical interest to determine the relationship between colla"
+        },
+        {
+          "value": "1",
+          "snippet": "ealthy myocardial regions and a collagenous scar region into a cylinder (Figure 1 ). The mid-wall circumference of the cylinder was taken to be the length of the"
+        },
+        {
+          "value": "1",
+          "snippet": "senting the healthy, remote regions, and S representing the scar region (Figure 1 ). In order to solve for the deformed volume of the LV it is necessary to estab"
+        },
+        {
+          "value": "25",
+          "snippet": "ference and half of the total height. In this configuration the scar represents 25% of the total myocardial area representing a moderately sized scar. The final d"
+        },
+        {
+          "value": "24",
+          "snippet": "line ESPVR that roughly matched the baseline case reported by Fomovsky et al. [ 24 ]. The collagen fibers of the scar region were aligned following a Von Mises di"
+        },
+        {
+          "value": "90",
+          "snippet": "he scar region were aligned following a Von Mises distribution wrapped between \u221290\u00b0 and +90\u00b0: (13) \u03c1 \u03c6 = exp \u03b3 * cos 2 \u03c6 \u03c0 I o \u03b3 where \u03b3 is a fiber alignment fact"
+        },
+        {
+          "value": "40",
+          "snippet": "ties of the scar region were determined by assuming a collagen fiber density of 40% and a circumferential mean fiber alignment and fitting the remaining parameter"
+        },
+        {
+          "value": "5",
+          "snippet": "ignment parameter) to the stress strain relationship reported by Gupta et al. [ 5 ] for a 6 week old infarct in a porcine model. A circumferential alignment was "
+        },
+        {
+          "value": "6",
+          "snippet": "rameter) to the stress strain relationship reported by Gupta et al. [ 5 ] for a 6 week old infarct in a porcine model. A circumferential alignment was chosen as "
+        },
+        {
+          "value": "4",
+          "snippet": " crimp angle, scar size, and scar thickness. Additionally, a baseline case with 4 healthy regions was run for comparison. Table 1 Parameters of the example infar"
+        },
+        {
+          "value": "1",
+          "snippet": "itionally, a baseline case with 4 healthy regions was run for comparison. Table 1 Parameters of the example infarcted LV model Geometry Total undeformed LV lengt"
+        },
+        {
+          "value": "10",
+          "snippet": "arameters of the example infarcted LV model Geometry Total undeformed LV length 10\u00a0cm Total undeformed LV height 5\u00a0cm Undeformed thickness of healthy regions 0.8\u00a0"
+        },
+        {
+          "value": "5",
+          "snippet": "d LV model Geometry Total undeformed LV length 10\u00a0cm Total undeformed LV height 5\u00a0cm Undeformed thickness of healthy regions 0.8\u00a0cm Undeformed thickness of scar "
+        }
+      ]
+    },
+    {
+      "id": "T055",
+      "pmid": "22495588",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T056",
+      "pmid": "19897714",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T057",
+      "pmid": "18780284",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "category": "growth_remodeling",
+      "n_candidates": 1065,
+      "n_schema_matched": 56,
+      "schema_matched": [
+        {
+          "value": "5",
+          "snippet": "train energy per unit mass of the collagen fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is "
+        },
+        {
+          "value": "2",
+          "snippet": " per unit mass of the collagen fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is the fourth p"
+        },
+        {
+          "value": "4",
+          "snippet": "f the collagen fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is the fourth pseudo-invariant "
+        },
+        {
+          "value": "1",
+          "snippet": "collagen fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is the fourth pseudo-invariant of C e"
+        },
+        {
+          "value": "2",
+          "snippet": "llagen fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is the fourth pseudo-invariant of C e c"
+        },
+        {
+          "value": "1",
+          "snippet": "en fibers is an exponential of the form 5 W c = a c 2 b c exp b c I 4 c - 1 2 - 1 , where I 4 c = f r c \u00b7 C e c f r c is the fourth pseudo-invariant of C e c (Ho"
+        },
+        {
+          "value": "2000",
+          "snippet": " I 4 c = f r c \u00b7 C e c f r c is the fourth pseudo-invariant of C e c (Holzapfel 2000 ) and f r c is the preferred direction of the collagen fiber family in the inte"
+        },
+        {
+          "value": "7",
+          "snippet": "spectively. The passive contribution is modeled with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. A"
+        },
+        {
+          "value": "2",
+          "snippet": "passive contribution is modeled with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. Active muscle ton"
+        },
+        {
+          "value": "4",
+          "snippet": "tion is modeled with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. Active muscle tone has not been d"
+        },
+        {
+          "value": "1",
+          "snippet": "s modeled with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. Active muscle tone has not been develop"
+        },
+        {
+          "value": "2",
+          "snippet": "modeled with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. Active muscle tone has not been developed"
+        },
+        {
+          "value": "1",
+          "snippet": "led with an exponential of the form 7 W pas m = a m 2 b m exp b m I 4 m - 1 2 - 1 , analogously to collagen fibers. Active muscle tone has not been developed yet"
+        },
+        {
+          "value": "0",
+          "snippet": "l active Cauchy stress, \u03bb act m is the active stretch in fiber direction, and \u03bb 0 m and \u03bb max m are the active stretch at zero and maximum active stress. In acco"
+        },
+        {
+          "value": "1",
+          "snippet": "muscle tone evolves with the G&R of cardiomyocytes, such that \u2202 \u03bb act m \u2202 \u03bb m = 1 \u03bb m , where \u03bb m is the current total stretch of the muscle fiber compared to th"
+        },
+        {
+          "value": "2019",
+          "snippet": "retch of the muscle fiber compared to the reference configuration (Braeu et\u00a0al. 2019 ). Collagen fibers and cardiomyocytes are excluded during compression 2 ( I 4 i"
+        },
+        {
+          "value": "2",
+          "snippet": "\u00a0al. 2019 ). Collagen fibers and cardiomyocytes are excluded during compression 2 ( I 4 i < 1 ) since their contribution to compressive stresses is usually assum"
+        },
+        {
+          "value": "4",
+          "snippet": "019 ). Collagen fibers and cardiomyocytes are excluded during compression 2 ( I 4 i < 1 ) since their contribution to compressive stresses is usually assumed to "
+        },
+        {
+          "value": "1",
+          "snippet": " Collagen fibers and cardiomyocytes are excluded during compression 2 ( I 4 i < 1 ) since their contribution to compressive stresses is usually assumed to be neg"
+        },
+        {
+          "value": "7",
+          "snippet": " \u2202 \u03c3 i \u2202 F e i for the quasi-one-dimensional fiber families as defined in Eq.\u00a0( 7 ) is rank deficient. Hence, the remodeling deformation modes that do not contri"
+        },
+        {
+          "value": "1",
+          "snippet": "matrix. We can then write (Cyron et\u00a0al. 2016 ) 13 F r i = \u03bb r i f 0 i \u2297 f 0 i + 1 \u03bb r i ( I - f 0 i \u2297 f 0 i ) , where the inelastic remodeling stretch in fiber d"
+        },
+        {
+          "value": "0",
+          "snippet": "hen write (Cyron et\u00a0al. 2016 ) 13 F r i = \u03bb r i f 0 i \u2297 f 0 i + 1 \u03bb r i ( I - f 0 i \u2297 f 0 i ) , where the inelastic remodeling stretch in fiber direction \u03bb r i i"
+        },
+        {
+          "value": "0",
+          "snippet": "e (Cyron et\u00a0al. 2016 ) 13 F r i = \u03bb r i f 0 i \u2297 f 0 i + 1 \u03bb r i ( I - f 0 i \u2297 f 0 i ) , where the inelastic remodeling stretch in fiber direction \u03bb r i is the on"
+        },
+        {
+          "value": "12",
+          "snippet": "e configuration of the preferred direction of the fiber constituent. Equation\u00a0( 12 ) can then be simplified so that the only unknown \u03bb r i can be computed with (s"
+        },
+        {
+          "value": "12",
+          "snippet": "n mainly occurs perpendicular to the existing fibers. Remodeling according to ( 12 ) transforms this (in general) anisotropic distension over time into an inelast"
+        }
+      ]
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "category": "collagen_dynamics",
+      "n_candidates": 931,
+      "n_schema_matched": 38,
+      "schema_matched": [
+        {
+          "value": "2",
+          "snippet": "ne checkpoint gene expression. scRNA-seq analysis identified Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 1 (PLOD1) expression in CRC, Immunohistochemical sta"
+        },
+        {
+          "value": "5",
+          "snippet": "ene expression. scRNA-seq analysis identified Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 1 (PLOD1) expression in CRC, Immunohistochemical staining (IHC) and"
+        },
+        {
+          "value": "1",
+          "snippet": ". scRNA-seq analysis identified Procollagen-Lysine,2-Oxoglutarate 5-Dioxygenase 1 (PLOD1) expression in CRC, Immunohistochemical staining (IHC) and Masson\u2019s tric"
+        },
+        {
+          "value": "0.01",
+          "snippet": "ns and their significant correlation with stromal collagen fiber abundance (p < 0.01). Wound healing and transwell assays indicating the knockdown of PLOD1 hinders "
+        },
+        {
+          "value": "1",
+          "snippet": "rmed Masson F solution for collagen staining (duration adjusted from seconds to 1 minute by tissue type). Sections were then rapidly rinsed in 1% glacial acetic "
+        },
+        {
+          "value": "5",
+          "snippet": "-black nuclei. Fibrosis quantification was performed using ImageJ by capturing \u22655 non-overlapping 400\u00d7 fields per section, applying color thresholding to calcula"
+        },
+        {
+          "value": "100",
+          "snippet": "sue area (Area_Total), with fibrotic content (%) = (Area_Collagen/Area_Total) \u00d7 100. Statistical comparisons used mean collagen volume fraction (CVF) values across"
+        },
+        {
+          "value": "0.05",
+          "snippet": "ed significant differences in collagen fiber content among tissues (t-test, p < 0.05). (E) ROC curve analysis indicated that PLOD1 expression effectively discrimina"
+        },
+        {
+          "value": "0.75",
+          "snippet": " associations between PLOD1 expression and stromal collagen density in TD ( r = 0.75, p < 0.001) and distant metastases ( r = 0.63, p = 0.02) ( Figure\u00a010F ), suppor"
+        },
+        {
+          "value": "0.001",
+          "snippet": "ons between PLOD1 expression and stromal collagen density in TD ( r = 0.75, p < 0.001) and distant metastases ( r = 0.63, p = 0.02) ( Figure\u00a010F ), supporting PLOD1\u2019"
+        },
+        {
+          "value": "0.63",
+          "snippet": "omal collagen density in TD ( r = 0.75, p < 0.001) and distant metastases ( r = 0.63, p = 0.02) ( Figure\u00a010F ), supporting PLOD1\u2019s potential role in facilitating CR"
+        },
+        {
+          "value": "22",
+          "snippet": " metastasis, the recruitment of CAFs and TAMs, and regulates immune responses ( 22 , 25 ). Collagen (COL), an important component of the ECM, is mainly produced b"
+        },
+        {
+          "value": "25",
+          "snippet": "stasis, the recruitment of CAFs and TAMs, and regulates immune responses ( 22 , 25 ). Collagen (COL), an important component of the ECM, is mainly produced by CAF"
+        },
+        {
+          "value": "34",
+          "snippet": "ion by enhancing the formation of stress fibers composed of filamentous actin ( 34 ). ECM fibrosis is associated with metastasis and poor cancer prognosis. Specif"
+        },
+        {
+          "value": "1",
+          "snippet": "on and enhanced expression of ECM remodeling enzymes ( 36 ). Lysine hydroxylase 1, encoded by PLOD1, is a key ECM remodeling enzyme regulating collagen post-tran"
+        },
+        {
+          "value": "37",
+          "snippet": "ating collagen post-translational modification, cross-linking, and deposition ( 37 ). PLOD1 is implicated in the onset and metastasis of multiple tumors, includin"
+        },
+        {
+          "value": "38",
+          "snippet": "tes proliferation and distant metastasis by regulating collagen cross-linking ( 38 ). Overexpression of PLOD1 in bladder cancer correlates with poor prognosis ( 3"
+        },
+        {
+          "value": "41",
+          "snippet": "ion under hypoxic TME, enhancing ECM stiffness through collagen hydroxylation ( 41 ). However, existing studies have not explored the function of PLOD1 in CRC. Us"
+        },
+        {
+          "value": "34298680",
+          "snippet": "d therapy ? Cancers . ( 2021 ) 13 : 3466 . doi: 10.3390/cancers13143466 , PMID: 34298680 PMC8303391 28 Piao XM Hwang B Jeong P Byun YJ Kang HW Seo SP . Collagen type VI"
+        },
+        {
+          "value": "28",
+          "snippet": ". ( 2021 ) 13 : 3466 . doi: 10.3390/cancers13143466 , PMID: 34298680 PMC8303391 28 Piao XM Hwang B Jeong P Byun YJ Kang HW Seo SP . Collagen type VI\u2212\u03b11 and 2 repr"
+        },
+        {
+          "value": "2",
+          "snippet": "391 28 Piao XM Hwang B Jeong P Byun YJ Kang HW Seo SP . Collagen type VI\u2212\u03b11 and 2 repress the proliferation, migration and invasion of bladder cancer cells . Int"
+        },
+        {
+          "value": "2022",
+          "snippet": "type III collagen-rich ECM niche regulates tumor cell dormancy . Nat Cancer . ( 2022 ) 3 : 90 \u2013 107 . doi: 10.1038/s43018-021-00291-9 , PMID: 35121989 PMC8818089 30"
+        },
+        {
+          "value": "3",
+          "snippet": "I collagen-rich ECM niche regulates tumor cell dormancy . Nat Cancer . ( 2022 ) 3 : 90 \u2013 107 . doi: 10.1038/s43018-021-00291-9 , PMID: 35121989 PMC8818089 30 Liu"
+        },
+        {
+          "value": "10.1038",
+          "snippet": "ential gene for glioma cell migration . Oncogene . ( 2017 ) 36 : 71 \u2013 83 . doi: 10.1038/onc.2016.176 , PMID: 27212030 35 Piersma B Hayward MK Weaver VM . Fibrosis and "
+        },
+        {
+          "value": "2016.176",
+          "snippet": "for glioma cell migration . Oncogene . ( 2017 ) 36 : 71 \u2013 83 . doi: 10.1038/onc.2016.176 , PMID: 27212030 35 Piersma B Hayward MK Weaver VM . Fibrosis and cancer: A str"
+        }
+      ]
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "category": "collagen_dynamics",
+      "n_candidates": 794,
+      "n_schema_matched": 22,
+      "schema_matched": [
+        {
+          "value": "0.05",
+          "snippet": "+\u2009PBM and SER\u2009+\u2009PBM groups presented higher collagen scores than controls ( p <\u20090.05). The SER\u2009+\u2009PBM treatment was particularly effective, showing the greatest prop"
+        },
+        {
+          "value": "0.05",
+          "snippet": " type I collagen and statistical superiority over the other interventions ( p <\u20090.05). Molecular evaluations demonstrated reduced levels of tumour necrosis factor a"
+        },
+        {
+          "value": "12",
+          "snippet": "ile\u00a0[ 11 ]. Studies have indicated that sericin enhances fibroblast migration [ 12 ], increases the hydroxyproline content in the stratum corneum, decreases skin "
+        },
+        {
+          "value": "13",
+          "snippet": "the stratum corneum, decreases skin impedance and induces collagen production [ 13 , 14 ], without the activation of pro\u2010inflammatory cytokines [ 15 ]. Another wi"
+        },
+        {
+          "value": "14",
+          "snippet": "tratum corneum, decreases skin impedance and induces collagen production [ 13 , 14 ], without the activation of pro\u2010inflammatory cytokines [ 15 ]. Another widely "
+        },
+        {
+          "value": "33",
+          "snippet": "perimentally\u2010induced burns [ 29 , 30 , 31 , 32 ] and proposed by Kumar et\u00a0al. [ 33 ]. The scale proposed by Robbins and Cottran was also used to analyse collagen "
+        },
+        {
+          "value": "33",
+          "snippet": " proposed by Robbins and Cottran was also used to analyse collagen deposition [ 33 ], through semi\u2010quantitative analysis. To this end, the percentage of pixels co"
+        },
+        {
+          "value": "30",
+          "snippet": "e birefringence, while type III collagen fibres displayed green birefringence [ 30 , 34 ]. The percentage of each colour expressed in pixels was calculated using "
+        },
+        {
+          "value": "34",
+          "snippet": "efringence, while type III collagen fibres displayed green birefringence [ 30 , 34 ]. The percentage of each colour expressed in pixels was calculated using the G"
+        },
+        {
+          "value": "1.0",
+          "snippet": "lagen deposition score, the CON and SUL groups were statistically similar ( p =\u20091.0), but different from the other groups ( p <\u20090.05) which showed greater collagen"
+        },
+        {
+          "value": "0.05",
+          "snippet": "ere statistically similar ( p =\u20091.0), but different from the other groups ( p <\u20090.05) which showed greater collagen deposition, while SER, PBM, SUL\u2009+\u2009PBM and SER\u2009+\u2009"
+        },
+        {
+          "value": "0.05",
+          "snippet": "e percentage of type I collagen, the CON, SUL and SER groups were similar ( p >\u20090.05), SER\u2009+\u2009PBM showed a higher percentage of collagen I deposits and was statistic"
+        },
+        {
+          "value": "0.03",
+          "snippet": "collagen I deposits and was statistically different from CON, SUL and SER ( p <\u20090.03). The PBM and SUL\u2009+\u2009PBM groups were the same ( p =\u20090.693), similar to CON and S"
+        },
+        {
+          "value": "0.05",
+          "snippet": "=\u20090.693), similar to CON and SER\u2009+\u2009PBM ( p >\u20090.05) but different from SER ( p <\u20090.05). An illustration is shown in Figure 2B . Concerning collagen III deposition, t"
+        },
+        {
+          "value": "14",
+          "snippet": " including type I and III collagen genes, as discussed in previous literature [ 14 , 15 , 44 ]. During the proliferative phase, fibroblasts and keratinocytes are "
+        },
+        {
+          "value": "15",
+          "snippet": "uding type I and III collagen genes, as discussed in previous literature [ 14 , 15 , 44 ]. During the proliferative phase, fibroblasts and keratinocytes are recru"
+        },
+        {
+          "value": "44",
+          "snippet": " type I and III collagen genes, as discussed in previous literature [ 14 , 15 , 44 ]. During the proliferative phase, fibroblasts and keratinocytes are recruited "
+        },
+        {
+          "value": "2",
+          "snippet": "Irradiation showed inhibitory effects on the inflammatory markers prostaglandin\u20102, TNF\u03b1 and IL1\u03b2, stimulation of collagen production, activation of fibroblasts a"
+        },
+        {
+          "value": "11",
+          "snippet": "iability and Collagen Production ,\u201d International Journal of Molecular Sciences 11 , no. 5 ( 2010 ): 2200 \u2013 2211 . 20559510 10.3390/ijms11052200 PMC2885102 15 P. "
+        },
+        {
+          "value": "5",
+          "snippet": "and Collagen Production ,\u201d International Journal of Molecular Sciences 11 , no. 5 ( 2010 ): 2200 \u2013 2211 . 20559510 10.3390/ijms11052200 PMC2885102 15 P. Aramwit "
+        },
+        {
+          "value": "2010",
+          "snippet": "Collagen Production ,\u201d International Journal of Molecular Sciences 11 , no. 5 ( 2010 ): 2200 \u2013 2211 . 20559510 10.3390/ijms11052200 PMC2885102 15 P. Aramwit , S. Ka"
+        },
+        {
+          "value": "13",
+          "snippet": "od for Collagen Fiber Detection in Tendons: A Mini\u2010Review ,\u201d Orthopedic Surgery 13 , no. 3 ( 2021 ): 701 \u2013 707 . 10.1111/os.12627 PMC8126917 33689233 35 G. K. Kes"
+        }
+      ]
+    },
+    {
+      "id": "T061",
+      "pmid": "41720370",
+      "category": "growth_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T062",
+      "pmid": "41719851",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T063",
+      "pmid": "41715184",
+      "category": "fibre_alignment",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T064",
+      "pmid": "41685930",
+      "category": "cell_motion",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "category": "infarct_remodeling",
+      "n_candidates": 1047,
+      "n_schema_matched": 148,
+      "schema_matched": [
+        {
+          "value": "15",
+          "snippet": "n in human subjects with raised scars following skin injury. Methods A total of 15 studies involving 253 animals were identified through a comprehensive search of"
+        },
+        {
+          "value": "253",
+          "snippet": "ith raised scars following skin injury. Methods A total of 15 studies involving 253 animals were identified through a comprehensive search of the PubMed, Cochrane,"
+        },
+        {
+          "value": "2.78",
+          "snippet": " significantly reduce. The dimensions of hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such"
+        },
+        {
+          "value": "95",
+          "snippet": "ficantly reduce. The dimensions of hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such as "
+        },
+        {
+          "value": "3.88",
+          "snippet": "s of hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such as Collagen Type I [SMD = \u22124.39, 95"
+        },
+        {
+          "value": "1.69",
+          "snippet": "hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such as Collagen Type I [SMD = \u22124.39, 95%CI: "
+        },
+        {
+          "value": "2026",
+          "snippet": "s-scanned no is-retracted no Received 2025 Nov 4; Revised 2025 Dec 31; Accepted 2026 Jan 9; Collection date 2026. 1. Introduction Keloids and hypertrophic scars are"
+        },
+        {
+          "value": "9",
+          "snippet": " no is-retracted no Received 2025 Nov 4; Revised 2025 Dec 31; Accepted 2026 Jan 9; Collection date 2026. 1. Introduction Keloids and hypertrophic scars are eleva"
+        },
+        {
+          "value": "2026",
+          "snippet": " Received 2025 Nov 4; Revised 2025 Dec 31; Accepted 2026 Jan 9; Collection date 2026. 1. Introduction Keloids and hypertrophic scars are elevated, fibrous lesions t"
+        },
+        {
+          "value": "1",
+          "snippet": "ved 2025 Nov 4; Revised 2025 Dec 31; Accepted 2026 Jan 9; Collection date 2026. 1. Introduction Keloids and hypertrophic scars are elevated, fibrous lesions that"
+        },
+        {
+          "value": "2024",
+          "snippet": "ead to scars that extend beyond the normal skin surface ( Murakami and Shigeki, 2024 ; Ogawa, 2017 ) Clinically, hypertrophic scars are characterized by the presenc"
+        },
+        {
+          "value": "2017",
+          "snippet": "hat extend beyond the normal skin surface ( Murakami and Shigeki, 2024 ; Ogawa, 2017 ) Clinically, hypertrophic scars are characterized by the presence of fibrous t"
+        },
+        {
+          "value": "2021",
+          "snippet": "n (\u03b1-SMA), and collagen is a hallmark of both lesion types ( Limandjaja et al., 2021 ). The aesthetic and functional consequences of keloids and hypertrophic scars\u2014"
+        },
+        {
+          "value": "2011",
+          "snippet": "obility\u2014can significantly impact a patient\u2019s quality of life ( Gauglitz et al., 2011 ). Given these challenges, the global market for scar treatment is projected to"
+        },
+        {
+          "value": "32",
+          "snippet": "n these challenges, the global market for scar treatment is projected to reach $32 billion by 2027 ( Sen, 2021 ). The development of keloids and hypertrophic scar"
+        },
+        {
+          "value": "2027",
+          "snippet": "nges, the global market for scar treatment is projected to reach $32 billion by 2027 ( Sen, 2021 ). The development of keloids and hypertrophic scars is influenced "
+        },
+        {
+          "value": "2021",
+          "snippet": "obal market for scar treatment is projected to reach $32 billion by 2027 ( Sen, 2021 ). The development of keloids and hypertrophic scars is influenced by a combina"
+        },
+        {
+          "value": "2024",
+          "snippet": "profile of each scar, potentially improving therapeutic outcomes ( Kim and Kim, 2024 ). Mesenchymal stem cells (MSCs) are multipotent adult stem cells with the abil"
+        },
+        {
+          "value": "2021",
+          "snippet": "studies, with their efficacy yet to be definitively established ( Huang et al., 2021 ; Casado-D\u00edaz et al., 2020 ). Exosomes regulate scar formation by inhibiting fi"
+        },
+        {
+          "value": "2020",
+          "snippet": "y yet to be definitively established ( Huang et al., 2021 ; Casado-D\u00edaz et al., 2020 ). Exosomes regulate scar formation by inhibiting fibroblast proliferation and "
+        },
+        {
+          "value": "2021",
+          "snippet": "while preventing hypertrophic scar formation in the later stages ( Shen et al., 2021 ). In summary, based on the current state of EV research and their promising cl"
+        },
+        {
+          "value": "3",
+          "snippet": "em cell\u201d; and (2) \u201cexosome\u201d, \u201cextracellular vesicle\u201d, and \u201cmicroparticle\u201d; and (3) \u201ckeloid\u201d, \u201chypertrophic scar\u201d, and \u201cpathologic scar\u201d. The logical relationship"
+        },
+        {
+          "value": "2.4",
+          "snippet": "ion or no treatment. The study subjects involved keloids or hypertrophic scars. 2.4. Exclusion criteria Studies were excluded based on the following conditions: Us"
+        },
+        {
+          "value": "2",
+          "snippet": "istics, including authors, study type, publication year, and country of origin; 2) Study population details, such as sample size, group, species, and scar size a"
+        },
+        {
+          "value": "3",
+          "snippet": "pulation details, such as sample size, group, species, and scar size and depth; 3) Intervention characteristics, including criteria for MSC and EV characterizati"
+        }
+      ]
+    },
+    {
+      "id": "T066",
+      "pmid": "41683598",
+      "category": "cell_motion",
+      "n_candidates": 1050,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T067",
+      "pmid": "41674333",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T068",
+      "pmid": "41660757",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T069",
+      "pmid": "41658005",
+      "category": "collagen_dynamics",
+      "n_candidates": 341,
+      "n_schema_matched": 3,
+      "schema_matched": [
+        {
+          "value": "2002",
+          "snippet": "acellular matrix components, such as collagen and hyaluronan ( Takayama et al., 2002 ; Saito et al., 2011 ). Furthermore, in the final stages of wound healing - re-"
+        },
+        {
+          "value": "2011",
+          "snippet": "onents, such as collagen and hyaluronan ( Takayama et al., 2002 ; Saito et al., 2011 ). Furthermore, in the final stages of wound healing - re-epithelialization and"
+        },
+        {
+          "value": "2002",
+          "snippet": " Cell Biol. 90\n497\u2013503. 10.1139/o11-054 Takayama Y., Mizumachi K., Takezawa T. (2002). The bovine lactoferrin region responsible for promoting the collagen gel cont"
+        }
+      ]
+    },
+    {
+      "id": "T070",
+      "pmid": "41657731",
+      "category": "cell_motion",
+      "n_candidates": 692,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T071",
+      "pmid": "41653204",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T072",
+      "pmid": "41644791",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T073",
+      "pmid": "41644046",
+      "category": "infarct_remodeling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "category": "infarct_remodeling",
+      "n_candidates": 666,
+      "n_schema_matched": 63,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": "ucoma Glaucoma The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery EN1 in Scarring Aft"
+        },
+        {
+          "value": "1",
+          "snippet": "Glaucoma Filtration Surgery EN1 in Scarring After GFS and Target Therapy Lin Yi 1 Luo Wangdu 1 Zhu Xiaomin 1 Yu Julong 1 Li Xiangji 1 Xie Lin 1 1 Department of O"
+        },
+        {
+          "value": "1",
+          "snippet": "ration Surgery EN1 in Scarring After GFS and Target Therapy Lin Yi 1 Luo Wangdu 1 Zhu Xiaomin 1 Yu Julong 1 Li Xiangji 1 Xie Lin 1 1 Department of Ophthalmology,"
+        },
+        {
+          "value": "1",
+          "snippet": " EN1 in Scarring After GFS and Target Therapy Lin Yi 1 Luo Wangdu 1 Zhu Xiaomin 1 Yu Julong 1 Li Xiangji 1 Xie Lin 1 1 Department of Ophthalmology, The Third Aff"
+        },
+        {
+          "value": "4.0",
+          "snippet": "rk is licensed under a Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License. Purpose Conjunctival scarring is a major cause of glauco"
+        },
+        {
+          "value": "1",
+          "snippet": "of glaucoma surgery. glaucoma filtration surgery antiscarring therapy engrailed-1 exosome GelMA pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no p"
+        },
+        {
+          "value": "0",
+          "snippet": "tion surgery antiscarring therapy engrailed-1 exosome GelMA pmc-status-qastatus 0 pmc-status-live yes pmc-status-embargo no pmc-status-released yes pmc-prop-open"
+        },
+        {
+          "value": "1",
+          "snippet": "s from elevated IOP, damaging the optic nerve and causing visual field defects. 1 , 2 Filtering surgery is the primary treatment, but excessive scarring often le"
+        },
+        {
+          "value": "2",
+          "snippet": "om elevated IOP, damaging the optic nerve and causing visual field defects. 1 , 2 Filtering surgery is the primary treatment, but excessive scarring often leads "
+        },
+        {
+          "value": "3",
+          "snippet": " the primary treatment, but excessive scarring often leads to surgical failure. 3 Although drugs like mitomycin C (MMC) and 5-fluorouracil improve success rates,"
+        },
+        {
+          "value": "4",
+          "snippet": " 5-fluorouracil improve success rates, their use is limited by adverse effects. 4 A deeper understanding of cytokine regulation in scar formation is needed, high"
+        },
+        {
+          "value": "1",
+          "snippet": " precise mechanisms and long-term strategies for preventing scarring. Engrailed-1 (EN1), a vital homeobox protein transcription factor, plays a critical role in "
+        },
+        {
+          "value": "40",
+          "snippet": "oblasts to express EN1 owing to increased tension, leading to the production of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 Thes"
+        },
+        {
+          "value": "50",
+          "snippet": " to express EN1 owing to increased tension, leading to the production of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 These findi"
+        },
+        {
+          "value": "7",
+          "snippet": "tion of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 These findings highlight the importance of EN1 in tissue damage and repair,"
+        },
+        {
+          "value": "8",
+          "snippet": " of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 These findings highlight the importance of EN1 in tissue damage and repair, sug"
+        },
+        {
+          "value": "2",
+          "snippet": "n in HTFs. A rat model of GFS was established via microtube implantation ( Fig. 2 A). EN1 expression was significantly elevated in conjunctival scar tissue of GF"
+        },
+        {
+          "value": "2",
+          "snippet": " in conjunctival scar tissue of GFS rats compared with that of controls ( Figs. 2 B\u2013D). Figure 1. ( A ) EN1, \u03b1-SMA, collagen I and FN protein expression after di"
+        },
+        {
+          "value": "1",
+          "snippet": "l scar tissue of GFS rats compared with that of controls ( Figs. 2 B\u2013D). Figure 1. ( A ) EN1, \u03b1-SMA, collagen I and FN protein expression after different TGF-\u03b22 "
+        },
+        {
+          "value": "100",
+          "snippet": "1 protein expression in conjunctival scar tissue after GFS surgery; scale bar , 100\u00a0\u00b5m. n \u2267 3. ** P < 0.01. SiEN1 Suppressed TGF-\u03b22\u2013Induced HTFs Proliferation, Mig"
+        },
+        {
+          "value": "3",
+          "snippet": "pression in conjunctival scar tissue after GFS surgery; scale bar , 100\u00a0\u00b5m. n \u2267 3. ** P < 0.01. SiEN1 Suppressed TGF-\u03b22\u2013Induced HTFs Proliferation, Migration, My"
+        },
+        {
+          "value": "0.01",
+          "snippet": "n conjunctival scar tissue after GFS surgery; scale bar , 100\u00a0\u00b5m. n \u2267 3. ** P < 0.01. SiEN1 Suppressed TGF-\u03b22\u2013Induced HTFs Proliferation, Migration, Myofibroblast T"
+        },
+        {
+          "value": "14",
+          "snippet": "y leading to the development of excessive scar tissue in the follicular region. 14 Specifically, TGF-\u03b22 is the predominant isoform in ocular tissues, particularly"
+        },
+        {
+          "value": "13",
+          "snippet": "m in ocular tissues, particularly linked to conjunctival scarring and fibrosis. 13 , 15 , 16 Therefore, this study used TGF-\u03b22 to induce fibrotic processes in pri"
+        },
+        {
+          "value": "15",
+          "snippet": "ocular tissues, particularly linked to conjunctival scarring and fibrosis. 13 , 15 , 16 Therefore, this study used TGF-\u03b22 to induce fibrotic processes in primary "
+        }
+      ]
+    },
+    {
+      "id": "T075",
+      "pmid": "41637974",
+      "category": "cell_motion",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T076",
+      "pmid": "41634491",
+      "category": "fibroblast_signaling",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T077",
+      "pmid": "41616419",
+      "category": "collagen_dynamics",
+      "n_candidates": 0,
+      "n_schema_matched": 0,
+      "schema_matched": []
+    },
+    {
+      "id": "T078",
+      "pmid": "41608354",
+      "category": "growth_remodeling",
+      "n_candidates": 1281,
+      "n_schema_matched": 2,
+      "schema_matched": [
+        {
+          "value": "4",
+          "snippet": "l, thereby increasing the financial burden on patients and healthcare systems [ 4 ]. Wound dressings, such as gauze, synthetic fiber cloth, petroleum jelly gauze"
+        },
+        {
+          "value": "21",
+          "snippet": "ers, while yellow areas indicated muscle fibers and blood cells. The G/C-CS@FGF-21 group showed deeper red collagen fibers that were more organized, suggesting a "
+        }
+      ]
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "category": "collagen_dynamics",
+      "n_candidates": 895,
+      "n_schema_matched": 18,
+      "schema_matched": [
+        {
+          "value": "5",
+          "snippet": "d a significant reduction in inflammatory cell infiltration. As shown in Figure 5 D, collagen was stained blue, with blue-stained areas indicating collagen conte"
+        },
+        {
+          "value": "10",
+          "snippet": "kine IL-8 and MPO , and increased levels of the anti-inflammatory chemokines IL-10 , TGF-\u03b2 , fibronectin (FN) , Collagen (Col)III\u03b1 , VEGFA and FGF . Conclusion: M"
+        },
+        {
+          "value": "4.12",
+          "snippet": "uate the degree of inflammatory cell infiltration and collagen fiber formation. 4.12. Enzyme-Linked Immunosorbent Assay (ELISA) Kit Mouse skin tissues were harveste"
+        },
+        {
+          "value": "2022",
+          "snippet": "gaker M.T. Wound healing, fibroblast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Ch"
+        },
+        {
+          "value": "29",
+          "snippet": " M.T. Wound healing, fibroblast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen "
+        },
+        {
+          "value": "1161",
+          "snippet": "T. Wound healing, fibroblast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xi"
+        },
+        {
+          "value": "1180",
+          "snippet": "und healing, fibroblast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xiong Y"
+        },
+        {
+          "value": "10.1016",
+          "snippet": "ealing, fibroblast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xiong Y. Xue H."
+        },
+        {
+          "value": "2022.07",
+          "snippet": "ast heterogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xiong Y. Xue H. Hu L. Yan C. X"
+        },
+        {
+          "value": "006",
+          "snippet": "rogeneity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xiong Y. Xue H. Hu L. Yan C. Xie X"
+        },
+        {
+          "value": "35931028",
+          "snippet": "neity, and fibrosis Cell Stem Cell 2022 29 1161 1180 10.1016/j.stem.2022.07.006 35931028 PMC9357250 34. Hu Y. Tao R. Chen L. Xiong Y. Xue H. Hu L. Yan C. Xie X. Lin Z. "
+        },
+        {
+          "value": "0.01",
+          "snippet": "ompared with control: * p < 0.05, ** p < 0.01; vs. HG group: # p < 0.05, ## p < 0.01. Figure 5 Promotes diabetic wound healing, epidermal regeneration, and collagen"
+        },
+        {
+          "value": "5",
+          "snippet": "control: * p < 0.05, ** p < 0.01; vs. HG group: # p < 0.05, ## p < 0.01. Figure 5 Promotes diabetic wound healing, epidermal regeneration, and collagen synthesis"
+        },
+        {
+          "value": "8",
+          "snippet": "ation, and collagen synthesis ( A ) Changes in wound area of diabetic mice (n = 8). ( B ) HE-stained pathological images of wound skin tissues in mice (20\u00d7 and 4"
+        },
+        {
+          "value": "5",
+          "snippet": "t002_Table 2 Table 2 Nucleotide sequences of target genes. Gene Source Forward (5\u2032-3\u2032) Reverse (5\u2032-3\u2032) CollagenIII \u03b1 Mouse ACGTAAGCACTGGTGGACAG AGCTGCACATCAACGAC"
+        },
+        {
+          "value": "3",
+          "snippet": "2_Table 2 Table 2 Nucleotide sequences of target genes. Gene Source Forward (5\u2032-3\u2032) Reverse (5\u2032-3\u2032) CollagenIII \u03b1 Mouse ACGTAAGCACTGGTGGACAG AGCTGCACATCAACGACATC"
+        },
+        {
+          "value": "5",
+          "snippet": "le 2 Nucleotide sequences of target genes. Gene Source Forward (5\u2032-3\u2032) Reverse (5\u2032-3\u2032) CollagenIII \u03b1 Mouse ACGTAAGCACTGGTGGACAG AGCTGCACATCAACGACATC fibronectin "
+        },
+        {
+          "value": "3",
+          "snippet": "2 Nucleotide sequences of target genes. Gene Source Forward (5\u2032-3\u2032) Reverse (5\u2032-3\u2032) CollagenIII \u03b1 Mouse ACGTAAGCACTGGTGGACAG AGCTGCACATCAACGACATC fibronectin Mou"
+        }
+      ]
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "category": "collagen_dynamics",
+      "n_candidates": 1087,
+      "n_schema_matched": 31,
+      "schema_matched": [
+        {
+          "value": "1",
+          "snippet": "1599128 10.3390/pharmaceutics18010021 Non-Crosslinked Hyaluronic Acid Redensity 1 \u00ae Supports Cell Viability, Proliferation, and Collagen Deposition in Early Burn"
+        },
+        {
+          "value": "1",
+          "snippet": "y, Proliferation, and Collagen Deposition in Early Burn Management Liao Zhifeng 1 2 Chen Xi 1 2 Brusini Romain 3 Faivre Jimmy 3 Applegate Lee Ann 1 2 4 5 Flegeau"
+        },
+        {
+          "value": "2",
+          "snippet": " Proliferation, and Collagen Deposition in Early Burn Management Liao Zhifeng 1 2 Chen Xi 1 2 Brusini Romain 3 Faivre Jimmy 3 Applegate Lee Ann 1 2 4 5 Flegeau K"
+        },
+        {
+          "value": "1",
+          "snippet": "tion, and Collagen Deposition in Early Burn Management Liao Zhifeng 1 2 Chen Xi 1 2 Brusini Romain 3 Faivre Jimmy 3 Applegate Lee Ann 1 2 4 5 Flegeau Killian 3 *"
+        },
+        {
+          "value": "2",
+          "snippet": "on, and Collagen Deposition in Early Burn Management Liao Zhifeng 1 2 Chen Xi 1 2 Brusini Romain 3 Faivre Jimmy 3 Applegate Lee Ann 1 2 4 5 Flegeau Killian 3 * \u2020"
+        },
+        {
+          "value": "28",
+          "snippet": "d wound management are based on collagen, decellularized tissues, or hydrogel [ 28 , 32 , 33 ]. Among these biomaterials, hydrogels have proven particularly favou"
+        },
+        {
+          "value": "32",
+          "snippet": "nd management are based on collagen, decellularized tissues, or hydrogel [ 28 , 32 , 33 ]. Among these biomaterials, hydrogels have proven particularly favourable"
+        },
+        {
+          "value": "33",
+          "snippet": "nagement are based on collagen, decellularized tissues, or hydrogel [ 28 , 32 , 33 ]. Among these biomaterials, hydrogels have proven particularly favourable for "
+        },
+        {
+          "value": "2.5",
+          "snippet": "d Olympus IX83 microscope (Olympus, Tokyo, Japan) with a DP75 camera (Olympus). 2.5. Collagen Production of Various Cell Types To evaluate the collagen production "
+        },
+        {
+          "value": "2",
+          "snippet": "ing and subsequent quantification were performed. The collagen was stained with 2 mL of 0.1% Sirius Red (Abcam, Cambridge, UK) in 1.3% picric acid (Merck, Darmst"
+        },
+        {
+          "value": "0.1",
+          "snippet": "subsequent quantification were performed. The collagen was stained with 2 mL of 0.1% Sirius Red (Abcam, Cambridge, UK) in 1.3% picric acid (Merck, Darmstadt, Germa"
+        },
+        {
+          "value": "1.3",
+          "snippet": "The collagen was stained with 2 mL of 0.1% Sirius Red (Abcam, Cambridge, UK) in 1.3% picric acid (Merck, Darmstadt, Germany) for 1 h at room temperature with agita"
+        },
+        {
+          "value": "0.05",
+          "snippet": "ism unpaired two-tailed t tests. Significant differences are indicated by * p < 0.05, ** p < 0.01, *** p < 0.001. 3.3. RD1 (100 \u00b5L) Induces Collagen Production by P"
+        },
+        {
+          "value": "0.01",
+          "snippet": "two-tailed t tests. Significant differences are indicated by * p < 0.05, ** p < 0.01, *** p < 0.001. 3.3. RD1 (100 \u00b5L) Induces Collagen Production by Polydactyly Fi"
+        },
+        {
+          "value": "0.001",
+          "snippet": "ests. Significant differences are indicated by * p < 0.05, ** p < 0.01, *** p < 0.001. 3.3. RD1 (100 \u00b5L) Induces Collagen Production by Polydactyly Fibroblasts and F"
+        },
+        {
+          "value": "3.3",
+          "snippet": "ignificant differences are indicated by * p < 0.05, ** p < 0.01, *** p < 0.001. 3.3. RD1 (100 \u00b5L) Induces Collagen Production by Polydactyly Fibroblasts and FE002-"
+        },
+        {
+          "value": "100",
+          "snippet": " differences are indicated by * p < 0.05, ** p < 0.01, *** p < 0.001. 3.3. RD1 (100 \u00b5L) Induces Collagen Production by Polydactyly Fibroblasts and FE002-SK2 Primar"
+        },
+        {
+          "value": "100",
+          "snippet": "ame in vitro model with CSI, we assessed the ability of small doses of RD1 gel (100 \u00b5L) to promote collagen deposition from polydactily fibroblasts and FE002-SK2 p"
+        },
+        {
+          "value": "100",
+          "snippet": "roblast cells. Figure 3 shows that with a dose equivalent to 1.1% of gel (i.e., 100 \u00b5L of gel in 9 mL of medium), RD1 gel is able to enhance the collagen productio"
+        },
+        {
+          "value": "9",
+          "snippet": "gure 3 shows that with a dose equivalent to 1.1% of gel (i.e., 100 \u00b5L of gel in 9 mL of medium), RD1 gel is able to enhance the collagen production in both polyd"
+        },
+        {
+          "value": "51",
+          "snippet": " and thus have already a maximum collagen content confirming previous results [ 51 ]. Figure 3 Collagen production: effect of 100 \u00b5L of RD1 on fibroblasts. ( A ) "
+        },
+        {
+          "value": "3",
+          "snippet": "e already a maximum collagen content confirming previous results [ 51 ]. Figure 3 Collagen production: effect of 100 \u00b5L of RD1 on fibroblasts. ( A ) Example of S"
+        },
+        {
+          "value": "100",
+          "snippet": "ent confirming previous results [ 51 ]. Figure 3 Collagen production: effect of 100 \u00b5L of RD1 on fibroblasts. ( A ) Example of Sirius Red staining of polydactyly f"
+        },
+        {
+          "value": "100",
+          "snippet": "ample of Sirius Red staining of polydactyly fibroblasts post-7 days exposure to 100 \u00b5L of RD1 or 10 \u22124 M Vitamin C. Scale bars = 400 nm ( B ) Collagen quantificati"
+        },
+        {
+          "value": "10",
+          "snippet": "ed staining of polydactyly fibroblasts post-7 days exposure to 100 \u00b5L of RD1 or 10 \u22124 M Vitamin C. Scale bars = 400 nm ( B ) Collagen quantification by Sirius Red"
+        }
+      ]
     }
   ]
 }

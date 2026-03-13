@@ -1,0 +1,789 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="wrr70135" xml:lang="en" article-type="research-article" dtd-version="1.4"><?da-xref-anchor-style autodetect?><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">Wound Repair Regen</journal-id><journal-id journal-id-type="iso-abbrev">Wound Repair Regen</journal-id><journal-id journal-id-type="pmc-domain-id">379</journal-id><journal-id journal-id-type="pmc-domain">blackwellopen</journal-id><journal-id journal-id-type="publisher-id">WRR</journal-id><journal-title-group><journal-title>Wound Repair and Regeneration</journal-title></journal-title-group><issn pub-type="ppub">1067-1927</issn><issn pub-type="epub">1524-475X</issn><custom-meta-group><custom-meta><meta-name>pmc-is-collection-domain</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-collection-title</meta-name><meta-value>Wiley Open Access Collection</meta-value></custom-meta></custom-meta-group></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC12927123</article-id><article-id pub-id-type="pmcid-ver">PMC12927123.1</article-id><article-id pub-id-type="pmcaid">12927123</article-id><article-id pub-id-type="pmcaiid">12927123</article-id><article-id pub-id-type="pmid">41728737</article-id><article-id pub-id-type="doi">10.1111/wrr.70135</article-id><article-id pub-id-type="publisher-id">WRR70135</article-id><article-id pub-id-type="other">WRR-25-05-0294</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article‐basic Science</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Article‐basic Science</subject></subj-group></article-categories><title-group><article-title>Photobiomodulation and Sericin in the Treatment of Second‐Degree Burns Induced in Wistar Rats</article-title></title-group><contrib-group><contrib id="wrr70135-cr-0001" contrib-type="author"><name name-style="western"><surname>de Araújo Pradal</surname><given-names initials="L">Lilian</given-names></name><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="wrr70135-cr-0002" contrib-type="author"><name name-style="western"><surname>Dahleh</surname><given-names initials="MMM">Mustafa Munir Mustafa</given-names></name><xref rid="wrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="wrr70135-cr-0003" contrib-type="author"><name name-style="western"><surname>Prigol</surname><given-names initials="M">Marina</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0002-9724-7469</contrib-id><xref rid="wrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="wrr70135-cr-0004" contrib-type="author"><name name-style="western"><surname>Guerra</surname><given-names initials="GP">Gustavo Petri</given-names></name><xref rid="wrr70135-aff-0002" ref-type="aff">
+<sup>2</sup>
+</xref></contrib><contrib id="wrr70135-cr-0005" contrib-type="author"><name name-style="western"><surname>da Rocha Paiva</surname><given-names initials="C">Celeste</given-names></name><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="wrr70135-cr-0006" contrib-type="author"><name name-style="western"><surname>Schnaufer</surname><given-names initials="TC">Thaís Caroline</given-names></name><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="wrr70135-cr-0007" contrib-type="author"><name name-style="western"><surname>de Fátima Chasko Ribeiro</surname><given-names initials="L">Lucinéia</given-names></name><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="wrr70135-cr-0008" contrib-type="author"><name name-style="western"><surname>Costa</surname><given-names initials="RM">Rose Meire</given-names></name><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="wrr70135-cr-0009" contrib-type="author" corresp="yes"><name name-style="western"><surname>Bertolini</surname><given-names initials="GRF">Gladson Ricardo Flor</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0003-0565-2019</contrib-id><xref rid="wrr70135-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>gladsonricardo@gmail.com</email></address></contrib></contrib-group><aff id="wrr70135-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<institution>Universidade Estadual do Oeste do Paraná – UNIOESTE</institution>
+<city>Cascavel</city>
+<country country="BR">Brazil</country>
+</aff><aff id="wrr70135-aff-0002">
+<label>
+<sup>2</sup>
+</label>
+<institution>Universidade Federal do Pampa – UNIPAMPA</institution>
+<city>Itaqui</city>
+<country country="BR">Brazil</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence:</bold>
+<break/>
+Gladson Ricardo Flor Bertolini (<email>gladsonricardo@gmail.com</email>)<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>23</day><month>2</month><year>2026</year></pub-date><pub-date pub-type="ppub"><season>Jan-Feb</season><year>2026</year></pub-date><volume>34</volume><issue seq="161">1</issue><issue-id pub-id-type="pmc-issue-id">508109</issue-id><issue-id pub-id-type="doi">10.1111/wrr.v34.1</issue-id><elocation-id>e70135</elocation-id><history>
+<date date-type="rev-recd"><day>27</day><month>11</month><year>2025</year></date>
+<date date-type="received"><day>22</day><month>5</month><year>2025</year></date>
+<date date-type="accepted"><day>10</day><month>2</month><year>2026</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>23</day><month>02</month><year>2026</year></date></event><event event-type="pmc-live"><date><day>24</day><month>02</month><year>2026</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2026-02-25 13:25:12.750"><day>25</day><month>02</month><year>2026</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2026 The Author(s). <italic toggle="yes">Wound Repair and Regeneration</italic> published by Wiley Periodicals LLC on behalf of The Wound Healing Society.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="WRR-34-0.pdf"><?pdf-name WRR-34-0.pdf?><?pdf-size 1796912?><?pdf-md5 03bbadc88382415c64b17ab7125a42c4?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:0276/12927123/03bbadc88382/WRR-34-0.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:WRR-34-0.pdf"/><abstract><title>ABSTRACT</title><p>This study investigated the isolated and combined effects of sericin and low‐level laser photobiomodulation (PBM) on the healing of experimentally induced second‐degree burns in male Wistar rats. Sericin has previously been associated with enhanced fibroblast migration and improved reepithelialization, while PBM has shown anti‐inflammatory potential. To assess their therapeutic value, 60 rats were randomised into six groups: untreated control (CON), silver sulfadiazine (SUL), sericin cream (SER), PBM alone, SUL + PBM and SER + PBM. Burn injuries were produced using a heated metal instrument applied for 3 s, and animals were euthanized 14 days later. Macroscopic photography, photothermography and histomorphometric analyses were performed. Statistical tests using generalised linear models were set at <italic toggle="no">p</italic> = 0.05. A significant temperature difference between initial (AV0) and follow‐up (AV1) evaluations was observed, although granulation tissue formation did not differ across groups. Collagen analysis revealed that SER, PBM, SUL + PBM and SER + PBM groups presented higher collagen scores than controls (<italic toggle="no">p</italic> &lt; 0.05). The SER + PBM treatment was particularly effective, showing the greatest proportion of type I collagen and statistical superiority over the other interventions (<italic toggle="no">p</italic> &lt; 0.05). Molecular evaluations demonstrated reduced levels of tumour necrosis factor alpha, thiobarbituric acid reactive substances and catalase, especially in groups receiving PBM in combination with either sericin or sulfadiazine, suggesting a decrease in oxidative stress. Overall, the results indicate that both sericin and PBM positively influence tissue repair, with combined therapy—particularly SER + PBM—yielding enhanced collagen deposition and biochemical markers consistent with improved healing. Further studies are warranted to clarify the underlying biological mechanisms driving these outcomes.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="wrr70135-kwd-0001">burns</kwd><kwd id="wrr70135-kwd-0002">photobiomodulation</kwd><kwd id="wrr70135-kwd-0003">sericin</kwd><kwd id="wrr70135-kwd-0004">wound</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source>
+<institution-wrap><institution>Coordenação de Aperfeiçoamento de Pessoal de Nível Superior</institution><institution-id institution-id-type="doi">10.13039/501100002322</institution-id></institution-wrap>
+</funding-source></award-group><award-group id="funding-0002"><funding-source>
+<institution-wrap><institution>Conselho Nacional de Desenvolvimento Científico e Tecnológico</institution><institution-id institution-id-type="doi">10.13039/501100003593</institution-id></institution-wrap>
+</funding-source></award-group></funding-group><counts><fig-count count="3"/><table-count count="0"/><page-count count="10"/><word-count count="7000"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>January/February 2026</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.7.1 mode:remove_FC converted:23.02.2026</meta-value></custom-meta></custom-meta-group></article-meta></front><body id="wrr70135-body-0001"><sec id="wrr70135-sec-0001"><label>1</label><title>Introduction</title><p>One of the causes of skin lesions is burn injuries [<xref rid="wrr70135-bib-0001" ref-type="bibr">1</xref>], is characterised as an inflammatory post‐traumatic pathological process, accompanied by local and systemic effects, leading to an intense inflammatory response, structural and functional tissue damage [<xref rid="wrr70135-bib-0002" ref-type="bibr">2</xref>, <xref rid="wrr70135-bib-0003" ref-type="bibr">3</xref>]. These lesions are classified according to depth, tissues affected and severity. In first‐degree burns, only the epidermis is affected, with local erythema and pain to the touch. Second‐degree burns affect the epidermis and dermis, are painful and sensitive to touch. In third‐degree injuries, the epidermis, dermis and hypodermis are affected and in fourth‐degree injuries the destruction reaches deeper tissues and is painless due to the destruction of free nerve endings [<xref rid="wrr70135-bib-0001" ref-type="bibr">1</xref>, <xref rid="wrr70135-bib-0004" ref-type="bibr">4</xref>, <xref rid="wrr70135-bib-0005" ref-type="bibr">5</xref>].</p><p>In terms of pathophysiology, immediately following trauma, the initial phase of the inflammatory process involves the recruitment of neutrophils and monocytes to the affected site. This recruitment is mediated by vasodilation and the extravasation of fluids into the adjacent interstitium, subsequently eliciting an immune response that is sustained by macrophages and chemocytokines, such as tumour necrosis factor alpha (TNF‐α), interleukin‐1 (IL‐1) and interleukin‐6 (IL‐6), central elements of this process [<xref rid="wrr70135-bib-0006" ref-type="bibr">6</xref>, <xref rid="wrr70135-bib-0007" ref-type="bibr">7</xref>]. The inflammatory process also stimulates cellular metabolism at the burn site, leading to increased production of reactive oxygen species (ROS) such as superoxide (O<sub>2</sub>
+<sup>−</sup>), hydroxyl (OH<sup>−</sup>) and hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>). This inflammatory response becomes systemic, and TNF‐α starts to induce cell apoptosis [<xref rid="wrr70135-bib-0008" ref-type="bibr">8</xref>].</p><p>The definition of best treatment for such injuries is determined by a set of variables, such as the depth, extent, location and cause of the burn [<xref rid="wrr70135-bib-0009" ref-type="bibr">9</xref>]. The utilisation of intravenous antibiotic therapy presents limitations, including challenges in achieving adequate drug penetration to the wound bed and potential systemic toxicity to the patient. This necessitates the use of topical agents, predominantly antimicrobials, such as 1% silver sulfadiazine. Silver sulfadiazine is widely employed due to its ease of application, low cost and capacity to modulate pro‐inflammatory cytokines [<xref rid="wrr70135-bib-0005" ref-type="bibr">5</xref>, <xref rid="wrr70135-bib-0006" ref-type="bibr">6</xref>, <xref rid="wrr70135-bib-0007" ref-type="bibr">7</xref>, <xref rid="wrr70135-bib-0009" ref-type="bibr">9</xref>, <xref rid="wrr70135-bib-0010" ref-type="bibr">10</xref>].</p><p>Sericin, a proteinaceous material produced by <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">Bombyx mori</italic>
+</styled-content>, the silkworm larva, has been investigated as an alternative in the management of cutaneous lesions. This is attributed to its amino acid composition, which exhibits similarity to that of the stratum corneum, as well as its biocompatibility and low toxicity profile [<xref rid="wrr70135-bib-0011" ref-type="bibr">11</xref>]. Studies have indicated that sericin enhances fibroblast migration [<xref rid="wrr70135-bib-0012" ref-type="bibr">12</xref>], increases the hydroxyproline content in the stratum corneum, decreases skin impedance and induces collagen production [<xref rid="wrr70135-bib-0013" ref-type="bibr">13</xref>, <xref rid="wrr70135-bib-0014" ref-type="bibr">14</xref>], without the activation of pro‐inflammatory cytokines [<xref rid="wrr70135-bib-0015" ref-type="bibr">15</xref>].</p><p>Another widely discussed modality of therapy is photobiomodulation (PBM), which can be performed with both low‐power lasers (LBP) and LEDs, and according to Mosca and colleagues [<xref rid="wrr70135-bib-0016" ref-type="bibr">16</xref>], is effective in stimulating wound healing, decreasing the inflammatory process and pain by reducing vascular permeability and edema. The main target of the visible radiation emitted by the equipment is cytochrome C oxidase (COX), located in the mitochondria [<xref rid="wrr70135-bib-0016" ref-type="bibr">16</xref>, <xref rid="wrr70135-bib-0017" ref-type="bibr">17</xref>].</p><p>However, despite the aforementioned evidence, the literature exhibits a paucity of data regarding the combined application of sericin and low‐level laser therapy in the management of burns. Thus, it is believed that sericin in topical cream form may improve the morphophysiological and morphometric aspects of skin in experimentally induced burns. Therefore, this research aims to test this hypothesis and develop a treatment protocol for second‐degree burns, since these are notably painful and to approximate the clinical reality of patients affected by these injuries, with rats being a widely used experimental animal due to their similarity to human physiological responses, ultimately improving the rehabilitation process and providing healthcare professionals with novel therapeutic resources for patient treatment.</p></sec><sec sec-type="methods" id="wrr70135-sec-0002"><label>2</label><title>Methods</title><sec id="wrr70135-sec-0003"><label>2.1</label><title>Animals and Experimental Groups</title><p>The study was approved by Unioeste's Animal Research Ethics Committee under protocol 16‐21/2021. The sample group consisted of 60 male Wistar rats, weighing approximately 350 g, obtained from the Central Animal Facility of the State University of Western Paraná—UNIOESTE, which were kept in standard polypropylene plastic boxes, with access to water and food ad libitum, a controlled temperature of 21°C ± 1°C and a 12‐h light/dark photoperiod.</p></sec><sec id="wrr70135-sec-0004"><label>2.2</label><title>Experimental Design</title><p>The 60 animals were randomised into six groups with 10 animals each: Control injury group (CON)—animals subjected to injury without any type of treatment; sulfadiazine injury group (SUL)—animals subjected to burn injury and treated with silver sulfadiazine ointment; sericin injury group (SER)—animals subjected to burn injury and treated with sericin cream; PBM injury group—animals subjected to injury and treated only with laser; LBP standard ointment injury group (SUL + PBM)—animals subjected to injury and treated with silver sulfadiazine standard ointment and laser; sericin laser injury group (SER + PBM)—animals subjected to injury and treated with sericin cream and laser.</p></sec><sec id="wrr70135-sec-0005"><label>2.3</label><title>Experimental Model of Second Degree Burns</title><p>The burn induction was performed in accordance with protocols established by Chiarotto et al. [<xref rid="wrr70135-bib-0018" ref-type="bibr">18</xref>], with adaptations. The animals were anaesthetised via intraperitoneal injection with xylazine (50 mg/kg) and ketamine hydrochloride (75 mg/kg). Subsequently, the interscapular region of each animal was trichotomized, and the area was aseptically prepared with 70% alcohol. The instrument employed consisted of a rectangular wooden block with an attached metal plate, possessing a total weight of 100 g. The metal plate had a surface area of 1 cm<sup>2</sup>, inducing an initial lesion of equivalent dimensions. The burn induction instrument was heated using a Bunsen burner for 30 s and then maintained in contact with the trichotomized skin of the animals for 3 s to create a second‐degree burn, as previously established in a pilot study, characterised by complete epidermal destruction and partial dermal destruction.</p><p>Following the procedure, once the animals had regained consciousness, they were administered oral dipyrone at a dosage of 50 mg/kg, as needed, whenever they exhibited signs of nociception [<xref rid="wrr70135-bib-0019" ref-type="bibr">19</xref>, <xref rid="wrr70135-bib-0020" ref-type="bibr">20</xref>].</p><p>Mechanical debridement of the eschar was deliberately avoided; instead, spontaneous separation through natural sloughing or liquefaction was permitted to occur, thereby preventing traction injury to the granulation tissue and reducing potential pain or discomfort in the experimental subjects.</p></sec><sec id="wrr70135-sec-0006"><label>2.4</label><title>Silver Sulfadiazine Treatment Protocol</title><p>The treatment protocol for the group treated with silver SUL also began immediately after the burn was induced.</p><p>The animals were treated with a 1% silver sulfadiazine ointment. The ointment was topically applied to the wound bed in a quantity sufficient to cover the entire lesion. Following treatment application, an occlusive dressing was applied and subsequently changed every 24 h, as for every single animal, allocated in any group. The dressing consisted of gauze, secured with adhesive tape to achieve occlusion, after which each animal was fitted with a vest to prevent dressing removal. These vests were constructed from an unbleached cotton fabric with a thread count of 180 and featured a Velcro front closure, adhering to the garment design proposed by Borges [<xref rid="wrr70135-bib-0021" ref-type="bibr">21</xref>] and Borges et al. [<xref rid="wrr70135-bib-0022" ref-type="bibr">22</xref>] with adaptations. All the animals in all the groups wore this outfit.</p><p>The ointment used was commercial Dermazine Silvestre Labs, formulated with cetostearyl alcohol, stearyl ether, ethoxylated oleyl alcohol, methylparaben, propylparaben, petroleum jelly, propylene glycol, deionised water and 1% micronised silver sulphadiazine.</p></sec><sec id="wrr70135-sec-0007"><label>2.5</label><title>Sericin Treatment Protocol</title><p>The treatment protocol for groups a with sericin (SER and SER + PBM) began immediately after burn induction, with 4% sericin cream, following the principle of minimum effective dose [<xref rid="wrr70135-bib-0023" ref-type="bibr">23</xref>]. The cream was topically applied to the burn site in a quantity sufficient to cover the entire lesion. Following treatment application, an occlusive dressing was applied, consisting of gauze secured with adhesive tape. The dressing for each animal was changed every 24 h.</p><p>The cream was formulated with white petroleum jelly, mineral oil, lanolin, glycerin, bisabolol, triethanolamine stearate, propylparaben, methylparaben and 4% sericin [<xref rid="wrr70135-bib-0012" ref-type="bibr">12</xref>, <xref rid="wrr70135-bib-0015" ref-type="bibr">15</xref>]. The cream was formulated and prepared by the Pharmacotechnics and Cosmetology Laboratory at UNIOESTE—Cascavel.</p><p>The process of extracting sericin from the <styled-content style="fixed-case" toggle="no">
+<italic toggle="no">B. mori</italic>
+</styled-content> cocoon and freeze‐drying it to produce the cream took place at the Laboratory of Microorganism Biochemistry at UNIOESTE—Cascavel, according to the procedure proposed by Debastiane et al. [<xref rid="wrr70135-bib-0024" ref-type="bibr">24</xref>].</p></sec><sec id="wrr70135-sec-0008"><label>2.6</label><title>
+<styled-content style="fixed-case" toggle="no">PBM</styled-content> Treatment Protocol</title><p>For the groups that underwent PBM (PBM, SUL + PBM and SER + PBM) the equipment of choice was laserpulse (Ibramed, 30 mW, 670 nm), and point therapy, at four points (vertices of the wound), with an energy density of 4 J/cm<sup>2</sup> at each point, power of 30 mW, irradiance of 1.07 W/cm<sup>2</sup>, for 10 s at each vertex, that is, 1.2 J of total energy delivered. PBM therapy began 24 h after the burn was induced and was carried out every 48 h, according to the protocol of Silveira et al. [<xref rid="wrr70135-bib-0025" ref-type="bibr">25</xref>] and Lamaro‐Cardoso et al. [<xref rid="wrr70135-bib-0026" ref-type="bibr">26</xref>].</p><p>Dressing changes took place in the same way for all the animals, each receiving their respective treatment, as previously reported.</p></sec><sec id="wrr70135-sec-0009"><label>2.7</label><title>Macroscopic Evaluation and Epithelialization</title><p>Macroscopic assessments of lesions were carried out starting on day 1, immediately after lesion induction and repeated every 24 h.</p><p>The animals were manually restrained by the investigator to expose the injured area. A 12‐megapixel camera with an aperture of f/2.2 was employed. The camera was positioned perpendicularly above each animal, 20 cm from the supporting surface and affixed to a tripod. The wounds were photographed to quantify the reduction in the burn area over time. The acquired images were transferred to a computer and subsequently analysed using Image‐Pro Plus 6.0 software via planimetry to assess the evolution of the lesion area.</p></sec><sec id="wrr70135-sec-0010"><label>2.8</label><title>Temperature Evaluation</title><p>A thermographic camera (Flir C5—Teledyne Flir, Santa Barbara, USA) was utilised to assess the temperature of the injured area. These data were recorded immediately following the burn induction and subsequently repeated every 48 h, both prior to treatment application and after wound dressing cleaning. Thermographic images were also acquired prior to injury induction to serve as a control. Temperature measurements were obtained at the centre of the lesion and laterally to the outer margin of the burn [<xref rid="wrr70135-bib-0027" ref-type="bibr">27</xref>, <xref rid="wrr70135-bib-0028" ref-type="bibr">28</xref>] and its analysis was carried out using the Flir Thermal Studio 2.021 software.</p></sec><sec id="wrr70135-sec-0011"><label>2.9</label><title>Histological Processing of the Dermis Light Microscopy</title><p>On the 7th and 14th days, the animals were euthanized by deep anaesthesia with ketamine hydrochloride (95 mg/Kg) and xylazine hydrochloride (45 mg/Kg) via intraperitoneal injection. After checking the animal's state of consciousness (observed by the absence of motor response to the pinching of the tail and interdigital folds), samples were taken from the intact and burn‐injured skin.</p><p>After being collected, the animals' skin samples were washed with 70% alcohol and fixed in 10% formalin. The pieces were then dehydrated in an increasing series of alcohols (70%, 80%, 90%, 100% I, 100% II and 100% III), diaphanized using xylol alcohol I, II and III and embedded in histological paraffin.</p><p>Subsequently, microtomy was performed by obtaining sequential sagittal sections of 5 μm on an Olympus microtome (R CUT 4055 Tokyo, Japan) to obtain histological slides of the tissue. The slides were stained with haematoxylin and eosin (HE) for histomorphometric analysis of epidermis and dermis, and picrosirius red for collagen fibre analysis. After staining, the slides were analysed and photomicrographed using a light microscope at 40× objective, photographing three samples per animal at the transition line from burnt to healthy skin (Olympus DP71, Tokyo, Japan) for HE, and a polarised light microscope (Zeiss Axio Scope A1, Zeiss Industrial Metrology, Germany), photographing three samples per animal at the transition line using a 40× objective for the slides stained with picrosirius.</p><p>To analyse the HE‐stained slides, a semi‐quantitative analysis was carried out considering values from 0 to 4 according to the scale in Figure <xref rid="wrr70135-fig-0001" ref-type="fig">1</xref>, following the score used by authors who also evaluated experimentally‐induced burns [<xref rid="wrr70135-bib-0029" ref-type="bibr">29</xref>, <xref rid="wrr70135-bib-0030" ref-type="bibr">30</xref>, <xref rid="wrr70135-bib-0031" ref-type="bibr">31</xref>, <xref rid="wrr70135-bib-0032" ref-type="bibr">32</xref>] and proposed by Kumar et al. [<xref rid="wrr70135-bib-0033" ref-type="bibr">33</xref>]. The scale proposed by Robbins and Cottran was also used to analyse collagen deposition [<xref rid="wrr70135-bib-0033" ref-type="bibr">33</xref>], through semi‐quantitative analysis. To this end, the percentage of pixels corresponding to the staining of each collagen fibre type in photomicrographs was quantified. Under polarised light microscopy, type I collagen fibres exhibited red/yellow or orange birefringence, while type III collagen fibres displayed green birefringence [<xref rid="wrr70135-bib-0030" ref-type="bibr">30</xref>, <xref rid="wrr70135-bib-0034" ref-type="bibr">34</xref>]. The percentage of each colour expressed in pixels was calculated using the GIMP 2.10.34 software.</p><fig position="float" fig-type="FIGURE" id="wrr70135-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>On the right, photomicrograph of the transition line from burn to intact skin, in a sagittal section stained in HE. (A) CON—control; (B) SUL—sulfadiazine; (C) SER—sericin; (D) PBM—laser; (E) SUL + PBM—sulfadiazine + laser; (F) SER + PBM—sericin + laser. Shown are the transition lines (black arrows), blood vessels (black stars), fibroblasts (asterisks) and defence cells (red stars). On the left, photomicrograph of the transition line from burn to healthy skin, in a sagittal section stained with picrosirius. (A) CON—control; (B) SUL—sulfadiazine; (C) SER—sericin; (D) PBM—laser; (E) SUL + PBM—sulfadiazine + laser; (F) SER + PBM—sericin + laser. The bar shown in the photomicrographs represents a distance of 100 μm.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="WRR-34-0-g002.jpg"><?image-name WRR-34-0-g002.jpg?><?image-size 138518?><?image-md5 204eb8b162109e34c2d7b5efdf10bf60?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 449?><?image-original-width 1064?><?image-scaled-height 299?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/0276/12927123/204eb8b16210/WRR-34-0-g002.jpg?><?thumb-name WRR-34-0-g002.gif?><?thumb-size 24726?><?thumb-md5 9a0754fe96a4319a766bc7c2291dd09c?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 189?><?thumb-cloudpmc-urn urn:cdn:blobs/0276/12927123/9a0754fe96a4/WRR-34-0-g002.gif?></graphic></fig></sec><sec id="wrr70135-sec-0012"><label>2.10</label><title>Inflammatory Profile Analysis</title><p>Samples of intact and injured skin from each animal were used to analyse the inflammatory profile. The samples were collected after euthanasia, placed in cryotubes and then frozen in an ultra freezer at −86°C (Indrel Ultra Freezer −86°C, Indrel Scientific Londrina, Paraná). TNF‐α was analysed using an ELISA kit, following the manufacturer's instructions, that is, 100 μL of diluted or standard samples of recombinant mouse TNF‐α were added to a 96‐well plate pre‐coated with anti‐TNF‐α and left for 2 h at room temperature (RT). After washing, 100 μL of biotin‐conjugated antibody was added and left for 1 h in TA. After another wash, 100 μL of streptavidin‐peroxidase (HRP) was added and left for 30 min in TA, followed by additional washes. The reaction was then revealed by adding 100 μL of stabilised chromogen, incubated for 30 min at TA and then the reaction was stopped by adding a stop solution. Readings were taken on an ELISA microplate reader (VERSA Max, Molecular Devices, California, USA) at a wavelength of 450 nm. The concentrations were calculated from a standard curve prepared with recombinant TNF‐α. The detection limit was 11.7–750 pg/mL for TNF‐α [<xref rid="wrr70135-bib-0035" ref-type="bibr">35</xref>].</p></sec><sec id="wrr70135-sec-0013"><label>2.11</label><title>Analysis of the Antioxidant System</title><p>Samples of intact and damaged skin from each animal were used to assess the antioxidant system. An aliquot was taken from these samples, stored in microtubes with Tris–HCL buffer, with the pH adjusted to 7.4, and then stored again at −80°C.</p><p>The crude samples were then centrifuged in a microcentrifuge at 12,000 rpm (13,680 G) at 4°C for 12 min. The supernatant was pipetted off and placed in new microtubes. Protein determination followed the Bradford method. Once the protein concentrations of the samples had been determined, they were normalised to 1 mg of protein per 1 mL of sample.</p><p>The enzymes superoxide dismutase (SOD) and catalase (CAT) were analysed, as well as reactive species and levels of malondialdehyde (aldehyde product derived from lipid peroxidation [thiobarbituric acid reactive substances, TBARS]). For SOD, the analysis followed the method proposed by Marklund and Marklund [<xref rid="wrr70135-bib-0036" ref-type="bibr">36</xref>]. The results were expressed as U of SOD/mg of protein. Catalase activity was measured using the rate of decrease in the absorbance of hydrogen peroxide at 240 nm [<xref rid="wrr70135-bib-0025" ref-type="bibr">25</xref>], lipid peroxidation was quantified using TBARS and expressed in malondialdehyde equivalents (MDA). The absorbance was measured at 535 nm using a UV–Visible spectrophotometer (Bio‐Rad), and the values were expressed as nmol MDA/mg protein [<xref rid="wrr70135-bib-0037" ref-type="bibr">37</xref>].</p></sec><sec id="wrr70135-sec-0014"><label>2.12</label><title>Statistical Analysis</title><p>Statistical analysis was carried out using SPSS 20.0 software and GraphPad Prism 8.4.3. Data were expressed as mean ± standard deviation. The variables were analysed using Generalised Linear Models, with LSD post‐test. The difference was considered significant when <italic toggle="yes">p</italic> ≤ 0.05, with a 95% confidence interval.</p></sec></sec><sec sec-type="results" id="wrr70135-sec-0015"><label>3</label><title>Results</title><sec id="wrr70135-sec-0016"><label>3.1</label><title>Macroscopic Assessment of the Lesion Area</title><p>No factor interactions were observed in the analyses carried out; however, the CON and PBM groups were similar to each other (<italic toggle="yes">p</italic> = 0.798), but there was a statistical difference between these two groups and the others (<italic toggle="yes">p</italic> &lt; 0.05), which in turn were statistically similar. As for the assessments over time, there was a statistical difference between AV0 and all the others (<italic toggle="yes">p</italic> &lt; 0.01), AV1–AV5 showed no difference (<italic toggle="yes">p</italic> &gt; 0.05), while the last assessment, AV6, was different from all the others (<italic toggle="yes">p</italic> &lt; 0.05), as shown in Figure <xref rid="wrr70135-fig-0002" ref-type="fig">2</xref>.</p></sec><sec id="wrr70135-sec-0017"><label>3.2</label><title>Temperature Assessment</title><p>Between groups, there was a difference between AV1 and the other assessments (<italic toggle="yes">p</italic> &lt; 0.05) while the others were similar to the initial one, AV0 (<italic toggle="yes">p</italic> &gt; 0.05). There was no statistical difference in the analysis between the groups, but there was an interaction between the groups and the evaluations over the time of the experiment, since after inducing the injury, in AV1, all the groups showed an increase in skin surface temperature (<italic toggle="yes">p</italic> &lt; 0.01), after 48 h in AV2 and after 96 h in AV3, they were similar to AV0 (<italic toggle="yes">p</italic> &gt; 0.05), in the following evaluations, the groups were still the same as AV0 (<italic toggle="yes">p</italic> &gt; 0.05), but different from AV2 and AV3 (<italic toggle="yes">p</italic> &lt; 0.05), as shown in Figure <xref rid="wrr70135-fig-0002" ref-type="fig">2A</xref>.</p></sec><sec id="wrr70135-sec-0018"><label>3.3</label><title>Semi‐Quantitative Histomorphological Assessment</title><p>When analysing the granulation tissue deposition score, there was also no statistical difference between the groups (<italic toggle="yes">p</italic> &gt; 0.05), as shown in Figure <xref rid="wrr70135-fig-0001" ref-type="fig">1</xref>. Just below, in Figure <xref rid="wrr70135-fig-0001" ref-type="fig">1</xref>, it is possible to see the transition line between burn and intact skin again, but in some samples, it is already possible to see re‐epithelialization. In some groups there is still a pyogenic membrane (CON and SUL), migration of less abundant defence cells (SUL) and fibroblasts in large quantities in some samples (SER + PBM).</p><p>Regarding the collagen deposition score, the CON and SUL groups were statistically similar (<italic toggle="yes">p</italic> = 1.0), but different from the other groups (<italic toggle="yes">p</italic> &lt; 0.05) which showed greater collagen deposition, while SER, PBM, SUL + PBM and SER + PBM were the same (<italic toggle="yes">p</italic> &gt; 0.05), as shown in Figure <xref rid="wrr70135-fig-0002" ref-type="fig">2A</xref>.</p><fig position="float" fig-type="FIGURE" id="wrr70135-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>Results of the lesion area analysis (A and B). Graphs showing the evolution of the lesion area. (A) Evaluation of the area between the groups. (B) Evaluation of the lesion area over the time of the experiment. CON, control; PBM—laser; SER + PBM—sericin + laser; SER, sericin; SUL + PBM—sulfadiazine + laser; SUL, sulfadiazine. (C) Results of lesion surface temperature analysis. The graph shows the temperature evolution over the time of the experiment between the groups. (D) Graph showing the position of the groups on the granulation tissue formation scale. (E) Graph showing the position of the groups on the collagen deposition scale. (F) Percentage of type I collagen. (G) Percentage of type III collagen. Results expressed as mean ± standard deviation, indicated by the bars above the columns and rows. Different letters represent statistically different values. Lowercase letters, comparison within the same group; uppercase letters, comparison between groups; equal letters show statistical similarity.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="WRR-34-0-g001.jpg"><?image-name WRR-34-0-g001.jpg?><?image-size 71683?><?image-md5 b95007192abf7e70e76a887c766640c9?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 881?><?image-original-width 1064?><?image-scaled-height 587?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/0276/12927123/b95007192abf/WRR-34-0-g001.jpg?><?thumb-name WRR-34-0-g001.gif?><?thumb-size 9156?><?thumb-md5 c5df4e3d90b93eb15fdae006e7bda5b2?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 83?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/0276/12927123/c5df4e3d90b9/WRR-34-0-g001.gif?></graphic></fig><p>As for the percentage of type I collagen, the CON, SUL and SER groups were similar (<italic toggle="yes">p</italic> &gt; 0.05), SER + PBM showed a higher percentage of collagen I deposits and was statistically different from CON, SUL and SER (<italic toggle="yes">p</italic> &lt; 0.03). The PBM and SUL + PBM groups were the same (<italic toggle="yes">p</italic> = 0.693), similar to CON and SER + PBM (<italic toggle="yes">p</italic> &gt; 0.05) but different from SER (<italic toggle="yes">p</italic> &lt; 0.05). An illustration is shown in Figure <xref rid="wrr70135-fig-0002" ref-type="fig">2B</xref>.</p><p>Concerning collagen III deposition, there was no statistical difference between any group (<italic toggle="yes">p</italic> &gt; 0.05), as shown in Figure <xref rid="wrr70135-fig-0002" ref-type="fig">2C</xref>. Figure <xref rid="wrr70135-fig-0001" ref-type="fig">1</xref> showing the transition line from burn to healthy skin in polarised light photomicrographs.</p><p>Pertaining to SOD expression, CON was statistically different from the other groups (<italic toggle="yes">p</italic> &lt; 0.05), SUL, SER and PBM were the same (<italic toggle="yes">p</italic> &gt; 0.05), and SUL + PBM and SER + PBM were the same (<italic toggle="yes">p</italic> = 0.46) and different from the control (<italic toggle="yes">p</italic> &lt; 0.001). In the analysis of CAT expression, there was no difference between CON, SUL, SER and PBM (<italic toggle="yes">p</italic> &gt; 0.05), these groups being statistically different from SUL + PBM and SER + PBM (<italic toggle="yes">p</italic> &lt; 0.01), the latter being similar with a <italic toggle="yes">p</italic>‐value of 0.9. As for TBARS, there was a statistical difference only between the CON control and all the other groups (<italic toggle="yes">p</italic> &lt; 0.01), with the others all being the same (<italic toggle="yes">p</italic> = 1). In the TNF‐α analysis, CON, SUL and SER were the same (<italic toggle="yes">p</italic> &gt; 0.05), while PBM, SUL + PBM and SER + PBM were similar (<italic toggle="yes">p</italic> &lt; 0.05) but different from the first 3 (<italic toggle="yes">p</italic> &lt; 0.05), as illustrated in Figure <xref rid="wrr70135-fig-0003" ref-type="fig">3</xref>.</p><fig position="float" fig-type="FIGURE" id="wrr70135-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>Graphical results of the analyses of SOD and CAT activity (A), TBARS (B) and TNFα (C). CON, control; PBM—laser; SER + PBM—sericin + laser; SER, sericin; SUL + PBM—sulfadiazine + laser; SUL, sulfadiazine. Results expressed as mean ± standard deviation, indicated by the bars above the symbols for each group. Equal letters show statistical similarity.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="WRR-34-0-g003.jpg"><?image-name WRR-34-0-g003.jpg?><?image-size 80015?><?image-md5 9045abacd97b4423d5c390e12a328bf7?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 908?><?image-original-width 1064?><?image-scaled-height 605?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/0276/12927123/9045abacd97b/WRR-34-0-g003.jpg?><?thumb-name WRR-34-0-g003.gif?><?thumb-size 10888?><?thumb-md5 6109fa35b4129868a3ae28af646ae70b?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 85?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/0276/12927123/6109fa35b412/WRR-34-0-g003.gif?></graphic></fig></sec></sec><sec sec-type="discussion" id="wrr70135-sec-0019"><label>4</label><title>Discussion</title><p>Considering the architecture of the skin, burns represent one of the most debilitating traumas, leading to the destruction of the affected tissues [<xref rid="wrr70135-bib-0003" ref-type="bibr">3</xref>], the resolution of these wounds involves dynamic and temporally overlapping phases. Immediately following trauma, haemostasis is initiated via local vasoconstriction, platelet activation and aggregation and the release of various factors by platelets, keratinocytes, macrophages and fibroblasts. These processes culminate in the formation of a clot, thereby transitioning to the subsequent inflammatory phase [<xref rid="wrr70135-bib-0038" ref-type="bibr">38</xref>].</p><p>This occurs naturally in order to degrade necrotic tissue and initiate the cascade of signals needed to repair the injury. Cells such as monocytes, macrophages and neutrophils are recruited, with neutrophils and macrophages releasing cytokines and chemokines, consisting of IL‐1β, IL‐8 and TNFα, responsible for the release of IL‐6, and growth factors such as TGFβ, essential for the recruitment of fibroblasts, which secrete insulin‐like growth factor (IGF) and vascular‐endothelial growth factor (VEGF) [<xref rid="wrr70135-bib-0004" ref-type="bibr">4</xref>, <xref rid="wrr70135-bib-0038" ref-type="bibr">38</xref>, <xref rid="wrr70135-bib-0039" ref-type="bibr">39</xref>].</p><p>With regard to thermography, a potential indicator of active inflammatory processes [<xref rid="wrr70135-bib-0040" ref-type="bibr">40</xref>], statistically significant differences were found only at the moment immediately after the induction of the experimental burn, but no difference between the control and treated groups, possibly due to factors related to the animals' ability to thermoregulate or the small size of the injured body area [<xref rid="wrr70135-bib-0041" ref-type="bibr">41</xref>].</p><p>Although no significant inter‐group differences were observed in wound size, an observation consistent with a prior study [<xref rid="wrr70135-bib-0042" ref-type="bibr">42</xref>], the extracellular matrix deposited exhibited a richer constitution of type I and III collagen in all treated groups without statistical significance. This finding aligns with the results reported by Gomes et al. [<xref rid="wrr70135-bib-0043" ref-type="bibr">43</xref>], where animals treated with PBM and sulfadiazine demonstrated comparable healing outcomes. However, the G6 group displayed significant collagen deposition, potentially associated with an accelerated lesion resolution process in this group. This acceleration may be attributed to the synergistic effect between PBM and the fibroblast stimulation capacity of sericin, possibly mediated by sericin binding to receptors and the subsequent activation of signalling pathways such as mitogen‐activated protein kinase/extracellular signal‐regulated kinase (MAPK/ERK) and transforming growth factor beta/small mothers against decapentaplegic (TGF‐β/Smad). These pathways are known to regulate the expression of genes related to the extracellular matrix, including type I and III collagen genes, as discussed in previous literature [<xref rid="wrr70135-bib-0014" ref-type="bibr">14</xref>, <xref rid="wrr70135-bib-0015" ref-type="bibr">15</xref>, <xref rid="wrr70135-bib-0044" ref-type="bibr">44</xref>].</p><p>During the proliferative phase, fibroblasts and keratinocytes are recruited and activated at the wound site. This phase is characterised by the replacement of the provisional matrix with granulation tissue, the formation of a definitive extracellular matrix, angiogenesis and epithelialization. Subsequently, fibroblasts differentiate into myofibroblasts, which are involved in extracellular matrix remodelling [<xref rid="wrr70135-bib-0004" ref-type="bibr">4</xref>, <xref rid="wrr70135-bib-0038" ref-type="bibr">38</xref>]. Overlapping, the remodelling phase begins, in which the granulation tissue matures and the scar is formed, as collagen and elastin are deposited and readjusted, and the extracellular matrix, formed by myofibroblasts, is remodelled under the influence of metalloprotease inhibitors (TIMP), which leads to increased tensile strength [<xref rid="wrr70135-bib-0006" ref-type="bibr">6</xref>, <xref rid="wrr70135-bib-0038" ref-type="bibr">38</xref>].</p><p>As for the expression of TNFα in the analysed tissues, this study demonstrated that the experimental groups receiving combined treatments (PBM, SUL + PBM and SER + PBM) exhibited a reduced concentration of this cytokine. This observation corroborates the findings of other studies [<xref rid="wrr70135-bib-0045" ref-type="bibr">45</xref>, <xref rid="wrr70135-bib-0046" ref-type="bibr">46</xref>], although those authors solely evaluated PBM as a treatment, and not its combination with silver sulfadiazine and sericin. These results suggest that the combined treatments promoted an acceleration of the inflammatory process compared to the control group. This inference is supported by the work of Rowman et al. [<xref rid="wrr70135-bib-0006" ref-type="bibr">6</xref>], which indicates that higher levels of TNFα are associated with the initial phases of wound healing, including burns.</p><p>It is through the absorption of red or NIR light by the mitochondrial chromophores contained in the respiratory chain that the laser exerts its therapeutic benefits [<xref rid="wrr70135-bib-0016" ref-type="bibr">16</xref>]. Irradiation showed inhibitory effects on the inflammatory markers prostaglandin‐2, TNFα and IL1β, stimulation of collagen production, activation of fibroblasts and on the expression of metalloproteinases. Thus, PBM alters, increasing the cellular redox state, which induces the activation of intracellular signals, altering transcription factors that promote cell proliferation and tissue repair [<xref rid="wrr70135-bib-0026" ref-type="bibr">26</xref>, <xref rid="wrr70135-bib-0047" ref-type="bibr">47</xref>]. The use of PBM as a therapy also acts to modulate the activity of M1 and M2 macrophages through its influence on intracellular signalling, these macrophages being one of the main cells responsible for the release of TNFα [<xref rid="wrr70135-bib-0048" ref-type="bibr">48</xref>].</p><p>As for the sulfadizine‐treated group, previous studies also endorse the above observation, showing that silver sulfadizine not only has antimicrobial properties, but can also modulate the inflammatory response [<xref rid="wrr70135-bib-0010" ref-type="bibr">10</xref>], through its interaction with proteins and enzymes within immune cells, especially macrophages, affecting signalling pathways crucial for the transcription of pro‐inflammatory genes, such as TNFα, involving the modulation of transcription factors such as NF‐κβ, which plays a central role in regulating TNFα expression [<xref rid="wrr70135-bib-0049" ref-type="bibr">49</xref>]. This would explain why the application of sulfadizine to burns reduced the expression of TNFα, leading to more effective healing of these lesions [<xref rid="wrr70135-bib-0050" ref-type="bibr">50</xref>].</p><p>As for sericin, in addition to what was observed in this study, it has been shown to inhibit the activation of nuclear factor kappa B (NF‐κB) [<xref rid="wrr70135-bib-0051" ref-type="bibr">51</xref>], a key protein in the regulation of the inflammatory response. NF‐κB, when activated, induces the transcription of pro‐inflammatory genes, including TNF‐α, so by blocking this pathway, TNF‐α production is reduced, a situation that may also be related to mitogen‐activated protein kinases (MAPK), which play a crucial role in the production of cytokines such as TNF‐α, because as some authors suggest, sericin modulates these pathways in down regulation, thus leading to lower TNF‐α expression [<xref rid="wrr70135-bib-0052" ref-type="bibr">52</xref>, <xref rid="wrr70135-bib-0053" ref-type="bibr">53</xref>].</p><p>In addition to the modulation of the inflammatory process found in this research, TBARS, which quantify the concentration of MDA and other secondary products of the degradation of polyunsaturated lipids by the action of free radicals, triggered by an exacerbated production of ROS, such as superoxide (O<sub>2</sub>
+<sup>−</sup>), hydrogen peroxide (H<sub>2</sub>O<sub>2</sub>) and the hydroxyl radical (OH<sup>−</sup>) [<xref rid="wrr70135-bib-0008" ref-type="bibr">8</xref>, <xref rid="wrr70135-bib-0054" ref-type="bibr">54</xref>], in the present study we found evidence that all the treatments were effective in reducing the initial oxidative damage of the burn, possibly through different mechanisms, such as the direct antioxidant action of sericin [<xref rid="wrr70135-bib-0015" ref-type="bibr">15</xref>], modulation of the inflammatory response by sulfadiazine [<xref rid="wrr70135-bib-0050" ref-type="bibr">50</xref>] and the PBM [<xref rid="wrr70135-bib-0030" ref-type="bibr">30</xref>], since this marker remained elevated only in the untreated group.</p><p>Considering, therefore, the results found in this study, of the modulation of the inflammatory process through the reduction of inflammation by the downregulation of TNF and TBARS, which was more evident in general in the groups that received the combined treatments (PBM, SUL + PBM and SER + PBM), the results found suggest that the treatments used in this research had a beneficial effect on the resolution of the lesions.</p><p>In burns, the initial ischemia caused by vasoconstriction over the period of haemostasis phase and the subsequent reperfusion throughout the inflammatory phase is one of the factors that lead to local oxidative stress, which is characterised by an imbalance between ROS and the antioxidant defence system [<xref rid="wrr70135-bib-0008" ref-type="bibr">8</xref>]. Pro‐inflammatory cellular activity, especially of neutrophils and the release of cytokines, as discussed above, also contribute to the formation of ROS and NROS, which eventually lead to lipoperoxidation, which in turn contributes to greater tissue degeneration at the site of injury, due to the increased concentration of MDAs since cell membranes are rich in polyunsaturated fatty acids, a vulnerable target for ROS [<xref rid="wrr70135-bib-0002" ref-type="bibr">2</xref>, <xref rid="wrr70135-bib-0038" ref-type="bibr">38</xref>].</p><p>Thus, we found that there was a gradual reduction in the concentration of enzymes of the antioxidant system, SOD and CAT and in the evaluation of both enzymes, the most significant reduction in their expression occurred in groups SUL + PBM and SER + PBM, possibly because these groups, due to the combination of treatments, were led to an early maturation of the injured tissue, already transitioning from the proliferation phase to wound maturation [<xref rid="wrr70135-bib-0010" ref-type="bibr">10</xref>, <xref rid="wrr70135-bib-0051" ref-type="bibr">51</xref>], which could also be related to the findings regarding the extracellular matrix.</p></sec><sec sec-type="conclusions" id="wrr70135-sec-0020"><label>5</label><title>Conclusions</title><p>In short, the results of this research indicate that the treatments applied, especially the combinations (SUL + PBM and SER + PBM), showed a modulating effect on the inflammatory process of experimental second‐degree burns in animals, evidenced by the tendency to reduce the levels of some inflammatory markers, and by the deposition of extracellular matrix rich in collagen, suggesting an acceleration in the resolution of the lesion despite the absence of significant differences in the area of the lesion and temperature between the groups. The observed decrease in the antioxidant enzymes SOD and CAT may signal an early transition to the tissue maturation phase. However, some limitations were identified, including the inability to analyse the remodelling and resolution phases of wound healing at later time points, thereby precluding assessment of tensile strength and skin elasticity, as well as the final aesthetic appearance of the scar; therefore, further studies are warranted.</p></sec><sec id="wrr70135-sec-0021"><title>Funding</title><p>This work was supported by Coordenação de Aperfeiçoamento de Pessoal de Nível Superior and Conselho Nacional de Desenvolvimento Científico e Tecnológico.</p></sec><sec sec-type="COI-statement" id="wrr70135-sec-0022"><title>Conflicts of Interest</title><p>The authors declare no conflicts of interest.</p></sec></body><back><ack id="wrr70135-sec-25"><title>Acknowledgements</title><p>The Article Processing Charge for the publication of this research was funded by the Coordenação de Aperfeiçoamento de Pessoal de Nível Superior ‐ Brasil (CAPES) (ROR identifier: 00x0ma614).</p></ack><sec sec-type="data-availability" id="wrr70135-sec-0024"><title>Data Availability Statement</title><p>The data that support the findings of this study are available on request from the corresponding author. The data are not publicly available due to privacy or ethical restrictions.</p></sec><ref-list content-type="cited-references" id="wrr70135-bibl-0001"><title>References</title><ref id="wrr70135-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="wrr70135-cit-0001">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Oryan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Alemzadeh</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Moshiri</surname>
+</string-name>, “<article-title>Burn Wound Healing: Present Concepts, Treatment Strategies and Future Directions</article-title>,” <source>Journal of Wound Care</source>
+<volume>26</volume>, no. <issue>1</issue> (<year>2017</year>): <fpage>5</fpage>–<lpage>19</lpage>.<pub-id pub-id-type="pmid">28103165</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.12968/jowc.2017.26.1.5</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="wrr70135-cit-0002">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Parihar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. S.</given-names>
+<surname>Parihar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Milner</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Bhat</surname>
+</string-name>, “<article-title>Oxidative Stress and Anti‐Oxidative Mobilization in Burn Injury</article-title>,” <source>Burns</source>
+<volume>34</volume> (<year>2008</year>): <fpage>6</fpage>–<lpage>17</lpage>.<pub-id pub-id-type="pmid">17905515</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.burns.2007.04.009</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="wrr70135-cit-0003">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Abdullahi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Amini‐Nik</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M. G.</given-names>
+<surname>Jeschke</surname>
+</string-name>, “<article-title>Animal Models in Burn Research</article-title>,” <source>Cellular and Molecular Life Sciences</source>
+<volume>71</volume>, no. <issue>17</issue> (<year>2014</year>): <fpage>3241</fpage>–<lpage>3255</lpage>.<pub-id pub-id-type="pmid">24714880</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00018-014-1612-5</pub-id><pub-id pub-id-type="pmcid">PMC4134422</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="wrr70135-cit-0004">
+<string-name name-style="western">
+<given-names>L. H.</given-names>
+<surname>Evers</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Bhavsar</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Mailänder</surname>
+</string-name>, “<article-title>The Biology of Burn Injury</article-title>,” <source>Experimental Dermatology</source>
+<volume>19</volume>, no. <issue>9</issue> (<year>2010</year>): <fpage>777</fpage>–<lpage>783</lpage>.<pub-id pub-id-type="pmid">20629737</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1600-0625.2010.01105.x</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="wrr70135-cit-0005">
+<string-name name-style="western">
+<given-names>K. J.</given-names>
+<surname>Zuo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Medina</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>E. E.</given-names>
+<surname>Tredget</surname>
+</string-name>, “<article-title>Important Developments in Burn Care</article-title>,” <source>Plastic and Reconstructive Surgery</source>
+<volume>139</volume>, no. <issue>1</issue> (<year>2017</year>): <fpage>120e</fpage>–<lpage>138e</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/PRS.0000000000002908</pub-id><pub-id pub-id-type="pmid">28027250</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="wrr70135-cit-0006">
+<string-name name-style="western">
+<given-names>M. P.</given-names>
+<surname>Rowan</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. C.</given-names>
+<surname>Cancio</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E. A.</given-names>
+<surname>Elster</surname>
+</string-name>, et al., “<article-title>Burn Wound Healing and Treatment: Review and Advancements</article-title>,” <source>Critical Care</source>
+<volume>19</volume>, no. <issue>1</issue> (<year>2015</year>): <fpage>243</fpage>.<pub-id pub-id-type="pmid">26067660</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1186/s13054-015-0961-2</pub-id><pub-id pub-id-type="pmcid">PMC4464872</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="wrr70135-cit-0007">
+<string-name name-style="western">
+<given-names>V. K.</given-names>
+<surname>Tiwari</surname>
+</string-name>, “<article-title>Burn Wound: How It Differs From Other Wounds</article-title>,” <source>Indian Journal of Plastic Surgery</source>
+<volume>45</volume>, no. <issue>2</issue> (<year>2012</year>): <fpage>364</fpage>–<lpage>373</lpage>.<pub-id pub-id-type="pmid">23162236</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.4103/0970-0358.101319</pub-id><pub-id pub-id-type="pmcid">PMC3495387</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="wrr70135-cit-0008">
+<string-name name-style="western">
+<given-names>C. B.</given-names>
+<surname>Nielson</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. C.</given-names>
+<surname>Duethman</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Howard</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Moncure</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. G.</given-names>
+<surname>Wood</surname>
+</string-name>, “<article-title>Burns: Pathophysiology of Systemic Complications and Current Management</article-title>,” <source>Journal of Burn Care &amp; Research</source>
+<volume>38</volume>, no. <issue>1</issue> (<year>2017</year>): <fpage>e469</fpage>–<lpage>e481</lpage>.<pub-id pub-id-type="pmid">27183443</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/BCR.0000000000000355</pub-id><pub-id pub-id-type="pmcid">PMC5214064</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="wrr70135-cit-0009">
+<string-name name-style="western">
+<given-names>H. H.</given-names>
+<surname>Nímia</surname>
+</string-name>, <string-name name-style="western">
+<given-names>V. F.</given-names>
+<surname>Carvalho</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C.</given-names>
+<surname>Isaac</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F. Á.</given-names>
+<surname>Souza</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Gemperli</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A. O.</given-names>
+<surname>Paggiaro</surname>
+</string-name>, “<article-title>Comparative Study of Silver Sulfadiazine With Other Materials for Healing and Infection Prevention in Burns: A Systematic Review and Meta‐Analysis</article-title>,” <source>Burns</source>
+<volume>45</volume>, no. <issue>2</issue> (<year>2018</year>): <fpage>282</fpage>–<lpage>292</lpage>.<pub-id pub-id-type="pmid">29903603</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.burns.2018.05.014</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="wrr70135-cit-0010">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Heyneman</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H.</given-names>
+<surname>Hoeksema</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Vandekerckhove</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Pirayesh</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Monstrey</surname>
+</string-name>, “<article-title>The Role of Silver Sulphadiazine in the Conservative Treatment of Partial Thickness Burn Wounds: A Systematic Review</article-title>,” <source>Burns</source>
+<volume>42</volume>, no. <issue>7</issue> (<year>2016</year>): <fpage>1377</fpage>–<lpage>1386</lpage>.<pub-id pub-id-type="pmid">27126813</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.burns.2016.03.029</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="wrr70135-cit-0011">
+<string-name name-style="western">
+<given-names>R. I.</given-names>
+<surname>Kunz</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. M. C.</given-names>
+<surname>Brancalhão</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. D. F. C.</given-names>
+<surname>Ribeiro</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M. R. M.</given-names>
+<surname>Natali</surname>
+</string-name>, “<article-title>Silkworm Sericin: Properties and Biomedical Applications</article-title>,” <source>BioMed Research International</source>
+<volume>2016</volume> (<year>2016</year>): <elocation-id>8175701</elocation-id>.<pub-id pub-id-type="pmid">27965981</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1155/2016/8175701</pub-id><pub-id pub-id-type="pmcid">PMC5124675</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="wrr70135-cit-0012">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Aramwit</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Palapinyo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Srichana</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Chottanapund</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Muangman</surname>
+</string-name>, “<article-title>Silk Sericin Ameliorates Wound Healing and Its Clinical Efficacy in Burn Wounds</article-title>,” <source>Archives of Dermatological Research</source>
+<volume>305</volume>, no. <issue>7</issue> (<year>2013</year>): <fpage>585</fpage>–<lpage>594</lpage>.<pub-id pub-id-type="pmid">23748948</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s00403-013-1371-4</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="wrr70135-cit-0013">
+<string-name name-style="western">
+<given-names>M. N.</given-names>
+<surname>Padamwar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. P.</given-names>
+<surname>Pawar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. V.</given-names>
+<surname>Daithankar</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>K. R.</given-names>
+<surname>Mahadik</surname>
+</string-name>, “<article-title>Silk Sericin as a Moisturizer: An In Vivo Study</article-title>,” <source>Journal of Cosmetic Dermatology</source>
+<volume>4</volume>, no. <issue>4</issue> (<year>2005</year>): <fpage>250</fpage>–<lpage>257</lpage>.<pub-id pub-id-type="pmid">17168872</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1473-2165.2005.00200.x</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="wrr70135-cit-0014">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Aramwit</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kanokpanont</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Nakpheng</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Srichana</surname>
+</string-name>, “<article-title>The Effect of Sericin From Various Extraction Methods on Cell Viability and Collagen Production</article-title>,” <source>International Journal of Molecular Sciences</source>
+<volume>11</volume>, no. <issue>5</issue> (<year>2010</year>): <fpage>2200</fpage>–<lpage>2211</lpage>.<pub-id pub-id-type="pmid">20559510</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms11052200</pub-id><pub-id pub-id-type="pmcid">PMC2885102</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="wrr70135-cit-0015">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Aramwit</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Kanokpanont</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.</given-names>
+<surname>De‐Eknamkul</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Srichana</surname>
+</string-name>, “<article-title>Monitoring of Inflammatory Mediators Induced by Silk Sericin</article-title>,” <source>Journal of Bioscience and Bioengineering</source>
+<volume>107</volume>, no. <issue>5</issue> (<year>2009</year>): <fpage>556</fpage>–<lpage>561</lpage>.<pub-id pub-id-type="pmid">19393558</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jbiosc.2008.12.012</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="wrr70135-cit-0016">
+<string-name name-style="western">
+<given-names>R. C.</given-names>
+<surname>Mosca</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Ong</surname>
+</string-name>, <string-name name-style="western">
+<given-names>O.</given-names>
+<surname>Albasha</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Bass</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Arany</surname>
+</string-name>, “<article-title>Photobiomodulation Therapy for Wound Care: A Potent, Noninvasive, Photoceutical Approach</article-title>,” <source>Advances in Skin &amp; Wound Care</source>
+<volume>32</volume> (<year>2019</year>): <fpage>157</fpage>–<lpage>167</lpage>.<pub-id pub-id-type="pmid">30889017</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1097/01.ASW.0000553600.97572.d2</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="wrr70135-cit-0017">
+<string-name name-style="western">
+<given-names>C. A.</given-names>
+<surname>Ocon</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. A.</given-names>
+<surname>dos Santos</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. R.</given-names>
+<surname>Caires</surname>
+</string-name>, et al., “<article-title>Effects and Parameters of the Photobiomodulation in Experimental Models of Third‐Degree Burn: Systematic Review</article-title>,” <source>Lasers in Medical Science</source>
+<volume>34</volume>, no. <issue>3</issue> (<year>2019</year>): <fpage>637</fpage>–<lpage>648</lpage>.<pub-id pub-id-type="pmid">30229346</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10103-018-2633-3</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="wrr70135-cit-0018">
+<string-name name-style="western">
+<given-names>G. B.</given-names>
+<surname>Chiarotto</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. M.</given-names>
+<surname>Neves</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Ara</surname>
+</string-name>, et al., “<article-title>Effects of Laser Irradiation (670‐Nm InGaP and 830‐Nm GaAlAs) on Burn of Second‐Degree in Rats</article-title>,” <source>Lasers in Medical Science</source>
+<volume>29</volume>, no. <issue>5</issue> (<year>2014</year>): <fpage>1685</fpage>–<lpage>1693</lpage>.<pub-id pub-id-type="pmid">24729046</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10103-014-1573-9</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0019"><label>19</label><mixed-citation publication-type="miscellaneous" id="wrr70135-cit-0019">
+<article-title>Manual de Anestesia e Analgesia do Biotério da Unifal‐MG 1‐Anestesia em Animais de Laboratório</article-title>, chrome‐extension://efaidnbmnnnibpcajpcglclefindmkaj/<ext-link xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://ww3.icb.usp.br/wp-content/uploads/2023/09/Guia_Anestesia_Analgesia_CEUA_UNIFESP_14_06_2022.pdf" ext-link-type="uri">https://ww3.icb.usp.br/wp‐content/uploads/2023/09/Guia_Anestesia_Analgesia_CEUA_UNIFESP_14_06_2022.pdf</ext-link>.</mixed-citation></ref><ref id="wrr70135-bib-0020"><label>20</label><mixed-citation publication-type="miscellaneous" id="wrr70135-cit-0020">
+<string-name name-style="western">
+<given-names>D. I.</given-names>
+<surname>Seabra</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>Pompeu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Luiza</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Valenti</surname>
+</string-name>, <article-title>
+Anestesia e Analgesia de Animais Utilizados em Protocolos Experimentais
+</article-title> (<year>2022</year>).</mixed-citation></ref><ref id="wrr70135-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="wrr70135-cit-0021">
+<string-name name-style="western">
+<given-names>M. C. D.</given-names>
+<surname>Borges</surname>
+</string-name>, “<article-title>Experimental Model of Suit Therapy With Traction Bands in VertebralBone Remodeling in Wistar Rats</article-title>,” <source>Journal of Novel Physiotherapies</source>
+<volume>5</volume>, no. <issue>4</issue> (<year>2015</year>): <fpage>148</fpage>–<lpage>154</lpage>.</mixed-citation></ref><ref id="wrr70135-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="wrr70135-cit-0022">
+<string-name name-style="western">
+<given-names>M. C. D.</given-names>
+<surname>Borges</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T. K.</given-names>
+<surname>Errero</surname>
+</string-name>, <string-name name-style="western">
+<given-names>C. T.</given-names>
+<surname>Rosa</surname>
+</string-name>, et al., “<article-title>Avaliação dos Ligamentos Longitudinais da Coluna de Ratos Wistar em Modelo Experimental da Terapia Suit</article-title>,” <source>Fisioterapia e Pesquisa</source>
+<volume>23</volume>, no. <issue>2</issue> (<year>2016</year>): <fpage>148</fpage>–<lpage>154</lpage>.</mixed-citation></ref><ref id="wrr70135-bib-0023"><label>23</label><mixed-citation publication-type="book" id="wrr70135-cit-0023">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Silva</surname>
+</string-name>, <source>Farmacologia Oitava Edição</source> (<publisher-name>Guanabara Koogan</publisher-name>, <year>2010</year>).</mixed-citation></ref><ref id="wrr70135-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="wrr70135-cit-0024">
+<string-name name-style="western">
+<given-names>J. C.</given-names>
+<surname>Debastiani</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. J.</given-names>
+<surname>Santana</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. d. F. C.</given-names>
+<surname>Ribeiro</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. M. C.</given-names>
+<surname>Brancalhão</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G. R. F.</given-names>
+<surname>Bertolini</surname>
+</string-name>, “<article-title>Sericin Silk Protein in Peripheral Nervous Repair Associated With the Physical Exercise of Swimming in Wistar Rats</article-title>,” <source>Neurological Research</source>
+<volume>41</volume>, no. <issue>4</issue> (<year>2019</year>): <fpage>326</fpage>–<lpage>334</lpage>.<pub-id pub-id-type="pmid">30638158</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1080/01616412.2018.1564187</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="wrr70135-cit-0025">
+<string-name name-style="western">
+<given-names>P. C. L.</given-names>
+<surname>Silveira</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. B.</given-names>
+<surname>Ferreira</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F. R.</given-names>
+<surname>da Rocha</surname>
+</string-name>, et al., “<article-title>Effect of Low‐Power Laser (LPL) and Light‐Emitting Diode (LED) on Inflammatory Response in Burn Wound Healing</article-title>,” <source>Inflammation</source>
+<volume>39</volume>, no. <issue>4</issue> (<year>2016</year>): <fpage>1395</fpage>–<lpage>1404</lpage>.<pub-id pub-id-type="pmid">27206919</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10753-016-0371-x</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="wrr70135-cit-0026">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Lamaro‐Cardoso</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. M.</given-names>
+<surname>Bachion</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. M.</given-names>
+<surname>Morais</surname>
+</string-name>, et al., “<article-title>Photobiomodulation Associated to Cellular Therapy Improve Wound Healing of Experimental Full Thickness Burn Wounds in Rats</article-title>,” <source>Journal of Photochemistry and Photobiology, B: Biology</source>
+<volume>194</volume> (<year>2019</year>): <fpage>174</fpage>–<lpage>182</lpage>.<pub-id pub-id-type="pmid">30999165</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jphotobiol.2019.04.003</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="wrr70135-cit-0027">
+<string-name name-style="western">
+<given-names>M. E. H.</given-names>
+<surname>Jaspers</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. E.</given-names>
+<surname>Carrière</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>de Meij‐ Vries</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. H. G. M.</given-names>
+<surname>Klaessens</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>P. P. M.</given-names>
+<surname>van Zuijlen</surname>
+</string-name>, “<article-title>The FLIR ONE Thermal Imager for the Assessment of Burn Wounds: Reliability and Validity Study</article-title>,” <source>Burns</source>
+<volume>43</volume>, no. <issue>7</issue> (<year>2017</year>): <fpage>1516</fpage>–<lpage>1523</lpage>.<pub-id pub-id-type="pmid">28536040</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.burns.2017.04.006</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="wrr70135-cit-0028">
+<string-name name-style="western">
+<given-names>M. E.</given-names>
+<surname>Carrière</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. E. M.</given-names>
+<surname>de Haas</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Pijpe</surname>
+</string-name>, et al., “<article-title>Validity of Thermography for Measuring Burn Wound Healing Potential</article-title>,” <source>Wound Repair and Regeneration</source>
+<volume>28</volume>, no. <issue>3</issue> (<year>2020</year>): <fpage>347</fpage>–<lpage>354</lpage>.<pub-id pub-id-type="pmid">31777128</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/wrr.12786</pub-id><pub-id pub-id-type="pmcid">PMC7217024</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="wrr70135-cit-0029">
+<string-name name-style="western">
+<given-names>A. N.</given-names>
+<surname>Otterço</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Brassolatti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. L. M.</given-names>
+<surname>Andrade</surname>
+</string-name>, <string-name name-style="western">
+<given-names>L. R. S.</given-names>
+<surname>Avó</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P. S.</given-names>
+<surname>Bossini</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N. A. E.</given-names>
+<surname>Parizotto</surname>
+</string-name>, “<article-title>Effect of Photobiomodulation (670 Nm) Associated With Vitamin A on the Inflammatory Phase of Wound Healing</article-title>,” <source>Lasers in Medical Science</source>
+<volume>33</volume>, no. <issue>9</issue> (<year>2018</year>): <fpage>1867</fpage>–<lpage>1874</lpage>.<pub-id pub-id-type="pmid">29790013</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1007/s10103-018-2535-4</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="wrr70135-cit-0030">
+<string-name name-style="western">
+<given-names>A. N.</given-names>
+<surname>Otterço</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. L.</given-names>
+<surname>Andrade</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Brassolatti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. N. Z.</given-names>
+<surname>Pinto</surname>
+</string-name>, <string-name name-style="western">
+<given-names>H. S. S.</given-names>
+<surname>Araújo</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>N. A.</given-names>
+<surname>Parizotto</surname>
+</string-name>, “<article-title>Photobiomodulation Mechanisms in the Kinetics of the Wound Healing Process in Rats</article-title>,” <source>Journal of Photochemistry and Photobiology, B: Biology</source>
+<volume>183</volume> (<year>2018</year>): <fpage>22</fpage>–<lpage>29</lpage>.<pub-id pub-id-type="pmid">29684717</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jphotobiol.2018.04.010</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="wrr70135-cit-0031">
+<string-name name-style="western">
+<given-names>A. L. M.</given-names>
+<surname>de Andra</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Brassolatti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. F.</given-names>
+<surname>Luna</surname>
+</string-name>, et al., “<article-title>Effect of Photobiomodulation Associated With Cell Therapy in the Process of Cutaneous Regeneration in Third Degree Burns in Rats</article-title>,” <source>Journal of Tissue Engineering and Regenerative Medicine</source>
+<volume>14</volume>, no. <issue>5</issue> (<year>2020</year>): <fpage>673</fpage>–<lpage>683</lpage>.<pub-id pub-id-type="pmid">32096323</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/term.3028</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="wrr70135-cit-0032">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Brassolatti</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P. S.</given-names>
+<surname>Bossini</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. C. D.</given-names>
+<surname>Oliveira</surname>
+</string-name>, et al., “<article-title>Comparative Effects of Two Different Doses of Low‐Level Laser Therapy on Wound Healing Third‐Degree Burns in Rats</article-title>,” <source>Microscopy Research and Technique</source>
+<volume>79</volume>, no. <issue>4</issue> (<year>2016</year>): <fpage>313</fpage>–<lpage>320</lpage>.<pub-id pub-id-type="pmid">26853699</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jemt.22632</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0033"><label>33</label><mixed-citation publication-type="book" id="wrr70135-cit-0033">
+<string-name name-style="western">
+<given-names>V.</given-names>
+<surname>Kumar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A. K.</given-names>
+<surname>Abbas</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. C.</given-names>
+<surname>Aster</surname>
+</string-name>, <source>Robbins. Patologia Básica</source> (<publisher-name>Elsevier</publisher-name>, <year>2013</year>).</mixed-citation></ref><ref id="wrr70135-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="wrr70135-cit-0034">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Liu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. y.</given-names>
+<surname>Xu</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Wu</surname>
+</string-name>, et al., “<article-title>Picrosirius‐Polarization Method for Collagen Fiber Detection in Tendons: A Mini‐Review</article-title>,” <source>Orthopedic Surgery</source>
+<volume>13</volume>, no. <issue>3</issue> (<year>2021</year>): <fpage>701</fpage>–<lpage>707</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/os.12627</pub-id><pub-id pub-id-type="pmcid">PMC8126917</pub-id><pub-id pub-id-type="pmid">33689233</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="wrr70135-cit-0035">
+<string-name name-style="western">
+<given-names>G. K.</given-names>
+<surname>Keshri</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Kumar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Sharma</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Bora</surname>
+</string-name>, <string-name name-style="western">
+<given-names>B.</given-names>
+<surname>Kumar</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Gupta</surname>
+</string-name>, “<article-title>Photobiomodulation Effects of Pulsed‐NIR Laser (810 Nm) and LED (808 ± 3 Nm) With Identical Treatment Regimen on Burn Wound Healing: A Quantitative Label‐Free Global Proteomic Approach</article-title>,” <source>Journal of Photochemistry and Photobiology</source>
+<volume>6</volume> (<year>2021</year>): <elocation-id>100024</elocation-id>.</mixed-citation></ref><ref id="wrr70135-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="wrr70135-cit-0036">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Marklund</surname>
+</string-name> and <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Marklund</surname>
+</string-name>, “<article-title>Involvement of the Superoxide Anion Radical in the Autoxidation of Pyrogallol and a Convenient Assay for Superoxide Dismutase</article-title>,” <source>European Journal of Biochemistry</source>
+<volume>47</volume>, no. <issue>3</issue> (<year>1974</year>): <fpage>469</fpage>–<lpage>474</lpage>.<pub-id pub-id-type="pmid">4215654</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/j.1432-1033.1974.tb03714.x</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="wrr70135-cit-0037">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Yadav</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Verma</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. K.</given-names>
+<surname>Keshri</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Gupta</surname>
+</string-name>, “<article-title>Role of 904 Nm Superpulsed Laser‐Mediated Photobiomodulation on Nitroxidative Stress and Redox Homeostasis in Burn Wound Healing</article-title>,” <source>Photodermatology, Photoimmunology &amp; Photomedicine</source>
+<volume>36</volume>, no. <issue>3</issue> (<year>2020</year>): <fpage>208</fpage>–<lpage>218</lpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1111/phpp.12538</pub-id><pub-id pub-id-type="pmid">32027411</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="wrr70135-cit-0038">
+<string-name name-style="western">
+<given-names>M. G.</given-names>
+<surname>Jeschke</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. E.</given-names>
+<surname>van Baar</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. A.</given-names>
+<surname>Choudhry</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K. K.</given-names>
+<surname>Chung</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. S.</given-names>
+<surname>Gibran</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Logsetty</surname>
+</string-name>, “<article-title>Burn Injury</article-title>,” <source>Nature Reviews Disease Primers</source>
+<volume>6</volume>, no. <issue>1</issue> (<year>2020</year>): <fpage>11</fpage>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.1038/s41572-020-0145-5</pub-id><pub-id pub-id-type="pmcid">PMC7224101</pub-id><pub-id pub-id-type="pmid">32054846</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="wrr70135-cit-0039">
+<string-name name-style="western">
+<given-names>A. F.</given-names>
+<surname>Khosroshahi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. S.</given-names>
+<surname>Rad</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Kheirjou</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. R.</given-names>
+<surname>Ranjkesh</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>L.</given-names>
+<surname>Roshangar</surname>
+</string-name>, “<article-title>Skin Burns: Review of Molecular Mechanisms AT PL</article-title>,” <source>Wounds</source>
+<volume>31</volume>, no. <issue>12</issue> (<year>2019</year>): <fpage>308</fpage>–<lpage>315</lpage>.<pub-id pub-id-type="pmid">31730513</pub-id>
+</mixed-citation></ref><ref id="wrr70135-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="wrr70135-cit-0040">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Casas‐Alvarado</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D.</given-names>
+<surname>Mota‐Rojas</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Hernández‐Ávalos</surname>
+</string-name>, et al., “<article-title>Advances in Infrared Thermography: Surgical Aspects, Vascular Changes, and Pain Monitoring in Veterinary Medicine</article-title>,” <source>Journal of Thermal Biology</source>
+<volume>92</volume> (<year>2020</year>): <elocation-id>102664</elocation-id>.<pub-id pub-id-type="pmid">32888567</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.jtherbio.2020.102664</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="wrr70135-cit-0041">
+<string-name name-style="western">
+<given-names>L. N.</given-names>
+<surname>Belval</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. N.</given-names>
+<surname>Cramer</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G.</given-names>
+<surname>Moralez</surname>
+</string-name>, et al., “<article-title>Burn Size and Environmental Conditions Modify Thermoregulatory Responses to Exercise in Burn Survivors</article-title>,” <source>Journal of Burn Care &amp; Research</source>
+<volume>45</volume>, no. <issue>1</issue> (<year>2024</year>): <fpage>227</fpage>–<lpage>233</lpage>.<pub-id pub-id-type="pmid">37615621</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1093/jbcr/irad128</pub-id><pub-id pub-id-type="pmcid">PMC10768759</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="wrr70135-cit-0042">
+<string-name name-style="western">
+<given-names>L.</given-names>
+<surname>de Araujo Pradal</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E.</given-names>
+<surname>de Freitas</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M. R.</given-names>
+<surname>Buzanello Azevedo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Costa</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>G. R.</given-names>
+<surname>Flor Bertolini</surname>
+</string-name>, “<article-title>Photobiomodulation in Burn Wounds: A Systematic Review and Meta‐Analysis of Clinical and Preclinical Studies</article-title>,” <source>Photobiomodulation, Photomedicine, and Laser Surgery</source>
+<volume>43</volume>, no. <issue>1</issue> (<year>2024</year>): <fpage>8</fpage>–<lpage>23</lpage>.<pub-id pub-id-type="pmid">39172550</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1089/photob.2023.0181</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="wrr70135-cit-0043">
+<string-name name-style="western">
+<given-names>M. T.</given-names>
+<surname>Gomes</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. R. S.</given-names>
+<surname>Campos</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Piccolo</surname>
+</string-name>, et al., “<article-title>Experimental Burns: Comparison Between Silver Sulfadiazine and Photobiomodulation</article-title>,” <source>Revista da Associacao Medica Brasileira (1992)</source>
+<volume>63</volume>, no. <issue>1</issue> (<year>2017</year>): <fpage>29</fpage>–<lpage>34</lpage>.<pub-id pub-id-type="pmid">28225874</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1590/1806-9282.63.01.29</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="wrr70135-cit-0044">
+<string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Nagai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Fukuoka</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Ishii</surname>
+</string-name>, et al., “<article-title>Instillation of Sericin Enhances Corneal Wound Healing Through the ERK Pathway in Rat Debrided Corneal Epithelium</article-title>,” <source>International Journal of Molecular Sciences</source>
+<volume>19</volume>, no. <issue>4</issue> (<year>2018</year>): <elocation-id>1123</elocation-id>.<pub-id pub-id-type="pmid">29642540</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms19041123</pub-id><pub-id pub-id-type="pmcid">PMC5979510</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="wrr70135-cit-0045">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Jin</surname>
+</string-name>, <string-name name-style="western">
+<given-names>F.</given-names>
+<surname>He</surname>
+</string-name>, <string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Luo</surname>
+</string-name>, <string-name name-style="western">
+<given-names>X.</given-names>
+<surname>Hu</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Xia</surname>
+</string-name>, “<article-title>Effect of Systemic Low‐Level Light Therapy on Early Systemic Inflammatory Response of Severe Burn Rats</article-title>,” <source>Academic Journal of Second Military Medical University</source>
+<volume>38</volume>, no. <issue>8</issue> (<year>2017</year>): <fpage>987</fpage>.</mixed-citation></ref><ref id="wrr70135-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="wrr70135-cit-0046">
+<string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Gupta</surname>
+</string-name>, <string-name name-style="western">
+<given-names>G. K.</given-names>
+<surname>Keshri</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Yadav</surname>
+</string-name>, et al., “<article-title>Superpulsed (Ga‐As, 904 Nm) Low‐Level Laser Therapy (LLLT) Attenuates Inflammatory Response and Enhances Healing of Burn Wounds</article-title>,” <source>Journal of Biophotonics</source>
+<volume>8</volume>, no. <issue>6</issue> (<year>2015</year>): <fpage>489</fpage>–<lpage>501</lpage>.<pub-id pub-id-type="pmid">25207838</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1002/jbio.201400058</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="wrr70135-cit-0047">
+<string-name name-style="western">
+<given-names>P.</given-names>
+<surname>Avci</surname>
+</string-name>, <string-name name-style="western">
+<given-names>A.</given-names>
+<surname>Gupta</surname>
+</string-name>, <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Sadasivam</surname>
+</string-name>, et al., “<article-title>Low‐Level Laser (Light) Therapy (LLLT) in Skin: Stimulating, Healing, Restoring</article-title>,” <source>Seminars in Cutaneous Medicine and Surgery</source>
+<volume>32</volume>, no. <issue>1</issue> (<year>2013</year>): <fpage>41</fpage>–<lpage>52</lpage>.<pub-id pub-id-type="pmid">24049929</pub-id>
+<pub-id pub-id-type="pmcid">PMC4126803</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="wrr70135-cit-0048">
+<string-name name-style="western">
+<given-names>Z.</given-names>
+<surname>Strizova</surname>
+</string-name>, <string-name name-style="western">
+<given-names>I.</given-names>
+<surname>Benesova</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Bartolini</surname>
+</string-name>, et al., “<article-title>M1/M2 Macrophages and Their Overlaps–Myth or Reality?</article-title>,” <source>Clinical Science</source>
+<volume>137</volume>, no. <issue>15</issue> (<year>2023</year>): <fpage>1067</fpage>–<lpage>1093</lpage>.<pub-id pub-id-type="pmid">37530555</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1042/CS20220531</pub-id><pub-id pub-id-type="pmcid">PMC10407193</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0049"><label>49</label><mixed-citation publication-type="journal" id="wrr70135-cit-0049">
+<string-name name-style="western">
+<given-names>T. M.</given-names>
+<surname>Stepkowski</surname>
+</string-name>, <string-name name-style="western">
+<given-names>K.</given-names>
+<surname>Brzóska</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Kruszewski</surname>
+</string-name>, “<article-title>Silver Nanoparticles Induced Changes in the Expression of NF‐κB Related Genes Are Cell Type Specific and Related to the Basal Activity of NF‐κB</article-title>,” <source>Toxicology In Vitro</source>
+<volume>28</volume>, no. <issue>4</issue> (<year>2014</year>): <fpage>473</fpage>–<lpage>478</lpage>.<pub-id pub-id-type="pmid">24462830</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.tiv.2014.01.008</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0050"><label>50</label><mixed-citation publication-type="journal" id="wrr70135-cit-0050">
+<string-name name-style="western">
+<given-names>J.</given-names>
+<surname>Banerjee</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Seetharaman</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N. L.</given-names>
+<surname>Wrice</surname>
+</string-name>, <string-name name-style="western">
+<given-names>R. J.</given-names>
+<surname>Christy</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Natesan</surname>
+</string-name>, “<article-title>Delivery of Silver Sulfadiazine and Adipose Derived Stem Cells Using Fibrin Hydrogel Improves Infected Burn Wound Regeneration</article-title>,” <source>PLoS One</source>
+<volume>14</volume>, no. <issue>6</issue> (<year>2019</year>): <elocation-id>e0217965</elocation-id>.<pub-id pub-id-type="pmid">31194776</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1371/journal.pone.0217965</pub-id><pub-id pub-id-type="pmcid">PMC6563979</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0051"><label>51</label><mixed-citation publication-type="journal" id="wrr70135-cit-0051">
+<string-name name-style="western">
+<given-names>Y.</given-names>
+<surname>Sun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>W.</given-names>
+<surname>Shi</surname>
+</string-name>, <string-name name-style="western">
+<given-names>Q.</given-names>
+<surname>Zhang</surname>
+</string-name>, et al., “<article-title>Multi‐Omics Integration to Reveal the Mechanism of Sericin Inhibiting LPS‐Induced Inflammation</article-title>,” <source>International Journal of Molecular Sciences</source>
+<volume>24</volume>, no. <issue>1</issue> (<year>2023</year>): <elocation-id>259</elocation-id>.<pub-id pub-id-type="doi" assigning-authority="pmc">10.3390/ijms24010259</pub-id><pub-id pub-id-type="pmcid">PMC9820220</pub-id><pub-id pub-id-type="pmid">36613700</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0052"><label>52</label><mixed-citation publication-type="journal" id="wrr70135-cit-0052">
+<string-name name-style="western">
+<given-names>S.</given-names>
+<surname>Ampawong</surname>
+</string-name>, <string-name name-style="western">
+<given-names>N.</given-names>
+<surname>Tirawanchai</surname>
+</string-name>, <string-name name-style="western">
+<given-names>T.</given-names>
+<surname>Kanjanapruthipong</surname>
+</string-name>, et al., “<article-title>Sericin Enhances Ammonia Detoxification by Promotes Urea Cycle Enzyme Genes and Activates Hepatic Autophagy in Relation to CARD‐9/MAPK Pathway</article-title>,” <source>Heliyon</source>
+<volume>9</volume>, no. <issue>11</issue> (<year>2023</year>): <elocation-id>e21563</elocation-id>.<pub-id pub-id-type="pmid">38027599</pub-id>
+<pub-id pub-id-type="doi" assigning-authority="pmc">10.1016/j.heliyon.2023.e21563</pub-id><pub-id pub-id-type="pmcid">PMC10654145</pub-id></mixed-citation></ref><ref id="wrr70135-bib-0053"><label>53</label><mixed-citation publication-type="journal" id="wrr70135-cit-0053">
+<string-name name-style="western">
+<given-names>H. L.</given-names>
+<surname>Jeong</surname>
+</string-name>, <string-name name-style="western">
+<given-names>E. B.</given-names>
+<surname>Kang</surname>
+</string-name>, <string-name name-style="western">
+<given-names>S. G.</given-names>
+<surname>Yun</surname>
+</string-name>, <string-name name-style="western">
+<given-names>D. B.</given-names>
+<surname>Park</surname>
+</string-name>, <string-name name-style="western">
+<given-names>J. O.</given-names>
+<surname>Lim</surname>
+</string-name>, and <string-name name-style="western">
+<given-names>J. S.</given-names>
+<surname>Suh</surname>
+</string-name>, “<article-title>Effect of a Silk Sericin and Methylsulfonylmethane (MSM) Blends on Inflammatory Response and Wound Healing</article-title>,” <source>Applied Sciences‐Basel</source>
+<volume>13</volume>, no. <issue>1</issue> (<year>2023</year>): <elocation-id>288</elocation-id>.</mixed-citation></ref><ref id="wrr70135-bib-0054"><label>54</label><mixed-citation publication-type="journal" id="wrr70135-cit-0054">
+<string-name name-style="western">
+<given-names>R.</given-names>
+<surname>Babu</surname>
+</string-name> and <string-name name-style="western">
+<given-names>M.</given-names>
+<surname>Babu</surname>
+</string-name>, “<article-title>Oxidative Stress in Major Thermal Burns: Its Implications and Significance</article-title>,” <source>Indian Journal of Burns</source>
+<volume>26</volume>, no. <issue>1</issue> (<year>2018</year>): <fpage>38</fpage>.</mixed-citation></ref></ref-list></back></article>

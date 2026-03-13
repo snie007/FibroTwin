@@ -1,0 +1,818 @@
+
+<!DOCTYPE article
+  PUBLIC "-//NLM//DTD JATS (Z39.96) Journal Archiving and Interchange DTD with MathML3 v1.4 20241031//EN" "JATS-archivearticle1-4-mathml3.dtd">
+<article id="jcmm70199" xml:lang="en" article-type="research-article" dtd-version="1.4"><processing-meta base-tagset="archiving" mathml-version="3.0" table-model="xhtml" tagset-family="jats"><restricted-by>pmc</restricted-by></processing-meta><front><journal-meta><journal-id journal-id-type="nlm-ta">J Cell Mol Med</journal-id><journal-id journal-id-type="iso-abbrev">J Cell Mol Med</journal-id><journal-id journal-id-type="pmc-domain-id">2233</journal-id><journal-id journal-id-type="pmc-domain">jcmmopen</journal-id><journal-id journal-id-type="publisher-id">JCMM</journal-id><journal-title-group><journal-title>Journal of Cellular and Molecular Medicine</journal-title></journal-title-group><issn pub-type="ppub">1582-1838</issn><issn pub-type="epub">1582-4934</issn><publisher><publisher-name>Wiley</publisher-name></publisher></journal-meta><article-meta><article-id pub-id-type="pmcid">PMC11552651</article-id><article-id pub-id-type="pmcid-ver">PMC11552651.1</article-id><article-id pub-id-type="pmcaid">11552651</article-id><article-id pub-id-type="pmcaiid">11552651</article-id><article-id pub-id-type="pmid">39527465</article-id><article-id pub-id-type="doi">10.1111/jcmm.70199</article-id><article-id pub-id-type="publisher-id">JCMM70199</article-id><article-id pub-id-type="other">JCMM-06-2024-245.R1</article-id><article-version article-version-type="pmc-version">1</article-version><article-categories><subj-group subj-group-type="overline"><subject>Original Article</subject></subj-group><subj-group subj-group-type="heading"><subject>Original Article</subject></subj-group></article-categories><title-group><article-title>Fibroblast‐derived <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p alleviates cardiac remodelling in heart failure via inhibiting the <styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling</article-title><alt-title alt-title-type="left-running-head">Zhou et al.</alt-title></title-group><contrib-group><contrib id="jcmm70199-cr-0001" contrib-type="author"><name name-style="western"><surname>Zhou</surname><given-names initials="H">Haijia</given-names></name><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0002" contrib-type="author"><name name-style="western"><surname>Liu</surname><given-names initials="P">Pengyun</given-names></name><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0003" contrib-type="author"><name name-style="western"><surname>Guo</surname><given-names initials="X">Xuelin</given-names></name><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0004" contrib-type="author"><name name-style="western"><surname>Fang</surname><given-names initials="W">Wei</given-names></name><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0005" contrib-type="author"><name name-style="western"><surname>Wu</surname><given-names initials="C">Chan</given-names></name><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0006" contrib-type="author"><name name-style="western"><surname>Zhang</surname><given-names initials="M">Mingming</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0000-0001-8480-0280</contrib-id><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref></contrib><contrib id="jcmm70199-cr-0007" contrib-type="author" corresp="yes"><name name-style="western"><surname>Ji</surname><given-names initials="Z">Zhaole</given-names></name><contrib-id contrib-id-type="orcid" authenticated="false">https://orcid.org/0009-0000-9471-2196</contrib-id><xref rid="jcmm70199-aff-0001" ref-type="aff">
+<sup>1</sup>
+</xref><address><email>lejizhaoafmu@126.com</email></address></contrib></contrib-group><aff id="jcmm70199-aff-0001">
+<label>
+<sup>1</sup>
+</label>
+<named-content content-type="organisation-division">Department of Cardiology</named-content>
+<institution>Tangdu Hospital, Second Affiliated Hospital of Air Force Medical University</institution>
+<city>Xi'an</city>
+<country country="CN">China</country>
+</aff><author-notes><corresp id="correspondenceTo">
+<label>*</label>
+<bold>Correspondence</bold>
+<break/>
+Mr. Zhaole Ji, Department of Cardiology, Tangdu Hospital, Air Force Medical University, 1 Xinsi Road, Xi'an 710038, China.<break/>
+Email: <email>lejizhaoafmu@126.com</email>
+<break/>
+</corresp></author-notes><pub-date pub-type="epub"><day>11</day><month>11</month><year>2024</year></pub-date><pub-date pub-type="collection"><month>11</month><year>2024</year></pub-date><volume>28</volume><issue seq="440">21</issue><issue-id pub-id-type="pmc-issue-id">474068</issue-id><issue-id pub-id-type="doi">10.1111/jcmm.v28.21</issue-id><elocation-id>e70199</elocation-id><history>
+<date date-type="rev-recd"><day>15</day><month>10</month><year>2024</year></date>
+<date date-type="received"><day>28</day><month>6</month><year>2024</year></date>
+<date date-type="accepted"><day>27</day><month>10</month><year>2024</year></date>
+</history><pub-history><event event-type="pmc-release"><date><day>11</day><month>11</month><year>2024</year></date></event><event event-type="pmc-live"><date><day>11</day><month>11</month><year>2024</year></date></event><event event-type="pmc-last-change"><date iso-8601-date="2024-11-14 06:25:35.803"><day>14</day><month>11</month><year>2024</year></date></event></pub-history><permissions><copyright-statement content-type="article-copyright">© 2024 The Author(s). <italic toggle="yes">Journal of Cellular and Molecular Medicine</italic> published by Foundation for Cellular and Molecular Medicine and John Wiley &amp; Sons Ltd.</copyright-statement><license><ali:license_ref xmlns:ali="http://www.niso.org/schemas/ali/1.0/" specific-use="textmining" content-type="ccbylicense">https://creativecommons.org/licenses/by/4.0/</ali:license_ref><license-p>This is an open access article under the terms of the <ext-link xmlns:xlink="http://www.w3.org/1999/xlink" ext-link-type="uri" xlink:href="https://creativecommons.org/licenses/by/4.0/">http://creativecommons.org/licenses/by/4.0/</ext-link> License, which permits use, distribution and reproduction in any medium, provided the original work is properly cited.</license-p></license></permissions><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pmc-pdf" xlink:href="JCMM-28-e70199.pdf"><?pdf-name JCMM-28-e70199.pdf?><?pdf-size 67906735?><?pdf-md5 d5838db59c47469dc6440cde00d685ea?><?pdf-image-server-status NEVER_LOAD?><?pdf-cloudpmc-urn urn:app:6b61/11552651/d5838db59c47/JCMM-28-e70199.pdf?></self-uri><self-uri xmlns:xlink="http://www.w3.org/1999/xlink" content-type="pdf" xlink:href="file:JCMM-28-e70199.pdf"/><abstract><title>Abstract</title><p>The pathological activation of cardiac fibroblasts (CFs) plays a crucial role in the development of pressure overload‐induced cardiac remodelling and subsequent heart failure (HF). Growing evidence demonstrates that multiple microRNAs (miRNAs) are abnormally expressed in the pathophysiologic process of cardiovascular diseases, with miR‐425 recently reported to be potentially involved in HF. In this study, we aimed to investigate the effects of fibroblast‐derived miR‐425‐5p in pressure overload‐induced HF and explore the underlying mechanisms. C57BL/6 mice were injected with a recombinant adeno‐associated virus specifically designed to overexpress miR‐425‐5p in CFs, followed by transverse aortic constriction (TAC) surgery. Neonatal mouse CFs (NMCFs) were transfected with miR‐425‐5p mimics and subsequently stimulated with angiotensin II (Ang II). We found that miR‐425‐5p levels were significantly downregulated in HF mice and Ang II‐treated NMCFs. Notably, fibroblast‐specific overexpression of miR‐425‐5p markedly inhibited the proliferation and differentiation of CFs, thereby alleviating myocardial fibrosis, cardiac hypertrophy and systolic dysfunction. Mechanistically, the cardioprotective actions of miR‐425‐5p may be achieved by targeting the TGF‐β1/Smad signalling. Interestingly, miR‐425‐5p mimics‐treated CFs could also indirectly affect cardiomyocyte hypertrophy in this course. Together, our findings suggest that fibroblast‐derived miR‐425‐5p mitigates TAC‐induced HF, highlighting miR‐425‐5p as a potential diagnostic and therapeutic target for treating HF patients.</p></abstract><kwd-group kwd-group-type="author-generated"><kwd id="jcmm70199-kwd-0001">cardiac remodelling</kwd><kwd id="jcmm70199-kwd-0002">fibroblast</kwd><kwd id="jcmm70199-kwd-0003">heart failure</kwd><kwd id="jcmm70199-kwd-0004">miR‐425‐5p</kwd><kwd id="jcmm70199-kwd-0005">TGF‐β1/Smad</kwd><kwd id="jcmm70199-kwd-0006">transverse aortic constriction</kwd></kwd-group><funding-group><award-group id="funding-0001"><funding-source><institution-wrap><institution>National Natural Science Foundation of China
+</institution><institution-id institution-id-type="doi">10.13039/501100001809</institution-id></institution-wrap></funding-source><award-id>82270366</award-id></award-group></funding-group><counts><fig-count count="9"/><table-count count="1"/><page-count count="18"/><word-count count="8700"/></counts><custom-meta-group><custom-meta><meta-name>pmc-status-qastatus</meta-name><meta-value>0</meta-value></custom-meta><custom-meta><meta-name>pmc-status-live</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-status-embargo</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-status-released</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-open-access</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-olf</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-manuscript</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-legally-suppressed</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-pdf</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-has-supplement</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-pdf-only</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-suppress-copyright</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-real-version</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-is-scanned-article</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-preprint</meta-name><meta-value>no</meta-value></custom-meta><custom-meta><meta-name>pmc-prop-in-epmc</meta-name><meta-value>yes</meta-value></custom-meta><custom-meta><meta-name>pmc-license-ref</meta-name><meta-value>CC BY</meta-value></custom-meta><custom-meta><meta-name>source-schema-version-number</meta-name><meta-value>2.0</meta-value></custom-meta><custom-meta><meta-name>cover-date</meta-name><meta-value>November 2024</meta-value></custom-meta><custom-meta><meta-name>details-of-publishers-convertor</meta-name><meta-value>Converter:WILEY_ML3GV2_TO_JATSPMC version:6.5.1 mode:remove_FC converted:11.11.2024</meta-value></custom-meta></custom-meta-group></article-meta><notes><p content-type="self-citation">
+<mixed-citation publication-type="journal" id="JCMM70199-cit-2001">
+<string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Guo</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>Fibroblast‐derived <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p alleviates cardiac remodelling in heart failure via inhibiting the <styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling</article-title>. <source>J Cell Mol Med</source>. <year>2024</year>;<volume>28</volume>:<elocation-id>e70199</elocation-id>. doi:<pub-id pub-id-type="doi">10.1111/jcmm.70199</pub-id>
+</mixed-citation>
+</p></notes></front><body id="jcmm70199-body-0001"><sec id="jcmm70199-sec-0001"><label>1</label><title>INTRODUCTOIN</title><p>Heart failure (HF) is the end stage of various cardiovascular diseases (CVDs), including coronary heart disease, hypertension, valvular heart disease and cardiomyopathy, posing a growing socioeconomic burden worldwide.<xref rid="jcmm70199-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref>, <xref rid="jcmm70199-bib-0002" ref-type="bibr">
+<sup>2</sup>
+</xref> Among the multiple pathogenic factors of HF, pressure overload has garnered increasing attention. Although a moderate increase in cardiac load initially has a compensatory effect, prolonged and sustained pressure overload would eventually induce pathological cardiac remodelling and decompensated cardiac function, leading to chronic HF and, in some cases, sudden death.<xref rid="jcmm70199-bib-0003" ref-type="bibr">
+<sup>3</sup>
+</xref>, <xref rid="jcmm70199-bib-0004" ref-type="bibr">
+<sup>4</sup>
+</xref>
+</p><p>Recently, accumulating evidence indicates that reversing or retarding the progression of cardiac remodelling has become an important strategy for reducing hospitalization rates and improving long‐term survival in patients with HF.<xref rid="jcmm70199-bib-0005" ref-type="bibr">
+<sup>5</sup>
+</xref> Excessive myocardial fibrosis and irreversible myocardial hypertrophy caused by chronic stress or diseases are hallmark clinical manifestations and key pathophysiological processes of adverse remodelling.<xref rid="jcmm70199-bib-0006" ref-type="bibr">
+<sup>6</sup>
+</xref> Significantly, disordered activation of cardiac fibroblasts and excessive deposition of extracellular matrix reduce ventricular wall compliance, aggravate cardiac dysfunction, and ultimately accelerate the progression of HF.<xref rid="jcmm70199-bib-0007" ref-type="bibr">
+<sup>7</sup>
+</xref>, <xref rid="jcmm70199-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> Hence, identifying potential therapeutic targets and elucidating the underlying mechanisms of cardiac remodelling are of utmost importance for treating HF.</p><p>MicroRNAs (miRNAs), a class of endogenous small non‐coding RNAs, regulate target mRNA by disrupting its stability and inhibiting its translation.<xref rid="jcmm70199-bib-0009" ref-type="bibr">
+<sup>9</sup>
+</xref> Numerous studies have suggested that miRNAs could serve as biomarkers for the diagnosis or treatment of certain diseases due to their roles in modulating various physiological and pathological processes.<xref rid="jcmm70199-bib-0010" ref-type="bibr">
+<sup>10</sup>
+</xref>, <xref rid="jcmm70199-bib-0011" ref-type="bibr">
+<sup>11</sup>
+</xref> Currently, the involvement of miR‐425 has been uncovered in several CVDs, such as myocardial infarction, viral myocarditis, doxorubicin‐induced cardiotoxicity, and HF.<xref rid="jcmm70199-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref>, <xref rid="jcmm70199-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="jcmm70199-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="jcmm70199-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref> Of note, overexpression of miR‐425 has been reported to exert profound cardioprotective effects in these conditions. Previous studies have also found that miR‐425 level in the plasma exosomes can predict cardiac fibrosis, and miR‐425‐5p is negatively correlated with atrial fibrosis and promotes atrial remodelling.<xref rid="jcmm70199-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="jcmm70199-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> However, whether miR‐425‐5p in heart tissue could exhibit antifibrotic action to attenuate cardiac remodelling and subsequently HF remains to be explored. Moreover, given that the dysregulation of TGF‐β1/Smad pathway is a crucial pathogenic mechanism of myocardial fibrosis,<xref rid="jcmm70199-bib-0018" ref-type="bibr">
+<sup>18</sup>
+</xref> and that miR‐425 could modulate the TGF‐β family pathway,<xref rid="jcmm70199-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref>, <xref rid="jcmm70199-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> it is intriguing to investigate the regulatory role of miR‐425‐5p on the TGF‐β1/Smad pathway in this process.</p><p>Here, this study aimed to investigate the effects of miR‐425‐5p on pressure overload‐induced HF and elucidate its underlying mechanisms. Our experiments initially observed that miR‐425‐5p levels were downregulated in both heart tissue and plasma of HF mice, and then demonstrated that miR‐425‐5p acts as an upstream regulator of the TGF‐β1/Smad signalling in inhibiting CFs activation, thereby mitigating TAC‐induced over‐activated fibrotic and hypertrophic response. These findings suggest that specific overexpression of miR‐425‐5p in CFs plays a pivotal role in alleviating pathological myocardial remodelling and cardiac dysfunction, providing a novel paradigm for the treatment of chronic HF.</p></sec><sec sec-type="materials-and-methods" id="jcmm70199-sec-0002"><label>2</label><title>MATERIALS AND METHODS</title><sec id="jcmm70199-sec-0003"><label>2.1</label><title>Animals</title><p>Male C57BL/6 mice aged 8–12 weeks and 1–3 days were purchased from the Laboratory Animal Center of Air Force Medical University (Shaanxi, China). All experiments involving animals conformed to the Guide for the Care and Use of Laboratory Animals published by the US National Institutes of Health (NIH Publication No. 85–23, revised 1985), and were approved by the Ethic Committee on Animal Care of Air Force Medical University (Approval Document No. IACUC‐20230220).</p></sec><sec id="jcmm70199-sec-0004"><label>2.2</label><title>Reagents</title><p>Angiotensin II (Ang II) was purchased from Solarbio Biotechnology (Beijing, China). SRI‐011381, an activator of TGF‐β signalling pathway, was purchased from MedChem Express (Monmouth Junction, NJ, USA). Primary antibodies against transforming growth factor beta‐1 (TGF‐β1, ab92486), alpha‐smooth muscle actin (α‐SMA, ab7817), Ki67 (ab16667), α‐actinin (ab108198) and Histone H3 (ab1791) were obtained from Abcam (Cambridge, MA, USA). Primary antibodies against p‐Smad2 (Ser465/Ser467, #18338), t‐Smad2 (#5339), p‐Smad3 (Ser423/Ser425, #9520), t‐Smad3 (#9523) and Smad4 (#46535) were purchased from Cell Signalling Technology (Boston, MA, USA). Primary antibodies against BrdU (66241‐1‐Ig), vimentin (10366‐1‐AP), proliferating cell nuclear antigen (PCNA, 10205‐2‐AP) and glyceraldehyde‐3‐phosphate dehydrogenase (GAPDH, 60004‐1‐Ig) were purchased from Proteintech (Chicago, IL, USA). The goat anti‐rabbit and goat anti‐mouse secondary antibodies were purchased from the Zhongshan Company (Beijing, China). miR‐425‐5p mimics (mimic‐miR), miRNA mimic negative control (mimic‐NC), miR‐425‐5p inhibitors (inhibitor‐miR) and miRNA inhibitor NC (inhibitor‐NC) were designed and synthesized by RiboBio (Guangzhou, China). The primers of miR‐425‐5p and U6 were also provided by RiboBio (Guangzhou, China). Real‐time PCR primers of atrial natriuretic peptide (ANP), brain natriuretic peptide (BNP), fibronectin (FN), connective tissue growth factor (CTGF), Collagen 1a1 (Col1a1), Collagen 3a1 (Col3a1) and GAPDH were designed and synthesized by Sangon Biotech (Shanghai, China).</p></sec><sec id="jcmm70199-sec-0005"><label>2.3</label><title>Transverse aortic constriction (<styled-content style="fixed-case" toggle="no">TAC</styled-content>) surgery</title><p>Mouse model of pressure overload‐induced HF was performed by TAC surgery as previously described.<xref rid="jcmm70199-bib-0021" ref-type="bibr">
+<sup>21</sup>
+</xref> In brief, after being anaesthetised with 2% isoflurane, mice were endotracheally intubated and mechanically ventilated using Minivent 845 (Hugo Sachs Electronic, Germany) at a tidal volume of 0.15 mL. The transverse aorta was fully exposed through median thoracotomy. Subsequently, the aortic arch was constricted with a 27‐gauge needle using 7–0 silk suture ligature between the innominate and left common carotid arteries, and the chest wall was then closed. Sham‐operated mice underwent the aforementioned procedures without the ligation of the aortic arch. Eight weeks after surgery, echocardiography was performed before the mice were sacrificed, and the plasma and organs were harvested for subsequent experiments.</p></sec><sec id="jcmm70199-sec-0006"><label>2.4</label><title>Construction of recombinant adeno‐associated virus (<styled-content style="fixed-case" toggle="no">rAAV</styled-content>)</title><p>The rAAV system (type 9) was used to manipulate the expression of miR‐425‐5p in vivo. We employed a periostin (POSTN) promoter to exclusively express miR‐425‐5p in CFs. The rAAVs were packaged by triple plasmid co‐transfection, as described previously.<xref rid="jcmm70199-bib-0022" ref-type="bibr">
+<sup>22</sup>
+</xref>
+</p></sec><sec id="jcmm70199-sec-0007"><label>2.5</label><title>In vivo experiment</title><p>①To explore the effects of miR‐425‐5p on TAC‐induced HF. Eighty C57BL/6 mice were randomly assigned to the following four groups: Sham+rAAV9‐con group, Sham+rAAV9‐miR group, TAC + rAAV9‐con group and TAC + rAAV9‐miR group, with 20 mice in each group. Mice in the Sham+rAAV9‐con group and Sham+rAAV9‐miR group underwent the sham operation, while mice in the TAC + rAAV9‐con group and TAC + rAAV9‐miR group underwent the TAC operation. For overexpression of miR‐425‐5p in vivo, the mice were administered rAAV9‐POSTN‐miR‐425‐5p (100 μL/mouse) or an equal dose of rAAV9‐POSTN‐con by tail vein injection 2 weeks before sham or TAC surgery. Protocol of in vivo experiments ① was shown in Figure <xref rid="jcmm70199-supitem-0001" ref-type="supplementary-material">S1</xref>.</p><p>②To explore the molecular mechanism of miR‐425‐5p on TAC‐induced HF. Eighty C57BL/6 mice were randomly assigned to the following four groups: Sham+rAAV9‐con group, TAC + rAAV9‐con group, TAC + rAAV9‐miR group and TAC + rAAV9‐miR + SRI group, with 20 mice in each group. Mice in the Sham+rAAV9‐con group underwent the sham operation, while mice in the TAC + rAAV9‐con group, TAC + rAAV9‐miR group and TAC + rAAV9‐miR + SRI group underwent the TAC operation. rAAV9‐POSTN‐miR‐425‐5p or rAAV9‐POSTN‐con were administrated as ①, while SRI‐011381 (30 mg/kg) was intraperitoneally injected every 5 days for 8 weeks. Protocol of in vivo experiments ② was shown in Figure <xref rid="jcmm70199-supitem-0002" ref-type="supplementary-material">S2</xref>.</p></sec><sec id="jcmm70199-sec-0008"><label>2.6</label><title>Isolation of neonatal mouse cardiomyocytes (<styled-content style="fixed-case" toggle="no">NMCMs</styled-content>) and cardiac fibroblasts (<styled-content style="fixed-case" toggle="no">NMCFs</styled-content>)</title><p>NMCMs and NMCFs were isolated from 1 to 3‐day‐old C57BL/6 mice as described previously.<xref rid="jcmm70199-bib-0023" ref-type="bibr">
+<sup>23</sup>
+</xref> Left ventricles were minced and digested with 0.1% collagenase II and 0.08% trypsin at 37°C. After digestion, all cells were harvested and then pre‐plated for 1.5 h. Cardiac fibroblasts (CFs) were isolated from cardiomyocytes (CMs) by differential adhesion time, and the adherent cells were CFs that positively expressed vimentin, while the suspended cells were CMs that positively expressed α‐actinin. Then, cells were maintained in DMEM supplemented 10% fetal bovine serum (FBS), and incubated at 37°C in humidified chamber.</p></sec><sec id="jcmm70199-sec-0009"><label>2.7</label><title>In vitro experiment</title><p>A pressure‐overload in vitro model was mimicked by incubating with Ang II (1 μM) for 24 h as previously described.<xref rid="jcmm70199-bib-0024" ref-type="bibr">
+<sup>24</sup>
+</xref> While the control (Con) cells were cultured in the normal DMEM for 24 h. ①NMCFs were randomly assigned to the following four groups: Con+mimic‐NC group, Con+mimic‐miR group, Ang II + mimic‐NC group and Ang II + mimic‐miR group. ②NMCFs were randomly assigned to the following four groups: Con+mimic‐NC group, Ang II + mimic‐NC group, Ang II + mimic‐miR group and Ang II + mimic‐miR + SRI group. To overexpress miR‐425‐5p in vitro, NMCFs were transfected with miR‐425‐5p mimics (100 nM) or mimic NC (100 nM) for 48 h using Lipofectamine 3000 (Invitrogen, CA, USA) according to the manufacturer's instructions. To activate the TGF‐β signalling pathway, SRI‐011381 was added to the culture medium at a dose of 10 μM. Cells were then treated with normal DMEM, Ang II or SRI‐011381 for 24 h after transfection for subsequent experiments.</p></sec><sec id="jcmm70199-sec-0010"><label>2.8</label><title>Indirect co‐culture model</title><p>NMCFs seeded in culture dish were transfected with miR‐425‐5p mimics or mimic NC for 48 h and then stimulated with Ang II (1 μM) for another 24 h to induce a fibrotic phenotype of CFs. The conditioned supernatants from each group were collected and centrifuged at 1500 rpm for 5 min. Isolated NMCMs were cultured in the conditioned supernatants for up to 48 h.</p></sec><sec id="jcmm70199-sec-0011"><label>2.9</label><title>Echocardiography</title><p>Cardiac systolic function was assessed by transthoracic echocardiography. A two‐dimensional parasternal long‐axis view was performed using a VisualSonics Vevo 770 ultrasound system (VisualSonics, Toronto, Ontario, Canada). And an M‐mode echocardiography was recorded at the level of the papillary muscles. Left ventricular ejection fraction (LVEF) and left ventricular fractional shortening (LVFS) were calculated according to the standard formulae.</p></sec><sec id="jcmm70199-sec-0012"><label>2.10</label><title>Histological measurement</title><p>Eight weeks after the sham or TAC operation, the mice were weighed and euthanized, at the same time, their hearts and lungs were quickly harvested. The heart weight (HW), lung weight (LW) and body weight (BW) were measured in order to calculate the HW/BW and LW/BW ratios. Hearts sections were stained with Masson's trichrome and picric acid sirius red to evaluate myocardial fibrosis and collagen deposition, respectively. Wheat germ agglutinin (WGA) staining was used to measure mean cross‐sectional area (CSA) of cardiomyocyte as described previously.<xref rid="jcmm70199-bib-0025" ref-type="bibr">
+<sup>25</sup>
+</xref>
+</p></sec><sec id="jcmm70199-sec-0013"><label>2.11</label><title>Quantitative real‐time <styled-content style="fixed-case" toggle="no">PCR</styled-content> (<styled-content style="fixed-case" toggle="no">qRT</styled-content>‐<styled-content style="fixed-case" toggle="no">PCR</styled-content>)</title><p>Total RNA was extracted from heart tissues or cultured cells with TRIzol Reagent (Sigma‐Aldrich, St. Louis, MO, USA) and reverse transcribed into cDNA using the QuantiTect Reverse Transcription Kit (QIAGEN, Germany), followed by qRT‐PCR with SYBR Premix Ex TaqTM kit (Takara, Beijing, China). The 2<sup>−ΔΔCT</sup> method was used to analyse the data, and the results were presented as relative value to the sham or con group. GAPDH was detected as the internal standards for mRNA. The primers adopted in this process were listed in Table <xref rid="jcmm70199-tbl-0001" ref-type="table">1</xref>.</p><table-wrap position="float" id="jcmm70199-tbl-0001" content-type="TABLE" orientation="portrait"><label>TABLE 1</label><caption><p>The sequences of indicated primers used in this study.</p></caption><table frame="hsides" rules="groups"><col align="left" span="1"/><col align="left" span="1"/><col align="left" span="1"/><thead valign="bottom"><tr style="border-bottom:solid 1px #000000"><th align="left" valign="bottom" rowspan="1" colspan="1">Gene</th><th align="left" valign="bottom" rowspan="1" colspan="1">Forward(5′‐3′)</th><th align="left" valign="bottom" rowspan="1" colspan="1">Reverse(5′‐3′)</th></tr></thead><tbody valign="top"><tr><td align="left" valign="top" rowspan="1" colspan="1">ANP</td><td align="left" valign="top" rowspan="1" colspan="1">AGGCAGTCGATTCTGCTTGA</td><td align="left" valign="top" rowspan="1" colspan="1">CGTGATAGATGAAGGCAGGAAG</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">BNP</td><td align="left" valign="top" rowspan="1" colspan="1">TAGCCAGTCTCCAGAGCAATTC</td><td align="left" valign="top" rowspan="1" colspan="1">TTGGTCCTTCAAGAGCTGTCTC</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">CTGF</td><td align="left" valign="top" rowspan="1" colspan="1">GCTGCCTACCGACTGGAAGAC</td><td align="left" valign="top" rowspan="1" colspan="1">CCTAATGGCTTCCACCCTCTTC</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">FN</td><td align="left" valign="top" rowspan="1" colspan="1">CCGGTGGCTGTCAGTCAGA</td><td align="left" valign="top" rowspan="1" colspan="1">CCGTTCCCACTGCTGATTTATC</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Col1a1</td><td align="left" valign="top" rowspan="1" colspan="1">CCGAGGTATGCTTGATCT</td><td align="left" valign="top" rowspan="1" colspan="1">GACAGTCCAGTTCTTCATTG</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">Col3a1</td><td align="left" valign="top" rowspan="1" colspan="1">ATGGTGGTTTTCAGTTCAGC</td><td align="left" valign="top" rowspan="1" colspan="1">GCCTTGAATTCGCCTTCATT</td></tr><tr><td align="left" valign="top" rowspan="1" colspan="1">GAPDH</td><td align="left" valign="top" rowspan="1" colspan="1">GGTTGTCTCCTGCGACTTCA</td><td align="left" valign="top" rowspan="1" colspan="1">GGTGGTCCAGGGTTTCTTACTC</td></tr></tbody></table></table-wrap></sec><sec id="jcmm70199-sec-0014"><label>2.12</label><title>
+<styled-content style="fixed-case" toggle="no">miRNA qPCR</styled-content> assay</title><p>The miR‐425‐5p from mouse heart and plasma were extracted using the miRNeasy Mini Kit and miRNeasy Serum/Plasma Kit (QIAGEN, Germany). The miRcute Plus miRNA qPCR Kit (TIANGEN, Beijing, China) was used to measure the miR‐425‐5p levels. The forward primers of mmu‐miR‐425‐5p and U6 small nuclear RNA were 5′‐AAUGACACGAUCACUCCCGUUGA‐3′ and 5′‐CAAATTCGTGAAGCGTTCCATAT‐3′. qPCR was conducted through a universal reverse primer (TIANGEN, Beijing, China).</p></sec><sec id="jcmm70199-sec-0015"><label>2.13</label><title>Dual‐luciferase reporter assay</title><p>HEK293 cells were obtained from American Type Culture Collection (ATCC) (Manassas, VA) and cultured in DMEM supplemented with 10% FBS. The wide type (WT) and mutation (Mut) 3′‐UTR of TGF‐β1 genes were cloned into the pmirGLO vector (Promega, WI, USA). Then, HEK293 cells were transfected with 400 ng of pMIR‐TGF‐β1 WT or pMIR‐TGF‐β1 Mut vector, respectively. Meanwhile, miR‐425‐5p mimics or mimic NC was co‐transfected with those reporter plasmids at a final concentration of 100 nM. After 48 h, a dual‐luciferase reporter assay system (Promega, WI, USA) was used to measure the luciferase activity.</p></sec><sec id="jcmm70199-sec-0016"><label>2.14</label><title>Immunofluorescence (<styled-content style="fixed-case" toggle="no">IF</styled-content>) staining</title><p>Paraffin sections and paraformaldehyde‐fixed cells were incubated with bovine serum albumin (BSA) at room temperature. Anti‐α‐SMA, anti‐PCNA, anti‐BrdU, anti‐vimentin and anti‐α‐actinin antibodies (1:300 ~ 1:500) were used for IF staining overnight at 4°C, followed by incubations with corresponding secondary antibodies (1:100). 4, 6‐diamidino‐2‐phenylindole (DAPI) or Hoechst 33342 reagents were used to stain the nucleus. The relative area of NMCMs and quantitative analysis of α‐SMA expression, PCNA<sup>+</sup> nuclei and BrdU<sup>+</sup> nuclei in heart tissues or NMCFs were performed using ImageJ software (Bethesda, MD, USA).</p></sec><sec id="jcmm70199-sec-0017"><label>2.15</label><title>Western blotting</title><p>Total heart and cytoplasmic proteins were extracted in RIPA lysis buffer. Nuclear extracts were prepared using a nuclear extraction kit (Sigma‐Aldrich, MO, USA). The protein concentrations were measured using the BCA Protein Assay Kit. Protein samples were separated by SDS‐PAGE and then transferred to polyvinylidene difluoride (PVDF) membranes. The blots were blocked with 5% skim milk for 2 h and then incubated with primary antibodies (1:1000) at 4°C overnight. After being rinsed with TBST, the membranes were incubated with HRP‐conjugated secondary antibodies (1:5000) for 1 h. Finally, the bands were visualized using a chemiluminescence system (Bio‐Rad Laboratories, Hercules, CA, USA), and analysed using ImageJ software. Quantitative expressions of α‐SMA, Ki67 and TGF‐β1 were normalized against GAPDH, and p‐Smads were normalized to t‐Smads, while quantitative expression of Smad4 was normalized against Histone H3.</p></sec><sec id="jcmm70199-sec-0018"><label>2.16</label><title>Statistical analysis</title><p>Statistical analysis was performed using GraphPad Prism 9.0 (GraphPad Software, Inc., San Diego, CA, USA) and presented as the mean ± standard error of mean (SEM). Differences between two groups were assessed by unpaired <italic toggle="yes">t</italic> test with Welch's correction. While differences between multiple groups were analysed with one‐way ANOVA followed by the Bonferroni correction for post hoc <italic toggle="yes">t</italic> test. <italic toggle="yes">p</italic> &lt; 0.05 was considered statistically significant.</p></sec></sec><sec sec-type="results" id="jcmm70199-sec-0019"><label>3</label><title>RESULTS</title><sec id="jcmm70199-sec-0020"><label>3.1</label><title>
+<styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p levels were downregulated in <styled-content style="fixed-case" toggle="no">HF</styled-content> mice and Ang <styled-content style="fixed-case" toggle="no">II</styled-content>‐treated <styled-content style="fixed-case" toggle="no">NMCFs</styled-content>
+</title><p>To investigate whether miR‐425‐5p is involved in the pathophysiological processes related to HF, we evaluated miR‐425‐5p levels in heart tissues and plasma from sham‐ or TAC‐operated mice. qPCR assays showed that miR‐425‐5p levels were significantly downregulated in both the whole heart tissue and plasma of TAC‐caused HF mice (Figure <xref rid="jcmm70199-fig-0001" ref-type="fig">1A,B</xref>). Additionally, miR‐425‐5p level in NMCFs was several times higher than that in NMCMs, indicating that miR‐425‐5p is primarily synthesized and distributed in NMCFs (Figure <xref rid="jcmm70199-fig-0001" ref-type="fig">1C</xref>).</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0001" orientation="portrait"><label>FIGURE 1</label><caption><p>miR‐425‐5p levels were downregulated in HF mice and Ang II‐treated NMCFs. (A) qPCR analysis of miR‐425‐5p level in the heart tissues at 8 weeks after sham or TAC surgery (<italic toggle="yes">n</italic> = 5). (B) qPCR analysis of miR‐425‐5p level in the plasma at 8 weeks after sham or TAC surgery (<italic toggle="yes">n</italic> = 5). (C) qPCR analysis of miR‐425‐5p level in NMCMs and NMCFs (<italic toggle="yes">n</italic> = 5). (D) qPCR analysis of miR‐425‐5p level in NMCFs after incubation with Ang II for 12 and 24 h (<italic toggle="yes">n</italic> = 5). (E) qPCR analysis of miR‐425‐5p level in NMCMs after incubation with Ang II for 24 and 48 h (<italic toggle="yes">n</italic> = 5). HF, heart failure; NMCMs, neonatal mouse cardiomyocytes; NMCFs, neonatal mouse cardiac fibroblasts. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01; NS, no significant.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-1" orientation="portrait" xlink:href="JCMM-28-e70199-g001.jpg"><?image-name JCMM-28-e70199-g001.jpg?><?image-size 70676?><?image-md5 b09467bd9838811f45070c61559985ea?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 914?><?image-original-width 1064?><?image-scaled-height 609?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/b09467bd9838/JCMM-28-e70199-g001.jpg?><?thumb-name JCMM-28-e70199-g001.gif?><?thumb-size 3263?><?thumb-md5 5f24b01e6ed72bbc712f3642ee2b1ae9?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 86?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/5f24b01e6ed7/JCMM-28-e70199-g001.gif?></graphic></fig><p>Given that Ang II levels are elevated in HF patients and Ang II is commonly used to induce CMs hypertrophy and CFs activation in vitro, isolated NMCMs and NMCFs were then stimulated with Ang II. Intriguingly, after treatment with 1 μM Ang II, miR‐425‐5p expression in NMCFs was notably reduced in a time‐dependent manner, while no significant change of miR‐425‐5p level was observed in NMCMs treated with Ang II (Figure <xref rid="jcmm70199-fig-0001" ref-type="fig">1D,E</xref>). Thus, the decreased miR‐425‐5p levels in failing hearts and CFs, rather than in CMs, suggests that miR‐425‐5p mainly plays a functional role in fibroblast biology in HF pathogenesis. As a result, fibroblast‐specific overexpression of miR‐425‐5p was used in the subsequent experiments.</p></sec><sec id="jcmm70199-sec-0021"><label>3.2</label><title>Specific overexpression of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p in <styled-content style="fixed-case" toggle="no">CFs</styled-content> attenuated cardiac dysfunction and hypertrophy induced by <styled-content style="fixed-case" toggle="no">TAC</styled-content> in mice</title><p>Ultrasound echocardiography and measured parameters confirmed that cardiac systolic function in C57BL/6 mice was markedly impaired 8 weeks after TAC operation. As shown in Figure <xref rid="jcmm70199-fig-0002" ref-type="fig">2A–D</xref>, there was no significant difference in heart rate (HR) among groups, while LVEF and LVFS were strikingly decreased in the TAC + rAAV9‐con group compared with the Sham+rAAV9‐con group. Interestingly, rAAV9‐POSTN‐miR‐425‐5p reversed these impairments, as indicated by increased LVEF and LVFS values in the TAC + rAAV9‐miR group.</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0002" orientation="portrait"><label>FIGURE 2</label><caption><p>Specific overexpression of miR‐425‐5p in CFs attenuated cardiac dysfunction and hypertrophy induced by TAC in mice. (A) Representative M echocardiographic images of mice at 8 weeks after sham or TAC surgery. (B–D) Echocardiographic assessments of heart rate, LVEF and LVFS in each group (<italic toggle="yes">n</italic> = 5). (E, F) The ratios of HW/BW and LW/BW of mice at 8 weeks after sham or TAC surgery (<italic toggle="yes">n</italic> = 5). (G, H) Cardiac mRNA levels of hypertrophic markers ANP and BNP in each group (<italic toggle="yes">n</italic> = 5). (I) Representative images of WGA staining of heart tissues at 8 weeks after sham or TAC surgery (scale bar: 100 μm). (J) Quantification analysis of the mean CSA of cardiomyocyte in each group (<italic toggle="yes">n</italic> = 5). ANP, atrial natriuretic peptide; BNP, brain natriuretic peptide; CSA, cross‐sectional area; HW/BW, heart weight/body weight; LVEF, left ventricular ejection fraction; LVFS, left ventricular fractional shortening; LW/BW, lung weight/body weight; WGA, wheat germ agglutinin. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-3" orientation="portrait" xlink:href="JCMM-28-e70199-g005.jpg"><?image-name JCMM-28-e70199-g005.jpg?><?image-size 223036?><?image-md5 0bdde86b3c41644df2e6dc4e7bc58edd?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1464?><?image-original-width 1064?><?image-scaled-height 976?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/0bdde86b3c41/JCMM-28-e70199-g005.jpg?><?thumb-name JCMM-28-e70199-g005.gif?><?thumb-size 6643?><?thumb-md5 c2673ea12691897f3afbb55c91a874f9?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 138?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/c2673ea12691/JCMM-28-e70199-g005.gif?></graphic></fig><p>Eight weeks after TAC surgery, the HW/BW and LW/BW ratios in the TAC + rAAV9‐con group were remarkably higher than the corresponding ratios in the Sham+rAAV9‐con group. However, the phenomenon of TAC‐induced cardiac mass increase and lung edema was reversed by fibroblast‐specific overexpression of miR‐425‐5p (Figure <xref rid="jcmm70199-fig-0002" ref-type="fig">2E,F</xref>). Consistently, the levels of ANP and BNP, two classic markers of cardiac hypertrophy and HF, were significantly elevated in the TAC + rAAV9‐con group, which were also abrogated by rAAV9‐POSTN‐miR‐425‐5p administration in the TAC + rAAV9‐miR group (Figure <xref rid="jcmm70199-fig-0002" ref-type="fig">2G,H</xref>). Moreover, as shown in Figure <xref rid="jcmm70199-fig-0002" ref-type="fig">2I,J</xref>, WGA staining further confirmed the anti‐hypertrophic effects of miR‐425‐5p, as evidenced by the notable decrease in the CSA of CMs compared with the TAC + rAAV9‐con group. These findings indicate that fibroblast‐specific overexpression of miR‐425‐5p rescues TAC‐induced contractile dysfunction and cardiac hypertrophy.</p></sec><sec id="jcmm70199-sec-0022"><label>3.3</label><title>Specific overexpression of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p in <styled-content style="fixed-case" toggle="no">CFs</styled-content> mitigated myocardial fibrosis and inhibited cardiac fibroblast activation induced by <styled-content style="fixed-case" toggle="no">TAC</styled-content> in mice</title><p>Histological analysis showed that the impaired systolic function in TAC‐treated mice was associated with increased cardiac fibrosis. Masson's trichrome and picric acid sirius red staining revealed that, compared with the Sham+rAAV9‐con group, mice in the TAC + rAAV9‐con group exhibited dramatically augmented interstitial fibrosis and collagen deposition (Figure <xref rid="jcmm70199-fig-0003" ref-type="fig">3A–C</xref>). Meanwhile, transcriptional analysis of FN, CTGF, Col1a1 and Col3a1 further indicated that TAC surgery significantly promoted the expressions of these fibrotic markers (Figure <xref rid="jcmm70199-fig-0003" ref-type="fig">3D–G</xref>). However, the progression of myocardial fibrosis and the elevated levels of fibrotic markers were obviously reversed by rAAV9‐POSTN‐miR‐425‐5p administration in the TAC + rAAV9‐miR group.</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0003" orientation="portrait"><label>FIGURE 3</label><caption><p>Specific overexpression of miR‐425‐5p in CFs mitigated myocardial fibrosis and inhibited cardiac fibroblasts activation induced by TAC in mice. (A) Representative images of Masson's trichrome and picric acid sirius red staining of heart tissues at 8 weeks after sham or TAC surgery (scale bar: 200 μm). (B, C) Quantification analyses of fibrosis area and collagen deposition in each group (<italic toggle="yes">n</italic> = 5). (D–G) Cardiac mRNA levels of fibrotic markers FN, CTGF, Col1a1 and Col3a1 in each group (<italic toggle="yes">n</italic> = 5). (H) Representative immunofluorescence images of α‐SMA (red) and DAPI (blue) stained heart tissues at 8 weeks after sham or TAC surgery (scale bar: 50 μm). (I) Semi‐quantitative analysis of α‐SMA immunofluorescence intensity in each group (<italic toggle="yes">n</italic> = 5). (J) Representative immunofluorescence images of PCNA (red), Vimentin (green) and DAPI (blue) stained heart tissues at 8 weeks after sham or TAC surgery (scale bar: 50 μm). (K) Semi‐quantitative analysis of PCNA<sup>+</sup> nuclei in each group (<italic toggle="yes">n</italic> = 5). Col1a1, collagen 1a1; Col3a1, collagen 3a1; CTGF, connective tissue growth factor; FN, fibrotic markers fibronectin. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-5" orientation="portrait" xlink:href="JCMM-28-e70199-g006.jpg"><?image-name JCMM-28-e70199-g006.jpg?><?image-size 279683?><?image-md5 bb5ccd60d5c847e5a2f66d507d43e6c5?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1628?><?image-original-width 1064?><?image-scaled-height 1085?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/bb5ccd60d5c8/JCMM-28-e70199-g006.jpg?><?thumb-name JCMM-28-e70199-g006.gif?><?thumb-size 8552?><?thumb-md5 4af3738e3bd5cd820960ff36da2eeb35?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 153?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/4af3738e3bd5/JCMM-28-e70199-g006.gif?></graphic></fig><p>Fibroblast differentiation and proliferation are key contributors to the progression of myocardial fibrosis. Immunofluorescent staining exhibited that the expression of α‐SMA, a marker of CFs transformation into myofibroblasts, was significantly increased in the TAC + rAAV9‐con group compared to the Sham+rAAV9‐con group (Figure <xref rid="jcmm70199-fig-0003" ref-type="fig">3H,I</xref>). Moreover, the number of PCNA and vimentin positive cells also exhibited the same trend following TAC operation, indicating the proliferation of CFs (Figure <xref rid="jcmm70199-fig-0003" ref-type="fig">3J,K</xref>). Similarly, the enhanced immunofluorescent intensities of α‐SMA and PCNA were attenuated after rAAV9‐POSTN‐miR‐425‐5p interference. Together, these findings suggest that fibroblast‐specific overexpression of miR‐425‐5p reverses pressure overload‐induced cardiac fibrosis by inhibiting CFs activation.</p></sec><sec id="jcmm70199-sec-0023"><label>3.4</label><title>Overexpression of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p inhibited cardiac fibroblast activation stimulated by Ang <styled-content style="fixed-case" toggle="no">II</styled-content> in vitro</title><p>In accordance with our in vivo results, miR‐425‐5p also inhibited the differentiation and proliferation of CFs in vitro. Immunostaining and Western blot analysis of α‐SMA were used to evaluate the transformation of CFs into myofibroblasts. Compared with the Con+mimic‐NC group, both the immunofluorescence intensity and protein expression of α‐SMA were significantly raised after 24 h of Ang II stimulation (Figure <xref rid="jcmm70199-fig-0004" ref-type="fig">4A,B,F</xref>). Simultaneously, cellular proliferation was assessed using IF assay of BrdU and Western blot detection of Ki67 in NMCFs (Figure <xref rid="jcmm70199-fig-0004" ref-type="fig">4C,D,G</xref>). Quantitative analysis showed that the number of BrdU‐positive CFs and Ki67 expression were markedly increased in the Ang II + mimic‐NC group compared to the Con+mimic‐NC group. In addition, the collagen synthesis capacity of NMCFs was evaluated through qRT‐PCR analysis of Col1a1 and Col3a1 transcription levels. Ang II‐induced upregulation of Col1a1 and Col3a1 mRNA expressions was abrogated when NMCFs were pre‐transfected with miR‐425‐5p mimics (Figure <xref rid="jcmm70199-fig-0004" ref-type="fig">4H,I</xref>). These data indicate that miR‐425‐5p inhibits Ang II‐induced CFs activation in vitro.</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0004" orientation="portrait"><label>FIGURE 4</label><caption><p>Overexpression of miR‐425‐5p inhibited cardiac fibroblasts activation stimulated by Ang II in vitro. (A) Representative immunofluorescence images of α‐SMA (green) and Hoechst (blue) stained NMCFs being treated with normal DMEM or Ang II for 24 h (scale bar: 50 μm). (B) Semi‐quantitative analysis of α‐SMA immunofluorescence intensity in each group (<italic toggle="yes">n</italic> = 5). (C) Representative immunofluorescence images of BrdU (red) and Hoechst (blue) stained NMCFs being treated with normal DMEM or Ang II for 24 h (scale bar: 100 μm). (D) Semi‐quantitative analysis of BrdU<sup>+</sup> nuclei in each group (<italic toggle="yes">n</italic> = 5). (E) Representative immunoblots of α‐SMA, Ki67 and GAPDH (internal reference) of NMCFs being treated with normal DMEM or Ang II for 24 h. (F, G) Semi‐quantitative analyses of α‐SMA and Ki67 expressions in each group (<italic toggle="yes">n</italic> = 3). (H, I) Cellular mRNA levels of fibrotic markers Col1a1 and Col3a1 in each group (<italic toggle="yes">n</italic> = 5). Col1a1, collagen 1a1; Col3a1, collagen 3a1. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-7" orientation="portrait" xlink:href="JCMM-28-e70199-g002.jpg"><?image-name JCMM-28-e70199-g002.jpg?><?image-size 142664?><?image-md5 b28f8d267c880adb05f07c4046281fd7?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1226?><?image-original-width 1064?><?image-scaled-height 817?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/b28f8d267c88/JCMM-28-e70199-g002.jpg?><?thumb-name JCMM-28-e70199-g002.gif?><?thumb-size 5324?><?thumb-md5 53ba0456f4afcf9bb8e8b1a522511940?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 115?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/53ba0456f4af/JCMM-28-e70199-g002.gif?></graphic></fig></sec><sec id="jcmm70199-sec-0024"><label>3.5</label><title>Overexpression of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p inhibited the <styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling pathway both in vivo and in vitro</title><p>TGF‐β1 is a major activator of CFs differentiation and proliferation, and it mediates the fibrotic response through several downstream fibrogenic pathways, particularly the Smad2/3 signalling. Thus, we examined TGF‐β1 expression and Smad2/3 phosphorylation to explore whether TGF‐β1/Smad signalling was involved in the antifibrotic effects of miR‐425‐5p. As shown in Figure <xref rid="jcmm70199-fig-0005" ref-type="fig">5A–D</xref>, the increased expressions of TGF‐β1 and p‐Smad2/3 induced by TAC were significantly reduced following rAAV9‐POSTN‐miR‐425‐5p administration, suggesting that the antifibrotic activity of miR‐425‐5p is closely associated with the suppression of TGF‐β1/Smad signalling.</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0005" orientation="portrait"><label>FIGURE 5</label><caption><p>Overexpression of miR‐425‐5p inhibited the TGF‐β1/Smad signalling pathway both in vivo and in vitro. (A) Representative immunoblots of TGF‐β1, p‐Smad2, t‐Smad2, p‐Smad3, t‐Smad3 and GAPDH (internal reference) of heart tissues at 8 weeks after sham or TAC surgery. (B–D) Semi‐quantitative analyses of TGF‐β1, p‐Smad2 and p‐Smad3 expressions in each group (<italic toggle="yes">n</italic> = 3). (E) Representative immunoblots of TGF‐β1, p‐Smad2, t‐Smad2, p‐Smad3, t‐Smad3 and GAPDH (internal reference) of NMCFs being treated with normal DMEM or Ang II for 24 h. (F–H) Semi‐quantitative analyses of TGF‐β1, p‐Smad2 and p‐Smad3 expressions in each group (<italic toggle="yes">n</italic> = 3). Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-9" orientation="portrait" xlink:href="JCMM-28-e70199-g003.jpg"><?image-name JCMM-28-e70199-g003.jpg?><?image-size 80510?><?image-md5 cade883225c61f2446a18adfede7b10e?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 664?><?image-original-width 1064?><?image-scaled-height 442?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/cade883225c6/JCMM-28-e70199-g003.jpg?><?thumb-name JCMM-28-e70199-g003.gif?><?thumb-size 4649?><?thumb-md5 b727efaf0d162b0ea8a0735d638eef9c?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 80?><?thumb-scaled-width 128?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/b727efaf0d16/JCMM-28-e70199-g003.gif?></graphic></fig><p>Next, we verified the regulatory role of miR‐425‐5p on TGF‐β1/Smad signalling in vitro (Figure <xref rid="jcmm70199-fig-0005" ref-type="fig">5E–H</xref>). The results illustrated that compared with the Con+mimic‐NC group, TGF‐β1 expression and Smad2/3 phosphorylation increased sharply in NMCFs after incubation with Ang II for 24 h. However, Ang II‐induced activation of TGF‐β1/Smad signalling was remarkably blocked by miR‐425‐5p mimics, aligning with our in vivo results.</p><p>Considering that p‐Smad2/3 could directly bind to Smad4, forming a heterotrimeric complex that subsequently translocates into the nucleus to regulate the transcription of target genes, we also evaluated the translocation of Smad4. As shown in Figure <xref rid="jcmm70199-supitem-0003" ref-type="supplementary-material">S3</xref>, Smad4 significantly translocated from the cytoplasm to the nucleus in both in vivo and in vitro models, while the increased nuclear translocation of Smad4 was also markedly counteracted by miR‐425‐5p overexpression.</p></sec><sec id="jcmm70199-sec-0025"><label>3.6</label><title>
+<styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling pathway was the downstream effector of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p against Ang <styled-content style="fixed-case" toggle="no">II</styled-content>‐stimulated cardiac fibroblast activation</title><p>To further prove that miR‐425‐5p ameliorated cardiac fibrosis via inhibiting the TGF‐β1/Smad pathway, we performed the luciferase reporter assay. Bioinformatic prediction indicated that miR‐425‐5p might directly bind the 3′UTR region of TGF‐β1 (Figure <xref rid="jcmm70199-fig-0006" ref-type="fig">6A</xref>). The luciferase reporter assay showed that miR‐425‐5p mimics induced a sharp decrease in the luciferase activity in HEK293 cells expressing the wild‐type sequence of TGF‐β1, but not in those expressing a mutant version (Figure <xref rid="jcmm70199-fig-0006" ref-type="fig">6B</xref>), supporting that miR‐425‐5p could directly target the 3′UTR of TGF‐β1 and suppress TGF‐β1 expression. This result is consistent with the findings from 3.5, where TGF‐β1 protein level was significantly reduced after miR‐425‐5p overexpression.</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0006" orientation="portrait"><label>FIGURE 6</label><caption><p>TGF‐β1/Smad signalling pathway was the downstream effector of miR‐425‐5p against Ang II‐stimulated cardiac fibroblast activation. (A) Bioinformatic analysis was performed to predict that TGF‐β1 was a potential target gene of miR‐425‐5p. (B) Luciferase assay was used to validate that miR‐425‐5p directly targeted TGF‐β1 (<italic toggle="yes">n</italic> = 5). (C) qPCR analysis of miR‐425‐5p level in NMCFs being treated with normal DMEM, Ang II or Ang II + SRI for 24 h (<italic toggle="yes">n</italic> = 5). (D) Representative immunoblots of TGF‐β1, p‐Smad2, t‐Smad2, p‐Smad3, t‐Smad3 and GAPDH (internal reference) of NMCFs being treated with normal DMEM, Ang II or Ang II + SRI for 24 h. (E–G) Semi‐quantitative analyses of TGF‐β1, p‐Smad2 and p‐Smad3 expressions in each group (<italic toggle="yes">n</italic> = 3). (H) Representative immunofluorescence images of α‐SMA (green) and Hoechst (blue) stained NMCFs being treated with normal DMEM, Ang II or Ang II + SRI for 24 h (scale bar: 50 μm). (I) Semi‐quantitative analysis of α‐SMA immunofluorescence intensity in each group (<italic toggle="yes">n</italic> = 5). (J) Representative immunofluorescence images of BrdU (red) and Hoechst (blue) stained NMCFs being treated with normal DMEM, Ang II or Ang II + SRI for 24 h (scale bar: 100 μm). (K) Semi‐quantitative analysis of BrdU<sup>+</sup> nuclei in each group (<italic toggle="yes">n</italic> = 5). Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01; NS, no significant.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-11" orientation="portrait" xlink:href="JCMM-28-e70199-g009.jpg"><?image-name JCMM-28-e70199-g009.jpg?><?image-size 175645?><?image-md5 8505cb7175ba0fcce01447c957f347e8?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1196?><?image-original-width 1064?><?image-scaled-height 797?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/8505cb7175ba/JCMM-28-e70199-g009.jpg?><?thumb-name JCMM-28-e70199-g009.gif?><?thumb-size 5917?><?thumb-md5 1d5a2e4d0ad760f796a3816ce7b355f9?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 112?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/1d5a2e4d0ad7/JCMM-28-e70199-g009.gif?></graphic></fig><p>In addition, as shown in Figure <xref rid="jcmm70199-fig-0006" ref-type="fig">6C–G</xref> and Figure <xref rid="jcmm70199-supitem-0003" ref-type="supplementary-material">S3</xref>, utilizing SRI‐011381 (10 μM) to activate TGF‐β1 signalling resulted in substantial increases in TGF‐β1 expression, p‐Smad2/3 levels and Smad4 nuclear translocation, while having little impact on miR‐425‐5p expression. Furthermore, SRI‐011381 significantly abolished the inhibitory effects of miR‐425‐5p on Ang II‐stimulated CFs activation (Figure <xref rid="jcmm70199-fig-0006" ref-type="fig">6H–K</xref>). Taken together, these results indicate that TGF‐β1/Smad signalling is the key downstream effector of miR‐425‐5p in suppressing myocardial fibrosis.</p></sec><sec id="jcmm70199-sec-0026"><label>3.7</label><title>Activation of <styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling abolished the protective effects of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p against <styled-content style="fixed-case" toggle="no">TAC</styled-content>‐induced cardiac dysfunction and hypertrophy</title><p>SRI‐011381 was intraperitoneally injected in order to verify that the TGF‐β1/Smad signalling pathway acts as a downstream effector of miR‐425‐5p in vivo. As shown in Figure <xref rid="jcmm70199-fig-0007" ref-type="fig">7A–D</xref>, compared with the TAC + rAAV9‐miR group, LVEF and LVFS were strikingly reduced in the TAC + rAAV9‐miR + SRI group. Besides, the HW/BW and LW/BW ratios in the TAC + rAAV9‐miR + SRI group were remarkably higher than those in the TAC + rAAV9‐miR group (Figure <xref rid="jcmm70199-fig-0007" ref-type="fig">7E,F</xref>). Consistently, the levels of ANP, BNP and the CSA of CMs were significantly elevated in the TAC + rAAV9‐miR + SRI group (Figure <xref rid="jcmm70199-fig-0007" ref-type="fig">7G–J</xref>).</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0007" orientation="portrait"><label>FIGURE 7</label><caption><p>Activation of TGF‐β1/Smad signalling abolished the protective effects of miR‐425‐5p against TAC‐induced cardiac dysfunction and hypertrophy. (A) Representative M echocardiographic images of mice at 8 weeks after sham or TAC surgery. (B–D) Echocardiographic assessments of heart rate, LVEF and LVFS in the indicated groups. (E, F) The ratios of HW/BW and LW/BW of mice at 8 weeks after sham or TAC surgery (<italic toggle="yes">n</italic> = 5). (G, H) Cardiac mRNA levels of hypertrophic markers ANP and BNP in each group (<italic toggle="yes">n</italic> = 5). (I) Representative images of WGA staining of heart tissues at 8 weeks after sham or TAC surgery (scale bar: 100 μm). (J) Quantification analysis of the mean CSA of cardiomyocyte in each group (<italic toggle="yes">n</italic> = 5). ANP, atrial natriuretic peptide; BNP, brain natriuretic peptide; CSA, cross‐sectional area; HW/BW, heart weight/body weight; LVEF, left ventricular ejection fraction; LVFS, left ventricular fractional shortening; LW/BW, lung weight/body weight; WGA, wheat germ agglutinin. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-13" orientation="portrait" xlink:href="JCMM-28-e70199-g004.jpg"><?image-name JCMM-28-e70199-g004.jpg?><?image-size 206709?><?image-md5 ccaaaeee72d6c91d2a0907c6d0509bae?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1177?><?image-original-width 1064?><?image-scaled-height 784?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/ccaaaeee72d6/JCMM-28-e70199-g004.jpg?><?thumb-name JCMM-28-e70199-g004.gif?><?thumb-size 5766?><?thumb-md5 e3280a4e16cac7eb2882397174e872a3?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 111?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/e3280a4e16ca/JCMM-28-e70199-g004.gif?></graphic></fig></sec><sec id="jcmm70199-sec-0027"><label>3.8</label><title>Activation of <styled-content style="fixed-case" toggle="no">TGF</styled-content>‐β1/Smad signalling abolished the protective effects of <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p against <styled-content style="fixed-case" toggle="no">TAC</styled-content>‐induced myocardial fibrosis and <styled-content style="fixed-case" toggle="no">CFs</styled-content> activation</title><p>Masson's trichrome and picric acid sirius red staining revealed that mice in the TAC + rAAV9‐miR + SRI group exhibited dramatically augmented interstitial fibrosis and collagen deposition compared with the TAC + rAAV9‐miR group (Figure <xref rid="jcmm70199-fig-0008" ref-type="fig">8A–C</xref>). Meanwhile, the upregulated mRNA levels of FN, CTGF, Col1a1 and Col3a1 in the TAC + rAAV9‐miR + SRI group further indicated that SRI‐011381 administration significantly reversed the inhibitory effect of rAAV9‐POSTN‐miR‐425‐5p on myocardial fibrosis (Figure <xref rid="jcmm70199-fig-0008" ref-type="fig">8D–G</xref>).</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0008" orientation="portrait"><label>FIGURE 8</label><caption><p>Activation of TGF‐β1/Smad signalling abolished the protective effects of miR‐425‐5p against TAC‐induced myocardial fibrosis and CFs activation. (A) Representative images of Masson's trichrome and picric acid sirius red staining of heart tissues at 8 weeks after sham or TAC surgery (scale bar: 200 μm). (B, C) Quantification analyses of fibrosis area and collagen deposition in each group (<italic toggle="yes">n</italic> = 5). (D–G) Cardiac mRNA levels of fibrotic markers FN, CTGF, Col1a1 and Col3a1 in each group (<italic toggle="yes">n</italic> = 5). (H) Representative immunofluorescence images of α‐SMA (red) and DAPI (blue) stained heart tissues at 8 weeks after sham or TAC surgery (scale bar: 50 μm). (I) Semi‐quantitative analysis of α‐SMA immunofluorescence intensity in each group (<italic toggle="yes">n</italic> = 5). (J) Representative immunofluorescence images of PCNA (red), Vimentin (green) and DAPI (blue) stained heart tissues at 8 weeks after sham or TAC surgery (scale bar: 50 μm). (K) Semi‐quantitative analysis of PCNA<sup>+</sup> nuclei in each group (<italic toggle="yes">n</italic> = 5). Col1a1, collagen 1a1; Col3a1, collagen 3a1; CTGF, connective tissue growth factor; FN, fibrotic markers fibronectin. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-15" orientation="portrait" xlink:href="JCMM-28-e70199-g007.jpg"><?image-name JCMM-28-e70199-g007.jpg?><?image-size 294280?><?image-md5 6e2ff6f5675a00dec0420e4a3028b75a?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1558?><?image-original-width 1064?><?image-scaled-height 1038?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/6e2ff6f5675a/JCMM-28-e70199-g007.jpg?><?thumb-name JCMM-28-e70199-g007.gif?><?thumb-size 8792?><?thumb-md5 c096afa00d78fc1259e9231a4afa5c4d?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 146?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/c096afa00d78/JCMM-28-e70199-g007.gif?></graphic></fig><p>Similarly, immunofluorescent staining exhibited that the expression of α‐SMA and the number of PCNA and vimentin positive cells were significantly increased in the TAC + rAAV9‐miR + SRI group compared with the TAC + rAAV9‐miR group (Figure <xref rid="jcmm70199-fig-0008" ref-type="fig">8H–K</xref>), suggesting that the activation of TGF‐β1/Smad signalling counteracted the inhibitory effect of rAAV9‐POSTN‐miR‐425‐5p on CFs proliferation and migration.</p></sec><sec id="jcmm70199-sec-0028"><label>3.9</label><title>Supernatant from <styled-content style="fixed-case" toggle="no">miR</styled-content>‐425‐5p‐trasfected <styled-content style="fixed-case" toggle="no">CFs</styled-content> alleviated cardiomyocyte hypertrophy</title><p>To clarify the role of miR‐425‐5p on cardiac hypertrophy, we initially silenced or overexpressed miR‐425‐5p in NMCMs. No significant changes in cell surface area or ANP expression were observed across different groups, indicating that altering the expression of miR‐425‐5p in NMCMs does not directly affect hypertrophy (Figure <xref rid="jcmm70199-fig-0009" ref-type="fig">9A–E</xref>).</p><fig position="float" fig-type="FIGURE" id="jcmm70199-fig-0009" orientation="portrait"><label>FIGURE 9</label><caption><p>Supernatant from miR‐425‐5p‐trasfected CFs alleviated cardiomyocyte hypertrophy. (A) Representative immunofluorescence images of α‐actinin (red) and Hoechst (blue) stained NMCMs being treated with Ang II for 48 h (scale bar: 50 μm). (B) Quantification analysis of the mean CSA of NMCMs transfected with mimic‐NC or mimic‐miR (<italic toggle="yes">n</italic> = 5). (C) Cellular mRNA level of hypertrophic marker ANP in mimic‐treated NMCMs (<italic toggle="yes">n</italic> = 5). (D) Quantification analysis of the mean CSA of NMCMs transfected with inhibitor‐NC or inhibitor‐miR (<italic toggle="yes">n</italic> = 5). (E) Cellular mRNA level of hypertrophic marker ANP in inhibitor‐treated NMCMs (<italic toggle="yes">n</italic> = 5). (F) Representative immunofluorescence images of α‐actinin (red) and Hoechst (blue) stained NMCMs being treated with supernatant from miR‐425‐5p‐trasfected NMCFs for 48 h (scale bar: 50 μm). (G) Quantification analysis of the average CSA of NMCMs in each group (<italic toggle="yes">n</italic> = 5). (H, I) Cellular mRNA levels of hypertrophic markers ANP and BNP in each group (<italic toggle="yes">n</italic> = 5). ANP, atrial natriuretic peptide; BNP, brain natriuretic peptide; CSA, cross‐sectional area. Data were presented as mean ± SEM. Statistical significance was assessed by one‐way ANOVA. **<italic toggle="yes">p</italic> &lt; 0.01; NS, no significant.</p></caption><graphic xmlns:xlink="http://www.w3.org/1999/xlink" position="anchor" id="jats-graphic-17" orientation="portrait" xlink:href="JCMM-28-e70199-g008.jpg"><?image-name JCMM-28-e70199-g008.jpg?><?image-size 180484?><?image-md5 a398821c288c675e908449471178e109?><?image-image-server-status LOAD_COMPLETED?><?image-original-height 1345?><?image-original-width 1064?><?image-scaled-height 896?><?image-scaled-width 709?><?image-cloudpmc-urn urn:cdn:blobs/6b61/11552651/a398821c288c/JCMM-28-e70199-g008.jpg?><?thumb-name JCMM-28-e70199-g008.gif?><?thumb-size 6928?><?thumb-md5 2af5b8d46bad7437f0df112f759321e0?><?thumb-image-server-status NEVER_LOAD?><?thumb-scaled-height 126?><?thumb-scaled-width 100?><?thumb-cloudpmc-urn urn:cdn:blobs/6b61/11552651/2af5b8d46bad/JCMM-28-e70199-g008.gif?></graphic></fig><p>Next, we used an indirect co‐culture method to examine whether the supernatant from activated CFs could affect CMs hypertrophy. We found that the supernatant from mimic‐NC treatment group led to an apparent increase in CMs surface area, accompanied by upregulated levels of ANP and BNP in CMs, whereas this pro‐hypertrophic effect was notably mitigated by the supernatant from miR‐425‐5p mimic‐treated CFs (Figure <xref rid="jcmm70199-fig-0009" ref-type="fig">9F–I</xref>).</p></sec></sec><sec sec-type="discussion" id="jcmm70199-sec-0029"><label>4</label><title>DISCUSSION</title><p>The current study characterized the cell‐type‐specific role of miR‐425‐5p in TAC‐induced HF and further identified the molecular mechanisms responsible. Specifically, we found that overexpression of miR‐425‐5p in CFs ameliorated cardiac hypertrophy, mitigated myocardial fibrosis and subsequently improved cardiac function after TAC surgery. Mechanistically, upregulation of miR‐425‐5p regulated cardiac remodelling by inhibiting CFs transformation and differentiation, as well as suppressing collagen synthesis and deposition through directly targeting the TGF‐β1/Smad signalling. The present experimental results indicate that overexpression of fibroblast‐derived miR‐425‐5p plays a protective role in curbing the progression of cardiac remodelling and retarding the transition from pathological hypertrophy to HF.</p><p>HF is a clinical disorder caused by cardiac overload or irreversible myocardial damage, leading to significant morbidity and mortality worldwide.<xref rid="jcmm70199-bib-0001" ref-type="bibr">
+<sup>1</sup>
+</xref> The discovery that several miRNAs are differentially expressed in HF cohorts has suggested their possible involvement in the pathogenesis of HF.<xref rid="jcmm70199-bib-0026" ref-type="bibr">
+<sup>26</sup>
+</xref>, <xref rid="jcmm70199-bib-0027" ref-type="bibr">
+<sup>27</sup>
+</xref> Among these miRNAs, miR‐425 is a recently studied one that exerts protective functions against multiple CVDs.<xref rid="jcmm70199-bib-0012" ref-type="bibr">
+<sup>12</sup>
+</xref>, <xref rid="jcmm70199-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref>, <xref rid="jcmm70199-bib-0014" ref-type="bibr">
+<sup>14</sup>
+</xref>, <xref rid="jcmm70199-bib-0015" ref-type="bibr">
+<sup>15</sup>
+</xref> In particular, it has been reported that plasma concentrations of miR‐425 are declined in failing hearts, and the level of miR‐425 is closely correlated with ANP production, suggesting miR‐425 could be a non‐invasive clinical biomarker for HF.<xref rid="jcmm70199-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref>, <xref rid="jcmm70199-bib-0028" ref-type="bibr">
+<sup>28</sup>
+</xref>, <xref rid="jcmm70199-bib-0029" ref-type="bibr">
+<sup>29</sup>
+</xref> Similarly, the present research noted that miR‐425‐5p levels were remarkably downregulated in both the global heart tissue and plasma in TAC‐caused HF mice, implying that miR‐425‐5p may also participate in the modulation of pressure overload‐induced HF.</p><p>Myocardial fibrosis plays a critical role in the evolution of adverse cardiac remodelling and the development of HF in patients with CVDs.<xref rid="jcmm70199-bib-0008" ref-type="bibr">
+<sup>8</sup>
+</xref> Interstitial fibrosis, which promotes myocardial stiffness and decreases cardiac compliance, ultimately leads to the progression of cardiac dysfunction.<xref rid="jcmm70199-bib-0030" ref-type="bibr">
+<sup>30</sup>
+</xref> Currently, miR‐425 has been described to be implicated in the course of fibrosis response.<xref rid="jcmm70199-bib-0031" ref-type="bibr">
+<sup>31</sup>
+</xref>, <xref rid="jcmm70199-bib-0032" ref-type="bibr">
+<sup>32</sup>
+</xref> More importantly, Wang et al. reported that reduced miR‐425 levels contribute to the pathogenesis of myocardial fibrosis, and changes in miR‐425 levels modulate the expression of fibrosis‐related target genes.<xref rid="jcmm70199-bib-0016" ref-type="bibr">
+<sup>16</sup>
+</xref> Wei et al. demonstrated that miR‐425‐5p could serve as a novel biomarker for atrial fibrosis and contribute to atrial remodelling in atrial fibrillation.<xref rid="jcmm70199-bib-0017" ref-type="bibr">
+<sup>17</sup>
+</xref> Given the potential role of miR‐425‐5p in myocardial fibrosis, we aimed to ascertain its functions during this process in the model of TAC‐induced HF.</p><p>It is universally acknowledged that CFs are not only the predominant cardiac cells in normal hearts but also the primary effector cells in cardiac remodelling.<xref rid="jcmm70199-bib-0033" ref-type="bibr">
+<sup>33</sup>
+</xref> In fact, excessive proliferation of CFs and their differentiation into myofibroblasts have been identified as key mechanisms driving the fibrotic process.<xref rid="jcmm70199-bib-0034" ref-type="bibr">
+<sup>34</sup>
+</xref>, <xref rid="jcmm70199-bib-0035" ref-type="bibr">
+<sup>35</sup>
+</xref> Additionally, Ang II, the principal mediator of the renin‐angiotensin system, functions as a potent pro‐fibrotic molecule in various pathological states.<xref rid="jcmm70199-bib-0036" ref-type="bibr">
+<sup>36</sup>
+</xref>, <xref rid="jcmm70199-bib-0037" ref-type="bibr">
+<sup>37</sup>
+</xref> By incubating isolated NMCFs and NMCMs with Ang II, we first found that miR‐425‐5p expression was notably declined in NMCFs in a time‐dependent manner, but not significantly in NMCMs, suggesting that miR‐425‐5p might mainly play a functional role in fibroblast biology under pressure‐overload stimuli. Then, rAAV9 was employed to overexpress miR‐425‐5p specifically in CFs, enabling us to further explore the cell‐specific effects of miR‐425‐5p in the development of HF. Our data showed that fibroblast‐specific overexpression of miR‐425‐5p markedly reversed TAC‐induced proliferation, secretion and transformation of CFs, which in turn mitigated myocardial fibrosis and collagen deposition, ultimately improving cardiac function. Moreover, consistent with the in vivo results, our in vitro experiments further confirmed the anti‐fibrotic actions of miR‐425‐5p in inhibiting CFs activation and weakening their matrix‐synthetic capacity at the cellular level. These data clearly indicate that fibroblast‐specific enhancement of miR‐425‐5p could indeed exert protective effects against HF by suppressing myocardial fibrosis.</p><p>It is well‐known that CFs are a major source of TGF‐β, which, in turn, regulates the proliferation and differentiation of CFs.<xref rid="jcmm70199-bib-0038" ref-type="bibr">
+<sup>38</sup>
+</xref>, <xref rid="jcmm70199-bib-0039" ref-type="bibr">
+<sup>39</sup>
+</xref> Among the several isoforms of TGF‐β, TGF‐β1 is the most abundant and commonly expressed.<xref rid="jcmm70199-bib-0040" ref-type="bibr">
+<sup>40</sup>
+</xref> Growing data confirmed that myocardial TGF‐β1 synthesis is markedly and consistently upregulated in animal models of HF,<xref rid="jcmm70199-bib-0041" ref-type="bibr">
+<sup>41</sup>
+</xref> and overexpression of TGF‐β1 accelerates the progression of myocardial fibrosis via the canonical Smad2/3 signalling.<xref rid="jcmm70199-bib-0042" ref-type="bibr">
+<sup>42</sup>
+</xref>, <xref rid="jcmm70199-bib-0043" ref-type="bibr">
+<sup>43</sup>
+</xref> Notably, there is evidence that miR‐425 could modulate the TGF‐β family pathway. Du et al. revealed that miR‐425 enhanced granulosa cells apoptosis by targeting the canonical TGF‐β signalling pathway.<xref rid="jcmm70199-bib-0019" ref-type="bibr">
+<sup>19</sup>
+</xref> Liu et al. concluded that miR‐425 suppressed the development of triple‐negative breast cancer by targeting the TGF‐β1/Smad3 signalling pathway.<xref rid="jcmm70199-bib-0020" ref-type="bibr">
+<sup>20</sup>
+</xref> Furthermore, miR‐425‐5p has been found to play a critical role in inhibiting myofibroblast differentiation by reducing the TGF‐β1 expression in dermal fibroblasts.<xref rid="jcmm70199-bib-0044" ref-type="bibr">
+<sup>44</sup>
+</xref> Most importantly, overexpressed miR‐425‐3p was found to inhibit cardiomyocyte apoptosis and myocardial inflammation by suppressing the TGF‐β1/Smad axis.<xref rid="jcmm70199-bib-0013" ref-type="bibr">
+<sup>13</sup>
+</xref> However, whether the TGF‐β1/Smad signalling could mediate the anti‐fibrotic effects of miR‐425‐5p in pressure overload‐caused HF remains to be elucidated. Results of our study found that TAC or Ang II markedly upregulated TGF‐β1 expression and Smad2/3 phosphorylation, both of which were abrogated by overexpression of miR‐425‐5p in CFs. A luciferase activity assay verified that miR‐425‐5p could directly bind to TGF‐β1. Besides, SRI‐011381, an activator of TGF‐β signalling, reversed the inhibitory action of miR‐425‐5p on TAC‐ or Ang II‐induced CFs activation, without affecting miR‐425‐5p levels. These results indicate that TGF‐β1/Smad pathway might be the direct downstream target of miR‐425‐5p in alleviating myocardial fibrosis.</p><p>Interestingly, our experiments also observed that TAC‐induced cardiac hypertrophy, another key aspect of cardiac remodelling, was prominently alleviated by fibroblast‐specific upregulation of miR‐425‐5p. Since no significant changes in miR‐425‐5p levels were seen in NMCMs treated with Ang II, and neither inhibition nor overexpression of miR‐425‐5p in CMs had a significant effect on Ang II‐induced cell hypertrophy, we hypothesized that the anti‐hypertrophic action of CFs‐derived miR‐425‐5p may be mediated via intercellular interaction.</p><p>Given the close proximity between CFs and CMs, their communication is critical for maintaining cardiac homeostasis under physiologic conditions and promoting cardiac repair in pathological states.<xref rid="jcmm70199-bib-0045" ref-type="bibr">
+<sup>45</sup>
+</xref>, <xref rid="jcmm70199-bib-0046" ref-type="bibr">
+<sup>46</sup>
+</xref> Numerous studies have indicated that the complex crosstalk between CMs and CFs can influence each other's function in the pathophysiology of cardiac remodelling. On one hand, damaged CMs could activate CFs through multiple signalling molecules, such as reactive oxygen species (ROS), TGF‐β1 and Ang II, via paracrine action, thereby promoting myocardial fibrosis.<xref rid="jcmm70199-bib-0047" ref-type="bibr">
+<sup>47</sup>
+</xref> On the other hand, the transformation of fibroblasts into myofibroblasts during myocardial injury or chronic stress is accompanied by the release of many biologically active molecules that amplify the hypertrophic response in CMs.<xref rid="jcmm70199-bib-0048" ref-type="bibr">
+<sup>48</sup>
+</xref> Likewise, our in vitro findings demonstrated that the supernatant from miR‐425‐5p‐trasfected CFs significantly alleviated CMs hypertrophy, suggesting that miR‐425‐5p may indirectly participate in the fibroblast‐to‐cardiomyocyte crosstalk by inhibiting the secretion of pro‐hypertrophic mediators from activated CFs. However, the precise mechanism by which CFs‐derived miR‐425‐5p regulates CMs biology remains unknown, representing a limitation of this study and warranting further investigation.</p></sec><sec sec-type="conclusions" id="jcmm70199-sec-0030"><label>5</label><title>CONCLUSION</title><p>In summary, using a TAC‐induced mouse model and an Ang II‐treated NMCFs model, we found that the overexpression of miR‐425‐5p in CFs significantly ameliorated cardiac remodelling and contractile dysfunction during the pathological progression of HF. Specifically, the anti‐fibrotic actions of miR‐425‐5p were achieved by inhibiting CFs activation through the suppression of the TGF‐β1/Smad signalling. Additionally, miR‐425‐5p may confer protection against cardiac hypertrophy via fibroblast‐cardiomyocyte crosstalk. This research highlights the protective role of fibroblast‐derived miR‐425‐5p in pressure overload‐induced HF and suggests that miR‐425‐5p could serve as a promising diagnostic biomarker and a therapeutic target for preventing and treating adverse remodelling in HF patients.</p></sec><sec id="jcmm70199-sec-0035"><title>AUTHOR CONTRIBUTIONS</title><p>
+<bold>Haijia Zhou:</bold> Methodology (lead); writing – original draft (lead); writing – review and editing (equal). <bold>Pengyun Liu:</bold> Writing – original draft (equal); writing – review and editing (equal). <bold>Xuelin Guo:</bold> Data curation (lead); methodology (equal); supervision (equal). <bold>Wei Fang:</bold> Methodology (equal); software (lead); supervision (equal). <bold>Chan Wu:</bold> Supervision (equal); writing – review and editing (equal). <bold>Mingming Zhang:</bold> Conceptualization (equal); funding acquisition (lead); supervision (equal). <bold>Zhaole Ji:</bold> Conceptualization (lead); project administration (lead); supervision (lead).</p></sec><sec id="jcmm70199-sec-0031"><title>FUNDING INFORMATION</title><p>This study was financially supported by the National Natural Science Foundation of China [grant numbers 82270366].</p></sec><sec sec-type="COI-statement" id="jcmm70199-sec-0032"><title>CONFLICT OF INTEREST STATEMENT</title><p>The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper.</p></sec><sec sec-type="supplementary-material"><title>Supporting information</title><supplementary-material id="jcmm70199-supitem-0001" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Figure S1:</bold> Protocol of in vivo experiments ①.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-28-e70199-s005.tif" position="float" orientation="portrait"><?suppdata-name JCMM-28-e70199-s005.tif?><?suppdata-size 955814?><?suppdata-md5 540a5c920109e782ae1caea8bad664b6?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type image?><?suppdata-mime-sub-type tiff?><?suppdata-cloudpmc-urn urn:app:6b61/11552651/540a5c920109/JCMM-28-e70199-s005.tif?></media></supplementary-material><supplementary-material id="jcmm70199-supitem-0002" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Figure S2:</bold> Protocol of in vivo experiments ②.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-28-e70199-s002.tif" position="float" orientation="portrait"><?suppdata-name JCMM-28-e70199-s002.tif?><?suppdata-size 998426?><?suppdata-md5 baf9f64207bfb3f4b1ff82d83548c91c?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type image?><?suppdata-mime-sub-type tiff?><?suppdata-cloudpmc-urn urn:app:6b61/11552651/baf9f64207bf/JCMM-28-e70199-s002.tif?></media></supplementary-material><supplementary-material id="jcmm70199-supitem-0003" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Figure S3:</bold> The expression of Nuclear Smad4 in each group. (A) Left, representative immunoblots of Nuclear Smad4 and Histone H3 (internal reference) of heart tissues at 8 weeks after sham or TAC surgery. Right, Semi‐quantitative analysis of Nuclear Smad4 expression in each group (<italic toggle="yes">n</italic> = 3). (B) Left, representative immunoblots of Nuclear Smad4 and Histone H3 (internal reference) of NMCFs being treated with normal DMEM or Ang II for 24 h. Right, Semi‐quantitative analysis of Nuclear Smad4 expression in each group (<italic toggle="yes">n</italic> = 3). (C) Left, representative immunoblots of Nuclear Smad4 and Histone H3 (internal reference) of NMCFs being treated with normal DMEM, Ang II or Ang II + SRI for 24 h. Right, Semi‐quantitative analysis of Nuclear Smad4 expression in each group (<italic toggle="yes">n</italic> = 3). **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-28-e70199-s004.tif" position="float" orientation="portrait"><?suppdata-name JCMM-28-e70199-s004.tif?><?suppdata-size 1609348?><?suppdata-md5 fc2dbc362815550af16bfb0f9348fa69?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type image?><?suppdata-mime-sub-type tiff?><?suppdata-cloudpmc-urn urn:app:6b61/11552651/fc2dbc362815/JCMM-28-e70199-s004.tif?></media></supplementary-material><supplementary-material id="jcmm70199-supitem-0004" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Figure S4:</bold> Detection of rAAV9 infection efficiency. (A) Representative images of green fluorescent protein in heart tissues at 4 weeks after tail vein injection of rAAV9‐POSTN‐con or rAAV9‐POSTN‐miR‐425‐5p (scale bar: 10 μm). (B) qPCR analysis of miR‐425‐5p level in the heart tissues at 4 weeks after tail vein injection of rAAV9‐POSTN‐con or rAAV9‐POSTN‐miR‐425‐5p (<italic toggle="yes">n</italic> = 5). **<italic toggle="yes">p</italic> &lt; 0.01.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-28-e70199-s001.tif" position="float" orientation="portrait"><?suppdata-name JCMM-28-e70199-s001.tif?><?suppdata-size 2163116?><?suppdata-md5 21500db64d64c4653a5c829582cf103b?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type image?><?suppdata-mime-sub-type tiff?><?suppdata-cloudpmc-urn urn:app:6b61/11552651/21500db64d64/JCMM-28-e70199-s001.tif?></media></supplementary-material><supplementary-material id="jcmm70199-supitem-0005" position="float" content-type="local-data" orientation="portrait"><caption><p>
+<bold>Figure S5:</bold> The concentration of SRI‐011381 used in this study had no obvious toxicity to mice and NMCFs. (A, B) Echocardiographic assessments of LVEF and LVFS in the indicated groups (<italic toggle="yes">n</italic> = 5). (C) Comparison of cell viability between the Con group and Con+SRI group (<italic toggle="yes">n</italic> = 5). NS, no significant.</p></caption><media xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="JCMM-28-e70199-s003.tif" position="float" orientation="portrait"><?suppdata-name JCMM-28-e70199-s003.tif?><?suppdata-size 1251000?><?suppdata-md5 ccae84b14d7d037e5dd82d5ee2ab0355?><?suppdata-image-server-status NEVER_LOAD?><?suppdata-mime-type image?><?suppdata-mime-sub-type tiff?><?suppdata-cloudpmc-urn urn:app:6b61/11552651/ccae84b14d7d/JCMM-28-e70199-s003.tif?></media></supplementary-material></sec></body><back><sec sec-type="data-availability" id="jcmm70199-sec-0034"><title>DATA AVAILABILITY STATEMENT</title><p>The data that support the findings of this study are available from the corresponding author upon reasonable request.</p></sec><ref-list content-type="cited-references" id="jcmm70199-bibl-0001"><title>REFERENCES</title><ref id="jcmm70199-bib-0001"><label>1</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0001">
+<string-name name-style="western">
+<surname>Groenewegen</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rutten</surname>
+<given-names>FH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mosterd</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hoes</surname>
+<given-names>AW</given-names>
+</string-name>. <article-title>Epidemiology of heart failure</article-title>. <source>Eur J Heart Fail</source>. <year>2020</year>;<volume>22</volume>(<issue>8</issue>):<fpage>1342</fpage>‐<lpage>1356</lpage>. doi:<pub-id pub-id-type="doi">10.1002/ejhf.1858</pub-id>
+<pub-id pub-id-type="pmid">32483830</pub-id>
+<pub-id pub-id-type="pmcid">PMC7540043</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0002"><label>2</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0002">
+<string-name name-style="western">
+<surname>Nedkoff</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weber</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Heart failure: not just a disease of the elderly</article-title>. <source>Heart</source>. <year>2022</year>;<volume>108</volume>(<issue>4</issue>):<fpage>249</fpage>‐<lpage>250</lpage>. doi:<pub-id pub-id-type="doi">10.1136/heartjnl-2021-320273</pub-id>
+<pub-id pub-id-type="pmid">34810240</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0003"><label>3</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0003">
+<string-name name-style="western">
+<surname>Ni</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hu</surname>
+<given-names>L</given-names>
+</string-name>, et al. <article-title>Pyruvate kinase M2 protects heart from pressure overload‐induced heart failure by phosphorylating RAC1</article-title>. <source>J Am Heart Assoc</source>. <year>2022</year>;<volume>11</volume>(<issue>11</issue>):<elocation-id>e024854</elocation-id>. doi:<pub-id pub-id-type="doi">10.1161/JAHA.121.024854</pub-id>
+<pub-id pub-id-type="pmid">35656980</pub-id>
+<pub-id pub-id-type="pmcid">PMC9238738</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0004"><label>4</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0004">
+<string-name name-style="western">
+<surname>Tham</surname>
+<given-names>YK</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Bernardo</surname>
+<given-names>BC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ooi</surname>
+<given-names>JY</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Weeks</surname>
+<given-names>KL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mcmullen</surname>
+<given-names>JR</given-names>
+</string-name>. <article-title>Pathophysiology of cardiac hypertrophy and heart failure: signaling pathways and novel therapeutic targets</article-title>. <source>Arch Toxicol</source>. <year>2015</year>;<volume>89</volume>(<issue>9</issue>):<fpage>1401</fpage>‐<lpage>1438</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s00204-015-1477-x</pub-id>
+<pub-id pub-id-type="pmid">25708889</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0005"><label>5</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0005">
+<string-name name-style="western">
+<surname>Kim</surname>
+<given-names>GH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Uriel</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Burkhoff</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Reverse remodelling and myocardial recovery in heart failure</article-title>. <source>Nat Rev Cardiol</source>. <year>2018</year>;<volume>15</volume>(<issue>2</issue>):<fpage>83</fpage>‐<lpage>96</lpage>. doi:<pub-id pub-id-type="doi">10.1038/nrcardio.2017.139</pub-id>
+<pub-id pub-id-type="pmid">28933783</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0006"><label>6</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0006">
+<string-name name-style="western">
+<surname>Cokkinos</surname>
+<given-names>DV</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pantos</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>Myocardial remodeling, an overview</article-title>. <source>Heart Fail Rev</source>. <year>2011</year>;<volume>16</volume>(<issue>1</issue>):<fpage>1</fpage>‐<lpage>4</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s10741-010-9192-4</pub-id>
+<pub-id pub-id-type="pmid">20872278</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0007"><label>7</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0007">
+<string-name name-style="western">
+<surname>Bacmeister</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schwarzl</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Warnke</surname>
+<given-names>S</given-names>
+</string-name>, et al. <article-title>Inflammation and fibrosis in murine models of heart failure</article-title>. <source>Basic Res Cardiol</source>. <year>2019</year>;<volume>114</volume>(<issue>3</issue>):<fpage>19</fpage>. doi:<pub-id pub-id-type="doi">10.1007/s00395-019-0722-5</pub-id>
+<pub-id pub-id-type="pmid">30887214</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0008"><label>8</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0008">
+<string-name name-style="western">
+<surname>Gonzalez</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Schelbert</surname>
+<given-names>EB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Diez</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Butler</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Myocardial interstitial fibrosis in heart failure: biological and translational perspectives</article-title>. <source>J Am Coll Cardiol</source>. <year>2018</year>;<volume>71</volume>(<issue>15</issue>):<fpage>1696</fpage>‐<lpage>1706</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jacc.2018.02.021</pub-id>
+<pub-id pub-id-type="pmid">29650126</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0009"><label>9</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0009">
+<string-name name-style="western">
+<surname>Saliminejad</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khorram</surname>
+<given-names>KH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Soleymani</surname>
+<given-names>FS</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ghaffari</surname>
+<given-names>SH</given-names>
+</string-name>. <article-title>An overview of microRNAs: biology, functions, therapeutics, and analysis methods</article-title>. <source>J Cell Physiol</source>. <year>2019</year>;<volume>234</volume>(<issue>5</issue>):<fpage>5451</fpage>‐<lpage>5465</lpage>. doi:<pub-id pub-id-type="doi">10.1002/jcp.27486</pub-id>
+<pub-id pub-id-type="pmid">30471116</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0010"><label>10</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0010">
+<string-name name-style="western">
+<surname>Ho</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Clark</surname>
+<given-names>IM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Le</surname>
+<given-names>LTT</given-names>
+</string-name>. <article-title>MicroRNA‐based diagnosis and therapy</article-title>. <source>Int J Mol Sci</source>. <year>2022</year>;<volume>23</volume>(<issue>13</issue>):<fpage>7167</fpage>. doi:<pub-id pub-id-type="doi">10.3390/ijms23137167</pub-id>
+<pub-id pub-id-type="pmid">35806173</pub-id>
+<pub-id pub-id-type="pmcid">PMC9266664</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0011"><label>11</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0011">
+<string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>MicroRNAs play an essential role in autophagy regulation in various disease phenotypes</article-title>. <source>Biofactors</source>. <year>2019</year>;<volume>45</volume>(<issue>6</issue>):<fpage>844</fpage>‐<lpage>856</lpage>. doi:<pub-id pub-id-type="doi">10.1002/biof.1555</pub-id>
+<pub-id pub-id-type="pmid">31418958</pub-id>
+<pub-id pub-id-type="pmcid">PMC6916288</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0012"><label>12</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0012">
+<string-name name-style="western">
+<surname>de Almeida</surname>
+<given-names>ON</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Neri</surname>
+<given-names>EA</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Silva</surname>
+<given-names>CM</given-names>
+</string-name>, et al. <article-title>Multicellular regulation of miR‐196a‐5p and miR‐425‐5 from adipose stem cell‐derived exosomes and cardiac repair</article-title>. <source>Clin Sci (Lond)</source>. <year>2022</year>;<volume>136</volume>(<issue>17</issue>):<fpage>1281</fpage>‐<lpage>1301</lpage>. doi:<pub-id pub-id-type="doi">10.1042/CS20220216</pub-id>
+<pub-id pub-id-type="pmid">35894060</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0013"><label>13</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0013">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gao</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Tang</surname>
+<given-names>L</given-names>
+</string-name>. <article-title>MicroRNA‐425‐3p inhibits myocardial inflammation and cardiomyocyte apoptosis in mice with viral myocarditis through targeting TGF‐beta1</article-title>. <source>Immun Inflamm Dis</source>. <year>2021</year>;<volume>9</volume>(<issue>1</issue>):<fpage>288</fpage>‐<lpage>298</lpage>. doi:<pub-id pub-id-type="doi">10.1002/iid3.392</pub-id>
+<pub-id pub-id-type="pmid">33332750</pub-id>
+<pub-id pub-id-type="pmcid">PMC7860592</pub-id><related-article xmlns:xlink="http://www.w3.org/1999/xlink" related-article-type="retraction-forward" ext-link-type="pmc" xlink:href="PMC11987041"/></mixed-citation></ref><ref id="jcmm70199-bib-0014"><label>14</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0014">
+<string-name name-style="western">
+<surname>Guo</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zheng</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jia</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wen</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>Irigenin treatment alleviates doxorubicin (DOX)‐induced cardiotoxicity by suppressing apoptosis, inflammation and oxidative stress via the increase of miR‐425</article-title>. <source>Biomed Pharmacother</source>. <year>2020</year>;<volume>125</volume>:<elocation-id>109784</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.biopha.2019.109784</pub-id>
+<pub-id pub-id-type="pmid">32092815</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0015"><label>15</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0015">
+<string-name name-style="western">
+<surname>Souza</surname>
+<given-names>RW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fernandez</surname>
+<given-names>GJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cunha</surname>
+<given-names>JP</given-names>
+</string-name>, et al. <article-title>Regulation of cardiac microRNAs induced by aerobic exercise training during heart failure</article-title>. <source>Am J Physiol Heart Circ Physiol</source>. <year>2015</year>;<volume>309</volume>(<issue>10</issue>):<fpage>H1629</fpage>‐<lpage>H1641</lpage>. doi:<pub-id pub-id-type="doi">10.1152/ajpheart.00941.2014</pub-id>
+<pub-id pub-id-type="pmid">26408546</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0016"><label>16</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0016">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>B</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>YL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>Z</given-names>
+</string-name>. <article-title>Reduced exosome miR‐425 and miR‐744 in the plasma represents the progression of fibrosis and heart failure</article-title>. <source>Kaohsiung J Med Sci</source>. <year>2018</year>;<volume>34</volume>(<issue>11</issue>):<fpage>626</fpage>‐<lpage>633</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.kjms.2018.05.008</pub-id>
+<pub-id pub-id-type="pmid">30392569</pub-id>
+<pub-id pub-id-type="pmcid">PMC11915641</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0017"><label>17</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0017">
+<string-name name-style="western">
+<surname>Wei</surname>
+<given-names>F</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ren</surname>
+<given-names>W</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Fan</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>MiR‐425‐5p is negatively associated with atrial fibrosis and promotes atrial remodeling by targeting CREB1 in atrial fibrillation</article-title>. <source>J Cardiol</source>. <year>2022</year>;<volume>79</volume>(<issue>2</issue>):<fpage>202</fpage>‐<lpage>210</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.jjcc.2021.09.012</pub-id>
+<pub-id pub-id-type="pmid">34688515</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0018"><label>18</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0018">
+<string-name name-style="western">
+<surname>Meng</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>X</given-names>
+</string-name>, et al. <article-title>NPRC deletion attenuates cardiac fibrosis in diabetic mice by activating PKA/PKG and inhibiting TGF‐beta1/Smad pathways</article-title>. <source>Sci Adv</source>. <year>2023</year>;<volume>9</volume>(<issue>31</issue>):<elocation-id>eadd4222</elocation-id>. doi:<pub-id pub-id-type="doi">10.1126/sciadv.add4222</pub-id>
+<pub-id pub-id-type="pmid">37531438</pub-id>
+<pub-id pub-id-type="pmcid">PMC10396312</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0019"><label>19</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0019">
+<string-name name-style="western">
+<surname>Du</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pan</surname>
+<given-names>Z</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>Q</given-names>
+</string-name>. <article-title>SMAD4 feedback regulates the canonical TGF‐beta signaling pathway to control granulosa cell apoptosis</article-title>. <source>Cell Death Dis</source>. <year>2018</year>;<volume>9</volume>(<issue>2</issue>):<fpage>151</fpage>. doi:<pub-id pub-id-type="doi">10.1038/s41419-017-0205-2</pub-id>
+<pub-id pub-id-type="pmid">29396446</pub-id>
+<pub-id pub-id-type="pmcid">PMC5833407</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0020"><label>20</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0020">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>J</given-names>
+</string-name>. <article-title>MiR‐425 suppresses EMT and the development of TNBC (triple‐negative breast cancer) by targeting the TGF‐beta 1/SMAD 3 signaling pathway</article-title>. <source>RSC Adv</source>. <year>2018</year>;<volume>9</volume>(<issue>1</issue>):<fpage>151</fpage>‐<lpage>165</lpage>. doi:<pub-id pub-id-type="doi">10.1039/c8ra08872a</pub-id>
+<pub-id pub-id-type="pmid">35521597</pub-id>
+<pub-id pub-id-type="pmcid">PMC9059317</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0021"><label>21</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0021">
+<string-name name-style="western">
+<surname>Abuduwufuer</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>JJ</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>C</given-names>
+</string-name>. <article-title>A modified technique for transverse aortic constriction in mice</article-title>. <source>J Vis Exp</source>. <year>2022</year>;<volume>186</volume>. doi:<pub-id pub-id-type="doi">10.3791/64386</pub-id>
+<pub-id pub-id-type="pmid">36063007</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0022"><label>22</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0022">
+<string-name name-style="western">
+<surname>Jiang</surname>
+<given-names>JG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ning</surname>
+<given-names>YG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>Cytochrome p450 epoxygenase promotes human cancer metastasis</article-title>. <source>Cancer Res</source>. <year>2007</year>;<volume>67</volume>(<issue>14</issue>):<fpage>6665</fpage>‐<lpage>6674</lpage>. doi:<pub-id pub-id-type="doi">10.1158/0008-5472.CAN-06-3643</pub-id>
+<pub-id pub-id-type="pmid">17638876</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0023"><label>23</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0023">
+<string-name name-style="western">
+<surname>Ehler</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Moore‐Morris</surname>
+<given-names>T</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lange</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>Isolation and culture of neonatal mouse cardiomyocytes</article-title>. <source>J Vis Exp</source>. <year>2013</year>;<volume>79</volume>:<fpage>50154</fpage>. doi:<pub-id pub-id-type="doi">10.3791/50154</pub-id>
+<pub-id pub-id-type="pmcid">PMC3857885</pub-id><pub-id pub-id-type="pmid">24056408</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0024"><label>24</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0024">
+<string-name name-style="western">
+<surname>Huo</surname>
+<given-names>JL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Jiao</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>An</surname>
+<given-names>Q</given-names>
+</string-name>, et al. <article-title>Myofibroblast deficiency of LSD1 alleviates TAC‐induced heart failure</article-title>. <source>Circ Res</source>. <year>2021</year>;<volume>129</volume>(<issue>3</issue>):<fpage>400</fpage>‐<lpage>413</lpage>. doi:<pub-id pub-id-type="doi">10.1161/CIRCRESAHA.120.318149</pub-id>
+<pub-id pub-id-type="pmid">34078090</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0025"><label>25</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0025">
+<string-name name-style="western">
+<surname>Yan</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Li</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Luo</surname>
+<given-names>Q</given-names>
+</string-name>, et al. <article-title>Mitochondrial damage and activation of the cytosolic DNA sensor cGAS‐STING pathway lead to cardiac pyroptosis and hypertrophy in diabetic cardiomyopathy mice</article-title>. <source>Cell Death Dis</source>. <year>2022</year>;<volume>8</volume>(<issue>1</issue>):<fpage>258</fpage>. doi:<pub-id pub-id-type="doi">10.1038/s41420-022-01046-w</pub-id>
+<pub-id pub-id-type="pmcid">PMC9091247</pub-id><pub-id pub-id-type="pmid">35538059</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0026"><label>26</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0026">
+<string-name name-style="western">
+<surname>Wong</surname>
+<given-names>LL</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Liew</surname>
+<given-names>OW</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Richards</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>YT</given-names>
+</string-name>. <article-title>MicroRNA and heart failure</article-title>. <source>Int J Mol Sci</source>. <year>2016</year>;<volume>17</volume>(<issue>4</issue>):<fpage>502</fpage>. doi:<pub-id pub-id-type="doi">10.3390/ijms17040502</pub-id>
+<pub-id pub-id-type="pmid">27058529</pub-id>
+<pub-id pub-id-type="pmcid">PMC4848958</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0027"><label>27</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0027">
+<string-name name-style="western">
+<surname>Lin</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hsu</surname>
+<given-names>CH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Chen</surname>
+<given-names>JC</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kao</surname>
+<given-names>SH</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lin</surname>
+<given-names>YC</given-names>
+</string-name>. <article-title>BCL‐6 promotes the methylation of miR‐34a by recruiting EZH2 and upregulating CTRP9 to protect ischemic myocardial injury</article-title>. <source>Biofactors</source>. <year>2021</year>;<volume>47</volume>(<issue>3</issue>):<fpage>386</fpage>‐<lpage>402</lpage>. doi:<pub-id pub-id-type="doi">10.1002/biof.1704</pub-id>
+<pub-id pub-id-type="pmid">33502806</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0028"><label>28</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0028">
+<string-name name-style="western">
+<surname>Arora</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wu</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Khan</surname>
+<given-names>AM</given-names>
+</string-name>, et al. <article-title>Atrial natriuretic peptide is negatively regulated by microRNA‐425</article-title>. <source>J Clin Invest</source>. <year>2013</year>;<volume>123</volume>(<issue>8</issue>):<fpage>3378</fpage>‐<lpage>3382</lpage>. doi:<pub-id pub-id-type="doi">10.1172/JCI67383</pub-id>
+<pub-id pub-id-type="pmid">23867623</pub-id>
+<pub-id pub-id-type="pmcid">PMC3726159</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0029"><label>29</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0029">
+<string-name name-style="western">
+<surname>Zhou</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>G</given-names>
+</string-name>, et al. <article-title>Circulating exosomal microRNAs as emerging non‐invasive clinical biomarkers in heart failure: mega bio‐roles of a nano bio‐particle</article-title>. <source>IUBMB Life</source>. <year>2020</year>;<volume>72</volume>(<issue>12</issue>):<fpage>2546</fpage>‐<lpage>2562</lpage>. doi:<pub-id pub-id-type="doi">10.1002/iub.2396</pub-id>
+<pub-id pub-id-type="pmid">33053610</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0030"><label>30</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0030">
+<string-name name-style="western">
+<surname>Li</surname>
+<given-names>L</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>Q</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kong</surname>
+<given-names>W</given-names>
+</string-name>. <article-title>Extracellular matrix remodeling and cardiac fibrosis</article-title>. <source>Matrix Biol</source>. <year>2018</year>;<volume>68‐69</volume>:<fpage>490</fpage>‐<lpage>506</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.matbio.2018.01.013</pub-id>
+<pub-id pub-id-type="pmid">29371055</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0031"><label>31</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0031">
+<string-name name-style="western">
+<surname>Cai</surname>
+<given-names>P</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mu</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Olveda</surname>
+<given-names>RM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ross</surname>
+<given-names>AG</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Olveda</surname>
+<given-names>DU</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Mcmanus</surname>
+<given-names>DP</given-names>
+</string-name>. <article-title>Serum exosomal miRNAs for grading hepatic fibrosis due to schistosomiasis</article-title>. <source>Int J Mol Sci</source>. <year>2020</year>;<volume>21</volume>(<issue>10</issue>):<fpage>3560</fpage>. doi:<pub-id pub-id-type="doi">10.3390/ijms21103560</pub-id>
+<pub-id pub-id-type="pmid">32443549</pub-id>
+<pub-id pub-id-type="pmcid">PMC7278994</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0032"><label>32</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0032">
+<string-name name-style="western">
+<surname>Fu</surname>
+<given-names>N</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Niu</surname>
+<given-names>X</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>Y</given-names>
+</string-name>, et al. <article-title>Role of LncRNA‐activated by transforming growth factor beta in the progression of hepatitis C virus‐related liver fibrosis</article-title>. <source>Discov Med</source>. <year>2016</year>;<volume>22</volume>(<issue>119</issue>):<fpage>29</fpage>‐<lpage>42</lpage>.<pub-id pub-id-type="pmid">27585228</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0033"><label>33</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0033">
+<string-name name-style="western">
+<surname>Porter</surname>
+<given-names>KE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Turner</surname>
+<given-names>NA</given-names>
+</string-name>. <article-title>Cardiac fibroblasts: at the heart of myocardial remodeling</article-title>. <source>Pharmacol Ther</source>. <year>2009</year>;<volume>123</volume>(<issue>2</issue>):<fpage>255</fpage>‐<lpage>278</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.pharmthera.2009.05.002</pub-id>
+<pub-id pub-id-type="pmid">19460403</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0034"><label>34</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0034">
+<string-name name-style="western">
+<surname>Liu</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Lopez</surname>
+<given-names>DJAB</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Cheng</surname>
+<given-names>K</given-names>
+</string-name>. <article-title>Cardiac fibrosis: Myofibroblast‐mediated pathological regulation and drug delivery strategies</article-title>. <source>Adv Drug Deliv Rev</source>. <year>2021</year>;<volume>173</volume>:<fpage>504</fpage>‐<lpage>519</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.addr.2021.03.021</pub-id>
+<pub-id pub-id-type="pmid">33831476</pub-id>
+<pub-id pub-id-type="pmcid">PMC8299409</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0035"><label>35</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0035">
+<string-name name-style="western">
+<surname>Eguchi</surname>
+<given-names>A</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Coleman</surname>
+<given-names>R</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gresham</surname>
+<given-names>K</given-names>
+</string-name>, et al. <article-title>GRK5 is a regulator of fibroblast activation and cardiac fibrosis</article-title>. <source>Proc Natl Acad Sci USA</source>. <year>2021</year>;<volume>118</volume>(<issue>5</issue>):<elocation-id>e2012854118</elocation-id>. doi:<pub-id pub-id-type="doi">10.1073/pnas.2012854118</pub-id>
+<pub-id pub-id-type="pmid">33500351</pub-id>
+<pub-id pub-id-type="pmcid">PMC7865138</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0036"><label>36</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0036">
+<string-name name-style="western">
+<surname>Schnee</surname>
+<given-names>JM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hsueh</surname>
+<given-names>WA</given-names>
+</string-name>. <article-title>Angiotensin II, adhesion, and cardiac fibrosis</article-title>. <source>Cardiovasc Res</source>. <year>2000</year>;<volume>46</volume>(<issue>2</issue>):<fpage>264</fpage>‐<lpage>268</lpage>. doi:<pub-id pub-id-type="doi">10.1016/s0008-6363(00)00044-4</pub-id>
+<pub-id pub-id-type="pmid">10773230</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0037"><label>37</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0037">
+<string-name name-style="western">
+<surname>Leask</surname>
+<given-names>A</given-names>
+</string-name>. <article-title>Potential therapeutic targets for cardiac fibrosis: TGFbeta, angiotensin, endothelin, CCN2, and PDGF, partners in fibroblast activation</article-title>. <source>Circ Res</source>. <year>2010</year>;<volume>106</volume>(<issue>11</issue>):<fpage>1675</fpage>‐<lpage>1680</lpage>. doi:<pub-id pub-id-type="doi">10.1161/CIRCRESAHA.110.217737</pub-id>
+<pub-id pub-id-type="pmid">20538689</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0038"><label>38</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0038">
+<string-name name-style="western">
+<surname>Frangogiannis</surname>
+<given-names>NG</given-names>
+</string-name>. <article-title>Transforming growth factor‐beta in myocardial disease</article-title>. <source>Nat Rev Cardiol</source>. <year>2022</year>;<volume>19</volume>(<issue>7</issue>):<fpage>435</fpage>‐<lpage>455</lpage>. doi:<pub-id pub-id-type="doi">10.1038/s41569-021-00646-w</pub-id>
+<pub-id pub-id-type="pmid">34983937</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0039"><label>39</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0039">
+<string-name name-style="western">
+<surname>Tarbit</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Singh</surname>
+<given-names>I</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Peart</surname>
+<given-names>JN</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Rose'Meyer</surname>
+<given-names>RB</given-names>
+</string-name>. <article-title>Biomarkers for the identification of cardiac fibroblast and myofibroblast cells</article-title>. <source>Heart Fail Rev</source>. <year>2019</year>;<volume>24</volume>(<issue>1</issue>):<fpage>1</fpage>‐<lpage>15</lpage>. doi:<pub-id pub-id-type="doi">10.1007/s10741-018-9720-1</pub-id>
+<pub-id pub-id-type="pmid">29987445</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0040"><label>40</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0040">
+<string-name name-style="western">
+<surname>Lodyga</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Hinz</surname>
+<given-names>B</given-names>
+</string-name>. <article-title>TGF‐beta1‐a truly transforming growth factor in fibrosis and immunity</article-title>. <source>Semin Cell Dev Biol</source>. <year>2020</year>;<volume>101</volume>:<fpage>123</fpage>‐<lpage>139</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.semcdb.2019.12.010</pub-id>
+<pub-id pub-id-type="pmid">31879265</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0041"><label>41</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0041">
+<string-name name-style="western">
+<surname>Sano</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Horitani</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ogawa</surname>
+<given-names>H</given-names>
+</string-name>, et al. <article-title>Hematopoietic loss of Y chromosome leads to cardiac fibrosis and heart failure mortality</article-title>. <source>Science</source>. <year>2022</year>;<volume>377</volume>(<issue>6603</issue>):<fpage>292</fpage>‐<lpage>297</lpage>. doi:<pub-id pub-id-type="doi">10.1126/science.abn3100</pub-id>
+<pub-id pub-id-type="pmid">35857592</pub-id>
+<pub-id pub-id-type="pmcid">PMC9437978</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0042"><label>42</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0042">
+<string-name name-style="western">
+<surname>Syed</surname>
+<given-names>AM</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kundu</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Ram</surname>
+<given-names>C</given-names>
+</string-name>, et al. <article-title>Up‐regulation of Nrf2/HO‐1 and inhibition of TGF‐beta1/Smad2/3 signaling axis by daphnetin alleviates transverse aortic constriction‐induced cardiac remodeling in mice</article-title>. <source>Free Radic Biol Med</source>. <year>2022</year>;<volume>186</volume>:<fpage>17</fpage>‐<lpage>30</lpage>. doi:<pub-id pub-id-type="doi">10.1016/j.freeradbiomed.2022.04.019</pub-id>
+<pub-id pub-id-type="pmid">35513128</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0043"><label>43</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0043">
+<string-name name-style="western">
+<surname>Wang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhao</surname>
+<given-names>J</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xu</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Xi</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Yang</surname>
+<given-names>H</given-names>
+</string-name>. <article-title>Dengzhan Shengmai capsule attenuates cardiac fibrosis in post‐myocardial infarction rats by regulating LTBP2 and TGF‐beta1/Smad3 pathway</article-title>. <source>Phytomedicine</source>. <year>2023</year>;<volume>116</volume>:<elocation-id>154849</elocation-id>. doi:<pub-id pub-id-type="doi">10.1016/j.phymed.2023.154849</pub-id>
+<pub-id pub-id-type="pmid">37163903</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0044"><label>44</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0044">
+<string-name name-style="western">
+<surname>Duan</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>H</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Meng</surname>
+<given-names>Y</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Qian</surname>
+<given-names>M</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zhang</surname>
+<given-names>G</given-names>
+</string-name>. <article-title>Epidermal stem cell‐derived exosomes promote skin regeneration by downregulating transforming growth factor‐beta1 in wound healing</article-title>. <source>Stem Cell Res Ther</source>. <year>2020</year>;<volume>11</volume>(<issue>1</issue>):<fpage>452</fpage>. doi:<pub-id pub-id-type="doi">10.1186/s13287-020-01971-6</pub-id>
+<pub-id pub-id-type="pmid">33097078</pub-id>
+<pub-id pub-id-type="pmcid">PMC7584097</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0045"><label>45</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0045">
+<string-name name-style="western">
+<surname>Tzahor</surname>
+<given-names>E</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dimmeler</surname>
+<given-names>S</given-names>
+</string-name>. <article-title>A coalition to heal‐the impact of the cardiac microenvironment</article-title>. <source>Science</source>. <year>2022</year>;<volume>377</volume>(<issue>6610</issue>):<elocation-id>eabm4443</elocation-id>. doi:<pub-id pub-id-type="doi">10.1126/science.abm4443</pub-id>
+<pub-id pub-id-type="pmid">36048959</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0046"><label>46</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0046">
+<string-name name-style="western">
+<surname>Hall</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Gehmlich</surname>
+<given-names>K</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Denning</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Pavlovic</surname>
+<given-names>D</given-names>
+</string-name>. <article-title>Complex relationship between cardiac fibroblasts and cardiomyocytes in health and disease</article-title>. <source>J Am Heart Assoc</source>. <year>2021</year>;<volume>10</volume>(<issue>5</issue>):<elocation-id>e019338</elocation-id>. doi:<pub-id pub-id-type="doi">10.1161/JAHA.120.019338</pub-id>
+<pub-id pub-id-type="pmid">33586463</pub-id>
+<pub-id pub-id-type="pmcid">PMC8174279</pub-id></mixed-citation></ref><ref id="jcmm70199-bib-0047"><label>47</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0047">
+<string-name name-style="western">
+<surname>Kumar</surname>
+<given-names>S</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Wang</surname>
+<given-names>G</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Zheng</surname>
+<given-names>N</given-names>
+</string-name>, et al. <article-title>HIMF (hypoxia‐induced mitogenic factor)‐IL (interleukin)‐6 signaling mediates cardiomyocyte‐fibroblast crosstalk to promote cardiac hypertrophy and fibrosis</article-title>. <source>Hypertension</source>. <year>2019</year>;<volume>73</volume>(<issue>5</issue>):<fpage>1058</fpage>‐<lpage>1070</lpage>. doi:<pub-id pub-id-type="doi">10.1161/HYPERTENSIONAHA.118.12267</pub-id>
+<pub-id pub-id-type="pmid">30827145</pub-id>
+</mixed-citation></ref><ref id="jcmm70199-bib-0048"><label>48</label><mixed-citation publication-type="journal" id="jcmm70199-cit-0048">
+<string-name name-style="western">
+<surname>Cartledge</surname>
+<given-names>JE</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Kane</surname>
+<given-names>C</given-names>
+</string-name>, <string-name name-style="western">
+<surname>Dias</surname>
+<given-names>P</given-names>
+</string-name>, et al. <article-title>Functional crosstalk between cardiac fibroblasts and adult cardiomyocytes by soluble mediators</article-title>. <source>Cardiovasc Res</source>. <year>2015</year>;<volume>105</volume>(<issue>3</issue>):<fpage>260</fpage>‐<lpage>270</lpage>. doi:<pub-id pub-id-type="doi">10.1093/cvr/cvu264</pub-id>
+<pub-id pub-id-type="pmid">25560320</pub-id>
+</mixed-citation></ref></ref-list></back></article>
