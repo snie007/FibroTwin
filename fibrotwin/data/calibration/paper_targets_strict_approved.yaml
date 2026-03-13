@@ -1,40 +1,48 @@
 version: 1
 notes:
-  - Manual approval file for strict paper anchors.
-  - Add accepted items with explicit comparator + band + source snippet.
-
+- Manual approval file for strict paper anchors.
+- Add accepted items with explicit comparator + band + source snippet.
 approved:
   T007:
     pmid: 32611237
     comparator: fold
-    band: [1.5, 2.5]
+    band:
+    - 1.5
+    - 2.5
     endpoint: pro-fibrotic pathway/protein increase in failing hearts
-    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5–2.5 fold increase) in failing hearts"
+    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5\u20132.5 fold\
+      \ increase) in failing hearts"
     source_level: abstract_text
-
   T012:
     pmid: 26601107
     comparator: absolute
-    band: [8.0, 12.0]
-    endpoint: fibrosis burden around ~10% condition (paper APD-dispersion example reports 10% fibrosis context)
-    source_excerpt: "APD dispersion increased to 70 ms from 24 ms with 10% fibrosis"
+    band:
+    - 8.0
+    - 12.0
+    endpoint: fibrosis burden around ~10% condition (paper APD-dispersion example
+      reports 10% fibrosis context)
+    source_excerpt: APD dispersion increased to 70 ms from 24 ms with 10% fibrosis
     source_level: fulltext_text
 rejected:
   T005:
     pmid: 34568449
-    reason: citation-number ranges (e.g., 23-31, 8-10) not quantitative experimental endpoint magnitudes.
+    reason: citation-number ranges (e.g., 23-31, 8-10) not quantitative experimental
+      endpoint magnitudes.
   T006:
     pmid: 34023353
-    reason: reports time windows/directional effects without explicit numeric effect-size endpoint.
+    reason: reports time windows/directional effects without explicit numeric effect-size
+      endpoint.
   T009:
     pmid: 29030341
-    reason: p-values and significance statements only; no hard absolute/%/fold effect size extracted.
+    reason: p-values and significance statements only; no hard absolute/%/fold effect
+      size extracted.
   T013:
     pmid: 26383724
     reason: duration/protocol mention (7 days) without quantitative endpoint magnitude.
   T030:
     pmid: 38899461
-    reason: timepoint progression statements (3/7/28 days, 4h/24h) without extractable effect-size value.
+    reason: timepoint progression statements (3/7/28 days, 4h/24h) without extractable
+      effect-size value.
   T033:
     pmid: 37999643
     reason: citation-number range (30-33) from references, not endpoint result.
@@ -46,10 +54,52 @@ rejected:
     reason: citation-number range (1-3) from references, not endpoint result.
   T055:
     pmid: 22495588
-    reason: parameter/coefficient values in methods/model context, not paper result endpoint for strict comparison.
+    reason: parameter/coefficient values in methods/model context, not paper result
+      endpoint for strict comparison.
   T057:
     pmid: 19897714
-    reason: has hard value (~70% heart mass increase) but endpoint not directly represented by current validation observable mapping.
+    reason: has hard value (~70% heart mass increase) but endpoint not directly represented
+      by current validation observable mapping.
   T060:
     pmid: 41728737
     reason: p-value significance only; no explicit effect-size magnitude extracted.
+  T065:
+    pmid: '41684838'
+    reason: 'batch01 fulltext review started: no explicit hard result magnitude isolated
+      yet from extracted text; hold as rejected pending figure/table extraction.'
+  T001:
+    pmid: '37569674'
+    reason: 'batch01 fulltext review started: narrative mechanistic timings without
+      direct collagen/profibrotic magnitude in extracted text.'
+  T002:
+    pmid: '37371059'
+    reason: 'batch01 fulltext review started: extracted numerics are metadata/protocol-heavy;
+      no strict endpoint magnitude confirmed.'
+  T003:
+    pmid: '36826549'
+    reason: 'batch01 fulltext review started: extracted numerics are metadata/protocol-heavy;
+      no strict endpoint magnitude confirmed.'
+  T004:
+    pmid: '34643044'
+    reason: 'batch01 fulltext review started: extracted values mostly protocol/context;
+      no direct fibrosis effect-size anchor confirmed.'
+  T008:
+    pmid: '29631164'
+    reason: 'batch01 fulltext review started: directional benefit reported, but no
+      machine-readable hard endpoint magnitude extracted.'
+  T010:
+    pmid: '28404615'
+    reason: 'batch01 fulltext review started: mostly procedure time windows; no hard
+      remodeling magnitude extracted.'
+  T018:
+    pmid: '40688308'
+    reason: 'batch01 fulltext review started: signaling directionality present but
+      strict numeric endpoint not confirmed from extracted text.'
+  T022:
+    pmid: '39895521'
+    reason: 'batch01 fulltext review started: no strict hard quantitative anchor confirmed
+      from extracted text.'
+  T023:
+    pmid: '39730461'
+    reason: 'batch01 fulltext review started: no strict hard quantitative anchor confirmed
+      from extracted text.'
