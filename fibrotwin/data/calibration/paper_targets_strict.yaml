@@ -16,26 +16,29 @@ strict_tests:
     source_level: abstract_text
 unanchored_tests:
   T001:
-    reason: no explicit collagen/profibrotic magnitude found yet in machine-readable
-      text
+    reason: 'reviewed batch01: angiogenesis narrative with timepoints but no explicit
+      collagen/profibrotic magnitude extracted from machine-readable fulltext.'
   T002:
-    reason: extracted values are metadata/journal identifiers, not endpoint results
+    reason: 'reviewed batch01: extracted numbers are journal/metadata identifiers;
+      no endpoint effect-size found.'
   T003:
-    reason: extracted values are metadata/journal identifiers, not endpoint results
+    reason: 'reviewed batch01: extracted numbers are mostly identifiers/protocol fields;
+      no direct fibrosis effect-size found.'
   T004:
-    reason: extracted values mainly protocol/environment values, not fibrosis endpoint
-      magnitude
+    reason: 'reviewed batch01: protocol/environment/time values extracted; no explicit
+      fibrosis magnitude anchor found.'
   T005:
-    reason: review-style ranges and references; no single direct endpoint magnitude
-      parsed
+    reason: 'reviewed batch01: review-style citation ranges (e.g., 2-5, 8-10) not
+      direct experimental endpoint magnitudes.'
   T006:
-    reason: has dose/time and directional outcomes but no explicit effect-size number
-      extracted
+    reason: 'reviewed batch01: dose/time anchors (10 mg/kg, 3-7 days) and directional
+      statements; no explicit comparable effect-size number.'
   T008:
     reason: mentions improved function at 6 weeks without explicit %/absolute effect
       size extracted
   T009:
-    reason: p-values and directionality present, no explicit magnitude extracted
+    reason: 'reviewed batch01: p-values and directional comparisons present; no explicit
+      absolute/%/fold endpoint magnitude extracted.'
   T010:
     reason: protocol time windows extracted; no direct remodeling magnitude parsed
   T011:
@@ -43,7 +46,8 @@ unanchored_tests:
   T012:
     reason: pending full-paper manual quantitative curation
   T013:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch01: currently no strict hard numeric endpoint extracted
+      from available machine-readable text.'
   T014:
     reason: pending full-paper manual quantitative curation
   T015:
@@ -137,7 +141,8 @@ unanchored_tests:
   T059:
     reason: pending full-paper manual quantitative curation
   T060:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch01: current extraction lacks direct paper-reported effect-size
+      anchor for mapped endpoint.'
   T061:
     reason: pending full-paper manual quantitative curation
   T062:
@@ -147,7 +152,8 @@ unanchored_tests:
   T064:
     reason: pending full-paper manual quantitative curation
   T065:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch01: current extraction lacks direct paper-reported effect-size
+      anchor for mapped endpoint.'
   T066:
     reason: pending full-paper manual quantitative curation
   T067:
