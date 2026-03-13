@@ -153,3 +153,53 @@ rejected:
     reason: 'batch02 fulltext review: no strict hard quantitative endpoint magnitude
       confirmed from extracted machine-readable result text; retained as rejected
       pending manual figure/table extraction.'
+  T058:
+    pmid: '37482576'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T059:
+    pmid: '41782869'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T066:
+    pmid: '41683598'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T069:
+    pmid: '41658005'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T070:
+    pmid: '41657731'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T074:
+    pmid: '41642026'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T078:
+    pmid: '41608354'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T079:
+    pmid: '41599768'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T080:
+    pmid: '41599128'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
+  T024:
+    pmid: '39715792'
+    reason: 'batch03 fulltext review: no strict hard quantitative endpoint magnitude
+      confirmed from extracted machine-readable result text; retained as rejected
+      pending manual figure/table extraction.'
