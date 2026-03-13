@@ -1,0 +1,116 @@
+{
+  "batch_size": 10,
+  "batch_index": 4,
+  "rows": [
+    {
+      "id": "T056",
+      "pmid": "19897714",
+      "pmcid": "PMC2806135",
+      "title": "Evolution of scar structure, mechanics, and ventricular function after myocardial infarction in the rat.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/19897714/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2806135/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "pmcid": "PMC10613155",
+      "title": "A homogenized constrained mixture model of cardiac growth and remodeling: analyzing mechanobiological stability and reversal.",
+      "category": "growth_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/37482576/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10613155/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "pmcid": "PMC12953441",
+      "title": "Mass spectrometry-based multi-omics analysis elucidates immune microenvironmental characteristics and the risk of distant metastasis in N1c colorectal cancer.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41782869/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12953441/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T066",
+      "pmid": "41683598",
+      "pmcid": "PMC12897412",
+      "title": "Activation of Cannabinoid Receptor 1 Enhances Wound Healing by Promoting the Proliferative Phase.",
+      "category": "cell_motion",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41683598/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12897412/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T069",
+      "pmid": "41658005",
+      "pmcid": "PMC12876252",
+      "title": "Lactoferrin bridges antimicrobial and healing responses in Staphylococcus aureus skin infections.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41658005/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12876252/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T070",
+      "pmid": "41657731",
+      "pmcid": "PMC12876173",
+      "title": "Evaluation of liposome-encapsulated Centella asiatica ethanolic extract for enhanced in vitro and in vivo wound healing.",
+      "category": "cell_motion",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41657731/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12876173/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "pmcid": "PMC12889168",
+      "title": "The Molecular Mechanisms and Therapeutic Potentials of Engrailed-1 in Fibrotic Scar Formation Post Glaucoma Filtration Surgery.",
+      "category": "infarct_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41642026/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12889168/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T078",
+      "pmid": "41608354",
+      "pmcid": "PMC12835494",
+      "title": "Photocrosslinkable Chitosan Quaternary Ammonium Salt-Based Ternary Hydrogel with Fibroblast Growth Factor 21 for Diabetic Wound Healing.",
+      "category": "growth_remodeling",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41608354/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12835494/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "pmcid": "PMC12845037",
+      "title": "Investigation of the Efficacy and Mechanism of Monoacylglycerol Lipase Inhibitors in Diabetic Foot Ulcers.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41599768/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12845037/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "pmcid": "PMC12845186",
+      "title": "Non-Crosslinked Hyaluronic Acid Redensity 1(\u00ae) Supports Cell Viability, Proliferation, and Collagen Deposition in Early Burn Management.",
+      "category": "collagen_dynamics",
+      "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/41599128/",
+      "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12845186/",
+      "n_numeric_mentions": 12,
+      "source_level": "fulltext"
+    }
+  ]
+}

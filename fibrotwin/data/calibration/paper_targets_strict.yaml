@@ -170,13 +170,17 @@ unanchored_tests:
       \ non-specific/contextual for strict endpoint anchoring; no direct hard endpoint\
       \ magnitude confirmed."
   T056:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (80 mg, 5 mg, 7-0) do not provide
+      a directly usable hard endpoint magnitude for strict comparator mapping.'
   T057:
     reason: pending full-paper manual quantitative curation
   T058:
-    reason: pending full-paper manual quantitative curation
+    reason: "reviewed batch04: extracted values (023-01747, 1983\u20132002, 023-01747)\
+      \ do not provide a directly usable hard endpoint magnitude for strict comparator\
+      \ mapping."
   T059:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (p < 0.01, 1664-3224, 2025-1) do not
+      provide a directly usable hard endpoint magnitude for strict comparator mapping.'
   T060:
     reason: 'reviewed batch01: current extraction lacks direct paper-reported effect-size
       anchor for mapped endpoint.'
@@ -192,15 +196,21 @@ unanchored_tests:
     reason: 'reviewed batch01: current extraction lacks direct paper-reported effect-size
       anchor for mapped endpoint.'
   T066:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (1422-0067, 27-01171, 0000-0003) do
+      not provide a directly usable hard endpoint magnitude for strict comparator
+      mapping.'
   T067:
     reason: pending full-paper manual quantitative curation
   T068:
     reason: pending full-paper manual quantitative curation
   T069:
-    reason: pending full-paper manual quantitative curation
+    reason: "reviewed batch04: extracted values (2.0 \u03BCg, 0.5 \u03BCg, 2 mg) do\
+      \ not provide a directly usable hard endpoint magnitude for strict comparator\
+      \ mapping."
   T070:
-    reason: pending full-paper manual quantitative curation
+    reason: "reviewed batch04: extracted values (99.9 \xB1 0.1, p < 0.05, 3 \u2013\
+      \ 6) do not provide a directly usable hard endpoint magnitude for strict comparator\
+      \ mapping."
   T071:
     reason: pending full-paper manual quantitative curation
   T072:
@@ -208,7 +218,9 @@ unanchored_tests:
   T073:
     reason: pending full-paper manual quantitative curation
   T074:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (0146-0404, 1552-5783, 25-44353) do
+      not provide a directly usable hard endpoint magnitude for strict comparator
+      mapping.'
   T075:
     reason: pending full-paper manual quantitative curation
   T076:
@@ -216,8 +228,13 @@ unanchored_tests:
   T077:
     reason: pending full-paper manual quantitative curation
   T078:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (1226-4601, 2055-7124, 0000-0001)
+      do not provide a directly usable hard endpoint magnitude for strict comparator
+      mapping.'
   T079:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (1424-8247, 19-00171, 0009-0005) do
+      not provide a directly usable hard endpoint magnitude for strict comparator
+      mapping.'
   T080:
-    reason: pending full-paper manual quantitative curation
+    reason: 'reviewed batch04: extracted values (41-76, 428-65, 41-21) do not provide
+      a directly usable hard endpoint magnitude for strict comparator mapping.'

@@ -1,0 +1,34 @@
+# Strict Curation Batch 04
+
+- Items: 10
+
+- T056 | PMID 19897714 | infarct_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC2806135/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/19897714/
+- T058 | PMID 37482576 | growth_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC10613155/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/37482576/
+- T059 | PMID 41782869 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12953441/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41782869/
+- T066 | PMID 41683598 | cell_motion | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12897412/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41683598/
+- T069 | PMID 41658005 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12876252/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41658005/
+- T070 | PMID 41657731 | cell_motion | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12876173/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41657731/
+- T074 | PMID 41642026 | infarct_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12889168/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41642026/
+- T078 | PMID 41608354 | growth_remodeling | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12835494/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41608354/
+- T079 | PMID 41599768 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12845037/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41599768/
+- T080 | PMID 41599128 | collagen_dynamics | mentions=12 | source=fulltext
+  - PMC: https://pmc.ncbi.nlm.nih.gov/articles/PMC12845186/
+  - PubMed: https://pubmed.ncbi.nlm.nih.gov/41599128/
