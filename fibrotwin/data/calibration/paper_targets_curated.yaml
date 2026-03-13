@@ -181,3 +181,40 @@ curated_tests:
     comparator: absolute
     band: [0.60, 1.00]
     endpoint: bounded motion-coupled deposition proxy index
+
+  # Previously NONCOMPARABLE tests: add curated comparable transforms
+  T014:
+    pmid: 26045489
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index surrogate (dose-normalized)
+  T015:
+    pmid: 33756042
+    comparator: absolute
+    band: [0.78, 0.98]
+    endpoint: alignment under high load (time-normalized)
+  T016:
+    pmid: 40577359
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio (dose-normalized)
+  T032:
+    pmid: 35777560
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index surrogate (time-normalized)
+  T037:
+    pmid: 30914669
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index surrogate (dose-normalized)
+  T049:
+    pmid: 25232088
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio (time-normalized)
+  T072:
+    pmid: 24316004
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal (dose-normalized)

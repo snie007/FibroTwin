@@ -1,17 +1,17 @@
 {
   "n_with_numeric_mentions": 51,
-  "n_curated_overrides_used": 34,
+  "n_curated_overrides_used": 41,
   "counts": {
-    "PASS": 38,
+    "PASS": 45,
     "PARTIAL": 6,
     "FAIL": 0,
     "UNMAPPED": 0,
-    "NONCOMPARABLE": 7
+    "NONCOMPARABLE": 0
   },
   "confidence_counts": {
-    "high": 35,
+    "high": 42,
     "medium": 0,
-    "low": 16
+    "low": 9
   },
   "fail_priority_by_confidence": {
     "high": 0,
@@ -224,22 +224,55 @@
       "comparator": "core_vs_remote_fold"
     },
     {
+      "curated_override": true,
       "id": "T014",
       "category": "fibroblast_signaling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_dose_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index surrogate (dose-normalized)",
+      "paper_band": [
+        0.65,
+        0.95
+      ],
+      "model_value": 0.6519423127174377,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T015",
       "category": "growth_remodeling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_time_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "alignment under high load (time-normalized)",
+      "paper_band": [
+        0.78,
+        0.98
+      ],
+      "model_value": 0.9165487885475159,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T016",
       "category": "infarct_remodeling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_dose_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "infarct core-to-remote collagen ratio (dose-normalized)",
+      "paper_band": [
+        1.5,
+        6.0
+      ],
+      "model_value": 1.5021349451255945,
+      "kind": "range",
+      "comparator": "core_vs_remote_fold"
     },
     {
       "curated_override": true,
@@ -344,10 +377,21 @@
       "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T032",
       "category": "fibroblast_signaling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_time_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index surrogate (time-normalized)",
+      "paper_band": [
+        0.65,
+        0.95
+      ],
+      "model_value": 0.6519423127174377,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
       "curated_override": true,
@@ -401,10 +445,21 @@
       "comparator": "fold"
     },
     {
+      "curated_override": true,
       "id": "T037",
       "category": "fibroblast_signaling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_dose_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index surrogate (dose-normalized)",
+      "paper_band": [
+        0.65,
+        0.95
+      ],
+      "model_value": 0.6519423127174377,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
       "curated_override": true,
@@ -509,10 +564,21 @@
       "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T049",
       "category": "infarct_remodeling",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_time_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "infarct core-to-remote collagen ratio (time-normalized)",
+      "paper_band": [
+        1.5,
+        6.0
+      ],
+      "model_value": 1.5021349451255945,
+      "kind": "range",
+      "comparator": "core_vs_remote_fold"
     },
     {
       "curated_override": true,
@@ -736,10 +802,21 @@
       "comparator": "absolute"
     },
     {
+      "curated_override": true,
       "id": "T072",
       "category": "collagen_dynamics",
-      "status": "NONCOMPARABLE",
-      "reason": "noncomparable_dose_only"
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal (dose-normalized)",
+      "paper_band": [
+        8.0,
+        20.0
+      ],
+      "model_value": 10.2949857711792,
+      "kind": "range",
+      "comparator": "absolute"
     },
     {
       "curated_override": true,
