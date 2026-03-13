@@ -1,0 +1,15 @@
+version: 1
+notes:
+  - Manual approval file for strict paper anchors.
+  - Add accepted items with explicit comparator + band + source snippet.
+
+approved:
+  T007:
+    pmid: 32611237
+    comparator: fold
+    band: [1.5, 2.5]
+    endpoint: pro-fibrotic pathway/protein increase in failing hearts
+    source_excerpt: "EPRS was induced at mRNA and protein levels (~1.5–2.5 fold increase) in failing hearts"
+    source_level: abstract_text
+
+rejected: {}

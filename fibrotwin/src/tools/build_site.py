@@ -556,6 +556,17 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
     if qmr.exists():
         qmatch_block = f'<div class="card"><h2>Paper-anchored quantitative match report</h2>{md_to_html(qmr.read_text())}</div>'
 
+    strict_block = ''
+    qms = ROOT / 'outputs' / 'quantitative_match_strict.md'
+    sad = ROOT / 'outputs' / 'strict_anchor_dashboard.md'
+    sca = ROOT / 'outputs' / 'strict_anchor_candidates.md'
+    if qms.exists():
+        strict_block += f'<div class="card"><h2>Strict hard-anchored results</h2>{md_to_html(qms.read_text())}</div>'
+    if sad.exists():
+        strict_block += f'<div class="card"><h2>Strict anchor yield dashboard</h2>{md_to_html(sad.read_text())}</div>'
+    if sca.exists():
+        strict_block += f'<div class="card"><h2>Strict anchor candidates</h2>{md_to_html(sca.read_text())}</div>'
+
     uniq_block = ''
     vu = ROOT / 'outputs' / 'validation_uniqueness.md'
     if vu.exists():
@@ -769,7 +780,7 @@ window.addEventListener('DOMContentLoaded',()=>{loadRuns();loadInteractiveLab();
 
     model_qa_shell = f"<section class='section-shell'><h2>1) Model QA</h2><div class='section-meta'>Unit/definition context and immediate verification status.</div><div class='card'><h2>Test outcomes</h2>{latest_test_summary()}</div><div class='card'>{verification}</div>{metric_dict_block}</section>"
     outcomes_shell = f"<section class='section-shell'><h2>2) Core validation outcomes</h2><div class='section-meta'>Scenario, infarct, uncertainty, and intervention behavior.</div>{valcard_block}{infarct_block}{portfolio_block}{scenario_block}{scenario_interactive_block}{uq_block}{drug_block}{matrix_help_block}</section>"
-    method_shell = f"<section class='section-shell'><h2>3) Method QA</h2><div class='section-meta'>Numerical verification, calibration, emulation, quantitative matching, and parameter consistency.</div>{quant_method_block}{numerical_block}{calib_block}{emulation_block}{qmatch_block}{param_block}</section>"
+    method_shell = f"<section class='section-shell'><h2>3) Method QA</h2><div class='section-meta'>Numerical verification, calibration, emulation, quantitative matching, and parameter consistency.</div>{quant_method_block}{numerical_block}{calib_block}{emulation_block}{qmatch_block}{strict_block}{param_block}</section>"
     coverage_shell = f"<section class='section-shell'><h2>4) Coverage and evidence</h2><div class='section-meta'>Uniqueness, mechanism coverage, literature links, and per-test artifacts.</div>{uniq_block}{coverage_block}{systematic_block}{pubfig_block}{testcard_block}</section>"
 
     (SITE / 'pages/validation.html').write_text(page('Validation & Tests', f'{pipeline_block}{inventory_block}{unify_block}{model_qa_shell}{outcomes_shell}{method_shell}{coverage_shell}'))

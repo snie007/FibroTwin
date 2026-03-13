@@ -1,0 +1,11 @@
+{
+  "candidate_count": 26,
+  "approved_count": 1,
+  "rejected_count": 0,
+  "strict_scored_count": 1,
+  "strict_counts": {
+    "PASS": 0,
+    "FAIL": 1,
+    "UNAVAILABLE_MODEL_COMPARATOR": 0
+  }
+}

@@ -37,9 +37,9 @@ def model_vals(cat, vp):
 
 
 def main():
-    strict_path = ROOT / 'data' / 'calibration' / 'paper_targets_strict.yaml'
-    st = yaml.safe_load(strict_path.read_text()) if strict_path.exists() else {'strict_tests': {}}
-    strict_tests = st.get('strict_tests', {})
+    app_path = ROOT / 'data' / 'calibration' / 'paper_targets_strict_approved.yaml'
+    app = yaml.safe_load(app_path.read_text()) if app_path.exists() else {'approved': {}}
+    strict_tests = app.get('approved', {})
 
     cat = json.loads((ROOT / 'outputs' / 'systematic_test_catalog.json').read_text())
     cat_by = {t['id']: t for t in cat.get('tests', [])}
@@ -69,6 +69,7 @@ def main():
             'endpoint': cfg.get('endpoint'),
             'source_excerpt': cfg.get('source_excerpt'),
             'source_level': cfg.get('source_level'),
+            'provenance': 'paper_approved_manual',
         })
 
     counts = {'PASS': 0, 'FAIL': 0, 'UNAVAILABLE_MODEL_COMPARATOR': 0}
@@ -79,8 +80,7 @@ def main():
         'n_strict_anchored': len(rows),
         'counts': counts,
         'rows': rows,
-        'n_unanchored_declared': len(st.get('unanchored_tests', {})),
-        'definition': 'Strict hard-anchored mode: only manually curated paper-reported quantitative endpoints are scored.',
+        'definition': 'Strict hard-anchored mode: only manually approved paper-reported quantitative endpoints are scored.',
     }
     (ROOT / 'outputs' / 'quantitative_match_strict.json').write_text(json.dumps(out, indent=2))
 
@@ -90,7 +90,6 @@ def main():
         f"- PASS: {counts['PASS']}",
         f"- FAIL: {counts['FAIL']}",
         f"- Unavailable comparator: {counts['UNAVAILABLE_MODEL_COMPARATOR']}",
-        f"- Declared unanchored tests (current batch): {out['n_unanchored_declared']}",
         '',
         out['definition']
     ]

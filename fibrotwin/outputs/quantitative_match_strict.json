@@ -19,9 +19,9 @@
       "model_value": 1.2532262079066356,
       "endpoint": "pro-fibrotic pathway/protein increase in failing hearts",
       "source_excerpt": "EPRS was induced at mRNA and protein levels (~1.5\u20132.5 fold increase) in failing hearts",
-      "source_level": "abstract_text"
+      "source_level": "abstract_text",
+      "provenance": "paper_approved_manual"
     }
   ],
-  "n_unanchored_declared": 79,
-  "definition": "Strict hard-anchored mode: only manually curated paper-reported quantitative endpoints are scored."
+  "definition": "Strict hard-anchored mode: only manually approved paper-reported quantitative endpoints are scored."
 }

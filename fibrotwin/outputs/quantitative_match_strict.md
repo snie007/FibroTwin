@@ -4,6 +4,5 @@
 - PASS: 0
 - FAIL: 1
 - Unavailable comparator: 0
-- Declared unanchored tests (current batch): 79
 
-Strict hard-anchored mode: only manually curated paper-reported quantitative endpoints are scored.
+Strict hard-anchored mode: only manually approved paper-reported quantitative endpoints are scored.
