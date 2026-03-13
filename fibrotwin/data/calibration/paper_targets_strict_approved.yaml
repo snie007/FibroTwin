@@ -19,4 +19,37 @@ approved:
     endpoint: fibrosis burden around ~10% condition (paper APD-dispersion example reports 10% fibrosis context)
     source_excerpt: "APD dispersion increased to 70 ms from 24 ms with 10% fibrosis"
     source_level: fulltext_text
-rejected: {}
+rejected:
+  T005:
+    pmid: 34568449
+    reason: citation-number ranges (e.g., 23-31, 8-10) not quantitative experimental endpoint magnitudes.
+  T006:
+    pmid: 34023353
+    reason: reports time windows/directional effects without explicit numeric effect-size endpoint.
+  T009:
+    pmid: 29030341
+    reason: p-values and significance statements only; no hard absolute/%/fold effect size extracted.
+  T013:
+    pmid: 26383724
+    reason: duration/protocol mention (7 days) without quantitative endpoint magnitude.
+  T030:
+    pmid: 38899461
+    reason: timepoint progression statements (3/7/28 days, 4h/24h) without extractable effect-size value.
+  T033:
+    pmid: 37999643
+    reason: citation-number range (30-33) from references, not endpoint result.
+  T034:
+    pmid: 37786576
+    reason: p-value significance only, no effect-size magnitude.
+  T045:
+    pmid: 34749750
+    reason: citation-number range (1-3) from references, not endpoint result.
+  T055:
+    pmid: 22495588
+    reason: parameter/coefficient values in methods/model context, not paper result endpoint for strict comparison.
+  T057:
+    pmid: 19897714
+    reason: has hard value (~70% heart mass increase) but endpoint not directly represented by current validation observable mapping.
+  T060:
+    pmid: 41728737
+    reason: p-value significance only; no explicit effect-size magnitude extracted.
