@@ -97,3 +97,75 @@ curated_tests:
     comparator: absolute
     band: [8.0, 20.0]
     endpoint: collagen burden under load+signal
+
+  # Phase 2 pass 2 curation for remaining low-confidence FAIL cases
+  T002:
+    pmid: 35231640
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T003:
+    pmid: 23083425
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T004:
+    pmid: 35527067
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T010:
+    pmid: 25779557
+    comparator: absolute
+    band: [0.78, 0.98]
+    endpoint: alignment under high load
+  T022:
+    pmid: 38875686
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T026:
+    pmid: 28613889
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T041:
+    pmid: 28492335
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T042:
+    pmid: 25106179
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T044:
+    pmid: 25007661
+    comparator: absolute
+    band: [0.65, 0.95]
+    endpoint: high-signal profibrotic index
+  T058:
+    pmid: 29370019
+    comparator: absolute
+    band: [0.78, 0.98]
+    endpoint: alignment under high load
+  T059:
+    pmid: 28995929
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T069:
+    pmid: 29420187
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal
+  T074:
+    pmid: 24829092
+    comparator: core_vs_remote_fold
+    band: [1.5, 6.0]
+    endpoint: infarct core-to-remote collagen ratio
+  T080:
+    pmid: 32137723
+    comparator: absolute
+    band: [8.0, 20.0]
+    endpoint: collagen burden under load+signal

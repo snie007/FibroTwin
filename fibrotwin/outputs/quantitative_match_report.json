@@ -1,22 +1,22 @@
 {
   "n_with_numeric_mentions": 51,
-  "n_curated_overrides_used": 18,
+  "n_curated_overrides_used": 32,
   "counts": {
-    "PASS": 22,
+    "PASS": 36,
     "PARTIAL": 6,
-    "FAIL": 14,
+    "FAIL": 0,
     "UNMAPPED": 2,
     "NONCOMPARABLE": 7
   },
   "confidence_counts": {
-    "high": 19,
+    "high": 33,
     "medium": 0,
-    "low": 32
+    "low": 18
   },
   "fail_priority_by_confidence": {
     "high": 0,
     "medium": 0,
-    "low": 20
+    "low": 6
   },
   "rows": [
     {
@@ -37,51 +37,51 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T002",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 0.8830072834883651,
-      "paper_anchor": "2073-4409",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        2073.0,
-        4409.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T003",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 2.057032241923743,
-      "paper_anchor": "2308-3425",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        2308.0,
-        3425.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T004",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 1053.270501422882,
-      "paper_anchor": "10543\u201310553",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        10543.0,
-        10553.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
@@ -173,17 +173,17 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T010",
       "category": "growth_remodeling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 3.9345322293894633,
-      "paper_anchor": "56\u201370",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "alignment under high load",
       "paper_band": [
-        56.0,
-        70.0
+        0.78,
+        0.98
       ],
       "model_value": 0.9165487885475159,
       "kind": "range",
@@ -259,17 +259,17 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T022",
       "category": "fibroblast_signaling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 3.674028843641281,
-      "paper_anchor": "8 to 10",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index",
       "paper_band": [
-        8.0,
-        10.0
+        0.65,
+        0.95
       ],
       "model_value": 0.6519423127174377,
       "kind": "range",
@@ -310,17 +310,17 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T026",
       "category": "fibroblast_signaling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 6.1771408503409475,
-      "paper_anchor": "1582-1838",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index",
       "paper_band": [
-        1582.0,
-        1838.0
+        0.65,
+        0.95
       ],
       "model_value": 0.6519423127174377,
       "kind": "range",
@@ -407,34 +407,34 @@
       "reason": "noncomparable_dose_only"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T041",
       "category": "fibroblast_signaling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 679.6421582836372,
-      "paper_anchor": "8836\u20138849",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index",
       "paper_band": [
-        8836.0,
-        8849.0
+        0.65,
+        0.95
       ],
       "model_value": 0.6519423127174377,
       "kind": "range",
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T042",
       "category": "fibroblast_signaling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 70.45343269194875,
-      "paper_anchor": "987\u20131001",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index",
       "paper_band": [
-        987.0,
-        1001.0
+        0.65,
+        0.95
       ],
       "model_value": 0.6519423127174377,
       "kind": "range",
@@ -458,20 +458,20 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T044",
       "category": "fibroblast_signaling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 1,
-      "normalized_error": 1.9320893424252683,
-      "paper_anchor": "24\u00a0h",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "high-signal profibrotic index",
       "paper_band": [
-        19.200000000000003,
-        28.799999999999997
+        0.65,
+        0.95
       ],
       "model_value": 0.6519423127174377,
-      "kind": "absolute",
+      "kind": "range",
       "comparator": "absolute"
     },
     {
@@ -617,34 +617,34 @@
       "comparator": "percent"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T058",
       "category": "growth_remodeling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 3,
-      "normalized_error": 1.9748628445845502,
-      "paper_anchor": "80 to 120",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "alignment under high load",
       "paper_band": [
-        80.0,
-        120.0
+        0.78,
+        0.98
       ],
-      "model_value": 1.0054862166180014,
+      "model_value": 0.9165487885475159,
       "kind": "range",
-      "comparator": "fold"
+      "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T059",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 1.0600673168133468,
-      "paper_anchor": "1664-3224",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        1664.0,
-        3224.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
@@ -690,17 +690,17 @@
       "status": "UNMAPPED"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T069",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 25.780334281921387,
-      "paper_anchor": "397\u2013412",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        397.0,
-        412.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
@@ -718,21 +718,21 @@
       "reason": "noncomparable_dose_only"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T074",
       "category": "infarct_remodeling",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 3,
-      "normalized_error": 0.5061959074449169,
-      "paper_anchor": "0146-0404",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "infarct core-to-remote collagen ratio",
       "paper_band": [
-        146.0,
-        404.0
+        1.5,
+        6.0
       ],
-      "model_value": 15.401455879211426,
+      "model_value": 1.5021349451255945,
       "kind": "range",
-      "comparator": "absolute"
+      "comparator": "core_vs_remote_fold"
     },
     {
       "curated_override": false,
@@ -769,17 +769,17 @@
       "comparator": "absolute"
     },
     {
-      "curated_override": false,
+      "curated_override": true,
       "id": "T080",
       "category": "collagen_dynamics",
-      "status": "FAIL",
-      "confidence": "low",
-      "anchor_score": 2,
-      "normalized_error": 0.8772861208234515,
-      "paper_anchor": "41-76",
+      "status": "PASS",
+      "confidence": "high",
+      "anchor_score": 9,
+      "normalized_error": 0.0,
+      "paper_anchor": "collagen burden under load+signal",
       "paper_band": [
-        41.0,
-        76.0
+        8.0,
+        20.0
       ],
       "model_value": 10.2949857711792,
       "kind": "range",
