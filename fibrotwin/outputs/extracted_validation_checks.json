@@ -1,0 +1,499 @@
+{
+  "n_checks": 35,
+  "checks": [
+    {
+      "id": "T001",
+      "pmid": "37569674",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "2",
+      "target_band": [
+        1.6,
+        2.4
+      ],
+      "snippet": "ementarily, ECs close to the infarcted region show an increase in VEGF receptor 2 (VEGFR2) expression [ 9 , 10 , 11 ], which would explain ECs activation and the",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T001",
+      "pmid": "37569674",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "9",
+      "target_band": [
+        7.2,
+        10.8
+      ],
+      "snippet": " the infarcted region show an increase in VEGF receptor 2 (VEGFR2) expression [ 9 , 10 , 11 ], which would explain ECs activation and the starting of new blood v",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T002",
+      "pmid": "37371059",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "21",
+      "target_band": [
+        16.8,
+        25.2
+      ],
+      "snippet": " increased cardiac fibrosis, with normal blood pressure and myocardial Ang II [ 21 ]. These animals, however, had significantly decreased Ac-SDKP levels, replacem",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T002",
+      "pmid": "37371059",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.0270",
+      "target_band": [
+        0.0216,
+        0.0324
+      ],
+      "snippet": "1 treatment increased the expression of smooth muscle alpha actin ( Acta2 , p = 0.0270 vs. untreated; n = 8\u201310), Collagen 1 ( Col1a1 , p = 0.0054 vs. untreated; n = 8",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T003",
+      "pmid": "36826549",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "2",
+      "target_band": [
+        1.6,
+        2.4
+      ],
+      "snippet": "art weight to tibia length (HW/TL) and cardiomyocyte cell surface area ( Figure 2 B,C). The area of cardiac fibrosis was decreased by ~40% after CPX treatment ( ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T003",
+      "pmid": "36826549",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "40",
+      "target_band": [
+        32.0,
+        48.0
+      ],
+      "snippet": "ll surface area ( Figure 2 B,C). The area of cardiac fibrosis was decreased by ~40% after CPX treatment ( Figure 2 D). Expressions of cardiac hypertrophy marker g",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T004",
+      "pmid": "34643044",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "3",
+      "target_band": [
+        2.4,
+        3.6
+      ],
+      "snippet": "hogenesis of AF, and atrial fibrosis is the hallmark of structural remodelling. 3 The fibrotic process is a complex process that involves increased production an",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T004",
+      "pmid": "34643044",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "3.3",
+      "target_band": [
+        2.64,
+        3.96
+      ],
+      "snippet": "e in the current densities of I to , I Kur and I Na in hiPSC\u2010aCMs (Figure S4 ). 3.3. MiR\u2010146b\u20105p transfection in hiPSC\u2010aCMs induced increased interstitial collagen",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T005",
+      "pmid": "34568449",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "800",
+      "target_band": [
+        640.0,
+        960.0
+      ],
+      "snippet": "ed 2021 May 4; Accepted 2021 Aug 16; Collection date 2021. Introduction Roughly 800,000 myocardial infarctions (MIs) occur in the U.S. each year, and while 85% of ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T005",
+      "pmid": "34568449",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "000",
+      "target_band": [
+        0.0,
+        0.0
+      ],
+      "snippet": "021 May 4; Accepted 2021 Aug 16; Collection date 2021. Introduction Roughly 800,000 myocardial infarctions (MIs) occur in the U.S. each year, and while 85% of pati",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T012",
+      "pmid": "26601107",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "70",
+      "target_band": [
+        56.0,
+        84.0
+      ],
+      "snippet": " were inserted randomly into a cardiomyocyte strand APD dispersion increased to 70\u2009ms from 24\u2009ms with 10% fibrosis. Such regional dispersion of repolarization can",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T012",
+      "pmid": "26601107",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "24",
+      "target_band": [
+        19.2,
+        28.8
+      ],
+      "snippet": "ted randomly into a cardiomyocyte strand APD dispersion increased to 70\u2009ms from 24\u2009ms with 10% fibrosis. Such regional dispersion of repolarization can create a s",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T018",
+      "pmid": "40688308",
+      "category": "fibroblast_signaling",
+      "comparator": "absolute",
+      "paper_value": "7",
+      "target_band": [
+        5.6,
+        8.4
+      ],
+      "snippet": "g to electrical and structural changes that increase the susceptibility to AF ( 7 ). Specifically, ang II activates the TGF-\u03b21/Smad signaling pathway, which driv",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.8",
+      "target_band": [
+        0.64,
+        0.96
+      ],
+      "snippet": "psin at 4\u2103 for 12\u00a0h. This was followed by further enzymatic disintegration with 0.8% type II collagenase at 37\u2103 for 1\u00a0h. Afterward, the cell mixtures were centrifu",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T023",
+      "pmid": "39730461",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "37",
+      "target_band": [
+        29.6,
+        44.4
+      ],
+      "snippet": "s followed by further enzymatic disintegration with 0.8% type II collagenase at 37\u2103 for 1\u00a0h. Afterward, the cell mixtures were centrifuged, and the resulting sedi",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T041",
+      "pmid": "35333698",
+      "category": "fibroblast_signaling",
+      "comparator": "absolute",
+      "paper_value": "7",
+      "target_band": [
+        5.6,
+        8.4
+      ],
+      "snippet": "s, resulting in increased activation and proliferation of cardiac fibroblasts [ 7 ]. Activated fibroblasts transform into \u03b1-smooth muscle actin (\u03b1-SMA) myofibrob",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.1",
+      "target_band": [
+        0.08,
+        0.12
+      ],
+      "snippet": "iefly, the atrium was removed, finely chopped using scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T043",
+      "pmid": "35126818",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "1",
+      "target_band": [
+        0.8,
+        1.2
+      ],
+      "snippet": "emoved, finely chopped using scissors, and digested with 0.1% collagenase II in 1\u00d7 ADS buffer (116\u2009mM NaCl, 20\u2009mM HEPES, 10\u2009mM NaH 2 PO 4 , 5.5\u2009mM glucose, 5\u2009mM ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "1",
+      "target_band": [
+        0.8,
+        1.2
+      ],
+      "snippet": "cardiomyopathy, doxorubicin-induced cardiac fibrosis as well as heart failure [ 1 \u2013 3 ]. In particular, cardiac remodelling causes the increased morbidity and mo",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T045",
+      "pmid": "34749750",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "3",
+      "target_band": [
+        2.4,
+        3.6
+      ],
+      "snippet": "iomyopathy, doxorubicin-induced cardiac fibrosis as well as heart failure [ 1 \u2013 3 ]. In particular, cardiac remodelling causes the increased morbidity and mortal",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "2",
+      "target_band": [
+        1.6,
+        2.4
+      ],
+      "snippet": "ed contractility of the scar reduce LV function and can lead to heart failure [ 2 ]. The decrease in LV pump function has been correlated to the size of the infa",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T054",
+      "pmid": "24456675",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "25",
+      "target_band": [
+        20.0,
+        30.0
+      ],
+      "snippet": "ference and half of the total height. In this configuration the scar represents 25% of the total myocardial area representing a moderately sized scar. The final d",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T058",
+      "pmid": "37482576",
+      "category": "growth_remodeling",
+      "comparator": "absolute",
+      "paper_value": "2019",
+      "target_band": [
+        1615.2,
+        2422.8
+      ],
+      "snippet": "retch of the muscle fiber compared to the reference configuration (Braeu et\u00a0al. 2019 ). Collagen fibers and cardiomyocytes are excluded during compression 2 ( I 4 i",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "1",
+      "target_band": [
+        0.8,
+        1.2
+      ],
+      "snippet": "rmed Masson F solution for collagen staining (duration adjusted from seconds to 1 minute by tissue type). Sections were then rapidly rinsed in 1% glacial acetic ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T059",
+      "pmid": "41782869",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "100",
+      "target_band": [
+        80.0,
+        120.0
+      ],
+      "snippet": "sue area (Area_Total), with fibrotic content (%) = (Area_Collagen/Area_Total) \u00d7 100. Statistical comparisons used mean collagen volume fraction (CVF) values across",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.05",
+      "target_band": [
+        0.04,
+        0.06
+      ],
+      "snippet": "+\u2009PBM and SER\u2009+\u2009PBM groups presented higher collagen scores than controls ( p <\u20090.05). The SER\u2009+\u2009PBM treatment was particularly effective, showing the greatest prop",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T060",
+      "pmid": "41728737",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "13",
+      "target_band": [
+        10.4,
+        15.6
+      ],
+      "snippet": "the stratum corneum, decreases skin impedance and induces collagen production [ 13 , 14 ], without the activation of pro\u2010inflammatory cytokines [ 15 ]. Another wi",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "2.78",
+      "target_band": [
+        2.224,
+        3.336
+      ],
+      "snippet": " significantly reduce. The dimensions of hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T065",
+      "pmid": "41684838",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "95",
+      "target_band": [
+        76.0,
+        114.0
+      ],
+      "snippet": "ficantly reduce. The dimensions of hypertrophic scars and keloids [(SMD) \u22122.78, 95% confidence interval (CI) \u22123.88\u20131.69)]. Also attenuate other outcomes, such as ",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "40",
+      "target_band": [
+        32.0,
+        48.0
+      ],
+      "snippet": "oblasts to express EN1 owing to increased tension, leading to the production of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 Thes",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T074",
+      "pmid": "41642026",
+      "category": "infarct_remodeling",
+      "comparator": "absolute",
+      "paper_value": "50",
+      "target_band": [
+        40.0,
+        60.0
+      ],
+      "snippet": " to express EN1 owing to increased tension, leading to the production of 40% to 50% of scar-forming fibroblasts and resulting in scar formation. 7 , 8 These findi",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "10",
+      "target_band": [
+        8.0,
+        12.0
+      ],
+      "snippet": "kine IL-8 and MPO , and increased levels of the anti-inflammatory chemokines IL-10 , TGF-\u03b2 , fibronectin (FN) , Collagen (Col)III\u03b1 , VEGFA and FGF . Conclusion: M",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T079",
+      "pmid": "41599768",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.01",
+      "target_band": [
+        0.008,
+        0.012
+      ],
+      "snippet": "ompared with control: * p < 0.05, ** p < 0.01; vs. HG group: # p < 0.05, ## p < 0.01. Figure 5 Promotes diabetic wound healing, epidermal regeneration, and collagen",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "2",
+      "target_band": [
+        1.6,
+        2.4
+      ],
+      "snippet": "ing and subsequent quantification were performed. The collagen was stained with 2 mL of 0.1% Sirius Red (Abcam, Cambridge, UK) in 1.3% picric acid (Merck, Darmst",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    },
+    {
+      "id": "T080",
+      "pmid": "41599128",
+      "category": "collagen_dynamics",
+      "comparator": "absolute",
+      "paper_value": "0.1",
+      "target_band": [
+        0.08,
+        0.12
+      ],
+      "snippet": "subsequent quantification were performed. The collagen was stained with 2 mL of 0.1% Sirius Red (Abcam, Cambridge, UK) in 1.3% picric acid (Merck, Darmstadt, Germa",
+      "provenance": "auto_from_fulltext_schema_match",
+      "confidence": "screening"
+    }
+  ],
+  "notes": [
+    "Auto-extracted quantitative validation checks from schema-matched fulltext snippets.",
+    "These are screening-level candidates and require manual approval before strict scoring."
+  ]
+}
