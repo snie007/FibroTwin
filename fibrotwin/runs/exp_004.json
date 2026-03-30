@@ -1,0 +1,37 @@
+{
+  "index": 4,
+  "label": "Current clamp excitability",
+  "rationale": "Probe spikes and membrane recovery",
+  "protocol": [
+    {
+      "duration_ms": 2.0,
+      "value": 0.0
+    },
+    {
+      "duration_ms": 4.0,
+      "value": 10.0
+    },
+    {
+      "duration_ms": 4.0,
+      "value": 20.0
+    },
+    {
+      "duration_ms": 4.0,
+      "value": -10.0
+    }
+  ],
+  "blocks": {
+    "na": 0.0,
+    "k": 0.0
+  },
+  "mode": "current",
+  "metadata": {
+    "mode": "current",
+    "dt_ms": 0.01,
+    "g_na": 120.0,
+    "g_k": 36.0,
+    "g_l": 0.3,
+    "block_na": 0.0,
+    "block_k": 0.0
+  }
+}
