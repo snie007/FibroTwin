@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>VESPA literature library</title>
+    <style>
+      body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.5; color: #1f2937; }
+      h1, h2 { color: #0f172a; }
+      .card { border: 1px solid #d1d5db; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
+      code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 4px; }
+    </style>
+  </head>
+  <body>
+    <h1>VESPA literature library</h1>
+    <p>
+      VESPA is a grant-search evidence repository organised by project. It stores
+      search logs, PMID-linked evidence entries, and output-ready reports for grant applications.
+    </p>
+
+    <div class="card">
+      <h2>Active dossier: USA congenital heart disease statistics</h2>
+      <p>
+        First VESPA dossier focused on congenital heart disease in the United States,
+        covering prevalence, mortality, survival, surgery counts, and surgery types.
+      </p>
+      <ul>
+        <li>Search log: <code>searches/VESPA/chd_usa_2026/search_log.md</code></li>
+        <li>Evidence schema: <code>searches/VESPA/chd_usa_2026/evidence_template.yaml</code></li>
+        <li>Overleaf starter: <code>reports/overleaf/main.tex</code></li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Repository structure</h2>
+      <p>
+        Raw exports live in <code>data/raw</code>, cleaned evidence records in <code>data/processed</code>,
+        dossier-specific searches in <code>searches/</code>, and publishable outputs in <code>reports/</code> and <code>site/</code>.
+      </p>
+    </div>
+  </body>
+</html>

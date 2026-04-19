@@ -1,0 +1,51 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\title{Congenital Heart Disease Statistics in the United States\\VESPA evidence dossier}
+\author{VESPA literature library}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Purpose}
+This dossier compiles the latest PMID-backed statistics for congenital heart disease (CHD) in the United States for use in the VESPA grant application. The goal is to provide traceable evidence on case numbers, mortality, survival, surgery volume, and major surgery classes.
+
+\section{Questions to answer}
+\begin{itemize}[leftmargin=1.5em]
+  \item How many people in the United States are living with congenital heart disease?
+  \item How many new cases occur each year?
+  \item How many deaths are attributed to CHD, and in which age groups?
+  \item What are the reported survival rates?
+  \item How many cardiac surgeries or interventions are performed, and which procedure classes dominate?
+\end{itemize}
+
+\section{Evidence table template}
+\begin{longtable}{p{2.4cm} p{2.7cm} p{1.5cm} p{1.5cm} p{4.4cm} p{1.6cm}}
+\toprule
+Metric & Population / geography & Year & Value & Source title & PMID \\
+\midrule
+\endfirsthead
+\toprule
+Metric & Population / geography & Year & Value & Source title & PMID \\
+\midrule
+\endhead
+Cases living with CHD & United States & TBD & TBD & To be populated from screened evidence & TBD \\
+Annual CHD births & United States & TBD & TBD & To be populated from screened evidence & TBD \\
+Deaths attributed to CHD & United States & TBD & TBD & To be populated from screened evidence & TBD \\
+Survival rate & United States & TBD & TBD & To be populated from screened evidence & TBD \\
+Surgical volume & United States & TBD & TBD & To be populated from screened evidence & TBD \\
+\bottomrule
+\end{longtable}
+
+\section{Search provenance}
+See the search log in \texttt{searches/VESPA/chd\_usa\_2026/search\_log.md} and the evidence template in \texttt{searches/VESPA/chd\_usa\_2026/evidence\_template.yaml}.
+
+\section{Notes}
+This file is designed to be copied directly into Overleaf as the starting point for the CHD USA report.
+
+\end{document}
