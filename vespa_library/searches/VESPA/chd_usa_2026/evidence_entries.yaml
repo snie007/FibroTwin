@@ -1,0 +1,182 @@
+project: VESPA
+dossier: chd_usa_2026
+evidence_entries:
+  - topic: congenital heart disease
+    metric: adult_cases_living_with_congenital_heart_defect
+    geography: United States
+    population: adults
+    year: 2022
+    value: 1400000
+    unit: people
+    comparator: ">"
+    source_title: Mortality in Adult Congenital Heart Disease: Analysis of Outcomes and Risk Stratification.
+    journal: Journal of cardiothoracic and vascular anesthesia
+    pmid: 35491368
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "It is estimated that there are >1.4 million adults in the United States living with a congenital heart defect."
+    notes: adult CHD burden estimate, useful for grant background
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease
+    metric: adult_cases_living_with_chd
+    geography: United States
+    population: adults
+    year: 2017
+    value: 1000000
+    unit: people
+    comparator: ">"
+    source_title: Adult congenital heart disease: magnitude of the problem.
+    journal: Current opinion in cardiology
+    pmid: 28617685
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "The ACHD population is estimated to include more than 1 million people in the United States and continues to grow at a steady rate."
+    notes: older but directly relevant magnitude estimate
+    extraction_status: screening_extracted
+
+  - topic: congenital heart disease
+    metric: critical_chd_birth_prevalence
+    geography: United States
+    population: live births
+    year: 2019
+    value: 19.93
+    unit: per 10000 live births
+    comparator: combined_12_critical_chd_defects
+    source_title: National population-based estimates for major birth defects, 2010-2014.
+    journal: Birth defects research
+    pmid: 31580536
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "The adjusted national birth prevalence estimates per 10,000 live births ranged from 0.62 for interrupted aortic arch to 16.87 for clubfoot, and 19.93 for the 12 critical congenital heart defects combined."
+    notes: strong quantitative birth prevalence anchor
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease surgery
+    metric: surgery_admissions
+    geography: United States
+    population: adults age 18 to 49 with ACHD surgery admissions
+    year: 2019
+    value: 16841
+    unit: admissions
+    comparator: years_2005_2009
+    source_title: Morbidity During Adult Congenital Heart Surgery Admissions.
+    journal: Pediatric cardiology
+    pmid: 30976885
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "We identified 16,841 ACHD surgery admissions, of which 46.9% had at least one complication."
+    notes: useful for surgery burden and outcomes framing
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease surgery
+    metric: complication_rate_during_surgery_admissions
+    geography: United States
+    population: adults age 18 to 49 with ACHD surgery admissions
+    year: 2019
+    value: 46.9
+    unit: percent
+    comparator: among_16841_admissions_2005_2009
+    source_title: Morbidity During Adult Congenital Heart Surgery Admissions.
+    journal: Pediatric cardiology
+    pmid: 30976885
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "We identified 16,841 ACHD surgery admissions, of which 46.9% had at least one complication."
+    notes: complication burden for ACHD surgery admissions
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease surgery
+    metric: mortality_with_complication
+    geography: United States
+    population: adults age 18 to 49 with ACHD surgery admissions and complications
+    year: 2019
+    value: 4.6
+    unit: percent
+    comparator: compared_with_0.9_percent_without_complication
+    source_title: Morbidity During Adult Congenital Heart Surgery Admissions.
+    journal: Pediatric cardiology
+    pmid: 30976885
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "Admissions with a complication had ... higher mortality (4.6% vs. 0.9%; p < 0.001)."
+    notes: surgery outcome statistic rather than national all-cause CHD mortality
+    extraction_status: screening_extracted
+
+  - topic: congenital heart surgery
+    metric: aggregate_operative_mortality_rate
+    geography: United States
+    population: children undergoing congenital heart surgery
+    year: 2020
+    value: 3.0
+    unit: percent
+    comparator: approximate_current_aggregate_rate
+    source_title: Quality Improvement in Congenital Heart Surgery.
+    journal: NeoReviews
+    pmid: 32123122
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "Outcomes of surgery for children with congenital heart disease have dramatically improved over the last several decades with current aggregate operative mortality rates approximating 3%, inclusive of all ages and defects."
+    notes: useful headline surgical mortality benchmark
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease surgery
+    metric: patients_undergoing_achd_surgery
+    geography: United States
+    population: ACHD surgery patients
+    year: 2024
+    value: 174370
+    unit: patients
+    comparator: years_2005_2014
+    source_title: Racial Disparity: The Adult Congenital Heart Disease Surgery Perspective.
+    journal: Pediatric cardiology
+    pmid: 36580104
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "Of the 174,370 patients ... who underwent ACHD surgery between 2005 and 2014 ..."
+    notes: broad surgery denominator for adult CHD operations
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease hospitalization
+    metric: unique_achd_admissions
+    geography: United States
+    population: adults with congenital heart disease
+    year: 2023
+    value: 26454
+    unit: admissions
+    comparator: years_2010_2020
+    source_title: Mortality and Morbidity of Heart Failure Hospitalization in Adult Patients With Congenital Heart Disease.
+    journal: Journal of the American Heart Association
+    pmid: 38018491
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "Of 26 454 unique ACHD admissions between January 1, 2010 and December 31, 2020, 5826 (22%) were ACHDHF+ and 20 628 (78%) were ACHDHF-."
+    notes: admission burden with subgroup counts for heart-failure-associated ACHD admissions
+    extraction_status: screening_extracted
+
+  - topic: adult congenital heart disease hospitalization
+    metric: hazard_ratio_mortality_after_hf_hospitalization
+    geography: United States
+    population: adults with congenital heart disease hospitalized with heart failure versus without heart failure
+    year: 2023
+    value: 1.86
+    unit: hazard ratio
+    comparator: HF_plus_vs_HF_minus
+    source_title: Mortality and Morbidity of Heart Failure Hospitalization in Adult Patients With Congenital Heart Disease.
+    journal: Journal of the American Heart Association
+    pmid: 38018491
+    doi: null
+    source_type: journal_article
+    database: PubMed
+    quote: "Over a mean follow-up period of 2.23 ± 2.19 years, patients with ACHDHF+ had a higher risk of mortality (hazard ratio [HR], 1.86 [95% CI, 1.67-2.07], P<0.001)."
+    notes: outcome risk estimate rather than population mortality rate
+    extraction_status: screening_extracted
