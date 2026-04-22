@@ -3,42 +3,222 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>VESPA literature library</title>
+    <title>VESPA CHD USA dossier</title>
     <style>
-      body { font-family: Arial, sans-serif; margin: 2rem auto; max-width: 900px; line-height: 1.5; color: #1f2937; }
-      h1, h2 { color: #0f172a; }
-      .card { border: 1px solid #d1d5db; border-radius: 10px; padding: 1rem 1.25rem; margin: 1rem 0; }
-      code { background: #f3f4f6; padding: 0.1rem 0.3rem; border-radius: 4px; }
+      body {
+        font-family: Arial, sans-serif;
+        margin: 2rem auto;
+        max-width: 980px;
+        line-height: 1.55;
+        color: #1f2937;
+        padding: 0 1rem 3rem;
+      }
+      h1, h2, h3 { color: #0f172a; }
+      .card {
+        border: 1px solid #d1d5db;
+        border-radius: 12px;
+        padding: 1rem 1.25rem;
+        margin: 1rem 0;
+        background: #ffffff;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1rem;
+      }
+      .metric {
+        border: 1px solid #e5e7eb;
+        border-radius: 10px;
+        padding: 0.9rem 1rem;
+        background: #f8fafc;
+      }
+      .metric strong {
+        display: block;
+        font-size: 1.3rem;
+        color: #111827;
+        margin-bottom: 0.25rem;
+      }
+      code {
+        background: #f3f4f6;
+        padding: 0.12rem 0.3rem;
+        border-radius: 4px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 0.75rem;
+      }
+      th, td {
+        text-align: left;
+        padding: 0.65rem;
+        border-bottom: 1px solid #e5e7eb;
+        vertical-align: top;
+      }
+      th { background: #f8fafc; }
+      .small { color: #4b5563; font-size: 0.95rem; }
+      ul { padding-left: 1.2rem; }
     </style>
   </head>
   <body>
-    <h1>VESPA literature library</h1>
+    <h1>VESPA CHD USA dossier</h1>
     <p>
-      VESPA is a grant-search evidence repository organised by project. It stores
-      search logs, PMID-linked evidence entries, and output-ready reports for grant applications.
+      This page summarizes the current <strong>source-constrained</strong> draft of the VESPA dossier on
+      congenital heart disease in the United States. Every retained figure comes from the original
+      approved PubMed result sets captured in the VESPA search log.
     </p>
 
     <div class="card">
-      <h2>Active dossier: USA congenital heart disease statistics</h2>
+      <h2>Why this draft is conservative</h2>
       <p>
-        First VESPA dossier focused on congenital heart disease in the United States,
-        covering prevalence, mortality, survival, surgery counts, and surgery types.
+        Codex did successfully run in a temporary worktree and found several useful-looking extra papers,
+        but those PMIDs were outside the approved search-result sets. They were intentionally excluded from
+        the final merge so the dossier stays provenance-clean.
       </p>
-      <ul>
-        <li>Search log: <code>searches/VESPA/chd_usa_2026/search_log.md</code></li>
-        <li>Evidence schema: <code>searches/VESPA/chd_usa_2026/evidence_template.yaml</code></li>
-        <li>Extracted evidence: <code>searches/VESPA/chd_usa_2026/evidence_entries.yaml</code></li>
-        <li>Candidate source triage: <code>searches/VESPA/chd_usa_2026/candidate_sources.md</code></li>
-        <li>Overleaf starter: <code>reports/overleaf/main.tex</code></li>
-      </ul>
     </div>
 
     <div class="card">
-      <h2>Repository structure</h2>
+      <h2>Headline CHD statistics retained in the final draft</h2>
+      <div class="grid">
+        <div class="metric">
+          <strong>2.4 million</strong>
+          Estimated US all-age prevalence of congenital cardiovascular defects in 2010<br />
+          <span class="small">PMID 33501848</span>
+        </div>
+        <div class="metric">
+          <strong>1 in 150 adults</strong>
+          Expected adult prevalence of congenital heart defect in the United States<br />
+          <span class="small">PMID 33501848</span>
+        </div>
+        <div class="metric">
+          <strong>&gt;1.4 million adults</strong>
+          Adults in the United States living with a congenital heart defect<br />
+          <span class="small">PMID 35491368</span>
+        </div>
+        <div class="metric">
+          <strong>19.93 per 10,000</strong>
+          Critical CHD birth prevalence for the 12 critical defects combined<br />
+          <span class="small">PMID 31580536</span>
+        </div>
+        <div class="metric">
+          <strong>0.9 per 100,000</strong>
+          Age-adjusted US death rate attributable to congenital cardiovascular defects in 2018<br />
+          <span class="small">PMID 33501848</span>
+        </div>
+        <div class="metric">
+          <strong>123,777 surgeries</strong>
+          Congenital heart surgeries recorded in the STS database from 2015 to 2018<br />
+          <span class="small">PMID 33501848</span>
+        </div>
+        <div class="metric">
+          <strong>Delayed sternal closure</strong>
+          Most common primary procedure in the STS congenital surgery database summary<br />
+          <span class="small">PMID 33501848</span>
+        </div>
+        <div class="metric">
+          <strong>~3% operative mortality</strong>
+          Aggregate pediatric congenital heart surgery operative mortality<br />
+          <span class="small">PMID 32123122</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Evidence table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Domain</th>
+            <th>Metric</th>
+            <th>Year or window</th>
+            <th>Value</th>
+            <th>PMID</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Burden</td>
+            <td>All-age prevalence</td>
+            <td>2010</td>
+            <td>2.4 million people</td>
+            <td>33501848</td>
+          </tr>
+          <tr>
+            <td>Burden</td>
+            <td>Adult prevalence expectation</td>
+            <td>2021 report</td>
+            <td>1 in 150 adults</td>
+            <td>33501848</td>
+          </tr>
+          <tr>
+            <td>Incidence</td>
+            <td>Critical CHD birth prevalence</td>
+            <td>2010 to 2014 births</td>
+            <td>19.93 per 10,000 live births</td>
+            <td>31580536</td>
+          </tr>
+          <tr>
+            <td>Mortality</td>
+            <td>Age-adjusted death rate</td>
+            <td>2018</td>
+            <td>0.9 per 100,000</td>
+            <td>33501848</td>
+          </tr>
+          <tr>
+            <td>Surgery</td>
+            <td>Congenital heart surgery volume</td>
+            <td>2015 to 2018</td>
+            <td>123,777 surgeries</td>
+            <td>33501848</td>
+          </tr>
+          <tr>
+            <td>Surgery</td>
+            <td>Most common primary procedure</td>
+            <td>2015 to 2018</td>
+            <td>Delayed sternal closure</td>
+            <td>33501848</td>
+          </tr>
+          <tr>
+            <td>Operative outcome</td>
+            <td>Aggregate pediatric operative mortality</td>
+            <td>2020 review</td>
+            <td>Approximately 3%</td>
+            <td>32123122</td>
+          </tr>
+          <tr>
+            <td>Operative outcome</td>
+            <td>ACHD surgery admissions</td>
+            <td>2005 to 2009</td>
+            <td>16,841 admissions</td>
+            <td>30976885</td>
+          </tr>
+          <tr>
+            <td>Operative outcome</td>
+            <td>Mortality with complication vs without complication</td>
+            <td>2005 to 2009</td>
+            <td>4.6% vs 0.9%</td>
+            <td>30976885</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card">
+      <h2>Key caveat</h2>
       <p>
-        Raw exports live in <code>data/raw</code>, cleaned evidence records in <code>data/processed</code>,
-        dossier-specific searches in <code>searches/</code>, and publishable outputs in <code>reports/</code> and <code>site/</code>.
+        The approved PMID set is strong for prevalence, mortality rate, surgery volume, and operative outcomes,
+        but weaker for a single modern national long-term survival estimate by lesion class. The final draft therefore
+        uses transparent operative-outcome and survivor-count proxies instead of overstating certainty.
       </p>
+    </div>
+
+    <div class="card">
+      <h2>Companion files</h2>
+      <ul>
+        <li><code>searches/VESPA/chd_usa_2026/search_log.md</code></li>
+        <li><code>searches/VESPA/chd_usa_2026/candidate_sources.md</code></li>
+        <li><code>searches/VESPA/chd_usa_2026/evidence_entries.yaml</code></li>
+        <li><code>reports/overleaf/main.tex</code></li>
+      </ul>
     </div>
   </body>
 </html>

@@ -1,88 +1,100 @@
 # Candidate sources for USA congenital heart disease statistics
 
-This file groups the first-pass PubMed hits for the VESPA CHD USA dossier. These are not yet accepted as final evidence entries. They are triaged into likely core sources, possibly useful context, and likely off-target/noise.
+This file records the *approved-source* triage for the VESPA CHD USA dossier. The final draft is intentionally limited to PMIDs that appeared in the original PubMed search-result sets captured on 2026-04-19.
 
-## Why the AHA annual statistics updates are high-priority
+## Final retained quantitative sources
 
-The American Heart Association annual *Heart Disease and Stroke Statistics* updates look like the strongest starting point because they are recent, nationally oriented, and specifically designed to summarize burden metrics, mortality, and trend data across cardiovascular conditions. Even when they are not CHD-only primary studies, they are likely to point directly to the most current benchmark numbers and to the underlying source literature we will need for the grant narrative.
+### Core national burden and prevalence
+- **PMID 33501848** (*Circulation*, 2021)  
+  *Heart Disease and Stroke Statistics-2021 Update: A Report From the American Heart Association.*  
+  Final role: primary national summary source. Extracted the following directly from the approved text set:
+  - estimated US all-age prevalence of congenital cardiovascular defects in 2010: **2.4 million**
+  - expected adult prevalence: **1 in 150 adults**
+  - age-adjusted mortality rate in 2018: **0.9 per 100,000**
+  - congenital heart surgery volume in the STS database from 2015 to 2018: **123,777 surgeries**
+  - most common primary procedure: **delayed sternal closure**
 
-## Likely core sources
-
-### National burden and prevalence
-- **PMID 41562125** (2026, *Circulation*)  
-  *2026 Heart Disease and Stroke Statistics: A Report of US and Global Data From the American Heart Association.*  
-  Reason: most recent AHA update, likely best starting point for current national CHD burden framing.
-
-- **PMID 39866113** (2025, *Circulation*)  
-  *2025 Heart Disease and Stroke Statistics: A Report of US and Global Data From the American Heart Association.*  
-  Reason: recent national statistics compendium, likely contains useful CHD tables or references.
-
-- **PMID 38264914** (2024, *Circulation*)  
-  *2024 Heart Disease and Stroke Statistics: A Report of US and Global Data From the American Heart Association.*  
-  Reason: near-current benchmark source for national cardiovascular statistics including CHD context.
-
-- **PMID 36695182** (2023, *Circulation*)  
-  *Heart Disease and Stroke Statistics-2023 Update: A Report From the American Heart Association.*  
-  Reason: recent national statistics source, useful for trend continuity.
-
-- **PMID 31580536** (2019, *Birth Defects Research*)  
+- **PMID 31580536** (*Birth Defects Research*, 2019)  
   *National population-based estimates for major birth defects, 2010-2014.*  
-  Reason: directly relevant for national congenital defect counts and incidence framing.
+  Final role: birth-prevalence anchor. Extracted metric:
+  - **19.93 per 10,000 live births** for the 12 critical CHD defects combined.
 
-- **PMID 14999190** (2004, *American Heart Journal*)  
-  *Prevalence of congenital heart disease.*  
-  Reason: older but potentially foundational prevalence benchmark, especially for historical comparison.
-
-### Mortality and adult burden
-- **PMID 38018491** (2023, *Journal of the American Heart Association*)  
-  *Mortality and Morbidity of Heart Failure Hospitalization in Adult Patients With Congenital Heart Disease.*  
-  Reason: likely useful for adult CHD outcomes and mortality framing.
-
-- **PMID 35491368** (2022, *Journal of Cardiothoracic and Vascular Anesthesia*)  
+- **PMID 35491368** (*Journal of Cardiothoracic and Vascular Anesthesia*, 2022)  
   *Mortality in Adult Congenital Heart Disease: Analysis of Outcomes and Risk Stratification.*  
-  Reason: likely useful for adult CHD mortality statistics and risk context.
+  Final role: updated adult-burden framing. Extracted metric:
+  - **>1.4 million adults** in the United States living with a congenital heart defect.
 
-- **PMID 28617685** (2017, *Current Opinion in Cardiology*)  
+- **PMID 28617685** (*Current Opinion in Cardiology*, 2017)  
   *Adult congenital heart disease: magnitude of the problem.*  
-  Reason: likely useful synthesis of adult CHD burden in the United States.
+  Final role: corroborating adult-burden review. Extracted metric:
+  - **>1 million adults** with ACHD in the United States.
 
-### Surgery and procedural burden
-- **PMID 30976885** (2019, *Pediatric Cardiology*)  
-  *Morbidity During Adult Congenital Heart Surgery Admissions.*  
-  Reason: directly relevant to surgery admissions and outcome burden.
-
-- **PMID 32123122** (2020, *NeoReviews*)  
+### Survival and mortality framing retained from approved searches
+- **PMID 32123122** (*NeoReviews*, 2020)  
   *Quality Improvement in Congenital Heart Surgery.*  
-  Reason: may help identify procedure classes and surgical quality metrics, though likely contextual rather than purely volumetric.
+  Final role: operative-outcome anchor. Extracted metric:
+  - aggregate operative mortality for congenital heart surgery in children of **approximately 3%**.
 
-- **PMID 36580104** (2024, *Pediatric Cardiology*)  
+- **PMID 30976885** (*Pediatric Cardiology*, 2019)  
+  *Morbidity During Adult Congenital Heart Surgery Admissions.*  
+  Final role: adult congenital surgery outcomes. Extracted metrics:
+  - **16,841 ACHD surgery admissions** during 2005 to 2009
+  - **46.9%** with at least one complication
+  - mortality **4.6% with complication versus 0.9% without**.
+
+- **PMID 14999190** (*American Heart Journal*, 2004)  
+  *Prevalence of congenital heart disease.*  
+  Final role: historical survival-projection context. Extracted metrics:
+  - if treated, projected survivors: **750,000 simple**, **400,000 moderate**, **180,000 complex** lesions
+  - without treatment: **400,000**, **220,000**, and **30,000**, respectively.
+
+### Additional retained burden and utilization context
+- **PMID 36580104** (*Pediatric Cardiology*, 2024)  
   *Racial Disparity: The Adult Congenital Heart Disease Surgery Perspective.*  
-  Reason: likely relevant for surgery subgroups and equity framing.
+  Final role: broad US adult congenital surgery denominator. Extracted metric:
+  - **174,370 patients** underwent ACHD surgery during 2005 to 2014 in an all-payer US database.
 
-## Possibly useful context
-- **PMID 33501848** (2021, *Circulation*)  AHA 2021 statistics update. Useful for time-series consistency.
-- **PMID 35078371** (2022, *Circulation*)  AHA 2022 statistics update. Useful for time-series consistency.
-- **PMID 31992061** (2020, *Circulation*)  AHA 2020 statistics update. Useful for time-series consistency.
-- **PMID 32622484** (2020, *Cardiology Clinics*)  *Adult Congenital Heart Disease-Preparing for the Changing Work Force Demand.* May help with service-demand framing.
-- **PMID 30032387** (2018, *Current Cardiology Reports*)  *Preoperative Evaluation of Adult Congenital Heart Disease Patients for Non-cardiac Surgery.* Likely contextual only.
-- **PMID 20579534** (2010, *JACC*)  *Bicuspid aortic valve disease.* Possibly useful if congenital lesion subtypes become important.
-- **PMID 25638345** (2015, *Cell Biochemistry and Biophysics*)  General review, potentially useful for broad background but not ideal for exact USA statistics.
+- **PMID 38018491** (*Journal of the American Heart Association*, 2023)  
+  *Mortality and Morbidity of Heart Failure Hospitalization in Adult Patients With Congenital Heart Disease.*  
+  Final role: recent adult outcome burden. Extracted metrics:
+  - **26,454 unique ACHD admissions** from 2010 to 2020
+  - mortality hazard ratio **1.86** for ACHD admissions with HF versus without HF.
 
-## Likely off-target / noise for the main statistics dossier
-- **PMID 37704344** (2023, *Pediatric Clinics of North America*)  *Newborn Screening.* Likely screening-focused rather than national burden statistics.
-- **PMID 27390667** (2016, *Avicenna Journal of Medicine*)  *Critical congenital heart disease screening.* Likely off-target for USA national counts.
-- **PMID 26876122** (2016, *Clinics in Perinatology*)  *Screening for Critical Congenital Heart Disease.* Likely screening-focused.
-- **PMID 35641458** (2022, *NeoReviews*)  *Rethinking Congenital Heart Disease in Preterm Neonates.* Useful clinically, but probably not central for national statistics.
-- **PMID 29463390** (2018, *Seminars in Perinatology*)  *Managing congenital heart disease in the obstetric patient.* Likely not a core epidemiology source.
-- **PMID 39947807** (2025, *American Journal of Transplantation*)  *OPTN/SRTR 2023 Annual Data Report: Heart.* Likely transplant-focused and not a core CHD burden source.
-- **PMID 29472380** (2018, *Circulation*)  *Spontaneous Coronary Artery Dissection: Current State of the Science.* Clearly off-target.
+## Approved PMIDs reviewed but not needed in the final quantitative table
 
-## Immediate next review order
-1. PMID 41562125
-2. PMID 39866113
-3. PMID 38264914
-4. PMID 31580536
-5. PMID 38018491
-6. PMID 35491368
-7. PMID 28617685
-8. PMID 30976885
+These PMIDs remained inside the approved search universe but did not add cleaner headline numbers than the retained set above:
+
+- **PMIDs 36695182, 38264914, 39866113, 35078371, 41562125** — newer AHA annual updates, useful for continuity but not necessary once PMID 33501848 yielded the needed CHD-specific figures.
+- **PMID 31992061** — older AHA annual update, similarly useful for consistency checks.
+- **PMID 32622484** — workforce-demand review, more service-planning than burden-statistics focused.
+- **PMID 20579534** — bicuspid aortic valve review, congenital but too lesion-specific for the main dossier.
+- **PMID 30032387** — non-cardiac surgery preoperative review, contextual only.
+
+## Approved PMIDs judged off-target or too weak for the main dossier
+
+- **PMID 25638345** — broad general review with weak provenance for exact US burden numbers.
+- **PMID 37704344** — newborn screening overview rather than national CHD statistics.
+- **PMID 27390667** — critical CHD screening review, not a national burden source.
+- **PMID 35641458** — prematurity and CHD clinical review, not a main national-statistics source.
+- **PMID 39947807** — transplant annual data report, not a core CHD epidemiology source.
+- **PMID 29463390** — obstetric management review, not a national burden source.
+- **PMID 26876122** — screening-focused review.
+- **PMID 29472380** — clearly off-topic.
+
+## Codex-surfaced PMIDs intentionally excluded from the final merge
+
+Codex did successfully run and found several useful-looking papers, but the following PMIDs were outside the approved PubMed result sets and were therefore not merged:
+
+- 27382105
+- 24222433
+- 21098447
+- 40698377
+- 29793633
+- 31272703
+- 38522772
+- 21911232
+- 23804929
+
+## Final recommendation
+
+Use the final dossier as a *source-constrained first complete draft*. If the next pass is allowed to widen beyond the original result sets, the first upgrade target should be a modern US long-term survival source and a lesion-specific mortality source. For the present version, those stronger external PMIDs were intentionally left out.

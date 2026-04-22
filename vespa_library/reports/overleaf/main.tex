@@ -2,9 +2,10 @@
 \usepackage[margin=1in]{geometry}
 \usepackage{booktabs}
 \usepackage{longtable}
-\usepackage{hyperref}
+\usepackage{array}
 \usepackage{enumitem}
-\usepackage{graphicx}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue]{hyperref}
+
 \title{Congenital Heart Disease Statistics in the United States\\VESPA evidence dossier}
 \author{VESPA literature library}
 \date{\today}
@@ -12,40 +13,74 @@
 \begin{document}
 \maketitle
 
-\section{Purpose}
-This dossier compiles the latest PMID-backed statistics for congenital heart disease (CHD) in the United States for use in the VESPA grant application. The goal is to provide traceable evidence on case numbers, mortality, survival, surgery volume, and major surgery classes.
+\section{Purpose and scope}
+This dossier compiles PMID-backed statistics for congenital heart disease (CHD) in the United States for VESPA grant writing. The present draft is deliberately \textbf{source-constrained}: every retained claim comes from the original PubMed result sets logged in \texttt{searches/VESPA/chd\_usa\_2026/search\_log.md}. During a later Codex-assisted drafting pass, several stronger-looking external papers were surfaced, but those PMIDs were excluded because they were outside the approved search universe.
 
-\section{Questions to answer}
+\section{Headline findings for the CHD USA draft}
 \begin{itemize}[leftmargin=1.5em]
-  \item How many people in the United States are living with congenital heart disease?
-  \item How many new cases occur each year?
-  \item How many deaths are attributed to CHD, and in which age groups?
-  \item What are the reported survival rates?
-  \item How many cardiac surgeries or interventions are performed, and which procedure classes dominate?
+  \item The American Heart Association 2021 statistical update estimated \textbf{2.4 million people} in the United States were living with congenital cardiovascular defects across all ages in 2010, and that \textbf{1 in 150 adults} has some form of congenital heart defect (PMID 33501848).
+  \item A 2022 adult CHD review estimated \textbf{more than 1.4 million US adults} are living with a congenital heart defect (PMID 35491368), consistent with an earlier review citing \textbf{more than 1 million adults} (PMID 28617685).
+  \item National birth-defects surveillance estimated a combined birth prevalence of \textbf{19.93 critical CHD cases per 10,000 live births} for the 12 critical CHD defects in the 2010 to 2014 US birth cohorts (PMID 31580536).
+  \item In 2018, the age-adjusted US death rate attributable to congenital cardiovascular defects was \textbf{0.9 per 100,000} (PMID 33501848).
+  \item The Society of Thoracic Surgeons Congenital Heart Surgery Database recorded \textbf{123,777 congenital heart surgeries} from January 2015 through December 2018, with \textbf{delayed sternal closure} reported as the most common primary procedure (PMID 33501848).
+  \item Survival evidence within the approved PMID set is strongest for operative outcomes rather than a single national long-term survival curve: pediatric congenital heart surgery had aggregate operative mortality of \textbf{approximately 3\%} (PMID 32123122), while adult congenital surgery admissions with complications had \textbf{4.6\%} mortality versus \textbf{0.9\%} without complications (PMID 30976885).
 \end{itemize}
 
-\section{Evidence table template}
-\begin{longtable}{p{2.4cm} p{2.7cm} p{1.5cm} p{1.5cm} p{4.4cm} p{1.6cm}}
+\section{Evidence table}
+\begin{longtable}{>{\raggedright\arraybackslash}p{2.2cm} >{\raggedright\arraybackslash}p{3.2cm} >{\raggedright\arraybackslash}p{1.8cm} >{\raggedright\arraybackslash}p{2.5cm} >{\raggedright\arraybackslash}p{4.6cm} >{\raggedright\arraybackslash}p{1.4cm}}
 \toprule
-Metric & Population / geography & Year & Value & Source title & PMID \\
+Domain & Metric & Year or window & Value & Source title & PMID \\
 \midrule
 \endfirsthead
 \toprule
-Metric & Population / geography & Year & Value & Source title & PMID \\
+Domain & Metric & Year or window & Value & Source title & PMID \\
 \midrule
 \endhead
-Adults living with CHD & United States & 2022 & $>1.4$ million & Mortality in Adult Congenital Heart Disease & 35491368 \\
-Critical CHD birth prevalence & United States live births & 2019 & 19.93 per 10{,}000 & National population-based estimates for major birth defects & 31580536 \\
-ACHD surgery admissions & United States, age 18--49 & 2019 & 16{,}841 admissions (2005--2009 data) & Morbidity During Adult Congenital Heart Surgery Admissions & 30976885 \\
-Pediatric CHD operative mortality & United States & 2020 & \~3\% aggregate operative mortality & Quality Improvement in Congenital Heart Surgery & 32123122 \\
-ACHD surgery cohort size & United States & 2024 & 174{,}370 patients (2005--2014 data) & Racial Disparity: The Adult Congenital Heart Disease Surgery Perspective & 36580104 \\
+Burden & All-age prevalence in the United States & 2010 & 2.4 million people & \textit{Heart Disease and Stroke Statistics-2021 Update} & 33501848 \\
+Burden & Adult prevalence expectation & 2021 report & 1 in 150 adults & \textit{Heart Disease and Stroke Statistics-2021 Update} & 33501848 \\
+Burden & Adults living with congenital heart defect & 2022 review & $>$1.4 million adults & \textit{Mortality in Adult Congenital Heart Disease} & 35491368 \\
+Incidence & Critical CHD birth prevalence & 2010--2014 births & 19.93 per 10,000 live births & \textit{National population-based estimates for major birth defects, 2010-2014} & 31580536 \\
+Mortality & Age-adjusted death rate attributable to congenital cardiovascular defects & 2018 & 0.9 per 100,000 & \textit{Heart Disease and Stroke Statistics-2021 Update} & 33501848 \\
+Surgery & Congenital heart surgeries in STS database & 2015--2018 & 123,777 surgeries & \textit{Heart Disease and Stroke Statistics-2021 Update} & 33501848 \\
+Surgery & Most common primary procedure & 2015--2018 & delayed sternal closure & \textit{Heart Disease and Stroke Statistics-2021 Update} & 33501848 \\
+Survival or operative outcome & Aggregate pediatric operative mortality & 2020 review & approximately 3\% & \textit{Quality Improvement in Congenital Heart Surgery} & 32123122 \\
+Survival or operative outcome & Adult CHD surgery admissions & 2005--2009 & 16,841 admissions & \textit{Morbidity During Adult Congenital Heart Surgery Admissions} & 30976885 \\
+Survival or operative outcome & Mortality for adult CHD surgery admissions with complication vs without complication & 2005--2009 & 4.6\% vs 0.9\% & \textit{Morbidity During Adult Congenital Heart Surgery Admissions} & 30976885 \\
+Burden or utilization & ACHD surgery patients in US all-payer database & 2005--2014 & 174,370 patients & \textit{Racial Disparity: The Adult Congenital Heart Disease Surgery Perspective} & 36580104 \\
+Burden or utilization & Unique ACHD admissions, HF and non-HF & 2010--2020 & 26,454 admissions & \textit{Mortality and Morbidity of Heart Failure Hospitalization in Adult Patients With Congenital Heart Disease} & 38018491 \\
 \bottomrule
 \end{longtable}
 
-\section{Search provenance}
-See the search log in \texttt{searches/VESPA/chd\_usa\_2026/search\_log.md} and the evidence template in \texttt{searches/VESPA/chd\_usa\_2026/evidence\_template.yaml}.
+\section{Narrative synthesis}
 
-\section{Notes}
-This file is designed to be copied directly into Overleaf as the starting point for the CHD USA report.
+\subsection{Case burden and prevalence}
+The approved PMID set supports a clear burden narrative. The strongest national headline is the AHA estimate that \textbf{2.4 million} people in the United States were living with congenital cardiovascular defects in 2010 (PMID 33501848). For adult framing, the same source reports that \textbf{1 in 150 adults} is expected to have some form of congenital heart defect. This adult burden is consistent with review-based estimates of \textbf{more than 1 million} adults (PMID 28617685) and \textbf{more than 1.4 million} adults (PMID 35491368).
+
+For incident burden at birth, the cleanest approved quantitative source is PMID 31580536, which reports a pooled national estimate of \textbf{19.93 critical CHD cases per 10,000 live births} across the 12 critical CHD defects combined for the 2010 to 2014 US birth cohorts.
+
+\subsection{Mortality and survival}
+For national mortality, PMID 33501848 provides a clean US statistic: in 2018 the age-adjusted death rate attributable to congenital cardiovascular defects was \textbf{0.9 per 100,000}. The approved search set was less strong for a single modern long-term survival percentage covering all CHD. To avoid overclaiming, this draft retains two transparent survival-oriented proxies instead.
+
+First, PMID 32123122 reports that aggregate operative mortality for congenital heart surgery in children is \textbf{approximately 3\%}, implying contemporary perioperative survival is high even though the paper is framed as a quality-improvement review rather than a population registry report. Second, PMID 14999190 provides historical survivor-count projections: if all patients born between 1940 and 2002 had been treated, projected survivors would have been \textbf{750,000} with simple lesions, \textbf{400,000} with moderate lesions, and \textbf{180,000} with complex lesions; without treatment, the corresponding survivor counts were \textbf{400,000}, \textbf{220,000}, and \textbf{30,000}.
+
+\subsection{Surgery volume and procedure profile}
+The strongest approved national surgery-volume figure comes from PMID 33501848, which states that the Society of Thoracic Surgeons Congenital Heart Surgery Database recorded \textbf{123,777 congenital heart surgeries} between January 2015 and December 2018. The same source gives a procedure-type anchor, identifying \textbf{delayed sternal closure} as the most common primary procedure.
+
+For adult congenital surgery burden, PMID 30976885 identified \textbf{16,841} ACHD surgery admissions among adults aged 18 to 49 during 2005 to 2009, with complications in \textbf{46.9\%} of admissions and mortality of \textbf{4.6\%} when a complication occurred versus \textbf{0.9\%} without complications. A broader all-payer US analysis in PMID 36580104 reported \textbf{174,370} ACHD surgery patients during 2005 to 2014.
+
+\section{Caveats for grant writing}
+\begin{itemize}[leftmargin=1.5em]
+  \item This version is intentionally conservative. Several richer lesion-specific mortality and long-term survival PMIDs were found during a Codex-assisted pass but were not in the approved PubMed result sets, so they were excluded rather than merged without permission.
+  \item The approved source set is strong for prevalence, surgery burden, and operative outcome framing, but weaker for a single modern national long-term survival estimate by lesion class.
+  \item If the next pass is allowed to widen beyond the original result sets, the first upgrade target should be a modern US long-term survival paper and a lesion-specific mortality paper.
+\end{itemize}
+
+\section{File provenance}
+All extraction details are recorded in:
+\begin{itemize}[leftmargin=1.5em]
+  \item \texttt{searches/VESPA/chd\_usa\_2026/search\_log.md}
+  \item \texttt{searches/VESPA/chd\_usa\_2026/candidate\_sources.md}
+  \item \texttt{searches/VESPA/chd\_usa\_2026/evidence\_entries.yaml}
+\end{itemize}
 
 \end{document}
