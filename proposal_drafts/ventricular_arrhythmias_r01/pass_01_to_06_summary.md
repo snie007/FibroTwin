@@ -3,6 +3,7 @@
 ## Version status
 - `v0` = first Overleaf push
 - `v1` = reviewer-aware revision with explicit PMID comment anchors in the LaTeX source
+- `v2` = deeper clinical + technical + anti-AI revision with sharper mechanism language and cleaner reviewer-facing framing
 
 ## What changed in v1
 
@@ -36,8 +37,25 @@
 - Kept only the strongest rationale sentences.
 - Preserved one-page-friendly structure while adding hidden reference anchors in comments.
 
-## Next step after v1
-The next revision should be `v2`, focused on:
-- even sharper clinical stakes in the first 2 sentences,
-- stronger emphasis on non-uniqueness and identifiability in the inverse problem,
-- slightly more conservative phrasing in Aim 3 so no reviewer thinks the project promises outcome improvement too early.
+## What changed in v2
+
+### Harder clinical reviewer pass
+- Reframed the opening around the actual decisions clinicians make.
+- Clarified that current tests describe phenotype but do not explain mechanism in an individual patient.
+- Tightened the end impact statement around target localization, pacing choice, and inherited arrhythmia interpretation.
+
+### Harder technical reviewer pass
+- Added the key concept that different internal activation states can project to similar body-surface signals.
+- Made identifiability and competing mechanisms more explicit in the central hypothesis.
+- Narrowed Aim 2 to a constrained set of latent variables rather than a vague mechanism space.
+
+### Anti-AI / final compression pass
+- Removed more generic grant-language filler.
+- Replaced stock impact phrasing with a more domain-specific closing sentence.
+- Improved sentence rhythm and reduced templated wording.
+
+## Next step after v2
+The next revision should be `v3`, focused on:
+- deciding how many citations to expose on the visible aims page versus keeping as source comments only,
+- trimming any remaining long sentences in Aim 1 and Aim 2,
+- testing whether the opening paragraph can become even more clinically punchy without losing technical credibility.
