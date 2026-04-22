@@ -394,5 +394,41 @@
     "pdf_status": "pmcid_no_pdf_download",
     "pdf_path": "",
     "note_path": "/home/snie007/.openclaw/workspaces/orchestrator/proposal_drafts/ventricular_arrhythmias_r01/paper_library/notes/PMID-38323181_The_role_of_computational_methods_in_cardiovascular_medicine_a_narrative_review.md"
+  },
+  {
+    "pmid": "31094217",
+    "title": "Non-invasive cardiac mapping for non-response in cardiac resynchronization therapy",
+    "journal": "Ann Med",
+    "year": "2019",
+    "doi": "10.1080/07853890.2019.1616109",
+    "pmcid": "PMC3819984",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/31094217/",
+    "pdf_status": "pmcid_no_pdf_download",
+    "pdf_path": "",
+    "note_path": "proposal_drafts/ventricular_arrhythmias_r01/paper_library/notes/PMID-31094217_Non_invasive_cardiac_mapping_for_non_response_in_cardiac_resynchronization_therapy.md"
+  },
+  {
+    "pmid": "35000207",
+    "title": "QRS area as a predictor of cardiac resynchronization therapy response: A systematic review and meta-analysis",
+    "journal": "Pacing Clin Electrophysiol",
+    "year": "2022",
+    "doi": "10.1111/pace.14441",
+    "pmcid": "",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/35000207/",
+    "pdf_status": "no_pmcid",
+    "pdf_path": "",
+    "note_path": "proposal_drafts/ventricular_arrhythmias_r01/paper_library/notes/PMID-35000207_QRS_area_as_a_predictor_of_cardiac_resynchronization_therapy_response_A_systematic_review_.md"
+  },
+  {
+    "pmid": "33602393",
+    "title": "Left Bundle Branch Area Pacing for Cardiac Resynchronization Therapy: Results From the International LBBAP Collaborative Study\u00a0Group",
+    "journal": "JACC Clin Electrophysiol",
+    "year": "2021",
+    "doi": "10.1016/j.jacep.2020.08.015",
+    "pmcid": "",
+    "pubmed_url": "https://pubmed.ncbi.nlm.nih.gov/33602393/",
+    "pdf_status": "no_pmcid",
+    "pdf_path": "",
+    "note_path": "proposal_drafts/ventricular_arrhythmias_r01/paper_library/notes/PMID-33602393_Left_Bundle_Branch_Area_Pacing_for_Cardiac_Resynchronization_Therapy_Results_From_the_Inte.md"
   }
 ]
