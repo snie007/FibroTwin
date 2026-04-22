@@ -1,0 +1,12 @@
+# The pathophysiology of heart failure
+
+- PMID: 22227365
+- PubMed: https://pubmed.ncbi.nlm.nih.gov/22227365/
+- Journal: Cardiovasc Pathol
+- Year: 2012
+- DOI: 10.1016/j.carpath.2011.11.007
+- PMCID: NA
+
+## Abstract
+
+Heart failure is a clinical syndrome that results when the heart is unable to provide sufficient blood flow to meet metabolic requirements or accommodate systemic venous return. This common condition affects over 5 million people in the United States at a cost of $10-38 billion per year. Heart failure results from injury to the myocardium from a variety of causes including ischemic heart disease, hypertension, and diabetes. Less common etiologies include cardiomyopathies, valvular disease, myocarditis, infections, systemic toxins, and cardiotoxic drugs. As the heart fails, patients develop symptoms which include dyspnea from pulmonary congestion, and peripheral edema and ascites from impaired venous return. Constitutional symptoms such as nausea, lack of appetite, and fatigue are also common. There are several compensatory mechanisms that occur as the failing heart attempts to maintain adequate function. These include increasing cardiac output via the Frank-Starling mechanism, increasing ventricular volume and wall thickness through ventricular remodeling, and maintaining tissue perfusion with augmented mean arterial pressure through activation of neurohormonal systems. Although initially beneficial in the early stages of heart failure, all of these compensatory mechanisms eventually lead to a vicious cycle of worsening heart failure. Treatment strategies have been developed based upon the understanding of these compensatory mechanisms. Medical therapy includes diuresis, suppression of the overactive neurohormonal systems, and augmentation of contractility. Surgical options include ventricular resynchronization therapy, surgical ventricular remodeling, ventricular assist device implantation, and heart transplantation. Despite significant understanding of the underlying pathophysiological mechanisms in heart failure, this disease causes significant morbidity and carries a 50% 5-year mortality.

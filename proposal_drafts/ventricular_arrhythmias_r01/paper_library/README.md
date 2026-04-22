@@ -1,0 +1,40 @@
+# Ventricular arrhythmias R01 paper library
+
+- Total records: 33
+- PDFs downloaded: 0
+- Notes folder contains a PubMed-backed abstract note for every PMID.
+- PDFs folder contains PMC-downloadable full texts where available.
+
+- PMID 29173412: Heart Failure and Sudden Cardiac Death (2017) [no_pmcid]
+- PMID 22227365: The pathophysiology of heart failure (2012) [no_pmcid]
+- PMID 24948569: On the underutilization of cardiac resynchronization therapy (2014) [no_pmcid]
+- PMID 25813838: Sudden cardiac death (2015) [no_pmcid]
+- PMID 31586529: Prediction and Prevention of Sudden Death in the Brugada Syndrome (2019) [no_pmcid]
+- PMID 31993492: Brugada syndrome: A comprehensive review of pathophysiological mechanisms and risk stratification strategies (2020) [pmcid_no_pdf_download]
+- PMID 15649241: Challenges facing validation of noninvasive electrical imaging of the heart (2005) [pmcid_no_pdf_download]
+- PMID 34777827: The Use of Electrocardiographic Imaging in Localising the Origin of Arrhythmias During Catheter Ablation of Ventricular Tachycardia (2021) [pmcid_no_pdf_download]
+- PMID 33880931: Electrocardiographic Imaging of Repolarization Abnormalities (2021) [pmcid_no_pdf_download]
+- PMID 37390586: Electrocardiographic imaging to guide ablation of ventricular arrhythmias and agreement between two different systems (2023) [no_pmcid]
+- PMID 37283271: 2023 HRS/APHRS/LAHRS guideline on cardiac physiologic pacing for the avoidance and mitigation of heart failure (2023) [pmcid_no_pdf_download]
+- PMID 35715087: Conduction System Pacing for Cardiac Resynchronization Therapy (2022) [no_pmcid]
+- PMID 37767743: Effectiveness of conduction system pacing for cardiac resynchronization therapy: A systematic review and network meta-analysis (2023) [no_pmcid]
+- PMID 30091132: Cardiac resynchronisation therapy: current benefits and pitfalls (2018) [no_pmcid]
+- PMID 33247913: The evolution of cardiac resynchronization therapy and an introduction to conduction system pacing: a conceptual review (2021) [no_pmcid]
+- PMID 31075787: 2019 HRS/EHRA/APHRS/LAHRS expert consensus statement on catheter ablation of ventricular arrhythmias (2019) [pmcid_no_pdf_download]
+- PMID 31706471: Mapping and Ablation of Ventricular Arrhythmias in Cardiomyopathies (2019) [no_pmcid]
+- PMID 28167086: Entrainment Mapping (2017) [no_pmcid]
+- PMID 38262674: Non-invasive detection of slow conduction with cardiac magnetic resonance imaging for ventricular tachycardia ablation (2024) [pmcid_no_pdf_download]
+- PMID 36607130: Scar conducting channel characterization to predict arrhythmogenicity during ventricular tachycardia ablation (2023) [pmcid_no_pdf_download]
+- PMID 31681965: Biomarkers to predict the response to cardiac resynchronization therapy (2019) [no_pmcid]
+- PMID 30988339: Low fibrosis biomarker levels predict cardiac resynchronization therapy response (2019) [pmcid_no_pdf_download]
+- PMID 39101582: A Novel Liver Fibrosis Marker FIB-5 Index Predicted Response to Cardiac Resynchronization Therapy and Prognostic Outcomes in Patients With Heart Failure (2024) [pmcid_no_pdf_download]
+- PMID 38703163: Lipomatous Metaplasia Is Associated With Ventricular Tachycardia Recurrence Following Ablation in Patients With Nonischemic Cardiomyopathy (2024) [pmcid_no_pdf_download]
+- PMID 33004129: Inflammation as a Predictor of Recurrent Ventricular Tachycardia After Ablation in Patients With Myocarditis (2020) [no_pmcid]
+- PMID 37819047: Post-Ablation cardiac Magnetic resonance to assess Ventricular Tachycardia recurrence (PAM-VT study) (2024) [pmcid_no_pdf_download]
+- PMID 29097296: 2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death: A Report of the American College of Cardiology/American Heart Association Task Force on Clinical Practice Guidelines and the Heart Rhythm Society (2018) [no_pmcid]
+- PMID 33303478: Translational applications of computational modelling for patients with cardiac arrhythmias (2020) [pmcid_no_pdf_download]
+- PMID 32448065: Considering discrepancy when calibrating a mechanistic electrophysiology model (2020) [pmcid_no_pdf_download]
+- PMID 25368538: Effects of fibrosis morphology on reentrant ventricular tachycardia inducibility and simulation fidelity in patient-derived models (2014) [pmcid_no_pdf_download]
+- PMID 33421051: Brugada syndrome and reduced right ventricular outflow tract conduction reserve: a final common pathway? (2021) [no_pmcid]
+- PMID 36542434: Delayed depolarization and histologic abnormalities underlie the Brugada syndrome (2023) [no_pmcid]
+- PMID 38323181: The role of computational methods in cardiovascular medicine: a narrative review (2024) [pmcid_no_pdf_download]

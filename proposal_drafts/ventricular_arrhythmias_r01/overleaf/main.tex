@@ -4,12 +4,14 @@
 \usepackage[scaled=1.0]{tgheros}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage[square,numbers,sort&compress]{natbib}
+\usepackage[colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue]{hyperref}
 \usepackage{ragged2e}
 \usepackage{titlesec}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0.35em}
 \titleformat{\section}{\bfseries\fontsize{11pt}{12pt}\selectfont}{}{0pt}{}
 \titlespacing*{\section}{0pt}{0pt}{0.25em}
+\newcommand{\pmidlink}[2]{\href{https://pubmed.ncbi.nlm.nih.gov/#1/}{PMID #1}: #2}
 
 \begin{document}
 \fontsize{11pt}{12pt}\selectfont
