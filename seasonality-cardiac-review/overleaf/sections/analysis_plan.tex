@@ -1,1 +1,9 @@
-Primary and sensitivity analyses for testing seasonality in cardiac MRI-derived phenotypes will be inserted here.
+The primary analysis should be performed on derived cardiac MRI phenotypes rather than on raw images alone. Candidate outcomes include ventricular volumes, ejection fractions, myocardial mass, atrial volumes, wall thickness measures, strain, and shape-derived latent variables or principal components.
+
+For each phenotype, convert the scan date to day-of-year and fit a regression model with annual sine and cosine terms, adjusting at minimum for age, sex, body size, acquisition year, and scanner/site/protocol. If repeated scans per participant exist, add a participant-level random intercept. If multiple centers or scanners contribute, consider random intercepts or fixed effects for those sources of variation.
+
+Primary hypothesis testing should use the joint test of the sine and cosine coefficients. Report effect size as seasonal amplitude with confidence intervals and the estimated timing of peak effect. Because many phenotypes may be tested, false-discovery-rate control is recommended.
+
+Sensitivity analyses should include: (i) cyclic GAMs on day-of-year, (ii) month-as-factor models, (iii) permutation tests that shuffle day-of-year within acquisition-year strata, and (iv) substitution of calendar day with environmental exposures such as daylight duration or temperature when those data are available. If high-dimensional image features are used, dimensionality reduction should precede seasonality testing, and the leading components should be validated with out-of-sample stability checks.
+
+A key design risk is confounding by operational acquisition patterns. If some scanners, protocols, or participant subgroups are disproportionately represented in particular seasons, apparent seasonality may be technical rather than biological. For that reason, descriptive plots of acquisition timing by year, scanner, and key demographics should be treated as a prerequisite analysis.

@@ -20,4 +20,15 @@ This repository is being assembled to support a systematic review and analysis p
 
 ## Current status
 
-Initial scaffold created. Literature searches and extraction are in progress.
+The repository now contains:
+- a curated cardiac seasonality evidence table (`metadata/review_a_extraction.csv`)
+- a curated seasonality methods table (`metadata/review_b_methods.csv`)
+- a screening log and PRISMA-style count summary (`search/`)
+- automatically retrieved open-access PDFs where available (`papers/pdfs/`)
+- a PDF access manifest (`papers/review_a_extraction_pdf_manifest.csv`)
+- narrative summaries and an MRI analysis plan (`notes/`)
+- an Overleaf-ready manuscript scaffold and upload zip (`overleaf/`, `overleaf_project.zip`)
+- a Python example for phenotype-level seasonality modeling (`scripts/example_seasonality_model.py`)
+
+Remaining limitation:
+- many included papers are not open access through Europe PMC, so the PDF repository is currently partial rather than complete.

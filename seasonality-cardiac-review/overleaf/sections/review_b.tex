@@ -1,1 +1,11 @@
-Narrative synthesis and methods comparison table for seasonality detection will be inserted here.
+The methods review strongly supports phenotype-level regression with annual cyclic terms as the primary inferential framework for this project. The most transferable classical framework is harmonic regression, implemented using sine and cosine terms for day-of-year. Closely related cosinor models remain standard in chronobiology and biomedical rhythm analysis.
+
+For a phenotype measured on day $d$, a practical starting model is
+\[
+y_i = \beta_0 + \beta_1 \sin\left(2\pi d_i/365.25\right) + \beta_2 \cos\left(2\pi d_i/365.25\right) + \mathbf{x}_i^\top\gamma + \varepsilon_i,
+\]
+where $\mathbf{x}_i$ contains demographic, anthropometric, technical, and calendar-year covariates. Testing $H_0: \beta_1 = \beta_2 = 0$ provides a direct test for annual seasonality. The fitted coefficients can be converted into amplitude and phase, giving interpretable estimates of effect size and timing.
+
+Generalized additive models with cyclic smooths are the preferred semiparametric sensitivity analysis, because they relax the assumption of a purely sinusoidal annual shape while retaining covariate adjustment. Mixed-effects extensions are recommended when repeated scans, center effects, or clustered acquisition patterns are present. By contrast, seasonal ARIMA and STL decomposition are better suited to regularly spaced aggregated series and should not be the main analysis for irregularly timed subject-level MRI data.
+
+Exploratory tools still have a role. Lomb--Scargle periodograms can be useful to inspect periodicity under irregular sampling, and wavelet methods can examine whether seasonal amplitude changes across years. However, these should complement, not replace, covariate-adjusted regression-based inference.
