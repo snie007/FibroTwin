@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BHF AI challenge evidence explorer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>BHF AI challenge evidence explorer</h1>
+    <p>Searchable notes and lightweight knowledge graph for the preliminary cardiovascular AI concept.</p>
+  </header>
+
+  <main>
+    <section class="controls card">
+      <div class="control-row">
+        <label>
+          <span>Search</span>
+          <input id="searchInput" type="search" placeholder="Search PMID, title, quote, number, domain...">
+        </label>
+        <label>
+          <span>Perspective</span>
+          <select id="perspectiveFilter"></select>
+        </label>
+        <label>
+          <span>Domain</span>
+          <select id="domainFilter"></select>
+        </label>
+        <label>
+          <span>Type</span>
+          <select id="typeFilter"></select>
+        </label>
+      </div>
+      <div id="summaryStats" class="summary-stats"></div>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Knowledge graph</h2>
+        <p>Evidence nodes connect to perspectives and domains.</p>
+      </div>
+      <svg id="graph" viewBox="0 0 1200 720" aria-label="Knowledge graph"></svg>
+    </section>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>Evidence records</h2>
+        <p id="resultCount"></p>
+      </div>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

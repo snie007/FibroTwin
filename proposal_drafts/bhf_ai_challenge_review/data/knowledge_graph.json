@@ -1,0 +1,733 @@
+{
+  "nodes": [
+    {
+      "id": "perspective:clinical",
+      "label": "clinical",
+      "kind": "perspective"
+    },
+    {
+      "id": "perspective:engineering",
+      "label": "engineering",
+      "kind": "perspective"
+    },
+    {
+      "id": "perspective:grant_reviewer",
+      "label": "grant reviewer",
+      "kind": "perspective"
+    },
+    {
+      "id": "perspective:patient",
+      "label": "patient",
+      "kind": "perspective"
+    },
+    {
+      "id": "perspective:policy_expert",
+      "label": "policy expert",
+      "kind": "perspective"
+    },
+    {
+      "id": "domain:atrial_fibrillation",
+      "label": "atrial fibrillation",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:cardiomyopathy",
+      "label": "cardiomyopathy",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:implementation",
+      "label": "implementation",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:post_mi",
+      "label": "post mi",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:programme_design",
+      "label": "programme design",
+      "kind": "domain"
+    },
+    {
+      "id": "evidence:bhf-grand-challenge-guidance",
+      "label": "BHF Cardiovascular Grand Challenge outline application guidance for applicants",
+      "kind": "pdf",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:bhf-grand-challenge-faq",
+      "label": "BHF Cardiovascular Grand Challenge FAQ",
+      "kind": "pdf",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:nice-esf",
+      "label": "NICE evidence standards framework for digital health technologies",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2022
+    },
+    {
+      "id": "evidence:nice-ai-reg-service",
+      "label": "NICE AI and digital regulations service",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:mhra-roadmap",
+      "label": "MHRA Software and AI as a Medical Device Change Programme roadmap",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2022
+    },
+    {
+      "id": "evidence:fda-ai-samd",
+      "label": "FDA Artificial Intelligence in Software as a Medical Device",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2025
+    },
+    {
+      "id": "evidence:nhs-ai-code-of-conduct",
+      "label": "New code of conduct for AI systems used by the NHS",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2019
+    },
+    {
+      "id": "evidence:nice-ng196-af",
+      "label": "NICE guideline NG196: Atrial fibrillation: diagnosis and management",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2021
+    },
+    {
+      "id": "evidence:nice-ng185-acs",
+      "label": "NICE guideline NG185: Acute coronary syndromes",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:ml-cv-review-29352006",
+      "label": "Machine learning in cardiovascular medicine: are we there yet?",
+      "kind": "publication",
+      "pmid": "29352006",
+      "year": 2018
+    },
+    {
+      "id": "evidence:cabana-30874766",
+      "label": "Effect of Catheter Ablation vs Antiarrhythmic Drug Therapy on Mortality, Stroke, Bleeding, and Cardiac Arrest Among Patients With Atrial Fibrillation: The CABANA Randomized Clinical Trial",
+      "kind": "publication",
+      "pmid": "30874766",
+      "year": 2019
+    },
+    {
+      "id": "evidence:castleaf-30067924",
+      "label": "Catheter Ablation for Atrial Fibrillation with Heart Failure",
+      "kind": "publication",
+      "pmid": "30067924",
+      "year": 2018
+    },
+    {
+      "id": "evidence:decaaf-24496537",
+      "label": "Association of atrial tissue fibrosis identified by delayed enhancement MRI and atrial fibrillation catheter ablation: the DECAAF study",
+      "kind": "publication",
+      "pmid": "24496537",
+      "year": 2014
+    },
+    {
+      "id": "evidence:cabana-comorbidity-41213867",
+      "label": "Association between comorbidity burden and outcomes of catheter ablation vs. medical therapy for atrial fibrillation: insights from the CABANA trial",
+      "kind": "publication",
+      "pmid": "41213867",
+      "year": 2025
+    },
+    {
+      "id": "evidence:cabana-frailty-41652456",
+      "label": "Effects of ablation versus drug therapy on clinical outcomes and quality of life by frailty status in atrial fibrillation: a post hoc analysis of the CABANA trial",
+      "kind": "publication",
+      "pmid": "41652456",
+      "year": 2026
+    },
+    {
+      "id": "evidence:dcm-screening-37225358",
+      "label": "Screening for Dilated Cardiomyopathy in At-Risk First-Degree Relatives",
+      "kind": "publication",
+      "pmid": "37225358",
+      "year": 2023
+    },
+    {
+      "id": "evidence:dcm-screening-commentary-37225359",
+      "label": "Clinical Screening for Dilated Cardiomyopathy in At-Risk First-Degree Relatives: Who, When, and How?",
+      "kind": "publication",
+      "pmid": "37225359",
+      "year": 2023
+    },
+    {
+      "id": "evidence:hcm-guideline-38718139",
+      "label": "2024 AHA/ACC/AMSSM/HRS/PACES/SCMR Guideline for the Management of Hypertrophic Cardiomyopathy",
+      "kind": "publication",
+      "pmid": "38718139",
+      "year": 2024
+    },
+    {
+      "id": "evidence:hcm-family-screening-39365224",
+      "label": "Family Screening in Hypertrophic Cardiomyopathy: Identification of Relatives With Low Yield From Systematic Follow-Up",
+      "kind": "publication",
+      "pmid": "39365224",
+      "year": 2024
+    },
+    {
+      "id": "evidence:hcm-guideline-made-simple-2020",
+      "label": "2020 ACC/AHA HCM Guidelines Made Simple",
+      "kind": "pdf",
+      "pmid": null,
+      "year": 2020
+    },
+    {
+      "id": "evidence:ami-ai-review-41523481",
+      "label": "The Role of Artificial Intelligence in Improving Diagnosis, Management, and Outcomes of Acute Myocardial Ischemia: A Systematic Review",
+      "kind": "publication",
+      "pmid": "41523481",
+      "year": 2025
+    },
+    {
+      "id": "evidence:stemi-1y-mortality-41688111",
+      "label": "Development and validation of a machine learning model for prediction of 1-year mortality following ST-elevation myocardial infarction: a retrospective cohort study",
+      "kind": "publication",
+      "pmid": "41688111",
+      "year": 2026
+    },
+    {
+      "id": "evidence:acute-cardiac-ai-review-38901544",
+      "label": "Revolutionising Acute Cardiac Care With Artificial Intelligence: Opportunities and Challenges",
+      "kind": "publication",
+      "pmid": "38901544",
+      "year": 2024
+    },
+    {
+      "id": "evidence:ai-cardiology-review-40151850",
+      "label": "Artificial Intelligence in Cardiology: General Perspectives and Focus on Interventional Cardiology",
+      "kind": "publication",
+      "pmid": "40151850",
+      "year": 2025
+    },
+    {
+      "id": "evidence:patient-ai-hf-41346424",
+      "label": "Patient Perspectives Towards Artificial Intelligence in Heart Failure Care",
+      "kind": "publication",
+      "pmid": "41346424",
+      "year": 2025
+    },
+    {
+      "id": "evidence:qualitative-ai-cardiac-40534891",
+      "label": "Patients', clinicians' and developers' perspectives and experiences of artificial intelligence in cardiac healthcare: A qualitative study",
+      "kind": "publication",
+      "pmid": "40534891",
+      "year": 2025
+    }
+  ],
+  "edges": [
+    {
+      "source": "evidence:bhf-grand-challenge-guidance",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-guidance",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-guidance",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-guidance",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-faq",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-faq",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:bhf-grand-challenge-faq",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nice-esf",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-esf",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-esf",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-esf",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nice-esf",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nice-ai-reg-service",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ai-reg-service",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ai-reg-service",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:mhra-roadmap",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:mhra-roadmap",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:mhra-roadmap",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:mhra-roadmap",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:fda-ai-samd",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:fda-ai-samd",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:fda-ai-samd",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nhs-ai-code-of-conduct",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nhs-ai-code-of-conduct",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nhs-ai-code-of-conduct",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nhs-ai-code-of-conduct",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nice-ng196-af",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ng196-af",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ng196-af",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:nice-ng185-acs",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ng185-acs",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ng185-acs",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:nice-ng185-acs",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ml-cv-review-29352006",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ml-cv-review-29352006",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ml-cv-review-29352006",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ml-cv-review-29352006",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:cabana-30874766",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-30874766",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-30874766",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:castleaf-30067924",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:castleaf-30067924",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:castleaf-30067924",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:decaaf-24496537",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:decaaf-24496537",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:decaaf-24496537",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:cabana-comorbidity-41213867",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-comorbidity-41213867",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-comorbidity-41213867",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-comorbidity-41213867",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:cabana-frailty-41652456",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-frailty-41652456",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-frailty-41652456",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cabana-frailty-41652456",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:dcm-screening-37225358",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:dcm-screening-37225358",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:dcm-screening-37225358",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:dcm-screening-37225358",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:dcm-screening-commentary-37225359",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:dcm-screening-commentary-37225359",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:dcm-screening-commentary-37225359",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:hcm-guideline-38718139",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-38718139",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-38718139",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-38718139",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:hcm-family-screening-39365224",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-family-screening-39365224",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-family-screening-39365224",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-family-screening-39365224",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:hcm-guideline-made-simple-2020",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-made-simple-2020",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-made-simple-2020",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:hcm-guideline-made-simple-2020",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ami-ai-review-41523481",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ami-ai-review-41523481",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ami-ai-review-41523481",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ami-ai-review-41523481",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:stemi-1y-mortality-41688111",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:stemi-1y-mortality-41688111",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:stemi-1y-mortality-41688111",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:acute-cardiac-ai-review-38901544",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:acute-cardiac-ai-review-38901544",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:acute-cardiac-ai-review-38901544",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:acute-cardiac-ai-review-38901544",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:acute-cardiac-ai-review-38901544",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-cardiology-review-40151850",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-cardiology-review-40151850",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-cardiology-review-40151850",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-cardiology-review-40151850",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:patient-ai-hf-41346424",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:patient-ai-hf-41346424",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:patient-ai-hf-41346424",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:patient-ai-hf-41346424",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:patient-ai-hf-41346424",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:qualitative-ai-cardiac-40534891",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:qualitative-ai-cardiac-40534891",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:qualitative-ai-cardiac-40534891",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:qualitative-ai-cardiac-40534891",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    }
+  ],
+  "meta": {
+    "evidence_count": 26,
+    "perspective_count": 5,
+    "domain_count": 5
+  }
+}
