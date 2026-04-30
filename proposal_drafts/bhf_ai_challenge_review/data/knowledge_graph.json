@@ -26,6 +26,11 @@
       "kind": "perspective"
     },
     {
+      "id": "domain:ai_ecg",
+      "label": "ai ecg",
+      "kind": "domain"
+    },
+    {
       "id": "domain:atrial_fibrillation",
       "label": "atrial fibrillation",
       "kind": "domain"
@@ -38,6 +43,11 @@
     {
       "id": "domain:implementation",
       "label": "implementation",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:llm_procedures",
+      "label": "llm procedures",
       "kind": "domain"
     },
     {
@@ -231,6 +241,202 @@
       "kind": "publication",
       "pmid": "40534891",
       "year": 2025
+    },
+    {
+      "id": "evidence:precision-cv-ai-review-37623518",
+      "label": "Artificial Intelligence-Based Methods for Precision Cardiovascular Medicine",
+      "kind": "publication",
+      "pmid": "37623518",
+      "year": 2023
+    },
+    {
+      "id": "evidence:rl-dtr-review-40724777",
+      "label": "Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes",
+      "kind": "publication",
+      "pmid": "40724777",
+      "year": 2025
+    },
+    {
+      "id": "evidence:cv-digital-twin-review-39322420",
+      "label": "Cardiovascular care with digital twin technology in the era of generative artificial intelligence",
+      "kind": "publication",
+      "pmid": "39322420",
+      "year": 2024
+    },
+    {
+      "id": "evidence:postmi-mace-meta-40630448",
+      "label": "Accuracy of Machine Learning Models for Early Prediction of Major Cardiovascular Events Post Myocardial Infarction: A Systematic Review and Meta-Analysis",
+      "kind": "publication",
+      "pmid": "40630448",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-lvef-30617318",
+      "label": "Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram",
+      "kind": "publication",
+      "pmid": "30617318",
+      "year": 2019
+    },
+    {
+      "id": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "label": "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
+      "kind": "publication",
+      "pmid": "31378392",
+      "year": 2019
+    },
+    {
+      "id": "evidence:ai-ecg-hcm-32081280",
+      "label": "Detection of Hypertrophic Cardiomyopathy Using a Convolutional Neural Network-Enabled Electrocardiogram",
+      "kind": "publication",
+      "pmid": "32081280",
+      "year": 2020
+    },
+    {
+      "id": "evidence:ai-ecg-amyloidosis-34218880",
+      "label": "Artificial Intelligence-Enhanced Electrocardiogram for the Early Detection of Cardiac Amyloidosis",
+      "kind": "publication",
+      "pmid": "34218880",
+      "year": 2021
+    },
+    {
+      "id": "evidence:ai-ecg-ph-36338407",
+      "label": "Artificial Intelligence-Enabled Electrocardiogram Improves the Diagnosis and Prediction of Mortality in Patients With Pulmonary Hypertension",
+      "kind": "publication",
+      "pmid": "36338407",
+      "year": 2022
+    },
+    {
+      "id": "evidence:ai-ecg-lvef-confidence-36532114",
+      "label": "Artificial intelligence-enabled electrocardiogram screens low left ventricular ejection fraction with a degree of confidence",
+      "kind": "publication",
+      "pmid": "36532114",
+      "year": 2022
+    },
+    {
+      "id": "evidence:ai-ecg-systematic-review-38288263",
+      "label": "Clinical Applications, Methodology, and Scientific Reporting of Electrocardiogram Deep-Learning Models: A Systematic Review",
+      "kind": "publication",
+      "pmid": "38288263",
+      "year": 2023
+    },
+    {
+      "id": "evidence:ai-ecg-lvsd-external-38505486",
+      "label": "Artificial intelligence-based identification of left ventricular systolic dysfunction from 12-lead electrocardiograms: external validation and advanced application of an existing model",
+      "kind": "publication",
+      "pmid": "38505486",
+      "year": 2024
+    },
+    {
+      "id": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "label": "External assessment of an artificial intelligence-enabled electrocardiogram for aortic stenosis detection",
+      "kind": "publication",
+      "pmid": "40703138",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-hf-meta-41552681",
+      "label": "Artificial intelligence in electrocardiogram-based prediction of heart failure: a systematic review and meta-analysis",
+      "kind": "publication",
+      "pmid": "41552681",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-af-review-41640418",
+      "label": "Artificial intelligence for atrial fibrillation prediction while in sinus rhythm: a narrative review",
+      "kind": "publication",
+      "pmid": "41640418",
+      "year": 2026
+    },
+    {
+      "id": "evidence:alivecor-kardia12l-commercial",
+      "label": "AliveCor Kardia 12L",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:anumana-ecg-ai-commercial",
+      "label": "Anumana ECG-AI",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:philips-cardiologs-commercial",
+      "label": "Philips Cardiologs ECG analysis",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-anesthesia-patient-education-41899118",
+      "label": "Artificial Intelligence as a Support Tool for Preoperative Patient Education in Anesthesiology: A Comparative Evaluation of Five Large Language Models",
+      "kind": "publication",
+      "pmid": "41899118",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-perioperative-safety-41952934",
+      "label": "ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens",
+      "kind": "publication",
+      "pmid": "41952934",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-omfs-training-survey-41721118",
+      "label": "Large language model use in oral and maxillofacial surgery training: a national resident survey",
+      "kind": "publication",
+      "pmid": "41721118",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-ir-leaflet-readability-41052822",
+      "label": "Better understanding: can a large language model safely improve readability of patient information leaflets in interventional radiology?",
+      "kind": "publication",
+      "pmid": "41052822",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-ir-consent-39612047",
+      "label": "Large language model doctor: assessing the ability of ChatGPT-4 to deliver interventional radiology procedural information to patients during the consent process",
+      "kind": "publication",
+      "pmid": "39612047",
+      "year": 2024
+    },
+    {
+      "id": "evidence:llm-spine-triage-41424195",
+      "label": "Evaluating Large Language Models for Decision Support in Minimally Invasive Spine Surgery Triage and Procedural Categories",
+      "kind": "publication",
+      "pmid": "41424195",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-anesthesia-systematic-review-40524117",
+      "label": "The applications of ChatGPT and other large language models in anesthesiology and critical care: a systematic review",
+      "kind": "publication",
+      "pmid": "40524117",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-informed-consent-rba-37812419",
+      "label": "Large Language Model-Based Chatbot vs Surgeon-Generated Informed Consent Documentation for Common Procedures",
+      "kind": "publication",
+      "pmid": "37812419",
+      "year": 2023
+    },
+    {
+      "id": "evidence:llm-cardiology-systematic-review-41989882",
+      "label": "Large Language Models in Cardiology: Systematic Review",
+      "kind": "publication",
+      "pmid": "41989882",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-citation-reliability-39238880",
+      "label": "ChatGPT-4 Knows Its A B C D E but Cannot Cite Its Source",
+      "kind": "publication",
+      "pmid": "39238880",
+      "year": 2024
     }
   ],
   "edges": [
@@ -723,11 +929,586 @@
       "source": "evidence:qualitative-ai-cardiac-40534891",
       "target": "domain:implementation",
       "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
     }
   ],
   "meta": {
-    "evidence_count": 26,
+    "evidence_count": 54,
     "perspective_count": 5,
-    "domain_count": 5
+    "domain_count": 7
   }
 }

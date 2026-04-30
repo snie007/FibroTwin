@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" >
+<head  itemscope itemtype="http://schema.org/WebPage"  prefix="og: http://ogp.me/ns#" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile properties -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <link rel="preconnect" href="https://cdn.ncbi.nlm.nih.gov">
+  <link rel="preconnect" href="https://www.ncbi.nlm.nih.gov">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+
+  
+  
+    <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.8af684516550.css" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.452c70ce66f7.css" type="text/css">
+
+  
+    
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.c71ac2b2c597.css" type="text/css">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.45202bc9d7a6.css" type="text/css">
+
+
+    <title>ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens</title>
+
+  
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/ico" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-144.png">
+
+
+  <!-- For Pinger + Google Optimize integration (NS-820) -->
+  <meta name="ncbi_sg_optimize_id" content="">
+
+  <!-- Mobile browser address bar color -->
+  <meta name="theme-color" content="#20558a">
+
+  <!-- Preserve the Referrer when going from HTTPS to HTTP -->
+  <meta name="referrer" content="origin-when-cross-origin">
+
+  <meta name="ncbi_pinger_gtm_track" content="true"/>
+<!-- Logging params: Pinger defaults -->
+
+  
+    <meta name="ncbi_app" content="pubmed" />
+  
+
+  
+    <meta name="ncbi_db" content="pubmed" />
+  
+
+  
+
+  
+    <meta name="ncbi_phid" content="0E99000110BC2AE500003E75677A9AAD.1.m_3" />
+  
+
+  
+    <meta name="ncbi_pinger_stat_url" content="https://pubmed.ncbi.nlm.nih.gov/stat" />
+  
+
+  
+    <meta name="log_category" content="literature" />
+  
+
+  
+    <meta name="ncbi_cost_center" content="pubmed" />
+  
+
+
+
+  <!-- Logging params: Pinger custom -->
+  
+    <meta name="ncbi_pdid" content="abstract" />
+  
+    <meta name="log_op" content="retrieve" />
+  
+    <meta name="uid" content="41952934" />
+  
+    <meta name="ncbi_uid" content="41952934" />
+  
+    <meta name="log_displayeduids" content="41952934" />
+  
+    <meta name="log_source_db" content="pubmed,pmc" />
+  
+    <meta name="log_icons_present" content="true" />
+  
+
+
+
+  <!-- Social meta tags for unfurling urls -->
+  
+<meta name="description" content="Background Drug-drug interactions (DDIs) are a major contributor to perioperative complications, yet no prior studies have evaluated the performance of large language models in this high-risk setting. This study assessed the accuracy of ChatGPT, GPT-5, free version (OpenAI, San Francisco, USA) in id …"><meta name="keywords" content="pmid:41952934, PMC13053157, doi:10.7759/cureus.104836, Da Young Lee, Sarah Simon, Noël C Barengo, PubMed Abstract, NIH, NLM, NCBI, National Institutes of Health, National Center for Biotechnology Information, National Library of Medicine, MEDLINE"><meta name="robots" content="index,nofollow,noarchive"><meta property="og:title" content="ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens - PubMed"><meta property="og:url" content="https://pubmed.ncbi.nlm.nih.gov/41952934/"><meta property="og:description" content="Background Drug-drug interactions (DDIs) are a major contributor to perioperative complications, yet no prior studies have evaluated the performance of large language models in this high-risk setting. This study assessed the accuracy of ChatGPT, GPT-5, free version (OpenAI, San Francisco, USA) in id …"><meta property="og:image" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg"><meta property="og:image:secure_url" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg"><meta property="og:type" content="website"><meta property="og:site_name" content="PubMed"><meta name="twitter:domain" content="pubmed.ncbi.nlm.nih.gov"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens - PubMed"><meta name="twitter:url" content="https://pubmed.ncbi.nlm.nih.gov/41952934/"><meta name="twitter:description" content="Background Drug-drug interactions (DDIs) are a major contributor to perioperative complications, yet no prior studies have evaluated the performance of large language models in this high-risk setting. This study assessed the accuracy of ChatGPT, GPT-5, free version (OpenAI, San Francisco, USA) in id …"><meta name="twitter:image" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg">
+
+
+  <!-- OpenSearch XML -->
+  <link rel="search" type="application/opensearchdescription+xml" href="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/opensearch.xml" title="PubMed search">
+
+  <!-- Disables severely broken elements when no JS -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/core/no-script.css">
+  </noscript>
+
+  
+    <link rel="canonical" href="https://pubmed.ncbi.nlm.nih.gov/41952934/" />
+  
+  
+    
+      <meta name="citation_journal_title" content="Cureus"/>
+      <meta name="citation_journal_abbrev" content="Cureus"/>
+      <meta name="citation_publisher" content="Cureus"/>
+      
+        <meta name="citation_volume" content="18"/>
+      
+      
+        <meta name="citation_issue" content="3"/>
+      
+      
+        <meta name="citation_firstpage" content="e104836"/>
+      
+      
+    
+
+    
+      
+        <meta
+          name="citation_publication_date"
+          content="2026/03/07"
+        />
+      
+    
+
+    
+      <meta name="citation_title" content="ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens"/>
+    
+
+    
+      
+        
+          
+          
+            <meta
+              name="citation_author"
+              content="Da Young Lee"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Medicine, Herbert Wertheim College of Medicine, Florida International University, Miami, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Sarah Simon"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Medicine, Herbert Wertheim College of Medicine, Florida International University, Miami, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Rose Berkun"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Anesthesiology, Herbert Wertheim College of Medicine, Florida International University, Miami, USA."/>
+              
+            
+              
+                <meta name="citation_author_institution" content="Anesthesiology, Jacobs School of Medicine and Biomedical Sciences, University of Buffalo, New York, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Noël C Barengo"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Medical and Population Health Sciences, Education, and Research, Herbert Wertheim College of Medicine, Florida International University, Miami, USA."/>
+              
+            
+          
+        
+      
+    
+
+    <meta name="citation_pmid" content="41952934">
+
+    
+      
+    
+      
+    
+      
+        <meta name="citation_doi" content="10.7759/cureus.104836"/>
+      
+    
+
+    
+      <meta name="citation_issn" content="2168-8184"/>
+    
+
+    
+      <meta name="citation_language" content="English"/>
+    
+
+    
+
+  
+
+  
+    
+      <meta name="citation_keywords" content="anesthetic regimens; artificial intelligence; chatgpt; clinical decision support; drug safety; drug-drug interactions; large language models; medication safety; perioperative care; polypharmacy."/>
+    
+    
+      <meta
+        name="citation_abstract"
+        lang="en"
+        content="Background Drug-drug interactions (DDIs) are a major contributor to perioperative complications, yet no prior studies have evaluated the performance of large language models in this high-risk setting. This study assessed the accuracy of ChatGPT, GPT-5, free version (OpenAI, San Francisco, USA) in identifying DDIs in anesthetic regimens compared with the gold-standard reference Lexicomp. Methods We conducted an analytical cross-sectional study using 40 synthetic perioperative vignettes generated by OpenEvidence and reviewed by an anesthesiologist. Each vignette was reviewed for clinically significant DDIs using Lexicomp&#x27;s &quot;Interactions&quot; feature. ChatGPT was queried twice with standardized prompts, and responses were classified as Correct or Incorrect. Results Across both trials, ChatGPT accurately identified 76 of 80 clinically significant DDIs (sensitivity 95%) with four responses classified as Incorrect. These responses were not entirely erroneous, as each recognized at least one major interaction, yet they omitted additional clinically relevant interactions or failed to provide comprehensive management recommendations. Notably, ChatGPT frequently supplemented its responses with relevant contextual information, including age-specific considerations and perioperative monitoring strategies. Conclusion ChatGPT demonstrated high accuracy in detecting clinically significant DDIs in perioperative anesthetic regimens. Its contextual insights may enhance clinical decision-making; however, occasional omissions and limitations in sourcing warrant cautious integration into practice. Further studies in real-world perioperative settings are needed."
+      />
+    
+    
+  
+
+  
+
+  
+    
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Medication safety in the perioperative setting: A comparison of methods for detecting medication errors and adverse medication events.; citation_author=M.M. Stipp; citation_author=H. Deng; citation_author=K. Kong; citation_author=S. Moore; citation_author=J.r. Hickman RL; citation_author=K.C. Nanji;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Impact of large language model (ChatGPT) in healthcare: an umbrella review and evidence synthesis.; citation_author=U. Iqbal; citation_author=A. Tanweer; citation_author=A.R. Rahmanti; citation_author=D. Greenfield; citation_author=L.T. Lee; citation_author=Y.J. Li;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Effectiveness of ChatGPT in clinical pharmacy and the role of artificial intelligence in medication therapy management.; citation_author=D. Roosan; citation_author=P. Padua; citation_author=R. Khan; citation_author=H. Khan; citation_author=C. Verzosa; citation_author=Y. Wu;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=A scoping review on generative AI and large language models in mitigating medication related harm.; citation_author=J.C.L. Ong; citation_author=M.H. Chen; citation_author=N. Ng; citation_author=K. Elangovan; citation_author=N.Y.T. Tan; citation_author=L. Jin; citation_author=Q. Xie; citation_author=D.S.W. Ting; citation_author=R. Rodriguez-Monguio; citation_author=D.W. Bates; citation_author=N. Liu;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Chat GPT vs. Clinical Decision Support Systems in the Analysis of Drug-Drug Interactions.; citation_author=T. Bischof; citation_author=V. Al Jalali; citation_author=M. Zeitlinger; citation_author=A. Jorda; citation_author=M. Hana; citation_author=K.N. Singeorzan; citation_author=N. Riesenhuber; citation_author=G. Stemer; citation_author=C. Schoergenhofer;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Assessing the accuracy and quality of artificial intelligence (AI) chatbot-generated responses in making patient-specific drug-therapy and healthcare-related decisions.; citation_author=M.W. Shiferaw; citation_author=T. Zheng; citation_author=A. Winter; citation_author=L.A. Mike; citation_author=L.N. Chan;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Evaluating the capability of ChatGPT in predicting drug-drug interactions: Real-world evidence using hospitalized patient data.; citation_author=R.P. Radha Krishnan; citation_author=E.H. Hung; citation_author=M. Ashford; citation_author=C.E. Edillo; citation_author=C. Gardner; citation_author=H.B. Hatrick; citation_author=B. Kim; citation_author=A.W.Y. Lai; citation_author=X. Li; citation_author=Y.X. Zhao; citation_author=J.E. Raubenheimer;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=The Capability of ChatGPT in Predicting and Explaining Common Drug-Drug Interactions.; citation_author=A. Juhi; citation_author=N. Pipil; citation_author=S. Santra; citation_author=S. Mondal; citation_author=J.K. Behera; citation_author=H. Mondal;"
+        />
+      
+        <meta
+          name="citation_reference"
+          content="citation_title=Exploring potential drug-drug interactions in discharge prescriptions: ChatGPT&#x27;s effectiveness in assessing those interactions.; citation_author=R.B. Thapa; citation_author=S. Karki; citation_author=S. Shrestha;"
+        />
+      
+    
+    
+  
+
+
+
+</head>
+<body >
+
+  
+  <div class="article-page" id="article-page" data-article-pmid="41952934">
+    <div class="article-details" id="article-details">
+      
+        
+
+
+<header class="heading" id="heading">
+  
+    
+      
+  
+
+<h1 class="heading-title">
+  
+    
+    
+    
+    
+      
+  ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens
+
+
+    
+  
+</h1>
+
+  <div class="article-citation" style="display:inline-block;">
+  
+    <span class="article-source">
+      
+<span class="journal" style="display:inline-block;">Cureus</span><span class="period">. </span><span class="cit">2026 Mar 7;18(3):e104836.</span>
+
+    </span>
+  
+  
+    
+      <span class="citation-doi">
+        doi: 10.7759/cureus.104836.
+      </span>
+    
+    
+    
+      <span class="secondary-date">
+        eCollection 2026 Mar.
+      </span>
+    
+  
+
+</div>
+  
+
+
+<div class="email-authors">
+  
+
+
+  
+    <div class="expanded-authors" id="full-view-expanded-authors">
+      
+        <div class="authors">
+          <h3 class="title">
+            Authors
+          </h3>
+          
+
+
+  <div class="authors-list">
+    <span class="authors-list-item "><a class="full-name"
+           href="/?term=Lee+DY&amp;cauthor_id=41952934"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Da Young Lee">Da Young Lee</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Medicine, Herbert Wertheim College of Medicine, Florida International University, Miami, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Simon+S&amp;cauthor_id=41952934"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Sarah Simon">Sarah Simon</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Medicine, Herbert Wertheim College of Medicine, Florida International University, Miami, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Berkun+R&amp;cauthor_id=41952934"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Rose Berkun">Rose Berkun</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Anesthesiology, Herbert Wertheim College of Medicine, Florida International University, Miami, USA." href="#affiliation-2" ref="linksrc=author_aff">
+                2
+              </a><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Anesthesiology, Jacobs School of Medicine and Biomedical Sciences, University of Buffalo, New York, USA." href="#affiliation-3" ref="linksrc=author_aff">
+                3
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Barengo+NC&amp;cauthor_id=41952934"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Noël C Barengo">Noël C Barengo</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Medical and Population Health Sciences, Education, and Research, Herbert Wertheim College of Medicine, Florida International University, Miami, USA." href="#affiliation-4" ref="linksrc=author_aff">
+                4
+              </a></sup></span>
+  </div>
+
+
+        </div>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <div class="affiliations">
+          <h3 class="title">
+            Affiliations
+          </h3>
+          <ul class="item-list" style="margin: 0 0 16px 0; list-style-type: none; padding: 0;">
+            
+              <li data-affiliation-id="affiliation-1"
+                  id="affiliation-1"
+              ><sup class="key">1</sup> Medicine, Herbert Wertheim College of Medicine, Florida International University, Miami, USA.</li>
+            
+              <li data-affiliation-id="affiliation-2"
+                  id="affiliation-2"
+              ><sup class="key">2</sup> Anesthesiology, Herbert Wertheim College of Medicine, Florida International University, Miami, USA.</li>
+            
+              <li data-affiliation-id="affiliation-3"
+                  id="affiliation-3"
+              ><sup class="key">3</sup> Anesthesiology, Jacobs School of Medicine and Biomedical Sciences, University of Buffalo, New York, USA.</li>
+            
+              <li data-affiliation-id="affiliation-4"
+                  id="affiliation-4"
+              ><sup class="key">4</sup> Medical and Population Health Sciences, Education, and Research, Herbert Wertheim College of Medicine, Florida International University, Miami, USA.</li>
+            
+          </ul>
+        </div>
+      
+
+      
+
+      
+    </div>
+  
+
+
+</div>
+
+  
+    <ul class="identifiers" id="full-view-identifiers" style="list-style-type: none; margin: 6px 0 16px 0;">
+      
+        <li>
+          <span class="identifier pubmed">
+  <span class="id-label">
+    
+      PMID:
+    
+  </span>
+
+  
+    <a class="id-link"
+       target="_blank"
+       rel="noopener"
+       ref="linksrc=article_id_link&amp;article_id=41952934&amp;id_type=PubMed"
+       href="https://pubmed.ncbi.nlm.nih.gov/41952934/"
+       
+       data-ga-category="full_text"
+       data-ga-action="PMID"
+    >
+      41952934
+    </a>
+  
+
+  
+</span>
+
+        </li>
+      
+        <li>
+          <span class="identifier pmc">
+  <span class="id-label">
+    
+      PMCID:
+    
+  </span>
+
+  
+    <a class="id-link"
+       target="_blank"
+       rel="noopener"
+       ref="linksrc=article_id_link&amp;article_id=PMC13053157&amp;id_type=PMC"
+       href="https://pmc.ncbi.nlm.nih.gov/articles/PMC13053157/"
+       
+       data-ga-category="full_text"
+       data-ga-action="PMCID"
+    >
+      PMC13053157
+    </a>
+  
+
+  
+</span>
+
+        </li>
+      
+        <li>
+          <span class="identifier doi">
+  <span class="id-label">
+    
+      DOI:
+    
+  </span>
+
+  
+    <a class="id-link usa-link--external"
+       target="_blank"
+       rel="noopener noreferrer"
+       ref="linksrc=article_id_link&amp;article_id=10.7759/cureus.104836&amp;id_type=DOI"
+       href="https://doi.org/10.7759/cureus.104836"
+        aria-label="external, opens in new tab. 10.7759/cureus.104836"
+       data-ga-category="full_text"
+       data-ga-action="DOI"
+    >
+      10.7759/cureus.104836
+    </a>
+  
+
+  
+</span>
+
+        </li>
+      
+    </ul>
+  
+
+
+
+    
+  
+</header>
+
+        
+
+
+
+  <div class="abstract" id="abstract">
+    
+      <h2 class="title">
+        Abstract
+        
+      </h2>
+      
+        
+          
+            <div class="abstract-content selected"
+                 id="eng-abstract">
+              
+                
+
+
+  
+    <p>
+      
+      Background Drug-drug interactions (DDIs) are a major contributor to perioperative complications, yet no prior studies have evaluated the performance of large language models in this high-risk setting. This study assessed the accuracy of ChatGPT, GPT-5, free version (OpenAI, San Francisco, USA) in identifying DDIs in anesthetic regimens compared with the gold-standard reference Lexicomp. Methods We conducted an analytical cross-sectional study using 40 synthetic perioperative vignettes generated by OpenEvidence and reviewed by an anesthesiologist. Each vignette was reviewed for clinically significant DDIs using Lexicomp's "Interactions" feature. ChatGPT was queried twice with standardized prompts, and responses were classified as Correct or Incorrect. Results Across both trials, ChatGPT accurately identified 76 of 80 clinically significant DDIs (sensitivity 95%) with four responses classified as Incorrect. These responses were not entirely erroneous, as each recognized at least one major interaction, yet they omitted additional clinically relevant interactions or failed to provide comprehensive management recommendations. Notably, ChatGPT frequently supplemented its responses with relevant contextual information, including age-specific considerations and perioperative monitoring strategies. Conclusion ChatGPT demonstrated high accuracy in detecting clinically significant DDIs in perioperative anesthetic regimens. Its contextual insights may enhance clinical decision-making; however, occasional omissions and limitations in sourcing warrant cautious integration into practice. Further studies in real-world perioperative settings are needed.
+    </p>
+  
+
+  
+
+
+              
+            </div>
+          
+        
+      
+
+      
+    
+
+    
+
+    
+      
+
+
+  
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Keywords:
+        </strong>
+      
+      anesthetic regimens; artificial intelligence; chatgpt; clinical decision support; drug safety; drug-drug interactions; large language models; medication safety; perioperative care; polypharmacy.
+    </p>
+  
+
+
+    
+
+  </div>
+
+
+        
+        
+
+
+  <p class="copyright" id="copyright">
+    Copyright © 2026, Lee et al.
+  </p>
+
+
+        
+        
+
+        
+
+        
+
+        
+
+        
+
+        
+
+
+
+        
+
+
+
+      
+    </div>
+  </div>
+
+
+  
+  
+
+
+  
+
+</body>
+</html>

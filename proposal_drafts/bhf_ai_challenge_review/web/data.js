@@ -618,6 +618,732 @@ window.EVIDENCE_DATA = [
     ],
     "summary": "English real-world qualitative evidence that workflow fit, data security, empathy, and clinician verification still dominate acceptance.",
     "relevance": "Supports a translational design that is workflow-aware and explicitly human-supervised."
+  },
+  {
+    "id": "precision-cv-ai-review-37623518",
+    "type": "publication",
+    "title": "Artificial Intelligence-Based Methods for Precision Cardiovascular Medicine",
+    "year": 2023,
+    "pmid": "37623518",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37623518/",
+    "local_copy": "docs/raw/publications/pubmed-37623518.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "programme_design"
+    ],
+    "quote": "After applying inclusion and exclusion criteria, a total of 28 studies were included in the review.",
+    "hard_numbers": [
+      "28 studies included",
+      "Prediction 50%, diagnosis 21%, phenotyping 14%, risk stratification 14%",
+      "EHR data used in 79% of studies",
+      "Imaging data used in 43% of studies"
+    ],
+    "summary": "A scoping review showing that precision cardiovascular AI is already active across diagnosis, prognosis, phenotyping, and treatment planning, but remains dominated by prediction-focused studies.",
+    "relevance": "Useful for positioning the proposal as a next-generation step beyond static prediction toward individualized decisions and richer phenotyping."
+  },
+  {
+    "id": "rl-dtr-review-40724777",
+    "type": "publication",
+    "title": "Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes",
+    "year": 2025,
+    "pmid": "40724777",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40724777/",
+    "local_copy": "docs/raw/publications/pubmed-40724777.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "programme_design"
+    ],
+    "quote": "Forty-six studies met the inclusion criteria.",
+    "hard_numbers": [
+      "46 studies included",
+      "Search window January 2014 to December 2024",
+      "Sharp increase in RL healthcare studies since 2020"
+    ],
+    "summary": "A general healthcare review showing that dynamic treatment-regime methods are no longer fringe, but still face major barriers around interpretability, reward definition, data quality, and clinician adoption.",
+    "relevance": "Supports the proposal's longitudinal treatment-optimization logic, while also warning reviewers will expect strong safeguards and clinical framing."
+  },
+  {
+    "id": "cv-digital-twin-review-39322420",
+    "type": "publication",
+    "title": "Cardiovascular care with digital twin technology in the era of generative artificial intelligence",
+    "year": 2024,
+    "pmid": "39322420",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39322420/",
+    "local_copy": "docs/raw/publications/pubmed-39322420.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "programme_design"
+    ],
+    "quote": "Current applications of cardiovascular digital twins have integrated multi-modal data into mechanistic and statistical models to build physiologically accurate cardiac replicas to enhance disease phenotyping, enrich diagnostic workflows, and optimize procedural planning.",
+    "hard_numbers": [],
+    "summary": "A high-level cardiovascular digital twin review connecting multimodal data fusion, personalized simulation, and procedural planning.",
+    "relevance": "Helpful as an adjacent vision document, but also a reminder that the proposal should stay grounded in clinically testable decision support rather than futuristic rhetoric."
+  },
+  {
+    "id": "postmi-mace-meta-40630448",
+    "type": "publication",
+    "title": "Accuracy of Machine Learning Models for Early Prediction of Major Cardiovascular Events Post Myocardial Infarction: A Systematic Review and Meta-Analysis",
+    "year": 2025,
+    "pmid": "40630448",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40630448/",
+    "local_copy": "docs/raw/publications/pubmed-40630448.html",
+    "perspectives": [
+      "clinical",
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "post_mi"
+    ],
+    "quote": "Twenty-eight studies were included for analysis, covering 59,392 patients with MI.",
+    "hard_numbers": [
+      "28 studies",
+      "59,392 patients with MI",
+      "Pooled C-index 0.77 (95% CI 0.74-0.81)",
+      "Sensitivity 0.78, specificity 0.85 in validation sets"
+    ],
+    "summary": "A broader post-MI evidence synthesis showing that machine-learning prognostic models are common and moderately accurate, but still mostly focused on early event prediction.",
+    "relevance": "Strengthens the post-MI workstream and helps argue that the next step is longitudinal follow-up optimization rather than one-off prediction."
+  },
+  {
+    "id": "ai-ecg-lvef-30617318",
+    "type": "publication",
+    "title": "Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram",
+    "year": 2019,
+    "pmid": "30617318",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30617318/",
+    "local_copy": "docs/raw/publications/pubmed-30617318.html",
+    "perspectives": [
+      "clinical",
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "When tested on an independent set of 52,870 patients, the network model yielded values for the area under the curve, sensitivity, specificity, and accuracy of 0.93, 86.3%, 85.7%, and 85.7%, respectively.",
+    "hard_numbers": [
+      "44,959 patients in training data",
+      "52,870 patients in independent test set",
+      "AUC 0.93",
+      "Sensitivity 86.3%, specificity 85.7%, accuracy 85.7%",
+      "Hazard ratio 4.1 for future ventricular dysfunction after positive AI screen"
+    ],
+    "summary": "A landmark AI-ECG screening paper showing that a standard 12-lead ECG can identify low ejection fraction and may flag future ventricular dysfunction before echo diagnosis.",
+    "relevance": "Important as proof that inexpensive physiological signals can carry latent structural information, which is directly relevant to scalable cardiovascular screening and longitudinal monitoring."
+  },
+  {
+    "id": "ai-ecg-af-sinus-rhythm-31378392",
+    "type": "publication",
+    "title": "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
+    "year": 2019,
+    "pmid": "31378392",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/31378392/",
+    "local_copy": "docs/raw/publications/pubmed-31378392.html",
+    "perspectives": [
+      "clinical",
+      "engineering"
+    ],
+    "domains": [
+      "ai_ecg",
+      "atrial_fibrillation"
+    ],
+    "quote": "A single AI-enabled ECG identified atrial fibrillation with an AUC of 0.87.",
+    "hard_numbers": [
+      "180,922 patients",
+      "649,931 sinus-rhythm ECGs",
+      "Testing AUC 0.87",
+      "Sensitivity 79.0%, specificity 79.5%",
+      "Using all first-month ECGs increased AUC to 0.90"
+    ],
+    "summary": "A foundational AF-from-sinus-rhythm paper demonstrating that AI-ECG can detect latent arrhythmic substrate without active AF on the trace.",
+    "relevance": "Relevant both as AF evidence and as a broader argument that ECG can be used as a cheap longitudinal biomarker, not just a rhythm strip."
+  },
+  {
+    "id": "ai-ecg-hcm-32081280",
+    "type": "publication",
+    "title": "Detection of Hypertrophic Cardiomyopathy Using a Convolutional Neural Network-Enabled Electrocardiogram",
+    "year": 2020,
+    "pmid": "32081280",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32081280/",
+    "local_copy": "docs/raw/publications/pubmed-32081280.html",
+    "perspectives": [
+      "clinical",
+      "engineering"
+    ],
+    "domains": [
+      "ai_ecg",
+      "cardiomyopathy"
+    ],
+    "quote": "When applying this probability threshold to the testing dataset, the CNN's AUC was 0.96 with sensitivity 87% and specificity 90%.",
+    "hard_numbers": [
+      "2,448 HCM cases for development",
+      "51,153 matched controls for development",
+      "612 HCM and 12,788 controls in test dataset",
+      "Test AUC 0.96",
+      "Sensitivity 87%, specificity 90%",
+      "Sensitivity 95% and specificity 92% in younger patients"
+    ],
+    "summary": "A major AI-ECG cardiomyopathy paper showing very strong diagnostic signal for HCM, including in subgroups with normal ECGs.",
+    "relevance": "Directly relevant to inherited-cardiomyopathy screening and to the idea that low-cost serial ECGs may support risk-adapted family surveillance."
+  },
+  {
+    "id": "ai-ecg-amyloidosis-34218880",
+    "type": "publication",
+    "title": "Artificial Intelligence-Enhanced Electrocardiogram for the Early Detection of Cardiac Amyloidosis",
+    "year": 2021,
+    "pmid": "34218880",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/34218880/",
+    "local_copy": "docs/raw/publications/pubmed-34218880.html",
+    "perspectives": [
+      "clinical",
+      "engineering"
+    ],
+    "domains": [
+      "ai_ecg",
+      "cardiomyopathy"
+    ],
+    "quote": "The area under the receiver operating characteristic curve (AUC) was 0.91.",
+    "hard_numbers": [
+      "2,541 cardiac amyloidosis patients",
+      "2,454 matched controls",
+      "Holdout AUC 0.91",
+      "84% of holdout cardiac amyloidosis patients detected",
+      "59% predicted more than 6 months before clinical diagnosis among patients with prediagnosis ECGs"
+    ],
+    "summary": "AI-ECG can recover a structural/infiltrative phenotype from routine ECG and may detect disease months before usual clinical diagnosis.",
+    "relevance": "Strengthens the argument that latent disease trajectories can sometimes be captured from simple serial physiology rather than expensive imaging alone."
+  },
+  {
+    "id": "ai-ecg-ph-36338407",
+    "type": "publication",
+    "title": "Artificial Intelligence-Enabled Electrocardiogram Improves the Diagnosis and Prediction of Mortality in Patients With Pulmonary Hypertension",
+    "year": 2022,
+    "pmid": "36338407",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36338407/",
+    "local_copy": "docs/raw/publications/pubmed-36338407.html",
+    "perspectives": [
+      "clinical",
+      "engineering"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "The area under the receiver-operating characteristic curve of the AI model was 0.88 for detecting ePAP.",
+    "hard_numbers": [
+      "41,097 patients in development cohort",
+      "AUC 0.88",
+      "Sensitivity 81.0%, specificity 79.6%",
+      "6-year cardiovascular mortality hazard ratio 3.69 for patients predicted to have ePAP"
+    ],
+    "summary": "A strong example of AI-ECG used both diagnostically and prognostically for pulmonary hypertension, with external replication in Japan.",
+    "relevance": "Useful for showing that AI-ECG is no longer limited to arrhythmia detection and can support structural and prognostic screening across populations."
+  },
+  {
+    "id": "ai-ecg-lvef-confidence-36532114",
+    "type": "publication",
+    "title": "Artificial intelligence-enabled electrocardiogram screens low left ventricular ejection fraction with a degree of confidence",
+    "year": 2022,
+    "pmid": "36532114",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/36532114/",
+    "local_copy": "docs/raw/publications/pubmed-36532114.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "After excluding the cases with a lower degree of confidence, the artificial intelligence-enabled electrocardiogram performed better in the remaining cases in internal (AUC = 0.9759) and external (AUC = 0.9653) validation sets.",
+    "hard_numbers": [
+      "76,081 ECGs in model-development center",
+      "11,771 ECGs in external validation hospital",
+      "AUC 0.9549 internal and 0.9365 external for LV dysfunction detection",
+      "AUC improved to 0.9759 internal and 0.9653 external after excluding low-confidence cases",
+      "Hazard ratio 4.57 for future LV dysfunction after positive AI-ECG, rising to 8.67 in high-confidence cases"
+    ],
+    "summary": "An AI-ECG paper that explicitly handles prediction uncertainty and shows that confidence-aware screening can sharpen performance and future-risk stratification.",
+    "relevance": "Highly relevant to any proposal that wants clinically safe de-escalation or escalation rules instead of raw black-box scores."
+  },
+  {
+    "id": "ai-ecg-systematic-review-38288263",
+    "type": "publication",
+    "title": "Clinical Applications, Methodology, and Scientific Reporting of Electrocardiogram Deep-Learning Models: A Systematic Review",
+    "year": 2023,
+    "pmid": "38288263",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38288263/",
+    "local_copy": "docs/raw/publications/pubmed-38288263.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "Only 18/53 (34%) models were tested within external validation cohorts.",
+    "hard_numbers": [
+      "44 manuscripts",
+      "53 unique clinically relevant ECG deep-learning models",
+      "18/53 (34%) externally validated",
+      "10/44 (23%) provided enough detail for reproduction",
+      "5/44 (11%) made code or implementation resources available"
+    ],
+    "summary": "A key methods review showing that AI-ECG science is expanding rapidly but remains weak on reproducibility, external validation, and implementation transparency.",
+    "relevance": "This is one of the strongest cautionary anchors for any BHF application that wants to claim translational maturity."
+  },
+  {
+    "id": "ai-ecg-lvsd-external-38505486",
+    "type": "publication",
+    "title": "Artificial intelligence-based identification of left ventricular systolic dysfunction from 12-lead electrocardiograms: external validation and advanced application of an existing model",
+    "year": 2024,
+    "pmid": "38505486",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/38505486/",
+    "local_copy": "docs/raw/publications/pubmed-38505486.html",
+    "perspectives": [
+      "engineering",
+      "clinical",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "At baseline, 42 291 ECG-echocardiography pairs were analysed, and AUROC for LVSD detection was 0.88.",
+    "hard_numbers": [
+      "42,291 ECG-echocardiography pairs",
+      "External-validation AUROC 0.88",
+      "Sensitivity 82%, specificity 77%",
+      "High baseline AI probability associated with four-fold increased risk of future LVSD"
+    ],
+    "summary": "A useful external-validation study showing that AI-ECG LV dysfunction models can travel, but performance drops in harder ECG subgroups such as tachycardia, AF, and wide QRS.",
+    "relevance": "Supports deployment realism and the need to pre-specify subgroup failure modes."
+  },
+  {
+    "id": "ai-ecg-aortic-stenosis-external-40703138",
+    "type": "publication",
+    "title": "External assessment of an artificial intelligence-enabled electrocardiogram for aortic stenosis detection",
+    "year": 2025,
+    "pmid": "40703138",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40703138/",
+    "local_copy": "docs/raw/publications/pubmed-40703138.html",
+    "perspectives": [
+      "clinical",
+      "engineering"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "Among 5425 patients, 1095 had moderate to severe AS, and 4330 age- and sex-matched patients without AS were included as controls.",
+    "hard_numbers": [
+      "5,425 patients total",
+      "1,095 moderate to severe AS cases",
+      "AUC 0.85",
+      "Sensitivity 0.83, specificity 0.65, PPV 0.37, NPV 0.94"
+    ],
+    "summary": "An external Asian validation of a Mayo-origin AI-ECG aortic stenosis model, emphasizing strong negative predictive value and cross-population transportability.",
+    "relevance": "Useful for arguing that AI-ECG may be especially attractive where safe rule-out is clinically valuable."
+  },
+  {
+    "id": "ai-ecg-hf-meta-41552681",
+    "type": "publication",
+    "title": "Artificial intelligence in electrocardiogram-based prediction of heart failure: a systematic review and meta-analysis",
+    "year": 2025,
+    "pmid": "41552681",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41552681/",
+    "local_copy": "docs/raw/publications/pubmed-41552681.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "A total of five studies involving 11 cohorts and 1,728,134 participants were included in the analysis.",
+    "hard_numbers": [
+      "5 studies",
+      "11 cohorts",
+      "1,728,134 participants",
+      "Pooled AUROC/C-statistic 0.76 (95% CI 0.74-0.78)",
+      "High heterogeneity I2 = 89%"
+    ],
+    "summary": "A large-scale meta-analysis showing that AI-ECG heart-failure prediction is promising at scale, but still limited by bias, heterogeneity, and lack of clinical-validity studies.",
+    "relevance": "Supports a balanced write-up: AI-ECG is real and scalable, but still not a solved deployment problem."
+  },
+  {
+    "id": "ai-ecg-af-review-41640418",
+    "type": "publication",
+    "title": "Artificial intelligence for atrial fibrillation prediction while in sinus rhythm: a narrative review",
+    "year": 2026,
+    "pmid": "41640418",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41640418/",
+    "local_copy": "docs/raw/publications/pubmed-41640418.html",
+    "perspectives": [
+      "engineering",
+      "clinical"
+    ],
+    "domains": [
+      "ai_ecg",
+      "atrial_fibrillation"
+    ],
+    "quote": "The AI methods outperformed the scoring systems and showed a higher accuracy in predicting AF from SR when the event horizon was shorter.",
+    "hard_numbers": [
+      "Review frames four event horizons: newly diagnosed, short-term, mid-term, long-term",
+      "More than 50 million people worldwide affected by AF"
+    ],
+    "summary": "A recent review organizing AF-from-sinus-rhythm literature by time horizon and emphasizing both technical promise and unresolved validation/integration barriers.",
+    "relevance": "Helpful for connecting AI-ECG to AF detection and to the broader longitudinal theme of short- versus long-horizon prediction."
+  },
+  {
+    "id": "alivecor-kardia12l-commercial",
+    "type": "webpage",
+    "title": "AliveCor Kardia 12L",
+    "year": 2026,
+    "pmid": null,
+    "url": "https://alivecor.com/products/kardia12l",
+    "local_copy": "docs/raw/webpages/alivecor-kardia12l.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "The FDA-cleared Kardia 12L is an AI-powered handheld 12-lead resting ECG system.",
+    "hard_numbers": [
+      "27,000+ patients",
+      "250+ practices",
+      "4,000+ instances of myocardial infarction and ischemia detected",
+      "AI trained with one million ECGs",
+      "39 FDA-cleared determinations"
+    ],
+    "summary": "A commercial example of AI-enhanced ECG acquisition and interpretation packaged as a handheld 12-lead workflow product.",
+    "relevance": "Shows that AI-ECG is already a commercial category, but also that most company evidence comes as product-page claims that still need independent validation."
+  },
+  {
+    "id": "anumana-ecg-ai-commercial",
+    "type": "webpage",
+    "title": "Anumana ECG-AI",
+    "year": 2026,
+    "pmid": null,
+    "url": "https://anumana.ai/ecg-ai/",
+    "local_copy": "docs/raw/webpages/anumana-ecg-ai.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "Anumana Receives First and Only FDA Clearance for ECG-AI Cardiac Amyloidosis Algorithm Using a Standard 12-Lead ECG.",
+    "hard_numbers": [
+      "Commercial focus areas listed: low ejection fraction, pulmonary hypertension, cardiac amyloidosis",
+      "Workflow details include HL7 datapoints and CPT III code setup"
+    ],
+    "summary": "A strong enterprise AI-ECG example centered on disease-screening algorithms integrated into hospital ECG workflows.",
+    "relevance": "Directly relevant to translational planning because it shows the implementation plumbing, not just model performance, required for deployable AI-ECG."
+  },
+  {
+    "id": "philips-cardiologs-commercial",
+    "type": "webpage",
+    "title": "Philips Cardiologs ECG analysis",
+    "year": 2026,
+    "pmid": null,
+    "url": "https://www.philips.co.uk/healthcare/ambulatory-monitoring-and-diagnostics/ecg-monitoring/cardiologs-ecg-analysis",
+    "local_copy": "docs/raw/webpages/philips-cardiologs-ecg-analysis.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "ai_ecg",
+      "implementation"
+    ],
+    "quote": "Our Holter Platform is the first FDA-cleared ECG analysis solution powered by deep learning technology.",
+    "hard_numbers": [
+      "Over 20 publications and abstracts",
+      "4 patents",
+      "More than 200 million ECGs processed",
+      "Over two million patients diagnosed per year"
+    ],
+    "summary": "A scale-focused commercial AI-ECG/Holter interpretation platform embedded in ambulatory ECG workflows.",
+    "relevance": "Useful for showing that the commercial frontier is not only disease screening but also high-throughput ECG analysis and service-line scaling."
+  },
+  {
+    "id": "llm-anesthesia-patient-education-41899118",
+    "type": "publication",
+    "title": "Artificial Intelligence as a Support Tool for Preoperative Patient Education in Anesthesiology: A Comparative Evaluation of Five Large Language Models",
+    "year": 2026,
+    "pmid": "41899118",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41899118/",
+    "local_copy": "docs/raw/publications/pubmed-41899118.html",
+    "perspectives": [
+      "patient",
+      "engineering",
+      "policy_expert"
+    ],
+    "domains": [
+      "llm_procedures",
+      "implementation"
+    ],
+    "quote": "LLMs may serve as supportive tools for patient education in anesthesiology; however, their performance varies substantially across models and clinical contexts.",
+    "hard_numbers": [
+      "30 standardized patient questions",
+      "5 LLMs compared",
+      "5 senior anesthesiology professors scored responses",
+      "ICC > 0.75 across all domains"
+    ],
+    "summary": "A direct comparative study showing that LLMs can help with pre-procedure patient education, but model choice and topic matter materially.",
+    "relevance": "Supports including LLMs only as supervised communication support, not as autonomous procedural advisors."
+  },
+  {
+    "id": "llm-perioperative-safety-41952934",
+    "type": "publication",
+    "title": "ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens",
+    "year": 2026,
+    "pmid": "41952934",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41952934/",
+    "local_copy": "docs/raw/publications/pubmed-41952934.html",
+    "perspectives": [
+      "engineering",
+      "clinical"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "Across both trials, ChatGPT accurately identified 76 of 80 clinically significant DDIs (sensitivity 95%).",
+    "hard_numbers": [
+      "40 synthetic perioperative vignettes",
+      "76/80 clinically significant DDIs identified",
+      "Sensitivity 95%"
+    ],
+    "summary": "A vignette-based perioperative safety study suggesting LLMs can catch many drug interactions but still miss some clinically relevant details.",
+    "relevance": "Useful as proof of promise for checklist-style perioperative support, but not enough to justify unsupervised deployment."
+  },
+  {
+    "id": "llm-omfs-training-survey-41721118",
+    "type": "publication",
+    "title": "Large language model use in oral and maxillofacial surgery training: a national resident survey",
+    "year": 2026,
+    "pmid": "41721118",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41721118/",
+    "local_copy": "docs/raw/publications/pubmed-41721118.html",
+    "perspectives": [
+      "engineering",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "Eighty-one residents responded, 79.0% (64/81) reported having used an LLM.",
+    "hard_numbers": [
+      "81 residents surveyed",
+      "79.0% had used an LLM",
+      "96.9% of LLM users used ChatGPT",
+      "51.9% used LLMs at least monthly",
+      "97.5% reported no formal LLM education during residency"
+    ],
+    "summary": "A surgical-training survey showing that LLM use is already common on the ground, despite almost no formal governance or education.",
+    "relevance": "Important for implementation realism: even if the proposal ignores LLMs, clinicians-in-training are already using them informally."
+  },
+  {
+    "id": "llm-ir-leaflet-readability-41052822",
+    "type": "publication",
+    "title": "Better understanding: can a large language model safely improve readability of patient information leaflets in interventional radiology?",
+    "year": 2025,
+    "pmid": "41052822",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41052822/",
+    "local_copy": "docs/raw/publications/pubmed-41052822.html",
+    "perspectives": [
+      "patient",
+      "policy_expert"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "LLM-modified PILs had significantly lower mean reading grade (9.5\u00b10.5) compared with original PILs (11.1\u00b10.1) (p<0.01).",
+    "hard_numbers": [
+      "Reading grade improved from 11.1 \u00b1 0.1 to 9.5 \u00b1 0.5",
+      "Recommended reading grade of 6 was not achieved"
+    ],
+    "summary": "A practical study showing that LLMs can simplify procedure leaflets, but not enough to meet ideal readability standards and still requiring expert review.",
+    "relevance": "Supports an LLM role in patient-facing document improvement rather than procedure decision authority."
+  },
+  {
+    "id": "llm-ir-consent-39612047",
+    "type": "publication",
+    "title": "Large language model doctor: assessing the ability of ChatGPT-4 to deliver interventional radiology procedural information to patients during the consent process",
+    "year": 2024,
+    "pmid": "39612047",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39612047/",
+    "local_copy": "docs/raw/publications/pubmed-39612047.html",
+    "perspectives": [
+      "patient",
+      "clinical"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "GPT-4 produced outputs that were accurate, understandable, and in a conversational tone. However, GPT-4 had a decreased capacity to produce a comprehensive output.",
+    "hard_numbers": [
+      "Mean ratings: accuracy 4.29, comprehensiveness 3.85, readability 4.15, conversational tone 4.24, physician comfort 3.82",
+      "84% sufficient for accuracy, 71% for comprehensiveness, 67% for physician comfort"
+    ],
+    "summary": "A clinician-rated consent study showing that LLM outputs can be readable and broadly accurate but are often incomplete enough to make physicians uneasy.",
+    "relevance": "Good evidence for a human-in-the-loop consent-support role, not independent consenting."
+  },
+  {
+    "id": "llm-spine-triage-41424195",
+    "type": "publication",
+    "title": "Evaluating Large Language Models for Decision Support in Minimally Invasive Spine Surgery Triage and Procedural Categories",
+    "year": 2025,
+    "pmid": "41424195",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41424195/",
+    "local_copy": "docs/raw/publications/pubmed-41424195.html",
+    "perspectives": [
+      "engineering",
+      "clinical",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "LLMs may differentiate between surgical and non-surgical triage, but procedure selection should remain expert-led until systems mature.",
+    "hard_numbers": [
+      "90 clinical vignettes",
+      "10 predefined procedural categories",
+      "Kappa 0.415 and 0.587 for surgical vs non-surgical triage versus reference",
+      "Kappa 0.146 and 0.245 for full procedural-category agreement"
+    ],
+    "summary": "An instructive study showing that LLMs may be better at coarse triage than at actual procedure selection.",
+    "relevance": "Exactly the kind of caution that should shape any procedure-guidance ambitions in a BHF proposal."
+  },
+  {
+    "id": "llm-anesthesia-systematic-review-40524117",
+    "type": "publication",
+    "title": "The applications of ChatGPT and other large language models in anesthesiology and critical care: a systematic review",
+    "year": 2025,
+    "pmid": "40524117",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/40524117/",
+    "local_copy": "docs/raw/publications/pubmed-40524117.html",
+    "perspectives": [
+      "engineering",
+      "policy_expert",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "llm_procedures",
+      "implementation"
+    ],
+    "quote": "While LLMs are not yet equipped to fully assist physicians in anesthesiology and critical care, they have significant potential, and their capabilities are rapidly improving.",
+    "hard_numbers": [
+      "480 articles retrieved",
+      "45 papers included",
+      "Four major application segments: ICU, patient education, medical education, perioperative care"
+    ],
+    "summary": "A broader systematic review showing that LLM use around procedures clusters in education, simple scenario support, and perioperative tasks, with persistent underperformance in complex clinical reasoning.",
+    "relevance": "Very useful for keeping the proposal disciplined about what LLMs can realistically do today."
+  },
+  {
+    "id": "llm-informed-consent-rba-37812419",
+    "type": "publication",
+    "title": "Large Language Model-Based Chatbot vs Surgeon-Generated Informed Consent Documentation for Common Procedures",
+    "year": 2023,
+    "pmid": "37812419",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/37812419/",
+    "local_copy": "docs/raw/publications/pubmed-37812419.html",
+    "perspectives": [
+      "patient",
+      "policy_expert"
+    ],
+    "domains": [
+      "llm_procedures"
+    ],
+    "quote": "The mean composite completeness and accuracy score was lower for surgeons' RBAs at 1.6 than for LLM-based chatbot RBAs at 2.2 (P < .001).",
+    "hard_numbers": [
+      "6 surgical procedures",
+      "36 RBA documents compared",
+      "Readability 12.9 vs 15.7 grade level for chatbot vs surgeon-generated forms",
+      "Composite completeness and accuracy 2.2 vs 1.6"
+    ],
+    "summary": "A notable consent-documentation study suggesting LLMs can sometimes improve structured written consent content compared with routine surgeon-generated text.",
+    "relevance": "Supports LLM use for templating and documentation support, especially where standardization is currently poor."
+  },
+  {
+    "id": "llm-cardiology-systematic-review-41989882",
+    "type": "publication",
+    "title": "Large Language Models in Cardiology: Systematic Review",
+    "year": 2026,
+    "pmid": "41989882",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41989882/",
+    "local_copy": "docs/raw/publications/pubmed-41989882.html",
+    "perspectives": [
+      "engineering",
+      "clinical",
+      "grant_reviewer"
+    ],
+    "domains": [
+      "llm_procedures",
+      "implementation"
+    ],
+    "quote": "LLMs show meaningful potential in cardiology, especially for education and electrocardiogram interpretation, but performance varies across clinical tasks.",
+    "hard_numbers": [
+      "33 studies with quantitative outcome data",
+      "91% accuracy for one heart-failure question set (43/47)",
+      "Bing Chat omitted key myocardial infarction first aid steps in 25% to 45% of cases",
+      "ChatGPT-4 interpreted 91% (36/40) ECG vignettes correctly"
+    ],
+    "summary": "A cardiology-wide review showing promise for education and some diagnostic tasks, but weakness in emergency guidance, readability, and prospective validation.",
+    "relevance": "Useful for tying procedure-related LLM evidence back to the cardiovascular setting the BHF reviewers actually care about."
+  },
+  {
+    "id": "llm-citation-reliability-39238880",
+    "type": "publication",
+    "title": "ChatGPT-4 Knows Its A B C D E but Cannot Cite Its Source",
+    "year": 2024,
+    "pmid": "39238880",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39238880/",
+    "local_copy": "docs/raw/publications/pubmed-39238880.html",
+    "perspectives": [
+      "grant_reviewer",
+      "policy_expert"
+    ],
+    "domains": [
+      "llm_procedures",
+      "implementation"
+    ],
+    "quote": "With 57% of references being inaccurate or nonexistent, ChatGPT-4 has fallen short in providing reliable and reproducible references.",
+    "hard_numbers": [
+      "30 generated references assessed",
+      "43.3% accurate",
+      "43.3% inaccurate",
+      "13.3% nonexistent",
+      "56.7% false overall"
+    ],
+    "summary": "A sharp cautionary paper showing that even when LLM narrative answers look reasonable, the citation layer can be dangerously unreliable.",
+    "relevance": "Important for the red-team case against letting LLM-generated procedure guidance or evidence summaries go unverified."
   }
 ];
 
@@ -649,6 +1375,11 @@ window.KNOWLEDGE_GRAPH = {
       "kind": "perspective"
     },
     {
+      "id": "domain:ai_ecg",
+      "label": "ai ecg",
+      "kind": "domain"
+    },
+    {
       "id": "domain:atrial_fibrillation",
       "label": "atrial fibrillation",
       "kind": "domain"
@@ -661,6 +1392,11 @@ window.KNOWLEDGE_GRAPH = {
     {
       "id": "domain:implementation",
       "label": "implementation",
+      "kind": "domain"
+    },
+    {
+      "id": "domain:llm_procedures",
+      "label": "llm procedures",
       "kind": "domain"
     },
     {
@@ -854,6 +1590,202 @@ window.KNOWLEDGE_GRAPH = {
       "kind": "publication",
       "pmid": "40534891",
       "year": 2025
+    },
+    {
+      "id": "evidence:precision-cv-ai-review-37623518",
+      "label": "Artificial Intelligence-Based Methods for Precision Cardiovascular Medicine",
+      "kind": "publication",
+      "pmid": "37623518",
+      "year": 2023
+    },
+    {
+      "id": "evidence:rl-dtr-review-40724777",
+      "label": "Reinforcement Learning and Its Clinical Applications Within Healthcare: A Systematic Review of Precision Medicine and Dynamic Treatment Regimes",
+      "kind": "publication",
+      "pmid": "40724777",
+      "year": 2025
+    },
+    {
+      "id": "evidence:cv-digital-twin-review-39322420",
+      "label": "Cardiovascular care with digital twin technology in the era of generative artificial intelligence",
+      "kind": "publication",
+      "pmid": "39322420",
+      "year": 2024
+    },
+    {
+      "id": "evidence:postmi-mace-meta-40630448",
+      "label": "Accuracy of Machine Learning Models for Early Prediction of Major Cardiovascular Events Post Myocardial Infarction: A Systematic Review and Meta-Analysis",
+      "kind": "publication",
+      "pmid": "40630448",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-lvef-30617318",
+      "label": "Screening for cardiac contractile dysfunction using an artificial intelligence-enabled electrocardiogram",
+      "kind": "publication",
+      "pmid": "30617318",
+      "year": 2019
+    },
+    {
+      "id": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "label": "An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction",
+      "kind": "publication",
+      "pmid": "31378392",
+      "year": 2019
+    },
+    {
+      "id": "evidence:ai-ecg-hcm-32081280",
+      "label": "Detection of Hypertrophic Cardiomyopathy Using a Convolutional Neural Network-Enabled Electrocardiogram",
+      "kind": "publication",
+      "pmid": "32081280",
+      "year": 2020
+    },
+    {
+      "id": "evidence:ai-ecg-amyloidosis-34218880",
+      "label": "Artificial Intelligence-Enhanced Electrocardiogram for the Early Detection of Cardiac Amyloidosis",
+      "kind": "publication",
+      "pmid": "34218880",
+      "year": 2021
+    },
+    {
+      "id": "evidence:ai-ecg-ph-36338407",
+      "label": "Artificial Intelligence-Enabled Electrocardiogram Improves the Diagnosis and Prediction of Mortality in Patients With Pulmonary Hypertension",
+      "kind": "publication",
+      "pmid": "36338407",
+      "year": 2022
+    },
+    {
+      "id": "evidence:ai-ecg-lvef-confidence-36532114",
+      "label": "Artificial intelligence-enabled electrocardiogram screens low left ventricular ejection fraction with a degree of confidence",
+      "kind": "publication",
+      "pmid": "36532114",
+      "year": 2022
+    },
+    {
+      "id": "evidence:ai-ecg-systematic-review-38288263",
+      "label": "Clinical Applications, Methodology, and Scientific Reporting of Electrocardiogram Deep-Learning Models: A Systematic Review",
+      "kind": "publication",
+      "pmid": "38288263",
+      "year": 2023
+    },
+    {
+      "id": "evidence:ai-ecg-lvsd-external-38505486",
+      "label": "Artificial intelligence-based identification of left ventricular systolic dysfunction from 12-lead electrocardiograms: external validation and advanced application of an existing model",
+      "kind": "publication",
+      "pmid": "38505486",
+      "year": 2024
+    },
+    {
+      "id": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "label": "External assessment of an artificial intelligence-enabled electrocardiogram for aortic stenosis detection",
+      "kind": "publication",
+      "pmid": "40703138",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-hf-meta-41552681",
+      "label": "Artificial intelligence in electrocardiogram-based prediction of heart failure: a systematic review and meta-analysis",
+      "kind": "publication",
+      "pmid": "41552681",
+      "year": 2025
+    },
+    {
+      "id": "evidence:ai-ecg-af-review-41640418",
+      "label": "Artificial intelligence for atrial fibrillation prediction while in sinus rhythm: a narrative review",
+      "kind": "publication",
+      "pmid": "41640418",
+      "year": 2026
+    },
+    {
+      "id": "evidence:alivecor-kardia12l-commercial",
+      "label": "AliveCor Kardia 12L",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:anumana-ecg-ai-commercial",
+      "label": "Anumana ECG-AI",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:philips-cardiologs-commercial",
+      "label": "Philips Cardiologs ECG analysis",
+      "kind": "webpage",
+      "pmid": null,
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-anesthesia-patient-education-41899118",
+      "label": "Artificial Intelligence as a Support Tool for Preoperative Patient Education in Anesthesiology: A Comparative Evaluation of Five Large Language Models",
+      "kind": "publication",
+      "pmid": "41899118",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-perioperative-safety-41952934",
+      "label": "ChatGPT as a Tool for Perioperative Safety: Evaluating Drug Interaction Detection in Anesthetic Regimens",
+      "kind": "publication",
+      "pmid": "41952934",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-omfs-training-survey-41721118",
+      "label": "Large language model use in oral and maxillofacial surgery training: a national resident survey",
+      "kind": "publication",
+      "pmid": "41721118",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-ir-leaflet-readability-41052822",
+      "label": "Better understanding: can a large language model safely improve readability of patient information leaflets in interventional radiology?",
+      "kind": "publication",
+      "pmid": "41052822",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-ir-consent-39612047",
+      "label": "Large language model doctor: assessing the ability of ChatGPT-4 to deliver interventional radiology procedural information to patients during the consent process",
+      "kind": "publication",
+      "pmid": "39612047",
+      "year": 2024
+    },
+    {
+      "id": "evidence:llm-spine-triage-41424195",
+      "label": "Evaluating Large Language Models for Decision Support in Minimally Invasive Spine Surgery Triage and Procedural Categories",
+      "kind": "publication",
+      "pmid": "41424195",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-anesthesia-systematic-review-40524117",
+      "label": "The applications of ChatGPT and other large language models in anesthesiology and critical care: a systematic review",
+      "kind": "publication",
+      "pmid": "40524117",
+      "year": 2025
+    },
+    {
+      "id": "evidence:llm-informed-consent-rba-37812419",
+      "label": "Large Language Model-Based Chatbot vs Surgeon-Generated Informed Consent Documentation for Common Procedures",
+      "kind": "publication",
+      "pmid": "37812419",
+      "year": 2023
+    },
+    {
+      "id": "evidence:llm-cardiology-systematic-review-41989882",
+      "label": "Large Language Models in Cardiology: Systematic Review",
+      "kind": "publication",
+      "pmid": "41989882",
+      "year": 2026
+    },
+    {
+      "id": "evidence:llm-citation-reliability-39238880",
+      "label": "ChatGPT-4 Knows Its A B C D E but Cannot Cite Its Source",
+      "kind": "publication",
+      "pmid": "39238880",
+      "year": 2024
     }
   ],
   "edges": [
@@ -1346,11 +2278,586 @@ window.KNOWLEDGE_GRAPH = {
       "source": "evidence:qualitative-ai-cardiac-40534891",
       "target": "domain:implementation",
       "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:precision-cv-ai-review-37623518",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:rl-dtr-review-40724777",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:cv-digital-twin-review-39322420",
+      "target": "domain:programme_design",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:postmi-mace-meta-40630448",
+      "target": "domain:post_mi",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-30617318",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-sinus-rhythm-31378392",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hcm-32081280",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-amyloidosis-34218880",
+      "target": "domain:cardiomyopathy",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-ph-36338407",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvef-confidence-36532114",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-systematic-review-38288263",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-lvsd-external-38505486",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-aortic-stenosis-external-40703138",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-hf-meta-41552681",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:ai-ecg-af-review-41640418",
+      "target": "domain:atrial_fibrillation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:alivecor-kardia12l-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:anumana-ecg-ai-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "domain:ai_ecg",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:philips-cardiologs-commercial",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-patient-education-41899118",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-perioperative-safety-41952934",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-omfs-training-survey-41721118",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-leaflet-readability-41052822",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-ir-consent-39612047",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-spine-triage-41424195",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-anesthesia-systematic-review-40524117",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "perspective:patient",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-informed-consent-rba-37812419",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:engineering",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:clinical",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-cardiology-systematic-review-41989882",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "perspective:grant_reviewer",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "perspective:policy_expert",
+      "kind": "supports_perspective"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "domain:llm_procedures",
+      "kind": "supports_domain"
+    },
+    {
+      "source": "evidence:llm-citation-reliability-39238880",
+      "target": "domain:implementation",
+      "kind": "supports_domain"
     }
   ],
   "meta": {
-    "evidence_count": 26,
+    "evidence_count": 54,
     "perspective_count": 5,
-    "domain_count": 5
+    "domain_count": 7
   }
 };

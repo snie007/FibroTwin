@@ -1,352 +1,417 @@
 # Background literature review for the BHF AI challenge concept
 
-Note: direct access to the Overleaf project was blocked during collection, so this review is based on the preliminary abstract plus publicly accessible call documents, guidelines, and publications.
+Note: direct access to the Overleaf project was blocked during collection, so this review is based on the preliminary abstract plus publicly accessible call documents, guidelines, publications, and commercial webpages saved locally in this workspace.
 
 ## Core proposition being tested
 
-The abstract argues that cardiovascular care still relies too heavily on static risk models, while real clinical decisions need:
+The draft idea is strongest when framed as a move away from static cardiovascular risk prediction and toward *individualized decisions over time*:
 
-1. individual treatment effect estimation, not just baseline risk prediction
-2. longitudinal latent-state modelling, not cross-sectional snapshots
-3. multimodal fusion across EHR, imaging, physiology, and wearables
-4. clinically safe de-escalation rules, especially where high negative predictive value matters
+1. individual treatment effect estimation, not just average-risk prediction
+2. latent disease-trajectory modelling, not one-off cross-sectional classification
+3. multimodal fusion across ECG, imaging, EHR, genetics, and wearables
+4. clinically safe escalation and de-escalation rules, especially where negative predictive value matters
 
-The three proposed clinical anchors are well chosen because each exposes a different failure mode of current practice:
+The three proposed anchors still make sense because they represent three different decision types:
 
-- *AF ablation*: average treatment effects obscure who really benefits
-- *Cardiomyopathy family screening*: categorical surveillance schedules are blunt and likely over-monitor some relatives while under-detecting others
-- *Post-MI care*: risk and treatment needs evolve after discharge, but follow-up systems are still coarse and episodic
-
----
-
-## 1) Clinical perspective
-
-### A. Atrial fibrillation ablation: there is real treatment-effect heterogeneity to model
-
-*CABANA* is the cleanest starting point for the "risk is not benefit" argument.
-
-- In 2,204 patients across 126 centres in 10 countries, the primary endpoint occurred in *8.0%* of the ablation group versus *9.2%* of the drug-therapy group, HR *0.86* (95% CI 0.65 to 1.15), so the average intention-to-treat effect on the primary composite was not significant. But ablation still reduced death or cardiovascular hospitalization, *51.7% vs 58.1%*, HR *0.83* (95% CI 0.74 to 0.93), and AF recurrence, *49.9% vs 69.5%*, HR *0.52* (95% CI 0.45 to 0.60). PMID: *30874766*.
-- The most proposal-relevant message is that average trial effects are mixed because the cohort is mixed.
-
-Newer CABANA subgroup analyses strengthen that point.
-
-- In a post hoc comorbidity analysis, the adjusted HR for ablation versus drug therapy on the primary outcome was *0.62* (95% CI 0.42 to 0.93) in patients with *high comorbidity burden* versus *1.16* (95% CI 0.76 to 1.77) in low-burden patients, interaction *P=0.038*. PMID: *41213867*.
-- In a frailty analysis, event reduction was not clearly different by frailty, but quality-of-life gains were. Frail patients receiving ablation had MAFSI frequency improvement of *-1.58* (95% CI -2.11 to -1.06) and severity improvement of *-1.26* (95% CI -1.69 to -0.84), both *P<0.001*. PMID: *41652456*.
-
-This is exactly the kind of setting where individualized treatment effect estimation could outperform conventional guideline heuristics.
-
-### B. AF ablation: multimodal phenotyping already shows clinically meaningful gradient effects
-
-The *DECAAF* study shows why multimodal phenotyping matters.
-
-- Among patients undergoing first AF ablation, day-475 recurrent arrhythmia climbed from *15.3%* in stage-1 fibrosis to *69.4%* in stage-4 fibrosis.
-- Every *1%* increase in left atrial fibrosis was associated with recurrence HR *1.06* (95% CI 1.03 to 1.08).
-- Adding fibrosis to a conventional recurrence model increased the C statistic from *0.65 to 0.69*. PMID: *24496537*.
-
-Clinically, that says the proposal should not frame imaging, physiology, and EHR as optional add-ons. They are part of the phenotype that determines likely benefit and recurrence.
-
-### C. Cardiomyopathy family screening: current surveillance is necessary, but probably too blunt
-
-For dilated cardiomyopathy relatives, the screening yield is high enough to justify active surveillance.
-
-- In *1,365* first-degree relatives, *14.1%* had new DCM-related findings: *2.1%* DCM, *3.6%* LV systolic dysfunction, *8.4%* LV enlargement. PMID: *37225358*.
-- The key quote is that screening identified findings in *"1 in 7"* reportedly unaffected first-degree relatives, regardless of race and ethnicity.
-
-For hypertrophic cardiomyopathy relatives, the story is more nuanced.
-
-- In *1,230* relatives from *531* families, the baseline combined clinical and genetic yield was *26%*.
-- Over *6,762 person-years* and a mean *7 years* of follow-up, only *43* additional relatives developed HCM, an incremental yield of *4%*.
-- In gene-elusive families, only *2* relatives, *0.4%*, with baseline wall thickness *<10 mm* developed HCM on follow-up. PMID: *39365224*.
-
-That low-yield tail is where trajectory modelling could have immediate clinical value: identifying who can be safely monitored less often.
-
-### D. Existing cardiomyopathy policy is categorical, not dynamic
-
-The current HCM surveillance framework is structured but coarse.
-
-From the ACC/AHA HCM guidance summary:
-
-- genotype-positive or early-onset pediatric families: ECG/echo every *1 to 2 years*
-- other pediatric relatives: every *2 to 3 years*
-- adults: every *3 to 5 years*
-- variant pathogenicity should be revisited every *2 to 3 years*
-
-Useful quote: *"Screening first-degree family members ... can begin at any age and can be influenced by specifics of the patient/family history and family preference."* Source: `hcm-guidelines-made-simple-2020.pdf`.
-
-That is a strong opening for a proposal that moves from age-band rules to trajectory-informed intensity.
-
-### E. Post-MI care: longitudinal optimization is plausible and clinically relevant
-
-The post-MI workstream is slightly less mature in the collected literature than AF and cardiomyopathy, but the rationale is still strong.
-
-- NICE explicitly frames acute coronary syndromes as needing both early and longer-term rehabilitation management. Source: NICE NG185.
-- In a 2026 STEMI cohort of *1,863* patients, 1-year mortality was *13.6%* and a parsimonious 5-feature ML model achieved an AUC of *0.821*. PMID: *41688111*.
-- A 2025 systematic review included *30* studies using ECG, imaging, and EHR data for acute myocardial ischemia diagnosis, risk stratification, and decision support. PMID: *41523481*.
-
-So the clinical case is not that AI for post-MI care is absent. It is that current tools are mostly point predictions, while the proposal wants dynamic treatment and follow-up optimization over time.
-
-### Clinical take-home
-
-The strongest clinical pitch is:
-
-- AF ablation gives a compelling treatment-effect heterogeneity use case.
-- Cardiomyopathy family screening gives a compelling surveillance-intensity use case.
-- Post-MI care gives a compelling dynamic follow-up and secondary-prevention use case.
+- *AF ablation* = who is likely to benefit enough from an invasive rhythm-control strategy
+- *cardiomyopathy family screening* = who needs closer versus lighter surveillance
+- *post-MI care* = who needs more intensive follow-up, treatment optimization, or rehabilitation attention over time
 
 ---
 
-## 2) Engineering perspective
+## 0) Broader studies on this kind of idea
 
-### A. The proposal addresses a real technical gap, not just a clinical slogan
+### A. The precision-cardiovascular-AI literature is real, but still mostly prediction-heavy
 
-A foundational cardiovascular AI review argued that traditional statistical methods may struggle with complex biomedical and healthcare data. PMID: *29352006*.
+A 2023 scoping review of AI-based precision cardiovascular medicine included *28 studies* and found that the field was still dominated by *prediction (50%)*, with less work in *diagnosis (21%)*, *phenotyping (14%)*, and *risk stratification (14%)*. Most studies used *EHR data (79%)*, with imaging in *43%*. PMID: *37623518*.
 
-The engineering novelty should be described as the combination of three hard problems:
+That matters because the proposal is trying to move one step beyond the current center of gravity. It is not enough to predict risk. The harder and more interesting question is how to use longitudinal multimodal data to change decisions.
 
-1. *heterogeneous treatment effect estimation* in high-dimensional observational data
-2. *latent temporal-state inference* from irregular longitudinal data
-3. *multimodal fusion* across asynchronous sources with missingness and unequal reliability
+### B. Dynamic treatment-regime methods are now a recognized clinical-AI direction
 
-If the application treats these as separate side-projects, it will feel fragmented. If it presents them as one decision-engine stack, it will feel programmatic.
+A 2025 systematic review of reinforcement learning in precision medicine and dynamic treatment regimes included *46 studies* and reported a sharp rise since 2020, but also emphasized persistent barriers around:
 
-### B. The proposal should emphasize clinically constrained objectives, not generic model performance
+- interpretability
+- reward definition
+- data limitations
+- clinician adoption
 
-Good engineering framing for this call:
+PMID: *40724777*.
 
-- optimize for *negative predictive value* where safe non-intervention matters
-- calibrate risk over time, not only discrimination at baseline
-- show subgroup performance by sex, ancestry, deprivation, age, and disease severity
-- design models to generate *actionable outputs*: offer ablation, intensify surveillance, de-escalate follow-up, escalate rehab
+So the idea is timely, but reviewers will expect very careful language around causal assumptions, policy learning, and guardrails.
 
-DECAAF is useful here because it shows incremental predictive gain from a richer phenotype, but only modestly if handled as a conventional model, C-statistic *0.65 to 0.69*. PMID: *24496537*. That supports more ambitious fusion rather than single-modality add-ons.
+### C. Cardiovascular digital-twin thinking is adjacent, but can easily become too futuristic
 
-### C. Parsimony will help adoption
+A 2024 *European Heart Journal* review described cardiovascular digital twins as systems that integrate multimodal data into mechanistic and statistical models to improve disease phenotyping, diagnostic workflows, and procedural planning. PMID: *39322420*.
 
-The STEMI mortality paper is useful because the best model used only *5* variables and still achieved AUC *0.821*. PMID: *41688111*.
+This is useful background because it shows that the field is already converging on:
 
-That is a useful design warning: the programme should not default to the most complex multimodal transformer everywhere. Reviewers may respond better if the proposal says:
+- multimodal fusion
+- individualized simulation
+- dynamic updating
+- procedural decision support
 
-- use the richest model where it materially improves decisions
-- distill or simplify outputs where parsimonious models are enough
-- build deployment pathways that are realistic for NHS data availability
+But it is also a warning. If the proposal sounds like speculative digital-twin futurism, it may lose BHF reviewers. The safer framing is decision-grade longitudinal modelling with explicit validation and implementation plans.
 
-### D. Engineering risks that must be named explicitly
+### D. Post-MI AI has broader evidence than the first-pass review captured
 
-Recent cardiology AI reviews repeatedly emphasize:
+A 2025 systematic review and meta-analysis of machine-learning models for *major cardiovascular events after MI* included *28 studies* covering *59,392 patients* and reported pooled validation performance of:
 
-- generalizability limits
-- workflow integration failures
-- algorithmic bias
-- poor explainability
-- regulatory burden
+- *C-index 0.77* (95% CI 0.74 to 0.81)
+- sensitivity *0.78*
+- specificity *0.85*
 
-PMIDs: *38901544*, *40151850*.
+PMID: *40630448*.
 
-If the proposal sounds too confident about cross-site transfer or silent background deployment, that will hurt it.
-
-### Engineering take-home
-
-The engineering section should read less like "we will apply AI" and more like:
-
-- we will build decision-grade longitudinal multimodal models
-- we will benchmark them against simple policy baselines and parsimonious models
-- we will optimize for safety, calibration, and transportability
-- we will pre-plan monitoring, drift checks, and subgroup auditing
+This is helpful because it strengthens the post-MI arm. The field is not empty. The gap is that most models remain early event-prediction tools rather than longitudinal treatment and follow-up policies.
 
 ---
 
-## 3) Grant reviewer perspective
+## 1) AI-ECG review: academic and commercial
 
-### A. What this idea has going for it
+## A. Academic AI-ECG literature
 
-This concept maps unusually well onto the BHF call language.
+### 1. AI-ECG has already shown that cheap physiology can encode latent structural disease
 
-The call wants:
+The landmark low-EF screening paper trained on *44,959* patients and tested on *52,870*, achieving:
 
-- *"AI-powered transformation in cardiovascular health: From discovery to clinical practice"*
-- a *"step-change in impact or ambition"*
-- large integrated programmes, not small standalone projects
-- meaningful lived-experience involvement
-- robust management and governance
-- explicit path to translation and impact
+- *AUC 0.93*
+- sensitivity *86.3%*
+- specificity *85.7%*
 
-The proposal also naturally spans:
+Among patients without ventricular dysfunction, a positive AI-ECG screen was associated with *4.1-fold* higher risk of later ventricular dysfunction. PMID: *30617318*.
 
-- cardiovascular disease burden
-- methodological novelty
-- multimodal data
-- clinical translation
-- NHS relevance
+That is exactly the kind of result that makes AI-ECG relevant to this proposal. It suggests routine ECG can carry a longitudinal latent-state signal, not just present-time rhythm information.
 
-### B. What reviewers may worry about
+### 2. AI-ECG has broadened beyond rhythm classification
 
-1. *Too broad.* AF, cardiomyopathy, and post-MI could look like three mini-programmes unless tied together by one methodological core.
-2. *Too much method, not enough implementation.* BHF wants research, but also a real path to patient benefit.
-3. *Causal claims in observational data.* Reviewers will push hard on confounding, target-trial logic, and validation.
-4. *Data access realism.* Do the teams already control the required imaging, EHR, genetic, and wearable streams?
-5. *Weak health-economics or NHS adoption plan.* NICE and HTA readiness matter.
+Important disease-specific examples now include:
 
-### C. What will strengthen the application
+- *AF during sinus rhythm*: *180,922* patients, *649,931* sinus-rhythm ECGs, AUC *0.87* from a single ECG and *0.90* when multiple ECGs were used. PMID: *31378392*.
+- *HCM detection*: test AUC *0.96*, sensitivity *87%*, specificity *90%*, with especially strong performance in younger patients. PMID: *32081280*.
+- *Cardiac amyloidosis*: holdout AUC *0.91*, with *84%* of amyloidosis cases detected, and prediction more than *6 months* before diagnosis in *59%* of those with prediagnosis ECGs. PMID: *34218880*.
+- *Pulmonary hypertension*: development cohort *41,097* patients, AUC *0.88*, sensitivity *81.0%*, specificity *79.6%*, with a *6-year* cardiovascular mortality HR of *3.69* for those predicted positive. PMID: *36338407*.
+- *Aortic stenosis external validation*: *5,425* patients, AUC *0.85*, sensitivity *0.83*, specificity *0.65*, NPV *0.94*. PMID: *40703138*.
 
-The application should probably be framed as 3 linked workstreams plus 2 cross-cutting platforms:
+Together, these papers show that AI-ECG is no longer just an arrhythmia story. It is increasingly a low-cost screen for latent structural and hemodynamic phenotypes.
 
-- WS1: individualized treatment effect estimation in AF ablation
-- WS2: trajectory-based surveillance for inherited cardiomyopathy relatives
-- WS3: dynamic post-MI follow-up and treatment optimization
-- Platform A: multimodal temporal learning and causal inference methods
-- Platform B: implementation science, regulation, health economics, and patient involvement
+### 3. The strongest AI-ECG papers also point toward uncertainty-aware and longitudinal use
 
-That structure matches the scale BHF expects.
+A 2022 study on AI-ECG for low EF added an explicit confidence estimate. With low-confidence cases excluded, performance improved from:
 
-### D. Numbers and phrases worth echoing back to BHF
+- internal AUC *0.9549* to *0.9759*
+- external AUC *0.9365* to *0.9653*
 
-From the call material:
+A positive high-confidence AI-ECG was associated with *8.67-fold* higher future LV dysfunction risk. PMID: *36532114*.
 
-- award size: *up to £10 million over 5 years*
-- *smaller standalone projects are unlikely to be competitive*
-- there will be a *formal review after the first year*
-- PIs from AI or data science backgrounds are welcome
-- meaningful lived experience involvement is expected
+This is especially relevant for the BHF proposal because it matches the stated interest in *safe de-escalation*. If the system cannot quantify uncertainty, it will be much harder to justify lighter surveillance or non-intervention.
 
-### Grant reviewer take-home
+### 4. External validation and reproducibility are still major weaknesses
 
-The application will land best if it is presented as a *generalizable decision-making platform* demonstrated in three high-value cardiovascular settings, not three disconnected disease projects.
+A 2023 systematic review found *53* clinically relevant ECG deep-learning models across *44* manuscripts, but only:
 
----
+- *18/53 (34%)* had external validation
+- *10/44 (23%)* gave enough detail for reproduction
+- *5/44 (11%)* made code or implementation resources available
 
-## 4) Patient perspective
+PMID: *38288263*.
 
-### A. Patients do not want fully autonomous AI in cardiology
+A 2024 external validation of an existing LVSD model still looked good overall, AUROC *0.88*, sensitivity *82%*, specificity *77%*, but performance was worse in tachycardia, AF, and wide-QRS subgroups. PMID: *38505486*.
 
-This is one of the clearest patient-side findings in the collected evidence.
+A 2025 meta-analysis of ECG-based AI for heart-failure prediction included *11 cohorts* and *1,728,134 participants*, but pooled performance was only *0.76* with *high heterogeneity* (*I2 = 89%*), and the authors explicitly noted lack of clinical-validity evidence. PMID: *41552681*.
 
-In a heart-failure survey of *110* patients:
+So the right take is not "AI-ECG is solved." It is:
 
-- *38.1%* were happy for their doctor to use AI help in treatment decisions
-- only *18.2%* were comfortable with AI acting *without* physician input
-- only *21.8%* were comfortable with AI remotely adjusting treatment with fewer in-person visits
-- *80.9%* preferred cardiologist diagnoses
-- *84.6%* preferred cardiologist treatment plans
-- *97.3%* would trust their cardiologist over AI in cases of disagreement
+- clinically impressive in some use cases
+- increasingly scalable
+- still quite uneven in external transportability and reporting quality
 
-PMID: *41346424*.
+### 5. How AI-ECG should be used in this proposal
 
-That is a major design implication. The proposal should not talk like the system will replace expert judgement.
+The best way to use AI-ECG here is *not* to turn the whole BHF application into an AI-ECG proposal.
 
-### B. Patients and clinicians in England describe AI as an adjunct, not a replacement
+It works better as:
 
-A qualitative study in two English hospitals found that patients, clinicians, and developers were broadly positive about AI, but wanted:
+- a low-cost longitudinal phenotyping layer
+- a scalable rule-out or trigger modality
+- a gateway into richer imaging/genetic/EHR assessment
+- an NHS-friendly modality because ECG is already ubiquitous
 
-- clinician verification
-- human empathy
-- transparency about AI use
-- data security
-- better workflow fit
+That positioning fits AF, cardiomyopathy, and post-MI much better than presenting AI-ECG as a standalone destination.
 
-Sample: *9* patients, *16* clinicians, *5* developers. PMID: *40534891*.
+## B. Commercial AI-ECG offerings
 
-### C. Why the cardiomyopathy workstream is patient-important
+Important commercial signals, based on locally saved product pages, include:
 
-Family screening has both emotional and logistical burden. Current policies are deliberately cautious, but blunt scheduling can mean:
+### 1. AliveCor Kardia 12L
 
-- repeated low-yield testing
-- uncertainty that drags on for years
-- unnecessary visits for very-low-risk relatives
-- delayed escalation for the higher-risk group who do need closer follow-up
+AliveCor describes Kardia 12L as an *"FDA-cleared ... AI-powered handheld 12-lead resting ECG system"* and reports:
 
-The HCM family-screening paper is powerful here because it suggests that some relatives are at genuinely very low follow-up yield, only *0.4%* conversion in one subgroup over long follow-up. PMID: *39365224*.
+- *27,000+ patients*
+- *250+ practices*
+- *4,000+ instances of myocardial infarction and ischemia detected*
+- AI trained with *one million ECGs*
+- *39 FDA-cleared determinations*
 
-### D. Why the AF workstream is patient-important
+Source: `docs/raw/webpages/alivecor-kardia12l.html`.
 
-If frail patients gain more quality-of-life improvement from ablation than non-frail patients, then a patient-centred AI programme should not be fixated only on mortality or hospitalization. PMID: *41652456*.
+This is important because it shows a commercial pathway centered on easier ECG acquisition plus onboard AI interpretation.
 
-### Patient take-home
+### 2. Anumana ECG-AI
 
-The user-facing value proposition should be:
+Anumana positions ECG-AI as enterprise disease screening from standard 12-lead ECGs and prominently advertises *"First and Only FDA Clearance for ECG-AI Cardiac Amyloidosis Algorithm Using a Standard 12-Lead ECG"*. The page also highlights commercial targets in:
 
-- fewer unnecessary procedures and visits
-- earlier escalation when trajectories worsen
-- more transparent, individualized recommendations
-- clinician-supervised AI that supports, rather than replaces, trusted care relationships
+- low ejection fraction
+- pulmonary hypertension
+- cardiac amyloidosis
 
----
+and workflow plumbing such as:
 
-## 5) Policy expert perspective
+- HL7 datapoints
+- ECG-management-system integration
+- CPT III code setup
 
-### A. The NHS policy environment is receptive, but not permissive by default
+Source: `docs/raw/webpages/anumana-ecg-ai.html`.
 
-The most important policy signal is that UK institutions now expect AI programmes to think beyond model accuracy.
+This is the clearest example of AI-ECG as a hospital-integrated screening product rather than a research prototype.
 
-- NICE ESF: digital tools need evidence matched to function and risk, and the framework was updated in *2022* to include AI and adaptive algorithms.
-- NICE AI/digital regulations service: explicitly maps the regulatory and HTA pathway.
-- MHRA roadmap: *11 work packages* across two workstreams for SaMD and AIaMD.
-- NHS AI code of conduct: *10 principles* for data-driven technology used by the NHS.
-- FDA AI SaMD policy: reinforces lifecycle management, transparency, and predetermined change control planning.
+### 3. Philips Cardiologs
 
-### B. Health inequalities and fairness are not optional extras
+Philips describes Cardiologs as the *"first FDA-cleared ECG analysis solution powered by deep learning technology"* and reports:
 
-Several NICE pages explicitly restate commissioner duties to reduce health inequalities. The MHRA roadmap also explicitly mentions inclusive innovation and the need for AIaMD to perform across diverse populations.
+- *over 20 publications and abstracts*
+- *4 patents*
+- *more than 200 million ECGs processed*
+- *over two million patients* diagnosed per year
 
-That means the proposal should pre-specify:
+Source: `docs/raw/webpages/philips-cardiologs-ecg-analysis.html`.
 
-- representation audits
-- fairness analyses
-- subgroup calibration/performance reporting
-- governance for data drift and reclassification
-- what happens when performance is worse in an under-served group
+This points to another commercial lane: AI-ECG not just for disease screening, but for service-line scale, ambulatory interpretation, and workflow efficiency.
 
-### C. Why policy experts may like the cardiomyopathy workstream
+### Commercial take-home
 
-Because it fits a policy problem they already understand: surveillance intensity is being managed with categorical rules, but guidelines themselves already admit that timing can be influenced by family history and preference.
+Commercial AI-ECG is already a real market category. But the evidence is mixed in type:
 
-### D. Why policy experts may worry about the AF and post-MI workstreams
+- academic literature gives disease-level performance estimates
+- commercial pages emphasize scale, regulatory status, workflow integration, and product claims
 
-Because treatment optimization algorithms can drift into opaque decision support without clear accountability, approval pathway, or reimbursement logic.
-
-So the proposal should say early that it will produce:
-
-- research outputs
-- clinically interpretable decision tools
-- evidence packages aligned to NICE ESF and MHRA expectations
-- monitored, human-supervised deployment models
-
-### Policy take-home
-
-This project can be made policy-attractive if it is framed as *responsible clinical AI infrastructure*, not just a prediction project.
+That combination supports including AI-ECG in the proposal, but only with very explicit external-validation and NHS-evaluation plans.
 
 ---
 
-## Cross-cutting synthesis
+## 2) Broader review of LLM use for guiding or informing procedures
 
-### The most persuasive narrative for the proposal
+The most important finding here is that the literature is broader than I first captured, but it is still mostly about *support around procedures*, not autonomous procedural guidance.
 
-Current cardiovascular care often asks the wrong question.
+### A. The strongest current use cases are education, consent, documentation, and checklist-style support
 
-- Standard models ask: *who is high risk?*
-- Clinicians need to ask: *who benefits from what, when, and with what follow-up intensity?*
+Examples:
 
-The collected evidence supports exactly that reframing:
+- *Preoperative patient education in anesthesiology*: *30* standardized questions, *5* LLMs, *5* senior anesthesiology professors as raters. LLMs looked usable as support tools, but performance varied significantly by model and topic. PMID: *41899118*.
+- *Interventional-radiology patient leaflets*: readability improved from grade *11.1* to *9.5* after LLM rewriting, but still did not reach the recommended grade *6*. PMID: *41052822*.
+- *IR consent-process information*: GPT-4 outputs were rated highly for readability and tone, but only *67%* of physicians were comfortable giving the outputs directly to patients. PMID: *39612047*.
+- *LLM-based consent documentation vs surgeon-generated text*: across *6* procedures and *36* RBA documents, LLM text had better composite completeness and accuracy scores and better readability. PMID: *37812419*.
 
-- AF: average ablation effects conceal meaningful heterogeneity
-- Cardiomyopathy: repeated family surveillance has non-trivial yield overall, but likely over-surveils low-yield subgroups
-- Post-MI: there is real opportunity for longitudinal risk updating and targeted follow-up
-- Patients: want clinician-supervised AI, not autonomy theatre
-- Policy: wants evidence, fairness, governance, and implementation realism
+So, LLMs can already help *inform* procedures, especially around patient communication and standardization.
 
-## Best evidence anchors for the final narrative
+### B. Perioperative safety support looks promising, but the evidence is mostly synthetic or vignette-based
 
-If the final document has to stay short, the highest-yield anchors are probably:
+A 2026 study of perioperative drug interaction detection used *40* synthetic vignettes and found that ChatGPT correctly identified *76 of 80* clinically significant interactions, sensitivity *95%*. PMID: *41952934*.
 
-1. *CABANA* for average effect vs individualized benefit, PMID *30874766*
-2. CABANA comorbidity analysis for explicit treatment-effect heterogeneity, PMID *41213867*
-3. *DECAAF* for multimodal phenotyping and recurrence gradient, PMID *24496537*
-4. DCM family screening yield, PMID *37225358*
-5. HCM low-yield follow-up subgroup, PMID *39365224*
-6. HCM guideline surveillance intervals, PMID *38718139* plus ACC guideline summary PDF
-7. HF patient attitudes toward AI, PMID *41346424*
-8. NICE ESF and MHRA roadmap for implementation legitimacy
-9. BHF Grand Challenge guidance for proposal tailoring
+Encouraging, yes. But this is still far from live, accountable perioperative decision support.
 
-## Recommended one-line thesis
+### C. Procedure selection is much harder than coarse triage
 
-*This programme will move cardiovascular AI from static event prediction toward individualized decisions about intervention, surveillance, and follow-up intensity, using multimodal longitudinal data and an explicitly deployable NHS-facing evidence framework.*
+In minimally invasive spine surgery, two advanced LLMs showed only slight-to-fair agreement on detailed procedural categories, but much better agreement when the task was collapsed to *surgical versus non-surgical triage*. PMID: *41424195*.
+
+That distinction is very important. It suggests that LLMs may help with:
+
+- sorting
+- summarizing
+- surfacing options
+- drafting explanations
+
+but should not be treated as reliable procedure-selection engines.
+
+### D. The workflow is already arriving before the governance
+
+A 2026 national OMFS resident survey found:
+
+- *79.0%* had used an LLM
+- *51.9%* used them at least monthly
+- *97.5%* had received no formal LLM education in residency
+
+PMID: *41721118*.
+
+So even if the proposal barely mentions LLMs, reviewers should assume clinicians and trainees are already using them informally.
+
+### E. Systematic reviews are still cautious
+
+A 2025 systematic review in anesthesiology and critical care included *45 papers* and concluded that LLMs are *not yet equipped to fully assist physicians*, even though they have significant potential in patient education, simple scenario handling, and perioperative support. PMID: *40524117*.
+
+A 2026 systematic review in cardiology found promise in education and ECG interpretation, but highlighted inconsistency in emergency guidance and readability, and a heavy reliance on small in silico studies. PMID: *41989882*.
+
+### F. Citation reliability is a real safety issue
+
+A 2024 orthopaedic-trauma paper found that among *30* ChatGPT-4-generated references, only *43.3%* were accurate, while *56.7%* were inaccurate or nonexistent. PMID: *39238880*.
+
+That is directly relevant to this proposal because it means any LLM-supported procedure summaries, evidence notes, or consent materials would need hard verification layers.
+
+### LLM take-home
+
+For this proposal, LLMs make sense only in a subordinate role:
+
+- patient explanation
+- consent-support drafting
+- MDT summarization
+- procedure-prep information
+- documentation assistance
+
+They do *not* yet have a strong evidence base for autonomous or near-autonomous procedure guidance.
+
+---
+
+## 3) Five-perspective synthesis
+
+## A. Clinical perspective
+
+### AF ablation remains the best treatment-effect heterogeneity case
+
+*CABANA* remains the cleanest starting point.
+
+- Primary endpoint: *8.0%* with ablation versus *9.2%* with drugs, HR *0.86* (95% CI 0.65 to 1.15)
+- Death or cardiovascular hospitalization: *51.7%* versus *58.1%*, HR *0.83* (95% CI 0.74 to 0.93)
+- AF recurrence: *49.9%* versus *69.5%*, HR *0.52* (95% CI 0.45 to 0.60)
+
+PMID: *30874766*.
+
+The newer comorbidity analysis is especially valuable because it gives an explicit heterogeneity signal:
+
+- high comorbidity burden HR *0.62* (95% CI 0.42 to 0.93)
+- low comorbidity burden HR *1.16* (95% CI 0.76 to 1.77)
+- interaction *P = 0.038*
+
+PMID: *41213867*.
+
+That is almost tailor-made for a proposal on individualized treatment effect estimation.
+
+### Multimodal phenotyping already matters clinically
+
+In *DECAAF*, recurrent arrhythmia at day 475 increased from *15.3%* in stage-1 fibrosis to *69.4%* in stage-4 fibrosis, and every *1%* increase in fibrosis increased recurrence hazard by *1.06*. PMID: *24496537*.
+
+The clinical message is simple: the proposal is more believable if multimodal phenotyping is treated as essential, not ornamental.
+
+### Cardiomyopathy family screening gives the strongest surveillance-intensity use case
+
+For DCM relatives, *14.1%* of *1,365* first-degree relatives had new DCM-related findings, including *2.1%* DCM. PMID: *37225358*.
+
+For HCM relatives, baseline yield was high but repeated follow-up yield was much lower:
+
+- baseline combined clinical/genetic yield *26%*
+- only *43* additional HCM diagnoses over *6,762 person-years*
+- only *0.4%* conversion in one very-low-risk gene-elusive subgroup
+
+PMID: *39365224*.
+
+That is exactly the niche where trajectory-informed de-escalation could matter.
+
+### Post-MI now has a stronger evidence footing
+
+The first-pass review understated how much broader post-MI AI evidence already exists:
+
+- NICE NG185 explicitly covers early and longer-term rehabilitation management
+- a 2025 ischemia review included *30* studies, PMID *41523481*
+- a 2025 post-MI MACE meta-analysis included *28* studies and *59,392* patients, PMID *40630448*
+- a 2026 STEMI mortality model reached AUC *0.821* with only *5* features, PMID *41688111*
+
+So the post-MI case is now stronger. The gap is still dynamic care optimization, not mere event prediction.
+
+## B. Engineering perspective
+
+The engineering novelty should be framed as the combination of three hard problems:
+
+1. heterogeneous treatment effect estimation
+2. latent temporal-state modelling under irregular follow-up
+3. multimodal fusion with explicit missingness, uncertainty, and transportability handling
+
+The deeper review also sharpens two supporting claims:
+
+- *AI-ECG* shows that cheap, widely available signals can encode latent cardiovascular phenotype
+- *LLMs* show promise mainly at the interface layer, not as the clinical core
+
+That leads to a tighter stack:
+
+- *core scientific engine*: longitudinal multimodal decision models
+- *scalable ingress layer*: ECG and other low-friction signals where useful
+- *communication/workflow layer*: clinician-supervised LLM tools for explanation and documentation only
+
+## C. Grant reviewer perspective
+
+The proposal now has a clearer answer to "why this, why now?"
+
+- the methodology is more mature than a purely speculative idea
+- the clinical use cases are distinct but unifiable
+- AI-ECG offers an NHS-scalable entry modality
+- commercial products prove translational demand exists
+- the LLM evidence argues for a narrow, realistic adjunct role rather than hype
+
+The main reviewer anxieties will still be:
+
+- too many ideas under one roof
+- overclaiming causal treatment optimization from observational data
+- turning AI-ECG into a disconnected side-show
+- letting LLMs sound more clinically mature than they are
+
+## D. Patient perspective
+
+The existing patient-preference result remains central: in heart-failure patients, only *18.2%* were comfortable with AI acting without physician input, while *97.3%* would trust their cardiologist over AI in disagreement. PMID: *41346424*.
+
+The newer LLM literature fits that perfectly. Patients may benefit from:
+
+- clearer procedure information
+- more readable documents
+- standardized consent-support materials
+
+But that is still consistent with a clinician-supervised model rather than automation.
+
+## E. Policy expert perspective
+
+The policy environment remains receptive but conditional:
+
+- NICE ESF wants evidence proportionate to risk and function
+- MHRA and FDA both emphasize lifecycle governance for adaptive software
+- commercial AI-ECG shows that workflow integration and reimbursement logic matter
+- LLM evidence is still too immature for strong clinical-decision claims without prospective oversight
+
+This means the proposal should explicitly separate:
+
+- decision models that may become regulated decision-support tools
+- communication/documentation aids that need governance but may sit at a different regulatory intensity
+
+---
+
+## 4) Tightened recommendation for the proposal write-up
+
+### What to emphasize
+
+- One *generalizable decision platform*, not three disease silos
+- Clinical questions about *who benefits, who needs surveillance, and who can safely avoid extra intervention*
+- Multimodal longitudinal modelling as the scientific core
+- AI-ECG as a pragmatic, scalable phenotyping/input layer
+- LLMs only as a supervised interface and workflow layer
+- NHS-facing validation, governance, fairness, and implementation from day 1
+
+### What to de-emphasize
+
+- generic "AI will transform cardiology" language
+- futuristic digital-twin rhetoric without a concrete validation plan
+- any implication of autonomous LLM-guided procedures
+- any tendency to let AI-ECG become a fourth unrelated mini-project
+
+### Recommended tighter one-line thesis
+
+*This programme will move cardiovascular AI from static risk prediction toward individualized decisions about intervention, surveillance, and follow-up intensity, using multimodal longitudinal data, scalable physiological signals such as ECG, and explicitly NHS-ready evidence generation.*
+
+### Recommended tighter reviewer-facing contrast sentence
+
+*This is not another cardiovascular prediction-score proposal: it is a programme to decide who benefits from treatment, who requires closer surveillance, and who can be safely spared unnecessary follow-up, with validation designed for clinical practice rather than benchmark performance alone.*

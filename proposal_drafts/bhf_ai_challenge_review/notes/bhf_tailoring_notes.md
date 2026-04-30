@@ -17,6 +17,7 @@ Key hard facts:
 - full application: *March 2027*
 - interviews: *June 2027*
 - formal review after *year 1*
+- *smaller standalone projects are unlikely to be competitive*
 
 ## Recommended framing
 
@@ -28,16 +29,17 @@ Best framing:
 - demonstrated in 3 use-cases with different decision types:
   - AF ablation = intervention selection
   - inherited cardiomyopathy = surveillance intensity
-  - post-MI care = follow-up/treatment optimization
+  - post-MI care = follow-up and treatment optimization
 
 ### 2. Make the patient benefit concrete
 
-The abstract should avoid generic claims like "improve outcomes" and instead say things like:
+Avoid generic claims like "improve outcomes" and instead say things like:
 
 - reduce unnecessary ablation and low-yield surveillance
 - identify patients with the greatest predicted benefit from invasive or intensive care
 - safely de-escalate follow-up where high negative predictive value is achieved
 - support earlier escalation when latent trajectories worsen
+- improve patient-facing explanations and follow-up planning without replacing clinicians
 
 ### 3. Put implementation into the science, not after it
 
@@ -50,30 +52,58 @@ Include explicit work on:
 - health economics and service redesign
 - subgroup fairness and equity analysis
 - human factors and workflow integration
+- prospective or shadow-mode evaluation pathways
 
-### 4. Make the team architecture reviewer-friendly
+### 4. Use AI-ECG as an enabling layer, not the whole pitch
+
+The deeper review strengthens AI-ECG as part of the story, but not as the centre of gravity.
+
+Best use in the application:
+
+- as a scalable, low-cost phenotyping and screening modality
+- as a trigger for richer imaging, genetic, or EHR review
+- as a way to make longitudinal monitoring more NHS-realistic
+
+Avoid letting the proposal drift into "we also do AI-ECG" as a separate mini-project.
+
+### 5. Keep LLMs strictly subordinate
+
+The current literature supports LLMs mainly for:
+
+- patient explanation
+- consent-support drafting
+- MDT summarization
+- procedure-prep information
+- documentation support
+
+It does *not* support making LLM-guided procedures or autonomous perioperative decisions a major scientific claim.
+
+If included, LLMs should sit inside an implementation and communication work package, not at the core of the proposal.
+
+### 6. Make the team architecture reviewer-friendly
 
 The team should visibly include:
 
-- causal inference / treatment-effect estimation expertise
+- causal inference and treatment-effect estimation expertise
 - longitudinal and multimodal ML expertise
 - AF electrophysiology expertise
-- inherited cardiomyopathy / cardiovascular genetics expertise
-- acute coronary syndrome / rehabilitation / secondary prevention expertise
+- inherited cardiomyopathy and cardiovascular genetics expertise
+- acute coronary syndrome, rehabilitation, and secondary prevention expertise
 - NHS implementation and health economics expertise
+- regulatory and device-governance expertise
 - patient and public contributors with real authority
-- ideally one SME or industry/data platform partner
+- ideally one SME or platform partner with deployment experience
 
-### 5. Use milestone language
+### 7. Use milestone language
 
 The year-1 review means reviewers will want credible early outputs.
 
 Suggested milestone logic:
 
 - Year 1: data harmonization, governance, target-trial definitions, baseline benchmarks, patient/public co-design
-- Year 2: retrospective multimodal models and subgroup auditing
-- Year 3: temporal updating and decision-policy modelling
-- Year 4: external validation, health-economic modelling, shadow-mode deployment
+- Year 2: retrospective multimodal models, AI-ECG integration studies, subgroup auditing
+- Year 3: temporal updating, decision-policy modelling, LLM-supported communication prototypes in shadow mode
+- Year 4: external validation, health-economic modelling, workflow pilots, shadow deployment
 - Year 5: prospective evaluation package and scale-up roadmap
 
 ## Likely weak points to fix before submission
@@ -82,31 +112,34 @@ Suggested milestone logic:
 Add:
 
 - explicit target-trial emulation language
-- negative control / sensitivity analyses
 - treatment-policy estimands defined prospectively
+- negative controls and sensitivity analyses
 - external validation across institutions
+- prespecified subgroup transportability checks
 
 ### Weak point 2: multimodal data access may sound aspirational
 Add:
 
 - named datasets and sites
 - what data already exist versus what must be prospectively collected
-- fallback plan if wearable data are sparse
+- fallback plan if wearables are sparse
+- a minimum viable model if the richest multimodal stack is delayed
 
 ### Weak point 3: post-MI theme may feel less differentiated than the other two
 Strengthen with:
 
 - a sharper decision target, for example follow-up intensity, rehab allocation, medication intensification, or imaging review escalation
 - explicit time-updated prediction windows
-- clinically meaningful endpoints linked to service use
+- service-linked endpoints, not just mortality or MACE
 
 ### Weak point 4: proposal could drift into generic AI optimism
-Counter this by saying explicitly:
+Counter this explicitly:
 
 - the aim is not autonomy
 - clinician oversight is required
 - fairness, calibration, and interpretability are primary outputs
 - success includes safe non-intervention, not just more intervention
+- LLM outputs will be verified and never treated as self-validating evidence
 
 ## Useful phrases to recycle in the proposal
 
@@ -118,11 +151,12 @@ Counter this by saying explicitly:
 - *robust management and governance*
 - *responsible AI*
 - *NHS-ready evidence generation*
+- *clinician-supervised decision support*
 
 ## Recommended punchy positioning sentence
 
-*We will build and validate a generalizable, NHS-ready AI framework for individualized cardiovascular decisions, estimating who benefits from intervention, who requires closer surveillance, and who can be safely spared unnecessary follow-up.*
+*We will build and validate a generalizable, NHS-ready AI framework for individualized cardiovascular decisions, estimating who benefits from intervention, who requires closer surveillance, and who can be safely spared unnecessary follow-up, while using scalable signals such as ECG to widen practical reach.*
 
 ## Recommended reviewer-facing contrast sentence
 
-*This is not a proposal for another cardiovascular risk score. It is a programme to move from static risk estimation to dynamic, individualized decisions about treatment and surveillance.*
+*This is not a proposal for another cardiovascular risk score, a standalone AI-ECG product, or an autonomous LLM assistant. It is a programme to move from static risk estimation to dynamic, individualized decisions about treatment, surveillance, and follow-up.*

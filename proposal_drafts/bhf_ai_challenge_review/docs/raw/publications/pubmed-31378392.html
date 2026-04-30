@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en" >
+<head  itemscope itemtype="http://schema.org/WebPage"  prefix="og: http://ogp.me/ns#" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile properties -->
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+  
+  <link rel="preconnect" href="https://cdn.ncbi.nlm.nih.gov">
+  <link rel="preconnect" href="https://www.ncbi.nlm.nih.gov">
+  <link rel="preconnect" href="https://www.google-analytics.com">
+
+  
+  
+    <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.8af684516550.css" type="text/css">
+  
+
+  <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.452c70ce66f7.css" type="text/css">
+
+  
+    
+  
+
+  
+    <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.c71ac2b2c597.css" type="text/css">
+  
+
+  
+
+  <link rel="stylesheet" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/CACHE/css/output.45202bc9d7a6.css" type="text/css">
+
+
+    <title>An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction</title>
+
+  
+  
+  <!-- Favicons -->
+  <link rel="shortcut icon" type="image/ico" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.ico" />
+  <link rel="icon" type="image/png" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon.png" />
+
+  <!-- 192x192, as recommended for Android
+  http://updates.html5rocks.com/2014/11/Support-for-theme-color-in-Chrome-39-for-Android
+  -->
+  <link rel="icon" type="image/png" sizes="192x192" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-192.png" />
+
+  <!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+  <link rel="apple-touch-icon-precomposed" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-57.png">
+  <!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-72.png">
+  <!-- 114x114 (precomposed) for iPhone 4, 4S, 5 and post-2011 iPod Touch -->
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-114.png">
+  <!-- 144x144 (precomposed) for iPad 3rd and 4th generation -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://cdn.ncbi.nlm.nih.gov/coreutils/nwds/img/favicons/favicon-144.png">
+
+
+  <!-- For Pinger + Google Optimize integration (NS-820) -->
+  <meta name="ncbi_sg_optimize_id" content="">
+
+  <!-- Mobile browser address bar color -->
+  <meta name="theme-color" content="#20558a">
+
+  <!-- Preserve the Referrer when going from HTTPS to HTTP -->
+  <meta name="referrer" content="origin-when-cross-origin">
+
+  <meta name="ncbi_pinger_gtm_track" content="true"/>
+<!-- Logging params: Pinger defaults -->
+
+  
+    <meta name="ncbi_app" content="pubmed" />
+  
+
+  
+    <meta name="ncbi_db" content="pubmed" />
+  
+
+  
+
+  
+    <meta name="ncbi_phid" content="C52300012A903DB5000028713C382AFB.1.m_2" />
+  
+
+  
+    <meta name="ncbi_pinger_stat_url" content="https://pubmed.ncbi.nlm.nih.gov/stat" />
+  
+
+  
+    <meta name="log_category" content="literature" />
+  
+
+  
+    <meta name="ncbi_cost_center" content="pubmed" />
+  
+
+
+
+  <!-- Logging params: Pinger custom -->
+  
+    <meta name="ncbi_pdid" content="abstract" />
+  
+    <meta name="log_op" content="retrieve" />
+  
+    <meta name="uid" content="31378392" />
+  
+    <meta name="ncbi_uid" content="31378392" />
+  
+    <meta name="log_displayeduids" content="31378392" />
+  
+    <meta name="log_source_db" content="pubmed" />
+  
+    <meta name="log_icons_present" content="true" />
+  
+
+
+
+  <!-- Social meta tags for unfurling urls -->
+  
+<meta name="description" content="None."><meta name="keywords" content="pmid:31378392, doi:10.1016/S0140-6736(19)31721-0, Validation Study, Zachi I Attia, Peter A Noseworthy, Paul A Friedman, Adult, Aged, Algorithms, Atrial Fibrillation / diagnosis*, Atrial Flutter / diagnosis*, Case-Control Studies, Electrocardiography / methods*, Female, Humans, Male, Middle Aged, Neural Networks, Computer*, Predictive Value of Tests, ROC Curve, Retrospective Studies, PubMed Abstract, NIH, NLM, NCBI, National Institutes of Health, National Center for Biotechnology Information, National Library of Medicine, MEDLINE"><meta name="robots" content="index,nofollow,noarchive"><meta property="og:title" content="An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction - PubMed"><meta property="og:url" content="https://pubmed.ncbi.nlm.nih.gov/31378392/"><meta property="og:description" content="None."><meta property="og:image" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg"><meta property="og:image:secure_url" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg"><meta property="og:type" content="website"><meta property="og:site_name" content="PubMed"><meta name="twitter:domain" content="pubmed.ncbi.nlm.nih.gov"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction - PubMed"><meta name="twitter:url" content="https://pubmed.ncbi.nlm.nih.gov/31378392/"><meta name="twitter:description" content="None."><meta name="twitter:image" content="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/pubmed-meta-image-v2.jpg">
+
+
+  <!-- OpenSearch XML -->
+  <link rel="search" type="application/opensearchdescription+xml" href="https://cdn.ncbi.nlm.nih.gov/pubmed/persistent/opensearch.xml" title="PubMed search">
+
+  <!-- Disables severely broken elements when no JS -->
+  <noscript>
+    <link rel="stylesheet" type="text/css" href="https://cdn.ncbi.nlm.nih.gov/pubmed/ffd2ec78-62e5-42af-9cba-3b683627d12e/core/no-script.css">
+  </noscript>
+
+  
+    <link rel="canonical" href="https://pubmed.ncbi.nlm.nih.gov/31378392/" />
+  
+  
+    
+      <meta name="citation_journal_title" content="Lancet (London, England)"/>
+      <meta name="citation_journal_abbrev" content="Lancet"/>
+      <meta name="citation_publisher" content="Lancet"/>
+      
+        <meta name="citation_volume" content="394"/>
+      
+      
+        <meta name="citation_issue" content="10201"/>
+      
+      
+        <meta name="citation_firstpage" content="861"/>
+      
+      
+        <meta name="citation_lastpage" content="867"/>
+      
+    
+
+    
+      
+        <meta
+          name="citation_publication_date"
+          content="2019/09/07"
+        />
+      
+    
+
+    
+      <meta name="citation_title" content="An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction"/>
+    
+
+    
+      
+        
+          
+          
+            <meta
+              name="citation_author"
+              content="Zachi I Attia"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Peter A Noseworthy"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Francisco Lopez-Jimenez"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Samuel J Asirvatham"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Abhishek J Deshmukh"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Bernard J Gersh"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Rickey E Carter"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Health Sciences Research, Mayo Clinic, Jacksonville, FL, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Xiaoxi Yao"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Health Sciences Research, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Alejandro A Rabinstein"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Neurology, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Brad J Erickson"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Radiology, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Suraj Kapa"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA."/>
+              
+            
+          
+            <meta
+              name="citation_author"
+              content="Paul A Friedman"
+            >
+            
+              
+                <meta name="citation_author_institution" content="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA. Electronic address: friedman.paul@mayo.edu."/>
+              
+            
+          
+        
+      
+    
+
+    <meta name="citation_pmid" content="31378392">
+
+    
+      
+    
+      
+        <meta name="citation_doi" content="10.1016/S0140-6736(19)31721-0"/>
+      
+    
+
+    
+      <meta name="citation_issn" content="1474-547X"/>
+    
+
+    
+      <meta name="citation_language" content="English"/>
+    
+
+    
+
+  
+
+  
+    
+    
+      <meta
+        name="citation_abstract"
+        lang="en"
+        content="&lt;h3&gt;Background&lt;/h3&gt;&lt;p&gt;Atrial fibrillation is frequently asymptomatic and thus underdetected but is associated with stroke, heart failure, and death. Existing screening methods require prolonged monitoring and are limited by cost and low yield. We aimed to develop a rapid, inexpensive, point-of-care means of identifying patients with atrial fibrillation using machine learning.&lt;/p&gt;&lt;h3&gt;Methods&lt;/h3&gt;&lt;p&gt;We developed an artificial intelligence (AI)-enabled electrocardiograph (ECG) using a convolutional neural network to detect the electrocardiographic signature of atrial fibrillation present during normal sinus rhythm using standard 10-second, 12-lead ECGs. We included all patients aged 18 years or older with at least one digital, normal sinus rhythm, standard 10-second, 12-lead ECG acquired in the supine position at the Mayo Clinic ECG laboratory between Dec 31, 1993, and July 21, 2017, with rhythm labels validated by trained personnel under cardiologist supervision. We classified patients with at least one ECG with a rhythm of atrial fibrillation or atrial flutter as positive for atrial fibrillation. We allocated ECGs to the training, internal validation, and testing datasets in a 7:1:2 ratio. We calculated the area under the curve (AUC) of the receiver operatoring characteristic curve for the internal validation dataset to select a probability threshold, which we applied to the testing dataset. We evaluated model performance on the testing dataset by calculating the AUC and the accuracy, sensitivity, specificity, and F1 score with two-sided 95% CIs.&lt;/p&gt;&lt;h3&gt;Findings&lt;/h3&gt;&lt;p&gt;We included 180 922 patients with 649 931 normal sinus rhythm ECGs for analysis: 454 789 ECGs recorded from 126 526 patients in the training dataset, 64 340 ECGs from 18 116 patients in the internal validation dataset, and 130 802 ECGs from 36 280 patients in the testing dataset. 3051 (8·4%) patients in the testing dataset had verified atrial fibrillation before the normal sinus rhythm ECG tested by the model. A single AI-enabled ECG identified atrial fibrillation with an AUC of 0·87 (95% CI 0·86-0·88), sensitivity of 79·0% (77·5-80·4), specificity of 79·5% (79·0-79·9), F1 score of 39·2% (38·1-40·3), and overall accuracy of 79·4% (79·0-79·9). Including all ECGs acquired during the first month of each patient&#x27;s window of interest (ie, the study start date or 31 days before the first recorded atrial fibrillation ECG) increased the AUC to 0·90 (0·90-0·91), sensitivity to 82·3% (80·9-83·6), specificity to 83·4% (83·0-83·8), F1 score to 45·4% (44·2-46·5), and overall accuracy to 83·3% (83·0-83·7).&lt;/p&gt;&lt;h3&gt;Interpretation&lt;/h3&gt;&lt;p&gt;An AI-enabled ECG acquired during normal sinus rhythm permits identification at point of care of individuals with atrial fibrillation.&lt;/p&gt;&lt;h3&gt;Funding&lt;/h3&gt;&lt;p&gt;None.&lt;/p&gt;"
+      />
+    
+    
+  
+
+  
+
+  
+    
+    
+  
+
+
+
+</head>
+<body >
+
+  
+  <div class="article-page" id="article-page" data-article-pmid="31378392">
+    <div class="article-details" id="article-details">
+      
+        
+
+
+<header class="heading" id="heading">
+  
+    
+      
+  
+
+<h1 class="heading-title">
+  
+    
+    
+    
+    
+      
+  An artificial intelligence-enabled ECG algorithm for the identification of patients with atrial fibrillation during sinus rhythm: a retrospective analysis of outcome prediction
+
+
+    
+  
+</h1>
+
+  <div class="article-citation" style="display:inline-block;">
+  
+    <span class="article-source">
+      
+<span class="journal" style="display:inline-block;">Lancet</span><span class="period">. </span><span class="cit">2019 Sep 7;394(10201):861-867.</span>
+
+    </span>
+  
+  
+    
+      <span class="citation-doi">
+        doi: 10.1016/S0140-6736(19)31721-0.
+      </span>
+    
+    
+    
+      <span class="secondary-date">
+        Epub 2019 Aug 1.
+      </span>
+    
+  
+
+</div>
+  
+
+
+<div class="email-authors">
+  
+
+
+  
+    <div class="expanded-authors" id="full-view-expanded-authors">
+      
+        <div class="authors">
+          <h3 class="title">
+            Authors
+          </h3>
+          
+
+
+  <div class="authors-list">
+    <span class="authors-list-item "><a class="full-name"
+           href="/?term=Attia+ZI&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Zachi I Attia">Zachi I Attia</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Noseworthy+PA&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Peter A Noseworthy">Peter A Noseworthy</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Lopez-Jimenez+F&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Francisco Lopez-Jimenez">Francisco Lopez-Jimenez</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Asirvatham+SJ&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Samuel J Asirvatham">Samuel J Asirvatham</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Deshmukh+AJ&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Abhishek J Deshmukh">Abhishek J Deshmukh</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Gersh+BJ&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Bernard J Gersh">Bernard J Gersh</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Carter+RE&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Rickey E Carter">Rickey E Carter</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Health Sciences Research, Mayo Clinic, Jacksonville, FL, USA." href="#affiliation-2" ref="linksrc=author_aff">
+                2
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Yao+X&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Xiaoxi Yao">Xiaoxi Yao</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Health Sciences Research, Mayo Clinic, Rochester, MN, USA." href="#affiliation-3" ref="linksrc=author_aff">
+                3
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Rabinstein+AA&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Alejandro A Rabinstein">Alejandro A Rabinstein</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Neurology, Mayo Clinic, Rochester, MN, USA." href="#affiliation-4" ref="linksrc=author_aff">
+                4
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Erickson+BJ&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Brad J Erickson">Brad J Erickson</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Radiology, Mayo Clinic, Rochester, MN, USA." href="#affiliation-5" ref="linksrc=author_aff">
+                5
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Kapa+S&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Suraj Kapa">Suraj Kapa</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA." href="#affiliation-1" ref="linksrc=author_aff">
+                1
+              </a></sup><span class="comma">,&nbsp;</span></span><span class="authors-list-item "><a class="full-name"
+           href="/?term=Friedman+PA&amp;cauthor_id=31378392"
+           ref="linksrc=author_name_link"
+           data-ga-category="search"
+           data-ga-action="author_link"
+           data-ga-label="Paul A Friedman">Paul A Friedman</a><sup class="affiliation-links"><span class="author-sup-separator">&nbsp;</span><a class="affiliation-link" title="Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA. Electronic address: friedman.paul@mayo.edu." href="#affiliation-6" ref="linksrc=author_aff">
+                6
+              </a></sup></span>
+  </div>
+
+
+        </div>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <div class="affiliations">
+          <h3 class="title">
+            Affiliations
+          </h3>
+          <ul class="item-list" style="margin: 0 0 16px 0; list-style-type: none; padding: 0;">
+            
+              <li data-affiliation-id="affiliation-1"
+                  id="affiliation-1"
+              ><sup class="key">1</sup> Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA.</li>
+            
+              <li data-affiliation-id="affiliation-2"
+                  id="affiliation-2"
+              ><sup class="key">2</sup> Department of Health Sciences Research, Mayo Clinic, Jacksonville, FL, USA.</li>
+            
+              <li data-affiliation-id="affiliation-3"
+                  id="affiliation-3"
+              ><sup class="key">3</sup> Department of Health Sciences Research, Mayo Clinic, Rochester, MN, USA.</li>
+            
+              <li data-affiliation-id="affiliation-4"
+                  id="affiliation-4"
+              ><sup class="key">4</sup> Department of Neurology, Mayo Clinic, Rochester, MN, USA.</li>
+            
+              <li data-affiliation-id="affiliation-5"
+                  id="affiliation-5"
+              ><sup class="key">5</sup> Department of Radiology, Mayo Clinic, Rochester, MN, USA.</li>
+            
+              <li data-affiliation-id="affiliation-6"
+                  id="affiliation-6"
+              ><sup class="key">6</sup> Department of Cardiovascular Medicine, Mayo Clinic, Rochester, MN, USA. Electronic address: friedman.paul@mayo.edu.</li>
+            
+          </ul>
+        </div>
+      
+
+      
+
+      
+    </div>
+  
+
+
+</div>
+
+  
+    <ul class="identifiers" id="full-view-identifiers" style="list-style-type: none; margin: 6px 0 16px 0;">
+      
+        <li>
+          <span class="identifier pubmed">
+  <span class="id-label">
+    
+      PMID:
+    
+  </span>
+
+  
+    <a class="id-link"
+       target="_blank"
+       rel="noopener"
+       ref="linksrc=article_id_link&amp;article_id=31378392&amp;id_type=PubMed"
+       href="https://pubmed.ncbi.nlm.nih.gov/31378392/"
+       
+       data-ga-category="full_text"
+       data-ga-action="PMID"
+    >
+      31378392
+    </a>
+  
+
+  
+</span>
+
+        </li>
+      
+        <li>
+          <span class="identifier doi">
+  <span class="id-label">
+    
+      DOI:
+    
+  </span>
+
+  
+    <a class="id-link usa-link--external"
+       target="_blank"
+       rel="noopener noreferrer"
+       ref="linksrc=article_id_link&amp;article_id=10.1016/S0140-6736(19)31721-0&amp;id_type=DOI"
+       href="https://doi.org/10.1016/s0140-6736(19)31721-0"
+        aria-label="external, opens in new tab. 10.1016/S0140-6736(19)31721-0"
+       data-ga-category="full_text"
+       data-ga-action="DOI"
+    >
+      10.1016/S0140-6736(19)31721-0
+    </a>
+  
+
+  
+</span>
+
+        </li>
+      
+    </ul>
+  
+
+
+
+    
+  
+</header>
+
+        
+
+
+
+  <div class="abstract" id="abstract">
+    
+      <h2 class="title">
+        Abstract
+        
+      </h2>
+      
+        
+          
+            <div class="abstract-content selected"
+                 id="eng-abstract">
+              
+                
+
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Background:
+        </strong>
+      
+      Atrial fibrillation is frequently asymptomatic and thus underdetected but is associated with stroke, heart failure, and death. Existing screening methods require prolonged monitoring and are limited by cost and low yield. We aimed to develop a rapid, inexpensive, point-of-care means of identifying patients with atrial fibrillation using machine learning.
+    </p>
+  
+
+  
+
+
+              
+                
+
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Methods:
+        </strong>
+      
+      We developed an artificial intelligence (AI)-enabled electrocardiograph (ECG) using a convolutional neural network to detect the electrocardiographic signature of atrial fibrillation present during normal sinus rhythm using standard 10-second, 12-lead ECGs. We included all patients aged 18 years or older with at least one digital, normal sinus rhythm, standard 10-second, 12-lead ECG acquired in the supine position at the Mayo Clinic ECG laboratory between Dec 31, 1993, and July 21, 2017, with rhythm labels validated by trained personnel under cardiologist supervision. We classified patients with at least one ECG with a rhythm of atrial fibrillation or atrial flutter as positive for atrial fibrillation. We allocated ECGs to the training, internal validation, and testing datasets in a 7:1:2 ratio. We calculated the area under the curve (AUC) of the receiver operatoring characteristic curve for the internal validation dataset to select a probability threshold, which we applied to the testing dataset. We evaluated model performance on the testing dataset by calculating the AUC and the accuracy, sensitivity, specificity, and F1 score with two-sided 95% CIs.
+    </p>
+  
+
+  
+
+
+              
+                
+
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Findings:
+        </strong>
+      
+      We included 180 922 patients with 649 931 normal sinus rhythm ECGs for analysis: 454 789 ECGs recorded from 126 526 patients in the training dataset, 64 340 ECGs from 18 116 patients in the internal validation dataset, and 130 802 ECGs from 36 280 patients in the testing dataset. 3051 (8·4%) patients in the testing dataset had verified atrial fibrillation before the normal sinus rhythm ECG tested by the model. A single AI-enabled ECG identified atrial fibrillation with an AUC of 0·87 (95% CI 0·86-0·88), sensitivity of 79·0% (77·5-80·4), specificity of 79·5% (79·0-79·9), F1 score of 39·2% (38·1-40·3), and overall accuracy of 79·4% (79·0-79·9). Including all ECGs acquired during the first month of each patient's window of interest (ie, the study start date or 31 days before the first recorded atrial fibrillation ECG) increased the AUC to 0·90 (0·90-0·91), sensitivity to 82·3% (80·9-83·6), specificity to 83·4% (83·0-83·8), F1 score to 45·4% (44·2-46·5), and overall accuracy to 83·3% (83·0-83·7).
+    </p>
+  
+
+  
+
+
+              
+                
+
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Interpretation:
+        </strong>
+      
+      An AI-enabled ECG acquired during normal sinus rhythm permits identification at point of care of individuals with atrial fibrillation.
+    </p>
+  
+
+  
+
+
+              
+                
+
+
+  
+    <p>
+      
+        <strong class="sub-title">
+          Funding:
+        </strong>
+      
+      None.
+    </p>
+  
+
+  
+
+
+              
+            </div>
+          
+        
+      
+
+      
+    
+
+    
+
+    
+
+  </div>
+
+
+        
+        
+
+
+  <p class="copyright" id="copyright">
+    Copyright © 2019 Elsevier Ltd. All rights reserved.
+  </p>
+
+
+        
+        
+  
+    <div id="publication-types" class="publication-types keywords-section">
+      <h2 class="title">
+        Publication types
+      </h2>
+
+      <ul class="keywords-list"><li>
+                
+                  
+
+
+
+
+
+  Validation Study
+
+
+                
+              </li></ul>
+    </div>
+  
+
+
+        
+  
+    <div id="mesh-terms" class="mesh-terms keywords-section">
+      <h2 class="title">
+        MeSH terms
+      </h2>
+
+      <ul class="keywords-list"><li>
+                  
+                    
+
+
+
+
+
+  Adult
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Aged
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Algorithms
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Atrial Fibrillation / diagnosis*
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Atrial Flutter / diagnosis*
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Case-Control Studies
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Electrocardiography / methods*
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Female
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Humans
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Male
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Middle Aged
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Neural Networks, Computer*
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Predictive Value of Tests
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  ROC Curve
+
+
+                  
+                </li><li>
+                  
+                    
+
+
+
+
+
+  Retrospective Studies
+
+
+                  
+                </li></ul>
+    </div>
+  
+
+
+        
+
+        
+
+        
+
+        
+
+
+
+        
+
+
+
+      
+    </div>
+  </div>
+
+
+  
+  
+
+
+  
+
+</body>
+</html>

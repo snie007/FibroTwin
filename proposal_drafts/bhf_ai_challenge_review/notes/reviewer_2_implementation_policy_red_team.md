@@ -39,6 +39,14 @@ Persona: sceptical NHS innovation reviewer who has seen many excellent models di
    - what is the minimal viable data stack
    - what can still work if one modality fails
 
+7. Are AI-ECG commercial examples being used intelligently?
+   - do you understand the difference between product claims, regulatory status, and independent validation
+   - what parts of the commercial workflow are actually relevant to the NHS pathway you propose
+
+8. Are LLMs being kept inside a safe scope?
+   - is the proposal clear that LLMs are for explanation, documentation, or summarization rather than autonomous procedure guidance
+   - what governance applies to generated patient-facing or clinician-facing text
+
 ## Non-negotiable fixes before final submission
 
 - Add a dedicated implementation/governance platform.
@@ -52,11 +60,14 @@ Persona: sceptical NHS innovation reviewer who has seen many excellent models di
 - BHF challenge wording must be quoted correctly, especially the requirement for a large integrated programme and meaningful lived-experience involvement.
 - NICE ESF, NICE AI regulation service, MHRA roadmap, and NHS AI code of conduct must be cited precisely if used as implementation scaffolding.
 - Patient AI attitude results must not be spun as enthusiasm; they show conditional acceptance with strong clinician preference. PMID 41346424.
+- Commercial AI-ECG examples should be presented as market and workflow evidence, not as substitutes for independent clinical validation.
+- LLM procedure literature is still dominated by vignette, education, consent, and readability studies, not real-world autonomous guidance.
 
 ## What would impress this reviewer
 
 - a concrete route from model development to shadow-mode deployment
 - clear clinical accountability model
 - explicit fairness and recalibration triggers
-- local copies of regulatory and policy source documents in the repo
+- local copies of regulatory, policy, and cited commercial source documents in the repo
+- a clear separation between regulated clinical decision support and lower-risk communication tooling
 - a realistic statement of what will and will not be ready for deployment within 5 years

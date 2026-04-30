@@ -37,6 +37,16 @@ Persona: senior cardiovascular trialist with zero patience for AI hype.
    - what safety override exists
    - how will low-confidence predictions be handled
 
+7. Why is AI-ECG in this proposal?
+   - is it an enabling modality or a fourth mini-project
+   - which workstreams genuinely need ECG-derived latent phenotyping
+   - what is the comparator against standard ECG interpretation and existing pathways
+
+8. What exactly are you claiming for LLMs?
+   - are they being used for patient explanation, documentation, triage, or procedural recommendation
+   - what evidence supports that level of use
+   - where is the verification layer for LLM-generated content
+
 ## Non-negotiable fixes before final submission
 
 - Define 1 primary decision target per workstream.
@@ -51,6 +61,8 @@ Persona: senior cardiovascular trialist with zero patience for AI hype.
 - DECAAF recurrence gradient must not be exaggerated. PMID 24496537.
 - DCM family-screening yield and HCM low-yield follow-up subgroup must be numerically correct. PMIDs 37225358 and 39365224.
 - Post-MI workstream needs a stronger, concrete endpoint and intervention logic.
+- AI-ECG claims must distinguish between academic performance papers, external validation, and commercial product-page claims.
+- LLM claims must distinguish between consent-support or education tasks and true procedure-selection or autonomous guidance.
 
 ## What would impress this reviewer
 
@@ -58,4 +70,6 @@ Persona: senior cardiovascular trialist with zero patience for AI hype.
 - prespecified subgroup and fairness analysis
 - clinically interpretable thresholds
 - external validation plus shadow-mode deployment
+- disciplined use of AI-ECG as a scalable input layer rather than a disconnected side project
+- explicit downgrading of LLMs to supervised communication and workflow support unless stronger prospective evidence exists
 - a serious plan for negative or null results
