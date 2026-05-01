@@ -1,11 +1,31 @@
-The methods review strongly supports phenotype-level regression with annual cyclic terms as the primary inferential framework for this project. The most transferable classical framework is harmonic regression, implemented using sine and cosine terms for day-of-year. Closely related cosinor models remain standard in chronobiology and biomedical rhythm analysis.
+The seasonality-methods literature is much more mature than the direct cardiac imaging literature. For a CMR dataset with scans recorded at different months across three years, the main methodological question is not whether one can detect annual structure in principle, but which method gives the most defensible inference under irregular timing, covariate imbalance, and potentially repeated measures.
 
-For a phenotype measured on day $d$, a practical starting model is
+\subsection*{Primary inferential framework: harmonic regression and cosinor-style models}
+
+The strongest primary framework is regression with annual sine and cosine terms, closely related to harmonic regression and cosinor analysis \cite{Edwards1961,Serfling1963,Stolwijk1999,Nelson1979,Cornelissen2014}. For a phenotype measured on day $d_i$ of the year,
 \[
-y_i = \beta_0 + \beta_1 \sin\left(2\pi d_i/365.25\right) + \beta_2 \cos\left(2\pi d_i/365.25\right) + \mathbf{x}_i^\top\gamma + \varepsilon_i,
+ y_i = \beta_0 + \beta_1 \sin\left(2\pi d_i/365.25\right) + \beta_2 \cos\left(2\pi d_i/365.25\right) + \mathbf{x}_i^\top\gamma + \varepsilon_i,
 \]
-where $\mathbf{x}_i$ contains demographic, anthropometric, technical, and calendar-year covariates. Testing $H_0: \beta_1 = \beta_2 = 0$ provides a direct test for annual seasonality. The fitted coefficients can be converted into amplitude and phase, giving interpretable estimates of effect size and timing.
+where $\mathbf{x}_i$ contains adjustment covariates such as age, sex, body size, acquisition year, scanner or site, and relevant clinical variables. The null hypothesis of no annual seasonality is tested by the joint hypothesis $H_0: \beta_1 = \beta_2 = 0$.
 
-Generalized additive models with cyclic smooths are the preferred semiparametric sensitivity analysis, because they relax the assumption of a purely sinusoidal annual shape while retaining covariate adjustment. Mixed-effects extensions are recommended when repeated scans, center effects, or clustered acquisition patterns are present. By contrast, seasonal ARIMA and STL decomposition are better suited to regularly spaced aggregated series and should not be the main analysis for irregularly timed subject-level MRI data.
+This framework is attractive because it uses all scans directly, does not require month-wise aggregation, and accommodates irregular acquisition dates naturally. It also yields clinically interpretable summaries. The amplitude of the seasonal effect is $\sqrt{\beta_1^2 + \beta_2^2}$, and the phase identifies the timing of the annual peak. These quantities can be estimated with confidence intervals and compared across phenotypes.
 
-Exploratory tools still have a role. Lomb--Scargle periodograms can be useful to inspect periodicity under irregular sampling, and wavelet methods can examine whether seasonal amplitude changes across years. However, these should complement, not replace, covariate-adjusted regression-based inference.
+\subsection*{Why harmonic regression is the best default for CMR}
+
+Several features make this approach particularly suitable for CMR. First, scans recorded at arbitrary dates over three years are not naturally a regularly spaced time series, so classical seasonal ARIMA approaches are misaligned with the data structure. Second, imaging studies usually require covariate adjustment for age, sex, body size, year, scanner, and protocol. Third, inference must often be made at the phenotype level rather than at the level of an aggregated monthly time series. Harmonic regression handles all three requirements well \cite{Stolwijk1999,Cornelissen2014}.
+
+The same framework extends easily to mixed-effects models if some participants contribute repeated scans or if scans are clustered by center or scanner. In that case, random intercepts can absorb participant-level or center-level dependence while the sine and cosine terms estimate the common seasonal component.
+
+\subsection*{Sensitivity analyses and secondary frameworks}
+
+Generalized additive models (GAMs) with cyclic smooths are the most useful semiparametric sensitivity analysis \cite{Wood2017}. They relax the assumption that the annual pattern is exactly sinusoidal and can reveal sharper peaks, flatter troughs, or asymmetric seasonal shapes. A cyclic smooth of day-of-year should preserve continuity between day 365 and day 1. If the GAM suggests a strongly non-sinusoidal pattern, that finding does not invalidate the harmonic model, but it indicates that the primary parametric summary may be incomplete.
+
+For exploratory periodicity assessment under irregular sampling, Lomb-Scargle periodograms are useful \cite{Lomb1976,Scargle1982,VanderPlas2018}. Their main value here is diagnostic rather than confirmatory. They can reveal whether a one-year periodic component is visible in the data, but standard forms do not provide the same straightforward covariate adjustment and clinical interpretability as regression-based models.
+
+Wavelet analysis and state-space models can also be informative in advanced settings \cite{Torrence1998,Harvey1989}. Wavelets are useful if the seasonal amplitude appears to vary over calendar years, whereas state-space models are attractive if one wants a latent seasonal component with explicit handling of temporal dependence or evolving structure. However, both approaches are heavier than necessary for a first-pass CMR seasonality study and are harder to communicate clinically.
+
+\subsection*{Methods that are weaker as the primary analysis}
+
+Classical event-seasonality tests such as Edwards or Walter-Elwood tests remain useful when the outcome is a count of dates or events \cite{Edwards1961,Walter1975}. They are much less suitable as the sole analysis for continuous CMR phenotypes because they do not naturally incorporate multivariable adjustment. Likewise, seasonal ARIMA, STL decomposition, and forecasting-oriented models are best reserved for regularly spaced aggregated summaries rather than individual-level irregular scan dates.
+
+Overall, the methods review supports a clear recommendation. For CMR images recorded at different months across three years, the primary analysis should be phenotype-level regression with annual sine and cosine terms, supported by cyclic GAM sensitivity analyses and exploratory irregular-sampling diagnostics where useful.
