@@ -1,12 +1,12 @@
-The practical objective is to test whether CMR-derived phenotypes show an annual pattern when scans are recorded in different months across three calendar years. The analysis should be performed primarily on derived phenotypes rather than raw images alone, because phenotype-level models are more interpretable and easier to adjust for confounding. Candidate outcomes include left- and right-ventricular end-diastolic and end-systolic volumes, ejection fractions, ventricular mass, atrial volumes, wall-thickness measures, strain or feature-tracking metrics, tissue-characterization measures, and shape-derived latent variables or principal components.
+The practical objective is to test whether CMR-derived phenotypes show an annual pattern when scans are recorded in different months across three calendar years. In a dataset where many participants may contribute only one scan, the main estimand is a population-level association between time of year at scanning and phenotype value, not automatically a within-person seasonal effect. The analysis should therefore be performed primarily on derived phenotypes rather than raw images alone, because phenotype-level models are more interpretable and easier to adjust for confounding. Candidate outcomes include left- and right-ventricular end-diastolic and end-systolic volumes, ejection fractions, ventricular mass, atrial volumes, wall-thickness measures, strain or feature-tracking metrics, and shape-derived latent variables or principal components.
 
 \subsection*{1. Build the timing variables}
 
-For each scan, derive day-of-year, calendar month, calendar year, and, if possible, external exposure variables such as local mean temperature, daylight duration, or photoperiod. Because the dataset spans three years, year should be retained explicitly in the model rather than absorbed into the seasonal term. This avoids confusing a slow secular drift with a repeating annual pattern.
+For each scan, derive day-of-year, calendar month, calendar year, and, if possible, external exposure variables such as local mean temperature, daylight duration, or photoperiod. Day-of-year should be coded consistently across leap and non-leap years, for example by mapping to a 365.25-day scale. Because the dataset spans three years, year should be retained explicitly in the model rather than absorbed into the seasonal term. Where operational drift is plausible, a continuous time-since-study-start term or descriptive check should also be considered so that within-year technical change is not mistaken for seasonality.
 
 \subsection*{2. Audit acquisition imbalance before modelling}
 
-A seasonality analysis is only credible if acquisition bias is examined first. Plot the distribution of scans by month, year, scanner, site, protocol, sex, age band, and key disease groups. If winter scans were disproportionately acquired on one scanner or after a protocol update, an apparent seasonal pattern may be technical rather than biological. This descriptive audit is not optional; it is a prerequisite analysis.
+A seasonality analysis is only credible if acquisition bias is examined first. Plot the distribution of scans by month, year, scanner, site, protocol, sex, age band, and key disease groups. If winter scans were disproportionately acquired on one scanner or after a protocol update, an apparent seasonal pattern may be technical rather than biological. This descriptive audit is not optional; it is a prerequisite analysis. If overlap in month-by-scanner or month-by-protocol support is very poor, the analysis should either be restricted to a stable subset, reweighted, or explicitly declared not interpretable as a primary seasonality analysis.
 
 \subsection*{3. Primary model}
 
@@ -14,25 +14,26 @@ For each phenotype, fit a regression model of the form
 \[
  y_i = \beta_0 + \beta_1 \sin\left(2\pi d_i/365.25\right) + \beta_2 \cos\left(2\pi d_i/365.25\right) + \alpha_{year(i)} + \mathbf{z}_i^\top\gamma + \varepsilon_i,
 \]
-where $d_i$ is day-of-year, $\alpha_{year(i)}$ represents calendar-year effects, and $\mathbf{z}_i$ includes covariates such as age, sex, height, weight or body surface area, scanner, site, protocol, blood pressure, heart rate, disease status, and medication variables where available. If repeated scans per participant exist, add a participant-level random intercept. If multiple centers contribute, include center as a fixed or random effect.
+where $d_i$ is day-of-year, $\alpha_{year(i)}$ represents calendar-year effects, and $\mathbf{z}_i$ includes covariates such as age, sex, height, weight or body surface area, scanner, site, protocol, blood pressure, heart rate, disease status, and medication variables where available. For approximately Gaussian phenotypes, a linear or linear mixed-effects model is a sensible default; non-normal outcomes may require transformation, generalized models, or robust standard errors. If repeated scans per participant exist, add a participant-level random intercept. If multiple centers contribute, include center as a fixed or random effect according to the number of levels and the inferential goal.
 
-The primary hypothesis test is the joint test of the sine and cosine coefficients. The primary reported effect size should be annual amplitude with a confidence interval, together with the estimated timing of the annual peak. Reporting only a P value would throw away the clinically relevant information.
+The primary hypothesis test is the joint test of the sine and cosine coefficients. The primary reported effect size should be annual amplitude with a confidence interval, together with the estimated timing of the annual peak. Bootstrap or delta-method confidence intervals are preferable for amplitude and phase, and phase should not be overinterpreted when amplitude is very small. Reporting only a P value would throw away the clinically relevant information.
 
 \subsection*{4. Multiple phenotypes and image-derived features}
 
-Because many CMR phenotypes may be tested, false-discovery-rate control should be used across the main phenotype family. If the study includes high-dimensional shape, radiomics, or latent-image features, dimensionality reduction should precede seasonality testing. A sensible workflow is to harmonize features across scanner or protocol where needed, reduce dimension to stable principal components or embeddings, and then test the leading components for annual cyclic effects.
+Because many CMR phenotypes may be tested, a small primary phenotype family should be defined in advance, with false-discovery-rate control applied within that family \cite{Benjamini1995}. If the study includes high-dimensional shape, radiomics, or latent-image features, these should be treated as exploratory unless a prespecified analysis plan and harmonization workflow are available. A sensible workflow is to harmonize features across scanner or protocol where needed, reduce dimension to stable principal components or embeddings, and then test the leading components for annual cyclic effects.
 
 \subsection*{5. Sensitivity analyses}
 
-At least four sensitivity analyses are recommended.
+At least five sensitivity analyses are recommended.
 \begin{enumerate}
   \item A cyclic GAM on day-of-year to test whether the annual shape is materially non-sinusoidal \cite{Wood2017}.
   \item A month-as-factor model to provide an easily interpretable descriptive check.
-  \item Within-year permutation or restricted resampling of day-of-year labels to assess whether the signal is robust to the empirical acquisition pattern.
-  \item Replacement of calendar terms with environmental exposures such as temperature or daylight duration when those data are available, motivated by the distinction between season and exposure highlighted by prior CMR work \cite{Park2019,Redfors2022}.
+  \item Within-year permutation or restricted resampling of day-of-year labels to assess whether the signal is robust to the empirical acquisition pattern \cite{Efron1994}.
+  \item Comparative or joint modelling of calendar terms and environmental exposures such as temperature or daylight duration when those data are available, motivated by the distinction between season and exposure highlighted by prior CMR work \cite{Park2019,Redfors2022}.
+  \item A descriptive or formal check for year-specific seasonal effects, for example through year-by-harmonic interaction terms.
 \end{enumerate}
 
-A useful pragmatic sensitivity analysis is also to repeat the main model in a season-matched subset or in a subset with stable scanner and protocol conditions. If the signal disappears only when obvious technical imbalance is removed, the original association was probably not biological.
+A useful pragmatic sensitivity analysis is also to repeat the main model in a season-matched subset or in a subset with stable scanner and protocol conditions. If the signal disappears only when obvious technical imbalance is removed, the main conclusion should be framed as likely technical confounding rather than weak biology.
 
 \subsection*{6. Interpretation}
 
