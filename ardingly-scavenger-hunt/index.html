@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ardingly College Scavenger Hunt</title>
+  <meta name="description" content="A fun, mobile-friendly scavenger hunt page for an event at Ardingly College." />
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --card: rgba(255,255,255,0.88);
+      --ink: #163047;
+      --muted: #5f7285;
+      --accent: #0f766e;
+      --accent-2: #2563eb;
+      --accent-3: #f59e0b;
+      --ring: rgba(37, 99, 235, 0.15);
+      --shadow: 0 24px 60px rgba(22, 48, 71, 0.12);
+      --radius: 24px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(15,118,110,0.16), transparent 28%),
+        radial-gradient(circle at top right, rgba(37,99,235,0.18), transparent 30%),
+        linear-gradient(180deg, #f9fbff 0%, #eef4f8 100%);
+      min-height: 100vh;
+    }
+
+    .wrap {
+      width: min(1100px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 24px 0 72px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      padding: 28px;
+      background:
+        linear-gradient(135deg, rgba(22,48,71,0.94), rgba(37,99,235,0.92)),
+        linear-gradient(135deg, #163047, #2563eb);
+      color: white;
+      box-shadow: var(--shadow);
+      margin-bottom: 20px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: auto -40px -60px auto;
+      width: 220px;
+      height: 220px;
+      background: radial-gradient(circle, rgba(255,255,255,0.18), transparent 70%);
+      border-radius: 50%;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.16);
+      font-size: 0.9rem;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 6vw, 4rem);
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+
+    .hero p {
+      margin: 0;
+      max-width: 700px;
+      color: rgba(255,255,255,0.9);
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.9fr;
+      gap: 18px;
+      margin-top: 22px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.16);
+      border-radius: 22px;
+      padding: 18px;
+      backdrop-filter: blur(10px);
+    }
+
+    .glass h2, .section-title {
+      margin: 0 0 10px;
+      font-size: 1.05rem;
+      letter-spacing: -0.02em;
+    }
+
+    .glass p, .glass li {
+      color: rgba(255,255,255,0.88);
+      line-height: 1.55;
+      margin: 0;
+    }
+
+    .glass ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,0.7);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(12px);
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .progress-wrap {
+      display: grid;
+      gap: 14px;
+    }
+
+    .progress-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .progress-title {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .progress-title strong {
+      font-size: 1.05rem;
+    }
+
+    .progress-title span {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      border: 0;
+      border-radius: 999px;
+      padding: 11px 15px;
+      font: inherit;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+    }
+
+    button:hover { transform: translateY(-1px); }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #0d9488);
+      color: white;
+      box-shadow: 0 10px 24px rgba(15,118,110,0.22);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--ink);
+      border: 1px solid #d6e2ee;
+    }
+
+    .track {
+      width: 100%;
+      height: 14px;
+      background: #dfe8f2;
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .bar {
+      height: 100%;
+      width: 0%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--accent), var(--accent-2), var(--accent-3));
+      transition: width 0.35s ease;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 6px;
+    }
+
+    .meta {
+      border-radius: 18px;
+      background: #f8fbfd;
+      border: 1px solid #e4edf5;
+      padding: 14px;
+    }
+
+    .meta strong {
+      display: block;
+      font-size: 1.2rem;
+      margin-bottom: 4px;
+    }
+
+    .meta span {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.45;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      position: relative;
+      border-radius: 24px;
+      background: white;
+      border: 1px solid #dfebf4;
+      padding: 18px;
+      box-shadow: 0 18px 40px rgba(22,48,71,0.08);
+      display: grid;
+      gap: 14px;
+    }
+
+    .card.done {
+      border-color: rgba(15,118,110,0.35);
+      box-shadow: 0 18px 40px rgba(15,118,110,0.12);
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 42px;
+      height: 42px;
+      border-radius: 14px;
+      font-weight: 700;
+      background: linear-gradient(135deg, rgba(37,99,235,0.12), rgba(15,118,110,0.14));
+      color: var(--accent-2);
+      flex: 0 0 auto;
+    }
+
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+    }
+
+    .card p {
+      margin: 0;
+      line-height: 1.6;
+      color: #30475d;
+    }
+
+    .hint {
+      display: none;
+      padding: 12px 14px;
+      border-radius: 16px;
+      background: #f5f8ff;
+      border: 1px dashed #bfd2f3;
+      color: #24425c;
+      font-size: 0.96rem;
+      line-height: 1.55;
+    }
+
+    .hint.open { display: block; }
+
+    .card-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .check {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      cursor: pointer;
+      color: var(--ink);
+    }
+
+    .check input {
+      appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 8px;
+      border: 2px solid #9cb2c9;
+      display: grid;
+      place-items: center;
+      margin: 0;
+      cursor: pointer;
+      transition: all 0.18s ease;
+      background: white;
+    }
+
+    .check input:checked {
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+
+    .check input:checked::after {
+      content: "✓";
+      color: white;
+      font-size: 0.9rem;
+      font-weight: 800;
+    }
+
+    .note-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 18px;
+    }
+
+    .note {
+      border-radius: 22px;
+      padding: 18px;
+      border: 1px solid #dfebf4;
+      background: linear-gradient(180deg, #ffffff, #f9fbfd);
+    }
+
+    .note p, .note li {
+      color: #30475d;
+      line-height: 1.6;
+    }
+
+    .note ul {
+      margin: 0;
+      padding-left: 18px;
+      display: grid;
+      gap: 8px;
+    }
+
+    .complete {
+      display: none;
+      margin-top: 12px;
+      border-radius: 20px;
+      padding: 18px;
+      background: linear-gradient(135deg, rgba(15,118,110,0.12), rgba(245,158,11,0.12));
+      border: 1px solid rgba(15,118,110,0.2);
+    }
+
+    .complete.show { display: block; }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem;
+      padding-top: 8px;
+    }
+
+    .small {
+      font-size: 0.93rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 860px) {
+      .hero-grid,
+      .cards,
+      .note-grid,
+      .meta-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(100% - 20px, 1100px); }
+      .hero, .panel { padding: 18px; }
+      .card { padding: 16px; }
+      h1 { font-size: 2.2rem; }
+      .progress-top { align-items: stretch; }
+      .actions { width: 100%; }
+      .actions button { flex: 1 1 auto; }
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="badge">✨ Event draft · Mobile friendly · Easy to share</div>
+      <h1>Ardingly College Scavenger Hunt</h1>
+      <p>
+        Welcome to a playful campus trail built for an event day at Ardingly. This page is designed to guide teams through a series of fun clues across approved event spaces, with a warm nod to the College’s beautiful grounds, creative spaces, and community spirit.
+      </p>
+
+      <div class="hero-grid">
+        <div class="glass">
+          <h2>How it works</h2>
+          <ul>
+            <li>Read each clue and solve it as a team.</li>
+            <li>Use the hint button only if you need a nudge.</li>
+            <li>Tick the stop when your team reaches the right place.</li>
+            <li>Finish all six to unlock the celebration message.</li>
+          </ul>
+        </div>
+        <div class="glass">
+          <h2>Friendly reminder</h2>
+          <p>
+            This starter page is intentionally focused on broad, event-safe landmarks only. It is perfect for a supervised school event and easy for an organiser to adapt.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel progress-wrap">
+      <div class="progress-top">
+        <div class="progress-title">
+          <strong>Your hunt progress</strong>
+          <span id="progressText">0 of 6 stops complete</span>
+        </div>
+        <div class="actions">
+          <button class="btn-primary" type="button" onclick="document.getElementById('hunt-start').scrollIntoView({behavior:'smooth'})">Start the hunt</button>
+          <button class="btn-secondary" type="button" id="resetBtn">Reset progress</button>
+        </div>
+      </div>
+
+      <div class="track" aria-hidden="true">
+        <div class="bar" id="progressBar"></div>
+      </div>
+
+      <div class="meta-grid">
+        <div class="meta">
+          <strong>6</strong>
+          <span>Fun clue stops inspired by public, event-friendly campus landmarks</span>
+        </div>
+        <div class="meta">
+          <strong>1 page</strong>
+          <span>No app install needed, just open the link and play on your phone</span>
+        </div>
+        <div class="meta">
+          <strong>Easy draft</strong>
+          <span>Organisers can swap clues later for their final event route</span>
+        </div>
+      </div>
+
+      <div class="complete" id="completeBox">
+        <strong>🎉 Brilliant, your team has completed the hunt!</strong>
+        <p style="margin:8px 0 0; line-height:1.6; color:#26445c;">
+          You made it through every stop. Time for a team photo, a prize reveal, or one final mystery challenge from the organiser.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel" id="hunt-start">
+      <div style="display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:14px;">
+        <div>
+          <div class="section-title">The clue trail</div>
+          <div class="small">These clues are written as a polished starter set, ready for a real event draft.</div>
+        </div>
+      </div>
+
+      <div class="cards" id="cards">
+        <article class="card" data-stop="1">
+          <div class="card-top">
+            <div>
+              <h3>Stop 1, a place for quiet reflection</h3>
+              <p>Find the campus landmark known for stillness, stained glass, and a strong sense of history. Begin where calm and character meet.</p>
+            </div>
+            <div class="chip">01</div>
+          </div>
+          <div class="hint" id="hint-1">Hint: Think of the Chapel of St Saviour, a well-known historic focal point on campus.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-1">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+
+        <article class="card" data-stop="2">
+          <div class="card-top">
+            <div>
+              <h3>Stop 2, where stories line the shelves</h3>
+              <p>Your next clue lives in the kind of place where curiosity is rewarded and every corner invites discovery. Head somewhere made for readers and researchers.</p>
+            </div>
+            <div class="chip">02</div>
+          </div>
+          <div class="hint" id="hint-2">Hint: Look toward the Senior School Library, the obvious home for pages, study, and ideas.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-2">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+
+        <article class="card" data-stop="3">
+          <div class="card-top">
+            <div>
+              <h3>Stop 3, follow the sound</h3>
+              <p>Now head for the place where rhythm, rehearsal, and performance come together. If your clue had a soundtrack, this is where it would be written.</p>
+            </div>
+            <div class="chip">03</div>
+          </div>
+          <div class="hint" id="hint-3">Hint: The Music School is a great next stop for an event route with energy and atmosphere.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-3">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+
+        <article class="card" data-stop="4">
+          <div class="card-top">
+            <div>
+              <h3>Stop 4, where the game begins</h3>
+              <p>Trade melody for movement. Seek out the open space where sport, teamwork, and bright competition take centre stage.</p>
+            </div>
+            <div class="chip">04</div>
+          </div>
+          <div class="hint" id="hint-4">Hint: The sports grounds or astro area make a safe, recognisable event stop.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-4">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+
+        <article class="card" data-stop="5">
+          <div class="card-top">
+            <div>
+              <h3>Stop 5, make a splash</h3>
+              <p>This clue points to a place of lanes, echoes, and water under cover. It is all about energy, pace, and a cool finish to the fifth stop.</p>
+            </div>
+            <div class="chip">05</div>
+          </div>
+          <div class="hint" id="hint-5">Hint: The 25-metre indoor swimming pool is a public-facing landmark mentioned in campus information.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-5">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+
+        <article class="card" data-stop="6">
+          <div class="card-top">
+            <div>
+              <h3>Stop 6, the grand finale outdoors</h3>
+              <p>For your final moment, head somewhere that feels wide, green, and full of fresh air. End the trail with a view and a sense of arrival.</p>
+            </div>
+            <div class="chip">06</div>
+          </div>
+          <div class="hint" id="hint-6">Hint: Use an approved reservoir-side or grounds location chosen by the organiser, not an unsupervised route.</div>
+          <div class="card-actions">
+            <button class="btn-secondary hint-btn" type="button" data-target="hint-6">Reveal hint</button>
+            <label class="check"><input type="checkbox" data-stop-check /> Found it</label>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel note-grid">
+      <div class="note">
+        <h2 class="section-title">For organisers</h2>
+        <p>
+          This page is a polished starter draft. Before using it live, swap any clue text you want, confirm your event route, and make sure every stop stays within approved, supervised areas.
+        </p>
+        <ul>
+          <li>Keep the trail to event-approved spaces only.</li>
+          <li>Avoid boarding houses, private routes, or precise wayfinding.</li>
+          <li>Use staff checkpoints if you want prize codes or stamp cards.</li>
+          <li>Add team names, QR clues, or sponsor messages later if needed.</li>
+        </ul>
+      </div>
+      <div class="note">
+        <h2 class="section-title">Nice extras you could add later</h2>
+        <ul>
+          <li>A secret word at each stop to unlock a final riddle</li>
+          <li>House or team scoring for friendly competition</li>
+          <li>A timed challenge for the fastest supervised team</li>
+          <li>A photo prompt at the final stop</li>
+        </ul>
+        <p style="margin-top:12px;">
+          If you want, this can also be turned into a more customised event microsite with your real clues, colours, and prize messaging.
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      Draft event page for a real-world Ardingly College scavenger hunt. Built as a simple shareable starter page, ready to refine.
+    </footer>
+  </main>
+
+  <script>
+    const checks = Array.from(document.querySelectorAll('[data-stop-check]'));
+    const cards = Array.from(document.querySelectorAll('.card'));
+    const progressText = document.getElementById('progressText');
+    const progressBar = document.getElementById('progressBar');
+    const completeBox = document.getElementById('completeBox');
+    const storageKey = 'ardingly-hunt-progress-v1';
+
+    function saveState() {
+      const state = checks.map(check => check.checked);
+      localStorage.setItem(storageKey, JSON.stringify(state));
+    }
+
+    function loadState() {
+      try {
+        const state = JSON.parse(localStorage.getItem(storageKey));
+        if (Array.isArray(state)) {
+          checks.forEach((check, index) => {
+            check.checked = Boolean(state[index]);
+          });
+        }
+      } catch (error) {
+        console.warn('Could not load hunt progress', error);
+      }
+    }
+
+    function updateProgress() {
+      const done = checks.filter(check => check.checked).length;
+      const total = checks.length;
+      const percent = Math.round((done / total) * 100);
+
+      progressText.textContent = `${done} of ${total} stops complete`;
+      progressBar.style.width = `${percent}%`;
+      completeBox.classList.toggle('show', done === total);
+
+      cards.forEach((card, index) => {
+        card.classList.toggle('done', checks[index].checked);
+      });
+
+      saveState();
+    }
+
+    checks.forEach(check => check.addEventListener('change', updateProgress));
+
+    document.querySelectorAll('.hint-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const target = document.getElementById(button.dataset.target);
+        const isOpen = target.classList.toggle('open');
+        button.textContent = isOpen ? 'Hide hint' : 'Reveal hint';
+      });
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      checks.forEach(check => { check.checked = false; });
+      localStorage.removeItem(storageKey);
+      document.querySelectorAll('.hint').forEach(hint => hint.classList.remove('open'));
+      document.querySelectorAll('.hint-btn').forEach(button => button.textContent = 'Reveal hint');
+      updateProgress();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    loadState();
+    updateProgress();
+  </script>
+</body>
+</html>
